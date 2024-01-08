@@ -1,7 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.init;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
-import com.mojang.blaze3d.shaders.Effect;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.registries.DeferredRegister;
@@ -46,7 +45,15 @@ public class InitItems {
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(3).build()))
     );
     public static final RegistryObject<Item> Lemon = Items.register(
-            "orange",() -> new Item(new Item.Properties().stacksTo(64)
+            "lemon",() -> new Item(new Item.Properties().stacksTo(64)
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build()))
+    );
+    public static final RegistryObject<Item> Green_apple = Items.register(
+            "green_apple",() -> new Item(new Item.Properties().stacksTo(64)
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build()))
+    );
+    public static final RegistryObject<Item> Banana = Items.register(
+            "banana",() -> new Item(new Item.Properties().stacksTo(64)
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build()))
     );
 }

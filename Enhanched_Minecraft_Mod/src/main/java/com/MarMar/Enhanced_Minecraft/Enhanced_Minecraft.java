@@ -1,5 +1,6 @@
 package com.MarMar.Enhanced_Minecraft;
 
+import com.MarMar.Enhanced_Minecraft.init.InitItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -30,9 +31,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
+
 @Mod(Enhanced_Minecraft.MOD_ID)
 public class Enhanced_Minecraft
 {
     public static final String MOD_ID = "enhanced_minecraft";
+
+    public Enhanced_Minecraft(){
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        InitItems.Items.register(bus);
+    }
 }
