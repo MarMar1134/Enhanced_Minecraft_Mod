@@ -1,6 +1,6 @@
 {
   "parent": "minecraft.item/generated",
   "textures": {
-    "layer0": "enhanced_minecraft::items/lemon"
+    "layer0": "enhanced_minecraft::item/lemon"
   }
 }
