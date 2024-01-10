@@ -84,6 +84,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
                     .save(consumer);
             //Steel
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Raw_steel.get())
+                    .pattern("#I")
+                    .define('I', Items.IRON_INGOT)
+                    .define('#', Items.COAL)
+                    .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Raw_steel.get())
+                .pattern("#I")
+                .pattern("##")
+                .define('I', Items.IRON_INGOT)
+                .define('#', Items.CHARCOAL)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(consumer);
+            //Steel tools
             ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Steel_sword.get())
                 .pattern("I")
                 .pattern("I")

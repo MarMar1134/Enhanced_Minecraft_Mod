@@ -38,15 +38,15 @@ public class ModItems {
         //Bronze
         public static final RegistryObject<Item> Bronze_sword = Items.register(
                             "bronze_sword",() -> new SwordItem(
-                        ModTiers.Bronze, 4, -2.4F, new Item.Properties())
+                        ModTiers.Bronze, 3, -2.4F, new Item.Properties())
                     );
         public static final RegistryObject<Item> Bronze_pickaxe = Items.register(
-                            "bronze_picaxe",() -> new PickaxeItem(
+                            "bronze_pickaxe",() -> new PickaxeItem(
                                     ModTiers.Bronze, 1, -2F,  new Item.Properties())
                     );
         public static final RegistryObject<Item> Bronze_axe = Items.register(
                 "bronze_axe",() -> new AxeItem(
-                        ModTiers.Bronze, 4, -2F,  new Item.Properties())
+                        ModTiers.Bronze, 6, -2F,  new Item.Properties())
         );
         public static final RegistryObject<Item> Bronze_shovel = Items.register(
                 "bronze_shovel",() -> new ShovelItem(
@@ -62,7 +62,7 @@ public class ModItems {
                                 ModTiers.Steel, 2, -2.4F, new Item.Properties())
                 );
             public static final RegistryObject<Item> Steel_pickaxe = Items.register(
-                    "steel_picaxe",() -> new PickaxeItem(
+                    "steel_pickaxe",() -> new PickaxeItem(
                             ModTiers.Steel, 1, -2F, new Item.Properties())
             );
             public static final RegistryObject<Item> Steel_axe = Items.register(

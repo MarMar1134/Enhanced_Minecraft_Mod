@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 7.0,
+  "group": "steel_ingot",
+  "ingredient": {
+    "item": "enhanced_minecraft:steel_shovel"
+  },
+  "result": "enhanced_minecraft:steel_ingot"
+}
