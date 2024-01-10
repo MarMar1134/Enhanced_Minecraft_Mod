@@ -1,6 +1,22 @@
 {
-  "creativetab.saplings": "Saplings and Seeds",
+  "creativetab.tools": "Armors and Tools",
+  "creativetab.minerals": "Ores and Minerals",
   "creativetab.fruits": "Fruits and Vegetables",
+  "creativetab.saplings": "Saplings and Seeds",
+
+  "block.enhanced_minecraft_sulfur_ore": "Sulfur Ore",
+  "block.enhanced_minecraft_tin_ore": "Tin Ore",
+
+  "item.enhanced_minecraft.raw_tin": "Raw Tin",
+  "item.enhanced_minecraft.tin_ingot": "Tin Ingot",
+  "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
+
+  "item.enhanced_minecraft.bronze_sword": "Bronze Sword",
+  "item.enhanced_minecraft.bronze_picaxe": "Bronze Picaxe",
+  "item.enhanced_minecraft.bronze_axe": "Bronze Axe",
+  "item.enhanced_minecraft.bronze_shovel": "Bronze Shovel",
+  "item.enhanced_minecraft.bronze_hoe": "Bronze Hoe",
+
   "item.enhanced_minecraft.orange_sapling": "Orange Sapling",
   "item.enhanced_minecraft.orange": "Orange",
   "item.enhanced_minecraft.lemon_sapling": "Lemon Sapling",

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "enhanced_minecraft::item/apple_sapling"
+    "layer0": "enhanced_minecraft:item/apple_sapling"
   }
 }

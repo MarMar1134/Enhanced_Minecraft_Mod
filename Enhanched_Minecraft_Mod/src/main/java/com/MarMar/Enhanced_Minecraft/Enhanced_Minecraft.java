@@ -1,8 +1,8 @@
 package com.MarMar.Enhanced_Minecraft;
 
-import com.MarMar.Enhanced_Minecraft.items.InitItems;
-import com.MarMar.Enhanced_Minecraft.tabs.InitTabs;
-import net.minecraft.world.item.CreativeModeTabs;
+import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,10 +19,10 @@ public class Enhanced_Minecraft
 
         IEventBus ModEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        InitTabs.Register(ModEventBus);
-        InitItems.Register(ModEventBus);
+        ModTabs.Register(ModEventBus);
+        ModItems.Register(ModEventBus);
+        ModBlocks.Register(ModEventBus);
 
-//        ModEventBus.addListener(this::commonSetup);
     //Register for creative tabs
         MinecraftForge.EVENT_BUS.register(this);
         ModEventBus.addListener(this::AddCreative);
