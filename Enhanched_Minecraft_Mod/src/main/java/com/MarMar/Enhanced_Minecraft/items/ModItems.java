@@ -80,6 +80,27 @@ public class ModItems {
                 "bronze_hoe",() -> new HoeItem(
                         ModTiers.Bronze, 1, 2,  new Item.Properties())
         );
+        //Steel
+                public static final RegistryObject<SwordItem> Steel_sword = Items.register(
+                        "steel_sword",() -> new SwordItem(
+                                ModTiers.Steel, 2, 2, new Item.Properties())
+                );
+            public static final RegistryObject<PickaxeItem> Steel_picaxe = Items.register(
+                    "steel_picaxe",() -> new PickaxeItem(
+                            ModTiers.Steel, 1, 3,  new Item.Properties())
+            );
+            public static final RegistryObject<AxeItem> Steel_axe = Items.register(
+                    "steel_axe",() -> new AxeItem(
+                            ModTiers.Steel, 2, 3,  new Item.Properties())
+            );
+            public static final RegistryObject<ShovelItem> Steel_shovel = Items.register(
+                    "steel_shovel",() -> new ShovelItem(
+                            ModTiers.Steel, 1, 4,  new Item.Properties())
+            );
+            public static final RegistryObject<HoeItem> Steel_hoe = Items.register(
+                    "steel_hoe",() -> new HoeItem(
+                            ModTiers.Steel, 1, 3,  new Item.Properties())
+            );
     //Food
     public static final RegistryObject<Item> Orange = Items.register(
             "orange",() -> new Item(new Item.Properties().stacksTo(64)

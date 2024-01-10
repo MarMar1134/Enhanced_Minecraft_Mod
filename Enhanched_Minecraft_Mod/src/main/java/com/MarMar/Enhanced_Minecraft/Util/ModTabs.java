@@ -67,6 +67,11 @@ public class ModTabs {
                         output.accept(ModItems.Bronze_axe.get());
                         output.accept(ModItems.Bronze_shovel.get());
                         output.accept(ModItems.Bronze_hoe.get());
+                        output.accept(ModItems.Steel_sword.get());
+                        output.accept(ModItems.Steel_picaxe.get());
+                        output.accept(ModItems.Steel_axe.get());
+                        output.accept(ModItems.Steel_shovel.get());
+                        output.accept(ModItems.Steel_hoe.get());
                     })
                     .build()
     );
