@@ -15,64 +15,71 @@ public class ModItems {
     );
     //Saplings
         //Fruits
-    public static final RegistryObject<Item> Orange_sapling = Items.register(
-          "orange_sapling",() -> new Item(new Item.Properties().stacksTo(64))
-    );
-    public static final RegistryObject<Item> Lemon_sapling = Items.register(
-            "lemon_sapling", () -> new Item(new Item.Properties().stacksTo(64))
-    );
-    public static final RegistryObject<Item> Apple_sapling = Items.register(
-            "apple_sapling",() -> new Item(new Item.Properties())
-    );
-        //Nuts
-    public static final RegistryObject<Item> Hazelnut_sapling = Items.register(
-            "hazelnut_sapling",() -> new Item(new Item.Properties().stacksTo(64))
-    );
-    public static final RegistryObject<Item> Walnut_sapling = Items.register(
-            "walnut_sapling",() -> new Item(new Item.Properties().stacksTo(64))
-    );
-    public static final RegistryObject<Item> Almond_sapling = Items.register(
-            "almond_sapling",() -> new Item(new Item.Properties().stacksTo(64))
-    );
-    //Seeds
-    public static final RegistryObject<Item> Banana_seed = Items.register(
-            "banana_seed",() -> new Item(new Item.Properties().stacksTo(64))
-    );
+            //    public static final RegistryObject<Item> Orange_sapling = Items.register(
+            //          "orange_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Lemon_sapling = Items.register(
+            //            "lemon_sapling", () -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Apple_sapling = Items.register(
+            //            "apple_sapling",() -> new Item(new Item.Properties())
+            //    );
+            //        //Nuts
+            //    public static final RegistryObject<Item> Hazelnut_sapling = Items.register(
+            //            "hazelnut_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Walnut_sapling = Items.register(
+            //            "walnut_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Almond_sapling = Items.register(
+            //            "almond_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    //Seeds
+            //    public static final RegistryObject<Item> Banana_seed = Items.register(
+            //            "banana_seed",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+
     //Ores (raw and melted)
+    public static final RegistryObject<Item> Sulfur = Items.register(
+            "sulfur",() -> new Item(new Item.Properties())
+    );
     public static final RegistryObject<Item> Raw_tin = Items.register(
-            "raw_tin",() -> new Item(new Item.Properties().stacksTo(64))
+            "raw_tin",() -> new Item(new Item.Properties())
     );
     public static final RegistryObject<Item> Tin_ingot = Items.register(
-            "tin_ingot",() -> new Item(new Item.Properties().stacksTo(64))
-    );
-    public static final RegistryObject<Item> Sulfur = Items.register(
-            "sulfur",() -> new Item(new Item.Properties().stacksTo(64))
+            "tin_ingot",() -> new Item(new Item.Properties())
     );
     public static final RegistryObject<Item> Bronze_ingot = Items.register(
-            "bronze_ingot",() -> new Item(new Item.Properties().stacksTo(64))
+            "bronze_ingot",() -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> Raw_steel = Items.register(
+            "raw_steel", () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> Steel_ingot = Items.register(
+            "steel_ingot", () -> new Item(new Item.Properties())
     );
     //Weapons and tools
         //Bronze
-    public static final RegistryObject<SwordItem> Bronze_sword = Items.register(
-                        "bronze_sword",() -> new SwordItem(
-                    ModTiers.Bronze, 4, 0, new Item.Properties())
-                );
-    public static final RegistryObject<PickaxeItem> Bronze_picaxe = Items.register(
-                        "bronze_picaxe",() -> new PickaxeItem(
-                                ModTiers.Bronze, 1, 2,  new Item.Properties())
-                );
-    public static final RegistryObject<AxeItem> Bronze_axe = Items.register(
-            "bronze_axe",() -> new AxeItem(
-                    ModTiers.Bronze, 2, 1,  new Item.Properties())
-    );
-    public static final RegistryObject<ShovelItem> Bronze_shovel = Items.register(
-            "bronze_shovel",() -> new ShovelItem(
-                    ModTiers.Bronze, 1, 2,  new Item.Properties())
-    );
-    public static final RegistryObject<HoeItem> Bronze_hoe = Items.register(
-            "bronze_hoe",() -> new HoeItem(
-                    ModTiers.Bronze, 1, 2,  new Item.Properties())
-    );
+        public static final RegistryObject<SwordItem> Bronze_sword = Items.register(
+                            "bronze_sword",() -> new SwordItem(
+                        ModTiers.Bronze, 4, 0, new Item.Properties())
+                    );
+        public static final RegistryObject<PickaxeItem> Bronze_picaxe = Items.register(
+                            "bronze_picaxe",() -> new PickaxeItem(
+                                    ModTiers.Bronze, 1, 2,  new Item.Properties())
+                    );
+        public static final RegistryObject<AxeItem> Bronze_axe = Items.register(
+                "bronze_axe",() -> new AxeItem(
+                        ModTiers.Bronze, 2, 1,  new Item.Properties())
+        );
+        public static final RegistryObject<ShovelItem> Bronze_shovel = Items.register(
+                "bronze_shovel",() -> new ShovelItem(
+                        ModTiers.Bronze, 1, 2,  new Item.Properties())
+        );
+        public static final RegistryObject<HoeItem> Bronze_hoe = Items.register(
+                "bronze_hoe",() -> new HoeItem(
+                        ModTiers.Bronze, 1, 2,  new Item.Properties())
+        );
     //Food
     public static final RegistryObject<Item> Orange = Items.register(
             "orange",() -> new Item(new Item.Properties().stacksTo(64)

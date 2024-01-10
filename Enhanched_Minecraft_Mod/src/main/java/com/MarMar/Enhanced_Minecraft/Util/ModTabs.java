@@ -16,16 +16,17 @@ public class ModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Enhanced_Minecraft.MOD_ID);
     //Tabs
     public static final RegistryObject<CreativeModeTab> Saplings= Tabs.register(
-            "saplings", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Apple_sapling.get()))
+            "saplings", () -> CreativeModeTab.builder()
+//                    .icon(() -> new ItemStack(ModItems.Apple_sapling.get()))
                     .title(Component.translatable("creativetab.saplings"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.Almond_sapling.get());
-                        output.accept(ModItems.Apple_sapling.get());
-                        output.accept(ModItems.Hazelnut_sapling.get());
-                        output.accept(ModItems.Lemon_sapling.get());
-                        output.accept(ModItems.Orange_sapling.get());
-                        output.accept(ModItems.Walnut_sapling.get());
-                        output.accept(ModItems.Banana_seed.get());
+//                        output.accept(ModItems.Almond_sapling.get());
+//                        output.accept(ModItems.Apple_sapling.get());
+//                        output.accept(ModItems.Hazelnut_sapling.get());
+//                        output.accept(ModItems.Lemon_sapling.get());
+//                        output.accept(ModItems.Orange_sapling.get());
+//                        output.accept(ModItems.Walnut_sapling.get());
+//                        output.accept(ModItems.Banana_seed.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> Fruits= Tabs.register(
@@ -44,11 +45,16 @@ public class ModTabs {
                     .title(Component.translatable("creativetab.minerals"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.Sulfur_ore.get());
+                        output.accept(ModBlocks.Deepslate_sulfur_ore.get());
+                        output.accept(ModBlocks.Nether_sulfur_ore.get());
                         output.accept(ModBlocks.Tin_ore.get());
+                        output.accept(ModBlocks.Deepslate_tin_ore.get());
                         output.accept(ModItems.Sulfur.get());
                         output.accept((ModItems.Raw_tin.get()));
                         output.accept((ModItems.Tin_ingot.get()));
                         output.accept((ModItems.Bronze_ingot.get()));
+                        output.accept(ModItems.Raw_steel.get());
+                        output.accept(ModItems.Steel_ingot.get());
                     })
                     .build()
     );
