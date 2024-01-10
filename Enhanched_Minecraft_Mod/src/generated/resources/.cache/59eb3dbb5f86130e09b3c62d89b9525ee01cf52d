@@ -1,0 +1,6 @@
+// 1.20.1	2024-01-10T12:36:24.5254615	Loot Tables
+a05ab8ee60c7fe8ca70ea0de808ddf75b618eb77 data/enhanced_minecraft/loot_tables/blocks/deepslate_sulfur_ore.json
+be88afeb2be17c3c996bff15e846017d50ce5de8 data/enhanced_minecraft/loot_tables/blocks/deepslate_tin_ore.json
+539785742651ec324f9046d09005dc637bd4a6f8 data/enhanced_minecraft/loot_tables/blocks/nether_sulfur_ore.json
+733327c285f4571663054eff64f642aa769281a0 data/enhanced_minecraft/loot_tables/blocks/sulfur_ore.json
+15c44f0b5fcb79fab7a8a5a3d54a4f2955d114b3 data/enhanced_minecraft/loot_tables/blocks/tin_ore.json

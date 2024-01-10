@@ -1,6 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Util.ModTags;
+import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -17,6 +19,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        this.tag(ModTags.Items.Bronze_tag).add(ModItems.Bronze_ingot.get())
+                .add(ModItems.Bronze_sword.get()).add(ModItems.Bronze_pickaxe.get())
+                .add(ModItems.Bronze_axe.get()).add(ModItems.Bronze_shovel.get())
+                .add(ModItems.Bronze_hoe.get());
 
+        this.tag(ModTags.Items.Steel_tag).add(ModItems.Steel_ingot.get())
+                .add(ModItems.Steel_sword.get()).add(ModItems.Steel_pickaxe.get())
+                .add(ModItems.Steel_axe.get()).add(ModItems.Steel_shovel.get())
+                .add(ModItems.Steel_hoe.get());
     }
+
 }

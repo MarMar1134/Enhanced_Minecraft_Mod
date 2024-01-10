@@ -5,10 +5,7 @@ import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +19,31 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Enhanced_Minecraft.MOD_ID);
 
     //Blocks
+        //Saplings and seeds
+//                public static final RegistryObject<Block> Orange_sapling = Blocks.register(
+//                      "orange_sapling",() -> new SaplingBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks
+//                    .OAK_SAPLING))
+//                );
+            //    public static final RegistryObject<Item> Lemon_sapling = Items.register(
+            //            "lemon_sapling", () -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Apple_sapling = Items.register(
+            //            "apple_sapling",() -> new Item(new Item.Properties())
+            //    );
+            //        //Nuts
+            //    public static final RegistryObject<Item> Hazelnut_sapling = Items.register(
+            //            "hazelnut_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Walnut_sapling = Items.register(
+            //            "walnut_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    public static final RegistryObject<Item> Almond_sapling = Items.register(
+            //            "almond_sapling",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
+            //    //Seeds
+            //    public static final RegistryObject<Item> Banana_seed = Items.register(
+            //            "banana_seed",() -> new Item(new Item.Properties().stacksTo(64))
+            //    );
         //Ores
         public static final RegistryObject<Block> Tin_ore = RegisterBlock("tin_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE)

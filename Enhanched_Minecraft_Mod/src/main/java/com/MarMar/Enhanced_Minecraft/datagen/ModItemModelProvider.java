@@ -17,7 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.Banana);
+//        simpleItem(ModItems.Banana);
                 simpleItem(ModItems.Green_apple);
                 simpleItem(ModItems.Lemon);
                 simpleItem(ModItems.Orange);
@@ -28,11 +28,17 @@ public class ModItemModelProvider extends ItemModelProvider {
                 simpleItem(ModItems.Raw_steel);
                 simpleItem(ModItems.Steel_ingot);
 
-                SwordItem(ModItems.Bronze_sword);
-        PicaxeItem(ModItems.Bronze_picaxe);
-        AxeItem(ModItems.Bronze_axe);
-        ShovelItem(ModItems.Bronze_shovel);
-        HoeItem(ModItems.Bronze_hoe);
+                HandheldItem(ModItems.Bronze_sword);
+                HandheldItem(ModItems.Bronze_pickaxe);
+                HandheldItem(ModItems.Bronze_axe);
+                HandheldItem(ModItems.Bronze_shovel);
+                HandheldItem(ModItems.Bronze_hoe);
+
+                HandheldItem(ModItems.Steel_sword);
+                HandheldItem(ModItems.Steel_pickaxe);
+                HandheldItem(ModItems.Steel_axe);
+                HandheldItem(ModItems.Steel_shovel);
+                HandheldItem(ModItems.Steel_hoe);
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
@@ -41,27 +47,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                         "item/" + item.getId().getPath()));
     }
 
-    private ItemModelBuilder SwordItem(RegistryObject<SwordItem> item){
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "item/" + item.getId().getPath()));
-    }
-    private ItemModelBuilder PicaxeItem(RegistryObject<PickaxeItem> item){
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "item/" + item.getId().getPath()));
-    }
-    private ItemModelBuilder AxeItem(RegistryObject<AxeItem> item){
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "item/" + item.getId().getPath()));
-    }
-    private ItemModelBuilder ShovelItem(RegistryObject<ShovelItem> item){
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "item/" + item.getId().getPath()));
-    }
-    private ItemModelBuilder HoeItem(RegistryObject<HoeItem> item){
+    private ItemModelBuilder HandheldItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(Enhanced_Minecraft.MOD_ID, "item/" + item.getId().getPath()));

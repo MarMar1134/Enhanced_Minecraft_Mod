@@ -33,7 +33,7 @@ public class ModTabs {
             "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
                     .title(Component.translatable("creativetab.fruits"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.Banana.get());
+//                        output.accept(ModItems.Banana.get());
                         output.accept(ModItems.Green_apple.get());
                         output.accept(ModItems.Lemon.get());
                         output.accept(ModItems.Orange.get());
@@ -59,16 +59,16 @@ public class ModTabs {
                     .build()
     );
     public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
-            "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_picaxe.get()))
+            "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_pickaxe.get()))
                     .title((Component.translatable("creativetab.tools")))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.Bronze_sword.get());
-                        output.accept(ModItems.Bronze_picaxe.get());
+                        output.accept(ModItems.Bronze_pickaxe.get());
                         output.accept(ModItems.Bronze_axe.get());
                         output.accept(ModItems.Bronze_shovel.get());
                         output.accept(ModItems.Bronze_hoe.get());
                         output.accept(ModItems.Steel_sword.get());
-                        output.accept(ModItems.Steel_picaxe.get());
+                        output.accept(ModItems.Steel_pickaxe.get());
                         output.accept(ModItems.Steel_axe.get());
                         output.accept(ModItems.Steel_shovel.get());
                         output.accept(ModItems.Steel_hoe.get());
