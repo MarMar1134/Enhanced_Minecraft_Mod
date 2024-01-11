@@ -1,6 +1,7 @@
 {
   "creativetab.tools": "Armors and Tools",
   "creativetab.minerals": "Ores and Minerals",
+  "creativetab.utility": "Utility",
   "creativetab.fruits": "Fruits and Vegetables",
   "creativetab.saplings": "Saplings and Seeds",
 
@@ -14,6 +15,8 @@
   "item.enhanced_minecraft.raw_tin": "Raw Tin",
   "item.enhanced_minecraft.tin_ingot": "Tin Ingot",
   "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
+  "item.enhanced_minecraft.raw_bronze": "Raw Bronze",
+  "item.enhanced_minecraft.bronze_nuggets": "Bronze Nuggets",
   "item.enhanced_minecraft.raw_steel": "Raw Steel",
   "item.enhanced_minecraft.steel_ingot": "Steel Ingot",
 

@@ -25,8 +25,14 @@ public class ModItems {
     public static final RegistryObject<Item> Tin_ingot = Items.register(
             "tin_ingot",() -> new Item(new Item.Properties())
     );
+    public static final RegistryObject<Item> Raw_bronze = Items.register(
+            "raw_bronze", () -> new Item(new Item.Properties())
+    );
     public static final RegistryObject<Item> Bronze_ingot = Items.register(
             "bronze_ingot",() -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> Bronze_nuggets = Items.register(
+            "bronze_nuggets", () -> new Item(new Item.Properties())
     );
     public static final RegistryObject<Item> Raw_steel = Items.register(
             "raw_steel", () -> new Item(new Item.Properties())
@@ -78,23 +84,28 @@ public class ModItems {
                             ModTiers.Steel, 1, -2F,  new Item.Properties())
             );
     //Food
+        //Fruit
     public static final RegistryObject<Item> Orange = Items.register(
-            "orange",() -> new Item(new Item.Properties().stacksTo(64)
-                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(2).build()))
+            "orange",() -> new Item(new Item.Properties().food(ModFoods.Orange))
     );
     public static final RegistryObject<Item> Lemon = Items.register(
-            "lemon",() -> new Item(new Item.Properties().stacksTo(64)
-                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(1).build()))
+            "lemon",() -> new Item(new Item.Properties().food(ModFoods.Lemon))
     );
     public static final RegistryObject<Item> Green_apple = Items.register(
-            "green_apple",() -> new Item(new Item.Properties().stacksTo(64)
-                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(2).build()))
+            "green_apple",() -> new Item(new Item.Properties().food(ModFoods.Green_apple))
     );
 //    public static final RegistryObject<Item> Banana = Items.register(
 //            "banana",() -> new Item(new Item.Properties().stacksTo(64)
 //                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(2).build()))
 //    );
-
+        //Vegetables
+    public static final RegistryObject<Item> Rice = Items.register(
+            "rice_grains", () -> new Item((new Item.Properties().food(ModFoods.Rice)))
+    );
+        //Cooked recipes
+    public static final RegistryObject<Item> Rice_bowl = Items.register(
+            "rice_bowl",() -> new Item(new Item.Properties().food(ModFoods.Rice_bawl))
+        );
     //Final register
     public static void Register(IEventBus eventBus){
         Items.register(eventBus);

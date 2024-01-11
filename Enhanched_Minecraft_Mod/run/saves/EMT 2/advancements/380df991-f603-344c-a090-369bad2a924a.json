@@ -540,21 +540,9 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_picaxe": {
-    "criteria": {
-      "has_steel_picaxe": "2024-01-10 14:19:29 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_shovel": {
     "criteria": {
       "has_steel_shovel": "2024-01-10 14:19:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_picaxe": {
-    "criteria": {
-      "has_steel_picaxe": "2024-01-10 14:19:29 -0300"
     },
     "done": true
   },
@@ -750,15 +738,21 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_sword": {
-    "criteria": {
-      "has_steel_sword": "2024-01-10 14:28:19 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_axe": {
     "criteria": {
       "has_steel_axe": "2024-01-10 14:28:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_axe": {
+    "criteria": {
+      "has_steel_axe": "2024-01-10 14:28:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_sword": {
+    "criteria": {
+      "has_steel_sword": "2024-01-10 14:28:19 -0300"
     },
     "done": true
   },
@@ -768,15 +762,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_porkchop": {
-    "criteria": {
-      "has_porkchop": "2024-01-10 14:28:46 -0300"
-    },
-    "done": true
-  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2024-01-10 14:28:45 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2024-01-10 14:28:46 -0300"
     },
     "done": true
   },
@@ -792,9 +786,45 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_axe": {
+  "minecraft:recipes/misc/gold_ingot_from_smelting_raw_gold": {
     "criteria": {
-      "has_steel_axe": "2024-01-10 14:28:13 -0300"
+      "has_raw_gold": "2024-01-10 17:49:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_gold_block": {
+    "criteria": {
+      "has_raw_gold": "2024-01-10 17:49:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2024-01-10 17:47:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2024-01-10 17:47:04 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2024-01-10 17:47:04 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2024-01-10 17:49:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2024-01-10 17:47:14 -0300"
     },
     "done": true
   },

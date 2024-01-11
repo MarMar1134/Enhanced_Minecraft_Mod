@@ -15,11 +15,11 @@ public class ModTabs {
     public static final DeferredRegister<CreativeModeTab> Tabs=
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Enhanced_Minecraft.MOD_ID);
     //Tabs
-    public static final RegistryObject<CreativeModeTab> Saplings= Tabs.register(
-            "saplings", () -> CreativeModeTab.builder()
+//    public static final RegistryObject<CreativeModeTab> Saplings= Tabs.register(
+//            "saplings", () -> CreativeModeTab.builder()
 //                    .icon(() -> new ItemStack(ModItems.Apple_sapling.get()))
-                    .title(Component.translatable("creativetab.saplings"))
-                    .displayItems((itemDisplayParameters, output) -> {
+//                    .title(Component.translatable("creativetab.saplings"))
+//                    .displayItems((itemDisplayParameters, output) -> {
 //                        output.accept(ModItems.Almond_sapling.get());
 //                        output.accept(ModItems.Apple_sapling.get());
 //                        output.accept(ModItems.Hazelnut_sapling.get());
@@ -27,8 +27,8 @@ public class ModTabs {
 //                        output.accept(ModItems.Orange_sapling.get());
 //                        output.accept(ModItems.Walnut_sapling.get());
 //                        output.accept(ModItems.Banana_seed.get());
-                    })
-                    .build());
+//                    })
+//                    .build());
     public static final RegistryObject<CreativeModeTab> Fruits= Tabs.register(
             "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
                     .title(Component.translatable("creativetab.fruits"))
@@ -37,11 +37,10 @@ public class ModTabs {
                         output.accept(ModItems.Green_apple.get());
                         output.accept(ModItems.Lemon.get());
                         output.accept(ModItems.Orange.get());
-                    })
-                    .build()
+                    }).build()
     );
     public static final RegistryObject<CreativeModeTab> Minerals = Tabs.register(
-            "minerals", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_ingot.get()))
+            "minerals", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.Tin_ore.get()))
                     .title(Component.translatable("creativetab.minerals"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.Sulfur_ore.get());
@@ -51,12 +50,9 @@ public class ModTabs {
                         output.accept(ModBlocks.Deepslate_tin_ore.get());
                         output.accept(ModItems.Sulfur.get());
                         output.accept((ModItems.Raw_tin.get()));
-                        output.accept((ModItems.Tin_ingot.get()));
-                        output.accept((ModItems.Bronze_ingot.get()));
+                        output.accept(ModItems.Raw_bronze.get());
                         output.accept(ModItems.Raw_steel.get());
-                        output.accept(ModItems.Steel_ingot.get());
-                    })
-                    .build()
+                    }).build()
     );
     public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
             "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_pickaxe.get()))
@@ -72,10 +68,18 @@ public class ModTabs {
                         output.accept(ModItems.Steel_axe.get());
                         output.accept(ModItems.Steel_shovel.get());
                         output.accept(ModItems.Steel_hoe.get());
-                    })
-                    .build()
+                    }).build()
     );
-
+    public static final RegistryObject<CreativeModeTab> utility = Tabs.register(
+            "utility", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_ingot.get()))
+                    .title(Component.translatable("creativetab.utility"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept((ModItems.Tin_ingot.get()));
+                        output.accept((ModItems.Bronze_ingot.get()));
+                        output.accept(ModItems.Bronze_nuggets.get());
+                        output.accept(ModItems.Steel_ingot.get());
+                    }).build()
+    );
     public static void Register(IEventBus eventBus){
         Tabs.register(eventBus);
     }

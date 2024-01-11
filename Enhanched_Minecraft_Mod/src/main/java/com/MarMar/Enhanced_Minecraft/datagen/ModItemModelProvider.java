@@ -21,10 +21,13 @@ public class ModItemModelProvider extends ItemModelProvider {
                 simpleItem(ModItems.Green_apple);
                 simpleItem(ModItems.Lemon);
                 simpleItem(ModItems.Orange);
+                simpleItem(ModItems.Rice);
+                simpleItem(ModItems.Rice_bowl);
                 simpleItem(ModItems.Sulfur);
                 simpleItem(ModItems.Raw_tin);
                 simpleItem(ModItems.Tin_ingot);
                 simpleItem(ModItems.Bronze_ingot);
+                simpleItem(ModItems.Bronze_nuggets);
                 simpleItem(ModItems.Raw_steel);
                 simpleItem(ModItems.Steel_ingot);
 
