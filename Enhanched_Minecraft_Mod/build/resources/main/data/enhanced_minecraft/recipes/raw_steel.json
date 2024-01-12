@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:coal"
+    },
+    "I": {
+      "item": "minecraft:raw_iron"
+    }
+  },
+  "pattern": [
+    "#I"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:raw_steel"
+  },
+  "show_notification": true
+}

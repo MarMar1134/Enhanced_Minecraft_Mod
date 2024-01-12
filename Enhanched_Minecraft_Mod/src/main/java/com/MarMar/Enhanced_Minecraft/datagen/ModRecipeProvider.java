@@ -52,11 +52,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //Bronze recipes
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Bronze_nuggets.get())
-                .pattern("#")
-                .define('#', ModItems.Bronze_ingot.get())
-                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
-                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Bronze_nuggets.get(), 9)
+                .requires(ModItems.Bronze_ingot.get()).unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
+                        .save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Bronze_ingot.get())
                 .pattern("###")
                 .pattern("###")
@@ -108,16 +106,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //Steel recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Raw_steel.get())
                 .pattern("#I")
-                .define('I', Items.IRON_INGOT)
+                .define('I', Items.RAW_IRON)
                 .define('#', Items.COAL)
                 .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
-                .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Raw_steel.get())
-                .pattern("#I")
-                .pattern("##")
-                .define('I', Items.IRON_INGOT)
-                .define('#', Items.CHARCOAL)
-                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(consumer);
             //Steel tools
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Steel_sword.get())

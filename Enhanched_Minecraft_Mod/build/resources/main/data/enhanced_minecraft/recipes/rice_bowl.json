@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "enhanced_minecraft:rice_grains"
+    },
+    "I": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "#I"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:rice_bowl"
+  },
+  "show_notification": true
+}

@@ -63,11 +63,20 @@ public class ModTabs {
                         output.accept(ModItems.Bronze_axe.get());
                         output.accept(ModItems.Bronze_shovel.get());
                         output.accept(ModItems.Bronze_hoe.get());
+                        output.accept(ModItems.Bronze_helmet.get());
+                        output.accept(ModItems.Bronze_chestplate.get());
+                        output.accept(ModItems.Bronze_leggings.get());
+                        output.accept(ModItems.Bronze_boots.get());
+
                         output.accept(ModItems.Steel_sword.get());
                         output.accept(ModItems.Steel_pickaxe.get());
                         output.accept(ModItems.Steel_axe.get());
                         output.accept(ModItems.Steel_shovel.get());
                         output.accept(ModItems.Steel_hoe.get());
+                        output.accept(ModItems.Steel_helmet.get());
+                        output.accept(ModItems.Steel_chestplate.get());
+                        output.accept(ModItems.Steel_leggings.get());
+                        output.accept(ModItems.Steel_boots.get());
                     }).build()
     );
     public static final RegistryObject<CreativeModeTab> utility = Tabs.register(

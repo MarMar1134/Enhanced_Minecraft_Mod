@@ -1,6 +1,7 @@
 {
   "creativetab.tools": "Armors and Tools",
   "creativetab.minerals": "Ores and Minerals",
+  "creativetab.utility": "Utility",
   "creativetab.fruits": "Fruits and Vegetables",
   "creativetab.saplings": "Saplings and Seeds",
 
@@ -14,6 +15,8 @@
   "item.enhanced_minecraft.raw_tin": "Raw Tin",
   "item.enhanced_minecraft.tin_ingot": "Tin Ingot",
   "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
+  "item.enhanced_minecraft.raw_bronze": "Raw Bronze",
+  "item.enhanced_minecraft.bronze_nuggets": "Bronze Nuggets",
   "item.enhanced_minecraft.raw_steel": "Raw Steel",
   "item.enhanced_minecraft.steel_ingot": "Steel Ingot",
 
@@ -22,11 +25,22 @@
   "item.enhanced_minecraft.bronze_axe": "Bronze Axe",
   "item.enhanced_minecraft.bronze_shovel": "Bronze Shovel",
   "item.enhanced_minecraft.bronze_hoe": "Bronze Hoe",
+
+  "item.enhanced_minecraft.bronze_helmet": "Bronze Helmet",
+  "item.enhanced_minecraft.bronze_chestplate": "Bronze Chestplate",
+  "item.enhanced_minecraft.bronze_leggings": "Bronze Leggings",
+  "item.enhanced_minecraft.bronze_boots": "Bronze Boots",
+
   "item.enhanced_minecraft.steel_sword": "Steel Sword",
   "item.enhanced_minecraft.steel_pickaxe": "Steel Pickaxe",
   "item.enhanced_minecraft.steel_axe": "Steel Axe",
   "item.enhanced_minecraft.steel_shovel": "Steel Shovel",
   "item.enhanced_minecraft.steel_hoe": "Steel Hoe",
+
+  "item.enhanced_minecraft.steel_helmet": "Steel Helmet",
+  "item.enhanced_minecraft.steel_chestplate": "Steel Chestplate",
+  "item.enhanced_minecraft.steel_leggings": "Steel Leggings",
+  "item.enhanced_minecraft.steel_boots": "Steel Boots",
 
   "item.enhanced_minecraft.orange_sapling": "Orange Sapling",
   "item.enhanced_minecraft.orange": "Orange",
