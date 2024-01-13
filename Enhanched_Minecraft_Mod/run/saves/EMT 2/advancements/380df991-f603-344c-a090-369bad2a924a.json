@@ -1104,5 +1104,95 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-01-13 01:33:13 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2024-01-13 01:33:13 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-01-13 01:33:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_ingot_from_smelting_raw_bronze": {
+    "criteria": {
+      "has_raw_bronze": "2024-01-13 02:07:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_ingot_from_blasting_raw_bronze": {
+    "criteria": {
+      "has_raw_bronze": "2024-01-13 02:07:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nuggets": {
+    "criteria": {
+      "has_bronze_ingot": "2024-01-13 02:07:47 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-01-13 02:07:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2024-01-13 02:42:07 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/copper_block": {
+    "criteria": {
+      "has_copper_ingot": "2024-01-13 02:42:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/brush": {
+    "criteria": {
+      "has_copper_ingot": "2024-01-13 02:42:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lightning_rod": {
+    "criteria": {
+      "has_copper_ingot": "2024-01-13 02:42:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_pickaxe": {
+    "criteria": {
+      "has_steel_ingot": "2024-01-13 04:06:41 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_hoe": {
+    "criteria": {
+      "has_steel_hoe": "2024-01-13 04:06:35 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_hoe": {
+    "criteria": {
+      "has_steel_hoe": "2024-01-13 04:06:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_helmet": "2024-01-13 04:16:33 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

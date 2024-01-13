@@ -1,4 +1,5 @@
-// 1.20.1	2024-01-10T11:14:03.9567152	Block States: enhanced_minecraft
+// 1.20.1	2024-01-13T01:29:47.884685	Block States: enhanced_minecraft
+380d776b2c7ea5f3dad7a88111c949e40577a6c5 assets/enhanced_minecraft/blockstates/adobe_alloying_furnace.json
 0a38634f9b6faff94261c702cb3f24bf0b16bd9c assets/enhanced_minecraft/blockstates/deepslate_sulfur_ore.json
 afd2a5640b4b4b552a9caa97b381db84df980f3f assets/enhanced_minecraft/blockstates/deepslate_tin_ore.json
 2719353e5685aac68c024329fafc020d0ea11253 assets/enhanced_minecraft/blockstates/nether_sulfur_ore.json
@@ -9,6 +10,7 @@ afd2a5640b4b4b552a9caa97b381db84df980f3f assets/enhanced_minecraft/blockstates/d
 0ff84f0b3c522632ea9faf1b2e787b7dcbfbabba assets/enhanced_minecraft/models/block/nether_sulfur_ore.json
 0f5213adafb7347658efc1eb6b7db4e5a5fbeca9 assets/enhanced_minecraft/models/block/sulfur_ore.json
 3ee933a8ae10e9098fc65e04ae230078b1e4574f assets/enhanced_minecraft/models/block/tin_ore.json
+64e59672b8383d4ad4719edde0e651e09be9e3e0 assets/enhanced_minecraft/models/item/adobe_alloying_furnace.json
 d2dedbd689da0bcabda0077e12b90d18664d7cc1 assets/enhanced_minecraft/models/item/deepslate_sulfur_ore.json
 671e3800242fefd8bff0f929673168febeecb7db assets/enhanced_minecraft/models/item/deepslate_tin_ore.json
 b606864f2b37ca56d0c0a0ab4cbb36558b4e818b assets/enhanced_minecraft/models/item/nether_sulfur_ore.json

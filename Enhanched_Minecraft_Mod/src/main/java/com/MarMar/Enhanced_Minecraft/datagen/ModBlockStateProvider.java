@@ -4,10 +4,9 @@ import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.core.ModStateProvider;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider{
@@ -23,6 +22,9 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.Deepslate_sulfur_ore);
         blockWithItem(ModBlocks.Sulfur_ore);
         blockWithItem(ModBlocks.Nether_sulfur_ore);
+
+        simpleBlockWithItem(ModBlocks.Adobe_alloying_furnace.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

@@ -3,10 +3,8 @@ package com.MarMar.Enhanced_Minecraft.datagen.loot;
 import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -37,6 +35,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSulfurOreDrops(ModBlocks.Deepslate_sulfur_ore.get()));
         this.add(ModBlocks.Nether_sulfur_ore.get(),
                 block -> createSulfurOreDrops(ModBlocks.Nether_sulfur_ore.get()));
+
+        this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
     }
 
     //Loot tables

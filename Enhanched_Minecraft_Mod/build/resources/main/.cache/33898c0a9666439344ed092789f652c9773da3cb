@@ -1,4 +1,4 @@
-// 1.20.1	2024-01-11T21:57:15.0929899	Item Models: enhanced_minecraft
+// 1.20.1	2024-01-12T02:09:23.2162341	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -18,8 +18,12 @@ bcf46309a9e92f772598a7be8a3618246cbba2ed assets/enhanced_minecraft/models/item/r
 b6f8c1fdf5d8ed2c3ba3035f5e50ddd70e703c14 assets/enhanced_minecraft/models/item/rice_bowl.json
 413143941d19c697825ba61a91b08cd60fd1fee5 assets/enhanced_minecraft/models/item/rice_grains.json
 fc4ac0b26257a1d6a888586ed01f81e7f8cb15e3 assets/enhanced_minecraft/models/item/steel_axe.json
+17b8bbd17e949af87e28c34636fc9527f9c81374 assets/enhanced_minecraft/models/item/steel_boots.json
+5ecb81233753ca7299133e8168051585552b9d92 assets/enhanced_minecraft/models/item/steel_chestplate.json
+227e18dab140daf6cf468d37e52b5e34ecb9856e assets/enhanced_minecraft/models/item/steel_helmet.json
 541d4a902e5d5202591bf675f78d0b83c19ab13c assets/enhanced_minecraft/models/item/steel_hoe.json
 d206cb28549475b496a53e21476b5f5a91c381f1 assets/enhanced_minecraft/models/item/steel_ingot.json
+cfb42c62c24a1ad73afeb68b2f946cd7b152585f assets/enhanced_minecraft/models/item/steel_leggings.json
 878252608cb33eb5922176a658982b4b9b413a15 assets/enhanced_minecraft/models/item/steel_pickaxe.json
 57fa214ebd6453d0dc7ad597f7aa20d386cbb621 assets/enhanced_minecraft/models/item/steel_shovel.json
 d13fb25ed4f2a323ab0ef84de9abf3390075efbb assets/enhanced_minecraft/models/item/steel_sword.json
