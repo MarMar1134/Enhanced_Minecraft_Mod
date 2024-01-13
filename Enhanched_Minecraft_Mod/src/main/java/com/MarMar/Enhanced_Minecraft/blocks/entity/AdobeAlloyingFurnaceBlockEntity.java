@@ -1,6 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.blocks.entity;
 
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.recipe.AlloyingFurnaceRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -29,6 +30,8 @@ import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 //Credits to TurtyWurty for the getBurnTime, canBurn and all energy related methods
 
@@ -168,11 +171,24 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
     }
 
     private boolean hasRecipe (){
-        boolean hasRecipeItem1 = this.itemHandler.getStackInSlot(INPUT_SLOT1).getItem() == ModItems.Raw_tin.get();
-        boolean hasRecipeItem2 = this.itemHandler.getStackInSlot(INPUT_SLOT2).getItem() == Items.RAW_COPPER;
+        Optional<AlloyingFurnaceRecipe> recipe = getCurrentRecipe();
 
-        ItemStack result = new ItemStack(ModItems.Raw_bronze.get());
-        return hasRecipeItem1 && hasRecipeItem2 && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if (recipe.isEmpty()){
+            return false;
+        }
+
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
+                
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<AlloyingFurnaceRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+
+        for(int i = 0; i < itemHandler.getSlots(); i++){
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+        return this.level.getRecipeManager().getRecipeFor(AlloyingFurnaceRecipe.Type.Instance, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
@@ -188,13 +204,15 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.Raw_bronze.get(), 1);
+        Optional<AlloyingFurnaceRecipe> recipe = getCurrentRecipe();
+
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
         this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
         this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
-        this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+        this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private void increaseCraftingProgress() {

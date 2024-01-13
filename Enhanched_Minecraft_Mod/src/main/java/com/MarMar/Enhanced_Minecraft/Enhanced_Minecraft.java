@@ -4,6 +4,7 @@ import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.blocks.entity.ModBlockEntities;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
+import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen;
 import com.MarMar.Enhanced_Minecraft.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -31,6 +32,7 @@ public class Enhanced_Minecraft
         ModBlocks.Register(ModEventBus);
         ModBlockEntities.register(ModEventBus);
         ModMenuTypes.Register(ModEventBus);
+        ModRecipes.Register(ModEventBus);
 
     //Register for creative tabs
         MinecraftForge.EVENT_BUS.register(this);

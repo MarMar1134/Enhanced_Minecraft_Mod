@@ -528,18 +528,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_shovel": {
-    "criteria": {
-      "has_steel_shovel": "2024-01-10 14:19:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_shovel": {
-    "criteria": {
-      "has_steel_shovel": "2024-01-10 14:19:29 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2024-01-10 14:19:51 -0300"
@@ -726,30 +714,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_axe": {
-    "criteria": {
-      "has_steel_axe": "2024-01-10 14:28:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_axe": {
-    "criteria": {
-      "has_steel_axe": "2024-01-10 14:28:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_sword": {
-    "criteria": {
-      "has_steel_sword": "2024-01-10 14:28:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_sword": {
-    "criteria": {
-      "has_steel_sword": "2024-01-10 14:28:19 -0300"
-    },
-    "done": true
-  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2024-01-10 14:28:45 -0300"
@@ -834,12 +798,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_pickaxe": {
-    "criteria": {
-      "has_steel_pickaxe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/misc/bronze_nuggets_from_smelting_bronze_axe": {
     "criteria": {
       "has_bronze_axe": "2024-01-11 22:00:36 -0300"
@@ -873,12 +831,6 @@
   "enhanced_minecraft:recipes/misc/bronze_nuggets_from_blasting_bronze_axe": {
     "criteria": {
       "has_bronze_axe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_pickaxe": {
-    "criteria": {
-      "has_steel_pickaxe": "2024-01-11 22:00:36 -0300"
     },
     "done": true
   },
@@ -1176,21 +1128,15 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_steel_hoe": {
-    "criteria": {
-      "has_steel_hoe": "2024-01-13 04:06:35 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_steel_hoe": {
-    "criteria": {
-      "has_steel_hoe": "2024-01-13 04:06:35 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/shiny_gear": {
     "criteria": {
       "diamond_helmet": "2024-01-13 04:16:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
+    "criteria": {
+      "has_cobblestone": "2024-01-13 05:55:02 -0300"
     },
     "done": true
   },

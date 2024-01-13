@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:packed_mud"
+    },
+    "I": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "III"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:adobe_alloying_furnace"
+  },
+  "show_notification": true
+}

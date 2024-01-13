@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "II",
-    "I#",
-    " #"
+    "II ",
+    "I# ",
+    " # "
   ],
   "result": {
     "item": "enhanced_minecraft:steel_axe"
