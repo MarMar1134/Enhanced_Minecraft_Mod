@@ -32,6 +32,11 @@ public class ModItems {
             "raw_steel", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Steel_ingot = Items.register(
             "steel_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Raw_silver = Items.register(
+            "raw_silver", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Silver_ingot = Items.register(
+            "silver_ingot", () -> new Item(new Item.Properties()));
+
     //Weapons, tools and armors
         //Bronze
         public static final RegistryObject<Item> Bronze_sword = Items.register(
@@ -49,7 +54,6 @@ public class ModItems {
         public static final RegistryObject<Item> Bronze_hoe = Items.register(
                 "bronze_hoe",() -> new HoeItem(
                         ModTiers.Bronze, 1, -2F,  new Item.Properties()));
-
         public static final RegistryObject<Item> Bronze_helmet= Items.register(
                 "bronze_helmet", () -> new ArmorItem(ModArmorMaterials.Bronze, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> Bronze_chestplate= Items.register(
@@ -58,13 +62,14 @@ public class ModItems {
                 "bronze_leggings", () -> new ArmorItem(ModArmorMaterials.Bronze, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         public static final RegistryObject<Item> Bronze_boots= Items.register(
                 "bronze_boots", () -> new ArmorItem(ModArmorMaterials.Bronze, ArmorItem.Type.BOOTS, new Item.Properties()));
+
         //Steel
         public static final RegistryObject<Item> Steel_sword = Items.register(
                 "steel_sword",() -> new SwordItem(
                                 ModTiers.Steel, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Steel_pickaxe = Items.register(
                 "steel_pickaxe",() -> new PickaxeItem(
-                        ModTiers.Steel, 1, -2.4F, new Item.Properties()));
+                        ModTiers.Steel, 0, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Steel_axe = Items.register(
                 "steel_axe",() -> new AxeItem(
                         ModTiers.Steel, 4, -2F,  new Item.Properties()));
@@ -74,14 +79,39 @@ public class ModItems {
         public static final RegistryObject<Item> Steel_hoe = Items.register(
                 "steel_hoe",() -> new HoeItem(
                         ModTiers.Steel, 1, -2F,  new Item.Properties()));
-    public static final RegistryObject<Item> Steel_helmet= Items.register(
+        public static final RegistryObject<Item> Steel_helmet= Items.register(
             "steel_helmet", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> Steel_chestplate= Items.register(
+        public static final RegistryObject<Item> Steel_chestplate= Items.register(
             "steel_chestplate", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final RegistryObject<Item> Steel_leggings= Items.register(
+        public static final RegistryObject<Item> Steel_leggings= Items.register(
             "steel_leggings", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final RegistryObject<Item> Steel_boots= Items.register(
+        public static final RegistryObject<Item> Steel_boots= Items.register(
             "steel_boots", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        //Silver
+        public static final RegistryObject<Item> Silver_sword = Items.register(
+                "silver_sword",() -> new SwordItem(
+                        ModTiers.Silver, 3, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Silver_pickaxe = Items.register(
+            "silver_pickaxe",() -> new PickaxeItem(
+                    ModTiers.Silver, -2, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Silver_axe = Items.register(
+            "silver_axe",() -> new SwordItem(
+                    ModTiers.Silver, 6, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Silver_shovel = Items.register(
+            "silver_shovel",() -> new ShovelItem(
+                    ModTiers.Silver, 2, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Silver_hoe = Items.register(
+            "silver_hoe",() -> new HoeItem(
+                    ModTiers.Silver, 2, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> Silver_helmet= Items.register(
+            "silver_helmet", () -> new ModArmorEffects(ModArmorMaterials.Silver, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> Silver_chestplate= Items.register(
+            "silver_chestplate", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> Silver_leggings= Items.register(
+            "silver_leggings", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> Silver_boots= Items.register(
+            "silver_boots", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     //Food
         //Fruit

@@ -5,6 +5,10 @@
     "enhanced_minecraft:bronze_pickaxe",
     "enhanced_minecraft:bronze_axe",
     "enhanced_minecraft:bronze_shovel",
-    "enhanced_minecraft:bronze_hoe"
+    "enhanced_minecraft:bronze_hoe",
+    "enhanced_minecraft:bronze_helmet",
+    "enhanced_minecraft:bronze_chestplate",
+    "enhanced_minecraft:bronze_leggings",
+    "enhanced_minecraft:bronze_boots"
   ]
 }

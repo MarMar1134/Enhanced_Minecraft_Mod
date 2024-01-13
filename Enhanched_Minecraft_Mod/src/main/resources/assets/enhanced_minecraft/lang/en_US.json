@@ -8,19 +8,26 @@
   "block.enhanced_minecraft.sulfur_ore": "Sulfur Ore",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
   "block.enhanced_minecraft.nether_sulfur_ore": "Nether Sulfur Ore",
+
   "block.enhanced_minecraft.tin_ore": "Tin Ore",
   "block.enhanced_minecraft.deepslate_tin_ore": "Deepslate Tin Ore",
 
   "block.enhanced_minecraft.adobe_alloying_furnace": "Adobe Alloy Furnace",
 
   "item.enhanced_minecraft.sulfur": "Sulfur",
+
   "item.enhanced_minecraft.raw_tin": "Raw Tin",
   "item.enhanced_minecraft.tin_ingot": "Tin Ingot",
-  "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
+
   "item.enhanced_minecraft.raw_bronze": "Raw Bronze",
+  "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
   "item.enhanced_minecraft.bronze_nuggets": "Bronze Nuggets",
+
   "item.enhanced_minecraft.raw_steel": "Raw Steel",
   "item.enhanced_minecraft.steel_ingot": "Steel Ingot",
+
+  "item.enhanced_minecraft.raw_silver": "Raw Silver",
+  "irem.enhanced_minecraft.silver_ingot": "Silver Ingot",
 
   "item.enhanced_minecraft.bronze_sword": "Bronze Sword",
   "item.enhanced_minecraft.bronze_pickaxe": "Bronze Pickaxe",
@@ -43,6 +50,17 @@
   "item.enhanced_minecraft.steel_chestplate": "Steel Chestplate",
   "item.enhanced_minecraft.steel_leggings": "Steel Leggings",
   "item.enhanced_minecraft.steel_boots": "Steel Boots",
+
+  "item.enhanced_minecraft.silver_sword": "Silver Sword",
+  "item.enhanced_minecraft.silver_pickaxe": "Silver Pickaxe",
+  "item.enhanced_minecraft.silver_axe": "Silver Axe",
+  "item.enhanced_minecraft.silver_shovel": "Silver Shovel",
+  "item.enhanced_minecraft.silver_hoe": "Silver Hoe",
+
+  "item.enhanced_minecraft.silver_helmet": "Silver Helmet",
+  "item.enhanced_minecraft.silver_chestplate": "Silver Chestplate",
+  "item.enhanced_minecraft.silver_leggings": "Silver Leggings",
+  "item.enhanced_minecraft.silver_boots": "Silver Boots",
 
   "item.enhanced_minecraft.orange_sapling": "Orange Sapling",
   "item.enhanced_minecraft.orange": "Orange",

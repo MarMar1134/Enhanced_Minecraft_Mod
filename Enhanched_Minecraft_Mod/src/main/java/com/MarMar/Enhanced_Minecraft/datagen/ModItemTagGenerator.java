@@ -23,12 +23,21 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.Bronze_tag).add(ModItems.Bronze_ingot.get())
                 .add(ModItems.Bronze_sword.get()).add(ModItems.Bronze_pickaxe.get())
                 .add(ModItems.Bronze_axe.get()).add(ModItems.Bronze_shovel.get())
-                .add(ModItems.Bronze_hoe.get());
+                .add(ModItems.Bronze_hoe.get())
+                .add(ModItems.Bronze_helmet.get()).add(ModItems.Bronze_chestplate.get())
+                .add(ModItems.Bronze_leggings.get()).add(ModItems.Bronze_boots.get());
 
         this.tag(ModTags.Items.Steel_tag).add(ModItems.Steel_ingot.get())
                 .add(ModItems.Steel_sword.get()).add(ModItems.Steel_pickaxe.get())
                 .add(ModItems.Steel_axe.get()).add(ModItems.Steel_shovel.get())
-                .add(ModItems.Steel_hoe.get());
+                .add(ModItems.Steel_hoe.get()).add(ModItems.Steel_helmet.get()).add(ModItems.Steel_chestplate.get())
+                .add(ModItems.Steel_leggings.get()).add(ModItems.Steel_boots.get());
+
+        this.tag(ModTags.Items.Silver_tag).add(ModItems.Silver_ingot.get())
+                .add(ModItems.Silver_sword.get()).add(ModItems.Silver_pickaxe.get())
+                .add(ModItems.Silver_axe.get()).add(ModItems.Silver_shovel.get())
+                .add(ModItems.Silver_hoe.get()).add(ModItems.Silver_helmet.get()).add(ModItems.Silver_chestplate.get())
+                .add(ModItems.Silver_leggings.get()).add(ModItems.Silver_boots.get());
 
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.Bronze_helmet.get())
@@ -38,7 +47,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Steel_helmet.get())
                 .add(ModItems.Steel_chestplate.get())
                 .add(ModItems.Steel_leggings.get())
-                .add(ModItems.Steel_boots.get());
+                .add(ModItems.Steel_boots.get())
+                .add(ModItems.Silver_helmet.get())
+                .add(ModItems.Silver_chestplate.get())
+                .add(ModItems.Silver_leggings.get())
+                .add(ModItems.Silver_boots.get())
+        ;
     }
 
 }

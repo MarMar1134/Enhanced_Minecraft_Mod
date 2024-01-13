@@ -29,6 +29,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> Steel_smeltables= List.of(ModItems.Raw_steel.get(), ModItems.Steel_axe.get(),
             ModItems.Steel_hoe.get(), ModItems.Steel_pickaxe.get(), ModItems.Steel_shovel.get(),
             ModItems.Steel_sword.get());
+    public static final List<ItemLike> Silver_smeltables= List.of(ModItems.Raw_silver.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -48,6 +49,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 3f, 100, "bronze_nuggets");
         oreBlasting(consumer, Bronze_nuggets_smeltables, RecipeCategory.MISC, ModItems.Bronze_nuggets.get(),
                 3f, 200, "bronze_nuggets");
+        oreSmelting(consumer, Silver_smeltables, RecipeCategory.MISC, ModItems.Silver_ingot.get(),
+                3f, 100, "silver_ingot");
+        oreBlasting(consumer, Silver_smeltables, RecipeCategory.MISC, ModItems.Silver_ingot.get(),
+                3f, 200, "silver_ingot");
 
 
         //Block recipes
@@ -59,6 +64,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', Blocks.COBBLESTONE)
                 .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
                 .save(consumer);
+
         //Bronze recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Bronze_nuggets.get(), 9)
                 .requires(ModItems.Bronze_ingot.get()).unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
@@ -111,15 +117,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Items.STICK)
                 .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
                 .save(consumer);
-        //Steel recipes
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Raw_steel.get())
-                .pattern(" #I")
+            //Bronze armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Bronze_helmet.get())
+                .pattern("###")
+                .pattern("# #")
                 .pattern("   ")
-                .pattern("   ")
-                .define('I', Items.RAW_IRON)
-                .define('#', Items.COAL)
-                .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
+                .define('#', ModItems.Bronze_ingot.get())
+                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Bronze_chestplate.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.Bronze_ingot.get())
+                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Bronze_leggings.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.Bronze_ingot.get())
+                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Bronze_boots.get())
+                .pattern("   ")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.Bronze_ingot.get())
+                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
+                .save(consumer);
+
+        //Steel recipes
             //Steel tools
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Steel_sword.get())
                 .pattern(" I ")
@@ -161,6 +189,108 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Items.STICK)
                 .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
                 .save(consumer);
+            //Steel armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Steel_helmet.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("   ")
+                .define('#', ModItems.Steel_ingot.get())
+                .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Steel_chestplate.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.Steel_ingot.get())
+                .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Steel_leggings.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.Steel_ingot.get())
+                .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Steel_boots.get())
+                .pattern("   ")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.Steel_ingot.get())
+                .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
+                .save(consumer);
+
+        //Silver recipes
+            //Silver tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Silver_sword.get())
+                .pattern(" I ")
+                .pattern(" I ")
+                .pattern(" # ")
+                .define('I', ModItems.Silver_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Silver_pickaxe.get())
+                .pattern("III")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('I', ModItems.Silver_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Silver_axe.get())
+                .pattern("II ")
+                .pattern("I# ")
+                .pattern(" # ")
+                .define('I', ModItems.Silver_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Silver_shovel.get())
+                .pattern(" I ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('I', ModItems.Silver_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Silver_hoe.get())
+                .pattern("II ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('I', ModItems.Silver_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+            //Silver armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Silver_helmet.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("   ")
+                .define('#', ModItems.Silver_ingot.get())
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Silver_chestplate.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.Silver_ingot.get())
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Silver_leggings.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.Silver_ingot.get())
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.Silver_boots.get())
+                .pattern("   ")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.Silver_ingot.get())
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+
         //Food recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.Rice_bowl.get())
                 .pattern(" #I")

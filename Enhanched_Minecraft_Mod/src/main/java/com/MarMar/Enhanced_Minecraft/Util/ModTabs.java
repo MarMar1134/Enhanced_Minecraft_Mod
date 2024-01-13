@@ -52,12 +52,14 @@ public class ModTabs {
                         output.accept((ModItems.Raw_tin.get()));
                         output.accept(ModItems.Raw_bronze.get());
                         output.accept(ModItems.Raw_steel.get());
+                        output.accept(ModItems.Raw_silver.get());
                     }).build()
     );
     public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
             "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_pickaxe.get()))
                     .title((Component.translatable("creativetab.tools")))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Bronze
                         output.accept(ModItems.Bronze_sword.get());
                         output.accept(ModItems.Bronze_pickaxe.get());
                         output.accept(ModItems.Bronze_axe.get());
@@ -68,6 +70,7 @@ public class ModTabs {
                         output.accept(ModItems.Bronze_leggings.get());
                         output.accept(ModItems.Bronze_boots.get());
 
+                        //Steel
                         output.accept(ModItems.Steel_sword.get());
                         output.accept(ModItems.Steel_pickaxe.get());
                         output.accept(ModItems.Steel_axe.get());
@@ -77,6 +80,17 @@ public class ModTabs {
                         output.accept(ModItems.Steel_chestplate.get());
                         output.accept(ModItems.Steel_leggings.get());
                         output.accept(ModItems.Steel_boots.get());
+
+                        //Silver
+                        output.accept(ModItems.Silver_sword.get());
+                        output.accept(ModItems.Silver_pickaxe.get());
+                        output.accept(ModItems.Silver_axe.get());
+                        output.accept(ModItems.Silver_shovel.get());
+                        output.accept(ModItems.Silver_hoe.get());
+                        output.accept(ModItems.Silver_helmet.get());
+                        output.accept(ModItems.Silver_chestplate.get());
+                        output.accept(ModItems.Silver_leggings.get());
+                        output.accept(ModItems.Silver_boots.get());
                     }).build()
     );
     public static final RegistryObject<CreativeModeTab> utility = Tabs.register(
@@ -87,6 +101,7 @@ public class ModTabs {
                         output.accept((ModItems.Bronze_ingot.get()));
                         output.accept(ModItems.Bronze_nuggets.get());
                         output.accept(ModItems.Steel_ingot.get());
+                        output.accept(ModItems.Silver_ingot.get());
                     }).build()
     );
     public static void Register(IEventBus eventBus){

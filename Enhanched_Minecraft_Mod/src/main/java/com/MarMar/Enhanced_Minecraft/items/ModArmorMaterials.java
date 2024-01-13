@@ -15,7 +15,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
             ModItems.Bronze_ingot.get())),
 
     Steel("steel", 18, new int[]{2,7,5,3}, 16, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.05f, () -> Ingredient.of(
-            ModItems.Steel_ingot.get()));
+            ModItems.Steel_ingot.get())),
+    Silver("silver", 9, new int[]{2,6,3,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
+            ModItems.Silver_ingot.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

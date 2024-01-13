@@ -1,4 +1,5 @@
-// 1.20.1	2024-01-11T21:57:15.0719877	Tags for minecraft:item mod id enhanced_minecraft
-f34a26239bfe9c37710955e0d9cc7395337e739b data/enhanced_minecraft/tags/items/bronze.json
-93871a50408c5042b10506d1da345b100e3b0584 data/enhanced_minecraft/tags/items/steel.json
-9398de60662b7681e95fae389879f8cdf167cc98 data/minecraft/tags/items/trimmable_armor.json
+// 1.20.1	2024-01-13T16:56:20.7753158	Tags for minecraft:item mod id enhanced_minecraft
+78aecc5de5e453561e7d91e780837115ce3e2462 data/enhanced_minecraft/tags/items/bronze.json
+aaa2d40d9cb6a5b2eb3241097c2c8b9ef72c9c16 data/enhanced_minecraft/tags/items/silver.json
+bd5e44c85310e484022d5daac41dd34e6116e330 data/enhanced_minecraft/tags/items/steel.json
+3cfcbe897d0c5953d2665413f77a3043f0bd43dc data/minecraft/tags/items/trimmable_armor.json

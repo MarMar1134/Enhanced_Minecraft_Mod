@@ -85,41 +85,59 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 //        simpleItem(ModItems.Banana);
-                simpleItem(ModItems.Green_apple);
-                simpleItem(ModItems.Lemon);
-                simpleItem(ModItems.Orange);
-                simpleItem(ModItems.Rice);
-                simpleItem(ModItems.Rice_bowl);
-                simpleItem(ModItems.Sulfur);
-                simpleItem(ModItems.Raw_tin);
-                simpleItem(ModItems.Tin_ingot);
-                simpleItem(ModItems.Bronze_ingot);
-                simpleItem(ModItems.Bronze_nuggets);
-                simpleItem(ModItems.Raw_steel);
-                simpleItem(ModItems.Steel_ingot);
+        simpleItem(ModItems.Green_apple);
+        simpleItem(ModItems.Lemon);
+        simpleItem(ModItems.Orange);
+        simpleItem(ModItems.Rice);
+        simpleItem(ModItems.Rice_bowl);
 
-                HandheldItem(ModItems.Bronze_sword);
-                HandheldItem(ModItems.Bronze_pickaxe);
-                HandheldItem(ModItems.Bronze_axe);
-                HandheldItem(ModItems.Bronze_shovel);
-                HandheldItem(ModItems.Bronze_hoe);
+        simpleItem(ModItems.Sulfur);
 
-                simpleItem(ModItems.Bronze_helmet);
-                simpleItem(ModItems.Bronze_chestplate);
-                simpleItem(ModItems.Bronze_leggings);
-                simpleItem(ModItems.Bronze_boots);
+        simpleItem(ModItems.Raw_tin);
+        simpleItem(ModItems.Tin_ingot);
 
-                HandheldItem(ModItems.Steel_sword);
-                HandheldItem(ModItems.Steel_pickaxe);
-                HandheldItem(ModItems.Steel_axe);
-                HandheldItem(ModItems.Steel_shovel);
-                HandheldItem(ModItems.Steel_hoe);
+        simpleItem(ModItems.Bronze_ingot);
+        simpleItem(ModItems.Bronze_nuggets);
 
-                simpleItem(ModItems.Steel_helmet);
-                simpleItem(ModItems.Steel_chestplate);
-                simpleItem(ModItems.Steel_leggings);
-                simpleItem(ModItems.Steel_boots);
-    }
+        simpleItem(ModItems.Raw_steel);
+        simpleItem(ModItems.Steel_ingot);
+
+        simpleItem(ModItems.Raw_silver);
+        simpleItem(ModItems.Silver_ingot);
+
+        HandheldItem(ModItems.Bronze_sword);
+        HandheldItem(ModItems.Bronze_pickaxe);
+        HandheldItem(ModItems.Bronze_axe);
+        HandheldItem(ModItems.Bronze_shovel);
+        HandheldItem(ModItems.Bronze_hoe);
+
+        simpleItem(ModItems.Bronze_helmet);
+        simpleItem(ModItems.Bronze_chestplate);
+        simpleItem(ModItems.Bronze_leggings);
+        simpleItem(ModItems.Bronze_boots);
+
+        HandheldItem(ModItems.Steel_sword);
+        HandheldItem(ModItems.Steel_pickaxe);
+        HandheldItem(ModItems.Steel_axe);
+        HandheldItem(ModItems.Steel_shovel);
+        HandheldItem(ModItems.Steel_hoe);
+
+        simpleItem(ModItems.Steel_helmet);
+        simpleItem(ModItems.Steel_chestplate);
+        simpleItem(ModItems.Steel_leggings);
+        simpleItem(ModItems.Steel_boots);
+
+        HandheldItem(ModItems.Silver_sword);
+        HandheldItem(ModItems.Silver_pickaxe);
+        HandheldItem(ModItems.Silver_axe);
+        HandheldItem(ModItems.Silver_shovel);
+        HandheldItem(ModItems.Silver_hoe);
+
+        simpleItem(ModItems.Silver_helmet);
+        simpleItem(ModItems.Silver_chestplate);
+        simpleItem(ModItems.Silver_leggings);
+        simpleItem(ModItems.Silver_boots);
+        }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
