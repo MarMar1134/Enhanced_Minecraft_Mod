@@ -8,6 +8,7 @@
       "item": "minecraft:coal"
     }
   ],
+  "experience": 0.2,
   "output": {
     "item": "enhanced_minecraft:raw_steel"
   }

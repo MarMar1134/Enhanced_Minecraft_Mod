@@ -26,9 +26,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> Bronze_nuggets_smeltables= List.of(ModItems.Bronze_axe.get(),
             ModItems.Bronze_hoe.get(), ModItems.Bronze_pickaxe.get(), ModItems.Bronze_shovel.get(),
             ModItems.Bronze_sword.get());
-    public static final List<ItemLike> Steel_smeltables= List.of(ModItems.Raw_steel.get(), ModItems.Steel_axe.get(),
-            ModItems.Steel_hoe.get(), ModItems.Steel_pickaxe.get(), ModItems.Steel_shovel.get(),
-            ModItems.Steel_sword.get());
+    public static final List<ItemLike> Steel_smeltables= List.of(ModItems.Raw_steel.get());
     public static final List<ItemLike> Silver_smeltables= List.of(ModItems.Raw_silver.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -38,21 +36,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         //Smelting Recipes
         oreSmelting(consumer, Tin_smeltables, RecipeCategory.MISC, ModItems.Tin_ingot.get(),
-                5f, 100, "tin_ingot" );
+                2f, 100, "tin_ingot" );
         oreBlasting(consumer, Tin_smeltables, RecipeCategory.MISC, ModItems.Tin_ingot.get(),
-                5f, 200, "tin_ingot" );
+                2f, 200, "tin_ingot" );
         oreSmelting(consumer, Bronze_smeltables, RecipeCategory.MISC, ModItems.Bronze_ingot.get(),
-                6f, 100, "bronze_ingot" );
+                2f, 100, "bronze_ingot" );
         oreBlasting(consumer, Bronze_smeltables, RecipeCategory.MISC, ModItems.Bronze_ingot.get(),
-                6f, 200, "bronze_ingot" );
+                2f, 200, "bronze_ingot" );
         oreSmelting(consumer, Bronze_nuggets_smeltables, RecipeCategory.MISC, ModItems.Bronze_nuggets.get(),
-                3f, 100, "bronze_nuggets");
+                0.5f, 100, "bronze_nuggets");
         oreBlasting(consumer, Bronze_nuggets_smeltables, RecipeCategory.MISC, ModItems.Bronze_nuggets.get(),
-                3f, 200, "bronze_nuggets");
+                0.5f, 200, "bronze_nuggets");
+        oreSmelting(consumer, Steel_smeltables, RecipeCategory.MISC, ModItems.Steel_ingot.get(),
+                2f, 100, "silver_ingot");
+        oreBlasting(consumer, Steel_smeltables, RecipeCategory.MISC, ModItems.Steel_ingot.get(),
+                2f, 200, "silver_ingot");
         oreSmelting(consumer, Silver_smeltables, RecipeCategory.MISC, ModItems.Silver_ingot.get(),
-                3f, 100, "silver_ingot");
+                2f, 100, "silver_ingot");
         oreBlasting(consumer, Silver_smeltables, RecipeCategory.MISC, ModItems.Silver_ingot.get(),
-                3f, 200, "silver_ingot");
+                2f, 200, "silver_ingot");
 
 
         //Block recipes

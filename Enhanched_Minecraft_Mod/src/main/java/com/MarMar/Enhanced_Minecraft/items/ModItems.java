@@ -44,7 +44,7 @@ public class ModItems {
                         ModTiers.Bronze, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Bronze_pickaxe = Items.register(
                             "bronze_pickaxe",() -> new PickaxeItem(
-                                    ModTiers.Bronze, 1, -2.4F,  new Item.Properties()));
+                                    ModTiers.Bronze, 1, -2.8F,  new Item.Properties()));
         public static final RegistryObject<Item> Bronze_axe = Items.register(
                 "bronze_axe",() -> new AxeItem(
                         ModTiers.Bronze, 6, -2F,  new Item.Properties()));
@@ -69,7 +69,7 @@ public class ModItems {
                                 ModTiers.Steel, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Steel_pickaxe = Items.register(
                 "steel_pickaxe",() -> new PickaxeItem(
-                        ModTiers.Steel, 0, -2.4F, new Item.Properties()));
+                        ModTiers.Steel, 0, -2.8F, new Item.Properties()));
         public static final RegistryObject<Item> Steel_axe = Items.register(
                 "steel_axe",() -> new AxeItem(
                         ModTiers.Steel, 4, -2F,  new Item.Properties()));
@@ -94,7 +94,7 @@ public class ModItems {
                         ModTiers.Silver, 3, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_pickaxe = Items.register(
             "silver_pickaxe",() -> new PickaxeItem(
-                    ModTiers.Silver, -2, -2.4F, new Item.Properties()));
+                    ModTiers.Silver, -2, -2.8F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_axe = Items.register(
             "silver_axe",() -> new SwordItem(
                     ModTiers.Silver, 6, -2.4F, new Item.Properties()));

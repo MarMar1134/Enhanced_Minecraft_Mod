@@ -24,7 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.Nether_sulfur_ore);
 
         simpleBlockWithItem(ModBlocks.Adobe_alloying_furnace.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace")));
+                new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace_texture")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

@@ -96,6 +96,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Raw_tin);
         simpleItem(ModItems.Tin_ingot);
 
+        simpleItem(ModItems.Raw_bronze);
         simpleItem(ModItems.Bronze_ingot);
         simpleItem(ModItems.Bronze_nuggets);
 

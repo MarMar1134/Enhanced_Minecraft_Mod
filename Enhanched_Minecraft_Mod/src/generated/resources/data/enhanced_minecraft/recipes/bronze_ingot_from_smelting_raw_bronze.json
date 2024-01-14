@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 100,
-  "experience": 6.0,
+  "experience": 2.0,
   "group": "bronze_ingot",
   "ingredient": {
     "item": "enhanced_minecraft:raw_bronze"

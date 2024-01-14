@@ -2,12 +2,13 @@
   "type": "enhanced_minecraft:ore_alloying",
   "ingredients": [
     {
-      "item": "enhanced_minecraft:raw_copper"
+      "item": "minecraft:raw_copper"
     },
     {
-      "item": "minecraft:raw_tin"
+      "item": "enhanced_minecraft:raw_tin"
     }
   ],
+  "experience": 0.2,
   "output": {
     "item": "enhanced_minecraft:raw_bronze"
   }

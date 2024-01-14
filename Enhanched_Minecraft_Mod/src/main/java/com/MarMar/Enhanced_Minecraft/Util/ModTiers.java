@@ -7,6 +7,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.TierSortingRegistry;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public class ModTiers {
     );
     public static final Tier Silver = TierSortingRegistry.registerTier(
             new ForgeTier(1, 64, 13F, 2f, 21,
-                    ModTags.Blocks.NEEDS_SILVER_TOOL, () -> Ingredient.of(ModItems.Silver_ingot.get())),
+                    Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.of(ModItems.Silver_ingot.get())),
             new ResourceLocation(Enhanced_Minecraft.MOD_ID, "silver_ingot"), List.of(Tiers.GOLD),
             List.of(Tiers.IRON)
     );

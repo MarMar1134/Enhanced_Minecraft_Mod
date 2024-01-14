@@ -8,10 +8,8 @@ import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.Slot;
 
 public class AdobeAlloyingFurnaceScreen extends AbstractContainerScreen<AdobeAlloyingFurnaceMenu> {
-
     private static final ResourceLocation Texture =
             new ResourceLocation(Enhanced_Minecraft.MOD_ID, "textures/gui/adobe_alloying_furnace_gui.png");
     public AdobeAlloyingFurnaceScreen(AdobeAlloyingFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
@@ -21,8 +19,10 @@ public class AdobeAlloyingFurnaceScreen extends AbstractContainerScreen<AdobeAll
     @Override
     protected void init() {
         super.init();
-        this.inventoryLabelY = 500;
-        this.titleLabelY = 500;
+        this.inventoryLabelY = 74;
+
+        this.titleLabelX = 40;
+        this.titleLabelY = 5;
     }
 
     @Override
@@ -36,11 +36,18 @@ public class AdobeAlloyingFurnaceScreen extends AbstractContainerScreen<AdobeAll
         guiGraphics.blit(Texture, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
+        renderFire(guiGraphics, x, y);
     }
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(Texture, x + 80, y + 41, 176, 16, menu.getScaledProgress(), 16);
+            guiGraphics.blit(Texture, x + 80, y + 35, 176, 14, menu.getScaledProgress(), 16);
+        }
+    }
+
+    private void renderFire(GuiGraphics guiGraphics, int x, int y){
+        if(menu.isBurning()){
+            guiGraphics.blit(Texture, x + 57, y + 37, 176, 0, 13, menu.getFireDecrease());
         }
     }
 

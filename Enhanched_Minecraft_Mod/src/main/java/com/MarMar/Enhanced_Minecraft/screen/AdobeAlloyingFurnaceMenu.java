@@ -19,7 +19,7 @@ public class AdobeAlloyingFurnaceMenu extends AbstractContainerMenu {
 
     public AdobeAlloyingFurnaceMenu(int containerID, Inventory inv, FriendlyByteBuf extraData){
         this(containerID, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()),
-                new SimpleContainerData(4));
+                new SimpleContainerData(5));
     }
     public AdobeAlloyingFurnaceMenu(int containerID, Inventory inv, BlockEntity entity, ContainerData data){
         super(ModMenuTypes.adobe_alloying_furnace_menu.get(), containerID);
@@ -31,10 +31,10 @@ public class AdobeAlloyingFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 37, 16));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 73, 16));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 55, 52));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 111, 30));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 38, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 74, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 56, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
         });
 
         addDataSlots(data);
@@ -42,13 +42,24 @@ public class AdobeAlloyingFurnaceMenu extends AbstractContainerMenu {
     public boolean isCrafting() {
         return data.get(0) > 0;
     }
+    public boolean isBurning(){
+        return data.get(2) > 0;
+    }
 
     public int getScaledProgress() {
         int progress = this.data.get(0);
-        int maxProgress = this.data.get(1);  // Max Progress
+        int maxProgress = this.data.get(4);  // Max Progress
         int progressArrowSize = 23; // This is the height in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+
+    public int getFireDecrease(){
+        int burnTime = this.data.get(2);
+        int maxBurnTime = this.data.get(3);
+        int fireSize = 13;
+
+        return maxBurnTime != 0 && burnTime != 0 ? fireSize - maxBurnTime / burnTime : 0;
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons

@@ -1,5 +1,6 @@
 {
-  "creativetab.tools": "Armors and Tools",
+  "creativetab.weapons": "Combat",
+  "creativetab.tools": "Tools",
   "creativetab.minerals": "Ores and Minerals",
   "creativetab.utility": "Utility",
   "creativetab.fruits": "Fruits and Vegetables",
@@ -27,7 +28,7 @@
   "item.enhanced_minecraft.steel_ingot": "Steel Ingot",
 
   "item.enhanced_minecraft.raw_silver": "Raw Silver",
-  "irem.enhanced_minecraft.silver_ingot": "Silver Ingot",
+  "item.enhanced_minecraft.silver_ingot": "Silver Ingot",
 
   "item.enhanced_minecraft.bronze_sword": "Bronze Sword",
   "item.enhanced_minecraft.bronze_pickaxe": "Bronze Pickaxe",
