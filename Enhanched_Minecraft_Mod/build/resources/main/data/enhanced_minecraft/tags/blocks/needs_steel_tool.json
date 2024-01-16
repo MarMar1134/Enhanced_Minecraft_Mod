@@ -26,6 +26,9 @@
     "minecraft:cracked_deepslate_tiles",
     "minecraft:polished_deepslate_slab",
     "minecraft:polished_deepslate_stairs",
-    "minecraft:polished_deepslate_wall"
+    "minecraft:polished_deepslate_wall",
+    "enhanced_minecraft:deepslate_tin_ore",
+    "enhanced_minecraft:deepslate_sulfur_ore",
+    "enhanced_minecraft:deepslate_silver_ore"
   ]
 }

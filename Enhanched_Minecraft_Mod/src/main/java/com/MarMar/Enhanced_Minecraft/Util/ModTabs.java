@@ -52,6 +52,8 @@ public class ModTabs {
                         output.accept((ModItems.Raw_tin.get()));
                         output.accept(ModItems.Raw_bronze.get());
                         output.accept(ModItems.Raw_steel.get());
+                        output.accept(ModBlocks.Silver_ore.get());
+                        output.accept(ModBlocks.Deepslate_silver_ore.get());
                         output.accept(ModItems.Raw_silver.get());
                     }).build()
     );

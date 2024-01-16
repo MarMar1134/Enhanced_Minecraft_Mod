@@ -24,6 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     }
     @Override
     protected void generate() {
+        //ores
         this.add(ModBlocks.Tin_ore.get(),
                 block -> createTinOreDrops(ModBlocks.Tin_ore.get(), ModItems.Raw_tin.get()));
         this.add(ModBlocks.Deepslate_tin_ore.get(),
@@ -36,6 +37,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.Nether_sulfur_ore.get(),
                 block -> createSulfurOreDrops(ModBlocks.Nether_sulfur_ore.get()));
 
+        this.add(ModBlocks.Silver_ore.get(),
+                block -> createSilverOreDrops(ModBlocks.Silver_ore.get()));
+        this.add(ModBlocks.Deepslate_silver_ore.get(),
+                block -> createSilverOreDrops(ModBlocks.Deepslate_silver_ore.get()));
+
+        //Entity blocks
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
     }
 
@@ -52,6 +59,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Sulfur.get())
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(5.0F, 8.0F)))
                         .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+    protected LootTable.Builder createSilverOreDrops(Block pBlock) {
+        return createSilkTouchDispatchTable(pBlock, (LootPoolEntryContainer.Builder)
+                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Raw_silver.get())
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,1))))
+                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
     }
     @Override
     protected Iterable<Block> getKnownBlocks() {

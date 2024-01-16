@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "enhanced_minecraft:block/adobe_alloying_furnace_texture"
+      "model": "enhanced_minecraft:block/adobe_alloying_furnace"
     }
   }
 }

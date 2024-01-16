@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Enhanched_Minecraft_Mod:jar">
+    <output-path>$PROJECT_DIR$/../../Descargas</output-path>
+    <root id="archive" name="Enhanched_Minecraft_Mod.jar">
+      <element id="module-output" name="Enhanched_Minecraft_Mod.main" />
+    </root>
+  </artifact>
+</component>

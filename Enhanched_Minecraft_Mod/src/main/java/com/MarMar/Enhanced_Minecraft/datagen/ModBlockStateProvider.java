@@ -17,14 +17,18 @@ public class ModBlockStateProvider extends BlockStateProvider{
 
     @Override
     protected void registerStatesAndModels() {
+        //ores
         blockWithItem(ModBlocks.Deepslate_tin_ore);
         blockWithItem(ModBlocks.Tin_ore);
         blockWithItem(ModBlocks.Deepslate_sulfur_ore);
         blockWithItem(ModBlocks.Sulfur_ore);
         blockWithItem(ModBlocks.Nether_sulfur_ore);
+        blockWithItem(ModBlocks.Silver_ore);
+        blockWithItem(ModBlocks.Deepslate_silver_ore);
 
+        //Entity blocks
         simpleBlockWithItem(ModBlocks.Adobe_alloying_furnace.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace_texture")));
+                new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

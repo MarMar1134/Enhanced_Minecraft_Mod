@@ -37,6 +37,12 @@ public class ModBlocks {
         public static final RegistryObject<Block> Nether_sulfur_ore = RegisterBlock("nether_sulfur_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE)
                     .sound(SoundType.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(7,12)));
+        public static final RegistryObject<Block> Silver_ore = RegisterBlock("silver_ore",
+                () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GOLD_ORE)
+                        .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> Deepslate_silver_ore = RegisterBlock("deepslate_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_GOLD_ORE)
+                    .requiresCorrectToolForDrops()));
 
         //Entity blocks
     public static final RegistryObject<Block> Adobe_alloying_furnace = RegisterBlock("adobe_alloying_furnace",

@@ -28,7 +28,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.Nether_sulfur_ore.get(),
                     ModBlocks.Sulfur_ore.get(),
                     ModBlocks.Deepslate_tin_ore.get(),
-                    ModBlocks.Tin_ore.get());
+                    ModBlocks.Tin_ore.get(),
+                        ModBlocks.Silver_ore.get(),
+                        ModBlocks.Deepslate_silver_ore.get()
+                );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZE_TOOL)
                 .add(Blocks.IRON_ORE,
@@ -37,7 +40,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         Blocks.IRON_DOOR,
                         Blocks.IRON_TRAPDOOR,
                         Blocks.RAW_IRON_BLOCK,
-                        Blocks.HOPPER
+                        Blocks.HOPPER,
+                        ModBlocks.Silver_ore.get()
                 );
 
         this.tag(ModTags.Blocks.NEEDS_STEEL_TOOL)
@@ -67,7 +71,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         Blocks.CRACKED_DEEPSLATE_TILES,
                         Blocks.POLISHED_DEEPSLATE_SLAB,
                         Blocks.POLISHED_DEEPSLATE_STAIRS,
-                        Blocks.POLISHED_DEEPSLATE_WALL
+                        Blocks.POLISHED_DEEPSLATE_WALL,
+                        ModBlocks.Deepslate_tin_ore.get(),
+                        ModBlocks.Deepslate_sulfur_ore.get(),
+                        ModBlocks.Deepslate_silver_ore.get()
                 );
     }
 }

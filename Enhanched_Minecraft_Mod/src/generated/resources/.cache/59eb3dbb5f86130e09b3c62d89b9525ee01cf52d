@@ -1,7 +1,9 @@
-// 1.20.1	2024-01-13T01:29:47.8786845	Loot Tables
+// 1.20.1	2024-01-16T03:52:21.8777979	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
+992c1abb80132afe5b1d2fb819c1b456aa496fd7 data/enhanced_minecraft/loot_tables/blocks/deepslate_silver_ore.json
 a05ab8ee60c7fe8ca70ea0de808ddf75b618eb77 data/enhanced_minecraft/loot_tables/blocks/deepslate_sulfur_ore.json
 be88afeb2be17c3c996bff15e846017d50ce5de8 data/enhanced_minecraft/loot_tables/blocks/deepslate_tin_ore.json
 539785742651ec324f9046d09005dc637bd4a6f8 data/enhanced_minecraft/loot_tables/blocks/nether_sulfur_ore.json
+d17633eb2609a4e96080d91a990d28249127db53 data/enhanced_minecraft/loot_tables/blocks/silver_ore.json
 733327c285f4571663054eff64f642aa769281a0 data/enhanced_minecraft/loot_tables/blocks/sulfur_ore.json
 15c44f0b5fcb79fab7a8a5a3d54a4f2955d114b3 data/enhanced_minecraft/loot_tables/blocks/tin_ore.json
