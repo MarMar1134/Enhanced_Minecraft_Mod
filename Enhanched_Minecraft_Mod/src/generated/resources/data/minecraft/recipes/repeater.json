@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "enhanced_minecraft:tin_ingot"
+    },
+    "I": {
+      "item": "minecraft:stone"
+    },
+    "W": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "III"
+  ],
+  "result": {
+    "item": "minecraft:repeater"
+  },
+  "show_notification": true
+}

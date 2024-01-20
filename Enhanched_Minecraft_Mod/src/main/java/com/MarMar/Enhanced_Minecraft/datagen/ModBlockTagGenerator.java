@@ -30,7 +30,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.Deepslate_tin_ore.get(),
                     ModBlocks.Tin_ore.get(),
                         ModBlocks.Silver_ore.get(),
-                        ModBlocks.Deepslate_silver_ore.get()
+                        ModBlocks.Deepslate_silver_ore.get(),
+                        ModBlocks.Deepslate_cobalt_ore.get()
                 );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZE_TOOL)
@@ -76,5 +77,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.Deepslate_sulfur_ore.get(),
                         ModBlocks.Deepslate_silver_ore.get()
                 );
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.Deepslate_cobalt_ore.get());
     }
 }

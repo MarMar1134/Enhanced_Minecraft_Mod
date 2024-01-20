@@ -52,6 +52,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Silver_chestplate.get())
                 .add(ModItems.Silver_leggings.get())
                 .add(ModItems.Silver_boots.get())
+                .add(ModItems.Reinforced_diamond_helmet.get())
+                .add(ModItems.Reinforced_diamond_chestplate.get())
+                .add(ModItems.Bronze_leggings.get())
+                .add(ModItems.Reinforced_diamond_boots.get())
         ;
     }
 

@@ -48,13 +48,15 @@ public class ModTabs {
                         output.accept(ModBlocks.Nether_sulfur_ore.get());
                         output.accept(ModBlocks.Tin_ore.get());
                         output.accept(ModBlocks.Deepslate_tin_ore.get());
+                        output.accept(ModBlocks.Silver_ore.get());
+                        output.accept(ModBlocks.Deepslate_silver_ore.get());
+                        output.accept(ModBlocks.Deepslate_cobalt_ore.get());
                         output.accept(ModItems.Sulfur.get());
                         output.accept((ModItems.Raw_tin.get()));
                         output.accept(ModItems.Raw_bronze.get());
                         output.accept(ModItems.Raw_steel.get());
-                        output.accept(ModBlocks.Silver_ore.get());
-                        output.accept(ModBlocks.Deepslate_silver_ore.get());
                         output.accept(ModItems.Raw_silver.get());
+                        output.accept(ModItems.Cobalt.get());
                     }).build()
     );
 
@@ -68,6 +70,7 @@ public class ModTabs {
                         output.accept(ModItems.Bronze_nuggets.get());
                         output.accept(ModItems.Steel_ingot.get());
                         output.accept(ModItems.Silver_ingot.get());
+                        output.accept(ModItems.Reinforced_diamond.get());
                     }).build()
     );
     public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
@@ -91,6 +94,12 @@ public class ModTabs {
                         output.accept(ModItems.Silver_axe.get());
                         output.accept(ModItems.Silver_shovel.get());
                         output.accept(ModItems.Silver_hoe.get());
+
+                        //Reinforced diamond
+                        output.accept(ModItems.Reinforced_diamond_pickaxe.get());
+                        output.accept(ModItems.Reinforced_diamond_axe.get());
+                        output.accept(ModItems.Reinforced_diamond_shovel.get());
+                        output.accept(ModItems.Reinforced_diamond_hoe.get());
                     }).build()
     );
 
@@ -118,6 +127,13 @@ public class ModTabs {
                         output.accept(ModItems.Silver_chestplate.get());
                         output.accept(ModItems.Silver_leggings.get());
                         output.accept(ModItems.Silver_boots.get());
+
+                        //Reinforced diamond
+                        output.accept(ModItems.Reinforced_diamond_sword.get());
+                        output.accept(ModItems.Reinforced_diamond_helmet.get());
+                        output.accept(ModItems.Reinforced_diamond_chestplate.get());
+                        output.accept(ModItems.Reinforced_diamond_leggings.get());
+                        output.accept(ModItems.Reinforced_diamond_boots.get());
                     })
                     .build()
     );

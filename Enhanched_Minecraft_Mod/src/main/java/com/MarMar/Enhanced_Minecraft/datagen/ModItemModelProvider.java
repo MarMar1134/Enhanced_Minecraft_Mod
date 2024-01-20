@@ -84,6 +84,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        //Food
 //        simpleItem(ModItems.Banana);
         simpleItem(ModItems.Green_apple);
         simpleItem(ModItems.Lemon);
@@ -91,6 +92,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Rice);
         simpleItem(ModItems.Rice_bowl);
 
+        //Ores
         simpleItem(ModItems.Sulfur);
 
         simpleItem(ModItems.Raw_tin);
@@ -106,6 +108,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Raw_silver);
         simpleItem(ModItems.Silver_ingot);
 
+        simpleItem(ModItems.Cobalt);
+
+        simpleItem(ModItems.Reinforced_diamond);
+
+        //Armors and tools
         HandheldItem(ModItems.Bronze_sword);
         HandheldItem(ModItems.Bronze_pickaxe);
         HandheldItem(ModItems.Bronze_axe);
@@ -138,6 +145,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Silver_chestplate);
         simpleItem(ModItems.Silver_leggings);
         simpleItem(ModItems.Silver_boots);
+
+        HandheldItem(ModItems.Reinforced_diamond_sword);
+        HandheldItem(ModItems.Reinforced_diamond_pickaxe);
+        HandheldItem(ModItems.Reinforced_diamond_axe);
+        HandheldItem(ModItems.Reinforced_diamond_shovel);
+        HandheldItem(ModItems.Reinforced_diamond_hoe);
+
+        simpleItem(ModItems.Reinforced_diamond_helmet);
+        simpleItem(ModItems.Reinforced_diamond_chestplate);
+        simpleItem(ModItems.Reinforced_diamond_leggings);
+        simpleItem(ModItems.Reinforced_diamond_boots);
         }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){

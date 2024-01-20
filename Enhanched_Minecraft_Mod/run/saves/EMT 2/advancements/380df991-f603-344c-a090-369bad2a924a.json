@@ -1284,12 +1284,6 @@
     },
     "done": false
   },
-  "minecraft:recipes/redstone/repeater": {
-    "criteria": {
-      "has_redstone_torch": "2024-01-13 17:51:49 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/glow_item_frame": {
     "criteria": {
       "has_glow_ink_sac": "2024-01-13 18:02:31 -0300"
@@ -1469,6 +1463,156 @@
   "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_raw_steel": {
     "criteria": {
       "has_raw_steel": "2024-01-14 13:10:56 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot_from_smelting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2024-01-16 14:51:49 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot_from_blasting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2024-01-16 14:51:49 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_leggings": {
+    "criteria": {
+      "has_steel_ingot": "2024-01-16 14:54:44 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_boots": {
+    "criteria": {
+      "has_steel_ingot": "2024-01-16 14:54:44 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_chestplate": {
+    "criteria": {
+      "has_steel_ingot": "2024-01-16 14:54:44 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_helmet": {
+    "criteria": {
+      "has_steel_ingot": "2024-01-16 14:54:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blast_furnace": {
+    "criteria": {
+      "has_the_recipe": "2024-01-16 14:55:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blast_furnace": {
+    "criteria": {
+      "has_furnace": "2024-01-16 14:55:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot_from_blasting_silver_ore": {
+    "criteria": {
+      "has_silver_ore": "2024-01-16 20:20:29 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot_from_smelting_silver_ore": {
+    "criteria": {
+      "has_silver_ore": "2024-01-16 20:20:29 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/cobalt_from_blasting_deepslate_cobalt_ore": {
+    "criteria": {
+      "has_deepslate_cobalt_ore": "2024-01-16 20:21:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/cobalt_from_smelting_deepslate_cobalt_ore": {
+    "criteria": {
+      "has_deepslate_cobalt_ore": "2024-01-16 20:21:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2024-01-16 20:24:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2024-01-16 20:24:30 -0300"
     },
     "done": true
   },

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "enhanced_minecraft:item/reinforced_diamond_sword"
+  }
+}

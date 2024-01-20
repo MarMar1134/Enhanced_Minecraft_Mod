@@ -42,6 +42,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.Deepslate_silver_ore.get(),
                 block -> createSilverOreDrops(ModBlocks.Deepslate_silver_ore.get()));
 
+        this.add(ModBlocks.Deepslate_cobalt_ore.get(),
+                block -> createCobaltOreDrops(ModBlocks.Deepslate_cobalt_ore.get()));
+
         //Entity blocks
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
     }
@@ -64,6 +67,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         return createSilkTouchDispatchTable(pBlock, (LootPoolEntryContainer.Builder)
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Raw_silver.get())
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,1))))
+                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
+    }
+
+    protected LootTable.Builder createCobaltOreDrops(Block pBlock) {
+        return createSilkTouchDispatchTable(pBlock, (LootPoolEntryContainer.Builder)
+                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Cobalt.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,3))))
                         .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
     }
     @Override

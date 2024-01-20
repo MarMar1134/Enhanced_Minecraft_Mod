@@ -9,36 +9,32 @@
   "block.enhanced_minecraft.sulfur_ore": "Sulfur Ore",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
   "block.enhanced_minecraft.nether_sulfur_ore": "Nether Sulfur Ore",
-
   "block.enhanced_minecraft.tin_ore": "Tin Ore",
   "block.enhanced_minecraft.deepslate_tin_ore": "Deepslate Tin Ore",
-
   "block.enhanced_minecraft.silver_ore": "Silver Ore",
   "block.enhanced_minecraft.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.enhanced_minecraft.deepslate_cobalt_ore": "Cobalt Ore",
 
   "block.enhanced_minecraft.adobe_alloying_furnace": "Adobe Alloy Furnace",
 
   "item.enhanced_minecraft.sulfur": "Sulfur",
-
   "item.enhanced_minecraft.raw_tin": "Raw Tin",
   "item.enhanced_minecraft.tin_ingot": "Tin Ingot",
-
   "item.enhanced_minecraft.raw_bronze": "Raw Bronze",
   "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
   "item.enhanced_minecraft.bronze_nuggets": "Bronze Nuggets",
-
   "item.enhanced_minecraft.raw_steel": "Raw Steel",
   "item.enhanced_minecraft.steel_ingot": "Steel Ingot",
-
   "item.enhanced_minecraft.raw_silver": "Raw Silver",
   "item.enhanced_minecraft.silver_ingot": "Silver Ingot",
+  "item.enhanced_minecraft.cobalt": "Cobalt",
+  "item.enhanced_minecraft.reinforced_diamond": "Reinforced Diamond",
 
   "item.enhanced_minecraft.bronze_sword": "Bronze Sword",
   "item.enhanced_minecraft.bronze_pickaxe": "Bronze Pickaxe",
   "item.enhanced_minecraft.bronze_axe": "Bronze Axe",
   "item.enhanced_minecraft.bronze_shovel": "Bronze Shovel",
   "item.enhanced_minecraft.bronze_hoe": "Bronze Hoe",
-
   "item.enhanced_minecraft.bronze_helmet": "Bronze Helmet",
   "item.enhanced_minecraft.bronze_chestplate": "Bronze Chestplate",
   "item.enhanced_minecraft.bronze_leggings": "Bronze Leggings",
@@ -49,7 +45,6 @@
   "item.enhanced_minecraft.steel_axe": "Steel Axe",
   "item.enhanced_minecraft.steel_shovel": "Steel Shovel",
   "item.enhanced_minecraft.steel_hoe": "Steel Hoe",
-
   "item.enhanced_minecraft.steel_helmet": "Steel Helmet",
   "item.enhanced_minecraft.steel_chestplate": "Steel Chestplate",
   "item.enhanced_minecraft.steel_leggings": "Steel Leggings",
@@ -60,11 +55,20 @@
   "item.enhanced_minecraft.silver_axe": "Silver Axe",
   "item.enhanced_minecraft.silver_shovel": "Silver Shovel",
   "item.enhanced_minecraft.silver_hoe": "Silver Hoe",
-
   "item.enhanced_minecraft.silver_helmet": "Silver Helmet",
   "item.enhanced_minecraft.silver_chestplate": "Silver Chestplate",
   "item.enhanced_minecraft.silver_leggings": "Silver Leggings",
   "item.enhanced_minecraft.silver_boots": "Silver Boots",
+
+  "item.enhanced_minecraft.reinforced_diamond_sword": "Reinforced Diamond Sword",
+  "item.enhanced_minecraft.reinforced_diamond_pickaxe": "Reinforced Diamond Pickaxe",
+  "item.enhanced_minecraft.reinforced_diamond_axe": "Reinforced Diamond Axe",
+  "item.enhanced_minecraft.reinforced_diamond_shovel": "Reinforced Diamond Shovel",
+  "item.enhanced_minecraft.reinforced_diamond_hoe": "Reinforced Diamond Hoe",
+  "item.enhanced_minecraft.reinforced_diamond_helmet": "Reinforced Diamond Helmet",
+  "item.enhanced_minecraft.reinforced_diamond_chestplate": "Reinforced Diamond Chestplate",
+  "item.enhanced_minecraft.reinforced_diamond_leggings": "Reinforced Diamond Leggings",
+  "item.enhanced_minecraft.reinforced_diamond_boots": "Reinforced Diamond Boots",
 
   "item.enhanced_minecraft.orange_sapling": "Orange Sapling",
   "item.enhanced_minecraft.orange": "Orange",

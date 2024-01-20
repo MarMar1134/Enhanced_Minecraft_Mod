@@ -18,7 +18,10 @@ public class ModArmorEffects extends ArmorItem {
                     .put(ModArmorMaterials.Silver, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
                             false,false, true))
                     .put(ArmorMaterials.GOLD, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
-                            false,false, true)).build();
+                            false,false, true))
+                    .put(ModArmorMaterials.Reinforced_diamond, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1,
+                            false,false, true))
+                    .build();
 
 
     public ModArmorEffects(ArmorMaterial pMaterial, Type pType, Properties pProperties) {

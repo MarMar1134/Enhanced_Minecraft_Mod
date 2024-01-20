@@ -17,6 +17,7 @@ public class ModBlockEntities {
                     .Builder.of(AdobeAlloyingFurnaceBlockEntity::new,
                     ModBlocks.Adobe_alloying_furnace.get()).build(null));
 
+
     public static void register(IEventBus eventBus){
         Block_entities.register(eventBus);
     }

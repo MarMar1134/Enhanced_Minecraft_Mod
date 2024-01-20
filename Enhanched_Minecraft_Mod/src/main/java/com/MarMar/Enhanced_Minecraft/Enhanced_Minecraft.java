@@ -7,6 +7,7 @@ import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen;
 import com.MarMar.Enhanced_Minecraft.screen.ModMenuTypes;
+import com.MarMar.Enhanced_Minecraft.screen.ReforgingTableScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -43,6 +44,7 @@ public class Enhanced_Minecraft
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event){
             MenuScreens.register(ModMenuTypes.adobe_alloying_furnace_menu.get(), AdobeAlloyingFurnaceScreen::new);
+            MenuScreens.register(ModMenuTypes.Reforging_table_menu.get(), ReforgingTableScreen::new);
         }
     }
 

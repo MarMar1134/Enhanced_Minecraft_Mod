@@ -2,6 +2,7 @@ package com.MarMar.Enhanced_Minecraft.blocks;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.blocks.custom.AdobeAlloyingFurnaceBlock;
+import com.MarMar.Enhanced_Minecraft.blocks.custom.ReforgingTableBlock;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -43,10 +44,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> Deepslate_silver_ore = RegisterBlock("deepslate_silver_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_GOLD_ORE)
                     .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> Deepslate_cobalt_ore = RegisterBlock("deepslate_cobalt_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GOLD_ORE)
+                    .requiresCorrectToolForDrops()));
 
         //Entity blocks
     public static final RegistryObject<Block> Adobe_alloying_furnace = RegisterBlock("adobe_alloying_furnace",
                 () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE).noOcclusion()));
+public static final RegistryObject<Block> Reforging_table = RegisterBlock("reforging_table",
+        () -> new ReforgingTableBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_PLANKS).noOcclusion()));
     //Block register
     private static <T extends Block> RegistryObject<T> RegisterBlock(String name, Supplier<T> block){
         RegistryObject<T> ToReturn = Blocks.register(name, block);

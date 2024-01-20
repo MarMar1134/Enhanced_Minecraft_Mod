@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "group": "silver_ingot",
+  "ingredient": {
+    "item": "enhanced_minecraft:silver_ore"
+  },
+  "result": "enhanced_minecraft:silver_ingot"
+}

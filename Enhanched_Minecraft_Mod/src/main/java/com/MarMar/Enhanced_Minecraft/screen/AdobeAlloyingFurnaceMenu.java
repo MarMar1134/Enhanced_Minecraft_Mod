@@ -31,7 +31,7 @@ public class AdobeAlloyingFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 38, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 37, 17));
             this.addSlot(new SlotItemHandler(iItemHandler, 1, 74, 17));
             this.addSlot(new SlotItemHandler(iItemHandler, 2, 56, 53));
             this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));

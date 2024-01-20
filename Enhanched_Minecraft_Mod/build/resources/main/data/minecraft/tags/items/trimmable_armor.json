@@ -11,6 +11,10 @@
     "enhanced_minecraft:silver_helmet",
     "enhanced_minecraft:silver_chestplate",
     "enhanced_minecraft:silver_leggings",
-    "enhanced_minecraft:silver_boots"
+    "enhanced_minecraft:silver_boots",
+    "enhanced_minecraft:reinforced_diamond_helmet",
+    "enhanced_minecraft:reinforced_diamond_chestplate",
+    "enhanced_minecraft:bronze_leggings",
+    "enhanced_minecraft:reinforced_diamond_boots"
   ]
 }

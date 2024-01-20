@@ -27,7 +27,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModItems.Bronze_hoe.get(), ModItems.Bronze_pickaxe.get(), ModItems.Bronze_shovel.get(),
             ModItems.Bronze_sword.get());
     public static final List<ItemLike> Steel_smeltables= List.of(ModItems.Raw_steel.get());
-    public static final List<ItemLike> Silver_smeltables= List.of(ModItems.Raw_silver.get());
+    public static final List<ItemLike> Silver_smeltables= List.of(ModItems.Raw_silver.get(), ModBlocks.Silver_ore.get(),
+            ModBlocks.Deepslate_silver_ore.get());
+    public static final List<ItemLike> Cobalt_smeltables= List.of(ModBlocks.Deepslate_cobalt_ore.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -54,6 +56,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(consumer, Silver_smeltables, RecipeCategory.MISC, ModItems.Silver_ingot.get(),
                 2f, 100, "silver_ingot");
         oreBlasting(consumer, Silver_smeltables, RecipeCategory.MISC, ModItems.Silver_ingot.get(),
+                2f, 200, "silver_ingot");
+        oreSmelting(consumer, Cobalt_smeltables, RecipeCategory.MISC, ModItems.Cobalt.get(),
+                2f, 100, "silver_ingot");
+        oreBlasting(consumer, Cobalt_smeltables, RecipeCategory.MISC, ModItems.Cobalt.get(),
                 2f, 200, "silver_ingot");
 
 
@@ -296,13 +302,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //Food recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.Rice_bowl.get())
                 .pattern(" #I")
-                .pattern("   ")
-                .pattern("   ")
                 .define('I', Items.BOWL)
                 .define('#', ModItems.Rice.get())
                 .unlockedBy(getHasName(ModItems.Rice.get()), has(ModItems.Rice.get()))
                 .save(consumer);
 
+        //New vanilla recipes
+            //Redstone
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, Items.REPEATER)
+                .pattern("W#W")
+                .pattern("III")
+                .define('W', Items.REDSTONE_TORCH)
+                .define('#', ModItems.Tin_ingot.get())
+                .define('I', Blocks.STONE)
+                .unlockedBy(getHasName(ModItems.Tin_ingot.get()), has(ModItems.Tin_ingot.get()))
+                .save(consumer);
+            //Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.NETHERITE_INGOT)
+                .pattern("###")
+                .pattern("#II")
+                .pattern("II ")
+                .define('#', Items.ANCIENT_DEBRIS)
+                .define('I', ModItems.Reinforced_diamond.get())
+                .unlockedBy(getHasName(Items.ANCIENT_DEBRIS), has(Items.ANCIENT_DEBRIS))
+                .save(consumer);
+
+            //Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.BLAST_FURNACE)
+                .pattern("III")
+                .pattern("IFI")
+                .pattern("###")
+                .define('I', ModItems.Steel_ingot.get())
+                .define('F', Blocks.FURNACE)
+                .define('#', Blocks.SMOOTH_STONE)
+                .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
+                .save(consumer);
 
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

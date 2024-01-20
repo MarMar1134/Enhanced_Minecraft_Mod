@@ -36,6 +36,11 @@ public class ModItems {
             "raw_silver", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Silver_ingot = Items.register(
             "silver_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Cobalt = Items.register(
+            "cobalt", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond = Items.register(
+            "reinforced_diamond", () -> new Item(new Item.Properties()));
+
 
     //Weapons, tools and armors
         //Bronze
@@ -112,7 +117,30 @@ public class ModItems {
             "silver_leggings", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> Silver_boots= Items.register(
             "silver_boots", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.BOOTS, new Item.Properties()));
-
+    //Reinforced Diamond
+    public static final RegistryObject<Item> Reinforced_diamond_sword = Items.register(
+            "reinforced_diamond_sword",() -> new SwordItem(
+                    ModTiers.Reinforced_diamond, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_pickaxe = Items.register(
+            "reinforced_diamond_pickaxe",() -> new PickaxeItem(
+                    ModTiers.Reinforced_diamond, -2, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_axe = Items.register(
+            "reinforced_diamond_axe",() -> new SwordItem(
+                    ModTiers.Reinforced_diamond, 6, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_shovel = Items.register(
+            "reinforced_diamond_shovel",() -> new ShovelItem(
+                    ModTiers.Reinforced_diamond, 2, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_hoe = Items.register(
+            "reinforced_diamond_hoe",() -> new HoeItem(
+                    ModTiers.Reinforced_diamond, 2, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_helmet= Items.register(
+            "reinforced_diamond_helmet", () -> new ModArmorEffects(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_chestplate= Items.register(
+            "reinforced_diamond_chestplate", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_leggings= Items.register(
+            "reinforced_diamond_leggings", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> Reinforced_diamond_boots= Items.register(
+            "reinforced_diamond_boots", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.BOOTS, new Item.Properties()));
     //Food
         //Fruit
     public static final RegistryObject<Item> Orange = Items.register(

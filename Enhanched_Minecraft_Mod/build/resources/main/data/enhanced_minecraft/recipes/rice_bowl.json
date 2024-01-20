@@ -10,9 +10,7 @@
     }
   },
   "pattern": [
-    " #I",
-    "   ",
-    "   "
+    " #I"
   ],
   "result": {
     "item": "enhanced_minecraft:rice_bowl"

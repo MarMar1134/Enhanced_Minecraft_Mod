@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_stone"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "I": {
+      "item": "enhanced_minecraft:steel_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "IFI",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:blast_furnace"
+  },
+  "show_notification": true
+}

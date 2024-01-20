@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "block/adobe_alloying_furnace_texture"
+		"0": "enhanced_minecraft:block/adobe_alloying_furnace"
 	},
 	"elements": [
 		{
