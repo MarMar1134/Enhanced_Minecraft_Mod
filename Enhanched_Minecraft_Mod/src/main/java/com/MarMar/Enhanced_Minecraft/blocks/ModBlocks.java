@@ -50,9 +50,9 @@ public class ModBlocks {
 
         //Entity blocks
     public static final RegistryObject<Block> Adobe_alloying_furnace = RegisterBlock("adobe_alloying_furnace",
-                () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE).noOcclusion()));
+                () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
 public static final RegistryObject<Block> Reforging_table = RegisterBlock("reforging_table",
-        () -> new ReforgingTableBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.OAK_PLANKS).noOcclusion()));
+        () -> new ReforgingTableBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE).noOcclusion()));
     //Block register
     private static <T extends Block> RegistryObject<T> RegisterBlock(String name, Supplier<T> block){
         RegistryObject<T> ToReturn = Blocks.register(name, block);

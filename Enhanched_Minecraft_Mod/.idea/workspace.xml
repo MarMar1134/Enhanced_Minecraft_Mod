@@ -8,26 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b6b07-0706-4107-94f1-1746f1beb859" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTags$Blocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTags$Blocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTiers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTiers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/items/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/items/ModItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_front.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_side.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DataGenerators.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModBlockStateProvider.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Enhanced_Minecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Enhanced_Minecraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/blocks/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/recipe/ModRecipes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/recipe/ModRecipes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/screen/ReforgingTableMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/screen/ReforgingTableScreen.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +37,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Enhanched_Minecraft_Mod" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Enhanched_Minecraft_Mod" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -97,6 +74,7 @@
     "Application.runClient.executor": "Run",
     "Application.runData.executor": "Run",
     "Gradle.Build Enhanched_Minecraft_Mod.executor": "Run",
+    "Gradle.D:/Repositorios github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor": "Run",
     "Gradle.Enhanched_Minecraft_Mod [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor": "Run",
     "Gradle.Enhanched_Minecraft_Mod [:prepareRunClientCompile].executor": "Run",
     "Gradle.Enhanched_Minecraft_Mod [:prepareRunDataCompile].executor": "Run",
@@ -106,11 +84,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Repositorios Github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod/src/main/java/com/MarMar/Enhanced_Minecraft/Enhanced_Minecraft.java",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "D:/Repositorios github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -122,7 +100,7 @@
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\data\enhanced_minecraft\recipes" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Enhanched_Minecraft_Mod [jar]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="Enhanched_Minecraft_Mod [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
