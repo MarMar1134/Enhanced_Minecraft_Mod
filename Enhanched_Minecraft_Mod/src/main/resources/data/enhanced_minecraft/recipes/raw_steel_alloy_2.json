@@ -1,0 +1,15 @@
+{
+  "type": "enhanced_minecraft:ore_alloying",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "experience": 0.2,
+  "output": {
+    "item": "enhanced_minecraft:raw_steel"
+  }
+}

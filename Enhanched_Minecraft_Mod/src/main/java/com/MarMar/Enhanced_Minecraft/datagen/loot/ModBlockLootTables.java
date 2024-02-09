@@ -47,6 +47,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         //Entity blocks
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
+        this.dropSelf(ModBlocks.Reforging_table.get());
     }
 
     //Loot tables

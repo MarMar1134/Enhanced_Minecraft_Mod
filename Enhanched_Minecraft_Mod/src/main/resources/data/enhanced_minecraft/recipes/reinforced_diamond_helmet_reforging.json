@@ -1,0 +1,15 @@
+{
+  "type": "enhanced_minecraft:reforging",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_helmet"
+    },
+    {
+      "item": "enhanced_minecraft:reinforced_diamond",
+      "quantity": 2
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:reinforced_diamond_helmet"
+  }
+}

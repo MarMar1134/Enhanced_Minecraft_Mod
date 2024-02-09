@@ -1,0 +1,15 @@
+{
+  "type": "enhanced_minecraft:reforging",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_chest"
+    },
+    {
+      "item": "enhanced_minecraft:reinforced_diamond",
+      "quantity": 3
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:reinforced_diamond_chest"
+  }
+}

@@ -16,6 +16,10 @@ public class ModBlockEntities {
             Block_entities.register("adobe_alloying_furnace", () -> BlockEntityType
                     .Builder.of(AdobeAlloyingFurnaceBlockEntity::new,
                     ModBlocks.Adobe_alloying_furnace.get()).build(null));
+    public static final RegistryObject<BlockEntityType<ReforgingTableBlockEntity>> Reforging_table =
+            Block_entities.register("reforging_table", () -> BlockEntityType
+                    .Builder.of(ReforgingTableBlockEntity::new,
+                            ModBlocks.Reforging_table.get()).build(null));
 
 
     public static void register(IEventBus eventBus){

@@ -1,0 +1,14 @@
+{
+  "type": "enhanced_minecraft:reforging",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_axe"
+    },
+    {
+      "item": "enhanced_minecraft:reinforced_diamond"
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:reinforced_diamond_axe"
+  }
+}

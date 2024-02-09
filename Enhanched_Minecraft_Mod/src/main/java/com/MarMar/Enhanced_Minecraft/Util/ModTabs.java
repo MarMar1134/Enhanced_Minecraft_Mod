@@ -65,6 +65,7 @@ public class ModTabs {
                     .title(Component.translatable("creativetab.utility"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.Adobe_alloying_furnace.get());
+                        output.accept(ModBlocks.Reforging_table.get());
                         output.accept((ModItems.Tin_ingot.get()));
                         output.accept((ModItems.Bronze_ingot.get()));
                         output.accept(ModItems.Bronze_nuggets.get());
