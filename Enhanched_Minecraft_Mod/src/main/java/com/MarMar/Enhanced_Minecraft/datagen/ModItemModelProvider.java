@@ -13,6 +13,7 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.LinkedHashMap;
@@ -111,6 +112,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Cobalt);
 
         simpleItem(ModItems.Reinforced_diamond);
+
+        //Smithing tables
+        simpleItem(ModItems.reinforcing_upgrade_smithing_template);
 
         //Armors and tools
         HandheldItem(ModItems.Bronze_sword);

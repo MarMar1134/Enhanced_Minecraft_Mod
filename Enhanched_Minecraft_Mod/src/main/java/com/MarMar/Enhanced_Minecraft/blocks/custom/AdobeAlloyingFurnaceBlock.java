@@ -27,7 +27,7 @@ import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.*;
 
 public class AdobeAlloyingFurnaceBlock extends BaseEntityBlock implements EntityBlock {
     public static final VoxelShape SHAPE = Block.box(0,0,0, 16,16, 16);
@@ -36,7 +36,7 @@ public class AdobeAlloyingFurnaceBlock extends BaseEntityBlock implements Entity
 
     public AdobeAlloyingFurnaceBlock(Properties pProperties) {
         super(pProperties);
-        registerDefaultState(defaultBlockState().setValue(FACING, Direction.SOUTH));
+        registerDefaultState(defaultBlockState().setValue(FACING, Direction.UP));
     }
     @Nullable
     @Override

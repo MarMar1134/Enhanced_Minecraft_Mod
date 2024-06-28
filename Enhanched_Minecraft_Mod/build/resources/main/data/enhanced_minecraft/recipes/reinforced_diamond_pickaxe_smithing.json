@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhanced_minecraft:reinforced_diamond"
+  },
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "result": {
+    "item": "enhanced_minecraft:reinforced_diamond_pickaxe"
+  },
+  "template": {
+    "item": "enhanced_minecraft:reinforcing_upgrade_smithing_template"
+  }
+}

@@ -41,24 +41,22 @@ public class ModItems {
     public static final RegistryObject<Item> Reinforced_diamond = Items.register(
             "reinforced_diamond", () -> new Item(new Item.Properties()));
 
+    //Smithing tables
+    public static final RegistryObject<Item> reinforcing_upgrade_smithing_template = Items.register(
+            "reinforcing_upgrade_smithing_template", () -> new Item(new Item.Properties()));
 
     //Weapons, tools and armors
         //Bronze
         public static final RegistryObject<Item> Bronze_sword = Items.register(
-                            "bronze_sword",() -> new SwordItem(
-                        ModTiers.Bronze, 2, -2.4F, new Item.Properties()));
+                "bronze_sword",() -> new SwordItem(ModTiers.Bronze, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Bronze_pickaxe = Items.register(
-                            "bronze_pickaxe",() -> new PickaxeItem(
-                                    ModTiers.Bronze, 1, -2.8F,  new Item.Properties()));
+                "bronze_pickaxe",() -> new PickaxeItem(ModTiers.Bronze, 1, -2.8F,  new Item.Properties()));
         public static final RegistryObject<Item> Bronze_axe = Items.register(
-                "bronze_axe",() -> new AxeItem(
-                        ModTiers.Bronze, 6, -2F,  new Item.Properties()));
+                "bronze_axe",() -> new AxeItem(ModTiers.Bronze, 6, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Bronze_shovel = Items.register(
-                "bronze_shovel",() -> new ShovelItem(
-                        ModTiers.Bronze, 1, -2F,  new Item.Properties()));
+                "bronze_shovel",() -> new ShovelItem(ModTiers.Bronze, 1, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Bronze_hoe = Items.register(
-                "bronze_hoe",() -> new HoeItem(
-                        ModTiers.Bronze, 1, -2F,  new Item.Properties()));
+                "bronze_hoe",() -> new HoeItem(ModTiers.Bronze, 1, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Bronze_helmet= Items.register(
                 "bronze_helmet", () -> new ArmorItem(ModArmorMaterials.Bronze, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> Bronze_chestplate= Items.register(
@@ -70,20 +68,15 @@ public class ModItems {
 
         //Steel
         public static final RegistryObject<Item> Steel_sword = Items.register(
-                "steel_sword",() -> new SwordItem(
-                                ModTiers.Steel, 2, -2.4F, new Item.Properties()));
+                "steel_sword",() -> new SwordItem(ModTiers.Steel, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Steel_pickaxe = Items.register(
-                "steel_pickaxe",() -> new PickaxeItem(
-                        ModTiers.Steel, 0, -2.8F, new Item.Properties()));
+                "steel_pickaxe",() -> new PickaxeItem(ModTiers.Steel, 0, -2.8F, new Item.Properties()));
         public static final RegistryObject<Item> Steel_axe = Items.register(
-                "steel_axe",() -> new AxeItem(
-                        ModTiers.Steel, 4, -2F,  new Item.Properties()));
+                "steel_axe",() -> new AxeItem(ModTiers.Steel, 4, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Steel_shovel = Items.register(
-                "steel_shovel",() -> new ShovelItem(
-                        ModTiers.Steel, 1, -2F,  new Item.Properties()));
+                "steel_shovel",() -> new ShovelItem(ModTiers.Steel, 1, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Steel_hoe = Items.register(
-                "steel_hoe",() -> new HoeItem(
-                        ModTiers.Steel, 1, -2F,  new Item.Properties()));
+                "steel_hoe",() -> new HoeItem(ModTiers.Steel, 1, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Steel_helmet= Items.register(
             "steel_helmet", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> Steel_chestplate= Items.register(
@@ -95,51 +88,42 @@ public class ModItems {
 
         //Silver
         public static final RegistryObject<Item> Silver_sword = Items.register(
-                "silver_sword",() -> new SwordItem(
-                        ModTiers.Silver, 3, -2.4F, new Item.Properties()));
+                "silver_sword",() -> new SwordItem(ModTiers.Silver, 3, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_pickaxe = Items.register(
-            "silver_pickaxe",() -> new PickaxeItem(
-                    ModTiers.Silver, -2, -2.8F, new Item.Properties()));
+            "silver_pickaxe",() -> new PickaxeItem(ModTiers.Silver, -2, -2.8F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_axe = Items.register(
-            "silver_axe",() -> new SwordItem(
-                    ModTiers.Silver, 6, -2.4F, new Item.Properties()));
+            "silver_axe",() -> new SwordItem(ModTiers.Silver, 6, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_shovel = Items.register(
-            "silver_shovel",() -> new ShovelItem(
-                    ModTiers.Silver, 2, -2.4F, new Item.Properties()));
+            "silver_shovel",() -> new ShovelItem(ModTiers.Silver, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_hoe = Items.register(
-            "silver_hoe",() -> new HoeItem(
-                    ModTiers.Silver, 2, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> Silver_helmet= Items.register(
+            "silver_hoe",() -> new HoeItem(ModTiers.Silver, 2, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Silver_helmet= Items.register(
             "silver_helmet", () -> new ModArmorEffects(ModArmorMaterials.Silver, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> Silver_chestplate= Items.register(
+        public static final RegistryObject<Item> Silver_chestplate= Items.register(
             "silver_chestplate", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final RegistryObject<Item> Silver_leggings= Items.register(
+        public static final RegistryObject<Item> Silver_leggings= Items.register(
             "silver_leggings", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final RegistryObject<Item> Silver_boots= Items.register(
+        public static final RegistryObject<Item> Silver_boots= Items.register(
             "silver_boots", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.BOOTS, new Item.Properties()));
-    //Reinforced Diamond
-    public static final RegistryObject<Item> Reinforced_diamond_sword = Items.register(
-            "reinforced_diamond_sword",() -> new SwordItem(
-                    ModTiers.Reinforced_diamond, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_pickaxe = Items.register(
-            "reinforced_diamond_pickaxe",() -> new PickaxeItem(
-                    ModTiers.Reinforced_diamond, -2, -2.8F, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_axe = Items.register(
-            "reinforced_diamond_axe",() -> new SwordItem(
-                    ModTiers.Reinforced_diamond, 6, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_shovel = Items.register(
-            "reinforced_diamond_shovel",() -> new ShovelItem(
-                    ModTiers.Reinforced_diamond, 2, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_hoe = Items.register(
-            "reinforced_diamond_hoe",() -> new HoeItem(
-                    ModTiers.Reinforced_diamond, 2, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_helmet= Items.register(
+
+         //Reinforced Diamond
+        public static final RegistryObject<Item> Reinforced_diamond_sword = Items.register(
+            "reinforced_diamond_sword",() -> new SwordItem(ModTiers.Reinforced_diamond, 3, -2.4F, new Item.Properties()));
+         public static final RegistryObject<Item> Reinforced_diamond_pickaxe = Items.register(
+            "reinforced_diamond_pickaxe",() -> new PickaxeItem(ModTiers.Reinforced_diamond, -2, -2.8F, new Item.Properties()));
+         public static final RegistryObject<Item> Reinforced_diamond_axe = Items.register(
+            "reinforced_diamond_axe",() -> new SwordItem(ModTiers.Reinforced_diamond, 6, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Reinforced_diamond_shovel = Items.register(
+            "reinforced_diamond_shovel",() -> new ShovelItem(ModTiers.Reinforced_diamond, 2, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Reinforced_diamond_hoe = Items.register(
+            "reinforced_diamond_hoe",() -> new HoeItem(ModTiers.Reinforced_diamond, 2, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> Reinforced_diamond_helmet= Items.register(
             "reinforced_diamond_helmet", () -> new ModArmorEffects(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_chestplate= Items.register(
+        public static final RegistryObject<Item> Reinforced_diamond_chestplate= Items.register(
             "reinforced_diamond_chestplate", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_leggings= Items.register(
+        public static final RegistryObject<Item> Reinforced_diamond_leggings= Items.register(
             "reinforced_diamond_leggings", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond_boots= Items.register(
+        public static final RegistryObject<Item> Reinforced_diamond_boots= Items.register(
             "reinforced_diamond_boots", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.BOOTS, new Item.Properties()));
     //Food
         //Fruit
@@ -159,6 +143,7 @@ public class ModItems {
         //Cooked recipes
     public static final RegistryObject<Item> Rice_bowl = Items.register(
             "rice_bowl",() -> new Item(new Item.Properties().food(ModFoods.Rice_bawl)));
+
     //Final register
     public static void Register(IEventBus eventBus){
         Items.register(eventBus);

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhanced_minecraft:reinforced_diamond"
+  },
+  "base": {
+    "item": "minecraft:diamond_hoe"
+  },
+  "result": {
+    "item": "enhanced_minecraft:reinforced_diamond_hoe"
+  },
+  "template": {
+    "item": "enhanced_minecraft:reinforcing_upgrade_smithing_template"
+  }
+}

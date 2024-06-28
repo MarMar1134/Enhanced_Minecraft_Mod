@@ -1616,5 +1616,35 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/misc/silver_ingot_from_smelting_deepslate_silver_ore": {
+    "criteria": {
+      "has_deepslate_silver_ore": "2024-02-09 09:49:05 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot_from_blasting_deepslate_silver_ore": {
+    "criteria": {
+      "has_deepslate_silver_ore": "2024-02-09 09:49:05 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie": "2024-06-05 14:13:52 -0300"
+    },
+    "done": false
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2024-06-05 14:13:52 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_tin_ingot": "2024-06-28 15:17:37 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
