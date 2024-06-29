@@ -1646,5 +1646,11 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2024-06-29 08:32:58 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

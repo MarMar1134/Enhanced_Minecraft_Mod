@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "enhanced_minecraft:item/reinforcing_upgrade_smithing_template"
+  }
+}

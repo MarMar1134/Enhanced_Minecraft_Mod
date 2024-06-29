@@ -22,6 +22,7 @@ public class ModTags {
         public static final TagKey<Item> Bronze_tag = TagI("bronze");
         public static final TagKey<Item> Steel_tag = TagI("steel");
         public static final TagKey<Item> Silver_tag = TagI("silver");
+        public static final TagKey<Item> Gem_tag = TagI("gem");
         private static TagKey<Item> TagI(String name){
             return ItemTags.create(new ResourceLocation(Enhanced_Minecraft.MOD_ID, name));
         }

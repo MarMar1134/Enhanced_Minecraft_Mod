@@ -8,19 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b6b07-0706-4107-94f1-1746f1beb859" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-27-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-27-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-28-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-28-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-28-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-28-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/es_AR.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/models/item/adobe_alloying_furnace.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-28-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-28-8.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/raw_emerald.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/raw_rubi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/raw_saphire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/rubi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/saphire.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -29,49 +24,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.MarMar.Enhanced_Minecraft.Enhanched_Minecraft_Mod.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.MarMar.Enhanced_Minecraft.Enhanched_Minecraft_Mod.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.MarMar.Enhanced_Minecraft.Enhanched_Minecraft_Mod.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.MarMar.Enhanced_Minecraft.Enhanched_Minecraft_Mod.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Enhanched_Minecraft_Mod.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Enhanched_Minecraft_Mod.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Enhanched_Minecraft_Mod.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Enhanched_Minecraft_Mod.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTabs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTabs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTags$Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTags$Items.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/blocks/custom/AdobeAlloyingFurnaceBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/blocks/custom/AdobeAlloyingFurnaceBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/blocks/entity/ReforgingTableBlockEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/blocks/entity/ReforgingTableBlockEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/items/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/items/ModItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/downloadMCMeta/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/downloadMCMeta/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/en_US.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/models/block/adobe_alloying_furnace.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/models/block/adobe_alloying_furnace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/recipes/reinforced_diamond_axe_reforging.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/recipes/reinforced_diamond_hoe_reforging.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/recipes/reinforced_diamond_pickaxe_reforging.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/recipes/reinforced_diamond_shovel_reforging.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/recipes/reinforced_diamond_sword_reforging.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/es_AR.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/es_AR.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdobeAlloyingFurnaceBlock.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdobeAlloyingFurnaceBlock.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdobeAlloyingFurnaceBlockEntity$1.class.uniqueId8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdobeAlloyingFurnaceBlockEntity.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdobeAlloyingFurnaceMenu.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Enhanced_Minecraft$ClientModEvents.class.uniqueId11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Enhanced_Minecraft.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModBlockEntities.class.uniqueId9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModMenuTypes.class.uniqueId10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReforgingTableBlock.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReforgingTableBlockEntity$1.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReforgingTableBlockEntity.class.uniqueId7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReforgingTableMenu.class.uniqueId12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReforgingTableScreen.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModBlocks.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-02-05-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-02-05-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-02-05-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-data/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2024-02-06-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-28-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-28-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-06-28-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-28-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-06-28-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-28-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-06-28-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-28-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-06-28-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-28-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-06-28-6.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -79,12 +51,9 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/DIM-1/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/DIM1/data/raids_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/data/random_sequences.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/entities/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/entities/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/entities/r.0.-1.mca" afterDir="false" />
@@ -93,27 +62,20 @@
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/level.dat_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/poi/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/region/r.0.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/region/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Util/ModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Util/ModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Util/ModTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Util/ModTags.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/blocks/custom/AdobeAlloyingFurnaceBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/blocks/custom/AdobeAlloyingFurnaceBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/items/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/en_US.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/models/block/adobe_alloying_furnace.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/models/block/adobe_alloying_furnace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_axe_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_axe_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_boots_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_boots_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_chest_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_chest_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_helmet_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_helmet_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_hoe_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_hoe_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_leggings_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_leggings_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_pickaxe_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_pickaxe_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_shovel_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_shovel_smithing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_sword_reforging.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/enhanced_minecraft/recipes/reinforced_diamond_sword_smithing.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/es_AR.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/es_AR.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/adobe_alloying_furnace.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +145,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Repositorios Github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod/src/main/resources/assets/enhanced_minecraft/textures/block",
+    "last_opened_file_path": "D:/Repositorios Github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod/src/main/resources/assets/enhanced_minecraft/textures/item",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -192,10 +154,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\item" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\block" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\models\item" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\models\block" />
-      <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\item" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\models\armor" />
     </key>
   </component>

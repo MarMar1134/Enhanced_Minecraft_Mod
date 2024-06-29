@@ -7,6 +7,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -55,8 +57,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Reinforced_diamond_helmet.get())
                 .add(ModItems.Reinforced_diamond_chestplate.get())
                 .add(ModItems.Bronze_leggings.get())
-                .add(ModItems.Reinforced_diamond_boots.get())
-        ;
+                .add(ModItems.Reinforced_diamond_boots.get());
+
+        this.tag(ModTags.Items.Gem_tag).add(ModItems.Raw_rubi.get())
+                .add(ModItems.Raw_saphire.get())
+                .add(ModItems.Raw_emerald.get())
+                .add(ModItems.Rubi.get())
+                .add(ModItems.Saphire.get())
+                .add(Items.EMERALD);
     }
 
 }

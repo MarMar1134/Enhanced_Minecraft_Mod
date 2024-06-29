@@ -13,33 +13,43 @@ public class ModItems {
     public static final DeferredRegister<Item> Items = DeferredRegister.create(
             ForgeRegistries.ITEMS, Enhanced_Minecraft.MOD_ID
     );
-
-
-    //Ores (raw and melted)
-    public static final RegistryObject<Item> Sulfur = Items.register(
-            "sulfur",() -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Raw_tin = Items.register(
-            "raw_tin",() -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Tin_ingot = Items.register(
-            "tin_ingot",() -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Raw_bronze = Items.register(
-            "raw_bronze", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Bronze_ingot = Items.register(
-            "bronze_ingot",() -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Bronze_nuggets = Items.register(
-            "bronze_nuggets", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Raw_steel = Items.register(
-            "raw_steel", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Steel_ingot = Items.register(
-            "steel_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Raw_silver = Items.register(
-            "raw_silver", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Silver_ingot = Items.register(
-            "silver_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Cobalt = Items.register(
-            "cobalt", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Reinforced_diamond = Items.register(
-            "reinforced_diamond", () -> new Item(new Item.Properties()));
+    //Ores
+        //raw
+        public static final RegistryObject<Item> Sulfur = Items.register(
+                "sulfur",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Raw_tin = Items.register(
+                "raw_tin",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Raw_bronze = Items.register(
+                "raw_bronze", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Raw_steel = Items.register(
+                "raw_steel", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Raw_silver = Items.register(
+                "raw_silver", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Cobalt = Items.register(
+                "cobalt", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Raw_rubi = Items.register(
+            "raw_rubi", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Raw_saphire = Items.register(
+            "raw_saphire", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Raw_emerald = Items.register(
+            "raw_emerald", () -> new Item(new Item.Properties()));
+        //melted
+        public static final RegistryObject<Item> Tin_ingot = Items.register(
+                "tin_ingot",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Bronze_ingot = Items.register(
+                "bronze_ingot",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Bronze_nuggets = Items.register(
+                "bronze_nuggets", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Steel_ingot = Items.register(
+                "steel_ingot", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Silver_ingot = Items.register(
+                "silver_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Rubi = Items.register(
+            "rubi", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Saphire = Items.register(
+            "saphire", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Reinforced_diamond = Items.register(
+                "reinforced_diamond", () -> new Item(new Item.Properties()));
 
     //Smithing tables
     public static final RegistryObject<Item> reinforcing_upgrade_smithing_template = Items.register(

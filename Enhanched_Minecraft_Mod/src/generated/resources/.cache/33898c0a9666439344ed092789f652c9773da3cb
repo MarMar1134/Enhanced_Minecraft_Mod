@@ -1,4 +1,4 @@
-// 1.20.1	2024-01-16T20:14:50.1726094	Item Models: enhanced_minecraft
+// 1.20.1	2024-06-29T08:29:10.8237513	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -15,6 +15,9 @@ d5c11e9e569e7a052dd73193a93eff766f8e09f6 assets/enhanced_minecraft/models/item/c
 26c263ad9614d8f6abf7cff82e4e25aebf4708bc assets/enhanced_minecraft/models/item/lemon.json
 45a64b92fd0fea1e026b12da52d0c5c265f131e7 assets/enhanced_minecraft/models/item/orange.json
 fd17b232e5817fce463dcb2f02f8522133387484 assets/enhanced_minecraft/models/item/raw_bronze.json
+babdb77e27771c6872571914fd1939caa8ae40d5 assets/enhanced_minecraft/models/item/raw_emerald.json
+8d25a8756b9ec170b7c0ab56323162b3f2e42228 assets/enhanced_minecraft/models/item/raw_rubi.json
+3802f2287b493a047665bf430ca3ce1bfd24edab assets/enhanced_minecraft/models/item/raw_saphire.json
 90ff39a81e0474e99b7cc7f0b7bc1d0983af2115 assets/enhanced_minecraft/models/item/raw_silver.json
 217afef5c2323f837c8459c8922ffc34f3067b8d assets/enhanced_minecraft/models/item/raw_steel.json
 bcf46309a9e92f772598a7be8a3618246cbba2ed assets/enhanced_minecraft/models/item/raw_tin.json
@@ -28,8 +31,11 @@ cbae33641ee3e529cce65fe59bf0e4dd9a383901 assets/enhanced_minecraft/models/item/r
 cbbdfda3d519e24664e31ae140f8c59efa105f63 assets/enhanced_minecraft/models/item/reinforced_diamond_pickaxe.json
 42a0cdea285c4bc96e906f36a402d6ecce445eb3 assets/enhanced_minecraft/models/item/reinforced_diamond_shovel.json
 1b18e11bf19b837c48da77c753b9c625050e1730 assets/enhanced_minecraft/models/item/reinforced_diamond_sword.json
+33d904ac5529a86b3d1fbbf418e44aa36f71f541 assets/enhanced_minecraft/models/item/reinforcing_upgrade_smithing_template.json
 b6f8c1fdf5d8ed2c3ba3035f5e50ddd70e703c14 assets/enhanced_minecraft/models/item/rice_bowl.json
 413143941d19c697825ba61a91b08cd60fd1fee5 assets/enhanced_minecraft/models/item/rice_grains.json
+9eab7d50c6607f1047ae0fe8058e9c97adcaceca assets/enhanced_minecraft/models/item/rubi.json
+8148a238c0f0db0c421da662a63d195795c62c39 assets/enhanced_minecraft/models/item/saphire.json
 1af0adcbc7f45829e8a817b9c7772b9b3caa020d assets/enhanced_minecraft/models/item/silver_axe.json
 36749895f6b166ee6889452e961bde7e98edfe8d assets/enhanced_minecraft/models/item/silver_boots.json
 bf84e1282e3717171a1a2a554ab66e2331fb5c88 assets/enhanced_minecraft/models/item/silver_chestplate.json
