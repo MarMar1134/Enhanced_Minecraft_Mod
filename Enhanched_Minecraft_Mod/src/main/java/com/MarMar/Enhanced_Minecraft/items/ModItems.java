@@ -33,6 +33,8 @@ public class ModItems {
             "raw_saphire", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Raw_emerald = Items.register(
             "raw_emerald", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Raw_diamond = Items.register(
+            "raw_diamond", () -> new Item(new Item.Properties()));
         //melted
         public static final RegistryObject<Item> Tin_ingot = Items.register(
                 "tin_ingot",() -> new Item(new Item.Properties()));

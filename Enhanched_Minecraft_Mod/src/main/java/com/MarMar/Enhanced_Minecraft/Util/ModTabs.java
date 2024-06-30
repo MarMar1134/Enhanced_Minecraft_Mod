@@ -52,6 +52,10 @@ public class ModTabs {
                         output.accept(ModBlocks.Silver_ore.get());
                         output.accept(ModBlocks.Deepslate_silver_ore.get());
                         output.accept(ModBlocks.Deepslate_cobalt_ore.get());
+                        output.accept(ModBlocks.Rubi_ore.get());
+                        output.accept(ModBlocks.Deepslate_rubi_ore.get());
+                        output.accept(ModBlocks.Saphire_ore.get());
+                        output.accept(ModBlocks.Deepslate_saphire_ore.get());
                         output.accept(ModItems.Sulfur.get());
                         output.accept((ModItems.Raw_tin.get()));
                         output.accept(ModItems.Raw_bronze.get());
@@ -61,9 +65,11 @@ public class ModTabs {
                         output.accept(ModItems.Raw_rubi.get());
                         output.accept(ModItems.Raw_saphire.get());
                         output.accept(ModItems.Raw_emerald.get());
+                        output.accept(ModItems.Raw_diamond.get());
                         output.accept(ModItems.Rubi.get());
                         output.accept(ModItems.Saphire.get());
                         output.accept(Items.EMERALD);
+                        output.accept(Items.DIAMOND);
                     }).build()
     );
 

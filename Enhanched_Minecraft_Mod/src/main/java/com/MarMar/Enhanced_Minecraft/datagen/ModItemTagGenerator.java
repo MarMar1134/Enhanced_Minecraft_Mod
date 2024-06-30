@@ -62,9 +62,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.Gem_tag).add(ModItems.Raw_rubi.get())
                 .add(ModItems.Raw_saphire.get())
                 .add(ModItems.Raw_emerald.get())
+                .add(ModItems.Raw_diamond.get())
                 .add(ModItems.Rubi.get())
                 .add(ModItems.Saphire.get())
-                .add(Items.EMERALD);
+                .add(Items.EMERALD)
+                .add(Items.DIAMOND)
+        ;
     }
 
 }

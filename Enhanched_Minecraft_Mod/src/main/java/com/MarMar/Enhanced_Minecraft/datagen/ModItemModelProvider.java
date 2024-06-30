@@ -114,6 +114,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Raw_rubi);
         simpleItem(ModItems.Raw_saphire);
         simpleItem(ModItems.Raw_emerald);
+        simpleItem(ModItems.Raw_diamond);
 
         simpleItem(ModItems.Rubi);
         simpleItem(ModItems.Saphire);

@@ -48,6 +48,18 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GOLD_ORE)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> Rubi_ore = RegisterBlock("rubi_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> Saphire_ore = RegisterBlock("saphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> Deepslate_rubi_ore = RegisterBlock("deepslate_rubi_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> Deepslate_saphire_ore = RegisterBlock("deepslate_saphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE)
+                    .requiresCorrectToolForDrops()));
         //Entity blocks
     public static final RegistryObject<Block> Adobe_alloying_furnace = RegisterBlock("adobe_alloying_furnace",
                 () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));

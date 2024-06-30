@@ -1,5 +1,6 @@
 {
   "values": [
+    "enhanced_minecraft:adobe_alloying_furnace",
     "enhanced_minecraft:deepslate_sulfur_ore",
     "enhanced_minecraft:nether_sulfur_ore",
     "enhanced_minecraft:sulfur_ore",
@@ -7,6 +8,10 @@
     "enhanced_minecraft:tin_ore",
     "enhanced_minecraft:silver_ore",
     "enhanced_minecraft:deepslate_silver_ore",
-    "enhanced_minecraft:deepslate_cobalt_ore"
+    "enhanced_minecraft:deepslate_cobalt_ore",
+    "enhanced_minecraft:rubi_ore",
+    "enhanced_minecraft:saphire_ore",
+    "enhanced_minecraft:deepslate_rubi_ore",
+    "enhanced_minecraft:deepslate_saphire_ore"
   ]
 }

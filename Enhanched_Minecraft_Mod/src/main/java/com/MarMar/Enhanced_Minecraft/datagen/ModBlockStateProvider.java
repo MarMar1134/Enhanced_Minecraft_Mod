@@ -26,6 +26,10 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.Silver_ore);
         blockWithItem(ModBlocks.Deepslate_silver_ore);
         blockWithItem(ModBlocks.Deepslate_cobalt_ore);
+        blockWithItem(ModBlocks.Rubi_ore);
+        blockWithItem(ModBlocks.Saphire_ore);
+        blockWithItem(ModBlocks.Deepslate_rubi_ore);
+        blockWithItem(ModBlocks.Deepslate_saphire_ore);
 
         //Entity blocks
         simpleBlock(ModBlocks.Adobe_alloying_furnace.get(),

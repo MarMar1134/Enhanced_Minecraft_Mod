@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-29T08:29:10.8237513	Item Models: enhanced_minecraft
+// 1.20.1	2024-06-30T17:58:43.2742479	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -15,6 +15,7 @@ d5c11e9e569e7a052dd73193a93eff766f8e09f6 assets/enhanced_minecraft/models/item/c
 26c263ad9614d8f6abf7cff82e4e25aebf4708bc assets/enhanced_minecraft/models/item/lemon.json
 45a64b92fd0fea1e026b12da52d0c5c265f131e7 assets/enhanced_minecraft/models/item/orange.json
 fd17b232e5817fce463dcb2f02f8522133387484 assets/enhanced_minecraft/models/item/raw_bronze.json
+ad0ed58c6872deb4c4a065f27f67a69a4f125df4 assets/enhanced_minecraft/models/item/raw_diamond.json
 babdb77e27771c6872571914fd1939caa8ae40d5 assets/enhanced_minecraft/models/item/raw_emerald.json
 8d25a8756b9ec170b7c0ab56323162b3f2e42228 assets/enhanced_minecraft/models/item/raw_rubi.json
 3802f2287b493a047665bf430ca3ce1bfd24edab assets/enhanced_minecraft/models/item/raw_saphire.json
