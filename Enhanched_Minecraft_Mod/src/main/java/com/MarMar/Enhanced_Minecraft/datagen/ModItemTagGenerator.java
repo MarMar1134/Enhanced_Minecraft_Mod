@@ -66,8 +66,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Rubi.get())
                 .add(ModItems.Saphire.get())
                 .add(Items.EMERALD)
-                .add(Items.DIAMOND)
-        ;
-    }
+                .add(Items.DIAMOND);
 
+        this.tag(ModTags.Items.Polisher_tag).add(ModItems.Bronze_polisher.get())
+                .add(ModItems.Gold_polisher.get())
+                .add(ModItems.Steel_polisher.get())
+                .add(ModItems.Iron_polisher.get())
+                .add(ModItems.Diamond_polisher.get())
+                .add(ModItems.Silver_polisher.get())
+                .add(ModItems.Netherite_polisher.get());
+    }
 }

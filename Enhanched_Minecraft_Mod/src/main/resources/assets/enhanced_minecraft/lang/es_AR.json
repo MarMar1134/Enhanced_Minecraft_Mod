@@ -2,6 +2,7 @@
   "creativetab.weapons": "Combate",
   "creativetab.tools": "Herramientas",
   "creativetab.minerals": "Minerales",
+  "creativetab.jewelery": "Joyas",
   "creativetab.utility": "Utilidad",
   "creativetab.fruits": "Frutas y Vegetales",
   "creativetab.saplings": "Semillas",
@@ -21,7 +22,16 @@
 
 
   "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de barro",
-  "block.enhanced_minecraft.reforging_table": "Reforging Table",
+  "block.enhanced_minecraft.gem_polisher_block": "Mesa de pulido",
+
+  "item.enhanced_minecraft.stone_polisher": "Pulidora de piedra",
+  "item.enhanced_minecraft.bronze_polisher": "Pulidora de bronce",
+  "item.enhanced_minecraft.iron_polisher": "Pulidora de hierro",
+  "item.enhanced_minecraft.steel_polisher": "Pulidora de acero",
+  "item.enhanced_minecraft.silver_polisher": "Pulidora de plata",
+  "item.enhanced_minecraft.gold_polisher": "Pulidora de oro",
+  "item.enhanced_minecraft.diamond_polisher": "Pulidora de diamante",
+  "item.enhanced_minecraft.netherite_polisher": "Pulidora de netherita",
 
   "item.enhanced_minecraft.sulfur": "Azufre",
   "item.enhanced_minecraft.raw_tin": "Estaño crudo",

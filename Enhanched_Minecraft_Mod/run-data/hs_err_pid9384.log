@@ -1,0 +1,220 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 100663296 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3552), pid=9384, tid=16108
+#
+# JRE version:  (17.0.9+11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0.9+11-LTS-201, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52461,suspend=y,server=n -Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -DlegacyClassPath.file=D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\build\classpath\runData_minecraftClasspath.txt -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge- -DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar -Djava.net.preferIPv6Addresses=system --module-path=C:\Users\admin\.gradle\caches\modules-2\files-2.1\cpw.mods\bootstraplauncher\1.1.2\c546e00443d8432cda6baa1c860346980742628\bootstraplauncher-1.1.2.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\cpw.mods\securejarhandler\2.1.10\51e6a22c6c716beb11e244bf5b8be480f51dd6b5\securejarhandler-2.1.10.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.5\19ab5b5800a3910d30d3a3e64fdb00fd0cb42de0\asm-commons-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.5\64b5a1fc8c1b15ed2efd6a063e976bc8d3dc5ffe\asm-util-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.5\490bacc77de7cbc0be1a30bb3471072d705be4a4\asm-analysis-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.5\fd33c8b6373abaa675be407082fdfda35021254a\asm-tree-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.5\dc6ea1875f4d64fbc85e1691c95b96a3d8569c90\asm-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarFileSystems\0.3.19\2464eb7d6b9ddb9db36a82cf8a95193e5c6fe020\JarJarFileSystems-0.3.19.jar --add-modules=ALL-MODULE-PATH --add-opens=java.base/java.util.jar=cpw.mods.securejarhandler --add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler --add-exports=java.base/sun.security.util=cpw.mods.securejarhandler --add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming -javaagent:C:\Users\admin\AppData\Local\JetBrains\IdeaIC2023.3\captureAgent\debugger-agent.jar=file:/C:/Users/admin/AppData/Local/Temp/capture.props -Dfile.encoding=UTF-8 cpw.mods.bootstraplauncher.BootstrapLauncher --launchTarget forgedatauserdev --assetIndex 5 --assetsDir C:\Users\admin\.gradle\caches\forge_gradle\assets --gameDir . --fml.forgeVersion 47.2.0 --fml.mcVersion 1.20.1 --fml.forgeGroup net.minecraftforge --fml.mcpVersion 20230612.114412 --mod enhanced_minecraft --all --output D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\generated\resources --existing D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources
+
+Host: AMD Ryzen 3 2200U with Radeon Vega Mobile Gfx  , 4 cores, 5G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Tue Jul  2 15:17:34 2024 Hora estándar de Argentina elapsed time: 0.195397 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000022f7268b260):  JavaThread "Unknown thread" [_thread_in_vm, id=16108, stack(0x000000f028700000,0x000000f028800000)]
+
+Stack: [0x000000f028700000,0x000000f028800000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x678a4a]
+V  [jvm.dll+0x7d9cfd]
+V  [jvm.dll+0x7db60e]
+V  [jvm.dll+0x7dbc73]
+V  [jvm.dll+0x245e1f]
+V  [jvm.dll+0x6758f9]
+V  [jvm.dll+0x66a2a2]
+V  [jvm.dll+0x303686]
+V  [jvm.dll+0x30ac06]
+V  [jvm.dll+0x35a48e]
+V  [jvm.dll+0x35a6bf]
+V  [jvm.dll+0x2da678]
+V  [jvm.dll+0x2db5e4]
+V  [jvm.dll+0x7ab6b1]
+V  [jvm.dll+0x368041]
+V  [jvm.dll+0x78a749]
+V  [jvm.dll+0x3ebd4f]
+V  [jvm.dll+0x3ed7d1]
+C  [jli.dll+0x5297]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x4cc91]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff99b4389d8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000022f726d69b0 GCTaskThread "GC Thread#0" [stack: 0x000000f028800000,0x000000f028900000] [id=17176]
+  0x0000022f726e3530 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000f028900000,0x000000f028a00000] [id=3928]
+  0x0000022f726e4d00 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000f028a00000,0x000000f028b00000] [id=14612]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff99ac6b2d7]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000022f726858a0] Heap_lock - owner thread: 0x0000022f7268b260
+
+Heap address: 0x00000000a0c00000, size: 1524 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x00000000a0c00000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff99b052229]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (2 events):
+Event: 0.174 Loaded shared library C:\Program Files\Java\jdk-17\bin\java.dll
+Event: 0.178 Loaded shared library C:\Program Files\Java\jdk-17\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff79c350000 - 0x00007ff79c360000 	C:\Program Files\Java\jdk-17\bin\java.exe
+0x00007ff9d5b70000 - 0x00007ff9d5d68000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff9d3e50000 - 0x00007ff9d3f0d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff9d3320000 - 0x00007ff9d3616000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ff9d38a0000 - 0x00007ff9d39a0000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff9ce630000 - 0x00007ff9ce649000 	C:\Program Files\Java\jdk-17\bin\jli.dll
+0x00007ff9d4800000 - 0x00007ff9d48b0000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff9d5a30000 - 0x00007ff9d5ace000 	C:\Windows\System32\msvcrt.dll
+0x00007ff9d52a0000 - 0x00007ff9d5340000 	C:\Windows\System32\sechost.dll
+0x00007ff9d48b0000 - 0x00007ff9d49d3000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff9d3a50000 - 0x00007ff9d3a77000 	C:\Windows\System32\bcrypt.dll
+0x00007ff9ce6b0000 - 0x00007ff9ce6cb000 	C:\Program Files\Java\jdk-17\bin\VCRUNTIME140.dll
+0x00007ff9d5340000 - 0x00007ff9d54df000 	C:\Windows\System32\USER32.dll
+0x00007ff9d3230000 - 0x00007ff9d3252000 	C:\Windows\System32\win32u.dll
+0x00007ff9d54e0000 - 0x00007ff9d550b000 	C:\Windows\System32\GDI32.dll
+0x00007ff9d3780000 - 0x00007ff9d3897000 	C:\Windows\System32\gdi32full.dll
+0x00007ff9d3a80000 - 0x00007ff9d3b1d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff9be7a0000 - 0x00007ff9bea3a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.4355_none_60b8b9eb71f62e16\COMCTL32.dll
+0x00007ff9caf40000 - 0x00007ff9caf4a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff9d4060000 - 0x00007ff9d408f000 	C:\Windows\System32\IMM32.DLL
+0x00007ff9d04f0000 - 0x00007ff9d04fc000 	C:\Program Files\Java\jdk-17\bin\vcruntime140_1.dll
+0x00007ff9c22a0000 - 0x00007ff9c232e000 	C:\Program Files\Java\jdk-17\bin\msvcp140.dll
+0x00007ff99a980000 - 0x00007ff99b561000 	C:\Program Files\Java\jdk-17\bin\server\jvm.dll
+0x00007ff9d5a20000 - 0x00007ff9d5a28000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff9c4220000 - 0x00007ff9c4229000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ff9d5220000 - 0x00007ff9d528b000 	C:\Windows\System32\WS2_32.dll
+0x00007ff9c8990000 - 0x00007ff9c89b7000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff9d1a40000 - 0x00007ff9d1a52000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ff9cf360000 - 0x00007ff9cf36a000 	C:\Program Files\Java\jdk-17\bin\jimage.dll
+0x00007ff9d1010000 - 0x00007ff9d11f4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff9c41e0000 - 0x00007ff9c4214000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff9d3b20000 - 0x00007ff9d3ba2000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff9c2350000 - 0x00007ff9c238b000 	C:\Program Files\Java\jdk-17\bin\jdwp.dll
+0x00007ff9cef70000 - 0x00007ff9cef7e000 	C:\Program Files\Java\jdk-17\bin\instrument.dll
+0x00007ff9ce600000 - 0x00007ff9ce625000 	C:\Program Files\Java\jdk-17\bin\java.dll
+0x00007ff9cc6c0000 - 0x00007ff9cc6d8000 	C:\Program Files\Java\jdk-17\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-17\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.4355_none_60b8b9eb71f62e16;C:\Program Files\Java\jdk-17\bin\server
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52461,suspend=y,server=n -Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -DlegacyClassPath.file=D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\build\classpath\runData_minecraftClasspath.txt -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge- -DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar -Djava.net.preferIPv6Addresses=system --module-path=C:\Users\admin\.gradle\caches\modules-2\files-2.1\cpw.mods\bootstraplauncher\1.1.2\c546e00443d8432cda6baa1c860346980742628\bootstraplauncher-1.1.2.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\cpw.mods\securejarhandler\2.1.10\51e6a22c6c716beb11e244bf5b8be480f51dd6b5\securejarhandler-2.1.10.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.5\19ab5b5800a3910d30d3a3e64fdb00fd0cb42de0\asm-commons-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.5\64b5a1fc8c1b15ed2efd6a063e976bc8d3dc5ffe\asm-util-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.5\490bacc77de7cbc0be1a30bb3471072d705be4a4\asm-analysis-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.5\fd33c8b6373abaa675be407082fdfda35021254a\asm-tree-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.5\dc6ea1875f4d64fbc85e1691c95b96a3d8569c90\asm-9.5.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarFileSystems\0.3.19\2464eb7d6b9ddb9db36a82cf8a95193e5c6fe020\JarJarFileSystems-0.3.19.jar --add-modules=ALL-MODULE-PATH --add-opens=java.base/java.util.jar=cpw.mods.securejarhandler --add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler --add-exports=java.base/sun.security.util=cpw.mods.securejarhandler --add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming -javaagent:C:\Users\admin\AppData\Local\JetBrains\IdeaIC2023.3\captureAgent\debugger-agent.jar=file:/C:/Users/admin/AppData/Local/Temp/capture.props -Dfile.encoding=UTF-8 
+java_command: cpw.mods.bootstraplauncher.BootstrapLauncher --launchTarget forgedatauserdev --assetIndex 5 --assetsDir C:\Users\admin\.gradle\caches\forge_gradle\assets --gameDir . --fml.forgeVersion 47.2.0 --fml.mcVersion 1.20.1 --fml.forgeGroup net.minecraftforge --fml.mcpVersion 20230612.114412 --mod enhanced_minecraft --all --output D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\generated\resources --existing D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources
+java_class_path (initial): D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\build\classes\java\main;D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\build\resources\main;C:\Users\admin\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1\forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar;C:\Users\admin\.gradle\caches\forge_gradle\minecraft_repo\versions\1.20.1\client-extra.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlloader\1.20.1-47.2.0\7811231940c0a8b6008453bbc64fdf7fa1280fe9\fmlloader-1.20.1-47.2.0.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarSelector\0.3.19\376cc9c8ea60720cf027c01fc033de915699801c\JarJarSelector-0.3.19.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarMetadata\0.3.19\83feaa9b770e6ac0e96ee4fc23fa89325c5fe2\JarJarMetadata-0.3.19.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.1\1227f9e0666314f9de41477e3ec277e542ed7f7b\java-objc-bridge-1.1.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgespi\7.0.1\3b4972a0cdb135853dba219be61a79b22cff1309\forgespi-7.0.1.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.1.5\f3da18e12c696d35a47c82cbb2cc8b5aa15e1154\mergetool-1.1.5-api.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\24.0.1\13c5c75c4206580aa4d683bffee658caae6c9f43\annotations-24.0.1.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\cpw.mods\securejarhandler\2.1.10\51e6a22c6c716beb11e244bf5b8be480f51dd6b5\securejarhandler-2.1.10.jar;C:\Users\admin\.gradle\caches\modules-2\files-2.1\cpw.mods\modlauncher\10.0.9\6d9443f56f50bb85cea383686ff9c867391458b\modlauncher-10.0.9
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 100663296                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1598029824                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1598029824                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\
+PATH=C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\.dotnet\tools
+USERNAME=admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+OS uptime: 4 days 1:13 hours
+
+CPU: total 4 (initial active 4) (4 cores per cpu, 2 threads per core) family 23 model 17 stepping 0 microcode 0x0, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt
+
+Memory: 4k page, system-wide physical 6092M (316M free)
+TotalPageFile size 21275M (AvailPageFile size 73M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 51M, peak: 147M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.0.9+11-LTS-201) for windows-amd64 JRE (17.0.9+11-LTS-201), built on Oct 10 2023 23:16:06 by "mach5one" with MS VC++ 17.1 (VS2022)
+
+END.

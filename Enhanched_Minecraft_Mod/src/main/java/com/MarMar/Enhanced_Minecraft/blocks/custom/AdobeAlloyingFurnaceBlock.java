@@ -36,7 +36,7 @@ public class AdobeAlloyingFurnaceBlock extends BaseEntityBlock implements Entity
 
     public AdobeAlloyingFurnaceBlock(Properties pProperties) {
         super(pProperties);
-        registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH));
+        registerDefaultState(defaultBlockState().setValue(FACING, Direction.SOUTH));
     }
     @Nullable
     @Override

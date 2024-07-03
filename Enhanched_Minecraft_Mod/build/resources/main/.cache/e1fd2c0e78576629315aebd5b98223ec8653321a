@@ -1,5 +1,5 @@
-// 1.20.1	2024-06-30T16:23:27.5819956	Tags for minecraft:block mod id enhanced_minecraft
+// 1.20.1	2024-07-02T16:01:26.0782433	Tags for minecraft:block mod id enhanced_minecraft
 b74d52a262f0be1e92d5138692ac6404ebb4f492 data/enhanced_minecraft/tags/blocks/needs_bronze_tool.json
 a683b3a8cffd51542508fd47c1fc33f0b3498a5d data/enhanced_minecraft/tags/blocks/needs_steel_tool.json
-2d096f01dd36ac23cfaac74e4ad3c077a3e4dd31 data/minecraft/tags/blocks/mineable/pickaxe.json
+440040e8a24ad834e89c4984740f7b245be33a47 data/minecraft/tags/blocks/mineable/pickaxe.json
 53b9d494027ec4de9433bd3c19683ad9df6bf545 data/minecraft/tags/blocks/needs_diamond_tool.json

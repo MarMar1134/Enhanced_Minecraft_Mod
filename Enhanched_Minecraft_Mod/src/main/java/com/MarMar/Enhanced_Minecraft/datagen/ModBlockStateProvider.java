@@ -34,9 +34,10 @@ public class ModBlockStateProvider extends BlockStateProvider{
         //Entity blocks
         simpleBlock(ModBlocks.Adobe_alloying_furnace.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace")));
-        simpleBlock(ModBlocks.Reforging_table.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block_reforging_table")));
+        simpleBlock(ModBlocks.Gem_polisher_block.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/gem_polisher")));
     }
+
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

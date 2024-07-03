@@ -5,10 +5,8 @@ import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
@@ -54,7 +52,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         //Entity blocks
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
-        this.dropSelf(ModBlocks.Reforging_table.get());
+        this.dropSelf(ModBlocks.Gem_polisher_block.get());
     }
 
     //Loot tables

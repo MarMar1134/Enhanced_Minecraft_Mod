@@ -1700,5 +1700,11 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/tools/bronze_polisher": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-03 03:35:02 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
