@@ -1,8 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.blocks.entity;
 
-import com.MarMar.Enhanced_Minecraft.Util.ModTiers;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
-import com.MarMar.Enhanced_Minecraft.items.custom.PolisherItem;
 import com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu;
 import net.minecraft.core.BlockPos;
@@ -28,7 +26,6 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Objects;
 import java.util.Optional;
 
 public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider {
@@ -99,7 +96,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     }
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.enhanced_minecraft.gem_polisher");
+        return Component.translatable("block.enhanced_minecraft.gem_polisher_block");
     }
 
     @Nullable
@@ -109,16 +106,22 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     }
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
             if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
-                double Durability = hasDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
+                int maxDurability = getMaxDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
+                int durability = getDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
                 if (hasRecipe()){
-                    if(Durability >= 10){
+                    if(durability == maxDurability){
                         craftItem();
                         restDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
                         sendUpdate();
                         setChanged(pLevel,pPos,pState);
-                    } else {
+                    } else if(durability != maxDurability){
                         craftItem();
-                        this.itemHandler.extractItem(TOOL_SLOT,1,false);
+                        restDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
+                        sendUpdate();
+                        setChanged(pLevel,pPos,pState);
+                    } else if (durability <= 30){
+                        craftItem();
+                        this.itemHandler.extractItem(TOOL_SLOT,1,true);
                         sendUpdate();
                         setChanged(pLevel,pPos,pState);
                     }
@@ -146,13 +149,16 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
                 stack.is(ModItems.Silver_polisher.get()) || stack.is(ModItems.Netherite_polisher.get()) ||
                 stack.is(ModItems.Diamond_polisher.get()) || stack.is(ModItems.Gold_polisher.get());
    }
-   private double hasDurability(ItemStack stack){
-        PolisherItem item = (PolisherItem) stack.getItem();
-       return item.getDurability();
+   private int getMaxDurability(ItemStack stack){
+        Item item = stack.getItem();
+       return item.getMaxDamage(stack);
+   }
+   private int getDurability(ItemStack stack){
+       Item item = stack.getItem();
+       return item.getDamage(stack);
    }
    private void restDurability(ItemStack stack){
-        PolisherItem item = (PolisherItem) stack.getItem();
-       item.restDurability();
+       stack.getOrCreateTag().putInt("Damage", Math.max(0, 30));
    }
     private boolean hasRecipe(){
         Optional<GemPolisherRecipe> recipe = getCurrentRecipe();

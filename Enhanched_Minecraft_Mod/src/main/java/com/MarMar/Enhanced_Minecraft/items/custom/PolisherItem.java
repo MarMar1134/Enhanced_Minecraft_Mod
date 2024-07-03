@@ -1,19 +1,23 @@
 package com.MarMar.Enhanced_Minecraft.items.custom;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 public class PolisherItem extends TieredItem implements Vanishable {
-    private double Durability;
+    private final int Durability;
     private final Tier tier;
-    private final String itemType;
-    public PolisherItem(Tier pTier, float UseModifier, Properties pProperties) {
+
+
+    public PolisherItem(Tier pTier, Properties pProperties) {
         super(pTier,pProperties);
 
         this.tier = pTier;
-        this.Durability = this.getTierUses() /UseModifier;
-        this.itemType = "polisher";
+        this.Durability = this.tier.getUses();
     }
 
     @Override
@@ -25,23 +29,26 @@ public class PolisherItem extends TieredItem implements Vanishable {
         return false;
     }
 
-    public double getDurability(){
+    @Override
+    public int getDamage(ItemStack stack) {
         return this.Durability;
     }
-    public void restDurability(){
-        this.Durability -= 20;
+
+    @Override
+    public int getMaxDamage(ItemStack stack) {
+        return super.getMaxDamage(stack);
     }
-    public double getTierUses(){
-        return this.getTier().getUses();
+
+    @Override
+    public boolean isDamaged(ItemStack stack) {
+        return super.isDamaged(stack);
+    }
+
+    @Override
+    public void setDamage(ItemStack stack, int damage) {
+        super.setDamage(stack, damage);
     }
     public Tier getTier(){
         return this.tier;
-    }
-    public String getItemType(){
-        return this.itemType;
-    }
-
-    public boolean isPolisherItem(){
-        return true;
     }
 }
