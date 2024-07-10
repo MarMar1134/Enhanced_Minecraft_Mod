@@ -1,0 +1,11 @@
+{
+  "type": "enhanced_minecraft:gem_polishing",
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:raw_emerald"
+    }
+  ],
+  "output": {
+    "item": "minecraft:emerald"
+  }
+}

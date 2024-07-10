@@ -1,29 +1,33 @@
 package com.MarMar.Enhanced_Minecraft.items.custom;
 
-import com.google.common.collect.ImmutableMultimap;
-import com.google.common.collect.Multimap;
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.common.extensions.IForgeItem;
 import org.jetbrains.annotations.NotNull;
 
-public class PolisherItem extends TieredItem implements Vanishable {
-    private final int Durability;
+import java.util.function.Consumer;
+
+public class PolisherItem extends TieredItem implements IForgeItem {
+   private final int maxDamage;
+    private int damage;
     private final Tier tier;
+    private final int useModifier;
 
-
-    public PolisherItem(Tier pTier, Properties pProperties) {
+    public PolisherItem(Tier pTier, int useModifier, Properties pProperties) {
         super(pTier,pProperties);
 
         this.tier = pTier;
-        this.Durability = this.tier.getUses();
+        this.maxDamage = this.getTier().getUses()*useModifier;
+        this.damage = this.maxDamage;
+        this.useModifier = useModifier;
     }
 
     @Override
     public @NotNull Item asItem() {
         return super.asItem();
     }
+
     @Override
     public boolean isEnchantable(ItemStack pStack) {
         return false;
@@ -31,9 +35,16 @@ public class PolisherItem extends TieredItem implements Vanishable {
 
     @Override
     public int getDamage(ItemStack stack) {
-        return this.Durability;
+        return this.damage;
     }
 
+    public void makeDamage(int damage){
+        this.damage = this.damage + damage;
+    }
+
+    public void resetDamage(){
+        this.damage = this.maxDamage;
+    }
     @Override
     public int getMaxDamage(ItemStack stack) {
         return super.getMaxDamage(stack);
@@ -44,11 +55,13 @@ public class PolisherItem extends TieredItem implements Vanishable {
         return super.isDamaged(stack);
     }
 
-    @Override
-    public void setDamage(ItemStack stack, int damage) {
-        super.setDamage(stack, damage);
-    }
     public Tier getTier(){
         return this.tier;
+    }
+    public int getTierUses(){
+        return this.getTier().getUses();
+    }
+    public int getUseModifier(){
+        return this.useModifier;
     }
 }

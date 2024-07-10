@@ -1,0 +1,9 @@
+{
+  "type": "enhanced_minecraft:gem_polishing",
+  "ingredients":[    {
+    "item": "enhanced_minecraft:raw_rubi"
+  }],
+  "output": {
+    "item": "enhanced_minecraft:rubi"
+  }
+}

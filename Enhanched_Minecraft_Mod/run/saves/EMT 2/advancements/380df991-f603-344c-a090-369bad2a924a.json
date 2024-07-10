@@ -1706,5 +1706,35 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2024-07-03 14:48:31 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2024-07-03 14:48:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_polisher": {
+    "criteria": {
+      "has_steel_ingot": "2024-07-03 14:51:52 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/iron_polisher": {
+    "criteria": {
+      "has_iron_ingot": "2024-07-03 14:52:08 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/diamond_polisher": {
+    "criteria": {
+      "has_diamond": "2024-07-03 23:32:14 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

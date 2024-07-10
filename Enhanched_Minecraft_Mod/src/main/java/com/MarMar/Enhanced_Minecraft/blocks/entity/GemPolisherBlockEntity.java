@@ -1,10 +1,12 @@
 package com.MarMar.Enhanced_Minecraft.blocks.entity;
 
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.items.custom.PolisherItem;
 import com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
@@ -36,8 +38,9 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     private LazyOptional<ItemStackHandler> lazyItemHandler= LazyOptional.empty();
     protected final ContainerData Data;
     private int tool = 0;
+    private int uses = 0, maxUses = 0;
     private int progress = 0;
-    private int maxProgress = 1;
+    private int maxProgress = 50;
 
     public GemPolisherBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.Gem_polisher.get(), pPos, pBlockState);
@@ -48,6 +51,8 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
                     case 0 -> GemPolisherBlockEntity.this.tool;
                     case 1 -> GemPolisherBlockEntity.this.progress;
                     case 2 -> GemPolisherBlockEntity.this.maxProgress;
+                    case 3 -> GemPolisherBlockEntity.this.uses;
+                    case 4 -> GemPolisherBlockEntity.this.maxUses;
                     default -> 0;
                 };
             }
@@ -58,12 +63,14 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
                     case 0-> GemPolisherBlockEntity.this.tool = i1;
                     case 1 -> GemPolisherBlockEntity.this.progress = i1;
                     case 2 -> GemPolisherBlockEntity.this.maxProgress = i1;
+                    case 3 -> GemPolisherBlockEntity.this.uses = i1;
+                    case 4 -> GemPolisherBlockEntity.this.maxUses = i1;
                 };
             }
 
             @Override
             public int getCount() {
-                return 3;
+                return 5;
             }
         };
 
@@ -105,28 +112,34 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         return new GemPolisherMenu(i, inventory, this, this.Data);
     }
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
+        if (uses <= 0){
             if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
-                int maxDurability = getMaxDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
-                int durability = getDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
-                if (hasRecipe()){
-                    if(durability == maxDurability){
-                        craftItem();
-                        restDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
+                maxUses = getUses(this.itemHandler.getStackInSlot(TOOL_SLOT).getMaxDamage());
+                this.uses = maxUses;
+                this.itemHandler.extractItem(TOOL_SLOT,1,false);
+                if (uses > 0){
+                    if (hasRecipe()){
+                        increaseCraftingProgress();
                         sendUpdate();
-                        setChanged(pLevel,pPos,pState);
-                    } else if(durability != maxDurability){
-                        craftItem();
-                        restDurability(this.itemHandler.getStackInSlot(TOOL_SLOT));
-                        sendUpdate();
-                        setChanged(pLevel,pPos,pState);
-                    } else if (durability <= 30){
-                        craftItem();
-                        this.itemHandler.extractItem(TOOL_SLOT,1,true);
-                        sendUpdate();
-                        setChanged(pLevel,pPos,pState);
+                        setChanged(pLevel, pPos, pState);
+                        if (hasProcessFinished()) {
+                            this.uses -= 1;
+                            craftItem();
+                            resetProgress();
+                        }
                     }
                 }
             }
+        } else if (hasRecipe()) {
+            increaseCraftingProgress();
+            sendUpdate();
+            setChanged(pLevel, pPos, pState);
+            if (hasProcessFinished()) {
+                this.uses -= 1;
+                craftItem();
+                resetProgress();
+            }
+        }
     }
     private void sendUpdate() {
         setChanged();
@@ -141,6 +154,16 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     private boolean canInsertAmountIntoOutputSlot(int count) {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
     }
+    private void increaseCraftingProgress() {
+        progress++;
+    }
+    private boolean hasProcessFinished (){
+
+        return progress >= maxProgress;
+    }
+    private void resetProgress() {
+        progress = 0;
+    }
    private boolean isAccurateTool(ItemStack stack){
         if (stack.isEmpty()){
             return false;
@@ -149,16 +172,33 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
                 stack.is(ModItems.Silver_polisher.get()) || stack.is(ModItems.Netherite_polisher.get()) ||
                 stack.is(ModItems.Diamond_polisher.get()) || stack.is(ModItems.Gold_polisher.get());
    }
-   private int getMaxDurability(ItemStack stack){
-        Item item = stack.getItem();
-       return item.getMaxDamage(stack);
-   }
-   private int getDurability(ItemStack stack){
-       Item item = stack.getItem();
+   private int getDamage(ItemStack stack){
+       PolisherItem item = (PolisherItem) stack.getItem();
        return item.getDamage(stack);
    }
-   private void restDurability(ItemStack stack){
-       stack.getOrCreateTag().putInt("Damage", Math.max(0, 30));
+   private int getUses(int maxUses){
+       int uses = 0;
+       return switch (maxUses) {
+           case 32 -> uses = 8;
+           case 64 -> uses = 12;
+           case 131 -> uses = 16;
+           case 200 -> uses = 18;
+           case 250 -> uses = 20;
+           case 565 -> uses = 32;
+           case 1561-> uses = 64;
+           case 1816 -> uses = 82;
+           case 2031 -> uses = 128;
+           default -> uses;
+       };
+   }
+   private void restDamage(ItemStack stack){
+       PolisherItem item = (PolisherItem) stack.getItem();
+
+       item.makeDamage(1);
+   }
+   private void resetDamage(ItemStack stack){
+       PolisherItem item = (PolisherItem) stack.getItem();
+       item.resetDamage();
    }
     private boolean hasRecipe(){
         Optional<GemPolisherRecipe> recipe = getCurrentRecipe();
@@ -171,13 +211,27 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
 
         return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
+    @Override
+    protected void saveAdditional(CompoundTag pTag) {
+        pTag.put("inventory", itemHandler.serializeNBT());
+        pTag.putInt("gem_polisher.progress", progress);
+        pTag.putInt("gem_polisher.uses", uses);
+        super.saveAdditional(pTag);
+    }
 
+    @Override
+    public void load(CompoundTag pTag) {
+        super.load(pTag);
+        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
+        progress = pTag.getInt("gem_polisher.progress");
+        uses = pTag.getInt("gem_polisher.uses");
+    }
     private Optional<GemPolisherRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
 
-        for(int i = 0; i < itemHandler.getSlots(); i++){
-            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
-        }
+
+            inventory.setItem(0, this.itemHandler.getStackInSlot(1));
+
         return this.level.getRecipeManager().getRecipeFor(GemPolisherRecipe.Type.Instance, inventory, level);
     }
     private void craftItem() {

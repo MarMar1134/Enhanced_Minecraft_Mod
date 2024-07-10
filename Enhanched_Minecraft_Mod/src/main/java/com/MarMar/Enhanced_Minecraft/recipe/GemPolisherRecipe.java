@@ -15,12 +15,12 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 public class GemPolisherRecipe implements Recipe<SimpleContainer> {
-    private final NonNullList<Ingredient> inputs;
+    private final NonNullList<Ingredient> input;
     private final ItemStack output;
     private final ResourceLocation id;
 
-    public GemPolisherRecipe(NonNullList<Ingredient> inputs, ItemStack output, ResourceLocation id) {
-        this.inputs = inputs;
+    public GemPolisherRecipe(NonNullList<Ingredient> input, ItemStack output, ResourceLocation id) {
+        this.input = input;
         this.output = output;
         this.id = id;
     }
@@ -30,7 +30,7 @@ public class GemPolisherRecipe implements Recipe<SimpleContainer> {
         if (level.isClientSide){
             return false;
         }
-        return inputs.get(1).test(simpleContainer.getItem(0));
+        return input.get(0).test(simpleContainer.getItem(0));
     }
 
     @Override
@@ -74,14 +74,14 @@ public class GemPolisherRecipe implements Recipe<SimpleContainer> {
         public GemPolisherRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
 
-            JsonArray ingredients = GsonHelper.getAsJsonArray(jsonObject, "ingredient");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
+            JsonArray ingredients = GsonHelper.getAsJsonArray(jsonObject, "ingredients");
+            NonNullList<Ingredient> input = NonNullList.withSize(1, Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++){
-                inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
+            for (int i = 0; i < input.size(); i++){
+                input.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new GemPolisherRecipe(inputs, output, resourceLocation);
+            return new GemPolisherRecipe(input, output, resourceLocation);
         }
 
         @Override
@@ -97,7 +97,7 @@ public class GemPolisherRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, GemPolisherRecipe gemPolishingRecipes) {
-            friendlyByteBuf.writeInt(gemPolishingRecipes.inputs.size());
+            friendlyByteBuf.writeInt(gemPolishingRecipes.input.size());
 
             for (Ingredient ingredient : gemPolishingRecipes.getIngredients()) {
                 ingredient.toNetwork(friendlyByteBuf);

@@ -33,11 +33,16 @@ public class GemPolisherMenu extends AbstractContainerMenu {
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 9));
             this.addSlot(new SlotItemHandler(iItemHandler, 1, 55, 34));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 129, 32));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 130, 33));
         });
 
         addDataSlots(data);
     }
+
+    public boolean hasUses(){
+        return this.data.get(3) > 0;
+    }
+
     private static final int HOTBAR_SLOT_COUNT = 9;
     private static final int PLAYER_INVENTORY_ROW_COUNT = 3;
     private static final int PLAYER_INVENTORY_COLUMN_COUNT = 9;
