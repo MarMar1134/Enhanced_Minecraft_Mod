@@ -32,6 +32,9 @@
   "item.enhanced_minecraft.diamond_polisher": "Diamond polisher",
   "item.enhanced_minecraft.netherite_polisher": "Netherite polisher",
 
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses left:",
+  "descriptions.enhanced_minecraft.polisher_item": "Polishes raw gems being utilized in the gem polisher",
+
   "item.enhanced_minecraft.sulfur": "Sulfur",
 
   "item.enhanced_minecraft.raw_tin": "Raw Tin",

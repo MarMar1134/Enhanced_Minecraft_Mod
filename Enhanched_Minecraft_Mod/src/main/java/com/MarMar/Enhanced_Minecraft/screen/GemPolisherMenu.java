@@ -19,7 +19,7 @@ public class GemPolisherMenu extends AbstractContainerMenu {
 
     public GemPolisherMenu(int containerID, Inventory inv, FriendlyByteBuf extraData){
         this(containerID, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()),
-                new SimpleContainerData(3));
+                new SimpleContainerData(5));
     }
     public GemPolisherMenu(int containerID, Inventory inv, BlockEntity entity, ContainerData data){
         super(ModMenuTypes.gem_polisher_menu.get(), containerID);
@@ -41,6 +41,9 @@ public class GemPolisherMenu extends AbstractContainerMenu {
 
     public boolean hasUses(){
         return this.data.get(3) > 0;
+    }
+    public int getUses(){
+        return this.data.get(3);
     }
 
     private static final int HOTBAR_SLOT_COUNT = 9;

@@ -33,6 +33,9 @@
   "item.enhanced_minecraft.diamond_polisher": "Pulidora de diamante",
   "item.enhanced_minecraft.netherite_polisher": "Pulidora de netherita",
 
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Usos restates:",
+  "descriptions.enhanced_minecraft.polisher_item": "Utilizado en la mesa de pulido, sirve para purificar gemas",
+
   "item.enhanced_minecraft.sulfur": "Azufre",
   "item.enhanced_minecraft.raw_tin": "Estaño crudo",
   "item.enhanced_minecraft.tin_ingot": "Lingote de estaño",

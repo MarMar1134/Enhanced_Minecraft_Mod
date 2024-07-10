@@ -172,10 +172,6 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
                 stack.is(ModItems.Silver_polisher.get()) || stack.is(ModItems.Netherite_polisher.get()) ||
                 stack.is(ModItems.Diamond_polisher.get()) || stack.is(ModItems.Gold_polisher.get());
    }
-   private int getDamage(ItemStack stack){
-       PolisherItem item = (PolisherItem) stack.getItem();
-       return item.getDamage(stack);
-   }
    private int getUses(int maxUses){
        int uses = 0;
        return switch (maxUses) {
@@ -190,15 +186,6 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
            case 2031 -> uses = 128;
            default -> uses;
        };
-   }
-   private void restDamage(ItemStack stack){
-       PolisherItem item = (PolisherItem) stack.getItem();
-
-       item.makeDamage(1);
-   }
-   private void resetDamage(ItemStack stack){
-       PolisherItem item = (PolisherItem) stack.getItem();
-       item.resetDamage();
    }
     private boolean hasRecipe(){
         Optional<GemPolisherRecipe> recipe = getCurrentRecipe();
