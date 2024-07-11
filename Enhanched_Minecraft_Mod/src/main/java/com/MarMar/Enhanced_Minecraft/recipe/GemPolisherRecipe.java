@@ -26,6 +26,10 @@ public class GemPolisherRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
+    public NonNullList<Ingredient> getIngredients() {
+        return this.input;
+    }
+    @Override
     public boolean matches(SimpleContainer simpleContainer, Level level) {
         if (level.isClientSide){
             return false;

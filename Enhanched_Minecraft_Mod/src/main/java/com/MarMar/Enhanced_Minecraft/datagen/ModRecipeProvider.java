@@ -12,6 +12,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.common.data.BlockTagsProvider;
 
@@ -71,6 +72,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Blocks.PACKED_MUD)
                 .define('I', Blocks.COBBLESTONE)
                 .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Gem_polisher_block.get())
+                .pattern("###")
+                .pattern("#I#")
+                .pattern("#I#")
+                .define('#', Blocks.DARK_OAK_PLANKS)
+                .define('I', Blocks.STONE)
+                .unlockedBy(getHasName(Blocks.DARK_OAK_PLANKS), has(Blocks.DARK_OAK_PLANKS))
                 .save(consumer);
 
         //Bronze recipes
@@ -307,6 +316,64 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.Rice.get()), has(ModItems.Rice.get()))
                 .save(consumer);
 
+        //Polishers
+        //Stone
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Stone_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', Items.STONE)
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
+                .save(consumer);
+        //Bronze
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Bronze_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', ModItems.Bronze_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
+                .save(consumer);
+        //Iron
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Iron_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', Items.IRON_INGOT)
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(consumer);
+        //Steel
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Steel_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', ModItems.Steel_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
+                .save(consumer);
+        //Gold
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Gold_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', Items.GOLD_INGOT)
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(consumer);
+        //Silver
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Silver_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', ModItems.Silver_ingot.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
+                .save(consumer);
+        //Diamond
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Diamond_polisher.get())
+                .pattern(" I")
+                .pattern("# ")
+                .define('I', Items.DIAMOND)
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                .save(consumer);
+
         //New vanilla recipes
             //Redstone
         ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, Items.REPEATER)
@@ -336,71 +403,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('F', Blocks.FURNACE)
                 .define('#', Blocks.SMOOTH_STONE)
                 .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
-                .save(consumer);
-        //Polishers
-            //Stone
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Stone_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', Items.STONE)
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
-                .save(consumer);
-            //Bronze
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Bronze_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', ModItems.Bronze_ingot.get())
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(ModItems.Bronze_ingot.get()), has(ModItems.Bronze_ingot.get()))
-                .save(consumer);
-            //Iron
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Iron_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', Items.IRON_INGOT)
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
-                .save(consumer);
-            //Steel
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Steel_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', ModItems.Steel_ingot.get())
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(ModItems.Steel_ingot.get()), has(ModItems.Steel_ingot.get()))
-                .save(consumer);
-            //Gold
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Gold_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', Items.GOLD_INGOT)
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
-                .save(consumer);
-            //Silver
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Silver_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', ModItems.Silver_ingot.get())
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(ModItems.Silver_ingot.get()), has(ModItems.Silver_ingot.get()))
-                .save(consumer);
-            //Diamond
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Diamond_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', Items.DIAMOND)
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
-                .save(consumer);
-            //Netherite
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Netherite_polisher.get())
-                .pattern(" I")
-                .pattern("# ")
-                .define('I', Items.NETHERITE_INGOT)
-                .define('#', Items.STICK)
-                .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
                 .save(consumer);
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
