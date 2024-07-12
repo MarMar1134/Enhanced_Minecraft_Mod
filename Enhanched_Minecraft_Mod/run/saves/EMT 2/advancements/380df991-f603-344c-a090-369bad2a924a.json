@@ -8,7 +8,10 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:sunflower_plains": "2024-01-09 15:13:46 -0300",
-      "minecraft:river": "2024-01-10 11:19:09 -0300"
+      "minecraft:river": "2024-01-10 11:19:09 -0300",
+      "minecraft:forest": "2024-07-11 22:01:23 -0300",
+      "minecraft:lush_caves": "2024-07-11 22:07:34 -0300",
+      "minecraft:jungle": "2024-07-11 22:00:41 -0300"
     },
     "done": false
   },

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "enhanced_minecraft:rubi_ore_placed",
+  "step": "underground_ores"
+}
