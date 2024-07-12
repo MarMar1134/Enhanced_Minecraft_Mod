@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -78,13 +79,44 @@ public class ModTabs {
                     .title(Component.translatable("creativetab.utility"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.Adobe_alloying_furnace.get());
-                        output.accept(ModBlocks.Reforging_table.get());
+                        output.accept(ModBlocks.Gem_polisher_block.get());
                         output.accept((ModItems.Tin_ingot.get()));
                         output.accept((ModItems.Bronze_ingot.get()));
                         output.accept(ModItems.Bronze_nuggets.get());
                         output.accept(ModItems.Steel_ingot.get());
                         output.accept(ModItems.Silver_ingot.get());
                         output.accept(ModItems.Reinforced_diamond.get());
+                    }).build()
+    );
+    public static final RegistryObject<CreativeModeTab> jewelery = Tabs.register(
+            "jewelery", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Saphire.get()))
+                    .title(Component.translatable("creativetab.jewelery"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.Rubi_ore.get());
+                        output.accept(ModBlocks.Deepslate_rubi_ore.get());
+                        output.accept(ModBlocks.Saphire_ore.get());
+                        output.accept(ModBlocks.Deepslate_saphire_ore.get());
+                        output.accept(Blocks.EMERALD_ORE);
+                        output.accept(Blocks.DEEPSLATE_EMERALD_ORE);
+                        output.accept(Blocks.DIAMOND_ORE);
+                        output.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
+                        output.accept(ModBlocks.Gem_polisher_block.get());
+                        output.accept((ModItems.Stone_polisher.get()));
+                        output.accept((ModItems.Bronze_polisher.get()));
+                        output.accept(ModItems.Iron_polisher.get());
+                        output.accept(ModItems.Gold_polisher.get());
+                        output.accept(ModItems.Silver_polisher.get());
+                        output.accept(ModItems.Steel_polisher.get());
+                        output.accept(ModItems.Diamond_polisher.get());
+                        output.accept(ModItems.Netherite_polisher.get());
+                        output.accept(ModItems.Raw_rubi.get());
+                        output.accept(ModItems.Raw_saphire.get());
+                        output.accept(ModItems.Raw_emerald.get());
+                        output.accept(ModItems.Raw_diamond.get());
+                        output.accept(ModItems.Rubi.get());
+                        output.accept(ModItems.Saphire.get());
+                        output.accept(Items.EMERALD);
+                        output.accept(Items.DIAMOND);
                     }).build()
     );
     public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
@@ -96,18 +128,21 @@ public class ModTabs {
                         output.accept(ModItems.Bronze_axe.get());
                         output.accept(ModItems.Bronze_shovel.get());
                         output.accept(ModItems.Bronze_hoe.get());
+                        output.accept(ModItems.Bronze_polisher.get());
 
                         //Steel
                         output.accept(ModItems.Steel_pickaxe.get());
                         output.accept(ModItems.Steel_axe.get());
                         output.accept(ModItems.Steel_shovel.get());
                         output.accept(ModItems.Steel_hoe.get());
+                        output.accept(ModItems.Steel_polisher.get());
 
                         //Silver
                         output.accept(ModItems.Silver_pickaxe.get());
                         output.accept(ModItems.Silver_axe.get());
                         output.accept(ModItems.Silver_shovel.get());
                         output.accept(ModItems.Silver_hoe.get());
+                        output.accept(ModItems.Silver_polisher.get());
 
                         //Reinforced diamond
                         output.accept(ModItems.Reinforced_diamond_pickaxe.get());

@@ -2,6 +2,7 @@
   "creativetab.weapons": "Combat",
   "creativetab.tools": "Tools",
   "creativetab.minerals": "Ores and Minerals",
+  "creativetab.jewelery": "Jewelery",
   "creativetab.utility": "Utility",
   "creativetab.fruits": "Fruits and Vegetables",
   "creativetab.saplings": "Saplings and Seeds",
@@ -20,7 +21,19 @@
   "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate saphire ore",
 
   "block.enhanced_minecraft.adobe_alloying_furnace": "Adobe alloy furnace",
-  "block.enhanced_minecraft.reforging_table": "Reforging Table",
+  "block.enhanced_minecraft.gem_polisher_block": "Gem polisher",
+
+  "item.enhanced_minecraft.stone_polisher": "Stone polisher",
+  "item.enhanced_minecraft.bronze_polisher": "Bronze polisher",
+  "item.enhanced_minecraft.iron_polisher": "Iron polisher",
+  "item.enhanced_minecraft.steel_polisher": "Steel polisher",
+  "item.enhanced_minecraft.silver_polisher": "Silver polisher",
+  "item.enhanced_minecraft.gold_polisher": "Gold polisher",
+  "item.enhanced_minecraft.diamond_polisher": "Diamond polisher",
+  "item.enhanced_minecraft.netherite_polisher": "Netherite polisher",
+
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses left:",
+  "descriptions.enhanced_minecraft.polisher_item": "Polishes raw gems being utilized in the gem polisher",
 
   "item.enhanced_minecraft.sulfur": "Sulfur",
 

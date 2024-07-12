@@ -27,6 +27,8 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
 
+        generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, LookupProvider));
+
         ModBlockTagGenerator blockTagGenerator= generator.addProvider(event.includeServer(),
         new ModBlockTagGenerator(packOutput, LookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, LookupProvider, blockTagGenerator.contentsGetter(),

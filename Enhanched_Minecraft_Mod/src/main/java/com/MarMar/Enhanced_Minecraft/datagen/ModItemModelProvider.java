@@ -125,6 +125,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.reinforcing_upgrade_smithing_template);
 
         //Armors and tools
+        simpleItem(ModItems.Bronze_polisher);
+
         HandheldItem(ModItems.Bronze_sword);
         HandheldItem(ModItems.Bronze_pickaxe);
         HandheldItem(ModItems.Bronze_axe);
@@ -168,6 +170,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Reinforced_diamond_chestplate);
         simpleItem(ModItems.Reinforced_diamond_leggings);
         simpleItem(ModItems.Reinforced_diamond_boots);
+
+        //Polishers
+        HandheldItem(ModItems.Stone_polisher);
+        HandheldItem(ModItems.Bronze_polisher);
+        HandheldItem(ModItems.Iron_polisher);
+        HandheldItem(ModItems.Steel_polisher);
+        HandheldItem(ModItems.Silver_polisher);
+        HandheldItem(ModItems.Gold_polisher);
+        HandheldItem(ModItems.Diamond_polisher);
+        HandheldItem(ModItems.Netherite_polisher);
         }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){

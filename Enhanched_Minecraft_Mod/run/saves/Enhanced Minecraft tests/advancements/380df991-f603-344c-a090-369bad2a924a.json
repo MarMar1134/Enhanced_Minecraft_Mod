@@ -125,12 +125,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/tools/bronze_picaxe": {
-    "criteria": {
-      "has_bronze_ingot": "2024-01-10 10:10:29 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/tools/bronze_shovel": {
     "criteria": {
       "has_bronze_ingot": "2024-01-10 10:10:29 -0300"
@@ -437,6 +431,12 @@
     },
     "done": true
   },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2024-01-10 10:50:56 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_deepslate": {
     "criteria": {
       "has_cobbled_deepslate": "2024-01-10 10:52:02 -0300"
@@ -464,12 +464,6 @@
   "minecraft:recipes/building_blocks/polished_deepslate_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2024-01-10 10:52:02 -0300"
-    },
-    "done": true
-  },
-  "minecraft:story/iron_tools": {
-    "criteria": {
-      "iron_pickaxe": "2024-01-10 10:50:56 -0300"
     },
     "done": true
   },
@@ -557,12 +551,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
-    "criteria": {
-      "has_dandelion": "2024-01-10 10:53:07 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/cobbled_deepslate_wall": {
     "criteria": {
       "has_cobbled_deepslate": "2024-01-10 10:52:02 -0300"
@@ -614,6 +602,78 @@
   "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2024-01-10 10:52:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2024-01-10 10:53:07 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronze_chestplate": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronze_leggings": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nuggets": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronze_boots": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_polisher": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronze_helmet": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-10 20:42:04 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2024-07-10 20:42:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_chestplate": "2024-07-10 20:43:09 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2024-07-10 20:43:09 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_boots": "2024-07-10 20:44:00 -0300"
     },
     "done": true
   },

@@ -2,7 +2,7 @@ package com.MarMar.Enhanced_Minecraft.items;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.Util.ModTiers;
-import net.minecraft.world.food.FoodProperties;
+import com.MarMar.Enhanced_Minecraft.items.custom.PolisherItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.*;
@@ -58,6 +58,14 @@ public class ModItems {
             "reinforcing_upgrade_smithing_template", () -> new Item(new Item.Properties()));
 
     //Weapons, tools and armors
+        //Stone
+        public static final RegistryObject<Item> Stone_polisher = Items.register(
+                "stone_polisher",() -> new PolisherItem(Tiers.STONE,0, new Item.Properties()));
+
+        //Iron
+        public static final RegistryObject<Item> Iron_polisher = Items.register(
+                "iron_polisher",() -> new PolisherItem(Tiers.IRON,0, new Item.Properties()));
+
         //Bronze
         public static final RegistryObject<Item> Bronze_sword = Items.register(
                 "bronze_sword",() -> new SwordItem(ModTiers.Bronze, 2, -2.4F, new Item.Properties()));
@@ -69,7 +77,10 @@ public class ModItems {
                 "bronze_shovel",() -> new ShovelItem(ModTiers.Bronze, 1, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Bronze_hoe = Items.register(
                 "bronze_hoe",() -> new HoeItem(ModTiers.Bronze, 1, -2F,  new Item.Properties()));
-        public static final RegistryObject<Item> Bronze_helmet= Items.register(
+        public static final RegistryObject<Item> Bronze_polisher = Items.register(
+                "bronze_polisher",() -> new PolisherItem(ModTiers.Bronze,0, new Item.Properties()));
+
+         public static final RegistryObject<Item> Bronze_helmet= Items.register(
                 "bronze_helmet", () -> new ArmorItem(ModArmorMaterials.Bronze, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> Bronze_chestplate= Items.register(
                 "bronze_chestplate", () -> new ArmorItem(ModArmorMaterials.Bronze, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
@@ -89,6 +100,8 @@ public class ModItems {
                 "steel_shovel",() -> new ShovelItem(ModTiers.Steel, 1, -2F,  new Item.Properties()));
         public static final RegistryObject<Item> Steel_hoe = Items.register(
                 "steel_hoe",() -> new HoeItem(ModTiers.Steel, 1, -2F,  new Item.Properties()));
+    public static final RegistryObject<Item> Steel_polisher = Items.register(
+            "steel_polisher",() -> new PolisherItem(ModTiers.Steel,0, new Item.Properties()));
         public static final RegistryObject<Item> Steel_helmet= Items.register(
             "steel_helmet", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> Steel_chestplate= Items.register(
@@ -97,6 +110,10 @@ public class ModItems {
             "steel_leggings", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         public static final RegistryObject<Item> Steel_boots= Items.register(
             "steel_boots", () -> new ArmorItem(ModArmorMaterials.Steel, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        //Gold
+        public static final RegistryObject<Item> Gold_polisher = Items.register(
+                "gold_polisher",() -> new PolisherItem(Tiers.GOLD,0, new Item.Properties()));
 
         //Silver
         public static final RegistryObject<Item> Silver_sword = Items.register(
@@ -109,6 +126,8 @@ public class ModItems {
             "silver_shovel",() -> new ShovelItem(ModTiers.Silver, 2, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_hoe = Items.register(
             "silver_hoe",() -> new HoeItem(ModTiers.Silver, 2, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> Silver_polisher = Items.register(
+            "silver_polisher",() -> new PolisherItem(ModTiers.Silver,0, new Item.Properties()));
         public static final RegistryObject<Item> Silver_helmet= Items.register(
             "silver_helmet", () -> new ModArmorEffects(ModArmorMaterials.Silver, ArmorItem.Type.HELMET, new Item.Properties()));
         public static final RegistryObject<Item> Silver_chestplate= Items.register(
@@ -117,6 +136,10 @@ public class ModItems {
             "silver_leggings", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         public static final RegistryObject<Item> Silver_boots= Items.register(
             "silver_boots", () -> new ArmorItem(ModArmorMaterials.Silver, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        //Diamond
+        public static final RegistryObject<Item> Diamond_polisher = Items.register(
+                "diamond_polisher",() -> new PolisherItem(Tiers.DIAMOND,0, new Item.Properties()));
 
          //Reinforced Diamond
         public static final RegistryObject<Item> Reinforced_diamond_sword = Items.register(
@@ -137,6 +160,10 @@ public class ModItems {
             "reinforced_diamond_leggings", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         public static final RegistryObject<Item> Reinforced_diamond_boots= Items.register(
             "reinforced_diamond_boots", () -> new ArmorItem(ModArmorMaterials.Reinforced_diamond, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        //Netherite
+        public static final RegistryObject<Item> Netherite_polisher = Items.register(
+                "netherite_polisher",() -> new PolisherItem(Tiers.NETHERITE,0, new Item.Properties()));
     //Food
         //Fruit
     public static final RegistryObject<Item> Orange = Items.register(

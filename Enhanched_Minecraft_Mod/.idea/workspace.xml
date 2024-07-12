@@ -8,99 +8,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b6b07-0706-4107-94f1-1746f1beb859" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-29-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-10.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-11.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-12.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-13.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-8.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-data/logs/2024-06-30-9.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-29-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-29-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-06-30-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/blockstates/deepslate_rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/blockstates/deepslate_saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/blockstates/rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/blockstates/saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/block/deepslate_rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/block/deepslate_saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/block/rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/block/saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/item/deepslate_rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/item/deepslate_saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/item/raw_diamond.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/item/rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/assets/enhanced_minecraft/models/item/saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/loot_tables/blocks/deepslate_rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/loot_tables/blocks/deepslate_saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/loot_tables/blocks/rubi_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/loot_tables/blocks/saphire_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/deepslate_rubi_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/deepslate_saphire_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/rubi_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/block/saphire_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/raw_diamond.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/blocks/deepslate_diamond_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/blocks/diamond_ore.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/blocks/emerald_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModWorldGenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/worldgen/ModBiomeModifiers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/worldgen/ModConfiguredFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/worldgen/ModOrePlacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/worldgen/ModPlacedFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTabs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/Util/ModTabs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/blocks/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/blocks/ModBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModBlockStateProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModBlockStateProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModBlockTagGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModBlockTagGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/loot/ModBlockLootTables.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/loot/ModBlockLootTables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/items/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/items/ModItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/33898c0a9666439344ed092789f652c9773da3cb" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/33898c0a9666439344ed092789f652c9773da3cb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/59eb3dbb5f86130e09b3c62d89b9525ee01cf52d" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/59eb3dbb5f86130e09b3c62d89b9525ee01cf52d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/61b12cb95558e21e1b0a6016a5c46e7dd77f879e" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/61b12cb95558e21e1b0a6016a5c46e7dd77f879e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/e1fd2c0e78576629315aebd5b98223ec8653321a" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/e1fd2c0e78576629315aebd5b98223ec8653321a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/f79520cab65eebe856f0d1b7c489121c12a37001" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/f79520cab65eebe856f0d1b7c489121c12a37001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/en_US.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/es_AR.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/lang/es_AR.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/item/reinforced_diamond.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/enhanced_minecraft/textures/item/reinforced_diamond.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/tags/blocks/needs_steel_tool.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/tags/blocks/needs_steel_tool.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/tags/items/gem.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/enhanced_minecraft/tags/items/gem.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/data/minecraft/tags/blocks/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdobeAlloyingFurnaceBlock.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DataGenerators.class.uniqueId13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Enhanced_Minecraft$ClientModEvents.class.uniqueId11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Enhanced_Minecraft.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModArmorMaterials.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModBlockLootTables.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModBlocks.class.uniqueId7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModItemModelProvider$1.class.uniqueId10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModItemModelProvider.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModItemTagGenerator.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModItems.class.uniqueId9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModRecipeProvider.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModTabs.class.uniqueId8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModTiers.class.uniqueId12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/DataGenerators.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/DataGenerators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModRecipeProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/datagen/ModRecipeProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/event/ModEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/event/ModEvents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/AlloyingFurnaceRecipe$Serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/AlloyingFurnaceRecipe$Serializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/AlloyingFurnaceRecipe$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/AlloyingFurnaceRecipe$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/AlloyingFurnaceRecipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/AlloyingFurnaceRecipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/GemPolisherRecipe$Serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/GemPolisherRecipe$Serializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/GemPolisherRecipe$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/GemPolisherRecipe$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/GemPolisherRecipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/MarMar/Enhanced_Minecraft/recipe/GemPolisherRecipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ModEvents.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/2024-07-03-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/2024-07-03-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-3.log.gz" afterDir="false" />
@@ -108,7 +49,6 @@
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2024-06-29-1.log.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -135,25 +75,14 @@
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/region/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/EMT 2/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/EMT 2/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/33898c0a9666439344ed092789f652c9773da3cb" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/33898c0a9666439344ed092789f652c9773da3cb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/59eb3dbb5f86130e09b3c62d89b9525ee01cf52d" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/59eb3dbb5f86130e09b3c62d89b9525ee01cf52d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/61b12cb95558e21e1b0a6016a5c46e7dd77f879e" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/61b12cb95558e21e1b0a6016a5c46e7dd77f879e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/e1fd2c0e78576629315aebd5b98223ec8653321a" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/e1fd2c0e78576629315aebd5b98223ec8653321a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/f79520cab65eebe856f0d1b7c489121c12a37001" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/f79520cab65eebe856f0d1b7c489121c12a37001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/tags/blocks/needs_steel_tool.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/tags/blocks/needs_steel_tool.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/tags/items/gem.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/tags/items/gem.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Util/ModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/Util/ModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/blocks/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModBlockStateProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModBlockStateProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModBlockTagGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModBlockTagGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemModelProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/ModItemTagGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/loot/ModBlockLootTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/loot/ModBlockLootTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/items/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/en_US.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/es_AR.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/lang/es_AR.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/reinforced_diamond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/enhanced_minecraft/textures/item/reinforced_diamond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/advancements/recipes/tools/netherite_polisher.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/enhanced_minecraft/recipes/netherite_polisher.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/compatibility/AdobeAlloyingCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/compatibility/GemPolishingCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/compatibility/JEIEnhancedMinecraftPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/DataGenerators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/datagen/DataGenerators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/event/ModEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/MarMar/Enhanced_Minecraft/event/ModEvents.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,45 +135,49 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.runClient.executor": "Run",
-    "Application.runData.executor": "Run",
-    "Gradle.Build Enhanched_Minecraft_Mod.executor": "Run",
-    "Gradle.D:/Repositorios github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor": "Run",
-    "Gradle.Enhanched_Minecraft_Mod [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor": "Run",
-    "Gradle.Enhanched_Minecraft_Mod [:prepareRunClientCompile].executor": "Run",
-    "Gradle.Enhanched_Minecraft_Mod [:prepareRunDataCompile].executor": "Run",
-    "Gradle.Enhanched_Minecraft_Mod [jar].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Repositorios Github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod/src/main/resources/assets/enhanced_minecraft/textures/item",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.runClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.runData.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Enhanched_Minecraft_Mod.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.D:/Repositorios github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Enhanched_Minecraft_Mod [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Enhanched_Minecraft_Mod [:prepareRunClientCompile].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Enhanched_Minecraft_Mod [:prepareRunDataCompile].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Enhanched_Minecraft_Mod [jar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Experimental&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Repositorios Github/Enhanced-Minecraft-Mod/Enhanched_Minecraft_Mod/src/main/resources/assets/enhanced_minecraft/textures/block&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\item" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\block" />
+      <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\data\enhanced_minecraft\recipes" />
+      <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\item" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\models\item" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\models\block" />
-      <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\assets\enhanced_minecraft\textures\models\armor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\data\minecraft\loot_tables\blocks" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\data\minecraft" />
       <recent name="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\src\main\resources\data\enhanced_minecraft" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.MarMar.Enhanced_Minecraft.items.custom" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.runClient">
+  <component name="RunManager" selected="Gradle.Enhanched_Minecraft_Mod [jar]">
     <configuration name="Enhanched_Minecraft_Mod [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -291,17 +224,18 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.io.IOException" package="java.io" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

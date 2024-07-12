@@ -35,6 +35,11 @@ private final ResourceLocation id;
     }
 
     @Override
+    public NonNullList<Ingredient> getIngredients() {
+        return this.inputs;
+    }
+
+    @Override
     public ItemStack assemble(SimpleContainer simpleContainer, RegistryAccess registryAccess) {
         return output.copy();
     }

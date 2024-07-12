@@ -8,7 +8,10 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:sunflower_plains": "2024-01-09 15:13:46 -0300",
-      "minecraft:river": "2024-01-10 11:19:09 -0300"
+      "minecraft:river": "2024-01-10 11:19:09 -0300",
+      "minecraft:forest": "2024-07-11 22:01:23 -0300",
+      "minecraft:lush_caves": "2024-07-11 22:07:34 -0300",
+      "minecraft:jungle": "2024-07-11 22:00:41 -0300"
     },
     "done": false
   },
@@ -1697,6 +1700,48 @@
   "minecraft:recipes/misc/diamond_from_blasting_diamond_ore": {
     "criteria": {
       "has_diamond_ore": "2024-06-30 18:01:28 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_polisher": {
+    "criteria": {
+      "has_bronze_ingot": "2024-07-03 03:35:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2024-07-03 14:48:31 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2024-07-03 14:48:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_polisher": {
+    "criteria": {
+      "has_steel_ingot": "2024-07-03 14:51:52 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/iron_polisher": {
+    "criteria": {
+      "has_iron_ingot": "2024-07-03 14:52:08 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/diamond_polisher": {
+    "criteria": {
+      "has_diamond": "2024-07-03 23:32:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2024-07-10 20:17:03 -0300"
     },
     "done": true
   },
