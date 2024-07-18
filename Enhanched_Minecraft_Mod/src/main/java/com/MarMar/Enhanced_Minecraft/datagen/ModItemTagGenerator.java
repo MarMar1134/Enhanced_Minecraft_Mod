@@ -41,6 +41,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Silver_hoe.get()).add(ModItems.Silver_helmet.get()).add(ModItems.Silver_chestplate.get())
                 .add(ModItems.Silver_leggings.get()).add(ModItems.Silver_boots.get());
 
+        this.tag(ModTags.Items.Rose_gold_tag)
+                .add(ModItems.Rose_gold_ingot.get())
+                .add(ModItems.Rose_golden_sword.get())
+                .add(ModItems.Rose_golden_pickaxe.get())
+                .add(ModItems.Rose_golden_axe.get())
+                .add(ModItems.Rose_golden_shovel.get())
+                .add(ModItems.Rose_golden_hoe.get())
+                .add(ModItems.Rose_golden_helmet.get())
+                .add(ModItems.Rose_golden_chestplate.get())
+                .add(ModItems.Rose_golden_leggings.get())
+                .add(ModItems.Rose_golden_boots.get());
+
+
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.Bronze_helmet.get())
                 .add(ModItems.Bronze_chestplate.get())
@@ -54,6 +67,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Silver_chestplate.get())
                 .add(ModItems.Silver_leggings.get())
                 .add(ModItems.Silver_boots.get())
+                .add(ModItems.Rose_golden_helmet.get())
+                .add(ModItems.Rose_golden_chestplate.get())
+                .add(ModItems.Rose_golden_leggings.get())
+                .add(ModItems.Rose_golden_boots.get())
                 .add(ModItems.Reinforced_diamond_helmet.get())
                 .add(ModItems.Reinforced_diamond_chestplate.get())
                 .add(ModItems.Bronze_leggings.get())

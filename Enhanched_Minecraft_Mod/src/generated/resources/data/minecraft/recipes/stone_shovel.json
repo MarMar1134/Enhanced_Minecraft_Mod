@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "I",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "minecraft:stone_shovel"
+  },
+  "show_notification": true
+}

@@ -22,6 +22,7 @@ public class ModTags {
         public static final TagKey<Item> Bronze_tag = TagI("bronze");
         public static final TagKey<Item> Steel_tag = TagI("steel");
         public static final TagKey<Item> Silver_tag = TagI("silver");
+        public static final TagKey<Item> Rose_gold_tag = TagI("rose_gold");
         public static final TagKey<Item> Gem_tag = TagI("gem");
         public static final TagKey<Item> Polisher_tag = TagI("polisher_tool");
         private static TagKey<Item> TagI(String name){

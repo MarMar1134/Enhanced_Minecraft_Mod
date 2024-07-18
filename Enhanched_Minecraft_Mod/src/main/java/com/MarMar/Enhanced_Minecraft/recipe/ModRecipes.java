@@ -13,6 +13,8 @@ public class ModRecipes {
 
     public static final RegistryObject<RecipeSerializer<AlloyingFurnaceRecipe>> Alloying_serializer =
             Serializers.register("ore_alloying", () -> AlloyingFurnaceRecipe.Serializer.Instance);
+    public static final RegistryObject<RecipeSerializer<SuperAlloyingRecipe>> Super_alloying_serializer =
+            Serializers.register("super_ore_alloying", () -> SuperAlloyingRecipe.Serializer.Instance);
     public static final RegistryObject<RecipeSerializer<GemPolisherRecipe>> Polishing_serializer =
             Serializers.register("gem_polishing", () -> GemPolisherRecipe.Serializer.Instance);
     public static void Register (IEventBus eventBus){

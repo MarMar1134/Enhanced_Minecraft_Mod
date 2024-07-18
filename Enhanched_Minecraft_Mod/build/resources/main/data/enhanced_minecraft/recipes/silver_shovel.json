@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    " I ",
-    " # ",
-    " # "
+    "I",
+    "#",
+    "#"
   ],
   "result": {
     "item": "enhanced_minecraft:silver_shovel"

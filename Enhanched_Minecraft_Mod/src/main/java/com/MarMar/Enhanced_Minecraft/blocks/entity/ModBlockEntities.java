@@ -15,8 +15,11 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<AdobeAlloyingFurnaceBlockEntity>> Adobe_alloying_furnace =
             Block_entities.register("adobe_alloying_furnace", () -> BlockEntityType
                     .Builder.of(AdobeAlloyingFurnaceBlockEntity::new,ModBlocks.Adobe_alloying_furnace.get()).build(null));
-    public static final RegistryObject<BlockEntityType<GemPolisherBlockEntity>> Gem_polisher =
-            Block_entities.register("gem_polisher", () -> BlockEntityType
+    public static final RegistryObject<BlockEntityType<SuperAlloyingFurnaceBlockEntity>> Super_alloying_furnace =
+            Block_entities.register("super_alloying_furnace", () -> BlockEntityType
+                    .Builder.of(SuperAlloyingFurnaceBlockEntity::new,ModBlocks.Super_alloying_furnace.get()).build(null));
+    public static final RegistryObject<BlockEntityType<GemPolisherBlockEntity>> Gem_polisher_block =
+            Block_entities.register("gem_polisher_block", () -> BlockEntityType
                     .Builder.of(GemPolisherBlockEntity::new,ModBlocks.Gem_polisher_block.get()).build(null));
 
     public static void register(IEventBus eventBus){

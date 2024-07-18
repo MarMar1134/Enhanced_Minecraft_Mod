@@ -20,8 +20,9 @@
   "block.enhanced_minecraft.saphire_ore": "Saphire ore",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate saphire ore",
 
+  "block.enhanced_minecraft.super_alloying_furnace": "Advanced alloy furnace",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Adobe alloy furnace",
-  "block.enhanced_minecraft.gem_polisher_block": "Gem polisher",
+  "block.enhanced_minecraft.gem_polisher": "Gem polisher",
 
   "item.enhanced_minecraft.stone_polisher": "Stone polisher",
   "item.enhanced_minecraft.bronze_polisher": "Bronze polisher",
@@ -33,7 +34,7 @@
   "item.enhanced_minecraft.netherite_polisher": "Netherite polisher",
 
   "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses left:",
-  "descriptions.enhanced_minecraft.polisher_item": "Polishes raw gems being utilized in the gem polisher",
+  "descriptions.enhanced_minecraft.polisher_item": "Polishes raw gems when utilized in the gem polisher",
 
   "item.enhanced_minecraft.sulfur": "Sulfur",
 
@@ -46,11 +47,14 @@
   "item.enhanced_minecraft.raw_emerald": "Raw emerald",
   "item.enhanced_minecraft.raw_diamond": "Raw diamond",
 
-  "item.enhanced_minecraft.tin_ingot": "Tin Ingot",
-  "item.enhanced_minecraft.bronze_ingot": "Bronze Ingot",
-  "item.enhanced_minecraft.bronze_nuggets": "Bronze Nuggets",
-  "item.enhanced_minecraft.steel_ingot": "Steel Ingot",
-  "item.enhanced_minecraft.silver_ingot": "Silver Ingot",
+  "item.enhanced_minecraft.tin_ingot": "Tin ingot",
+  "item.enhanced_minecraft.bronze_ingot": "Bronze ingot",
+  "item.enhanced_minecraft.bronze_nugget": "Bronze nugget",
+  "item.enhanced_minecraft.steel_ingot": "Steel ingot",
+  "item.enhanced_minecraft.silver_ingot": "Silver ingot",
+  "item.enhanced_minecraft.silver_nugget": "Silver nugget",
+  "item.enhanced_minecraft.rose_gold_ingot": "Rose gold ingot",
+  "item.enhanced_minecraft.rose_gold_nugget": "Rose gold nugget",
   "item.enhanced_minecraft.cobalt": "Cobalt",
   "item.enhanced_minecraft.rubi": "Rubi",
   "item.enhanced_minecraft.saphire": "Saphire",
@@ -85,6 +89,16 @@
   "item.enhanced_minecraft.silver_chestplate": "Silver chestplate",
   "item.enhanced_minecraft.silver_leggings": "Silver leggings",
   "item.enhanced_minecraft.silver_boots": "Silver boots",
+
+  "item.enhanced_minecraft.rose_golden_sword": "Rose golden sword",
+  "item.enhanced_minecraft.rose_golden_pickaxe": "Rose golden pickaxe",
+  "item.enhanced_minecraft.rose_golden_axe": "Rose golden axe",
+  "item.enhanced_minecraft.rose_golden_shovel": "Rose golden shovel",
+  "item.enhanced_minecraft.rose_golden_hoe": "Rose golden hoe",
+  "item.enhanced_minecraft.rose_golden_helmet": "Rose golden helmet",
+  "item.enhanced_minecraft.rose_golden_chestplate": "Rose golden chestplate",
+  "item.enhanced_minecraft.rose_golden_leggings": "Rose golden leggings",
+  "item.enhanced_minecraft.rose_golden_boots": "Rose golden boots",
 
   "item.enhanced_minecraft.reinforcing_upgrade_smithing_template": "Cobalt smithing template",
 

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bronze_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:bronze_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_minecraft:bronze_nugget_from_blasting_bronze_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bronze_shovel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_minecraft:bronze_nugget_from_blasting_bronze_shovel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

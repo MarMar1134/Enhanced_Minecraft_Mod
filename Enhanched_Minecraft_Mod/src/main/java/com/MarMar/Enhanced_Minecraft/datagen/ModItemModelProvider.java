@@ -13,7 +13,6 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.LinkedHashMap;
@@ -101,13 +100,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.Raw_bronze);
         simpleItem(ModItems.Bronze_ingot);
-        simpleItem(ModItems.Bronze_nuggets);
+        simpleItem(ModItems.Bronze_nugget);
 
         simpleItem(ModItems.Raw_steel);
         simpleItem(ModItems.Steel_ingot);
 
         simpleItem(ModItems.Raw_silver);
         simpleItem(ModItems.Silver_ingot);
+        simpleItem(ModItems.Silver_nugget);
+
+        simpleItem(ModItems.Rose_gold_ingot);
+        simpleItem(ModItems.Rose_gold_nugget);
 
         simpleItem(ModItems.Cobalt);
 
@@ -125,51 +128,65 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.reinforcing_upgrade_smithing_template);
 
         //Armors and tools
-        simpleItem(ModItems.Bronze_polisher);
+            //Bronze
+            HandheldItem(ModItems.Bronze_sword);
+            HandheldItem(ModItems.Bronze_pickaxe);
+            HandheldItem(ModItems.Bronze_axe);
+            HandheldItem(ModItems.Bronze_shovel);
+            HandheldItem(ModItems.Bronze_hoe);
 
-        HandheldItem(ModItems.Bronze_sword);
-        HandheldItem(ModItems.Bronze_pickaxe);
-        HandheldItem(ModItems.Bronze_axe);
-        HandheldItem(ModItems.Bronze_shovel);
-        HandheldItem(ModItems.Bronze_hoe);
+            simpleItem(ModItems.Bronze_helmet);
+            simpleItem(ModItems.Bronze_chestplate);
+            simpleItem(ModItems.Bronze_leggings);
+            simpleItem(ModItems.Bronze_boots);
 
-        simpleItem(ModItems.Bronze_helmet);
-        simpleItem(ModItems.Bronze_chestplate);
-        simpleItem(ModItems.Bronze_leggings);
-        simpleItem(ModItems.Bronze_boots);
+            //Steel
+            HandheldItem(ModItems.Steel_sword);
+            HandheldItem(ModItems.Steel_pickaxe);
+            HandheldItem(ModItems.Steel_axe);
+            HandheldItem(ModItems.Steel_shovel);
+            HandheldItem(ModItems.Steel_hoe);
 
-        HandheldItem(ModItems.Steel_sword);
-        HandheldItem(ModItems.Steel_pickaxe);
-        HandheldItem(ModItems.Steel_axe);
-        HandheldItem(ModItems.Steel_shovel);
-        HandheldItem(ModItems.Steel_hoe);
+            simpleItem(ModItems.Steel_helmet);
+            simpleItem(ModItems.Steel_chestplate);
+            simpleItem(ModItems.Steel_leggings);
+            simpleItem(ModItems.Steel_boots);
 
-        simpleItem(ModItems.Steel_helmet);
-        simpleItem(ModItems.Steel_chestplate);
-        simpleItem(ModItems.Steel_leggings);
-        simpleItem(ModItems.Steel_boots);
+            //Silver
+            HandheldItem(ModItems.Silver_sword);
+            HandheldItem(ModItems.Silver_pickaxe);
+            HandheldItem(ModItems.Silver_axe);
+            HandheldItem(ModItems.Silver_shovel);
+            HandheldItem(ModItems.Silver_hoe);
 
-        HandheldItem(ModItems.Silver_sword);
-        HandheldItem(ModItems.Silver_pickaxe);
-        HandheldItem(ModItems.Silver_axe);
-        HandheldItem(ModItems.Silver_shovel);
-        HandheldItem(ModItems.Silver_hoe);
+            simpleItem(ModItems.Silver_helmet);
+            simpleItem(ModItems.Silver_chestplate);
+            simpleItem(ModItems.Silver_leggings);
+            simpleItem(ModItems.Silver_boots);
 
-        simpleItem(ModItems.Silver_helmet);
-        simpleItem(ModItems.Silver_chestplate);
-        simpleItem(ModItems.Silver_leggings);
-        simpleItem(ModItems.Silver_boots);
+            //Rose Gold
+            HandheldItem(ModItems.Rose_golden_sword);
+            HandheldItem(ModItems.Rose_golden_pickaxe);
+            HandheldItem(ModItems.Rose_golden_axe);
+            HandheldItem(ModItems.Rose_golden_shovel);
+            HandheldItem(ModItems.Rose_golden_hoe);
 
-        HandheldItem(ModItems.Reinforced_diamond_sword);
-        HandheldItem(ModItems.Reinforced_diamond_pickaxe);
-        HandheldItem(ModItems.Reinforced_diamond_axe);
-        HandheldItem(ModItems.Reinforced_diamond_shovel);
-        HandheldItem(ModItems.Reinforced_diamond_hoe);
+            simpleItem(ModItems.Rose_golden_helmet);
+            simpleItem(ModItems.Rose_golden_chestplate);
+            simpleItem(ModItems.Rose_golden_leggings);
+            simpleItem(ModItems.Rose_golden_boots);
 
-        simpleItem(ModItems.Reinforced_diamond_helmet);
-        simpleItem(ModItems.Reinforced_diamond_chestplate);
-        simpleItem(ModItems.Reinforced_diamond_leggings);
-        simpleItem(ModItems.Reinforced_diamond_boots);
+        //Reinforced Diamond
+            HandheldItem(ModItems.Reinforced_diamond_sword);
+            HandheldItem(ModItems.Reinforced_diamond_pickaxe);
+            HandheldItem(ModItems.Reinforced_diamond_axe);
+            HandheldItem(ModItems.Reinforced_diamond_shovel);
+            HandheldItem(ModItems.Reinforced_diamond_hoe);
+
+            simpleItem(ModItems.Reinforced_diamond_helmet);
+            simpleItem(ModItems.Reinforced_diamond_chestplate);
+            simpleItem(ModItems.Reinforced_diamond_leggings);
+            simpleItem(ModItems.Reinforced_diamond_boots);
 
         //Polishers
         HandheldItem(ModItems.Stone_polisher);

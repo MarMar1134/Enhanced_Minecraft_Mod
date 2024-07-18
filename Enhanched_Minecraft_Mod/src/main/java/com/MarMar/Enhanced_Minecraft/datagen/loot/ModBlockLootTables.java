@@ -26,9 +26,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         //ores
         this.add(ModBlocks.Tin_ore.get(),
-                block -> createTinOreDrops(ModBlocks.Tin_ore.get(), ModItems.Raw_tin.get()));
+                block -> createTinOreDrops(ModBlocks.Tin_ore.get()));
         this.add(ModBlocks.Deepslate_tin_ore.get(),
-                block -> createTinOreDrops(ModBlocks.Deepslate_tin_ore.get(), ModItems.Raw_tin.get()));
+                block -> createTinOreDrops(ModBlocks.Deepslate_tin_ore.get()));
 
         this.add(ModBlocks.Sulfur_ore.get(),
                 block -> createSulfurOreDrops(ModBlocks.Sulfur_ore.get()));
@@ -52,14 +52,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         //Entity blocks
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
+        this.dropSelf(ModBlocks.Super_alloying_furnace.get());
         this.dropSelf(ModBlocks.Gem_polisher_block.get());
     }
 
     //Loot tables
-    protected LootTable.Builder createTinOreDrops(Block pBlock, Item pItem) {
+    protected LootTable.Builder createTinOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, (LootPoolEntryContainer.Builder)
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Raw_tin.get())
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 4.0F)))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
                         .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
 
     }

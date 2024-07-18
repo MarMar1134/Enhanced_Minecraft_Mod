@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "enhanced_minecraft:steel_ingot"
+    },
+    "A": {
+      "item": "enhanced_minecraft:adobe_alloying_furnace"
+    },
+    "I": {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "III"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:super_alloying_furnace"
+  },
+  "show_notification": true
+}

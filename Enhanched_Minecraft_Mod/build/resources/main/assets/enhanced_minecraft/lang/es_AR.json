@@ -20,9 +20,9 @@
   "block.enhanced_minecraft.saphire_ore": "Mineral de zafiro",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Mineral de zafiro profundo",
 
-
+  "block.enhanced_minecraft.super_alloying_furnace": "Horno de aleación avanzado",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de barro",
-  "block.enhanced_minecraft.gem_polisher_block": "Mesa de pulido",
+  "block.enhanced_minecraft.gem_polisher": "Mesa de pulido",
 
   "item.enhanced_minecraft.stone_polisher": "Pulidora de piedra",
   "item.enhanced_minecraft.bronze_polisher": "Pulidora de bronce",
@@ -46,6 +46,7 @@
   "item.enhanced_minecraft.steel_ingot": "Lingote de acero",
   "item.enhanced_minecraft.raw_silver": "Plata cruda",
   "item.enhanced_minecraft.silver_ingot": "Lingote de plata",
+  "item.enhanced_minecraft.rose_gold_ingot": "Lingote de oro rosado",
   "item.enhanced_minecraft.cobalt": "cobalto",
   "item.enhanced_minecraft.raw_rubi": "Rubi impuro",
   "item.enhanced_minecraft.raw_saphire": "Zafiro impuro",
@@ -84,6 +85,16 @@
   "item.enhanced_minecraft.silver_chestplate": "Pechera de plata",
   "item.enhanced_minecraft.silver_leggings": "Pantalones de plata",
   "item.enhanced_minecraft.silver_boots": "Botas de plata",
+
+  "item.enhanced_minecraft.rose_golden_sword": "Espada de oro rosado",
+  "item.enhanced_minecraft.rose_golden_pickaxe": "Pico de oro rosado",
+  "item.enhanced_minecraft.rose_golden_axe": "Hacha de oro rosado",
+  "item.enhanced_minecraft.rose_golden_shovel": "Pala de oro rosado",
+  "item.enhanced_minecraft.rose_golden_hoe": "Hoz de oro rosado",
+  "item.enhanced_minecraft.rose_golden_helmet": "Casco de oro rosado",
+  "item.enhanced_minecraft.rose_golden_chestplate": "Pechera de oro rosado",
+  "item.enhanced_minecraft.rose_golden_leggings": "Pantalones de oro rosado",
+  "item.enhanced_minecraft.rose_golden_boots": "Botas de oro rosado",
 
   "item.enhanced_minecraft.reinforcing_upgrade_smithing_template": "Plantilla de cobalto",
 

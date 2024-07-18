@@ -21,6 +21,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+<<<<<<< Updated upstream
         this.tag((BlockTags.MINEABLE_WITH_PICKAXE))
                 .add(ModBlocks.Adobe_alloying_furnace.get(),
                         ModBlocks.Gem_polisher_block.get(),
@@ -36,6 +37,24 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.Saphire_ore.get(),
                         ModBlocks.Deepslate_rubi_ore.get(),
                         ModBlocks.Deepslate_saphire_ore.get()
+=======
+        this.tag((BlockTags.MINEABLE_WITH_PICKAXE)).add(
+                ModBlocks.Adobe_alloying_furnace.get(),
+                ModBlocks.Super_alloying_furnace.get(),
+                ModBlocks.Gem_polisher_block.get(),
+                ModBlocks.Sulfur_ore.get(),
+                ModBlocks.Tin_ore.get(),
+                ModBlocks.Silver_ore.get(),
+                ModBlocks.Rubi_ore.get(),
+                ModBlocks.Saphire_ore.get(),
+                ModBlocks.Deepslate_tin_ore.get(),
+                ModBlocks.Deepslate_silver_ore.get(),
+                ModBlocks.Deepslate_rubi_ore.get(),
+                ModBlocks.Deepslate_saphire_ore.get(),
+                ModBlocks.Deepslate_sulfur_ore.get(),
+                ModBlocks.Nether_sulfur_ore.get(),
+                ModBlocks.Deepslate_cobalt_ore.get()
+>>>>>>> Stashed changes
                 );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZE_TOOL)

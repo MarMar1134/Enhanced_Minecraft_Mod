@@ -3,6 +3,7 @@ package com.MarMar.Enhanced_Minecraft.blocks;
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.blocks.custom.AdobeAlloyingFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.blocks.custom.GemPolisherBlock;
+import com.MarMar.Enhanced_Minecraft.blocks.custom.SuperAlloyingFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -63,6 +64,8 @@ public class ModBlocks {
         //Entity blocks
     public static final RegistryObject<Block> Adobe_alloying_furnace = RegisterBlock("adobe_alloying_furnace",
                 () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+    public static final RegistryObject<Block> Super_alloying_furnace = RegisterBlock("super_alloying_furnace",
+            () -> new SuperAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLED_DEEPSLATE).noOcclusion()));
     public static final RegistryObject<Block> Gem_polisher_block = RegisterBlock("gem_polisher",
             () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
     //Block register

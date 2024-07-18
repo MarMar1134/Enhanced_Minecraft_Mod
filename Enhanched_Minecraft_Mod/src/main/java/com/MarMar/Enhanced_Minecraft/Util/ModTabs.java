@@ -31,16 +31,6 @@ public class ModTabs {
 //                        output.accept(ModItems.Banana_seed.get());
 //                    })
 //                    .build());
-    public static final RegistryObject<CreativeModeTab> Fruits= Tabs.register(
-            "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
-                    .title(Component.translatable("creativetab.fruits"))
-                    .displayItems((itemDisplayParameters, output) -> {
-//                        output.accept(ModItems.Banana.get());
-                        output.accept(ModItems.Green_apple.get());
-                        output.accept(ModItems.Lemon.get());
-                        output.accept(ModItems.Orange.get());
-                    }).build()
-    );
     public static final RegistryObject<CreativeModeTab> Minerals = Tabs.register(
             "minerals", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.Tin_ore.get()))
                     .title(Component.translatable("creativetab.minerals"))
@@ -73,20 +63,100 @@ public class ModTabs {
                         output.accept(Items.DIAMOND);
                     }).build()
     );
-
     public static final RegistryObject<CreativeModeTab> utility = Tabs.register(
             "utility", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_ingot.get()))
                     .title(Component.translatable("creativetab.utility"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.Adobe_alloying_furnace.get());
+                        output.accept(ModBlocks.Super_alloying_furnace.get());
                         output.accept(ModBlocks.Gem_polisher_block.get());
                         output.accept((ModItems.Tin_ingot.get()));
                         output.accept((ModItems.Bronze_ingot.get()));
-                        output.accept(ModItems.Bronze_nuggets.get());
+                        output.accept(ModItems.Bronze_nugget.get());
                         output.accept(ModItems.Steel_ingot.get());
                         output.accept(ModItems.Silver_ingot.get());
+                        output.accept(ModItems.Rose_gold_ingot.get());
                         output.accept(ModItems.Reinforced_diamond.get());
                     }).build()
+    );
+    public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
+            "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Steel_pickaxe.get()))
+                    .title((Component.translatable("creativetab.tools")))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        //Bronze
+                        output.accept(ModItems.Bronze_pickaxe.get());
+                        output.accept(ModItems.Bronze_axe.get());
+                        output.accept(ModItems.Bronze_shovel.get());
+                        output.accept(ModItems.Bronze_hoe.get());
+                        output.accept(ModItems.Bronze_polisher.get());
+
+                        //Steel
+                        output.accept(ModItems.Steel_pickaxe.get());
+                        output.accept(ModItems.Steel_axe.get());
+                        output.accept(ModItems.Steel_shovel.get());
+                        output.accept(ModItems.Steel_hoe.get());
+                        output.accept(ModItems.Steel_polisher.get());
+
+                        //Silver
+                        output.accept(ModItems.Silver_pickaxe.get());
+                        output.accept(ModItems.Silver_axe.get());
+                        output.accept(ModItems.Silver_shovel.get());
+                        output.accept(ModItems.Silver_hoe.get());
+                        output.accept(ModItems.Silver_polisher.get());
+
+                        //Rose Gold
+                        output.accept(ModItems.Rose_golden_pickaxe.get());
+                        output.accept(ModItems.Rose_golden_axe.get());
+                        output.accept(ModItems.Rose_golden_shovel.get());
+                        output.accept(ModItems.Rose_golden_hoe.get());
+
+                        //Reinforced diamond
+                        output.accept(ModItems.Reinforced_diamond_pickaxe.get());
+                        output.accept(ModItems.Reinforced_diamond_axe.get());
+                        output.accept(ModItems.Reinforced_diamond_shovel.get());
+                        output.accept(ModItems.Reinforced_diamond_hoe.get());
+                    }).build()
+    );
+    public static final RegistryObject<CreativeModeTab> weapons = Tabs.register(
+            "weapons",() -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Steel_sword.get()))
+                    .title(Component.translatable("creativetab.weapons"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        //Bronze
+                        output.accept(ModItems.Bronze_sword.get());
+                        output.accept(ModItems.Bronze_helmet.get());
+                        output.accept(ModItems.Bronze_chestplate.get());
+                        output.accept(ModItems.Bronze_leggings.get());
+                        output.accept(ModItems.Bronze_boots.get());
+
+                        //Steel
+                        output.accept(ModItems.Steel_sword.get());
+                        output.accept(ModItems.Steel_helmet.get());
+                        output.accept(ModItems.Steel_chestplate.get());
+                        output.accept(ModItems.Steel_leggings.get());
+                        output.accept(ModItems.Steel_boots.get());
+
+                        //Silver
+                        output.accept(ModItems.Silver_sword.get());
+                        output.accept(ModItems.Silver_helmet.get());
+                        output.accept(ModItems.Silver_chestplate.get());
+                        output.accept(ModItems.Silver_leggings.get());
+                        output.accept(ModItems.Silver_boots.get());
+
+                        //Rose gold
+                        output.accept(ModItems.Rose_golden_sword.get());
+                        output.accept(ModItems.Rose_golden_helmet.get());
+                        output.accept(ModItems.Rose_golden_chestplate.get());
+                        output.accept(ModItems.Rose_golden_leggings.get());
+                        output.accept(ModItems.Rose_golden_boots.get());
+
+                        //Reinforced diamond
+                        output.accept(ModItems.Reinforced_diamond_sword.get());
+                        output.accept(ModItems.Reinforced_diamond_helmet.get());
+                        output.accept(ModItems.Reinforced_diamond_chestplate.get());
+                        output.accept(ModItems.Reinforced_diamond_leggings.get());
+                        output.accept(ModItems.Reinforced_diamond_boots.get());
+                    })
+                    .build()
     );
     public static final RegistryObject<CreativeModeTab> jewelery = Tabs.register(
             "jewelery", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Saphire.get()))
@@ -119,72 +189,15 @@ public class ModTabs {
                         output.accept(Items.DIAMOND);
                     }).build()
     );
-    public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
-            "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Steel_pickaxe.get()))
-                    .title((Component.translatable("creativetab.tools")))
+    public static final RegistryObject<CreativeModeTab> Fruits= Tabs.register(
+            "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
+                    .title(Component.translatable("creativetab.fruits"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        //Bronze
-                        output.accept(ModItems.Bronze_pickaxe.get());
-                        output.accept(ModItems.Bronze_axe.get());
-                        output.accept(ModItems.Bronze_shovel.get());
-                        output.accept(ModItems.Bronze_hoe.get());
-                        output.accept(ModItems.Bronze_polisher.get());
-
-                        //Steel
-                        output.accept(ModItems.Steel_pickaxe.get());
-                        output.accept(ModItems.Steel_axe.get());
-                        output.accept(ModItems.Steel_shovel.get());
-                        output.accept(ModItems.Steel_hoe.get());
-                        output.accept(ModItems.Steel_polisher.get());
-
-                        //Silver
-                        output.accept(ModItems.Silver_pickaxe.get());
-                        output.accept(ModItems.Silver_axe.get());
-                        output.accept(ModItems.Silver_shovel.get());
-                        output.accept(ModItems.Silver_hoe.get());
-                        output.accept(ModItems.Silver_polisher.get());
-
-                        //Reinforced diamond
-                        output.accept(ModItems.Reinforced_diamond_pickaxe.get());
-                        output.accept(ModItems.Reinforced_diamond_axe.get());
-                        output.accept(ModItems.Reinforced_diamond_shovel.get());
-                        output.accept(ModItems.Reinforced_diamond_hoe.get());
+//                        output.accept(ModItems.Banana.get());
+                        output.accept(ModItems.Green_apple.get());
+                        output.accept(ModItems.Lemon.get());
+                        output.accept(ModItems.Orange.get());
                     }).build()
-    );
-
-    public static final RegistryObject<CreativeModeTab> weapons = Tabs.register(
-            "weapons",() -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Steel_sword.get()))
-                    .title(Component.translatable("creativetab.weapons"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        //Bronze
-                        output.accept(ModItems.Bronze_sword.get());
-                        output.accept(ModItems.Bronze_helmet.get());
-                        output.accept(ModItems.Bronze_chestplate.get());
-                        output.accept(ModItems.Bronze_leggings.get());
-                        output.accept(ModItems.Bronze_boots.get());
-
-                        //Steel
-                        output.accept(ModItems.Steel_sword.get());
-                        output.accept(ModItems.Steel_helmet.get());
-                        output.accept(ModItems.Steel_chestplate.get());
-                        output.accept(ModItems.Steel_leggings.get());
-                        output.accept(ModItems.Steel_boots.get());
-
-                        //Silver
-                        output.accept(ModItems.Silver_sword.get());
-                        output.accept(ModItems.Silver_helmet.get());
-                        output.accept(ModItems.Silver_chestplate.get());
-                        output.accept(ModItems.Silver_leggings.get());
-                        output.accept(ModItems.Silver_boots.get());
-
-                        //Reinforced diamond
-                        output.accept(ModItems.Reinforced_diamond_sword.get());
-                        output.accept(ModItems.Reinforced_diamond_helmet.get());
-                        output.accept(ModItems.Reinforced_diamond_chestplate.get());
-                        output.accept(ModItems.Reinforced_diamond_leggings.get());
-                        output.accept(ModItems.Reinforced_diamond_boots.get());
-                    })
-                    .build()
     );
     public static void Register(IEventBus eventBus){
         Tabs.register(eventBus);

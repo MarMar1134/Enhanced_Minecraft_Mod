@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    " I ",
-    " I ",
-    " # "
+    "I",
+    "I",
+    "#"
   ],
   "result": {
     "item": "enhanced_minecraft:steel_sword"

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "enhanced_minecraft:rose_gold_ingot"
+    }
+  },
+  "pattern": [
+    "II",
+    " #",
+    " #"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:rose_golden_hoe"
+  },
+  "show_notification": true
+}

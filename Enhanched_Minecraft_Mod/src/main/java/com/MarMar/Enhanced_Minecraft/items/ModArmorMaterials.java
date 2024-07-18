@@ -18,6 +18,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
             ModItems.Steel_ingot.get())),
     Silver("silver", 9, new int[]{2,6,3,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
             ModItems.Silver_ingot.get())),
+    Rose_gold("rose_gold", 10, new int[]{2,6,5,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
+            ModItems.Rose_gold_ingot.get())),
     Reinforced_diamond("reinforced_diamond", 35, new int[]{3,6,8,3}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0.05f, () -> Ingredient.of(
             ModItems.Reinforced_diamond.get()));
 

@@ -783,66 +783,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_smelting_bronze_hoe": {
-    "criteria": {
-      "has_bronze_hoe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_blasting_bronze_sword": {
-    "criteria": {
-      "has_bronze_sword": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_smelting_bronze_sword": {
-    "criteria": {
-      "has_bronze_sword": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_smelting_bronze_axe": {
-    "criteria": {
-      "has_bronze_axe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_smelting_bronze_pickaxe": {
-    "criteria": {
-      "has_bronze_pickaxe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_smelting_bronze_shovel": {
-    "criteria": {
-      "has_bronze_shovel": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_blasting_bronze_hoe": {
-    "criteria": {
-      "has_bronze_hoe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_blasting_bronze_shovel": {
-    "criteria": {
-      "has_bronze_shovel": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_blasting_bronze_axe": {
-    "criteria": {
-      "has_bronze_axe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets_from_blasting_bronze_pickaxe": {
-    "criteria": {
-      "has_bronze_pickaxe": "2024-01-11 22:00:36 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/obtain_armor": {
     "criteria": {
       "iron_helmet": "2024-01-11 22:02:12 -0300"
@@ -1080,12 +1020,6 @@
   "enhanced_minecraft:recipes/misc/bronze_ingot_from_blasting_raw_bronze": {
     "criteria": {
       "has_raw_bronze": "2024-01-13 02:07:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nuggets": {
-    "criteria": {
-      "has_bronze_ingot": "2024-01-13 02:07:47 -0300"
     },
     "done": true
   },
@@ -1529,18 +1463,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/cobalt_from_blasting_deepslate_cobalt_ore": {
-    "criteria": {
-      "has_deepslate_cobalt_ore": "2024-01-16 20:21:23 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/cobalt_from_smelting_deepslate_cobalt_ore": {
-    "criteria": {
-      "has_deepslate_cobalt_ore": "2024-01-16 20:21:23 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/diamond_leggings": {
     "criteria": {
       "has_diamond": "2024-01-16 20:24:23 -0300"
@@ -1745,5 +1667,218 @@
     },
     "done": true
   },
+<<<<<<< Updated upstream
+=======
+  "enhanced_minecraft:recipes/tools/silver_polisher": {
+    "criteria": {
+      "has_silver_ingot": "2024-07-12 13:12:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/gold_polisher": {
+    "criteria": {
+      "has_gold_ingot": "2024-07-12 13:12:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/netherite_block": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_boots_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_shovel_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_chestplate_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_leggings_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_axe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_hoe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_pickaxe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lodestone": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_helmet_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2024-07-12 13:13:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2024-07-17 23:04:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2024-07-17 23:04:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2024-07-17 23:04:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2024-07-17 23:04:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2024-07-17 23:04:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2024-07-17 23:04:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_smelting_rose_golden_pickaxe": {
+    "criteria": {
+      "has_rose_golden_pickaxe": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/rose_golden_pickaxe": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot": {
+    "criteria": {
+      "has_silver_nugget": "2024-07-18 16:59:25 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_blasting_rose_golden_pickaxe": {
+    "criteria": {
+      "has_rose_golden_pickaxe": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_smelting_silver_pickaxe": {
+    "criteria": {
+      "has_silver_pickaxe": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/rose_golden_axe": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/rose_golden_sword": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/rose_golden_hoe": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/rose_golden_leggings": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/rose_golden_chestplate": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/rose_golden_helmet": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_ingot": {
+    "criteria": {
+      "has_rose_gold_nugget": "2024-07-18 16:59:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/rose_golden_shovel": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/rose_golden_boots": {
+    "criteria": {
+      "has_rose_gold_ingot": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_blasting_silver_pickaxe": {
+    "criteria": {
+      "has_silver_pickaxe": "2024-07-18 16:57:30 -0300"
+    },
+    "done": true
+  },
+>>>>>>> Stashed changes
   "DataVersion": 3465
 }

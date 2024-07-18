@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "item": "minecraft:flint"
+    },
+    "I": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "A",
+    "I",
+    "#"
+  ],
+  "result": {
+    "item": "minecraft:stone_sword"
+  },
+  "show_notification": true
+}

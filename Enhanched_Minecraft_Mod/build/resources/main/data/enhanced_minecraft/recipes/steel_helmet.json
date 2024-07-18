@@ -8,8 +8,7 @@
   },
   "pattern": [
     "###",
-    "# #",
-    "   "
+    "# #"
   ],
   "result": {
     "item": "enhanced_minecraft:steel_helmet"

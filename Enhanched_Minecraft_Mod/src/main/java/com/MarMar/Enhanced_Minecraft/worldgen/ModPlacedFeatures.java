@@ -30,10 +30,10 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(134))));
         register(context, SAPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPHIRE_ORE_KEY),
-                ModOrePlacement.rareOrePlacement(12,
+                ModOrePlacement.commonOrePlacement(8,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-24), VerticalAnchor.absolute(70))));
         register(context, RUBI_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBI_ORE_KEY),
-                ModOrePlacement.rareOrePlacement(8,
+                ModOrePlacement.commonOrePlacement(6,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-24), VerticalAnchor.absolute(70))));
     }
 

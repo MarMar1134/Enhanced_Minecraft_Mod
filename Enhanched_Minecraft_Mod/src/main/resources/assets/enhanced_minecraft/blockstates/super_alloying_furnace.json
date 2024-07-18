@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhanced_minecraft:block/super_alloying_furnace",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "enhanced_minecraft:block/super_alloying_furnace"
+    },
+    "facing=south": {
+      "model": "enhanced_minecraft:block/super_alloying_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "enhanced_minecraft:block/super_alloying_furnace",
+      "y": 270
+    }
+  }
+}

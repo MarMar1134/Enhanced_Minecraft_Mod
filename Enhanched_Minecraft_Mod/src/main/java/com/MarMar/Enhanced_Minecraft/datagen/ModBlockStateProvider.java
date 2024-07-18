@@ -32,10 +32,6 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.Deepslate_saphire_ore);
 
         //Entity blocks
-        simpleBlock(ModBlocks.Adobe_alloying_furnace.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/adobe_alloying_furnace")));
-        simpleBlock(ModBlocks.Gem_polisher_block.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/gem_polisher")));
     }
 
 

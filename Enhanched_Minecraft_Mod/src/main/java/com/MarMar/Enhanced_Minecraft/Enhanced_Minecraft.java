@@ -5,9 +5,7 @@ import com.MarMar.Enhanced_Minecraft.blocks.entity.ModBlockEntities;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
-import com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen;
-import com.MarMar.Enhanced_Minecraft.screen.GemPolisherScreen;
-import com.MarMar.Enhanced_Minecraft.screen.ModMenuTypes;
+import com.MarMar.Enhanced_Minecraft.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -45,6 +43,7 @@ public class Enhanced_Minecraft
         public static void onClientSetup(FMLClientSetupEvent event){
             MenuScreens.register(ModMenuTypes.adobe_alloying_furnace_menu.get(), AdobeAlloyingFurnaceScreen::new);
             MenuScreens.register(ModMenuTypes.gem_polisher_menu.get(), GemPolisherScreen::new);
+            MenuScreens.register(ModMenuTypes.super_alloying_furnace_menu.get(), SuperAlloyingFurnaceScreen::new);
         }
     }
 

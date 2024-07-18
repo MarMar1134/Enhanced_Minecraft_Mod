@@ -174,8 +174,7 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
             resetProgress();
         }
     }
-
-    private boolean hasRecipe (){
+    private boolean hasRecipe(){
         Optional<AlloyingFurnaceRecipe> recipe = getCurrentRecipe();
 
         if (recipe.isEmpty()){

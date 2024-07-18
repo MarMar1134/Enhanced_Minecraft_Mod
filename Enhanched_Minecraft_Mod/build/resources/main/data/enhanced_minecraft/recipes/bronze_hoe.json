@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "II ",
-    " # ",
-    " # "
+    "II",
+    " #",
+    " #"
   ],
   "result": {
     "item": "enhanced_minecraft:bronze_hoe"

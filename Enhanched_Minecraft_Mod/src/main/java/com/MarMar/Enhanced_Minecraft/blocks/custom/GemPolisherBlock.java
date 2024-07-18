@@ -82,7 +82,7 @@ public class GemPolisherBlock extends BaseEntityBlock implements EntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.Gem_polisher.get(),
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.Gem_polisher_block.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 

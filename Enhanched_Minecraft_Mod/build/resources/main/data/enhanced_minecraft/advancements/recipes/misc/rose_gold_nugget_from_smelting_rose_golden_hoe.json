@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_golden_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:rose_golden_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_minecraft:rose_gold_nugget_from_smelting_rose_golden_hoe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_golden_hoe",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_minecraft:rose_gold_nugget_from_smelting_rose_golden_hoe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,7 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.blocks.entity;
 
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
-import com.MarMar.Enhanced_Minecraft.items.custom.PolisherItem;
 import com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu;
 import net.minecraft.core.BlockPos;
@@ -43,7 +42,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     private int maxProgress = 50;
 
     public GemPolisherBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.Gem_polisher.get(), pPos, pBlockState);
+        super(ModBlockEntities.Gem_polisher_block.get(), pPos, pBlockState);
         this.Data = new ContainerData() {
             @Override
             public int get(int i) {
@@ -103,7 +102,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     }
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.enhanced_minecraft.gem_polisher_block");
+        return Component.translatable("block.enhanced_minecraft.gem_polisher");
     }
 
     @Nullable

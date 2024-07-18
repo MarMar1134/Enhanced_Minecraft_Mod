@@ -16,6 +16,8 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<AdobeAlloyingFurnaceMenu>> adobe_alloying_furnace_menu =
             registerMenuType("adobe_alloying_furnace_menu", AdobeAlloyingFurnaceMenu::new);
+    public static final RegistryObject<MenuType<SuperAlloyingFurnaceMenu>> super_alloying_furnace_menu =
+            registerMenuType("super_alloying_furnace_menu", SuperAlloyingFurnaceMenu::new);
     public static final RegistryObject<MenuType<GemPolisherMenu>> gem_polisher_menu =
             registerMenuType("gem_polisher_menu", GemPolisherMenu::new);
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {

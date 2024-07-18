@@ -20,6 +20,12 @@ public class ModTiers {
             new ResourceLocation(Enhanced_Minecraft.MOD_ID, "silver_ingot"), List.of(Tiers.GOLD),
             List.of(Tiers.IRON)
     );
+    public static final Tier Rose_gold = TierSortingRegistry.registerTier(
+            new ForgeTier(2, 300, 13F, 2f, 21,
+                    BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(ModItems.Rose_gold_ingot.get())),
+            new ResourceLocation(Enhanced_Minecraft.MOD_ID, "rose_gold_ingot"), List.of(Tiers.IRON),
+            List.of(Tiers.DIAMOND)
+    );
     public static final Tier Bronze = TierSortingRegistry.registerTier(
             new ForgeTier(2, 200, 5F, 2F, 12,
                     ModTags.Blocks.NEEDS_BRONZE_TOOL, () -> Ingredient.of(ModItems.Bronze_ingot.get())),
