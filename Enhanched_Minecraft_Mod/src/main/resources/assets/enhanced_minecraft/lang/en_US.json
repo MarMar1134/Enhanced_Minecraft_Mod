@@ -20,9 +20,12 @@
   "block.enhanced_minecraft.saphire_ore": "Saphire ore",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate saphire ore",
 
-  "block.enhanced_minecraft.super_alloying_furnace": "Advanced alloy furnace",
+  "block.enhanced_minecraft.adobe_furnace": "Adobe furnace",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Adobe alloy furnace",
+  "block.enhanced_minecraft.super_alloying_furnace": "Advanced alloy furnace",
   "block.enhanced_minecraft.gem_polisher": "Gem polisher",
+
+  "enchantment.enhanced_minecraft.fine_mining": "Fine mining",
 
   "item.enhanced_minecraft.stone_polisher": "Stone polisher",
   "item.enhanced_minecraft.bronze_polisher": "Bronze polisher",

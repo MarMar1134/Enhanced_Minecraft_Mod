@@ -123,7 +123,7 @@ public class ModItems {
 
         //Silver
         public static final RegistryObject<Item> Silver_sword = Items.register(
-                "silver_sword",() -> new SwordItem(ModTiers.Silver, 3, -2.4F, new Item.Properties()));
+                "silver_sword",() -> new SwordItem(ModTiers.Silver, 1, -2.4F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_pickaxe = Items.register(
             "silver_pickaxe",() -> new PickaxeItem(ModTiers.Silver, -2, -2.8F, new Item.Properties()));
         public static final RegistryObject<Item> Silver_axe = Items.register(
@@ -145,7 +145,7 @@ public class ModItems {
 
         //Rose Gold
         public static final RegistryObject<Item> Rose_golden_sword = Items.register(
-                "rose_golden_sword",() -> new SwordItem(ModTiers.Rose_gold, 3, -2.4F, new Item.Properties()));
+                "rose_golden_sword",() -> new SwordItem(ModTiers.Rose_gold, 2, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> Rose_golden_pickaxe = Items.register(
             "rose_golden_pickaxe",() -> new PickaxeItem(ModTiers.Rose_gold, -2, -2.8F, new Item.Properties()));
     public static final RegistryObject<Item> Rose_golden_axe = Items.register(

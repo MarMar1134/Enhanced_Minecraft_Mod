@@ -20,9 +20,12 @@
   "block.enhanced_minecraft.saphire_ore": "Mineral de zafiro",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Mineral de zafiro profundo",
 
-  "block.enhanced_minecraft.super_alloying_furnace": "Horno de aleación avanzado",
+  "block.enhanced_minecraft.adobe_furnace": "Horno de barro",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de barro",
+  "block.enhanced_minecraft.super_alloying_furnace": "Horno de aleación avanzado",
   "block.enhanced_minecraft.gem_polisher": "Mesa de pulido",
+
+  "enchantment.enhanced_minecraft.fine_mining": "Minado fino",
 
   "item.enhanced_minecraft.stone_polisher": "Pulidora de piedra",
   "item.enhanced_minecraft.bronze_polisher": "Pulidora de bronce",
