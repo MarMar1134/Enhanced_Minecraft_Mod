@@ -33,7 +33,7 @@ public class ModTiers {
             List.of(Tiers.IRON)
     );
     public static final Tier Steel = TierSortingRegistry.registerTier(
-            new ForgeTier(3, 565, 7F, 3.5F, 16,
+            new ForgeTier(3, 908, 7F, 3.5F, 16,
                     ModTags.Blocks.NEEDS_STEEL_TOOL,() -> Ingredient.of(ModItems.Steel_ingot.get())),
             new ResourceLocation(Enhanced_Minecraft.MOD_ID, "steel_ingot"), List.of(Tiers.IRON),
                     List.of(Tiers.DIAMOND)

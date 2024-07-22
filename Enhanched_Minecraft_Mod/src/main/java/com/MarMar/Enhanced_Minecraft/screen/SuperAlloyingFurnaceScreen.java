@@ -21,7 +21,7 @@ public class SuperAlloyingFurnaceScreen extends AbstractContainerScreen<SuperAll
         super.init();
         this.inventoryLabelY = 74;
 
-        this.titleLabelX = 40;
+        this.titleLabelX = 32;
         this.titleLabelY = 5;
     }
 

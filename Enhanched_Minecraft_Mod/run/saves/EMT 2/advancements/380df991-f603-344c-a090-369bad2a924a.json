@@ -594,15 +594,33 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/diamond_leggings": {
+  "minecraft:recipes/misc/emerald_from_smelting_deepslate_emerald_ore": {
     "criteria": {
-      "has_diamond": "2024-07-19 11:40:23 -0300"
+      "has_deepslate_emerald_ore": "2024-07-19 11:39:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_blasting_deepslate_emerald_ore": {
+    "criteria": {
+      "has_deepslate_emerald_ore": "2024-07-19 11:39:33 -0300"
     },
     "done": true
   },
   "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
     "criteria": {
       "has_deepslate_diamond_ore": "2024-07-19 11:40:05 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2024-07-19 11:40:05 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2024-07-19 11:40:23 -0300"
     },
     "done": true
   },
@@ -648,12 +666,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/emerald_from_smelting_deepslate_emerald_ore": {
-    "criteria": {
-      "has_deepslate_emerald_ore": "2024-07-19 11:39:33 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/diamond_hoe": {
     "criteria": {
       "has_diamond": "2024-07-19 11:40:23 -0300"
@@ -678,21 +690,507 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/emerald_from_blasting_deepslate_emerald_ore": {
-    "criteria": {
-      "has_deepslate_emerald_ore": "2024-07-19 11:39:33 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
-    "criteria": {
-      "has_deepslate_diamond_ore": "2024-07-19 11:40:05 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2024-07-19 11:40:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2024-07-19 13:17:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_sunflower": {
+    "criteria": {
+      "has_sunflower": "2024-07-19 13:18:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_ingot_from_smelting_raw_bronze": {
+    "criteria": {
+      "has_raw_bronze": "2024-07-19 13:18:24 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_ingot_from_blasting_raw_bronze": {
+    "criteria": {
+      "has_raw_bronze": "2024-07-19 13:18:24 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2024-07-19 13:19:36 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2024-07-19 13:19:36 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2024-07-19 13:19:36 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2024-07-19 13:19:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glow_item_frame": {
+    "criteria": {
+      "has_item_frame": "2024-07-19 13:20:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_smelting_silver_pickaxe": {
+    "criteria": {
+      "has_silver_pickaxe": "2024-07-19 13:20:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_blasting_silver_pickaxe": {
+    "criteria": {
+      "has_silver_pickaxe": "2024-07-19 13:20:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_smelting_silver_axe": {
+    "criteria": {
+      "has_silver_axe": "2024-07-19 13:20:34 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_blasting_silver_shovel": {
+    "criteria": {
+      "has_silver_shovel": "2024-07-19 13:20:34 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_blasting_silver_axe": {
+    "criteria": {
+      "has_silver_axe": "2024-07-19 13:20:34 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_smelting_silver_shovel": {
+    "criteria": {
+      "has_silver_shovel": "2024-07-19 13:20:34 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_smelting_silver_hoe": {
+    "criteria": {
+      "has_silver_hoe": "2024-07-19 13:20:35 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_blasting_silver_hoe": {
+    "criteria": {
+      "has_silver_hoe": "2024-07-19 13:20:35 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_smelting_silver_sword": {
+    "criteria": {
+      "has_silver_sword": "2024-07-19 13:20:50 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_nugget_from_blasting_silver_sword": {
+    "criteria": {
+      "has_silver_sword": "2024-07-19 13:20:50 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_smelting_bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-07-19 13:25:11 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_blasting_bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-07-19 13:25:11 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_blasting_bronze_axe": {
+    "criteria": {
+      "has_bronze_axe": "2024-07-19 13:25:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_blasting_bronze_shovel": {
+    "criteria": {
+      "has_bronze_shovel": "2024-07-19 13:25:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_smelting_bronze_shovel": {
+    "criteria": {
+      "has_bronze_shovel": "2024-07-19 13:25:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_smelting_bronze_axe": {
+    "criteria": {
+      "has_bronze_axe": "2024-07-19 13:25:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_blasting_bronze_hoe": {
+    "criteria": {
+      "has_bronze_hoe": "2024-07-19 13:25:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_smelting_bronze_hoe": {
+    "criteria": {
+      "has_bronze_hoe": "2024-07-19 13:25:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_smelting_bronze_sword": {
+    "criteria": {
+      "has_bronze_sword": "2024-07-19 13:25:18 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_blasting_bronze_sword": {
+    "criteria": {
+      "has_bronze_sword": "2024-07-19 13:25:18 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_blasting_rose_golden_sword": {
+    "criteria": {
+      "has_rose_golden_sword": "2024-07-19 13:26:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_smelting_rose_golden_sword": {
+    "criteria": {
+      "has_rose_golden_sword": "2024-07-19 13:26:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_blasting_rose_golden_axe": {
+    "criteria": {
+      "has_rose_golden_axe": "2024-07-19 13:26:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_smelting_rose_golden_axe": {
+    "criteria": {
+      "has_rose_golden_axe": "2024-07-19 13:26:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_blasting_rose_golden_shovel": {
+    "criteria": {
+      "has_rose_golden_shovel": "2024-07-19 13:26:18 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_smelting_rose_golden_shovel": {
+    "criteria": {
+      "has_rose_golden_shovel": "2024-07-19 13:26:18 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_blasting_rose_golden_hoe": {
+    "criteria": {
+      "has_rose_golden_hoe": "2024-07-19 13:26:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/rose_gold_nugget_from_smelting_rose_golden_hoe": {
+    "criteria": {
+      "has_rose_golden_hoe": "2024-07-19 13:26:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-07-19 14:15:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2024-07-19 14:15:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-07-19 14:15:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/torch": {
+    "criteria": {
+      "has_stone_pickaxe": "2024-07-21 23:39:39 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/super_alloying_furnace": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_stairs": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2024-07-21 23:39:39 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_deepslate_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_slab": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobbled_deepslate_wall": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_deepslate_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2024-07-21 23:39:39 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
     },
     "done": true
   },
