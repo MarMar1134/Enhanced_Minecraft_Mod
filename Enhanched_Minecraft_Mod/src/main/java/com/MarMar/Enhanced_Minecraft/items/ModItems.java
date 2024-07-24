@@ -197,6 +197,8 @@ public class ModItems {
     //Plants
     public static final RegistryObject<Item> Yerba_mate = Items.register(
             "yerba_mate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Grounded_yerba_mate = Items.register(
+            "grounded_yerba_mate", () -> new Item(new Item.Properties()));
 
     //Food
         //Seeds

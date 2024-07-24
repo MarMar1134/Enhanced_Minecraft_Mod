@@ -99,6 +99,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', ModItems.Cooked_zapallo.get())
                 .unlockedBy(getHasName(ModItems.Cooked_zapallo.get()), has(ModItems.Cooked_zapallo.get()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.Grounded_yerba_mate.get())
+                .pattern(" I ")
+                .pattern("I I")
+                .pattern(" I ")
+                .define('I', ModItems.Yerba_mate.get())
+                .unlockedBy(getHasName(ModItems.Yerba_mate.get()), has(ModItems.Yerba_mate.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.Mate.get())
+                .pattern("I")
+                .pattern("A")
+                .define('I', ModItems.Grounded_yerba_mate.get())
+                .define('A', ModItems.Empty_mate.get())
+                .unlockedBy(getHasName(ModItems.Yerba_mate.get()), has(ModItems.Yerba_mate.get()))
+                .save(consumer);
 
         //Block recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_alloying_furnace.get())

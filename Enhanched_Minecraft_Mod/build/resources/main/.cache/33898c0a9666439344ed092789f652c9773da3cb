@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-23T23:57:49.1722367	Item Models: enhanced_minecraft
+// 1.20.1	2024-07-24T02:03:30.1342483	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -23,6 +23,7 @@ ffa755c5f18319c678433239a0352bc08cc7cd13 assets/enhanced_minecraft/models/item/c
 be29c986b94a76e8058ebf905f8190d788e2822f assets/enhanced_minecraft/models/item/empty_mate.json
 c07e49905fe24d9e8c3d4d90d395c173078add6b assets/enhanced_minecraft/models/item/gold_polisher.json
 920d6bf8f4fe7a9fc188ecfa4d410a98d477cd57 assets/enhanced_minecraft/models/item/green_apple.json
+b3b04def7d880fb526ceec2005b112179f71f0d5 assets/enhanced_minecraft/models/item/grounded_yerba_mate.json
 e2d8ea0684e18f6709572ccb91a992b74034085f assets/enhanced_minecraft/models/item/iron_polisher.json
 26c263ad9614d8f6abf7cff82e4e25aebf4708bc assets/enhanced_minecraft/models/item/lemon.json
 3284657c1e6b4aa43ead178e26fc64b022fde722 assets/enhanced_minecraft/models/item/mate.json

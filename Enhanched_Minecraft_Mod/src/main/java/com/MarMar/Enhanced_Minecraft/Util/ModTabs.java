@@ -198,6 +198,7 @@ public class ModTabs {
                         output.accept(ModItems.Lemon.get());
                         output.accept(ModItems.Orange.get());
                         output.accept(ModItems.Yerba_mate.get());
+                        output.accept(ModItems.Grounded_yerba_mate.get());
                         output.accept(ModItems.Yerba_mate_seeds.get());
                         output.accept(ModItems.Zapallo.get());
                         output.accept(ModItems.Cooked_zapallo.get());

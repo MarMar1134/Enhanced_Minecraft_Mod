@@ -92,6 +92,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Rice);
         simpleItem(ModItems.Rice_bowl);
         simpleItem(ModItems.Yerba_mate);
+        simpleItem(ModItems.Grounded_yerba_mate);
         simpleItem(ModItems.Mate);
         simpleItem(ModItems.Empty_mate);
         simpleItem(ModItems.Zapallo);

@@ -8,7 +8,8 @@ public class ModFoodPropieties {
     //Regular food
     public static final FoodProperties Mate = new FoodProperties.Builder()
             .nutrition(4).saturationMod(0.6f)
-            .effect(()-> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200,1), 0.5f).build();
+            .effect(()-> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200,1), 0.5f)
+            .alwaysEat().build();
     public static final FoodProperties Cooked_zapallo = new FoodProperties.Builder()
             .nutrition(6).saturationMod(0.3f).build();
     public static final FoodProperties Cooked_eggplant = new FoodProperties.Builder()

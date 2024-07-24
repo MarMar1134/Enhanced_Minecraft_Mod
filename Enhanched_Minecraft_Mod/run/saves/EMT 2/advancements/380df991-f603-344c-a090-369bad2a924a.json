@@ -1691,5 +1691,47 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/food/cooked_corn_from_smelting_corn": {
+    "criteria": {
+      "has_corn": "2024-07-24 01:26:52 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/cooked_corn_from_smoking_corn": {
+    "criteria": {
+      "has_corn": "2024-07-24 01:26:52 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/cooked_zapallo_from_smoking_zapallo": {
+    "criteria": {
+      "has_zapallo": "2024-07-24 01:26:52 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/cooked_eggplant_from_smelting_eggplant": {
+    "criteria": {
+      "has_eggplant": "2024-07-24 01:27:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/cooked_eggplant_from_smoking_eggplant": {
+    "criteria": {
+      "has_eggplant": "2024-07-24 01:27:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/mate": {
+    "criteria": {
+      "has_yerba_mate": "2024-07-24 02:06:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/grounded_yerba_mate": {
+    "criteria": {
+      "has_yerba_mate": "2024-07-24 02:06:55 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
