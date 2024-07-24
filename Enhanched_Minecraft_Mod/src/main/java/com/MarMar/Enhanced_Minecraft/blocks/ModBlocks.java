@@ -1,6 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.blocks;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.blocks.crops.*;
 import com.MarMar.Enhanced_Minecraft.blocks.custom.AdobeAlloyingFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.blocks.custom.GemPolisherBlock;
 import com.MarMar.Enhanced_Minecraft.blocks.custom.SuperAlloyingFurnaceBlock;
@@ -68,6 +69,18 @@ public class ModBlocks {
             () -> new SuperAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLED_DEEPSLATE).noOcclusion()));
     public static final RegistryObject<Block> Gem_polisher_block = RegisterBlock("gem_polisher",
             () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+
+    //Crops
+    public static final RegistryObject<Block> Yerba_mate_crop = Blocks.register("yerba_mate_crop",
+            () -> new YerbaMateCropBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.CARROTS).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> Zapallo_crop = Blocks.register("zapallo_crop",
+            () -> new ZapalloCropBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> Eggplant_crop = Blocks.register("eggplant_crop",
+            () -> new EggplantCropBlock(BlockBehaviour.Properties.copy(ModBlocks.Yerba_mate_crop.get()).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> Tomato_crop = Blocks.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(ModBlocks.Yerba_mate_crop.get()).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> Corn_crop = Blocks.register("corn_crop",
+            () -> new CornCropBlock(BlockBehaviour.Properties.copy(ModBlocks.Yerba_mate_crop.get()).noOcclusion().noCollission()));
     //Block register
     private static <T extends Block> RegistryObject<T> RegisterBlock(String name, Supplier<T> block){
         RegistryObject<T> ToReturn = Blocks.register(name, block);

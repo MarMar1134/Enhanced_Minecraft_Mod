@@ -1,6 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.blocks.entity;
 
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.items.custom.PolisherItem;
 import com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu;
 import net.minecraft.core.BlockPos;
@@ -113,7 +114,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
         if (uses <= 0){
             if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
-                maxUses = getUses(this.itemHandler.getStackInSlot(TOOL_SLOT).getMaxDamage());
+                maxUses = getUses(this.itemHandler.getStackInSlot(TOOL_SLOT));
                 this.uses = maxUses;
                 this.itemHandler.extractItem(TOOL_SLOT,1,false);
                 if (uses > 0){
@@ -164,27 +165,10 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         progress = 0;
     }
    private boolean isAccurateTool(ItemStack stack){
-        if (stack.isEmpty()){
-            return false;
-        } else return stack.is(ModItems.Bronze_polisher.get()) || stack.is(ModItems.Iron_polisher.get())
-                || stack.is(ModItems.Stone_polisher.get()) || stack.is(ModItems.Steel_polisher.get()) ||
-                stack.is(ModItems.Silver_polisher.get()) || stack.is(ModItems.Netherite_polisher.get()) ||
-                stack.is(ModItems.Diamond_polisher.get()) || stack.is(ModItems.Gold_polisher.get());
+        return stack.getItem() instanceof PolisherItem;
    }
-   private int getUses(int maxUses){
-       int uses = 0;
-       return switch (maxUses) {
-           case 32 -> uses = 8;
-           case 64 -> uses = 12;
-           case 131 -> uses = 16;
-           case 200 -> uses = 18;
-           case 250 -> uses = 20;
-           case 565 -> uses = 32;
-           case 1561-> uses = 64;
-           case 1816 -> uses = 82;
-           case 2031 -> uses = 128;
-           default -> uses;
-       };
+   private int getUses(ItemStack stack){
+       return stack.getMaxDamage() / 2;
    }
     private boolean hasRecipe(){
         Optional<GemPolisherRecipe> recipe = getCurrentRecipe();

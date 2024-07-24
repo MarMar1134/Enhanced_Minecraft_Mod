@@ -6,7 +6,6 @@
     "minecraft:iron_door",
     "minecraft:iron_trapdoor",
     "minecraft:raw_iron_block",
-    "minecraft:hopper",
-    "enhanced_minecraft:silver_ore"
+    "minecraft:hopper"
   ]
 }

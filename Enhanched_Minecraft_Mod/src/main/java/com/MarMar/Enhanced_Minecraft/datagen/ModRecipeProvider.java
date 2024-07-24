@@ -18,6 +18,9 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public static final List<ItemLike> Zapallo_cookables = List.of(ModItems.Zapallo.get());
+    public static final List<ItemLike> Eggplant_cookables = List.of(ModItems.Eggplant.get());
+    public static final List<ItemLike> Corn_cookables = List.of(ModItems.Corn.get());
     public static final List<ItemLike> Tin_smeltables = List.of(ModItems.Raw_tin.get(),
             ModBlocks.Tin_ore.get(), ModBlocks.Deepslate_tin_ore.get());
     public static final List<ItemLike> Bronze_smeltables= List.of(ModItems.Raw_bronze.get());
@@ -41,6 +44,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         //Smelting Recipes
+        oreSmelting(consumer, Zapallo_cookables, RecipeCategory.FOOD, ModItems.Cooked_zapallo.get(),
+                2f, 100, "zapallo");
+        oreSmelting(consumer, Eggplant_cookables, RecipeCategory.FOOD, ModItems.Cooked_eggplant.get(),
+                2f, 100, "eggplant");
+        oreSmelting(consumer, Corn_cookables, RecipeCategory.FOOD, ModItems.Cooked_corn.get(),
+                2f, 100, "corn");
+
+        smoking(consumer, Zapallo_cookables, RecipeCategory.FOOD, ModItems.Cooked_zapallo.get(),
+                2f, 100, "zapallo");
+        smoking(consumer, Eggplant_cookables, RecipeCategory.FOOD, ModItems.Cooked_eggplant.get(),
+                2f, 100, "eggplant");
+        smoking(consumer, Corn_cookables, RecipeCategory.FOOD, ModItems.Cooked_corn.get(),
+                2f, 100, "corn");
+
         oreSmelting(consumer, Tin_smeltables, RecipeCategory.MISC, ModItems.Tin_ingot.get(),
                 2f, 100, "tin_ingot" );
         oreBlasting(consumer, Tin_smeltables, RecipeCategory.MISC, ModItems.Tin_ingot.get(),
@@ -73,6 +90,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 0.5f, 100, "rose_gold_nugget");
         oreBlasting(consumer, Rose_gold_nuggets_smeltables, RecipeCategory.MISC, ModItems.Rose_gold_nugget.get(),
                 0.5f, 200, "rose_gold_nugget");
+
+        //Foods
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.Empty_mate.get())
+                .pattern("#")
+                .pattern("I")
+                .define('#', Items.IRON_INGOT)
+                .define('I', ModItems.Cooked_zapallo.get())
+                .unlockedBy(getHasName(ModItems.Cooked_zapallo.get()), has(ModItems.Cooked_zapallo.get()))
+                .save(consumer);
 
         //Block recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_alloying_furnace.get())
@@ -547,7 +573,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
     }
-
+    protected static void smoking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smoking");
+    }
     protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
     }

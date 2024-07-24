@@ -91,6 +91,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Orange);
         simpleItem(ModItems.Rice);
         simpleItem(ModItems.Rice_bowl);
+        simpleItem(ModItems.Yerba_mate);
+        simpleItem(ModItems.Mate);
+        simpleItem(ModItems.Empty_mate);
+        simpleItem(ModItems.Zapallo);
+        simpleItem(ModItems.Cooked_zapallo);
+        simpleItem(ModItems.Eggplant);
+        simpleItem(ModItems.Cooked_eggplant);
+        simpleItem(ModItems.Tomato);
+        simpleItem(ModItems.Corn);
+        simpleItem(ModItems.Cooked_corn);
+
+        //Seeds
+        simpleItem(ModItems.Yerba_mate_seeds);
+        simpleItem(ModItems.Zapallo_seeds);
+        simpleItem(ModItems.Eggplant_seeds);
+        simpleItem(ModItems.Tomato_seeds);
+        simpleItem(ModItems.Corn_seeds);
 
         //Ores
         simpleItem(ModItems.Sulfur);
@@ -124,33 +141,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.Reinforced_diamond);
 
-        //Smithing tables
+        //Smithing templates
         simpleItem(ModItems.reinforcing_upgrade_smithing_template);
 
         //Armors and tools
-            //Bronze
-            HandheldItem(ModItems.Bronze_sword);
-            HandheldItem(ModItems.Bronze_pickaxe);
-            HandheldItem(ModItems.Bronze_axe);
-            HandheldItem(ModItems.Bronze_shovel);
-            HandheldItem(ModItems.Bronze_hoe);
-
-            simpleItem(ModItems.Bronze_helmet);
-            simpleItem(ModItems.Bronze_chestplate);
-            simpleItem(ModItems.Bronze_leggings);
-            simpleItem(ModItems.Bronze_boots);
-
-            //Steel
-            HandheldItem(ModItems.Steel_sword);
-            HandheldItem(ModItems.Steel_pickaxe);
-            HandheldItem(ModItems.Steel_axe);
-            HandheldItem(ModItems.Steel_shovel);
-            HandheldItem(ModItems.Steel_hoe);
-
-            simpleItem(ModItems.Steel_helmet);
-            simpleItem(ModItems.Steel_chestplate);
-            simpleItem(ModItems.Steel_leggings);
-            simpleItem(ModItems.Steel_boots);
+            //Gold
+            HandheldItem(ModItems.Gold_polisher);
 
             //Silver
             HandheldItem(ModItems.Silver_sword);
@@ -158,11 +154,31 @@ public class ModItemModelProvider extends ItemModelProvider {
             HandheldItem(ModItems.Silver_axe);
             HandheldItem(ModItems.Silver_shovel);
             HandheldItem(ModItems.Silver_hoe);
+            HandheldItem(ModItems.Silver_polisher);
 
             simpleItem(ModItems.Silver_helmet);
             simpleItem(ModItems.Silver_chestplate);
             simpleItem(ModItems.Silver_leggings);
             simpleItem(ModItems.Silver_boots);
+
+            //Stone
+            HandheldItem(ModItems.Stone_polisher);
+
+            //Bronze
+            HandheldItem(ModItems.Bronze_sword);
+            HandheldItem(ModItems.Bronze_pickaxe);
+            HandheldItem(ModItems.Bronze_axe);
+            HandheldItem(ModItems.Bronze_shovel);
+            HandheldItem(ModItems.Bronze_hoe);
+            HandheldItem(ModItems.Bronze_polisher);
+
+            simpleItem(ModItems.Bronze_helmet);
+            simpleItem(ModItems.Bronze_chestplate);
+            simpleItem(ModItems.Bronze_leggings);
+            simpleItem(ModItems.Bronze_boots);
+
+            //Iron
+            HandheldItem(ModItems.Iron_polisher);
 
             //Rose Gold
             HandheldItem(ModItems.Rose_golden_sword);
@@ -170,13 +186,30 @@ public class ModItemModelProvider extends ItemModelProvider {
             HandheldItem(ModItems.Rose_golden_axe);
             HandheldItem(ModItems.Rose_golden_shovel);
             HandheldItem(ModItems.Rose_golden_hoe);
+            HandheldItem(ModItems.Rose_golden_polisher);
 
             simpleItem(ModItems.Rose_golden_helmet);
             simpleItem(ModItems.Rose_golden_chestplate);
             simpleItem(ModItems.Rose_golden_leggings);
             simpleItem(ModItems.Rose_golden_boots);
 
-        //Reinforced Diamond
+            //Steel
+            HandheldItem(ModItems.Steel_sword);
+            HandheldItem(ModItems.Steel_pickaxe);
+            HandheldItem(ModItems.Steel_axe);
+            HandheldItem(ModItems.Steel_shovel);
+            HandheldItem(ModItems.Steel_hoe);
+            HandheldItem(ModItems.Steel_polisher);
+
+            simpleItem(ModItems.Steel_helmet);
+            simpleItem(ModItems.Steel_chestplate);
+            simpleItem(ModItems.Steel_leggings);
+            simpleItem(ModItems.Steel_boots);
+
+            //Diamond
+            HandheldItem(ModItems.Diamond_polisher);
+
+            //Reinforced Diamond
             HandheldItem(ModItems.Reinforced_diamond_sword);
             HandheldItem(ModItems.Reinforced_diamond_pickaxe);
             HandheldItem(ModItems.Reinforced_diamond_axe);
@@ -188,15 +221,8 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.Reinforced_diamond_leggings);
             simpleItem(ModItems.Reinforced_diamond_boots);
 
-        //Polishers
-        HandheldItem(ModItems.Stone_polisher);
-        HandheldItem(ModItems.Bronze_polisher);
-        HandheldItem(ModItems.Iron_polisher);
-        HandheldItem(ModItems.Steel_polisher);
-        HandheldItem(ModItems.Silver_polisher);
-        HandheldItem(ModItems.Gold_polisher);
-        HandheldItem(ModItems.Diamond_polisher);
-        HandheldItem(ModItems.Netherite_polisher);
+            //Netherite
+            HandheldItem(ModItems.Netherite_polisher);
         }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){

@@ -159,7 +159,7 @@ public class ModTabs {
                     .build()
     );
     public static final RegistryObject<CreativeModeTab> jewelery = Tabs.register(
-            "jewelery", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Saphire.get()))
+            "jewelery", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Rubi.get()))
                     .title(Component.translatable("creativetab.jewelery"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.Rubi_ore.get());
@@ -189,7 +189,7 @@ public class ModTabs {
                         output.accept(Items.DIAMOND);
                     }).build()
     );
-    public static final RegistryObject<CreativeModeTab> Fruits= Tabs.register(
+    public static final RegistryObject<CreativeModeTab> Food= Tabs.register(
             "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
                     .title(Component.translatable("creativetab.fruits"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -197,6 +197,21 @@ public class ModTabs {
                         output.accept(ModItems.Green_apple.get());
                         output.accept(ModItems.Lemon.get());
                         output.accept(ModItems.Orange.get());
+                        output.accept(ModItems.Yerba_mate.get());
+                        output.accept(ModItems.Yerba_mate_seeds.get());
+                        output.accept(ModItems.Zapallo.get());
+                        output.accept(ModItems.Cooked_zapallo.get());
+                        output.accept(ModItems.Zapallo_seeds.get());
+                        output.accept(ModItems.Eggplant.get());
+                        output.accept(ModItems.Cooked_eggplant.get());
+                        output.accept(ModItems.Eggplant_seeds.get());
+                        output.accept(ModItems.Tomato.get());
+                        output.accept(ModItems.Tomato_seeds.get());
+                        output.accept(ModItems.Corn.get());
+                        output.accept(ModItems.Cooked_corn.get());
+                        output.accept(ModItems.Corn_seeds.get());
+                        output.accept(ModItems.Empty_mate.get());
+                        output.accept(ModItems.Mate.get());
                     }).build()
     );
     public static void Register(IEventBus eventBus){

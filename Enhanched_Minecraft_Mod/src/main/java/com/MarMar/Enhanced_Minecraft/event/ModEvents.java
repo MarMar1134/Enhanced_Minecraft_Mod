@@ -18,6 +18,50 @@ import java.util.List;
 public class ModEvents {
     @SubscribeEvent
     public static void trades(VillagerTradesEvent event){
+        if (event.getType() == VillagerProfession.FARMER){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
+
+            //Level 1
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 3),
+                    new ItemStack(ModItems.Zapallo_seeds.get(), 6),
+                    16, 2, 0.02f));
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 4),
+                    new ItemStack(ModItems.Corn_seeds.get(), 3),
+                    16, 2, 0.02f));
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    new ItemStack(ModItems.Eggplant_seeds.get(), 6),
+                    16, 2, 0.02f));
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    new ItemStack(ModItems.Tomato_seeds.get(), 4),
+                    16, 2, 0.02f));
+            //Level 2
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.Zapallo.get(), 20),
+                    new ItemStack(Items.EMERALD, 1),
+                    16, 4, 0.02f));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.Eggplant.get(), 15),
+                    new ItemStack(Items.EMERALD, 1),
+                    16, 4, 0.02f));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.Tomato.get(), 22),
+                    new ItemStack(Items.EMERALD, 1),
+                    16, 4, 0.02f));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.Corn.get(), 14),
+                    new ItemStack(Items.EMERALD, 1),
+                    16, 4, 0.02f));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.Yerba_mate.get(), 24),
+                    new ItemStack(Items.EMERALD, 1),
+                    16, 4, 0.02f));
+
+        }
+
         if (event.getType() == VillagerProfession.ARMORER){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
 

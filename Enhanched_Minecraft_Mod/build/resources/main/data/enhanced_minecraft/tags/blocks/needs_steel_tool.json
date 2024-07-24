@@ -1,5 +1,7 @@
 {
   "values": [
+    "minecraft:diamond_ore",
+    "minecraft:diamond_block",
     "minecraft:deepslate",
     "minecraft:deepslate_iron_ore",
     "minecraft:deepslate_copper_ore",

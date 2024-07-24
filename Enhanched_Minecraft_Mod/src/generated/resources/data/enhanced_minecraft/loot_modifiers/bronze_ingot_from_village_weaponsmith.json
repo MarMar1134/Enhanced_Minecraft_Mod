@@ -1,0 +1,14 @@
+{
+  "type": "enhanced_minecraft:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:village/village_weaponsmith"
+    },
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "enhanced_minecraft:bronze_ingot"
+}

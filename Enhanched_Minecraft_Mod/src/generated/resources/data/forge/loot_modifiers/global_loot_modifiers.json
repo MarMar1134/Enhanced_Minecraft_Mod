@@ -1,0 +1,27 @@
+{
+  "entries": [
+    "enhanced_minecraft:steel_sword_from_ancient_city",
+    "enhanced_minecraft:steel_chestplate_from_ancient_city",
+    "enhanced_minecraft:steel_boots_from_ancient_city",
+    "enhanced_minecraft:corn_seeds_from_villages",
+    "enhanced_minecraft:steel_leggings_from_ancient_city",
+    "enhanced_minecraft:yerba_mate_seeds_from_villages",
+    "enhanced_minecraft:eggplant_seeds_from_villages",
+    "enhanced_minecraft:steel_ingot_from_village_weaponsmith",
+    "enhanced_minecraft:steel_helmet_from_ancient_city",
+    "enhanced_minecraft:steel_ingot_from_spawner",
+    "enhanced_minecraft:rose_gold_ingot_from_mineshaft",
+    "enhanced_minecraft:bronze_ingot_from_village_toolsmith",
+    "enhanced_minecraft:bronze_pickaxe_from_villages",
+    "enhanced_minecraft:steel_ingot_from_village_toolsmith",
+    "enhanced_minecraft:tin_ingot_from_mineshaft",
+    "enhanced_minecraft:bronze_ingot_from_village_weaponsmith",
+    "enhanced_minecraft:bronze_pickaxe_from_mineshaft",
+    "enhanced_minecraft:bronze_ingot_from_spawner",
+    "enhanced_minecraft:bronze_ingot_from_mineshaft",
+    "enhanced_minecraft:bronze_nugget_from_mineshaft",
+    "enhanced_minecraft:tomato_seeds_from_villages",
+    "enhanced_minecraft:zapallo_seeds_from_villages"
+  ],
+  "replace": false
+}

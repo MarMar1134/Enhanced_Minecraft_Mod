@@ -5,6 +5,7 @@ import com.MarMar.Enhanced_Minecraft.blocks.entity.ModBlockEntities;
 import com.MarMar.Enhanced_Minecraft.enchantments.ModEnchantments;
 import com.MarMar.Enhanced_Minecraft.items.ModItems;
 import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
+import com.MarMar.Enhanced_Minecraft.loot.ModLootModifiers;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -28,6 +29,8 @@ public class Enhanced_Minecraft
     public Enhanced_Minecraft(){
 
         IEventBus ModEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModLootModifiers.register(ModEventBus);
 
         ModTabs.Register(ModEventBus);
         ModItems.Register(ModEventBus);

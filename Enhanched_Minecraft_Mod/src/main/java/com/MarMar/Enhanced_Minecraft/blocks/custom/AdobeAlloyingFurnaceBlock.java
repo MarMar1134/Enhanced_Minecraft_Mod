@@ -20,6 +20,8 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -31,8 +33,6 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class AdobeAlloyingFurnaceBlock extends BaseEntityBlock implements EntityBlock {
     public static final VoxelShape SHAPE = Block.box(0,0,0, 16,16, 16);
-
-
 
     public AdobeAlloyingFurnaceBlock(Properties pProperties) {
         super(pProperties);

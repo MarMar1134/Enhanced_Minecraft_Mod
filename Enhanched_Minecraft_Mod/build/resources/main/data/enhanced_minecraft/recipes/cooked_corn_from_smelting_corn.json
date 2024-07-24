@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "group": "corn",
+  "ingredient": {
+    "item": "enhanced_minecraft:corn"
+  },
+  "result": "enhanced_minecraft:cooked_corn"
+}

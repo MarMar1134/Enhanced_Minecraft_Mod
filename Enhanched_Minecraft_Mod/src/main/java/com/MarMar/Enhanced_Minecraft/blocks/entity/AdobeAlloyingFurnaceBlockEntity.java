@@ -38,7 +38,7 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
     private final EnergyStorage energyStorage = new EnergyStorage(20000, 20000, 200);
     private static final int INPUT_SLOT1 = 0;
     private static final int INPUT_SLOT2 = 1;
-    private static final int INPUT_FUEL = 2;
+    private static final int FUEL_SLOT = 2;
     private static final int OUTPUT_SLOT = 3;
     private LazyOptional<ItemStackHandler> lazyItemHandler= LazyOptional.empty();
     protected final ContainerData Data;
@@ -139,7 +139,6 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
         progress = pTag.getInt("adobe_alloying_furnace.progress");
         burnTime = pTag.getInt("adobe_alloying_furnace.burnTime");
     }
-
     private void sendUpdate() {
         setChanged();
 
@@ -147,20 +146,22 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
             this.level.sendBlockUpdated(this.worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
     }
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        if(burnTime <= 0){
+        if(!isBurning()){
             if (hasRecipe()) {
-                if(canBurn(this.itemHandler.getStackInSlot(2))){
-                    maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(2));
+                if(canBurn(this.itemHandler.getStackInSlot(FUEL_SLOT))){
+                    maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(FUEL_SLOT));
                     this.burnTime = this.maxBurnTime;
-                    this.itemHandler.getStackInSlot(2).shrink(1);
+                    this.itemHandler.getStackInSlot(FUEL_SLOT).shrink(1);
                     sendUpdate();
                 }
             } else {
                 resetProgress();
             }
         } else if (hasRecipe()){
-            this.burnTime = burnTime - 2;
+
+            decreaseBurnTime();
             increaseCraftingProgress();
+
             sendUpdate();
             setChanged(pLevel, pPos, pState);
             if (hasProcessFinished()) {
@@ -169,10 +170,16 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
             }
         } else {
             do{
-                burnTime = burnTime - 2;
+                decreaseBurnTime();
             } while (burnTime < 0);
             resetProgress();
         }
+    }
+    private boolean isBurning(){
+        return burnTime > 0;
+    }
+    private void decreaseBurnTime(){
+        burnTime -= 2;
     }
     private boolean hasRecipe(){
         Optional<AlloyingFurnaceRecipe> recipe = getCurrentRecipe();
