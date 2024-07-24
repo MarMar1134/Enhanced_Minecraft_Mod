@@ -3,7 +3,7 @@ Specification-Title: enhanced_minecraft
 Specification-Vendor: Mar Mar
 Specification-Version: 1
 Implementation-Title: Enhanched_Minecraft_Mod
-Implementation-Version: 1.20.1-beta-0.9.1
+Implementation-Version: 1.20.1-beta-0.9.2
 Implementation-Vendor: Mar Mar
-Implementation-Timestamp: 2024-07-24T02:16:23-0300
+Implementation-Timestamp: 2024-07-24T12:17:29-0300
 

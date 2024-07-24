@@ -62,36 +62,36 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
         //Villages
         add("zapallo_seeds_from_villages", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_plains_house")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_plains_house")).build(),
                 LootItemRandomChanceCondition.randomChance(0.40f).build()}, ModItems.Zapallo_seeds.get()));
         add("eggplant_seeds_from_villages", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_plains_house")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_plains_house")).build(),
                 LootItemRandomChanceCondition.randomChance(0.40f).build()}, ModItems.Eggplant_seeds.get()));
         add("corn_seeds_from_villages", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_plains_house")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_plains_house")).build(),
                 LootItemRandomChanceCondition.randomChance(0.40f).build()}, ModItems.Corn_seeds.get()));
         add("tomato_seeds_from_villages", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_plains_house")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_plains_house")).build(),
                 LootItemRandomChanceCondition.randomChance(0.40f).build()}, ModItems.Tomato_seeds.get()));
         add("yerba_mate_seeds_from_villages", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_plains_house")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_plains_house")).build(),
                 LootItemRandomChanceCondition.randomChance(0.40f).build()}, ModItems.Yerba_mate_seeds.get()));
 
         add("bronze_pickaxe_from_villages", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_toolsmith")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
                 LootItemRandomChanceCondition.randomChance(0.05f).build()}, ModItems.Bronze_pickaxe.get()));
         add("bronze_ingot_from_village_toolsmith", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_toolsmith")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
                 LootItemRandomChanceCondition.randomChance(0.20f).build()}, ModItems.Bronze_ingot.get()));
         add("bronze_ingot_from_village_weaponsmith", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_weaponsmith")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_weaponsmith")).build(),
                 LootItemRandomChanceCondition.randomChance(0.30f).build()}, ModItems.Bronze_ingot.get()));
 
         add("steel_ingot_from_village_toolsmith", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_toolsmith")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_toolsmith")).build(),
                 LootItemRandomChanceCondition.randomChance(0.05f).build()}, ModItems.Steel_ingot.get()));
         add("steel_ingot_from_village_weaponsmith", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("village/village_weaponsmith")).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_weaponsmith")).build(),
                 LootItemRandomChanceCondition.randomChance(0.10f).build()}, ModItems.Steel_ingot.get()));
 
         //Spawners
