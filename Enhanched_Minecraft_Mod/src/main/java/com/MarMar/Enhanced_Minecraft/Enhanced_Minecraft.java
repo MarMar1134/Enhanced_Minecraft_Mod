@@ -1,16 +1,14 @@
 package com.MarMar.Enhanced_Minecraft;
 
-import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.blocks.entity.ModBlockEntities;
-import com.MarMar.Enhanced_Minecraft.enchantments.ModEnchantments;
-import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
+import com.MarMar.Enhanced_Minecraft.enchantment.ModEnchantments;
+import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
 import com.MarMar.Enhanced_Minecraft.loot.ModLootModifiers;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.gui.screens.inventory.FurnaceScreen;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;

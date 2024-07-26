@@ -2,7 +2,7 @@ package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.Util.ModTags;
-import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;

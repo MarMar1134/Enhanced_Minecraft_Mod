@@ -75,8 +75,8 @@ java.lang.RuntimeException: null
 		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
 	Caused by: java.lang.IllegalArgumentException: Cannot set property DirectionProperty{name=facing, clazz=class net.minecraft.core.Direction, values=[north, east, south, west, up, down]} as it does not exist in Block{minecraft:air}
 		at net.minecraft.world.level.block.state.StateHolder.setValue(StateHolder.java:122) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.custom.GemPolisherBlock.<init>(GemPolisherBlock.java:36) ~[%23196!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.ModBlocks.lambda$static$13(ModBlocks.java:67) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.custom.GemPolisherBlock.<init>(GemPolisherBlock.java:36) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$static$13(ModBlocks.java:67) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -128,7 +128,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:gem_polisher
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.ModBlocks.lambda$RegisterBlockItem$14(ModBlocks.java:76) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$RegisterBlockItem$14(ModBlocks.java:76) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -180,7 +180,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:gem_polisher
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.entity.ModBlockEntities.lambda$static$1(ModBlockEntities.java:20) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities.lambda$static$1(ModBlockEntities.java:20) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}

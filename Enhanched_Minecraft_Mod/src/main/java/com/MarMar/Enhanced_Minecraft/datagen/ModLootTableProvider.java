@@ -1,5 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
+import com.MarMar.Enhanced_Minecraft.loot.ModBlockLootTables;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;

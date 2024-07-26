@@ -1,7 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.screen;
 
-import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.blocks.entity.GemPolisherBlockEntity;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

@@ -1,8 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.Util;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
-import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

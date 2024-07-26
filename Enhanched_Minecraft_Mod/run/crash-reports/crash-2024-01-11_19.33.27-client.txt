@@ -74,9 +74,9 @@ java.lang.RuntimeException: null
 		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
 		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
 	Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 4
-		at com.MarMar.Enhanced_Minecraft.items.ModArmorMaterials.getDurabilityForType(ModArmorMaterials.java:42) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.item.ModArmorMaterials.getDurabilityForType(ModArmorMaterials.java:42) ~[%23196!/:?] {re:classloading}
 		at net.minecraft.world.item.ArmorItem.<init>(ArmorItem.java:67) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.items.ModItems.lambda$static$14(ModItems.java:56) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.item.ModItems.lambda$static$14(ModItems.java:56) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}

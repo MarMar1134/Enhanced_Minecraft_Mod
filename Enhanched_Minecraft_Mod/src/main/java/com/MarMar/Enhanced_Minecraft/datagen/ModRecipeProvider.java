@@ -1,8 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
-import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.items.ModItems;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;

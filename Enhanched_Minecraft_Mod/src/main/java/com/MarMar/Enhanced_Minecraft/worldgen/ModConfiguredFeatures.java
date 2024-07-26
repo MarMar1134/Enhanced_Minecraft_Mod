@@ -1,7 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.worldgen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
-import com.MarMar.Enhanced_Minecraft.blocks.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;

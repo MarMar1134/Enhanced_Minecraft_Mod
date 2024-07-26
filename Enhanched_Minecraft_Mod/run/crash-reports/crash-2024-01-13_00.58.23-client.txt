@@ -85,8 +85,8 @@ java.lang.RuntimeException: null
 		at net.minecraft.world.level.block.state.StateDefinition$Builder.create(StateDefinition.java:157) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 		at net.minecraft.world.level.block.Block.<init>(Block.java:172) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 		at net.minecraft.world.level.block.BaseEntityBlock.<init>(BaseEntityBlock.java:15) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.custom.AdobeAlloyingFurnaceBlock.<init>(AdobeAlloyingFurnaceBlock.java:28) ~[%23196!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.ModBlocks.lambda$static$5(ModBlocks.java:67) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.custom.AdobeAlloyingFurnaceBlock.<init>(AdobeAlloyingFurnaceBlock.java:28) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$static$5(ModBlocks.java:67) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -138,7 +138,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:adobe_alloying_furnace
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.ModBlocks.lambda$RegisterBlockItem$6(ModBlocks.java:76) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$RegisterBlockItem$6(ModBlocks.java:76) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -190,7 +190,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:adobe_alloying_furnace
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.blocks.entity.ModBlockEntities.lambda$static$0(ModBlockEntities.java:17) ~[%23196!/:?] {re:classloading}
+		at com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities.lambda$static$0(ModBlockEntities.java:17) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
