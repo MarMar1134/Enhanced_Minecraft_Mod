@@ -1734,32 +1734,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/eye_armor_trim_smithing_template_smithing_trim": {
-    "criteria": {
-      "has_smithing_trim_template": "2024-07-24 14:32:20 -0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/trim_with_all_exclusive_armor_patterns": {
-    "criteria": {
-      "armor_trimmed_minecraft:silence_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:09 -0300",
-      "armor_trimmed_minecraft:spire_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:02 -0300",
-      "armor_trimmed_minecraft:rib_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:13 -0300"
-    },
-    "done": false
-  },
-  "minecraft:recipes/misc/gold_nugget_from_smelting": {
-    "criteria": {
-      "has_golden_shovel": "2024-07-24 14:44:27 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/spire_armor_trim_smithing_template": {
-    "criteria": {
-      "has_spire_armor_trim_smithing_template": "2024-07-24 14:32:28 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/silence_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
       "has_smithing_trim_template": "2024-07-24 14:32:04 -0300"
@@ -1772,15 +1746,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/eye_armor_trim_smithing_template": {
+  "minecraft:recipes/misc/eye_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
-      "has_eye_armor_trim_smithing_template": "2024-07-24 14:32:20 -0300"
+      "has_smithing_trim_template": "2024-07-24 14:32:20 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+  "minecraft:recipes/misc/eye_armor_trim_smithing_template": {
     "criteria": {
-      "has_golden_shovel": "2024-07-24 14:44:27 -0300"
+      "has_eye_armor_trim_smithing_template": "2024-07-24 14:32:20 -0300"
     },
     "done": true
   },
@@ -1790,21 +1764,47 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/spire_armor_trim_smithing_template_smithing_trim": {
-    "criteria": {
-      "has_smithing_trim_template": "2024-07-24 14:32:28 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/rib_armor_trim_smithing_template": {
     "criteria": {
       "has_rib_armor_trim_smithing_template": "2024-07-24 14:32:21 -0300"
     },
     "done": true
   },
+  "minecraft:recipes/misc/spire_armor_trim_smithing_template": {
+    "criteria": {
+      "has_spire_armor_trim_smithing_template": "2024-07-24 14:32:28 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/spire_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-07-24 14:32:28 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trim_with_all_exclusive_armor_patterns": {
+    "criteria": {
+      "armor_trimmed_minecraft:silence_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:09 -0300",
+      "armor_trimmed_minecraft:spire_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:02 -0300",
+      "armor_trimmed_minecraft:rib_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:13 -0300"
+    },
+    "done": false
+  },
   "minecraft:adventure/trim_with_any_armor_pattern": {
     "criteria": {
       "armor_trimmed_minecraft:spire_armor_trim_smithing_template_smithing_trim": "2024-07-24 14:33:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_shovel": "2024-07-24 14:44:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_shovel": "2024-07-24 14:44:27 -0300"
     },
     "done": true
   },

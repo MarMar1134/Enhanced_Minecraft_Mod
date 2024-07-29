@@ -11,7 +11,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> Block_entities =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, Enhanced_Minecraft.MOD_ID);
-
+    public static final RegistryObject<BlockEntityType<AdobeFurnaceBlockEntity>> Adobe_furnace =
+            Block_entities.register("adobe_furnace", () -> BlockEntityType
+                    .Builder.of(AdobeFurnaceBlockEntity::new,ModBlocks.Adobe_furnace.get()).build(null));
     public static final RegistryObject<BlockEntityType<AdobeAlloyingFurnaceBlockEntity>> Adobe_alloying_furnace =
             Block_entities.register("adobe_alloying_furnace", () -> BlockEntityType
                     .Builder.of(AdobeAlloyingFurnaceBlockEntity::new,ModBlocks.Adobe_alloying_furnace.get()).build(null));

@@ -1,5 +1,6 @@
-// 1.20.1	2024-07-23T23:57:49.1612355	Loot Tables
+// 1.20.1	2024-07-28T22:58:47.0584028	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
+fdff6e05cade759aa389ed4cfd0ec41c33448869 data/enhanced_minecraft/loot_tables/blocks/adobe_furnace.json
 75897b86dfe9caaf7d7f55f1ec1fb3c2d3995877 data/enhanced_minecraft/loot_tables/blocks/corn_crop.json
 e457a3768d243bee3c23c35985cd6ecebf2eec21 data/enhanced_minecraft/loot_tables/blocks/deepslate_cobalt_ore.json
 ddc28e93ebf4fc97e9a291ee794ef22f47555eb8 data/enhanced_minecraft/loot_tables/blocks/deepslate_rubi_ore.json

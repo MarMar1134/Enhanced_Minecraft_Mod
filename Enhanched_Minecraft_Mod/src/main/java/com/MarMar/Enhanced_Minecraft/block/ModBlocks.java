@@ -3,6 +3,7 @@ package com.MarMar.Enhanced_Minecraft.block;
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.block.crops.*;
 import com.MarMar.Enhanced_Minecraft.block.custom.AdobeAlloyingFurnaceBlock;
+import com.MarMar.Enhanced_Minecraft.block.custom.AdobeFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.block.custom.GemPolisherBlock;
 import com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyingFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
@@ -63,6 +64,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE)
                     .requiresCorrectToolForDrops()));
         //Entity blocks
+        public static final RegistryObject<Block> Adobe_furnace = RegisterBlock("adobe_furnace",
+                () -> new AdobeFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
     public static final RegistryObject<Block> Adobe_alloying_furnace = RegisterBlock("adobe_alloying_furnace",
                 () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
     public static final RegistryObject<Block> Super_alloying_furnace = RegisterBlock("super_alloying_furnace",

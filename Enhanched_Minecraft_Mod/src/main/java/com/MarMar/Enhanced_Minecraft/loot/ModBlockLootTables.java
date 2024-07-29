@@ -99,6 +99,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                  ModItems.Corn_seeds.get(), cornBuilder));
 
          //Entity blocks
+        this.dropSelf(ModBlocks.Adobe_furnace.get());
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
         this.dropSelf(ModBlocks.Super_alloying_furnace.get());
         this.dropSelf(ModBlocks.Gem_polisher_block.get());

@@ -10,7 +10,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> Serializers =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, Enhanced_Minecraft.MOD_ID);
-
+    public static final RegistryObject<RecipeSerializer<BasicSmeltingRecipe>> Basic_smelting_serializer =
+            Serializers.register("basic_smelting", () -> BasicSmeltingRecipe.Serializer.Instance);
     public static final RegistryObject<RecipeSerializer<AlloyingFurnaceRecipe>> Alloying_serializer =
             Serializers.register("ore_alloying", () -> AlloyingFurnaceRecipe.Serializer.Instance);
     public static final RegistryObject<RecipeSerializer<SuperAlloyingRecipe>> Super_alloying_serializer =

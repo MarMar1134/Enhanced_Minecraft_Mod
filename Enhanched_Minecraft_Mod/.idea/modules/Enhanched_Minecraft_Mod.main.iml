@@ -13,7 +13,7 @@
     </facet>
   </component>
   <component name="McpModuleSettings">
-    <option name="mappingFile" value="D:\Repositorios Github\Enhanced-Minecraft-Mod\Enhanched_Minecraft_Mod\build\createMcpToSrg\output.tsrg" />
+    <option name="mappingFile" value="D:\Enhanched_Minecraft_Mod\build\createMcpToSrg\output.tsrg" />
     <option name="mcpVersion" value="parchment_2023.06.26-1.20.1" />
     <option name="minecraftVersion" value="1.20.1" />
     <option name="platformVersion" value="47.2.0" />
