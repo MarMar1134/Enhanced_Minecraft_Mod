@@ -70,7 +70,9 @@ public class ModTabs {
                         output.accept(ModBlocks.Adobe_alloying_furnace.get());
                         output.accept(ModBlocks.Super_alloying_furnace.get());
                         output.accept(ModBlocks.Gem_polisher_block.get());
+                        output.accept((ModItems.Copper_nugget.get()));
                         output.accept((ModItems.Tin_ingot.get()));
+                        output.accept((ModItems.Tin_nugget.get()));
                         output.accept((ModItems.Bronze_ingot.get()));
                         output.accept(ModItems.Bronze_nugget.get());
                         output.accept(ModItems.Steel_ingot.get());

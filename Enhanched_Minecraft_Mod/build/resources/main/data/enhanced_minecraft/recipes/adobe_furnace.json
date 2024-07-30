@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:mud_bricks"
+    },
+    "I": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "III"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:adobe_furnace"
+  },
+  "show_notification": true
+}

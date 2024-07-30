@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-24T02:03:30.1342483	Item Models: enhanced_minecraft
+// 1.20.1	2024-07-29T14:05:22.5308552	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -15,6 +15,7 @@ d5c11e9e569e7a052dd73193a93eff766f8e09f6 assets/enhanced_minecraft/models/item/c
 25251c465724c4bff056bacf2fd5f7b75b6fbab8 assets/enhanced_minecraft/models/item/cooked_corn.json
 ffa755c5f18319c678433239a0352bc08cc7cd13 assets/enhanced_minecraft/models/item/cooked_eggplant.json
 214cae2fc4c55733d21ec33c80e262e67fba69bf assets/enhanced_minecraft/models/item/cooked_zapallo.json
+c23ce5ab6a8716209e85dec71e8b49da9f21cafe assets/enhanced_minecraft/models/item/copper_nugget.json
 534da9b728fe36f89aa20c8f52a655b747e17e16 assets/enhanced_minecraft/models/item/corn.json
 428f7ef006e361c2e2884813935d9f4b7e255c67 assets/enhanced_minecraft/models/item/corn_seeds.json
 6a3c08409859de941890b813738433a7cf5af2c5 assets/enhanced_minecraft/models/item/diamond_polisher.json
@@ -90,6 +91,7 @@ d13fb25ed4f2a323ab0ef84de9abf3390075efbb assets/enhanced_minecraft/models/item/s
 929fad2f00e22e47c5a4c490c069f3c8867e3bbd assets/enhanced_minecraft/models/item/stone_polisher.json
 9cd12e0af961472ba928c6a15336d8576d58de73 assets/enhanced_minecraft/models/item/sulfur.json
 fda56e12802a262d8a33dd4dc43f7e06e4ad02c2 assets/enhanced_minecraft/models/item/tin_ingot.json
+489f189099f770874dedb3264e30ce16822b38f2 assets/enhanced_minecraft/models/item/tin_nugget.json
 f60e685efc59dbe22e0b60477eeff20a5bde2c2a assets/enhanced_minecraft/models/item/tomato.json
 42709815a53306b7f3fec4b86b0280a013fdb347 assets/enhanced_minecraft/models/item/tomato_seeds.json
 7f631a6cd7cd900f75beb47ffca0c2958a0c89a1 assets/enhanced_minecraft/models/item/yerba_mate.json

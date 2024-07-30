@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "F": {
+      "item": "enhanced_minecraft:adobe_furnace"
+    },
+    "I": {
+      "item": "enhanced_minecraft:bronze_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "#F#",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:furnace"
+  },
+  "show_notification": true
+}

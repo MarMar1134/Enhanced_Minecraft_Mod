@@ -14,6 +14,7 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_BRONZE_TOOL= TagB("needs_bronze_tool");
         public static final TagKey<Block> NEEDS_STEEL_TOOL= TagB("needs_steel_tool");
 
+
         private static TagKey<Block> TagB(String name){
             return BlockTags.create(new ResourceLocation(Enhanced_Minecraft.MOD_ID, name));
         }

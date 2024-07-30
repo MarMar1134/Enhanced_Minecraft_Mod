@@ -25,6 +25,8 @@ public class ModBlocks {
 
     //Blocks
 
+        //New blocks
+
         //Ores
         public static final RegistryObject<Block> Tin_ore = RegisterBlock("tin_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE)

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "item": "minecraft:redstone"
+    },
+    "F": {
+      "item": "enhanced_minecraft:tin_ingot"
+    },
+    "I": {
+      "item": "minecraft:stone"
+    },
+    "W": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "AFA",
+    "III"
+  ],
+  "result": {
+    "item": "minecraft:comparator"
+  },
+  "show_notification": true
+}

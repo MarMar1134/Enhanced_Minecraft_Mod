@@ -113,8 +113,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Ores
         simpleItem(ModItems.Sulfur);
 
+        simpleItem(ModItems.Copper_nugget);
+
         simpleItem(ModItems.Raw_tin);
         simpleItem(ModItems.Tin_ingot);
+        simpleItem(ModItems.Tin_nugget);
 
         simpleItem(ModItems.Raw_bronze);
         simpleItem(ModItems.Bronze_ingot);

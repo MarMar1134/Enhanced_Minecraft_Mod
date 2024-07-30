@@ -38,8 +38,12 @@ public class ModItems {
         public static final RegistryObject<Item> Raw_diamond = Items.register(
                 "raw_diamond", () -> new Item(new Item.Properties()));
         //melted
+        public static final RegistryObject<Item> Copper_nugget = Items.register(
+                "copper_nugget", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Tin_ingot = Items.register(
                 "tin_ingot",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Tin_nugget = Items.register(
+                "tin_nugget", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Bronze_ingot = Items.register(
                 "bronze_ingot",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Bronze_nugget = Items.register(
@@ -48,12 +52,12 @@ public class ModItems {
                 "steel_ingot", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Silver_ingot = Items.register(
                 "silver_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Silver_nugget = Items.register(
-            "silver_nugget", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Silver_nugget = Items.register(
+                "silver_nugget", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Rose_gold_ingot = Items.register(
                 "rose_gold_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> Rose_gold_nugget = Items.register(
-            "rose_gold_nugget", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> Rose_gold_nugget = Items.register(
+                "rose_gold_nugget", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Rubi = Items.register(
                 "rubi", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Saphire = Items.register(

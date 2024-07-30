@@ -20,8 +20,8 @@
   "block.enhanced_minecraft.saphire_ore": "Mena de zafiro",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Mena de zafiro profundo",
 
-  "block.enhanced_minecraft.adobe_furnace": "Horno de barro",
-  "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de barro",
+  "block.enhanced_minecraft.adobe_furnace": "Horno de adobe",
+  "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de de ladrillos",
   "block.enhanced_minecraft.super_alloying_furnace": "Horno de aleación avanzado",
   "block.enhanced_minecraft.gem_polisher": "Mesa de pulido",
 
@@ -41,8 +41,10 @@
   "descriptions.enhanced_minecraft.polisher_item": "Utilizado en la mesa de pulido, sirve para purificar gemas",
 
   "item.enhanced_minecraft.sulfur": "Azufre",
+  "item.enhanced_minecraft.copper_nugget": "Pepita de cobre",
   "item.enhanced_minecraft.raw_tin": "Estaño en bruto",
   "item.enhanced_minecraft.tin_ingot": "Lingote de estaño",
+  "item.enhanced_minecraft.tin_nugget": "Pepita de estaño",
   "item.enhanced_minecraft.raw_bronze": "Bronce en bruto",
   "item.enhanced_minecraft.bronze_ingot": "Lingote de bronce",
   "item.enhanced_minecraft.bronze_nugget": "Pepita de bronce",

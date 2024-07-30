@@ -2,6 +2,7 @@ package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.Util.ModTags;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -9,6 +10,7 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 

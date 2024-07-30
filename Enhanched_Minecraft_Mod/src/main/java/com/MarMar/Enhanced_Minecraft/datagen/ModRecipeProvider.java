@@ -1,6 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Util.ModTags;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.data.PackOutput;
@@ -23,6 +24,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> Corn_cookables = List.of(ModItems.Corn.get());
     public static final List<ItemLike> Tin_smeltables = List.of(ModItems.Raw_tin.get(),
             ModBlocks.Tin_ore.get(), ModBlocks.Deepslate_tin_ore.get());
+    public static final List<ItemLike> Tin_nugget_smeltables = List.of(ModItems.Raw_tin.get());
+    public static final List<ItemLike> Copper_nugget_smeltables = List.of(Items.RAW_COPPER);
     public static final List<ItemLike> Bronze_smeltables= List.of(ModItems.Raw_bronze.get());
     public static final List<ItemLike> Bronze_nuggets_smeltables= List.of(ModItems.Bronze_axe.get(),
             ModItems.Bronze_hoe.get(), ModItems.Bronze_pickaxe.get(), ModItems.Bronze_shovel.get(),
@@ -58,10 +61,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         smoking(consumer, Corn_cookables, RecipeCategory.FOOD, ModItems.Cooked_corn.get(),
                 2f, 100, "corn");
 
+        byCampfire(consumer, Zapallo_cookables, RecipeCategory.FOOD, ModItems.Cooked_zapallo.get(),
+                2f, 100, "zapallo");
+        byCampfire(consumer, Eggplant_cookables, RecipeCategory.FOOD, ModItems.Cooked_eggplant.get(),
+                2f, 100, "eggplant");
+        byCampfire(consumer, Corn_cookables, RecipeCategory.FOOD, ModItems.Cooked_corn.get(),
+                2f, 100, "corn");
+
+        byCampfire(consumer, Copper_nugget_smeltables, RecipeCategory.MISC, ModItems.Copper_nugget.get(),
+                1.0f, 300, "copper_nugget");
+
         oreSmelting(consumer, Tin_smeltables, RecipeCategory.MISC, ModItems.Tin_ingot.get(),
                 2f, 100, "tin_ingot" );
         oreBlasting(consumer, Tin_smeltables, RecipeCategory.MISC, ModItems.Tin_ingot.get(),
                 2f, 200, "tin_ingot" );
+        byCampfire(consumer, Tin_nugget_smeltables, RecipeCategory.MISC, ModItems.Tin_nugget.get(),
+                1.0f, 300, "tin_nugget");
+
 
         oreSmelting(consumer, Bronze_smeltables, RecipeCategory.MISC, ModItems.Bronze_ingot.get(),
                 2f, 100, "bronze_ingot" );
@@ -115,13 +131,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
 
         //Block recipes
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_alloying_furnace.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_furnace.get())
                 .pattern("###")
                 .pattern("# #")
                 .pattern("III")
-                .define('#', Blocks.PACKED_MUD)
+                .define('#', Blocks.MUD_BRICKS)
                 .define('I', Blocks.COBBLESTONE)
                 .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
+                .unlockedBy(getHasName(Blocks.MUD_BRICKS), has(Blocks.MUD_BRICKS))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_alloying_furnace.get())
+                .pattern("###")
+                .pattern("#A#")
+                .pattern("III")
+                .define('#', Blocks.BRICKS)
+                .define('A', ModBlocks.Adobe_furnace.get())
+                .define('I', Blocks.COBBLESTONE)
+                .unlockedBy(getHasName(ModBlocks.Adobe_furnace.get()), has(ModBlocks.Adobe_furnace.get()))
+                .unlockedBy(getHasName(ModItems.Raw_tin.get()), has(ModItems.Raw_tin.get()))
                 .save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Super_alloying_furnace.get())
                 .pattern("###")
@@ -139,6 +166,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Blocks.DARK_OAK_PLANKS)
                 .define('I', Blocks.STONE)
                 .unlockedBy(getHasName(Blocks.DARK_OAK_PLANKS), has(Blocks.DARK_OAK_PLANKS))
+                .save(consumer);
+
+        //Copper recipes
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Copper_nugget.get(), 9)
+                .requires(Items.COPPER_INGOT)
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(consumer);
+
+        //Tin recipes
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Tin_nugget.get(), 9)
+                .requires(ModItems.Tin_ingot.get())
+                .unlockedBy(getHasName(ModItems.Tin_ingot.get()), has(ModItems.Tin_ingot.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Tin_ingot.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.Tin_nugget.get())
+                .unlockedBy(getHasName(ModItems.Tin_nugget.get()), has(ModItems.Tin_nugget.get()))
                 .save(consumer);
 
         //Bronze recipes
@@ -527,53 +573,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', Blocks.STONE)
                 .unlockedBy(getHasName(ModItems.Tin_ingot.get()), has(ModItems.Tin_ingot.get()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, Items.COMPARATOR)
+                .pattern("WWW")
+                .pattern("AFA")
+                .pattern("III")
+                .define('W', Items.REDSTONE_TORCH)
+                .define('F', ModItems.Tin_ingot.get())
+                .define('A', Items.REDSTONE)
+                .define('I', Blocks.STONE)
+                .unlockedBy(getHasName(ModItems.Tin_ingot.get()), has(ModItems.Tin_ingot.get()))
+                .unlockedBy(getHasName(Items.REDSTONE), has(Items.REDSTONE))
+                .save(consumer);
             //Items
-                //Stone
-            ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, Items.STONE_SWORD)
-                    .pattern("A")
-                    .pattern("I")
-                    .pattern("#")
-                    .define('I', Blocks.COBBLESTONE)
-                    .define('A', Items.FLINT)
-                    .define('#', Items.STICK)
-                    .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
-                    .save(consumer);
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.STONE_PICKAXE)
-                    .pattern("AIA")
-                    .pattern(" # ")
-                    .pattern(" # ")
-                    .define('I', Blocks.COBBLESTONE)
-                    .define('A', Items.FLINT)
-                    .define('#', Items.STICK)
-                    .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
-                    .save(consumer);
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.STONE_AXE)
-                    .pattern("AI")
-                    .pattern("I#")
-                    .pattern(" #")
-                    .define('I', Blocks.COBBLESTONE)
-                    .define('A', Items.FLINT)
-                    .define('#', Items.STICK)
-                    .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
-                    .save(consumer);
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.STONE_SHOVEL)
-                    .pattern("I")
-                    .pattern("#")
-                    .pattern("#")
-                    .define('I', Blocks.COBBLESTONE)
-                    .define('#', Items.STICK)
-                    .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
-                    .save(consumer);
-            ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.STONE_HOE)
-                    .pattern("AI")
-                    .pattern(" #")
-                    .pattern(" #")
-                    .define('I', Blocks.COBBLESTONE)
-                    .define('A', Items.FLINT)
-                    .define('#', Items.STICK)
-                    .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
-                    .save(consumer);
+
             //Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MUD, 2)
+                .pattern("#A")
+                .pattern("A#")
+                .define('#', Blocks.DIRT)
+                .define('A', Items.CLAY_BALL)
+                .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT))
+                .unlockedBy(getHasName(Items.CLAY_BALL), has(Items.CLAY_BALL))
+                .save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.BLAST_FURNACE)
                 .pattern("III")
                 .pattern("IFI")
@@ -583,6 +604,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Blocks.SMOOTH_STONE)
                 .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.FURNACE)
+                .pattern("III")
+                .pattern("#F#")
+                .pattern("###")
+                .define('I', ModItems.Bronze_ingot.get())
+                .define('F', ModBlocks.Adobe_furnace.get())
+                .define('#', Blocks.COBBLESTONE)
+                .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
+                .save(consumer);
+    }
+    protected static void byCampfire(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup){
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.CAMPFIRE_COOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_campfire");
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
