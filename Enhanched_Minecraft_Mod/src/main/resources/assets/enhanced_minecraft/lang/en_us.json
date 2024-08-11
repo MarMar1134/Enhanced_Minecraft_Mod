@@ -24,9 +24,14 @@
   "block.enhanced_minecraft.adobe_alloying_furnace": "Bricks alloy furnace",
   "block.enhanced_minecraft.super_alloying_furnace": "Advanced alloy furnace",
   "block.enhanced_minecraft.gem_polisher": "Gem polisher",
+  "block.enhanced_minecraft.grinder": "Grinder",
 
   "enchantment.enhanced_minecraft.fine_mining": "Fine mining",
-  "enchantment.enhanced_minecraft.fine_mining.desc": "Polishes automatically the gems mined",
+  "enchantment.enhanced_minecraft.fine_mining.desc": "Polishes automatically the gems mined.",
+  "enchantment.enhanced_minecraft.poison_touch": "Poison touch",
+  "enchantment.enhanced_minecraft.poison_touch.desc": "Applies poison effect to the target. Works well in live enemies.",
+  "enchantment.enhanced_minecraft.living_touch": "Healing touch",
+  "enchantment.enhanced_minecraft.living_touch.desc": "Applies Healing effect to the target. Works well in undead enemies.",
 
   "item.enhanced_minecraft.stone_polisher": "Stone polisher",
   "item.enhanced_minecraft.bronze_polisher": "Bronze polisher",
@@ -61,30 +66,11 @@
   "item.enhanced_minecraft.silver_nugget": "Silver nugget",
   "item.enhanced_minecraft.rose_gold_ingot": "Rose gold ingot",
   "item.enhanced_minecraft.rose_gold_nugget": "Rose gold nugget",
+  "item.enhanced_minecraft.green_gold_ingot": "Green gold ingot",
+  "item.enhanced_minecraft.green_gold_nugget": "Green gold nugget",
   "item.enhanced_minecraft.cobalt": "Cobalt",
   "item.enhanced_minecraft.rubi": "Rubi",
   "item.enhanced_minecraft.saphire": "Saphire",
-  "item.enhanced_minecraft.reinforced_diamond": "Reinforced Diamond",
-
-  "item.enhanced_minecraft.bronze_sword": "Bronze Sword",
-  "item.enhanced_minecraft.bronze_pickaxe": "Bronze Pickaxe",
-  "item.enhanced_minecraft.bronze_axe": "Bronze Axe",
-  "item.enhanced_minecraft.bronze_shovel": "Bronze Shovel",
-  "item.enhanced_minecraft.bronze_hoe": "Bronze Hoe",
-  "item.enhanced_minecraft.bronze_helmet": "Bronze Helmet",
-  "item.enhanced_minecraft.bronze_chestplate": "Bronze Chestplate",
-  "item.enhanced_minecraft.bronze_leggings": "Bronze Leggings",
-  "item.enhanced_minecraft.bronze_boots": "Bronze Boots",
-
-  "item.enhanced_minecraft.steel_sword": "Steel Sword",
-  "item.enhanced_minecraft.steel_pickaxe": "Steel Pickaxe",
-  "item.enhanced_minecraft.steel_axe": "Steel Axe",
-  "item.enhanced_minecraft.steel_shovel": "Steel Shovel",
-  "item.enhanced_minecraft.steel_hoe": "Steel Hoe",
-  "item.enhanced_minecraft.steel_helmet": "Steel Helmet",
-  "item.enhanced_minecraft.steel_chestplate": "Steel Chestplate",
-  "item.enhanced_minecraft.steel_leggings": "Steel Leggings",
-  "item.enhanced_minecraft.steel_boots": "Steel Boots",
 
   "item.enhanced_minecraft.silver_sword": "Silver sword",
   "item.enhanced_minecraft.silver_pickaxe": "Silver pickaxe",
@@ -95,6 +81,16 @@
   "item.enhanced_minecraft.silver_chestplate": "Silver chestplate",
   "item.enhanced_minecraft.silver_leggings": "Silver leggings",
   "item.enhanced_minecraft.silver_boots": "Silver boots",
+
+  "item.enhanced_minecraft.bronze_sword": "Bronze Sword",
+  "item.enhanced_minecraft.bronze_pickaxe": "Bronze Pickaxe",
+  "item.enhanced_minecraft.bronze_axe": "Bronze Axe",
+  "item.enhanced_minecraft.bronze_shovel": "Bronze Shovel",
+  "item.enhanced_minecraft.bronze_hoe": "Bronze Hoe",
+  "item.enhanced_minecraft.bronze_helmet": "Bronze Helmet",
+  "item.enhanced_minecraft.bronze_chestplate": "Bronze Chestplate",
+  "item.enhanced_minecraft.bronze_leggings": "Bronze Leggings",
+  "item.enhanced_minecraft.bronze_boots": "Bronze Boots",
 
   "item.enhanced_minecraft.rose_golden_sword": "Rose golden sword",
   "item.enhanced_minecraft.rose_golden_pickaxe": "Rose golden pickaxe",
@@ -107,43 +103,70 @@
   "item.enhanced_minecraft.rose_golden_leggings": "Rose golden leggings",
   "item.enhanced_minecraft.rose_golden_boots": "Rose golden boots",
 
-  "item.enhanced_minecraft.reinforcing_upgrade_smithing_template": "Cobalt smithing template",
+  "item.enhanced_minecraft.steel_sword": "Steel Sword",
+  "item.enhanced_minecraft.steel_pickaxe": "Steel Pickaxe",
+  "item.enhanced_minecraft.steel_axe": "Steel Axe",
+  "item.enhanced_minecraft.steel_shovel": "Steel Shovel",
+  "item.enhanced_minecraft.steel_hoe": "Steel Hoe",
+  "item.enhanced_minecraft.steel_helmet": "Steel Helmet",
+  "item.enhanced_minecraft.steel_chestplate": "Steel Chestplate",
+  "item.enhanced_minecraft.steel_leggings": "Steel Leggings",
+  "item.enhanced_minecraft.steel_boots": "Steel Boots",
 
-  "item.enhanced_minecraft.reinforced_diamond_sword": "Reinforced diamond sword",
-  "item.enhanced_minecraft.reinforced_diamond_pickaxe": "Reinforced diamond pickaxe",
-  "item.enhanced_minecraft.reinforced_diamond_axe": "Reinforced diamond axe",
-  "item.enhanced_minecraft.reinforced_diamond_shovel": "Reinforced diamond shovel",
-  "item.enhanced_minecraft.reinforced_diamond_hoe": "Reinforced diamond hoe",
-  "item.enhanced_minecraft.reinforced_diamond_helmet": "Reinforced diamond helmet",
-  "item.enhanced_minecraft.reinforced_diamond_chestplate": "Reinforced diamond chestplate",
-  "item.enhanced_minecraft.reinforced_diamond_leggings": "Reinforced diamond leggings",
-  "item.enhanced_minecraft.reinforced_diamond_boots": "Reinforced diamond boots",
+  "item.enhanced_minecraft.green_golden_sword": "Green golden sword",
+  "item.enhanced_minecraft.green_golden_pickaxe": "Green golden pickaxe",
+  "item.enhanced_minecraft.green_golden_axe": "Green golden axe",
+  "item.enhanced_minecraft.green_golden_shovel": "Green golden shovel",
+  "item.enhanced_minecraft.green_golden_hoe": "Green golden hoe",
+  "item.enhanced_minecraft.green_golden_helmet": "Green golden helmet",
+  "item.enhanced_minecraft.green_golden_polisher": "Green golden polisher",
+  "item.enhanced_minecraft.green_golden_chestplate": "Green golden chestplate",
+  "item.enhanced_minecraft.green_golden_leggings": "Green golden leggings",
+  "item.enhanced_minecraft.green_golden_boots": "Green golden boots",
+
+  "item.enhanced_minecraft.reinforcing_upgrade_smithing_template": "Cobalt smithing template",
 
   "item.enhanced_minecraft.orange_sapling": "Orange sapling",
   "item.enhanced_minecraft.orange": "Orange",
+
   "item.enhanced_minecraft.lemon_sapling": "Lemon sapling",
   "item.enhanced_minecraft.lemon": "Lemon",
+
   "item.enhanced_minecraft.apple_sapling": "Apple sapling",
   "item.enhanced_minecraft.green_apple": "Green apple",
+
   "item.enhanced_minecraft.hazelnut_sapling": "Hazelnut sapling",
+
   "item.enhanced_minecraft.walnut_sapling": "Walnut sapling",
+
   "item.enhanced_minecraft.almond_sapling": "Almond sapling",
+
   "item.enhanced_minecraft.banana_seed": "Banana seeds",
   "item.enhanced_minecraft.banana": "Banana",
+
   "item.enhanced_minecraft.yerba_mate_seeds": "Yerba mate seeds",
   "item.enhanced_minecraft.yerba_mate": "Yerba mate",
   "item.enhanced_minecraft.grounded_yerba_mate": "Ground yerba mate",
   "item.enhanced_minecraft.empty_mate": "Empty mate",
   "item.enhanced_minecraft.mate": "Mate",
+
   "item.enhanced_minecraft.zapallo_seeds": "Anco pumpkin seeds",
   "item.enhanced_minecraft.zapallo": "Anco pumpkin",
   "item.enhanced_minecraft.cooked_zapallo": "Cooked anco pumpkin",
+
   "item.enhanced_minecraft.eggplant_seeds": "Eggplant seeds",
   "item.enhanced_minecraft.eggplant": "Eggplant",
   "item.enhanced_minecraft.cooked_eggplant": "Cooked eggplant",
+
   "item.enhanced_minecraft.tomato_seeds": "Tomato seeds",
   "item.enhanced_minecraft.tomato": "Tomato",
+
   "item.enhanced_minecraft.corn_seeds": "Corn seeds",
   "item.enhanced_minecraft.corn": "Corn",
-  "item.enhanced_minecraft.cooked_corn": "Cooked corn"
+  "item.enhanced_minecraft.cooked_corn": "Cooked corn",
+
+  "item.enhanced_minecraft.wheat_flour": "Wheat flour",
+  "item.enhanced_minecraft.pumpkin_flour": "Pumpkin flour",
+
+  "item.enhanced_minecraft.yeast": "Yeast"
 }

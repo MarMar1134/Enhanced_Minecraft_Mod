@@ -85,29 +85,46 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Food
-//        simpleItem(ModItems.Banana);
         simpleItem(ModItems.Green_apple);
+
         simpleItem(ModItems.Lemon);
+
         simpleItem(ModItems.Orange);
+
         simpleItem(ModItems.Rice);
         simpleItem(ModItems.Rice_bowl);
         simpleItem(ModItems.Yerba_mate);
+
         simpleItem(ModItems.Grounded_yerba_mate);
         simpleItem(ModItems.Mate);
         simpleItem(ModItems.Empty_mate);
+
         simpleItem(ModItems.Zapallo);
         simpleItem(ModItems.Cooked_zapallo);
+
         simpleItem(ModItems.Eggplant);
         simpleItem(ModItems.Cooked_eggplant);
+
         simpleItem(ModItems.Tomato);
+
         simpleItem(ModItems.Corn);
         simpleItem(ModItems.Cooked_corn);
 
+        simpleItem(ModItems.Wheat_flour);
+
+        simpleItem(ModItems.Pumpkin_flour);
+
+        simpleItem(ModItems.Yeast);
+
         //Seeds
         simpleItem(ModItems.Yerba_mate_seeds);
+
         simpleItem(ModItems.Zapallo_seeds);
+
         simpleItem(ModItems.Eggplant_seeds);
+
         simpleItem(ModItems.Tomato_seeds);
+
         simpleItem(ModItems.Corn_seeds);
 
         //Ores
@@ -133,6 +150,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Rose_gold_ingot);
         simpleItem(ModItems.Rose_gold_nugget);
 
+        simpleItem(ModItems.Green_gold_ingot);
+        simpleItem(ModItems.Green_gold_nugget);
+
         simpleItem(ModItems.Cobalt);
 
         simpleItem(ModItems.Raw_rubi);
@@ -142,8 +162,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.Rubi);
         simpleItem(ModItems.Saphire);
-
-        simpleItem(ModItems.Reinforced_diamond);
 
         //Smithing templates
         simpleItem(ModItems.reinforcing_upgrade_smithing_template);
@@ -181,9 +199,6 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.Bronze_leggings);
             simpleItem(ModItems.Bronze_boots);
 
-            //Iron
-            HandheldItem(ModItems.Iron_polisher);
-
             //Rose Gold
             HandheldItem(ModItems.Rose_golden_sword);
             HandheldItem(ModItems.Rose_golden_pickaxe);
@@ -196,6 +211,9 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.Rose_golden_chestplate);
             simpleItem(ModItems.Rose_golden_leggings);
             simpleItem(ModItems.Rose_golden_boots);
+
+            //Iron
+            HandheldItem(ModItems.Iron_polisher);
 
             //Steel
             HandheldItem(ModItems.Steel_sword);
@@ -210,20 +228,21 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.Steel_leggings);
             simpleItem(ModItems.Steel_boots);
 
+            //Green Gold
+            HandheldItem(ModItems.Green_golden_sword);
+            HandheldItem(ModItems.Green_golden_pickaxe);
+            HandheldItem(ModItems.Green_golden_axe);
+            HandheldItem(ModItems.Green_golden_shovel);
+            HandheldItem(ModItems.Green_golden_hoe);
+            HandheldItem(ModItems.Green_golden_polisher);
+
+            simpleItem(ModItems.Green_golden_helmet);
+            simpleItem(ModItems.Green_golden_chestplate);
+            simpleItem(ModItems.Green_golden_leggings);
+            simpleItem(ModItems.Green_golden_boots);
+
             //Diamond
             HandheldItem(ModItems.Diamond_polisher);
-
-            //Reinforced Diamond
-            HandheldItem(ModItems.Reinforced_diamond_sword);
-            HandheldItem(ModItems.Reinforced_diamond_pickaxe);
-            HandheldItem(ModItems.Reinforced_diamond_axe);
-            HandheldItem(ModItems.Reinforced_diamond_shovel);
-            HandheldItem(ModItems.Reinforced_diamond_hoe);
-
-            simpleItem(ModItems.Reinforced_diamond_helmet);
-            simpleItem(ModItems.Reinforced_diamond_chestplate);
-            simpleItem(ModItems.Reinforced_diamond_leggings);
-            simpleItem(ModItems.Reinforced_diamond_boots);
 
             //Netherite
             HandheldItem(ModItems.Netherite_polisher);

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:wheat_flour"
+    },
+    {
+      "item": "enhanced_minecraft:wheat_flour"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "enhanced_minecraft:yeast"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "minecraft:cookie"
+  }
+}

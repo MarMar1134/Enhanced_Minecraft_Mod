@@ -51,6 +51,7 @@ public class Enhanced_Minecraft
             MenuScreens.register(ModMenuTypes.adobe_alloying_furnace_menu.get(), AdobeAlloyingFurnaceScreen::new);
             MenuScreens.register(ModMenuTypes.super_alloying_furnace_menu.get(), SuperAlloyingFurnaceScreen::new);
             MenuScreens.register(ModMenuTypes.gem_polisher_menu.get(), GemPolisherScreen::new);
+            MenuScreens.register(ModMenuTypes.grinder_menu.get(), GrinderScreen::new);
         }
     }
 

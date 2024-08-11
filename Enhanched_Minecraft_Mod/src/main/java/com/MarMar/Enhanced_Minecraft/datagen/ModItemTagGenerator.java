@@ -2,7 +2,6 @@ package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.Util.ModTags;
-import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -10,7 +9,6 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -72,19 +70,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.Rose_golden_chestplate.get())
                 .add(ModItems.Rose_golden_leggings.get())
                 .add(ModItems.Rose_golden_boots.get())
-                .add(ModItems.Reinforced_diamond_helmet.get())
-                .add(ModItems.Reinforced_diamond_chestplate.get())
-                .add(ModItems.Bronze_leggings.get())
-                .add(ModItems.Reinforced_diamond_boots.get());
+                .add(ModItems.Bronze_leggings.get());
 
-        this.tag(ModTags.Items.Gem_tag).add(ModItems.Raw_rubi.get())
+        this.tag(ModTags.Items.raw_gems)
+                .add(ModItems.Raw_rubi.get())
                 .add(ModItems.Raw_saphire.get())
                 .add(ModItems.Raw_emerald.get())
-                .add(ModItems.Raw_diamond.get())
-                .add(ModItems.Rubi.get())
-                .add(ModItems.Saphire.get())
-                .add(Items.EMERALD)
-                .add(Items.DIAMOND);
+                .add(ModItems.Raw_diamond.get());
 
         this.tag(ModTags.Items.Polisher_tag).add(ModItems.Bronze_polisher.get())
                 .add(ModItems.Gold_polisher.get())

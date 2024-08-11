@@ -1,0 +1,15 @@
+{
+  "type": "enhanced_minecraft:super_ore_alloying",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "enhanced_minecraft:steel_ingot"
+  }
+}

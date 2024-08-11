@@ -11,8 +11,8 @@ java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?] {}
 	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?] {re:computing_frames}
 	at com.google.gson.JsonArray.get(JsonArray.java:228) ~[gson-2.10.jar:?] {}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe$Serializer.fromJson(GemPolisherRecipe.java:81) ~[main/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe$Serializer.fromJson(GemPolisherRecipe.java:69) ~[main/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:81) ~[main/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:69) ~[main/:?] {re:classloading}
 	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:171) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:67) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
@@ -76,8 +76,8 @@ Stacktrace:
 	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?] {}
 	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?] {re:computing_frames}
 	at com.google.gson.JsonArray.get(JsonArray.java:228) ~[gson-2.10.jar%23130!/:?] {}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe$Serializer.fromJson(GemPolisherRecipe.java:81) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe$Serializer.fromJson(GemPolisherRecipe.java:69) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:81) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:69) ~[%23196!/:?] {re:classloading}
 	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:171) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:67) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}

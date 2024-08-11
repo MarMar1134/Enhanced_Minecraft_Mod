@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:wheat_flour"
+    },
+    {
+      "item": "enhanced_minecraft:wheat_flour"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "enhanced_minecraft:yeast"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bread"
+  }
+}

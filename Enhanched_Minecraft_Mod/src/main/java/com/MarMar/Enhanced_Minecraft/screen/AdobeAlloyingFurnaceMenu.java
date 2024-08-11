@@ -27,9 +27,6 @@ public class AdobeAlloyingFurnaceMenu extends AbstractContainerMenu {
         this.level = inv.player.level();
         this.data = data;
 
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
-
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 37, 17));
             this.addSlot(new SlotItemHandler(iItemHandler, 1, 74, 17));
@@ -37,6 +34,8 @@ public class AdobeAlloyingFurnaceMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
         });
 
+        addPlayerInventory(inv);
+        addPlayerHotbar(inv);
         addDataSlots(data);
     }
     public boolean isCrafting() {

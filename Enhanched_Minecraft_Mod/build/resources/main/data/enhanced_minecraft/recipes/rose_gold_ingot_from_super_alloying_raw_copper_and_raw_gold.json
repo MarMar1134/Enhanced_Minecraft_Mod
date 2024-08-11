@@ -1,0 +1,14 @@
+{
+  "type": "enhanced_minecraft:super_ore_alloying",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_gold"
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:rose_gold_ingot"
+  }
+}

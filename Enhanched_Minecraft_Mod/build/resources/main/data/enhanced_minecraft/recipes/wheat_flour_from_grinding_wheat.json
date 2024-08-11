@@ -1,0 +1,9 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:wheat"
+  },
+  "output": {
+    "item": "enhanced_minecraft:wheat_flour"
+  }
+}

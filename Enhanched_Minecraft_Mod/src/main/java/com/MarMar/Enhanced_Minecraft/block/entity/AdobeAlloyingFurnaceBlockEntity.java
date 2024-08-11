@@ -44,7 +44,7 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
     protected final ContainerData Data;
     private int progress = 0;
     private int burnTime = 0, maxBurnTime = 0;
-    private int maxProgress = 100;
+    private int maxProgress = 200;
 
     public AdobeAlloyingFurnaceBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.Adobe_alloying_furnace.get(), pPos, pBlockState);
@@ -76,7 +76,6 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
             }
         };
     }
-
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER){
@@ -189,7 +188,7 @@ public class AdobeAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
         }
 
         ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
-                
+
         return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
 

@@ -1,0 +1,14 @@
+{
+  "type": "enhanced_minecraft:ore_alloying",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "enhanced_minecraft:raw_tin"
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:raw_bronze"
+  }
+}

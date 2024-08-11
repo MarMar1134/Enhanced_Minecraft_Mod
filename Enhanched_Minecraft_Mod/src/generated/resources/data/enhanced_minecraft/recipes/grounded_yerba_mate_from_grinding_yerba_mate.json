@@ -1,0 +1,9 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "enhanced_minecraft:yerba_mate"
+  },
+  "output": {
+    "item": "enhanced_minecraft:grounded_yerba_mate"
+  }
+}

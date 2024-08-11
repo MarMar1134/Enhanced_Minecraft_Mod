@@ -1,0 +1,9 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:pumpkin"
+  },
+  "output": {
+    "item": "enhanced_minecraft:pumpkin_flour"
+  }
+}

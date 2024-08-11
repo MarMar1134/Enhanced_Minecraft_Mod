@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhanced_minecraft:block/grinder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "enhanced_minecraft:block/grinder"
+    },
+    "facing=south": {
+      "model": "enhanced_minecraft:block/grinder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "enhanced_minecraft:block/grinder",
+      "y": 270
+    }
+  }
+}

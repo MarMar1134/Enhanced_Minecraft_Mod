@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-29T23:11:28.1321817	Loot Tables
+// 1.20.1	2024-08-06T15:47:48.5535494	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
 fdff6e05cade759aa389ed4cfd0ec41c33448869 data/enhanced_minecraft/loot_tables/blocks/adobe_furnace.json
 75897b86dfe9caaf7d7f55f1ec1fb3c2d3995877 data/enhanced_minecraft/loot_tables/blocks/corn_crop.json
@@ -10,6 +10,7 @@ a05ab8ee60c7fe8ca70ea0de808ddf75b618eb77 data/enhanced_minecraft/loot_tables/blo
 ac75330d64c1cc905a91303cc4c0cae69ee0cfc4 data/enhanced_minecraft/loot_tables/blocks/deepslate_tin_ore.json
 20d3a15d413ac25052401874f020b63e61c1beb9 data/enhanced_minecraft/loot_tables/blocks/eggplant_crop.json
 84dca028dceaacb4b36839e57aeb9e08cf823ba8 data/enhanced_minecraft/loot_tables/blocks/gem_polisher.json
+8c6d8b1544b6a584e1e974beb170ef7bfa85a792 data/enhanced_minecraft/loot_tables/blocks/grinder.json
 539785742651ec324f9046d09005dc637bd4a6f8 data/enhanced_minecraft/loot_tables/blocks/nether_sulfur_ore.json
 82de8a4c1c1d37f22b4a4fd026d0dbaffe46fd25 data/enhanced_minecraft/loot_tables/blocks/rubi_ore.json
 73bf028d72221dbaa93d0cba64e745dbbbae0e7d data/enhanced_minecraft/loot_tables/blocks/saphire_ore.json

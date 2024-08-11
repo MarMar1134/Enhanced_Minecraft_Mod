@@ -13,14 +13,14 @@ public enum ModArmorMaterials implements ArmorMaterial {
     Bronze("bronze", 13, new int[]{1,4,3,2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(
             ModItems.Bronze_ingot.get())),
 
+    Rose_gold("rose_gold", 8, new int[]{1,4,3,2}, 16, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
+            ModItems.Rose_gold_ingot.get())),
     Steel("steel", 18, new int[]{2,7,5,3}, 16, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.05f, () -> Ingredient.of(
             ModItems.Steel_ingot.get())),
     Silver("silver", 9, new int[]{2,6,3,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
             ModItems.Silver_ingot.get())),
-    Rose_gold("rose_gold", 10, new int[]{2,6,5,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
-            ModItems.Rose_gold_ingot.get())),
-    Reinforced_diamond("reinforced_diamond", 35, new int[]{3,6,8,3}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0.05f, () -> Ingredient.of(
-            ModItems.Reinforced_diamond.get()));
+    Green_gold("green_gold", 13, new int[]{2,5,4,3}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0.5f, 0, () -> Ingredient.of(
+            ModItems.Green_gold_ingot.get()));
 
 
     private final String name;

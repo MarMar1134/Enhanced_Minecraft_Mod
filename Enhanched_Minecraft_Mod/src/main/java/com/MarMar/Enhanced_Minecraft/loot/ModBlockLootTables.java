@@ -103,6 +103,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.Adobe_alloying_furnace.get());
         this.dropSelf(ModBlocks.Super_alloying_furnace.get());
         this.dropSelf(ModBlocks.Gem_polisher_block.get());
+        this.dropSelf(ModBlocks.Item_grinder_block.get());
     }
 
     //Loot table creators

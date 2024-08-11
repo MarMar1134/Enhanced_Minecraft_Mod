@@ -44,8 +44,8 @@ public class ModConfiguredFeatures {
 
         register(context, TIN_ORE_KEY, Feature.ORE, new OreConfiguration(tinOres, 5));
         register(context, SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(silverOres, 6));
-        register(context, SAPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(saphireOres, 4));
-        register(context, RUBI_ORE_KEY, Feature.ORE, new OreConfiguration(rubiOres, 3));
+        register(context, SAPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(saphireOres, 8));
+        register(context, RUBI_ORE_KEY, Feature.ORE, new OreConfiguration(rubiOres, 6));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

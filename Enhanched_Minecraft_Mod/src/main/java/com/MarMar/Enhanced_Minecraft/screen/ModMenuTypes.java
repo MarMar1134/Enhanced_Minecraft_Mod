@@ -20,6 +20,8 @@ public class ModMenuTypes {
             registerMenuType("super_alloying_furnace_menu", SuperAlloyingFurnaceMenu::new);
     public static final RegistryObject<MenuType<GemPolisherMenu>> gem_polisher_menu =
             registerMenuType("gem_polisher_menu", GemPolisherMenu::new);
+    public static final RegistryObject<MenuType<GrinderMenu>> grinder_menu =
+            registerMenuType("grinder_menu", GrinderMenu::new);
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
         return Menus.register(name, () -> IForgeMenuType.create(factory));
     }

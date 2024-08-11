@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:pumpkin_flour"
+    },
+    {
+      "item": "enhanced_minecraft:pumpkin_flour"
+    },
+    {
+      "item": "enhanced_minecraft:yeast"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pumpkin_pie"
+  }
+}

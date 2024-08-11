@@ -27,6 +27,4 @@ public class AdobeFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
     protected AbstractContainerMenu createMenu(int i, Inventory inventory) {
         return new FurnaceMenu(i, inventory, this, this.dataAccess);
     }
-
-
 }

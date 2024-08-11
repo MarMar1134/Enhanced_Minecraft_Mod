@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_minecraft:grounded_yerba_mate_from_grinding_yerba_mate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yerba_mate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:yerba_mate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_yerba_mate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_minecraft:grounded_yerba_mate_from_grinding_yerba_mate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

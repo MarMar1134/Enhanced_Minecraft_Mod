@@ -15,6 +15,10 @@ public class ModEnchantments {
 
     public static RegistryObject<Enchantment> Fine_mining =
             ENCHANTMENTS.register("fine_mining", ()-> new FineMiningEnchantment(Enchantment.Rarity.RARE, EnchantmentCategory.DIGGER, EquipmentSlot.MAINHAND));
+    public static RegistryObject<Enchantment> Poison_touch =
+            ENCHANTMENTS.register("poison_touch", ()-> new PoisonTouchEnchantment(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
+    public static RegistryObject<Enchantment> Living_touch =
+            ENCHANTMENTS.register("living_touch", ()-> new LivingTouchEnchantment(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
     public static void Register(IEventBus eventBus){
         ENCHANTMENTS.register(eventBus);
     }

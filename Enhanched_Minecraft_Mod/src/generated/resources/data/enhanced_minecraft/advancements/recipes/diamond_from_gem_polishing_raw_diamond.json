@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:raw_diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_minecraft:diamond_from_gem_polishing_raw_diamond"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_diamond",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_minecraft:diamond_from_gem_polishing_raw_diamond"
+    ]
+  },
+  "sends_telemetry_event": false
+}

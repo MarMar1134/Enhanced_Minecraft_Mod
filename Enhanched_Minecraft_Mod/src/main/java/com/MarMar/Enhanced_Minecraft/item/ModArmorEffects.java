@@ -6,6 +6,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
@@ -16,11 +17,15 @@ public class ModArmorEffects extends ArmorItem {
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.Silver, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
                             true,false, false))
-                    .put(ModArmorMaterials.Rose_gold, new MobEffectInstance(MobEffects.DIG_SPEED, 400, 1,
+                    .put(ModArmorMaterials.Rose_gold, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
                             true,false, false))
-                    .put(ModArmorMaterials.Reinforced_diamond, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1,
-                            false,false, true))
+                    .put(ModArmorMaterials.Green_gold, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
+                            true,false, false))
+
+                    .put(ArmorMaterials.NETHERITE, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0,
+                            true,false, false))
                     .build();
+
 
 
     public ModArmorEffects(ArmorMaterial pMaterial, Type pType, Properties pProperties) {

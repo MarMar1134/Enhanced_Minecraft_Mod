@@ -7,8 +7,8 @@ Description: Ticking block entity
 java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at java.util.Arrays$ArrayList.get(Arrays.java:4165) ~[?:?] {}
 	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$getRecipeFor$2(RecipeManager.java:94) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178) ~[?:?] {}
 	at com.google.common.collect.CollectSpliterators$1WithCharacteristics.lambda$tryAdvance$0(CollectSpliterators.java:67) ~[guava-31.1-jre.jar%23106!/:?] {}
@@ -46,8 +46,8 @@ Thread: Server thread
 Stacktrace:
 	at java.util.Arrays$ArrayList.get(Arrays.java:4165) ~[?:?] {}
 	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$getRecipeFor$2(RecipeManager.java:94) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178) ~[?:?] {}
 	at com.google.common.collect.CollectSpliterators$1WithCharacteristics.lambda$tryAdvance$0(CollectSpliterators.java:67) ~[guava-31.1-jre.jar%23106!/:?] {}

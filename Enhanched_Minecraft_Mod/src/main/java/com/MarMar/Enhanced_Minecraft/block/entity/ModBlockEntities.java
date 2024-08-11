@@ -23,6 +23,9 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<GemPolisherBlockEntity>> Gem_polisher_block =
             Block_entities.register("gem_polisher_block", () -> BlockEntityType
                     .Builder.of(GemPolisherBlockEntity::new,ModBlocks.Gem_polisher_block.get()).build(null));
+    public static final RegistryObject<BlockEntityType<GrinderBlockEntity>> Item_grinder_block =
+            Block_entities.register("item_grinder_block", () -> BlockEntityType
+                    .Builder.of(GrinderBlockEntity::new,ModBlocks.Item_grinder_block.get()).build(null));
 
     public static void register(IEventBus eventBus){
         Block_entities.register(eventBus);

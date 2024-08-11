@@ -1,12 +1,13 @@
 package com.MarMar.Enhanced_Minecraft.block.entity;
 
 import com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem;
-import com.MarMar.Enhanced_Minecraft.recipe.GemPolisherRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -14,6 +15,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -111,32 +113,22 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         return new GemPolisherMenu(i, inventory, this, this.Data);
     }
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        if (uses <= 0){
-            if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
-                maxUses = getUses(this.itemHandler.getStackInSlot(TOOL_SLOT));
-                this.uses = maxUses;
-                this.itemHandler.extractItem(TOOL_SLOT,1,false);
-                if (uses > 0){
-                    if (hasRecipe()){
-                        increaseCraftingProgress();
-                        sendUpdate();
-                        setChanged(pLevel, pPos, pState);
-                        if (hasProcessFinished()) {
-                            this.uses -= 1;
-                            craftItem();
-                            resetProgress();
-                        }
-                    }
+        if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
+            maxUses = getUses(this.itemHandler.getStackInSlot(TOOL_SLOT));
+            this.uses = maxUses;
+            this.itemHandler.extractItem(TOOL_SLOT,1,false);
+        }
+
+        if (uses > 0){
+            if (hasRecipe()){
+                increaseCraftingProgress();
+                sendUpdate();
+                setChanged(pLevel, pPos, pState);
+                if (hasProcessFinished()) {
+                    this.uses -= 1;
+                    craftItem();
+                    resetProgress();
                 }
-            }
-        } else if (hasRecipe()) {
-            increaseCraftingProgress();
-            sendUpdate();
-            setChanged(pLevel, pPos, pState);
-            if (hasProcessFinished()) {
-                this.uses -= 1;
-                craftItem();
-                resetProgress();
             }
         }
     }
@@ -170,7 +162,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
        return stack.getMaxDamage() / 2;
    }
     private boolean hasRecipe(){
-        Optional<GemPolisherRecipe> recipe = getCurrentRecipe();
+        Optional<GemPolishingRecipe> recipe = getCurrentRecipe();
 
         if (recipe.isEmpty()){
             return false;
@@ -185,6 +177,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         pTag.put("inventory", itemHandler.serializeNBT());
         pTag.putInt("gem_polisher.progress", progress);
         pTag.putInt("gem_polisher.uses", uses);
+        pTag.putInt("gem_polisher.maxUses", maxUses);
         super.saveAdditional(pTag);
     }
 
@@ -194,17 +187,18 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         progress = pTag.getInt("gem_polisher.progress");
         uses = pTag.getInt("gem_polisher.uses");
+        maxUses = pTag.getInt("gem_polisher.maxUses");
     }
-    private Optional<GemPolisherRecipe> getCurrentRecipe() {
+    private Optional<GemPolishingRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
 
 
             inventory.setItem(0, this.itemHandler.getStackInSlot(1));
 
-        return this.level.getRecipeManager().getRecipeFor(GemPolisherRecipe.Type.Instance, inventory, level);
+        return this.level.getRecipeManager().getRecipeFor(GemPolishingRecipe.Type.Instance, inventory, level);
     }
     private void craftItem() {
-        Optional<GemPolisherRecipe> recipe = getCurrentRecipe();
+        Optional<GemPolishingRecipe> recipe = getCurrentRecipe();
 
         ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
@@ -213,4 +207,5 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
+
 }

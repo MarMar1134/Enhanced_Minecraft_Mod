@@ -88,7 +88,10 @@ public class AdobeAlloyingFurnaceBlock extends BaseEntityBlock implements Entity
         return createTickerHelper(pBlockEntityType, ModBlockEntities.Adobe_alloying_furnace.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
-
+    @Override
+    public boolean hasAnalogOutputSignal(BlockState pState) {
+        return true;
+    }
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
