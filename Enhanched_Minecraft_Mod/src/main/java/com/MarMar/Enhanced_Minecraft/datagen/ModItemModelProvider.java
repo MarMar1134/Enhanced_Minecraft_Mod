@@ -163,6 +163,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.Rubi);
         simpleItem(ModItems.Saphire);
 
+        //Dust
+        simpleItem(ModItems.Cobalt_dust);
+
         //Smithing templates
         simpleItem(ModItems.reinforcing_upgrade_smithing_template);
 

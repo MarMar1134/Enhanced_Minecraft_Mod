@@ -67,6 +67,10 @@ public class ModItems {
         public static final RegistryObject<Item> Saphire = Items.register(
                 "saphire", () -> new Item(new Item.Properties()));
 
+    //Dust
+    public static final RegistryObject<Item> Cobalt_dust = Items.register(
+            "cobalt_dust", () -> new Item(new Item.Properties()));
+
     //Smithing template
     public static final RegistryObject<Item> reinforcing_upgrade_smithing_template = Items.register(
             "reinforcing_upgrade_smithing_template", () -> new Item(new Item.Properties()));

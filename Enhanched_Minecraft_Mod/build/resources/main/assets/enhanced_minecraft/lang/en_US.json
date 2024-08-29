@@ -7,6 +7,13 @@
   "creativetab.fruits": "Fruits and Vegetables",
   "creativetab.saplings": "Saplings and Seeds",
 
+  "advancements.title.unity_makes_strengh": "Unity makes strengh",
+  "advancements.desc.unity_makes_strengh": "Craft your first alloy furnace",
+  "advancements.title.mighty_bronze": "Mighty bronze",
+  "advancements.desc.mighty_bronze": "adquire your first Bronze Pickaxe",
+  "advancements.title.steel_isnt_enough": "StEEl isn´t enough",
+  "advancements.desc.steel_isnt_enough": "Alloy a piece of iron with coal to make the powerfull steel",
+
   "block.enhanced_minecraft.sulfur_ore": "Sulfur ore",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Deepslate sulfur ore",
   "block.enhanced_minecraft.nether_sulfur_ore": "Nether sulfur ore",
@@ -69,6 +76,7 @@
   "item.enhanced_minecraft.green_gold_ingot": "Green gold ingot",
   "item.enhanced_minecraft.green_gold_nugget": "Green gold nugget",
   "item.enhanced_minecraft.cobalt": "Cobalt",
+  "item.enhanced_minecraft.cobalt_dust": "Cobalt dust",
   "item.enhanced_minecraft.rubi": "Rubi",
   "item.enhanced_minecraft.saphire": "Saphire",
 
@@ -128,29 +136,45 @@
 
   "item.enhanced_minecraft.orange_sapling": "Orange sapling",
   "item.enhanced_minecraft.orange": "Orange",
+
   "item.enhanced_minecraft.lemon_sapling": "Lemon sapling",
   "item.enhanced_minecraft.lemon": "Lemon",
+
   "item.enhanced_minecraft.apple_sapling": "Apple sapling",
   "item.enhanced_minecraft.green_apple": "Green apple",
+
   "item.enhanced_minecraft.hazelnut_sapling": "Hazelnut sapling",
+
   "item.enhanced_minecraft.walnut_sapling": "Walnut sapling",
+
   "item.enhanced_minecraft.almond_sapling": "Almond sapling",
+
   "item.enhanced_minecraft.banana_seed": "Banana seeds",
   "item.enhanced_minecraft.banana": "Banana",
+
   "item.enhanced_minecraft.yerba_mate_seeds": "Yerba mate seeds",
   "item.enhanced_minecraft.yerba_mate": "Yerba mate",
   "item.enhanced_minecraft.grounded_yerba_mate": "Ground yerba mate",
   "item.enhanced_minecraft.empty_mate": "Empty mate",
   "item.enhanced_minecraft.mate": "Mate",
+
   "item.enhanced_minecraft.zapallo_seeds": "Anco pumpkin seeds",
   "item.enhanced_minecraft.zapallo": "Anco pumpkin",
   "item.enhanced_minecraft.cooked_zapallo": "Cooked anco pumpkin",
+
   "item.enhanced_minecraft.eggplant_seeds": "Eggplant seeds",
   "item.enhanced_minecraft.eggplant": "Eggplant",
   "item.enhanced_minecraft.cooked_eggplant": "Cooked eggplant",
+
   "item.enhanced_minecraft.tomato_seeds": "Tomato seeds",
   "item.enhanced_minecraft.tomato": "Tomato",
+
   "item.enhanced_minecraft.corn_seeds": "Corn seeds",
   "item.enhanced_minecraft.corn": "Corn",
-  "item.enhanced_minecraft.cooked_corn": "Cooked corn"
+  "item.enhanced_minecraft.cooked_corn": "Cooked corn",
+
+  "item.enhanced_minecraft.wheat_flour": "Wheat flour",
+  "item.enhanced_minecraft.pumpkin_flour": "Pumpkin flour",
+
+  "item.enhanced_minecraft.yeast": "Yeast"
 }

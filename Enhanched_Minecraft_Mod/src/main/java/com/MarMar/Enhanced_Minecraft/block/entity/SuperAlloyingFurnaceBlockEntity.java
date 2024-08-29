@@ -1,5 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.block.entity;
 
+import com.MarMar.Enhanced_Minecraft.block.custom.AdobeAlloyingFurnaceBlock;
+import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.recipe.SuperAlloyingRecipe;
 import com.MarMar.Enhanced_Minecraft.screen.SuperAlloyingFurnaceMenu;
 import net.minecraft.core.BlockPos;
@@ -15,7 +17,6 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -24,7 +25,6 @@ import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -33,10 +33,9 @@ import java.util.Optional;
 
 public class SuperAlloyingFurnaceBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
-    private final EnergyStorage energyStorage = new EnergyStorage(20000, 20000, 200);
     private static final int INPUT_SLOT1 = 0;
     private static final int INPUT_SLOT2 = 1;
-    private static final int INPUT_FUEL = 2;
+    private static final int FUEL_SLOT = 2;
     private static final int OUTPUT_SLOT = 3;
     private LazyOptional<ItemStackHandler> lazyItemHandler= LazyOptional.empty();
     protected final ContainerData Data;
@@ -85,7 +84,7 @@ public class SuperAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
 
 
     public int getBurnTime(ItemStack stack) {
-        return ForgeHooks.getBurnTime(stack, RecipeType.SMELTING);
+        return ForgeHooks.getBurnTime(stack, ModRecipes.Super_alloying_type.get());
     }
     public boolean canBurn(ItemStack stack) {
         return getBurnTime(stack) > 0;
@@ -137,7 +136,6 @@ public class SuperAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
         progress = pTag.getInt("super_alloying_furnace.progress");
         burnTime = pTag.getInt("super_alloying_furnace.burnTime");
     }
-
     private void sendUpdate() {
         setChanged();
 
@@ -145,20 +143,21 @@ public class SuperAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
             this.level.sendBlockUpdated(this.worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
     }
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        if(burnTime <= 0){
+        if(!isBurning()){
             if (hasRecipe()) {
-                if(canBurn(this.itemHandler.getStackInSlot(2))){
-                    maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(2));
+                if(canBurn(this.itemHandler.getStackInSlot(FUEL_SLOT))){
+                    maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(FUEL_SLOT));
                     this.burnTime = this.maxBurnTime;
-                    this.itemHandler.getStackInSlot(2).shrink(1);
+                    this.itemHandler.getStackInSlot(FUEL_SLOT).shrink(1);
                     sendUpdate();
                 }
             } else {
                 resetProgress();
             }
         } else if (hasRecipe()){
-            this.burnTime = burnTime - 2;
+            decreaseBurnTime();
             increaseCraftingProgress();
+
             sendUpdate();
             setChanged(pLevel, pPos, pState);
             if (hasProcessFinished()) {
@@ -167,12 +166,25 @@ public class SuperAlloyingFurnaceBlockEntity extends BlockEntity implements Menu
             }
         } else {
             do{
-                burnTime = burnTime - 2;
+                decreaseBurnTime();
             } while (burnTime < 0);
+
             resetProgress();
         }
+        if (isBurning()){
+            pState = pState.setValue(AdobeAlloyingFurnaceBlock.BURNING, true);
+        } else {
+            pState = pState.setValue(AdobeAlloyingFurnaceBlock.BURNING, false);
+        }
+        pLevel.setBlock(pPos, pState, 1);
+        setChanged(pLevel, pPos, pState);
     }
-
+    private boolean isBurning(){
+        return burnTime > 0;
+    }
+    private void decreaseBurnTime(){
+        burnTime -= 1;
+    }
     private boolean hasRecipe(){
         Optional<SuperAlloyingRecipe> recipe = getCurrentRecipe();
 

@@ -116,7 +116,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected LootTable.Builder createSulfurOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, (LootPoolEntryContainer.Builder)
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Sulfur.get())
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(5.0F, 8.0F)))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 6.0F)))
                         .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
     protected LootTable.Builder createSilverOreDrops(Block pBlock) {

@@ -53,6 +53,7 @@ public class ModTabs {
                         output.accept(ModItems.Raw_steel.get());
                         output.accept(ModItems.Raw_silver.get());
                         output.accept(ModItems.Cobalt.get());
+                        output.accept(ModItems.Cobalt_dust.get());
                         output.accept(ModItems.Raw_rubi.get());
                         output.accept(ModItems.Raw_saphire.get());
                         output.accept(ModItems.Raw_emerald.get());
@@ -204,24 +205,37 @@ public class ModTabs {
             "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
                     .title(Component.translatable("creativetab.fruits"))
                     .displayItems((itemDisplayParameters, output) -> {
-//                        output.accept(ModItems.Banana.get());
                         output.accept(ModItems.Green_apple.get());
+
                         output.accept(ModItems.Lemon.get());
+
                         output.accept(ModItems.Orange.get());
+
                         output.accept(ModItems.Yerba_mate.get());
                         output.accept(ModItems.Grounded_yerba_mate.get());
                         output.accept(ModItems.Yerba_mate_seeds.get());
+
                         output.accept(ModItems.Zapallo.get());
                         output.accept(ModItems.Cooked_zapallo.get());
                         output.accept(ModItems.Zapallo_seeds.get());
+
                         output.accept(ModItems.Eggplant.get());
                         output.accept(ModItems.Cooked_eggplant.get());
                         output.accept(ModItems.Eggplant_seeds.get());
+
                         output.accept(ModItems.Tomato.get());
                         output.accept(ModItems.Tomato_seeds.get());
+
                         output.accept(ModItems.Corn.get());
                         output.accept(ModItems.Cooked_corn.get());
                         output.accept(ModItems.Corn_seeds.get());
+
+                        output.accept(ModItems.Wheat_flour.get());
+
+                        output.accept(ModItems.Pumpkin_flour.get());
+
+                        output.accept(ModItems.Yeast.get());
+
                         output.accept(ModItems.Empty_mate.get());
                         output.accept(ModItems.Mate.get());
                     }).build()

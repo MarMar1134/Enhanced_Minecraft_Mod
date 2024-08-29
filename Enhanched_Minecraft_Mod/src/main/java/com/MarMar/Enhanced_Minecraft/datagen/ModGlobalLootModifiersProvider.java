@@ -35,6 +35,14 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/ancient_city")).build(),
                 LootItemRandomChanceCondition.randomChance(0.10f).build()}, ModItems.Steel_boots.get()));
 
+        //Entities
+        add("sulphur_from_blazes", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/blaze")).build(),
+                LootItemRandomChanceCondition.randomChance(0.7f).build() }, ModItems.Sulfur.get()));
+        add("sulphur_from_witches", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/witch")).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build() }, ModItems.Sulfur.get()));
+
         //Mineshafts
             //Bronze
             add("bronze_pickaxe_from_mineshaft", new AddItemModifier(new LootItemCondition[] {

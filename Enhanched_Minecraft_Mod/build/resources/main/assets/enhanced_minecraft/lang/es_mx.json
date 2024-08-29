@@ -7,6 +7,13 @@
   "creativetab.fruits": "Frutas y Vegetales",
   "creativetab.saplings": "Semillas",
 
+  "advancements.title.unity_makes_strengh": "La unión hace la fuerza",
+  "advancements.desc.unity_makes_strengh": "Craftea tu primer horno de aleación",
+  "advancements.title.mighty_bronze": "Bronceado divino",
+  "advancements.desc.mighty_bronze": "Consigue un Pico de bronce",
+  "advancements.title.steel_isnt_enough": "No tiende a-cero",
+  "advancements.desc.steel_isnt_enough": "Alee un trozo de hierro con carbón para obtener acero",
+
   "block.enhanced_minecraft.sulfur_ore": "Mineral de azufre",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Mineral de azufre profundo",
   "block.enhanced_minecraft.nether_sulfur_ore": "Mineral de azufre del nether",
@@ -62,7 +69,8 @@
   "item.enhanced_minecraft.rose_gold_nugget": "Pepita de oro rosado",
   "item.enhanced_minecraft.green_gold_ingot": "Lingote de oro verde",
   "item.enhanced_minecraft.green_gold_nugget": "Pepita de oro verde",
-  "item.enhanced_minecraft.cobalt": "cobalto",
+  "item.enhanced_minecraft.cobalt": "Cobalto",
+  "item.enhanced_minecraft.cobalt_dust": "Cobalto molido",
   "item.enhanced_minecraft.raw_rubi": "Rubí impuro",
   "item.enhanced_minecraft.raw_saphire": "Zafiro impuro",
   "item.enhanced_minecraft.raw_emerald": "Esmeralda impura",
@@ -126,29 +134,45 @@
 
   "item.enhanced_minecraft.orange_sapling": "Orange Sapling",
   "item.enhanced_minecraft.orange": "Naranja",
+
   "item.enhanced_minecraft.lemon_sapling": "Lemon Sapling",
   "item.enhanced_minecraft.lemon": "Limón",
+
   "item.enhanced_minecraft.apple_sapling": "Apple Sapling",
   "item.enhanced_minecraft.green_apple": "Manzana verde",
+
   "item.enhanced_minecraft.hazelnut_sapling": "Hazelnut Sapling",
+
   "item.enhanced_minecraft.walnut_sapling": "Walnut Sapling",
+
   "item.enhanced_minecraft.almond_sapling": "Almond Sapling",
+
   "item.enhanced_minecraft.banana_seed": "Semillas de banana",
   "item.enhanced_minecraft.banana": "Banana",
+
   "item.enhanced_minecraft.yerba_mate_seeds": "Semillas de yerba mate",
   "item.enhanced_minecraft.yerba_mate": "Yerba mate",
   "item.enhanced_minecraft.grounded_yerba_mate": "Yerba mate molida",
   "item.enhanced_minecraft.empty_mate": "Mate vacio",
   "item.enhanced_minecraft.mate": "Mate",
+
   "item.enhanced_minecraft.zapallo_seeds": "Semillas de zapallo",
   "item.enhanced_minecraft.zapallo": "Zapallo",
   "item.enhanced_minecraft.cooked_zapallo": "Zapallo cocido",
+
   "item.enhanced_minecraft.eggplant_seeds": "Semillas de berenjena",
   "item.enhanced_minecraft.eggplant": "Berenjena",
   "item.enhanced_minecraft.cooked_eggplant": "Berenjena cocida",
+
   "item.enhanced_minecraft.tomato_seeds": "Semillas de jitomate",
   "item.enhanced_minecraft.tomato": "Jitomate",
+
   "item.enhanced_minecraft.corn_seeds": "Semillas de elote",
   "item.enhanced_minecraft.corn": "Elote",
-  "item.enhanced_minecraft.cooked_corn": "Elote cocido"
+  "item.enhanced_minecraft.cooked_corn": "Elote cocido",
+
+  "item.enhanced_minecraft.wheat_flour": "Harina de trigo",
+  "item.enhanced_minecraft.pumpkin_flour": "Harina de calabaza",
+
+  "item.enhanced_minecraft.yeast": "Levadura"
 }

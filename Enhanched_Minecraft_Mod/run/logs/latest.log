@@ -1,445 +1,228 @@
-[11ago.2024 18:28:16.414] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[11ago.2024 18:28:16.473] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[11ago.2024 18:28:16.657] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[11ago.2024 18:28:16.852] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[11ago.2024 18:28:17.292] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[11ago.2024 18:28:17.537] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[11ago.2024 18:28:17.607] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Vega 3 Graphics GL version 4.6.0 Core Profile Context 23.11.1.231017, ATI Technologies Inc.
-[11ago.2024 18:28:18.796] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[11ago.2024 18:28:18.814] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[11ago.2024 18:28:18.831] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[11ago.2024 18:28:18.900] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[11ago.2024 18:28:19.535] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[11ago.2024 18:28:26.633] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[11ago.2024 18:28:43.262] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 4451 milliseconds
-[11ago.2024 18:28:43.697] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[11ago.2024 18:28:43.697] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[11ago.2024 18:28:43.732] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11ago.2024 18:28:43.744] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[11ago.2024 18:28:43.967] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[11ago.2024 18:28:44.795] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[11ago.2024 18:28:44.799] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[11ago.2024 18:28:45.880] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[11ago.2024 18:28:45.885] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.883 ms
-[11ago.2024 18:28:47.718] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [enhanced_minecraft]
-[11ago.2024 18:28:47.989] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[11ago.2024 18:28:48.699] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[11ago.2024 18:28:49.230] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[11ago.2024 18:28:52.511] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#facing=up'
-[11ago.2024 18:28:52.512] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#facing=down'
-[11ago.2024 18:28:52.512] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#facing=down'
-[11ago.2024 18:28:52.512] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#facing=up'
-[11ago.2024 18:28:52.512] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/gem_polisher.json' missing model for variant: 'enhanced_minecraft:gem_polisher#facing=down'
-[11ago.2024 18:28:52.512] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/gem_polisher.json' missing model for variant: 'enhanced_minecraft:gem_polisher#facing=up'
-[11ago.2024 18:28:52.513] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=down'
-[11ago.2024 18:28:52.513] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=up'
-[11ago.2024 18:28:52.892] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.3.0
-[11ago.2024 18:28:56.762] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[11ago.2024 18:28:56.762] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[11ago.2024 18:28:57.337] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Altavoces (USB Audio Device)
-[11ago.2024 18:28:57.341] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[11ago.2024 18:28:57.569] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[11ago.2024 18:28:57.591] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[11ago.2024 18:28:57.592] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[11ago.2024 18:28:57.603] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[11ago.2024 18:28:57.612] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[11ago.2024 18:28:57.636] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[11ago.2024 18:28:57.637] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[11ago.2024 18:28:57.637] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[11ago.2024 18:28:57.642] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[11ago.2024 18:28:58.728] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[11ago.2024 18:28:58.976] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[11ago.2024 18:28:58.979] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[11ago.2024 18:28:58.980] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[11ago.2024 18:28:59.000] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[11ago.2024 18:28:59.513] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[11ago.2024 18:29:10.885] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[11ago.2024 18:29:10.937] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond
-[11ago.2024 18:29:10.937] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_axe
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_boots
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_chestplate
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_helmet
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_hoe
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_leggings
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_pickaxe
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_shovel
-[11ago.2024 18:29:10.938] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:reinforced_diamond_sword
-[11ago.2024 18:29:11.464] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:item
-	enhanced_minecraft:reinforced_diamond: 1275
-	enhanced_minecraft:reinforced_diamond_axe: 1323
-	enhanced_minecraft:reinforced_diamond_boots: 1329
-	enhanced_minecraft:reinforced_diamond_chestplate: 1327
-	enhanced_minecraft:reinforced_diamond_helmet: 1326
-	enhanced_minecraft:reinforced_diamond_hoe: 1325
-	enhanced_minecraft:reinforced_diamond_leggings: 1328
-	enhanced_minecraft:reinforced_diamond_pickaxe: 1322
-	enhanced_minecraft:reinforced_diamond_shovel: 1324
-	enhanced_minecraft:reinforced_diamond_sword: 1321
+[29ago.2024 15:38:33.165] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgegametestserveruserdev, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[29ago.2024 15:38:33.187] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[29ago.2024 15:38:33.416] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgegametestserveruserdev
+[29ago.2024 15:38:33.549] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=SERVER
+[29ago.2024 15:38:34.268] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[29ago.2024 15:38:34.283] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[29ago.2024 15:38:34.298] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[29ago.2024 15:38:34.312] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[29ago.2024 15:38:34.539] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[29ago.2024 15:38:38.627] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgegametestserveruserdev' with arguments [--gameDir, .]
+[29ago.2024 15:38:51.592] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[29ago.2024 15:38:51.592] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[29ago.2024 15:38:53.357] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[29ago.2024 15:38:54.336] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.3.0
+[29ago.2024 15:38:55.451] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[29ago.2024 15:38:55.613] [main/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
+enhanced_minecraft (version 1.20.1-1.0.0 -> 0.11.0)
+Things may not work well.
+[29ago.2024 15:38:55.636] [main/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[29ago.2024 15:38:55.679] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:almond_sapling
+[29ago.2024 15:38:55.680] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:apple_sapling
+[29ago.2024 15:38:55.680] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:banana
+[29ago.2024 15:38:55.680] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:banana_seed
+[29ago.2024 15:38:55.682] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:hazelnut_sapling
+[29ago.2024 15:38:55.682] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:lemon_sapling
+[29ago.2024 15:38:55.682] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:orange_sapling
+[29ago.2024 15:38:55.682] [main/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Found a missing id from the world enhanced_minecraft:walnut_sapling
+[29ago.2024 15:38:55.757] [main/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:item
+	enhanced_minecraft:almond_sapling: 1260
+	enhanced_minecraft:apple_sapling: 1257
+	enhanced_minecraft:banana: 1265
+	enhanced_minecraft:banana_seed: 1261
+	enhanced_minecraft:hazelnut_sapling: 1258
+	enhanced_minecraft:lemon_sapling: 1256
+	enhanced_minecraft:orange_sapling: 1255
+	enhanced_minecraft:walnut_sapling: 1259
 
-[11ago.2024 18:29:11.467] [Render thread/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Forge Mod Loader detected missing registry entries.
+[29ago.2024 15:38:55.763] [main/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Forge Mod Loader detected missing registry entries.
 
-There are 10 missing entries in this save.
+There are 8 missing entries in this save.
 If you continue the missing entries will get removed.
 A world backup will be automatically created in your saves directory.
 
 
-[11ago.2024 18:29:11.467] [Render thread/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Missing minecraft:item:
-    enhanced_minecraft:reinforced_diamond
-    enhanced_minecraft:reinforced_diamond_axe
-    enhanced_minecraft:reinforced_diamond_boots
-    enhanced_minecraft:reinforced_diamond_chestplate
-    enhanced_minecraft:reinforced_diamond_helmet
-    enhanced_minecraft:reinforced_diamond_hoe
-    enhanced_minecraft:reinforced_diamond_leggings
-    enhanced_minecraft:reinforced_diamond_pickaxe
-    enhanced_minecraft:reinforced_diamond_shovel
-    enhanced_minecraft:reinforced_diamond_sword
+[29ago.2024 15:38:55.763] [main/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Missing minecraft:item:
+    enhanced_minecraft:almond_sapling
+    enhanced_minecraft:apple_sapling
+    enhanced_minecraft:banana
+    enhanced_minecraft:banana_seed
+    enhanced_minecraft:hazelnut_sapling
+    enhanced_minecraft:lemon_sapling
+    enhanced_minecraft:orange_sapling
+    enhanced_minecraft:walnut_sapling
 
 
-[11ago.2024 18:29:11.467] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: There are unidentified mappings in this world - we are going to attempt to process anyway
-[11ago.2024 18:29:11.634] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:wheat_flour Expected: 1337 Got: 1382
-[11ago.2024 18:29:11.634] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:pumpkin_flour Expected: 1338 Got: 1384
-[11ago.2024 18:29:11.634] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:yeast Expected: 1352 Got: 1385
-[11ago.2024 18:29:22.109] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 11 recipes
-[11ago.2024 18:29:22.267] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1420 advancements
-[11ago.2024 18:29:23.622] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[11ago.2024 18:29:23.646] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[11ago.2024 18:29:28.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[11ago.2024 18:29:34.585] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.719] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.748] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.748] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.748] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.783] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.784] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.784] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.807] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.928] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:34.984] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:35.128] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:35.627] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:36.126] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11ago.2024 18:29:36.584] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
-[11ago.2024 18:29:37.081] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
-[11ago.2024 18:29:38.348] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[11ago.2024 18:29:38.359] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 10280 ms
-[11ago.2024 18:29:38.670] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[11ago.2024 18:29:38.674] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[11ago.2024 18:29:38.817] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[11ago.2024 18:29:39.586] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[11ago.2024 18:29:39.715] [Server thread/WARN] [net.minecraft.server.PlayerAdvancements/]: Ignored advancement 'enhanced_minecraft:recipes/diamond_from_grinding_coal' in progress file .\saves\EMT 2\advancements\380df991-f603-344c-a090-369bad2a924a.json - it doesn't exist anymore?
-[11ago.2024 18:29:39.737] [Server thread/ERROR] [net.minecraft.stats.ServerRecipeBook/]: Tried to load unrecognized recipe: enhanced_minecraft:diamond_from_grinding_coal removed now.
-[11ago.2024 18:29:39.738] [Server thread/ERROR] [net.minecraft.stats.ServerRecipeBook/]: Tried to load unrecognized recipe: enhanced_minecraft:reinforced_diamond_sword_smithing removed now.
-[11ago.2024 18:29:39.739] [Server thread/ERROR] [net.minecraft.stats.ServerRecipeBook/]: Tried to load unrecognized recipe: enhanced_minecraft:diamond_from_grinding_coal removed now.
-[11ago.2024 18:29:39.739] [Server thread/ERROR] [net.minecraft.stats.ServerRecipeBook/]: Tried to load unrecognized recipe: enhanced_minecraft:reinforced_diamond_sword_smithing removed now.
-[11ago.2024 18:29:39.741] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e6204e2d] logged in with entity id 45 at (41.73623009270629, -40.0, 55.46176981418611)
-[11ago.2024 18:29:39.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[11ago.2024 18:29:40.888] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
-[11ago.2024 18:29:40.888] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
-[11ago.2024 18:29:40.903] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_copper_ingot_and_gold_ingot
-[11ago.2024 18:29:40.903] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_raw_iron_and_coal
-[11ago.2024 18:29:40.904] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_silver_ingot_and_gold_ingot
-[11ago.2024 18:29:40.906] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_iron_ingot_and_coal
-[11ago.2024 18:29:40.908] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_raw_tin_and_raw_copper
-[11ago.2024 18:29:40.909] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold
-[11ago.2024 18:29:40.909] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_raw_copper_and_raw_tin
-[11ago.2024 18:29:40.910] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_steel_from_alloying_coal_and_raw_iron
-[11ago.2024 18:29:40.926] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot
-[11ago.2024 18:29:40.927] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_raw_silver_and_raw_gold
-[11ago.2024 18:29:40.928] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot
-[11ago.2024 18:29:40.931] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_bronze_from_alloying_raw_tin_and_raw_copper
-[11ago.2024 18:29:40.931] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_coal_and_raw_iron
-[11ago.2024 18:29:40.932] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_coal_and_iron_ingot
-[11ago.2024 18:29:40.934] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_raw_gold_and_raw_silver
-[11ago.2024 18:29:40.936] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper
-[11ago.2024 18:29:40.937] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_gold_ingot_and_copper_ingot
-[11ago.2024 18:29:40.937] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_gold_ingot_and_silver_ingot
-[11ago.2024 18:29:40.938] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_bronze_from_alloying_raw_copper_and_raw_tin
-[11ago.2024 18:29:40.938] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_steel_from_alloying_raw_iron_and_coal
-[11ago.2024 18:29:41.207] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
-[11ago.2024 18:29:41.229] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
-[11ago.2024 18:29:41.229] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
-[11ago.2024 18:29:41.230] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[11ago.2024 18:29:41.244] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[11ago.2024 18:29:41.248] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 4.395 ms
-[11ago.2024 18:29:41.249] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[11ago.2024 18:29:41.253] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 3.825 ms
-[11ago.2024 18:29:41.269] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[11ago.2024 18:29:41.361] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 90.74 milliseconds
-[11ago.2024 18:29:41.362] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 92.28 ms
-[11ago.2024 18:29:41.392] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[11ago.2024 18:29:41.422] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 29.86 milliseconds
-[11ago.2024 18:29:41.435] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 42.75 ms
-[11ago.2024 18:29:41.436] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[11ago.2024 18:29:41.440] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 3.477 ms
-[11ago.2024 18:29:41.443] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[11ago.2024 18:29:41.445] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.494 ms
-[11ago.2024 18:29:41.447] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[11ago.2024 18:29:41.448] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 849.1 ?s
-[11ago.2024 18:29:41.449] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[11ago.2024 18:29:41.472] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 23.01 ms
-[11ago.2024 18:29:41.476] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[11ago.2024 18:29:41.890] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 413.6 milliseconds
-[11ago.2024 18:29:41.895] [Render thread/ERROR] [mezz.jei.library.util.IngredientSupplierHelper/]: Found a broken recipe, failed to setRecipe with RecipeLayoutBuilder: Enhanced Minecraft enhanced_minecraft:diamond_from_gem_polishing_raw_diamond class com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe
-
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
-	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
-	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
-	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
-	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
-	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:56) ~[main/:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:18) ~[main/:?]
-	at mezz.jei.library.util.IngredientSupplierHelper.getIngredientSupplier(IngredientSupplierHelper.java:22) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipe(RecipeManagerInternal.java:141) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipes(RecipeManagerInternal.java:114) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.registration.RecipeRegistration.addRecipes(RecipeRegistration.java:64) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.EnhancedMinecraftJEIPlugin.registerRecipes(EnhancedMinecraftJEIPlugin.java:42) ~[main/:?]
-	at mezz.jei.library.load.PluginLoader.lambda$createRecipeManager$10(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginCaller.callOnPlugins(PluginCaller.java:25) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginLoader.createRecipeManager(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.startup.JeiStarter.start(JeiStarter.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.transitionState(StartEventObserver.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.onEvent(StartEventObserver.java:98) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar:?]
-	at net.minecraft.client.multiplayer.ClientPacketListener.handleUpdateTags(ClientPacketListener.java:1451) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:35) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:11) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:115) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1106) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.devService(ForgeClientUserdevLaunchHandler.java:19) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[11ago.2024 18:29:41.959] [Render thread/ERROR] [mezz.jei.library.util.IngredientSupplierHelper/]: Found a broken recipe, failed to setRecipe with RecipeLayoutBuilder: Enhanced Minecraft enhanced_minecraft:emerald_from_gem_polishing_raw_emerald class com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe
-
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
-	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
-	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
-	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
-	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
-	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:56) ~[main/:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:18) ~[main/:?]
-	at mezz.jei.library.util.IngredientSupplierHelper.getIngredientSupplier(IngredientSupplierHelper.java:22) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipe(RecipeManagerInternal.java:141) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipes(RecipeManagerInternal.java:114) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.registration.RecipeRegistration.addRecipes(RecipeRegistration.java:64) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.EnhancedMinecraftJEIPlugin.registerRecipes(EnhancedMinecraftJEIPlugin.java:42) ~[main/:?]
-	at mezz.jei.library.load.PluginLoader.lambda$createRecipeManager$10(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginCaller.callOnPlugins(PluginCaller.java:25) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginLoader.createRecipeManager(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.startup.JeiStarter.start(JeiStarter.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.transitionState(StartEventObserver.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.onEvent(StartEventObserver.java:98) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar:?]
-	at net.minecraft.client.multiplayer.ClientPacketListener.handleUpdateTags(ClientPacketListener.java:1451) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:35) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:11) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:115) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1106) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.devService(ForgeClientUserdevLaunchHandler.java:19) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[11ago.2024 18:29:41.963] [Render thread/ERROR] [mezz.jei.library.util.IngredientSupplierHelper/]: Found a broken recipe, failed to setRecipe with RecipeLayoutBuilder: Enhanced Minecraft enhanced_minecraft:rubi_from_gem_polishing_raw_rubi class com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe
-
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
-	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
-	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
-	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
-	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
-	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:56) ~[main/:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:18) ~[main/:?]
-	at mezz.jei.library.util.IngredientSupplierHelper.getIngredientSupplier(IngredientSupplierHelper.java:22) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipe(RecipeManagerInternal.java:141) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipes(RecipeManagerInternal.java:114) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.registration.RecipeRegistration.addRecipes(RecipeRegistration.java:64) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.EnhancedMinecraftJEIPlugin.registerRecipes(EnhancedMinecraftJEIPlugin.java:42) ~[main/:?]
-	at mezz.jei.library.load.PluginLoader.lambda$createRecipeManager$10(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginCaller.callOnPlugins(PluginCaller.java:25) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginLoader.createRecipeManager(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.startup.JeiStarter.start(JeiStarter.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.transitionState(StartEventObserver.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.onEvent(StartEventObserver.java:98) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar:?]
-	at net.minecraft.client.multiplayer.ClientPacketListener.handleUpdateTags(ClientPacketListener.java:1451) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:35) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:11) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:115) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1106) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.devService(ForgeClientUserdevLaunchHandler.java:19) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[11ago.2024 18:29:41.970] [Render thread/ERROR] [mezz.jei.library.util.IngredientSupplierHelper/]: Found a broken recipe, failed to setRecipe with RecipeLayoutBuilder: Enhanced Minecraft enhanced_minecraft:saphire_from_gem_polishing_raw_saphire class com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe
-
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
-	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
-	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
-	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
-	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
-	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:56) ~[main/:?]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.GemPolishingCategory.setRecipe(GemPolishingCategory.java:18) ~[main/:?]
-	at mezz.jei.library.util.IngredientSupplierHelper.getIngredientSupplier(IngredientSupplierHelper.java:22) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipe(RecipeManagerInternal.java:141) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.recipes.RecipeManagerInternal.addRecipes(RecipeManagerInternal.java:114) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.registration.RecipeRegistration.addRecipes(RecipeRegistration.java:64) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at com.MarMar.Enhanced_Minecraft.compat.jei.EnhancedMinecraftJEIPlugin.registerRecipes(EnhancedMinecraftJEIPlugin.java:42) ~[main/:?]
-	at mezz.jei.library.load.PluginLoader.lambda$createRecipeManager$10(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginCaller.callOnPlugins(PluginCaller.java:25) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.load.PluginLoader.createRecipeManager(PluginLoader.java:144) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.library.startup.JeiStarter.start(JeiStarter.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.transitionState(StartEventObserver.java:130) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at mezz.jei.forge.startup.StartEventObserver.onEvent(StartEventObserver.java:98) ~[jei-1.20.1-forge-15.8.0.16_mapped_parchment_2023.06.26-1.20.1.jar:15.8.0.16]
-	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar:?]
-	at net.minecraft.client.multiplayer.ClientPacketListener.handleUpdateTags(ClientPacketListener.java:1451) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:35) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.game.ClientboundUpdateTagsPacket.handle(ClientboundUpdateTagsPacket.java:11) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:22) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:115) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1106) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.devService(ForgeClientUserdevLaunchHandler.java:19) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.2.0.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[11ago.2024 18:29:41.975] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: enhanced_minecraft:jei_plugin took 84.03 milliseconds
-[11ago.2024 18:29:41.975] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 499.1 ms
-[11ago.2024 18:29:41.983] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[11ago.2024 18:29:41.988] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 5.105 ms
-[11ago.2024 18:29:42.000] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[11ago.2024 18:29:42.008] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[11ago.2024 18:29:42.019] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 11.19 ms
-[11ago.2024 18:29:42.026] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[11ago.2024 18:29:42.030] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[11ago.2024 18:29:42.033] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[11ago.2024 18:29:42.039] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 6.114 ms
-[11ago.2024 18:29:42.039] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[11ago.2024 18:29:42.089] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1633 ingredients
-[11ago.2024 18:29:42.597] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1633 ingredients
-[11ago.2024 18:29:42.599] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 559.4 ms
-[11ago.2024 18:29:42.842] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 814.7 milliseconds
-[11ago.2024 18:29:42.843] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 816.0 ms
-[11ago.2024 18:29:42.844] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 843.5 ms
-[11ago.2024 18:29:42.845] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[11ago.2024 18:29:42.847] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 2.014 ms
-[11ago.2024 18:29:42.847] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.616 s
-[11ago.2024 18:29:43.136] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 471 advancements
-[11ago.2024 18:29:56.071] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 472 advancements
-[11ago.2024 18:31:12.512] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 473 advancements
-[11ago.2024 18:32:21.349] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[11ago.2024 18:32:21.410] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2]'/minecraft:overworld
-[11ago.2024 18:32:21.446] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2]'/minecraft:the_end
-[11ago.2024 18:32:21.453] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2]'/minecraft:the_nether
-[11ago.2024 18:32:21.980] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
-[11ago.2024 18:32:21.981] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
-[11ago.2024 18:32:21.981] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[11ago.2024 18:32:21.981] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[11ago.2024 18:32:21.983] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
-[11ago.2024 18:32:21.993] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 10.83 ms
-[11ago.2024 18:32:22.012] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[11ago.2024 18:32:22.013] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[11ago.2024 18:32:22.054] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[11ago.2024 18:32:22.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[11ago.2024 18:32:22.153] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[11ago.2024 18:32:22.153] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[11ago.2024 18:32:23.040] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2]'/minecraft:overworld
-[11ago.2024 18:32:23.483] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2]'/minecraft:the_end
-[11ago.2024 18:32:23.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2]'/minecraft:the_nether
-[11ago.2024 18:32:23.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (EMT 2): All chunks are saved
-[11ago.2024 18:32:23.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[11ago.2024 18:32:23.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[11ago.2024 18:32:23.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[11ago.2024 18:32:25.288] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[29ago.2024 15:38:55.763] [main/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: There are unidentified mappings in this world - we are going to attempt to process anyway
+[29ago.2024 15:38:55.767] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:sulfur Expected: 1255 Got: 1266
+[29ago.2024 15:38:55.767] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_tin Expected: 1256 Got: 1267
+[29ago.2024 15:38:55.767] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_bronze Expected: 1257 Got: 1268
+[29ago.2024 15:38:55.768] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_steel Expected: 1258 Got: 1269
+[29ago.2024 15:38:55.768] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_silver Expected: 1259 Got: 1270
+[29ago.2024 15:38:55.768] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:cobalt Expected: 1260 Got: 1271
+[29ago.2024 15:38:55.768] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_rubi Expected: 1261 Got: 1272
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_saphire Expected: 1262 Got: 1273
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_emerald Expected: 1263 Got: 1274
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:raw_diamond Expected: 1264 Got: 1275
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:copper_nugget Expected: 1265 Got: 1276
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:tin_ingot Expected: 1266 Got: 1277
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:tin_nugget Expected: 1267 Got: 1278
+[29ago.2024 15:38:55.769] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_ingot Expected: 1268 Got: 1279
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_nugget Expected: 1269 Got: 1280
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_ingot Expected: 1270 Got: 1281
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_ingot Expected: 1271 Got: 1282
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_nugget Expected: 1272 Got: 1283
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_gold_ingot Expected: 1273 Got: 1284
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_gold_nugget Expected: 1274 Got: 1285
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_gold_ingot Expected: 1275 Got: 1286
+[29ago.2024 15:38:55.770] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_gold_nugget Expected: 1276 Got: 1287
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rubi Expected: 1277 Got: 1288
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:saphire Expected: 1278 Got: 1289
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:cobalt_dust Expected: 1279 Got: 1290
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:reinforcing_upgrade_smithing_template Expected: 1280 Got: 1291
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:stone_polisher Expected: 1281 Got: 1292
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:gold_polisher Expected: 1282 Got: 1293
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_sword Expected: 1283 Got: 1294
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_pickaxe Expected: 1284 Got: 1295
+[29ago.2024 15:38:55.771] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_axe Expected: 1285 Got: 1296
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_shovel Expected: 1286 Got: 1297
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_hoe Expected: 1287 Got: 1298
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_polisher Expected: 1288 Got: 1299
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_helmet Expected: 1289 Got: 1300
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_chestplate Expected: 1290 Got: 1301
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_leggings Expected: 1291 Got: 1302
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_boots Expected: 1292 Got: 1303
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_sword Expected: 1293 Got: 1304
+[29ago.2024 15:38:55.772] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_pickaxe Expected: 1294 Got: 1305
+[29ago.2024 15:38:55.773] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_axe Expected: 1295 Got: 1306
+[29ago.2024 15:38:55.773] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_shovel Expected: 1296 Got: 1307
+[29ago.2024 15:38:55.773] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_hoe Expected: 1297 Got: 1308
+[29ago.2024 15:38:55.773] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_polisher Expected: 1298 Got: 1309
+[29ago.2024 15:38:55.774] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_helmet Expected: 1299 Got: 1310
+[29ago.2024 15:38:55.774] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_chestplate Expected: 1300 Got: 1311
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_leggings Expected: 1301 Got: 1312
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:bronze_boots Expected: 1302 Got: 1313
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_sword Expected: 1303 Got: 1314
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_pickaxe Expected: 1304 Got: 1315
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_axe Expected: 1305 Got: 1316
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_shovel Expected: 1306 Got: 1317
+[29ago.2024 15:38:55.775] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_hoe Expected: 1307 Got: 1318
+[29ago.2024 15:38:55.776] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_polisher Expected: 1308 Got: 1319
+[29ago.2024 15:38:55.776] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_helmet Expected: 1309 Got: 1320
+[29ago.2024 15:38:55.776] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_chestplate Expected: 1310 Got: 1321
+[29ago.2024 15:38:55.776] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_leggings Expected: 1311 Got: 1322
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rose_golden_boots Expected: 1312 Got: 1323
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:iron_polisher Expected: 1313 Got: 1324
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_sword Expected: 1314 Got: 1325
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_pickaxe Expected: 1315 Got: 1326
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_axe Expected: 1316 Got: 1327
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_shovel Expected: 1317 Got: 1328
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_hoe Expected: 1318 Got: 1329
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_polisher Expected: 1319 Got: 1330
+[29ago.2024 15:38:55.777] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_helmet Expected: 1320 Got: 1331
+[29ago.2024 15:38:55.778] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_chestplate Expected: 1321 Got: 1332
+[29ago.2024 15:38:55.778] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_leggings Expected: 1322 Got: 1333
+[29ago.2024 15:38:55.778] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:steel_boots Expected: 1323 Got: 1334
+[29ago.2024 15:38:55.778] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_sword Expected: 1324 Got: 1335
+[29ago.2024 15:38:55.779] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_pickaxe Expected: 1325 Got: 1336
+[29ago.2024 15:38:55.779] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_axe Expected: 1326 Got: 1337
+[29ago.2024 15:38:55.779] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_shovel Expected: 1327 Got: 1338
+[29ago.2024 15:38:55.780] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_hoe Expected: 1328 Got: 1339
+[29ago.2024 15:38:55.780] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_polisher Expected: 1329 Got: 1340
+[29ago.2024 15:38:55.780] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_helmet Expected: 1330 Got: 1341
+[29ago.2024 15:38:55.780] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_chestplate Expected: 1331 Got: 1342
+[29ago.2024 15:38:55.780] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_leggings Expected: 1332 Got: 1343
+[29ago.2024 15:38:55.780] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:green_golden_boots Expected: 1333 Got: 1344
+[29ago.2024 15:38:55.781] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:diamond_polisher Expected: 1334 Got: 1345
+[29ago.2024 15:38:55.781] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:netherite_polisher Expected: 1335 Got: 1346
+[29ago.2024 15:38:55.781] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:yerba_mate Expected: 1336 Got: 1347
+[29ago.2024 15:38:55.781] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:grounded_yerba_mate Expected: 1337 Got: 1348
+[29ago.2024 15:38:55.781] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:wheat_flour Expected: 1338 Got: 1349
+[29ago.2024 15:38:55.781] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:pumpkin_flour Expected: 1339 Got: 1350
+[29ago.2024 15:38:55.783] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:yerba_mate_seeds Expected: 1340 Got: 1351
+[29ago.2024 15:38:55.783] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:zapallo_seeds Expected: 1341 Got: 1352
+[29ago.2024 15:38:55.783] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:eggplant_seeds Expected: 1342 Got: 1353
+[29ago.2024 15:38:55.783] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:tomato_seeds Expected: 1343 Got: 1354
+[29ago.2024 15:38:55.784] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:corn_seeds Expected: 1344 Got: 1355
+[29ago.2024 15:38:55.784] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:tomato Expected: 1348 Got: 1356
+[29ago.2024 15:38:55.784] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rice_grains Expected: 1349 Got: 1357
+[29ago.2024 15:38:55.785] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:zapallo Expected: 1350 Got: 1358
+[29ago.2024 15:38:55.786] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:eggplant Expected: 1351 Got: 1359
+[29ago.2024 15:38:55.786] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:corn Expected: 1352 Got: 1360
+[29ago.2024 15:38:55.786] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:yeast Expected: 1353 Got: 1361
+[29ago.2024 15:38:55.786] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rice_bowl Expected: 1354 Got: 1362
+[29ago.2024 15:38:55.786] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:cooked_zapallo Expected: 1355 Got: 1363
+[29ago.2024 15:38:55.787] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:cooked_eggplant Expected: 1356 Got: 1364
+[29ago.2024 15:38:55.787] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:cooked_corn Expected: 1357 Got: 1365
+[29ago.2024 15:38:55.787] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:empty_mate Expected: 1358 Got: 1366
+[29ago.2024 15:38:55.787] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:mate Expected: 1359 Got: 1367
+[29ago.2024 15:38:55.788] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:tin_ore Expected: 1360 Got: 1368
+[29ago.2024 15:38:55.788] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:deepslate_tin_ore Expected: 1361 Got: 1369
+[29ago.2024 15:38:55.788] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:sulfur_ore Expected: 1362 Got: 1370
+[29ago.2024 15:38:55.788] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:deepslate_sulfur_ore Expected: 1363 Got: 1371
+[29ago.2024 15:38:55.789] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:nether_sulfur_ore Expected: 1364 Got: 1372
+[29ago.2024 15:38:55.789] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:silver_ore Expected: 1365 Got: 1373
+[29ago.2024 15:38:55.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:deepslate_silver_ore Expected: 1366 Got: 1374
+[29ago.2024 15:38:55.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:deepslate_cobalt_ore Expected: 1367 Got: 1375
+[29ago.2024 15:38:55.791] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:rubi_ore Expected: 1368 Got: 1376
+[29ago.2024 15:38:55.791] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:saphire_ore Expected: 1369 Got: 1377
+[29ago.2024 15:38:55.792] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:deepslate_rubi_ore Expected: 1370 Got: 1378
+[29ago.2024 15:38:55.792] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:deepslate_saphire_ore Expected: 1371 Got: 1379
+[29ago.2024 15:38:55.792] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:adobe_furnace Expected: 1372 Got: 1380
+[29ago.2024 15:38:55.793] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:adobe_alloying_furnace Expected: 1373 Got: 1381
+[29ago.2024 15:38:55.794] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:super_alloying_furnace Expected: 1374 Got: 1382
+[29ago.2024 15:38:55.794] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:gem_polisher Expected: 1375 Got: 1383
+[29ago.2024 15:38:55.795] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: enhanced_minecraft:grinder Expected: 1376 Got: 1384
+[29ago.2024 15:38:56.743] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[29ago.2024 15:38:56.744] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[29ago.2024 15:39:00.983] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 11 recipes
+[29ago.2024 15:39:01.242] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1441 advancements
+[29ago.2024 15:39:02.328] [main/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [enhanced_minecraft]
+[29ago.2024 15:39:02.420] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\world\serverconfig\jei-server.toml is not correct. Correcting
+[29ago.2024 15:39:02.427] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key cheat mode was corrected from null to its default, SimpleCommentedConfig:{}. 
+[29ago.2024 15:39:02.428] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key cheat mode.enableCheatModeForOp was corrected from null to its default, true. 
+[29ago.2024 15:39:02.428] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key cheat mode.enableCheatModeForCreative was corrected from null to its default, true. 
+[29ago.2024 15:39:02.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key cheat mode.enableCheatModeForGive was corrected from null to its default, false. 
+[29ago.2024 15:39:07.862] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[29ago.2024 15:39:13.211] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.273] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.278] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.279] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.281] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.282] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.283] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.284] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.287] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.290] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.296] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.397] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:13.929] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:14.379] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:14.865] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:15.372] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:16.088] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:17.171] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:17.174] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:17.365] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:17.865] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[29ago.2024 15:39:18.364] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 24%
+[29ago.2024 15:39:18.864] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[29ago.2024 15:39:24.723] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 16860 ms
+[29ago.2024 15:39:24.725] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Started game test server
+[29ago.2024 15:39:24.759] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[29ago.2024 15:39:25.117] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 0 tests are now running!
+[29ago.2024 15:39:25.118] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: []
+[29ago.2024 15:39:25.120] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 0 GAME TESTS COMPLETE ======================
+[29ago.2024 15:39:25.121] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 0 required tests passed :)
+[29ago.2024 15:39:25.121] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ====================================================
+[29ago.2024 15:39:25.123] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[29ago.2024 15:39:25.123] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[29ago.2024 15:39:25.123] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[29ago.2024 15:39:28.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[29ago.2024 15:39:29.355] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[29ago.2024 15:39:29.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[29ago.2024 15:39:29.405] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[29ago.2024 15:39:29.405] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[29ago.2024 15:39:29.405] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[29ago.2024 15:39:29.405] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[29ago.2024 15:39:30.282] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

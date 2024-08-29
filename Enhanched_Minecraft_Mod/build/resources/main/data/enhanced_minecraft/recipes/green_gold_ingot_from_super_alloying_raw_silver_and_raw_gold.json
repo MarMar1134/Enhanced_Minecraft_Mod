@@ -1,5 +1,6 @@
 {
   "type": "enhanced_minecraft:super_ore_alloying",
+  "alloytime": 100,
   "ingredients": [
     {
       "item": "enhanced_minecraft:raw_silver"

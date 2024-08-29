@@ -22,6 +22,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag((BlockTags.MINEABLE_WITH_PICKAXE)).add(
+                ModBlocks.Adobe_furnace.get(),
                 ModBlocks.Adobe_alloying_furnace.get(),
                 ModBlocks.Super_alloying_furnace.get(),
                 ModBlocks.Gem_polisher_block.get(),

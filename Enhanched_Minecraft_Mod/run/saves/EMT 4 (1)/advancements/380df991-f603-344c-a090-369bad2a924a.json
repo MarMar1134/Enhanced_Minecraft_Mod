@@ -1,476 +1,703 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2024-07-29 23:14:29 -0300"
+      "unlock_right_away": "2024-08-26 13:18:07 -0300"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:birch_forest": "2024-07-29 23:28:29 -0300",
-      "minecraft:beach": "2024-07-29 23:28:16 -0300",
-      "minecraft:river": "2024-07-29 23:28:25 -0300",
-      "minecraft:stony_shore": "2024-07-29 23:18:25 -0300",
-      "minecraft:ocean": "2024-07-29 23:20:25 -0300",
-      "minecraft:old_growth_birch_forest": "2024-07-29 23:14:35 -0300"
+      "minecraft:old_growth_birch_forest": "2024-08-26 13:18:14 -0300"
     },
     "done": false
   },
   "minecraft:recipes/building_blocks/birch_planks": {
     "criteria": {
-      "has_logs": "2024-07-29 23:15:00 -0300"
+      "has_logs": "2024-08-26 13:19:25 -0300"
     },
     "done": true
   },
   "minecraft:recipes/misc/charcoal": {
     "criteria": {
-      "has_log": "2024-07-29 23:15:00 -0300"
+      "has_log": "2024-08-26 13:19:25 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/birch_wood": {
     "criteria": {
-      "has_log": "2024-07-29 23:15:00 -0300"
+      "has_log": "2024-08-26 13:19:25 -0300"
     },
     "done": true
   },
   "minecraft:recipes/redstone/birch_button": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/redstone/birch_door": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/birch_fence": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/redstone/birch_trapdoor": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/misc/stick": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/birch_sign": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/redstone/birch_fence_gate": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/barrel": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/redstone/birch_pressure_plate": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/birch_slab": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/birch_stairs": {
     "criteria": {
-      "has_planks": "2024-07-29 23:16:04 -0300"
+      "has_planks": "2024-08-26 13:19:35 -0300"
     },
     "done": true
   },
   "minecraft:story/root": {
     "criteria": {
-      "crafting_table": "2024-07-29 23:16:06 -0300"
+      "crafting_table": "2024-08-26 13:19:45 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/ladder": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/campfire": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/wooden_pickaxe": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/wooden_axe": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/wooden_shovel": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/combat/wooden_sword": {
     "criteria": {
-      "has_stick": "2024-07-29 23:16:12 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mud": {
-    "criteria": {
-      "has_dirt": "2024-07-29 23:16:25 -0300"
+      "has_stick": "2024-08-26 13:19:52 -0300"
     },
     "done": true
   },
   "minecraft:recipes/redstone/lever": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/combat/stone_sword": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/cobblestone_wall": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/stone_pickaxe": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/stone_axe": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:story/mine_stone": {
     "criteria": {
-      "get_stone": "2024-07-29 23:17:02 -0300"
+      "get_stone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/furnace": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/cobblestone_slab": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/misc/furnace": {
     "criteria": {
-      "has_the_recipe": "2024-07-29 23:17:02 -0300"
+      "has_the_recipe": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/stone": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/cobblestone_stairs": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/stone_hoe": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "minecraft:recipes/tools/stone_shovel": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
   "enhanced_minecraft:recipes/misc/adobe_furnace": {
     "criteria": {
-      "has_cobblestone": "2024-07-29 23:17:02 -0300"
+      "has_cobblestone": "2024-08-26 13:20:14 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/torch": {
+  "enhanced_minecraft:survival/unity_makes_strengh": {
     "criteria": {
-      "has_stone_pickaxe": "2024-07-29 23:17:19 -0300"
+      "requirement": "2024-08-26 13:24:58 -0300"
     },
     "done": true
   },
-  "minecraft:story/upgrade_tools": {
+  "enhanced_minecraft:recipes/raw_bronze_from_alloying_raw_copper_and_raw_tin": {
     "criteria": {
-      "stone_pickaxe": "2024-07-29 23:17:19 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/tin_nugget_from_campfire_raw_tin": {
+  "enhanced_minecraft:recipes/raw_bronze_from_alloying_raw_tin_and_raw_copper": {
     "criteria": {
-      "has_raw_tin": "2024-07-29 23:18:35 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/tin_ingot_from_smelting_raw_tin": {
+  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper": {
     "criteria": {
-      "has_raw_tin": "2024-07-29 23:18:35 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_ingot_from_blasting_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-07-29 23:18:35 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
-    "criteria": {
-      "has_raw_tin": "2024-07-29 23:18:35 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/coal_block": {
-    "criteria": {
-      "has_coal": "2024-07-29 23:18:42 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/chest": {
-    "criteria": {
-      "has_lots_of_items": "2024-07-29 23:19:10 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
   "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
     "criteria": {
-      "has_raw_copper": "2024-07-29 23:19:26 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/raw_copper_block": {
     "criteria": {
-      "has_raw_copper": "2024-07-29 23:19:26 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
   "enhanced_minecraft:recipes/misc/copper_nugget_from_campfire_raw_copper": {
     "criteria": {
-      "has_raw_copper": "2024-07-29 23:19:26 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold": {
+    "criteria": {
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
   "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
     "criteria": {
-      "has_raw_copper": "2024-07-29 23:19:26 -0300"
+      "has_raw_copper": "2024-08-26 23:11:07 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/mangrove_boat": {
+  "enhanced_minecraft:recipes/misc/tin_nugget_from_campfire_raw_tin": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_raw_tin": "2024-08-26 23:11:11 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/acacia_boat": {
+  "enhanced_minecraft:recipes/misc/tin_ingot_from_smelting_raw_tin": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_raw_tin": "2024-08-26 23:11:11 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/cherry_boat": {
+  "enhanced_minecraft:recipes/misc/tin_ingot_from_blasting_raw_tin": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_raw_tin": "2024-08-26 23:11:11 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/bamboo_raft": {
+  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_raw_tin": "2024-08-26 23:11:11 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/spruce_boat": {
+  "enhanced_minecraft:recipes/raw_steel_from_alloying_raw_iron_and_coal": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/birch_boat": {
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_raw_iron_and_coal": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/oak_boat": {
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_iron_ingot": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/jungle_boat": {
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_iron_ingot_and_coal": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/dark_oak_boat": {
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_raw_iron": {
     "criteria": {
-      "in_water": "2024-07-29 23:20:20 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "minecraft:husbandry/plant_seed": {
+  "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
-      "wheat": "2024-07-29 23:22:29 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/tin_ingot": {
+  "enhanced_minecraft:recipes/raw_steel_from_alloying_coal_and_raw_iron": {
     "criteria": {
-      "has_tin_nugget": "2024-07-29 23:22:37 -0300"
+      "has_coal": "2024-08-26 23:11:14 -0300"
     },
     "done": true
   },
-  "minecraft:adventure/root": {
+  "minecraft:recipes/decorations/blast_furnace": {
     "criteria": {
-      "killed_something": "2024-07-29 23:26:45 -0300"
+      "has_the_recipe": "2024-08-26 23:12:05 -0300"
     },
     "done": true
   },
-  "minecraft:adventure/kill_all_mobs": {
+  "minecraft:recipes/decorations/smoker": {
     "criteria": {
-      "minecraft:skeleton": "2024-07-29 23:34:39 -0300",
-      "minecraft:zombie": "2024-07-29 23:26:45 -0300"
-    },
-    "done": false
-  },
-  "minecraft:adventure/kill_a_mob": {
-    "criteria": {
-      "minecraft:zombie": "2024-07-29 23:26:45 -0300"
+      "has_furnace": "2024-08-26 23:12:05 -0300"
     },
     "done": true
   },
-  "minecraft:husbandry/balanced_diet": {
+  "minecraft:recipes/misc/blast_furnace": {
     "criteria": {
-      "chicken": "2024-07-29 23:35:49 -0300",
-      "rotten_flesh": "2024-07-29 23:27:17 -0300"
-    },
-    "done": false
-  },
-  "minecraft:husbandry/root": {
-    "criteria": {
-      "consumed_item": "2024-07-29 23:27:17 -0300"
+      "has_furnace": "2024-08-26 23:12:05 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/misc/brick": {
+  "enhanced_minecraft:recipes/misc/bronze_ingot_from_smelting_raw_bronze": {
     "criteria": {
-      "has_clay_ball": "2024-07-29 23:30:54 -0300"
+      "has_raw_bronze": "2024-08-26 23:12:07 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/clay": {
+  "enhanced_minecraft:recipes/misc/bronze_ingot_from_blasting_raw_bronze": {
     "criteria": {
-      "has_clay_ball": "2024-07-29 23:30:54 -0300"
+      "has_raw_bronze": "2024-08-26 23:12:07 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/packed_mud": {
+  "enhanced_minecraft:recipes/combat/bronze_chestplate": {
     "criteria": {
-      "has_mud": "2024-07-29 23:31:31 -0300"
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
+  "enhanced_minecraft:recipes/combat/bronze_leggings": {
     "criteria": {
-      "has_chicken": "2024-07-29 23:35:39 -0300"
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_chicken": {
+  "enhanced_minecraft:recipes/misc/bronze_nugget": {
     "criteria": {
-      "has_chicken": "2024-07-29 23:35:39 -0300"
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+  "enhanced_minecraft:recipes/combat/bronze_boots": {
     "criteria": {
-      "has_chicken": "2024-07-29 23:35:39 -0300"
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/combat/arrow": {
+  "enhanced_minecraft:recipes/tools/bronze_shovel": {
     "criteria": {
-      "has_feather": "2024-07-29 23:35:39 -0300"
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/bronze_ingot": {
+  "enhanced_minecraft:recipes/tools/bronze_polisher": {
     "criteria": {
-      "has_bronze_nugget": "2024-07-29 23:46:13 -0300"
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_hoe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronze_sword": {
+    "criteria": {
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronze_helmet": {
+    "criteria": {
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/bronze_axe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-08-26 23:12:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/mighty_bronze": {
+    "criteria": {
+      "requirement": "2024-08-26 23:12:43 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_smelting_bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-08-26 23:12:43 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget_from_blasting_bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-08-26 23:12:43 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-08-26 23:13:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2024-08-26 23:13:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-08-26 23:13:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-08-26 23:13:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_sword": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_pickaxe": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/shield": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/iron_bars": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_chestplate": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bucket": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_helmet": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_hoe": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/grinder": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/iron_polisher": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chain": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smithing_table": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-26 23:13:47 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/steel_isnt_enough": {
+    "criteria": {
+      "requirement": "2024-08-26 23:19:28 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot_from_smelting_raw_steel": {
+    "criteria": {
+      "has_raw_steel": "2024-08-26 23:19:28 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot_from_blasting_raw_steel": {
+    "criteria": {
+      "has_raw_steel": "2024-08-26 23:19:28 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud": {
+    "criteria": {
+      "has_dirt": "2024-08-29 14:42:29 -0300"
     },
     "done": true
   },

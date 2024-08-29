@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone_crafting_materials"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "#I#",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:grinder"
+  },
+  "show_notification": true
+}

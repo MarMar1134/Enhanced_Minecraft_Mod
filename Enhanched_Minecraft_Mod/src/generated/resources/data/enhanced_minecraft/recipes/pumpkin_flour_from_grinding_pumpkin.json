@@ -4,6 +4,7 @@
     "item": "minecraft:pumpkin"
   },
   "output": {
+    "count": 2,
     "item": "enhanced_minecraft:pumpkin_flour"
   }
 }

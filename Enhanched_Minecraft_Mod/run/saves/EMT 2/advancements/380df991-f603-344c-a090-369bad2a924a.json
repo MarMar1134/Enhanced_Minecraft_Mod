@@ -1294,9 +1294,11 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:blaze": "2024-08-11 21:57:43 -0300",
       "minecraft:skeleton": "2024-07-22 17:20:15 -0300",
       "minecraft:spider": "2024-08-02 15:45:50 -0300",
       "minecraft:creeper": "2024-07-22 17:14:14 -0300",
+      "minecraft:witch": "2024-08-11 22:29:52 -0300",
       "minecraft:wither_skeleton": "2024-08-02 15:42:42 -0300",
       "minecraft:enderman": "2024-07-22 17:20:06 -0300",
       "minecraft:zombie": "2024-07-22 17:14:10 -0300",
@@ -2584,15 +2586,334 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/sugar_from_grinding_sugar_cane": {
+    "criteria": {
+      "has_sugar_cane": "2024-08-11 18:29:56 -0300"
+    },
+    "done": true
+  },
   "enhanced_minecraft:recipes/pumpkin_flour_from_grinding_pumpkin": {
     "criteria": {
       "has_pumpkin": "2024-08-11 18:31:12 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/sugar_from_grinding_sugar_cane": {
+  "minecraft:recipes/food/cookie": {
     "criteria": {
-      "has_sugar_cane": "2024-08-11 18:29:56 -0300"
+      "has_wheat_flour": "2024-08-11 19:01:11 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/gunpowder": {
+    "criteria": {
+      "has_sulfur": "2024-08-11 21:53:11 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_deepslate_wall": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_deepslate_wall_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs": {
+    "criteria": {
+      "has_polished_deepslate": "2024-08-11 21:54:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pink_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/orange_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magenta_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/green_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blue_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purple_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2024-08-11 21:55:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2024-08-11 21:55:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2024-08-11 21:55:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2024-08-11 21:55:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2024-08-11 21:56:18 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2024-08-11 21:56:18 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:nether_wastes": "2024-08-11 21:56:41 -0300",
+      "minecraft:basalt_deltas": "2024-08-11 21:56:20 -0300"
+    },
+    "done": false
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2024-08-11 21:58:04 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2024-08-11 21:58:04 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2024-08-11 21:58:04 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2024-08-23 16:07:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/wheat_flour": {
+    "criteria": {
+      "has_wheat": "2024-08-23 16:11:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/wheat_flour_from_grinding_wheat": {
+    "criteria": {
+      "has_wheat": "2024-08-23 16:11:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/grinder": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-23 16:12:11 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/gem_polisher": {
+    "criteria": {
+      "has_stone": "2024-08-23 16:13:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-08-26 10:06:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-08-26 10:06:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2024-08-26 10:10:11 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/steel_isnt_enough": {
+    "criteria": {
+      "requirement": "2024-08-29 14:46:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/unity_makes_strengh": {
+    "criteria": {
+      "requirement": "2024-08-29 14:46:45 -0300"
     },
     "done": true
   },

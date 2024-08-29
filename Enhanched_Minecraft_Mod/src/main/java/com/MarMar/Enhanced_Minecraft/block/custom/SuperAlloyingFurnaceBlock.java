@@ -4,7 +4,11 @@ import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
 import com.MarMar.Enhanced_Minecraft.block.entity.SuperAlloyingFurnaceBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -20,6 +24,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -32,11 +37,11 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 public class SuperAlloyingFurnaceBlock extends BaseEntityBlock implements EntityBlock {
     public static final VoxelShape SHAPE = Block.box(0,0,0, 16,16, 16);
 
-
+    public static final BooleanProperty BURNING;
 
     public SuperAlloyingFurnaceBlock(Properties pProperties) {
         super(pProperties);
-        registerDefaultState(defaultBlockState().setValue(FACING, Direction.SOUTH));
+        registerDefaultState(defaultBlockState().setValue(FACING, Direction.SOUTH).setValue(BURNING, false));
     }
     @Nullable
     @Override
@@ -46,11 +51,30 @@ public class SuperAlloyingFurnaceBlock extends BaseEntityBlock implements Entity
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);
-        pBuilder.add(FACING);
+        pBuilder.add(FACING, BURNING);
     }
     @Override
     public @NotNull VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return SHAPE;
+    }
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        if (pState.getValue(BURNING)) {
+            double $$4 = (double)pPos.getX() + 0.5;
+            double $$5 = (double)pPos.getY();
+            double $$6 = (double)pPos.getZ() + 0.5;
+            if (pRandom.nextDouble() < 0.1) {
+                pLevel.playLocalSound($$4, $$5, $$6, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
+            }
+
+            Direction $$7 = pState.getValue(FACING);
+            Direction.Axis $$8 = $$7.getAxis();
+            double $$10 = pRandom.nextDouble() * 0.6 - 0.3;
+            double $$11 = $$8 == Direction.Axis.X ? (double)$$7.getStepX() * 0.52 : $$10;
+            double $$12 = pRandom.nextDouble() * 6.0 / 16.0;
+            double $$13 = $$8 == Direction.Axis.Z ? (double)$$7.getStepZ() * 0.52 : $$10;
+            pLevel.addParticle(ParticleTypes.SMOKE, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
+            pLevel.addParticle(ParticleTypes.FLAME, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
+        }
     }
     @Override
     public RenderShape getRenderShape(BlockState pState) {
@@ -98,5 +122,8 @@ public class SuperAlloyingFurnaceBlock extends BaseEntityBlock implements Entity
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         return defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
+    }
+    static {
+        BURNING = BooleanProperty.create("burning");
     }
 }

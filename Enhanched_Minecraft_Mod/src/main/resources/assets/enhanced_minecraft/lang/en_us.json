@@ -7,6 +7,13 @@
   "creativetab.fruits": "Fruits and Vegetables",
   "creativetab.saplings": "Saplings and Seeds",
 
+  "advancements.title.unity_makes_strengh": "Unity makes strengh",
+  "advancements.desc.unity_makes_strengh": "Craft your first alloy furnace",
+  "advancements.title.mighty_bronze": "Mighty bronze",
+  "advancements.desc.mighty_bronze": "adquire your first Bronze Pickaxe",
+  "advancements.title.steel_isnt_enough": "StEEl isn´t enough",
+  "advancements.desc.steel_isnt_enough": "Alloy a piece of iron with coal to make the powerfull steel",
+
   "block.enhanced_minecraft.sulfur_ore": "Sulfur ore",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Deepslate sulfur ore",
   "block.enhanced_minecraft.nether_sulfur_ore": "Nether sulfur ore",
@@ -69,6 +76,7 @@
   "item.enhanced_minecraft.green_gold_ingot": "Green gold ingot",
   "item.enhanced_minecraft.green_gold_nugget": "Green gold nugget",
   "item.enhanced_minecraft.cobalt": "Cobalt",
+  "item.enhanced_minecraft.cobalt_dust": "Cobalt dust",
   "item.enhanced_minecraft.rubi": "Rubi",
   "item.enhanced_minecraft.saphire": "Saphire",
 

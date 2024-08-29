@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dark_oak_planks": {
+    "has_stone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:dark_oak_planks"
+              "minecraft:stone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dark_oak_planks",
+      "has_stone",
       "has_the_recipe"
     ]
   ],

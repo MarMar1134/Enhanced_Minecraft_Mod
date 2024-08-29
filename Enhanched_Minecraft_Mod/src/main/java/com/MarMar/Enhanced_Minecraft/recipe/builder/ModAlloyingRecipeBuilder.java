@@ -27,21 +27,23 @@ public class ModAlloyingRecipeBuilder implements RecipeBuilder {
     private final Ingredient secondIngredient;
     private final Item result;
     private final int count;
+    private final int alloyTime;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
     private final RecipeSerializer<?> serializer;
 
-    private ModAlloyingRecipeBuilder(ItemLike pResult, int count, Ingredient firstIngredient, Ingredient secondIngredient, RecipeSerializer<?> pSerializer) {
+    private ModAlloyingRecipeBuilder(int alloyingTime, ItemLike pResult, int count, Ingredient firstIngredient, Ingredient secondIngredient, RecipeSerializer<?> pSerializer) {
         this.firstIngredient = firstIngredient;
         this.secondIngredient = secondIngredient;
         this.result = pResult.asItem();
         this.count = count;
+        this.alloyTime = alloyingTime;
         this.serializer = pSerializer;
     }
     public static ModAlloyingRecipeBuilder oreAlloying(Ingredient firstIngredient, Ingredient secondIngredient, ItemLike pResult, RecipeSerializer<? extends AlloyingFurnaceRecipe> pCookingSerializer) {
-        return new ModAlloyingRecipeBuilder(pResult, 1, firstIngredient, secondIngredient, pCookingSerializer);
+        return new ModAlloyingRecipeBuilder(200, pResult, 1, firstIngredient, secondIngredient, pCookingSerializer);
     }
     public static ModAlloyingRecipeBuilder superOreAlloying(Ingredient firstIngredient, Ingredient secondIngredient, ItemLike pResult, int count, RecipeSerializer<? extends SuperAlloyingRecipe> pCookingSerializer) {
-        return new ModAlloyingRecipeBuilder(pResult, count, firstIngredient, secondIngredient, pCookingSerializer);
+        return new ModAlloyingRecipeBuilder(100, pResult, count, firstIngredient, secondIngredient, pCookingSerializer);
     }
     @Override
     public ModAlloyingRecipeBuilder unlockedBy(String pCriterionName, CriterionTriggerInstance pCriterionTrigger) {
@@ -63,7 +65,7 @@ public class ModAlloyingRecipeBuilder implements RecipeBuilder {
     public void save(Consumer<FinishedRecipe> consumer, ResourceLocation resourceLocation) {
         this.ensureValid(resourceLocation);
         this.advancement.parent(ROOT_RECIPE_ADVANCEMENT).addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(resourceLocation)).rewards(net.minecraft.advancements.AdvancementRewards.Builder.recipe(resourceLocation)).requirements(RequirementsStrategy.OR);
-        consumer.accept(new ModAlloyingRecipeBuilder.Result(resourceLocation, this.firstIngredient, this.secondIngredient, this.result, this.count, this.advancement, resourceLocation.withPrefix("recipes/"), this.serializer));
+        consumer.accept(new ModAlloyingRecipeBuilder.Result(resourceLocation, this.firstIngredient, this.secondIngredient, this.result, this.count, this.alloyTime, this.advancement, resourceLocation.withPrefix("recipes/"), this.serializer));
     }
     private void ensureValid(ResourceLocation pId) {
         if (this.advancement.getCriteria().isEmpty()) {
@@ -76,21 +78,26 @@ public class ModAlloyingRecipeBuilder implements RecipeBuilder {
         private final Ingredient secondIngredient;
         private final Item result;
         private final int count;
+        private final int alloyTime;
         private final Advancement.Builder advancement;
         private final ResourceLocation resourceLocation;
         private final RecipeSerializer<?> serializer;
 
-        public Result(ResourceLocation pId, Ingredient firstIngredient, Ingredient secondIngredient, Item pResult, int count, Advancement.Builder pAdvancement, ResourceLocation pAdvancementId, RecipeSerializer<?> pSerializer) {
+        public Result(ResourceLocation pId, Ingredient firstIngredient, Ingredient secondIngredient, Item pResult, int count, int alloyingTime, Advancement.Builder pAdvancement, ResourceLocation pAdvancementId, RecipeSerializer<?> pSerializer) {
             this.id = pId;
             this.firstIngredient = firstIngredient;
             this.secondIngredient = secondIngredient;
             this.result = pResult;
             this.count = count;
+            this.alloyTime = alloyingTime;
             this.advancement = pAdvancement;
             this.resourceLocation = pAdvancementId;
             this.serializer = pSerializer;
         }
         public void serializeRecipeData(JsonObject pJson) {
+            //Alloy time
+            pJson.addProperty("alloytime", this.alloyTime);
+
             //Input
             JsonArray inputArray = new JsonArray();
 

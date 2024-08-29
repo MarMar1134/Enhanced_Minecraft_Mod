@@ -17,11 +17,13 @@ import org.jetbrains.annotations.Nullable;
 public class SuperAlloyingRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputs;
     private final ItemStack output;
+    private final int alloyTime;
     private final ResourceLocation id;
 
-    public SuperAlloyingRecipe(NonNullList<Ingredient> inputs, ItemStack output, ResourceLocation id) {
+    public SuperAlloyingRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
         this.inputs = inputs;
         this.output = output;
+        this.alloyTime = alloyingTime;
         this.id = id;
     }
 
@@ -75,8 +77,11 @@ public class SuperAlloyingRecipe implements Recipe<SimpleContainer> {
         public static final SuperAlloyingRecipe.Serializer Instance = new SuperAlloyingRecipe.Serializer();
         public static final ResourceLocation ID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "super_ore_alloying");
 
+        public final int defaultAlloyTime = 0;
         @Override
         public SuperAlloyingRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
+            int alloyTime = GsonHelper.getAsInt(jsonObject, "alloytime", defaultAlloyTime);
+
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(jsonObject, "ingredients");
@@ -86,22 +91,26 @@ public class SuperAlloyingRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new SuperAlloyingRecipe(inputs, output, resourceLocation);
+            return new SuperAlloyingRecipe(inputs, output, alloyTime, resourceLocation);
         }
 
         @Override
         public @Nullable SuperAlloyingRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
+            int alloyTime = friendlyByteBuf.readVarInt();
+
             NonNullList<Ingredient> inputs = NonNullList.withSize(friendlyByteBuf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++){
                 inputs.set(i, Ingredient.fromNetwork(friendlyByteBuf));
             }
             ItemStack output = friendlyByteBuf.readItem();
-            return new SuperAlloyingRecipe(inputs, output, resourceLocation);
+            return new SuperAlloyingRecipe(inputs, output, alloyTime, resourceLocation);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, SuperAlloyingRecipe recipes) {
+            friendlyByteBuf.writeVarInt(recipes.alloyTime);
+
             friendlyByteBuf.writeInt(recipes.inputs.size());
 
             for (Ingredient ingredient : recipes.getIngredients()) {

@@ -4,6 +4,7 @@
     "item": "enhanced_minecraft:yerba_mate"
   },
   "output": {
+    "count": 2,
     "item": "enhanced_minecraft:grounded_yerba_mate"
   }
 }

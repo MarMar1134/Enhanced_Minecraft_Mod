@@ -47,7 +47,7 @@ public class AdobeAlloyingFurnaceScreen extends AbstractContainerScreen<AdobeAll
 
     private void renderFire(GuiGraphics guiGraphics, int x, int y){
         if(menu.isBurning()){
-            guiGraphics.blit(Texture, x + 57, y + 37, 176, 0, 13, menu.getFireDecrease());
+            guiGraphics.blit(Texture, x + 57, y + 37 + 12 - menu.getFireDecrease(), 176, 12 - menu.getFireDecrease(), 13, menu.getFireDecrease() + 1);
         }
     }
 

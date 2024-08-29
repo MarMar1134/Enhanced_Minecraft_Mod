@@ -3,7 +3,10 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:dark_oak_planks"
+      "tag": "minecraft:planks"
+    },
+    "A": {
+      "tag": "minecraft:logs_that_burn"
     },
     "I": {
       "item": "minecraft:stone"
@@ -11,8 +14,8 @@
   },
   "pattern": [
     "###",
-    "#I#",
-    "#I#"
+    "AIA",
+    "AIA"
   ],
   "result": {
     "item": "enhanced_minecraft:gem_polisher"

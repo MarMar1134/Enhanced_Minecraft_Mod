@@ -1,0 +1,9 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "enhanced_minecraft:cobalt"
+  },
+  "output": {
+    "item": "enhanced_minecraft:cobalt_dust"
+  }
+}

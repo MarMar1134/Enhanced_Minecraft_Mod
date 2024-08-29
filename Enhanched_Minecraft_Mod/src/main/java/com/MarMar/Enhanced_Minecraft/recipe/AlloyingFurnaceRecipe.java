@@ -18,11 +18,13 @@ import org.jetbrains.annotations.Nullable;
 public class AlloyingFurnaceRecipe implements Recipe<SimpleContainer> {
 private final NonNullList<Ingredient> inputs;
 private final ItemStack output;
+private final int alloyTime;
 private final ResourceLocation id;
 
-    public AlloyingFurnaceRecipe(NonNullList<Ingredient> inputs, ItemStack output, ResourceLocation id) {
+    public AlloyingFurnaceRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
         this.inputs = inputs;
         this.output = output;
+        this.alloyTime = alloyingTime;
         this.id = id;
     }
 
@@ -76,8 +78,11 @@ private final ResourceLocation id;
         public static final Serializer Instance = new Serializer();
         public static final ResourceLocation ID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "ore_alloying");
 
+        public final int defaultAlloyTime = 0;
         @Override
         public AlloyingFurnaceRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
+            int alloyTime = GsonHelper.getAsInt(jsonObject, "alloytime", defaultAlloyTime);
+
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(jsonObject, "ingredients");
@@ -87,22 +92,27 @@ private final ResourceLocation id;
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new AlloyingFurnaceRecipe(inputs, output, resourceLocation);
+            return new AlloyingFurnaceRecipe(inputs, output, alloyTime, resourceLocation);
         }
 
         @Override
         public @Nullable AlloyingFurnaceRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
+            int alloyTime = friendlyByteBuf.readVarInt();
+
             NonNullList<Ingredient> inputs = NonNullList.withSize(friendlyByteBuf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++){
                 inputs.set(i, Ingredient.fromNetwork(friendlyByteBuf));
             }
+
             ItemStack output = friendlyByteBuf.readItem();
-            return new AlloyingFurnaceRecipe(inputs, output, resourceLocation);
+            return new AlloyingFurnaceRecipe(inputs, output, alloyTime, resourceLocation);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, AlloyingFurnaceRecipe alloyingFurnaceRecipes) {
+            friendlyByteBuf.writeVarInt(alloyingFurnaceRecipes.alloyTime);
+
             friendlyByteBuf.writeInt(alloyingFurnaceRecipes.inputs.size());
 
             for (Ingredient ingredient : alloyingFurnaceRecipes.getIngredients()) {

@@ -1,5 +1,6 @@
 {
   "type": "enhanced_minecraft:ore_alloying",
+  "alloytime": 200,
   "ingredients": [
     {
       "item": "minecraft:coal"

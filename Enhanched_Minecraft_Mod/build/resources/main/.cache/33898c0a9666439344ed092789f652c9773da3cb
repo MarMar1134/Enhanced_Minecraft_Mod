@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-11T18:25:24.9589196	Item Models: enhanced_minecraft
+// 1.20.1	2024-08-16T13:43:00.9781267	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -12,6 +12,7 @@ daaa00b35abab9027159f91b3838d002a53141bd assets/enhanced_minecraft/models/item/b
 5db684c4c4b96197b1f7ad7d2238f0910acbada2 assets/enhanced_minecraft/models/item/bronze_shovel.json
 6e9b2acbbc1ceb9ff8b48a8483352f92b6617a4b assets/enhanced_minecraft/models/item/bronze_sword.json
 d5c11e9e569e7a052dd73193a93eff766f8e09f6 assets/enhanced_minecraft/models/item/cobalt.json
+c2d4e6dd9b715153ec959c170be56e7dc4cd7ea0 assets/enhanced_minecraft/models/item/cobalt_dust.json
 25251c465724c4bff056bacf2fd5f7b75b6fbab8 assets/enhanced_minecraft/models/item/cooked_corn.json
 ffa755c5f18319c678433239a0352bc08cc7cd13 assets/enhanced_minecraft/models/item/cooked_eggplant.json
 214cae2fc4c55733d21ec33c80e262e67fba69bf assets/enhanced_minecraft/models/item/cooked_zapallo.json

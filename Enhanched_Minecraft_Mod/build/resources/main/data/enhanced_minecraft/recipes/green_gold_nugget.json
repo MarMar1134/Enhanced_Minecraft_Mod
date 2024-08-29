@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:silver_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "enhanced_minecraft:green_gold_nugget"
+  }
+}

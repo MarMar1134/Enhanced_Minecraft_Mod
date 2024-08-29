@@ -24,19 +24,21 @@ public class ModBasicRecipeBuilder implements RecipeBuilder {
 
     private final Item result;
     private final Ingredient ingredient;
+    private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
     private final RecipeSerializer<?> serializer;
 
-    private ModBasicRecipeBuilder(ItemLike pResult, Ingredient pIngredient, RecipeSerializer<?> pSerializer) {
+    private ModBasicRecipeBuilder(ItemLike pResult, int count, Ingredient pIngredient, RecipeSerializer<?> pSerializer) {
         this.result = pResult.asItem();
+        this.count = count;
         this.ingredient = pIngredient;
         this.serializer = pSerializer;
     }
     public static ModBasicRecipeBuilder gemPolishing(Ingredient pIngredient, ItemLike pResult, RecipeSerializer<? extends GemPolishingRecipe> pCookingSerializer) {
-        return new ModBasicRecipeBuilder(pResult, pIngredient, pCookingSerializer);
+        return new ModBasicRecipeBuilder(pResult, 1, pIngredient, pCookingSerializer);
     }
-    public static ModBasicRecipeBuilder itemGrinding(Ingredient pIngredient, ItemLike pResult, RecipeSerializer<? extends GrindingRecipe> pCookingSerializer) {
-        return new ModBasicRecipeBuilder(pResult, pIngredient, pCookingSerializer);
+    public static ModBasicRecipeBuilder itemGrinding(Ingredient pIngredient, ItemLike pResult, int quantity, RecipeSerializer<? extends GrindingRecipe> pCookingSerializer) {
+        return new ModBasicRecipeBuilder(pResult, quantity, pIngredient, pCookingSerializer);
     }
     @Override
     public ModBasicRecipeBuilder unlockedBy(String pCriterionName, CriterionTriggerInstance pCriterionTrigger) {
@@ -58,7 +60,7 @@ public class ModBasicRecipeBuilder implements RecipeBuilder {
     public void save(Consumer<FinishedRecipe> consumer, ResourceLocation resourceLocation) {
         this.ensureValid(resourceLocation);
         this.advancement.parent(ROOT_RECIPE_ADVANCEMENT).addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(resourceLocation)).rewards(net.minecraft.advancements.AdvancementRewards.Builder.recipe(resourceLocation)).requirements(RequirementsStrategy.OR);
-        consumer.accept(new Result(resourceLocation, this.ingredient, this.result, this.advancement, resourceLocation.withPrefix("recipes/"), this.serializer));
+        consumer.accept(new Result(resourceLocation, this.ingredient, this.result, this.count, this.advancement, resourceLocation.withPrefix("recipes/"), this.serializer));
     }
     private void ensureValid(ResourceLocation pId) {
         if (this.advancement.getCriteria().isEmpty()) {
@@ -69,14 +71,16 @@ public class ModBasicRecipeBuilder implements RecipeBuilder {
         private final ResourceLocation id;
         private final Ingredient ingredient;
         private final Item result;
+        private final int count;
         private final Advancement.Builder advancement;
         private final ResourceLocation resourceLocation;
         private final RecipeSerializer<?> serializer;
 
-        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, Advancement.Builder pAdvancement, ResourceLocation pAdvancementId, RecipeSerializer<?> pSerializer) {
+        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, int quantity, Advancement.Builder pAdvancement, ResourceLocation pAdvancementId, RecipeSerializer<?> pSerializer) {
             this.id = pId;
             this.ingredient = pIngredient;
             this.result = pResult;
+            this.count = quantity;
             this.advancement = pAdvancement;
             this.resourceLocation = pAdvancementId;
             this.serializer = pSerializer;
@@ -87,7 +91,13 @@ public class ModBasicRecipeBuilder implements RecipeBuilder {
 
             //Output
             JsonObject outputObject = new JsonObject();
+
             outputObject.addProperty("item", ForgeRegistries.ITEMS.getKey(this.result).toString());
+
+            if (this.count != 1){
+                outputObject.addProperty("count", this.count);
+            }
+
             pJson.add("output", outputObject);
         }
 

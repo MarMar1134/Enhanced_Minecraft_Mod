@@ -7,6 +7,13 @@
   "creativetab.fruits": "Frutas y Vegetales",
   "creativetab.saplings": "Semillas",
 
+  "advancements.title.unity_makes_strengh": "La unión hace la fuerza",
+  "advancements.desc.unity_makes_strengh": "Craftea tu primer horno de aleación",
+  "advancements.title.mighty_bronze": "Bronceado divino",
+  "advancements.desc.mighty_bronze": "Consigue un Pico de bronce",
+  "advancements.title.steel_isnt_enough": "No tiende a-cero",
+  "advancements.desc.steel_isnt_enough": "Alee un trozo de hierro con carbón para obtener acero",
+
   "block.enhanced_minecraft.sulfur_ore": "Mineral de azufre",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Mineral de azufre profundo",
   "block.enhanced_minecraft.nether_sulfur_ore": "Mineral de azufre del nether",
@@ -62,7 +69,8 @@
   "item.enhanced_minecraft.rose_gold_nugget": "Pepita de oro rosado",
   "item.enhanced_minecraft.green_gold_ingot": "Lingote de oro verde",
   "item.enhanced_minecraft.green_gold_nugget": "Pepita de oro verde",
-  "item.enhanced_minecraft.cobalt": "cobalto",
+  "item.enhanced_minecraft.cobalt": "Cobalto",
+  "item.enhanced_minecraft.cobalt_dust": "Cobalto molido",
   "item.enhanced_minecraft.raw_rubi": "Rubí impuro",
   "item.enhanced_minecraft.raw_saphire": "Zafiro impuro",
   "item.enhanced_minecraft.raw_emerald": "Esmeralda impura",

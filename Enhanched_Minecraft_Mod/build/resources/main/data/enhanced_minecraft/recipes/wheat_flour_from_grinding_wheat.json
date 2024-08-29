@@ -4,6 +4,7 @@
     "item": "minecraft:wheat"
   },
   "output": {
+    "count": 2,
     "item": "enhanced_minecraft:wheat_flour"
   }
 }

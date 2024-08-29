@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:white_wool"
+  },
+  "output": {
+    "count": 4,
+    "item": "minecraft:string"
+  }
+}
