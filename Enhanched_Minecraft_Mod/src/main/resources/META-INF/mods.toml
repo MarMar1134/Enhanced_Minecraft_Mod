@@ -17,9 +17,9 @@ license="MIT License"
 # The modid of the mod
 modId="enhanced_minecraft" #mandatory
 # The version number of the mod
-version="0.11.1" #mandatory
+version="0.12.0" #mandatory
 # A display name for the mod
-displayName="Enhanced Minecraft" #mandatory
+displayName="Enhanced Playthrough" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -39,4 +39,4 @@ authors="Mar Mar" #optional
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Enhanced Minecraft Mod is a mod that adds lots of features to the game.'''
+description='''Enhanced Playthrough is a mod that adds lots of features to the game. Explore new resources and valuable items. Find new foods and crops for more variety for your diet.'''

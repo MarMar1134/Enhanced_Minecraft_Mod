@@ -2,7 +2,7 @@ package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.block.crops.*;
+import com.MarMar.Enhanced_Minecraft.block.custom.crops.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

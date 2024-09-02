@@ -1,7 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.block.custom;
 
-import com.MarMar.Enhanced_Minecraft.block.entity.AdobeFurnaceBlockEntity;
-import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.AdobeFurnaceBlockEntity;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -13,7 +13,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AbstractFurnaceBlock;
-import net.minecraft.world.level.block.FurnaceBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;

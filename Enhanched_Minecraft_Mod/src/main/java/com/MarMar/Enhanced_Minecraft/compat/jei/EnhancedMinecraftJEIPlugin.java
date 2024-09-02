@@ -2,10 +2,10 @@ package com.MarMar.Enhanced_Minecraft.compat.jei;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.recipe.*;
-import com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen;
-import com.MarMar.Enhanced_Minecraft.screen.GemPolisherScreen;
-import com.MarMar.Enhanced_Minecraft.screen.GrinderScreen;
-import com.MarMar.Enhanced_Minecraft.screen.SuperAlloyingFurnaceScreen;
+import com.MarMar.Enhanced_Minecraft.menu.screen.AdobeAlloyingFurnaceScreen;
+import com.MarMar.Enhanced_Minecraft.menu.screen.GemPolisherScreen;
+import com.MarMar.Enhanced_Minecraft.menu.screen.GrinderScreen;
+import com.MarMar.Enhanced_Minecraft.menu.screen.SuperAlloyingFurnaceScreen;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;

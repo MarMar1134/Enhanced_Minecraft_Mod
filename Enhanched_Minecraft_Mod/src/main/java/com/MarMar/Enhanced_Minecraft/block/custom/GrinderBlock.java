@@ -1,7 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.block.custom;
 
-import com.MarMar.Enhanced_Minecraft.block.entity.GrinderBlockEntity;
-import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.GrinderBlockEntity;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;

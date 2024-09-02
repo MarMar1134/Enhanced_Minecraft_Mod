@@ -15,17 +15,14 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class AlloyingFurnaceRecipe implements Recipe<SimpleContainer> {
+public class AlloyingFurnaceRecipe extends AbstractAlloyRecipe implements Recipe<SimpleContainer> {
 private final NonNullList<Ingredient> inputs;
-private final ItemStack output;
 private final int alloyTime;
-private final ResourceLocation id;
 
     public AlloyingFurnaceRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
+        super(inputs, output, alloyingTime, id, ModRecipes.Alloying_type.get());
         this.inputs = inputs;
-        this.output = output;
         this.alloyTime = alloyingTime;
-        this.id = id;
     }
 
     @Override
@@ -37,31 +34,6 @@ private final ResourceLocation id;
     }
 
     @Override
-    public NonNullList<Ingredient> getIngredients() {
-        return this.inputs;
-    }
-
-    @Override
-    public ItemStack assemble(SimpleContainer simpleContainer, RegistryAccess registryAccess) {
-        return output.copy();
-    }
-
-    @Override
-    public boolean canCraftInDimensions(int i, int i1) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getResultItem(RegistryAccess registryAccess) {
-        return output.copy();
-    }
-
-    @Override
-    public ResourceLocation getId() {
-        return id;
-    }
-
-    @Override
     public RecipeSerializer<?> getSerializer() {
         return Serializer.Instance;
     }
@@ -70,6 +42,9 @@ private final ResourceLocation id;
     public RecipeType<?> getType() {
         return Type.Instance;
     }
+
+
+
     public static class Type implements RecipeType<AlloyingFurnaceRecipe>{
         public static final Type Instance = new Type();
         private static String ID = "ore_alloying";

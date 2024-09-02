@@ -5,11 +5,17 @@ import com.MarMar.Enhanced_Minecraft.Util.ModTiers;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.custom.MateItem;
 import com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem;
+import net.minecraft.ChatFormatting;
+import net.minecraft.Util;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister<Item> Items = DeferredRegister.create(
@@ -37,6 +43,7 @@ public class ModItems {
                 "raw_emerald", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> Raw_diamond = Items.register(
                 "raw_diamond", () -> new Item(new Item.Properties()));
+
         //melted
         public static final RegistryObject<Item> Copper_nugget = Items.register(
                 "copper_nugget", () -> new Item(new Item.Properties()));
@@ -72,8 +79,34 @@ public class ModItems {
             "cobalt_dust", () -> new Item(new Item.Properties()));
 
     //Smithing template
-    public static final RegistryObject<Item> reinforcing_upgrade_smithing_template = Items.register(
-            "reinforcing_upgrade_smithing_template", () -> new Item(new Item.Properties()));
+        //    public static final ChatFormatting title = ChatFormatting.DARK_BLUE;
+        //    public static final ChatFormatting format = ChatFormatting.DARK_GRAY;
+        //    public static final Component TITANIUM_UPGRATE = Component.translatable(Util.makeDescriptionId("upgrade", new ResourceLocation("smithing.enhanced_minecraft.titanium_upgrate"))).withStyle(title);
+        //    public static final Component TITANIUM_APLIES_TO = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation("smithing.enhanced_minecraft.titanium_aplies_to"))).withStyle(format);
+        //    public static final Component TITANIUM_INGREDIENTS = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation("smithing.enhanced_minecraft.titanium_ingredients"))).withStyle(format);
+        //    public static final Component TITANIUM_BASE_SLOT_DESC = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation("smithing.enhanced_minecraft.titanium_base_slot_desc")));
+        //    public static final Component TITANIUM_ADITIONS_SLOT_DESC = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation("smithing.enhanced_minecraft.titanium_aditions_slot_desc")));
+        //
+        //    public static final ResourceLocation EMPTY_SLOT_HELMET = new ResourceLocation("item/empty_armor_slot_helmet");
+        //    public static final ResourceLocation EMPTY_SLOT_CHESTPLATE = new ResourceLocation("item/empty_armor_slot_chestplate");
+        //    public static final ResourceLocation EMPTY_SLOT_LEGGINGS = new ResourceLocation("item/empty_armor_slot_leggings");
+        //    public static final ResourceLocation EMPTY_SLOT_BOOTS = new ResourceLocation("item/empty_armor_slot_boots");
+        //    public static final ResourceLocation EMPTY_SLOT_HOE = new ResourceLocation("item/empty_slot_hoe");
+        //    public static final ResourceLocation EMPTY_SLOT_AXE = new ResourceLocation("item/empty_slot_axe");
+        //    public static final ResourceLocation EMPTY_SLOT_SWORD = new ResourceLocation("item/empty_slot_sword");
+        //    public static final ResourceLocation EMPTY_SLOT_SHOVEL = new ResourceLocation("item/empty_slot_shovel");
+        //    public static final ResourceLocation EMPTY_SLOT_PICKAXE = new ResourceLocation("item/empty_slot_pickaxe");
+        //    public static final ResourceLocation EMPTY_SLOT_INGOT = new ResourceLocation("item/empty_slot_ingot");
+        //    private static List<ResourceLocation> createTitaniumUpgradeIconList() {
+        //        return List.of(EMPTY_SLOT_HELMET, EMPTY_SLOT_SWORD, EMPTY_SLOT_CHESTPLATE, EMPTY_SLOT_PICKAXE, EMPTY_SLOT_LEGGINGS, EMPTY_SLOT_AXE, EMPTY_SLOT_BOOTS, EMPTY_SLOT_HOE, EMPTY_SLOT_SHOVEL);
+        //    }
+        //
+        //    private static List<ResourceLocation> createTitaniumUpgradeMaterialList() {
+        //        return List.of(EMPTY_SLOT_INGOT);
+        //    }
+        //
+        //    public static final RegistryObject<Item> reinforcing_upgrade_smithing_template = Items.register(
+        //            "reinforcing_upgrade_smithing_template", () -> new SmithingTemplateItem(TITANIUM_APLIES_TO, TITANIUM_INGREDIENTS, TITANIUM_UPGRATE, TITANIUM_BASE_SLOT_DESC, TITANIUM_ADITIONS_SLOT_DESC, createTitaniumUpgradeIconList(), createTitaniumUpgradeMaterialList()));
 
     //Weapons, tools and armors
         //Stone

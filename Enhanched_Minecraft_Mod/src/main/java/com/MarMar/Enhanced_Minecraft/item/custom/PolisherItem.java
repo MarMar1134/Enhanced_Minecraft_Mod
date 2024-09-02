@@ -12,14 +12,12 @@ import java.util.List;
 public class PolisherItem extends TieredItem implements IForgeItem {
     private final int damage;
     private final Tier tier;
-    private final int useModifier;
 
     public PolisherItem(Tier pTier, int useModifier, Properties pProperties) {
         super(pTier,pProperties);
 
         this.tier = pTier;
         this.damage = this.getTier().getUses() * useModifier;
-        this.useModifier = useModifier;
     }
 
     @Override
@@ -54,11 +52,5 @@ public class PolisherItem extends TieredItem implements IForgeItem {
 
     public Tier getTier(){
         return this.tier;
-    }
-    public int getTierUses(){
-        return this.getTier().getUses();
-    }
-    public int getUseModifier(){
-        return this.useModifier;
     }
 }

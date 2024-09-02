@@ -1,10 +1,10 @@
 package com.MarMar.Enhanced_Minecraft.loot;
 
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.block.crops.CornCropBlock;
-import com.MarMar.Enhanced_Minecraft.block.crops.TomatoCropBlock;
-import com.MarMar.Enhanced_Minecraft.block.crops.YerbaMateCropBlock;
-import com.MarMar.Enhanced_Minecraft.block.crops.ZapalloCropBlock;
+import com.MarMar.Enhanced_Minecraft.block.custom.crops.CornCropBlock;
+import com.MarMar.Enhanced_Minecraft.block.custom.crops.TomatoCropBlock;
+import com.MarMar.Enhanced_Minecraft.block.custom.crops.YerbaMateCropBlock;
+import com.MarMar.Enhanced_Minecraft.block.custom.crops.ZapalloCropBlock;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;

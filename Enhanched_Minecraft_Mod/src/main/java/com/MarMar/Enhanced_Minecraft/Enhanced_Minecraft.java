@@ -1,13 +1,14 @@
 package com.MarMar.Enhanced_Minecraft;
 
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.ModBlockEntities;
 import com.MarMar.Enhanced_Minecraft.enchantment.ModEnchantments;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import com.MarMar.Enhanced_Minecraft.Util.ModTabs;
 import com.MarMar.Enhanced_Minecraft.loot.ModLootModifiers;
+import com.MarMar.Enhanced_Minecraft.menu.screen.*;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
-import com.MarMar.Enhanced_Minecraft.screen.*;
+import com.MarMar.Enhanced_Minecraft.menu.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

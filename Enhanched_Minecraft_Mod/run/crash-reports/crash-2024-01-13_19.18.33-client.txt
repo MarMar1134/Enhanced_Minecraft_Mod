@@ -6,7 +6,7 @@ Description: Rendering screen
 
 java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
 	at net.minecraft.world.inventory.SimpleContainerData.get(SimpleContainerData.java:12) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceMenu.getScaledProgress(AdobeAlloyingFurnaceMenu.java:48) ~[main/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.screen.menu.AdobeAlloyingFurnaceMenu.getScaledProgress(AdobeAlloyingFurnaceMenu.java:48) ~[main/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen.renderProgressArrow(AdobeAlloyingFurnaceScreen.java:50) ~[main/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen.renderBg(AdobeAlloyingFurnaceScreen.java:45) ~[main/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:92) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}
@@ -43,7 +43,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Render thread
 Stacktrace:
 	at net.minecraft.world.inventory.SimpleContainerData.get(SimpleContainerData.java:12) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceMenu.getScaledProgress(AdobeAlloyingFurnaceMenu.java:48) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.screen.menu.AdobeAlloyingFurnaceMenu.getScaledProgress(AdobeAlloyingFurnaceMenu.java:48) ~[%23196!/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen.renderProgressArrow(AdobeAlloyingFurnaceScreen.java:50) ~[%23196!/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen.renderBg(AdobeAlloyingFurnaceScreen.java:45) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:92) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}

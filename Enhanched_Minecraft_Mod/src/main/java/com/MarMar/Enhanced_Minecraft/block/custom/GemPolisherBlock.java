@@ -1,7 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.block.custom;
 
-import com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity;
-import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.GemPolisherBlockEntity;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;

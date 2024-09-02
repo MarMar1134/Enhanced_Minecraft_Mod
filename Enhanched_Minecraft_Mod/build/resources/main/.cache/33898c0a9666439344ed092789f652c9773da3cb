@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-16T13:43:00.9781267	Item Models: enhanced_minecraft
+// 1.20.1	2024-08-30T16:08:55.2561198	Item Models: enhanced_minecraft
 14ddaf8c3316ebb26b62efaa5a3d992355da4323 assets/enhanced_minecraft/models/item/bronze_axe.json
 30db665f3913fab99ce55fc5e1f94f8c58ff44a5 assets/enhanced_minecraft/models/item/bronze_boots.json
 8dace7b6c9144aff418a904ce07b358665d42966 assets/enhanced_minecraft/models/item/bronze_chestplate.json
@@ -52,7 +52,6 @@ babdb77e27771c6872571914fd1939caa8ae40d5 assets/enhanced_minecraft/models/item/r
 90ff39a81e0474e99b7cc7f0b7bc1d0983af2115 assets/enhanced_minecraft/models/item/raw_silver.json
 217afef5c2323f837c8459c8922ffc34f3067b8d assets/enhanced_minecraft/models/item/raw_steel.json
 bcf46309a9e92f772598a7be8a3618246cbba2ed assets/enhanced_minecraft/models/item/raw_tin.json
-33d904ac5529a86b3d1fbbf418e44aa36f71f541 assets/enhanced_minecraft/models/item/reinforcing_upgrade_smithing_template.json
 b6f8c1fdf5d8ed2c3ba3035f5e50ddd70e703c14 assets/enhanced_minecraft/models/item/rice_bowl.json
 413143941d19c697825ba61a91b08cd60fd1fee5 assets/enhanced_minecraft/models/item/rice_grains.json
 8d202ecdec94819e8f3fc5b8150fbfc46a0bf752 assets/enhanced_minecraft/models/item/rose_golden_axe.json

@@ -166,8 +166,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Dust
         simpleItem(ModItems.Cobalt_dust);
 
-        //Smithing templates
-        simpleItem(ModItems.reinforcing_upgrade_smithing_template);
 
         //Armors and tools
             //Gold

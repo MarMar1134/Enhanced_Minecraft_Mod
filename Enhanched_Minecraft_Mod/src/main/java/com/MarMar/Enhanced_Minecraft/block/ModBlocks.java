@@ -1,8 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.block;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
-import com.MarMar.Enhanced_Minecraft.block.crops.*;
 import com.MarMar.Enhanced_Minecraft.block.custom.*;
+import com.MarMar.Enhanced_Minecraft.block.custom.crops.*;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -62,6 +62,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> Deepslate_saphire_ore = RegisterBlock("deepslate_saphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE)
                     .requiresCorrectToolForDrops()));
+
         //Entity blocks
         public static final RegistryObject<Block> Adobe_furnace = RegisterBlock("adobe_furnace",
                 () -> new AdobeFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
@@ -71,8 +72,8 @@ public class ModBlocks {
                 () -> new SuperAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLED_DEEPSLATE).noOcclusion()));
         public static final RegistryObject<Block> Gem_polisher_block = RegisterBlock("gem_polisher",
                 () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
-    public static final RegistryObject<Block> Item_grinder_block = RegisterBlock("grinder",
-            () -> new GrinderBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+        public static final RegistryObject<Block> Item_grinder_block = RegisterBlock("grinder",
+                () -> new GrinderBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
 
     //Crops
     public static final RegistryObject<Block> Yerba_mate_crop = Blocks.register("yerba_mate_crop",

@@ -1,7 +1,7 @@
 package com.MarMar.Enhanced_Minecraft.block.custom;
 
-import com.MarMar.Enhanced_Minecraft.block.entity.AdobeAlloyingFurnaceBlockEntity;
-import com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.AdobeAlloyingFurnaceBlockEntity;
+import com.MarMar.Enhanced_Minecraft.block.custom.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -34,95 +34,21 @@ import org.jetbrains.annotations.Nullable;
 
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.*;
 
-public class AdobeAlloyingFurnaceBlock extends BaseEntityBlock implements EntityBlock {
-    public static final VoxelShape SHAPE = Block.box(0,0,0, 16,16, 16);
-    public static final BooleanProperty BURNING;
+public class AdobeAlloyingFurnaceBlock extends AbstractAlloyFurnaceBlock{
 
     public AdobeAlloyingFurnaceBlock(Properties pProperties) {
         super(pProperties);
-        registerDefaultState(defaultBlockState().setValue(FACING, Direction.SOUTH).setValue(BURNING, false));
     }
+
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new AdobeAlloyingFurnaceBlockEntity(blockPos, blockState);
-    }
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        super.createBlockStateDefinition(pBuilder);
-        pBuilder.add(FACING, BURNING);
-    }
-    @Override
-    public @NotNull VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE;
-    }
-    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pState.getValue(BURNING)) {
-            double $$4 = (double)pPos.getX() + 0.5;
-            double $$5 = (double)pPos.getY();
-            double $$6 = (double)pPos.getZ() + 0.5;
-            if (pRandom.nextDouble() < 0.1) {
-                pLevel.playLocalSound($$4, $$5, $$6, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
-            }
-
-            Direction $$7 = pState.getValue(FACING);
-            Direction.Axis $$8 = $$7.getAxis();
-            double $$10 = pRandom.nextDouble() * 0.6 - 0.3;
-            double $$11 = $$8 == Direction.Axis.X ? (double)$$7.getStepX() * 0.52 : $$10;
-            double $$12 = pRandom.nextDouble() * 6.0 / 16.0;
-            double $$13 = $$8 == Direction.Axis.Z ? (double)$$7.getStepZ() * 0.52 : $$10;
-            pLevel.addParticle(ParticleTypes.SMOKE, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
-            pLevel.addParticle(ParticleTypes.FLAME, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
-        }
-    }
-    @Override
-    public RenderShape getRenderShape(BlockState pState) {
-        return RenderShape.MODEL;
+        return new AdobeAlloyingFurnaceBlockEntity(blockPos,blockState);
     }
 
-    @Override
-    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
-        if (pState.getBlock() != pNewState.getBlock()) {
-            BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof AdobeAlloyingFurnaceBlockEntity) {
-                ((AdobeAlloyingFurnaceBlockEntity) blockEntity).drops();
-            }
-            super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
-        }
-    }
-
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-            if (!pLevel.isClientSide()) {
-                BlockEntity entity = pLevel.getBlockEntity(pPos);
-                if(entity instanceof AdobeAlloyingFurnaceBlockEntity) {
-                    NetworkHooks.openScreen(((ServerPlayer)pPlayer), (AdobeAlloyingFurnaceBlockEntity)entity, pPos);
-                } else {
-                    throw new IllegalStateException("Our Container provider is missing!");
-                }
-            }
-
-            return InteractionResult.sidedSuccess(pLevel.isClientSide());
-    }
-
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-        if(pLevel.isClientSide()) {
-            return null;
-        }
-
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.Adobe_alloying_furnace.get(),
-                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
-    }
-    @Override
-    public boolean hasAnalogOutputSignal(BlockState pState) {
-        return true;
-    }
     @Nullable
     @Override
-    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
-        return defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
-    }
-    static {
-        BURNING = BooleanProperty.create("burning");
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        return createAlloyFurnaceTicker(pLevel, pBlockEntityType, ModBlockEntities.Adobe_alloying_furnace.get());
     }
 }

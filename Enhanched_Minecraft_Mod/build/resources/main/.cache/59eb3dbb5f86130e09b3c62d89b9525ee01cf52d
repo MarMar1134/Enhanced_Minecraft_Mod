@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-23T15:03:41.6868981	Loot Tables
+// 1.20.1	2024-08-30T22:47:42.4748104	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
 fdff6e05cade759aa389ed4cfd0ec41c33448869 data/enhanced_minecraft/loot_tables/blocks/adobe_furnace.json
 75897b86dfe9caaf7d7f55f1ec1fb3c2d3995877 data/enhanced_minecraft/loot_tables/blocks/corn_crop.json
@@ -17,6 +17,7 @@ ac75330d64c1cc905a91303cc4c0cae69ee0cfc4 data/enhanced_minecraft/loot_tables/blo
 d17633eb2609a4e96080d91a990d28249127db53 data/enhanced_minecraft/loot_tables/blocks/silver_ore.json
 2b24524f1f0f9d718f64db923bbaf8e976975df1 data/enhanced_minecraft/loot_tables/blocks/sulfur_ore.json
 db4c82da1aa5fe250296db9bfb2e4b99128519a2 data/enhanced_minecraft/loot_tables/blocks/super_alloying_furnace.json
+e5c6cff417d73eaf3e3f9a3a96d8ce6141854c46 data/enhanced_minecraft/loot_tables/blocks/test_alloying_furnace.json
 c7def7c6098a1f79f5f7ae2ae85bec78b5238092 data/enhanced_minecraft/loot_tables/blocks/tin_ore.json
 3778b1cda9dc13acacd9ae41576e2766d216c275 data/enhanced_minecraft/loot_tables/blocks/tomato_crop.json
 ecd8e0dd9cbb00023f21abe6dae4052833b02b6e data/enhanced_minecraft/loot_tables/blocks/yerba_mate_crop.json

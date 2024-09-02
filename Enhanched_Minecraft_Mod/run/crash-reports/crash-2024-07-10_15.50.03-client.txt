@@ -6,7 +6,7 @@ Description: Rendering screen
 
 java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 	at net.minecraft.world.inventory.SimpleContainerData.get(SimpleContainerData.java:12) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu.getUses(GemPolisherMenu.java:46) ~[main/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.screen.menu.GemPolisherMenu.getUses(GemPolisherMenu.java:46) ~[main/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.screen.GemPolisherScreen.render(GemPolisherScreen.java:49) ~[main/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:109) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
@@ -40,7 +40,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Render thread
 Stacktrace:
 	at net.minecraft.world.inventory.SimpleContainerData.get(SimpleContainerData.java:12) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.screen.GemPolisherMenu.getUses(GemPolisherMenu.java:46) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.screen.menu.GemPolisherMenu.getUses(GemPolisherMenu.java:46) ~[%23196!/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.screen.GemPolisherScreen.render(GemPolisherScreen.java:49) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:109) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}

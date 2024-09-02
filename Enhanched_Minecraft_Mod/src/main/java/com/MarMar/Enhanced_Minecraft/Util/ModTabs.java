@@ -68,6 +68,8 @@ public class ModTabs {
             "utility", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_ingot.get()))
                     .title(Component.translatable("creativetab.utility"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.Test_alloying_furnace.get());
+                        output.accept(ModBlocks.Adobe_furnace.get());
                         output.accept(ModBlocks.Adobe_alloying_furnace.get());
                         output.accept(ModBlocks.Super_alloying_furnace.get());
                         output.accept(ModBlocks.Gem_polisher_block.get());

@@ -14,50 +14,14 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class SuperAlloyingRecipe implements Recipe<SimpleContainer> {
+public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputs;
-    private final ItemStack output;
     private final int alloyTime;
-    private final ResourceLocation id;
 
     public SuperAlloyingRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
+        super(inputs, output, alloyingTime, id, ModRecipes.Super_alloying_type.get());
         this.inputs = inputs;
-        this.output = output;
         this.alloyTime = alloyingTime;
-        this.id = id;
-    }
-
-    @Override
-    public boolean matches(SimpleContainer simpleContainer, Level level) {
-        if (level.isClientSide){
-            return false;
-        }
-        return inputs.get(0).test(simpleContainer.getItem(0)) && inputs.get(1).test(simpleContainer.getItem(1));
-    }
-
-    @Override
-    public NonNullList<Ingredient> getIngredients() {
-        return this.inputs;
-    }
-
-    @Override
-    public ItemStack assemble(SimpleContainer simpleContainer, RegistryAccess registryAccess) {
-        return output.copy();
-    }
-
-    @Override
-    public boolean canCraftInDimensions(int i, int i1) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getResultItem(RegistryAccess registryAccess) {
-        return output.copy();
-    }
-
-    @Override
-    public ResourceLocation getId() {
-        return id;
     }
 
     @Override
