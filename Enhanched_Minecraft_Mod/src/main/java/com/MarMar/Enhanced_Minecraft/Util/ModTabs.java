@@ -31,6 +31,30 @@ public class ModTabs {
 //                        output.accept(ModItems.Banana_seed.get());
 //                    })
 //                    .build());
+    public static final RegistryObject<CreativeModeTab> Blocks = Tabs.register(
+            "blocks", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.Polished_limestone.get()))
+                    .title(Component.translatable("creativetab.blocks"))
+                    .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(ModBlocks.Polished_stone.get());
+                        output.accept(ModBlocks.Polished_stone_slab.get());
+                        output.accept(ModBlocks.Polished_stone_stair.get());
+                        output.accept(ModBlocks.Polished_stone_wall.get());
+                        output.accept(ModBlocks.Cobbeled_limestone.get());
+                        output.accept(ModBlocks.Cobbeled_limestone_slab.get());
+                        output.accept(ModBlocks.Cobbeled_limestone_stair.get());
+                        output.accept(ModBlocks.Cobbeled_limestone_wall.get());
+                        output.accept(ModBlocks.Limestone.get());
+                        output.accept(ModBlocks.Limestone_slab.get());
+                        output.accept(ModBlocks.Limestone_stair.get());
+                        output.accept(ModBlocks.Polished_limestone.get());
+                        output.accept(ModBlocks.Polished_limestone_slab.get());
+                        output.accept(ModBlocks.Polished_limestone_stair.get());
+                        output.accept(ModBlocks.Polished_limestone_wall.get());
+                        output.accept(ModBlocks.Limestone_bricks.get());
+                        output.accept(ModBlocks.Limestone_brick_slab.get());
+                        output.accept(ModBlocks.Limestone_brick_stair.get());
+                        output.accept(ModBlocks.Limestone_brick_wall.get());
+                    }).build());
     public static final RegistryObject<CreativeModeTab> Minerals = Tabs.register(
             "minerals", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.Tin_ore.get()))
                     .title(Component.translatable("creativetab.minerals"))
@@ -62,13 +86,11 @@ public class ModTabs {
                         output.accept(ModItems.Saphire.get());
                         output.accept(Items.EMERALD);
                         output.accept(Items.DIAMOND);
-                    }).build()
-    );
+                    }).build());
     public static final RegistryObject<CreativeModeTab> utility = Tabs.register(
             "utility", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Bronze_ingot.get()))
                     .title(Component.translatable("creativetab.utility"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.Test_alloying_furnace.get());
                         output.accept(ModBlocks.Adobe_furnace.get());
                         output.accept(ModBlocks.Adobe_alloying_furnace.get());
                         output.accept(ModBlocks.Super_alloying_furnace.get());
@@ -85,8 +107,7 @@ public class ModTabs {
                         output.accept(ModItems.Steel_ingot.get());
                         output.accept(ModItems.Green_gold_ingot.get());
                         output.accept(ModItems.Green_gold_nugget.get());
-                    }).build()
-    );
+                    }).build());
     public static final RegistryObject<CreativeModeTab> Tools = Tabs.register(
             "tools", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Steel_pickaxe.get()))
                     .title((Component.translatable("creativetab.tools")))
@@ -127,8 +148,7 @@ public class ModTabs {
                         output.accept(ModItems.Green_golden_shovel.get());
                         output.accept(ModItems.Green_golden_hoe.get());
                         output.accept(ModItems.Green_golden_polisher.get());
-                    }).build()
-    );
+                    }).build());
     public static final RegistryObject<CreativeModeTab> weapons = Tabs.register(
             "weapons",() -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Steel_sword.get()))
                     .title(Component.translatable("creativetab.weapons"))
@@ -168,8 +188,7 @@ public class ModTabs {
                         output.accept(ModItems.Green_golden_leggings.get());
                         output.accept(ModItems.Green_golden_boots.get());
                     })
-                    .build()
-    );
+                    .build());
     public static final RegistryObject<CreativeModeTab> jewelery = Tabs.register(
             "jewelery", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Rubi.get()))
                     .title(Component.translatable("creativetab.jewelery"))
@@ -178,10 +197,10 @@ public class ModTabs {
                         output.accept(ModBlocks.Deepslate_rubi_ore.get());
                         output.accept(ModBlocks.Saphire_ore.get());
                         output.accept(ModBlocks.Deepslate_saphire_ore.get());
-                        output.accept(Blocks.EMERALD_ORE);
-                        output.accept(Blocks.DEEPSLATE_EMERALD_ORE);
-                        output.accept(Blocks.DIAMOND_ORE);
-                        output.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
+                        output.accept(net.minecraft.world.level.block.Blocks.EMERALD_ORE);
+                        output.accept(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE);
+                        output.accept(net.minecraft.world.level.block.Blocks.DIAMOND_ORE);
+                        output.accept(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE);
                         output.accept(ModBlocks.Gem_polisher_block.get());
                         output.accept(ModItems.Gold_polisher.get());
                         output.accept(ModItems.Silver_polisher.get());
@@ -201,8 +220,7 @@ public class ModTabs {
                         output.accept(ModItems.Saphire.get());
                         output.accept(Items.EMERALD);
                         output.accept(Items.DIAMOND);
-                    }).build()
-    );
+                    }).build());
     public static final RegistryObject<CreativeModeTab> Food= Tabs.register(
             "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Green_apple.get()))
                     .title(Component.translatable("creativetab.fruits"))
@@ -240,8 +258,7 @@ public class ModTabs {
 
                         output.accept(ModItems.Empty_mate.get());
                         output.accept(ModItems.Mate.get());
-                    }).build()
-    );
+                    }).build());
     public static void Register(IEventBus eventBus){
         Tabs.register(eventBus);
     }

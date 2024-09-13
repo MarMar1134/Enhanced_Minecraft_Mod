@@ -5,8 +5,7 @@ import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.block.custom.crops.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -23,6 +22,32 @@ public class ModBlockStateProvider extends BlockStateProvider{
 
     @Override
     protected void registerStatesAndModels() {
+        //Stone
+        blockWithItem(ModBlocks.Polished_stone);
+        slabBlockWithoutItem(ModBlocks.Polished_stone_slab, "polished_stone");
+        stairBlockWithoutItem(ModBlocks.Polished_stone_stair, "polished_stone");
+        wallBlockWithoutItem(ModBlocks.Polished_stone_wall, "polished_stone");
+
+        //Limestone
+        blockWithItem(ModBlocks.Cobbeled_limestone);
+        slabBlockWithoutItem(ModBlocks.Cobbeled_limestone_slab, "cobbeled_limestone");
+        stairBlockWithoutItem(ModBlocks.Cobbeled_limestone_stair, "cobbeled_limestone");
+        wallBlockWithoutItem(ModBlocks.Cobbeled_limestone_wall, "cobbeled_limestone");
+
+        blockWithItem(ModBlocks.Limestone);
+        slabBlockWithoutItem(ModBlocks.Limestone_slab, "limestone");
+        stairBlockWithoutItem(ModBlocks.Limestone_stair, "limestone");
+
+        blockWithItem(ModBlocks.Polished_limestone);
+        slabBlockWithoutItem(ModBlocks.Polished_limestone_slab, "polished_limestone");
+        stairBlockWithoutItem(ModBlocks.Polished_limestone_stair, "polished_limestone");
+        wallBlockWithoutItem(ModBlocks.Polished_limestone_wall, "polished_limestone");
+
+        blockWithItem(ModBlocks.Limestone_bricks);
+        slabBlockWithoutItem(ModBlocks.Limestone_brick_slab, "limestone_brick");
+        stairBlockWithoutItem(ModBlocks.Limestone_brick_stair, "limestone_brick");
+        wallBlockWithoutItem(ModBlocks.Limestone_brick_wall, "limestone_brick");
+
         //ores
         blockWithItem(ModBlocks.Deepslate_tin_ore);
         blockWithItem(ModBlocks.Tin_ore);
@@ -114,5 +139,17 @@ public class ModBlockStateProvider extends BlockStateProvider{
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void slabBlockWithoutItem(RegistryObject<Block> blockRegistryObject, String baseBlock){
+        slabBlock((SlabBlock) blockRegistryObject.get(), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock));
+    }
+
+    private void stairBlockWithoutItem(RegistryObject<Block> blockRegistryObject, String baseBlock){
+        stairsBlock((StairBlock) blockRegistryObject.get(), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock));
+    }
+
+    private void wallBlockWithoutItem(RegistryObject<Block> blockRegistryObject, String baseBlock){
+        wallBlock((WallBlock) blockRegistryObject.get(), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock));
     }
 }

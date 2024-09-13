@@ -2917,5 +2917,413 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_slab_from_stone_cutting_cobbeled_limestone": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_wall_from_stone_cutting_cobbeled_limestone": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_slab": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_wall": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_stair_from_stone_cutting_cobbeled_limestone": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_from_blasting_cobbeled_limestone": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_from_smelting_cobbeled_limestone": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_stair": {
+    "criteria": {
+      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_slab_from_stone_cutting_polished_stone": {
+    "criteria": {
+      "has_polished_stone": "2024-09-12 23:19:09 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_stair": {
+    "criteria": {
+      "has_polished_stone": "2024-09-12 23:19:09 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_stair_from_stone_cutting_polished_stone": {
+    "criteria": {
+      "has_polished_stone": "2024-09-12 23:19:09 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_wall_from_stone_cutting_polished_stone": {
+    "criteria": {
+      "has_polished_stone": "2024-09-12 23:19:09 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_slab": {
+    "criteria": {
+      "has_polished_stone": "2024-09-12 23:19:09 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_wall": {
+    "criteria": {
+      "has_polished_stone": "2024-09-12 23:19:09 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs": {
+    "criteria": {
+      "has_polished_andesite": "2024-09-12 23:19:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab": {
+    "criteria": {
+      "has_polished_andesite": "2024-09-12 23:19:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2024-09-12 23:19:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2024-09-12 23:19:48 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_stairs": {
+    "criteria": {
+      "has_polished_granite": "2024-09-12 23:20:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_stairs_from_polished_granite_stonecutting": {
+    "criteria": {
+      "has_polished_granite": "2024-09-12 23:20:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_slab_from_polished_granite_stonecutting": {
+    "criteria": {
+      "has_polished_granite": "2024-09-12 23:20:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_slab": {
+    "criteria": {
+      "has_polished_granite": "2024-09-12 23:20:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab": {
+    "criteria": {
+      "has_polished_diorite": "2024-09-12 23:20:01 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs": {
+    "criteria": {
+      "has_polished_diorite": "2024-09-12 23:20:01 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2024-09-12 23:20:01 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2024-09-12 23:20:01 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_polished_blackstone_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/polished_blackstone_button": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_wall_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/polished_blackstone_pressure_plate": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_wall": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2024-09-12 23:20:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_slab_from_stone_cutting_polished_limestone": {
+    "criteria": {
+      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_stair": {
+    "criteria": {
+      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_slab": {
+    "criteria": {
+      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_wall": {
+    "criteria": {
+      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_stair_from_stone_cutting_polished_limestone": {
+    "criteria": {
+      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_wall_from_stone_cutting_polished_limestone": {
+    "criteria": {
+      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_stair_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_stair_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_brick_stair_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_slab_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_brick": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_brick_slab_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_brick_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_slab_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_stair": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_slab": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/limestone_brick_wall_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_limestone_wall_from_stone_cutting_limestone": {
+    "criteria": {
+      "has_limestone": "2024-09-12 23:21:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_wall_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-09-12 23:21:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone": {
+    "criteria": {
+      "has_stone": "2024-09-12 23:21:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-09-12 23:21:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_slab_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-09-12 23:21:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/polished_stone_stair_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-09-12 23:21:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/mighty_bronze": {
+    "criteria": {
+      "requirement": "2024-09-12 23:42:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2024-09-13 00:00:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_smelting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2024-09-13 00:00:33 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

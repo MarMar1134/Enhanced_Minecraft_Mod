@@ -43,6 +43,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModItems.Rose_golden_hoe.get(), ModItems.Rose_golden_pickaxe.get(), ModItems.Rose_golden_shovel.get(),
             ModItems.Rose_golden_sword.get());
     public static final List<ItemLike> Cobalt_smeltables= List.of(ModBlocks.Deepslate_cobalt_ore.get());
+    public static final List<ItemLike> Limestone_smeltables = List.of(ModBlocks.Cobbeled_limestone.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -110,6 +111,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(consumer, Rose_gold_nuggets_smeltables, RecipeCategory.MISC, ModItems.Rose_gold_nugget.get(),
                 0.5f, 200, "rose_gold_nugget");
 
+        oreSmelting(consumer, Limestone_smeltables, RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone.get(),
+                0.3f, 100, "limestone");
+        oreBlasting(consumer, Limestone_smeltables, RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone.get(),
+                0.3f, 200, "limestone");
+
         //Ore alloy recipes
         //Bronze
         oreAlloying(consumer, ModItems.Raw_tin.get(), Items.RAW_COPPER, ModItems.Raw_bronze.get());
@@ -156,6 +162,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         itemGrinding(consumer, ModItems.Cobalt.get(), ModItems.Cobalt_dust.get(), 1);
         itemGrinding(consumer, Items.WHITE_WOOL, Items.STRING, 4);
 
+        //Stone cutting recipes
+            //Stone
+            stoneCutting(consumer, Items.STONE, ModBlocks.Polished_stone.get(), 1);
+            stoneCutting(consumer, Items.STONE, ModBlocks.Polished_stone_slab.get(), 2);
+            stoneCutting(consumer, Items.STONE, ModBlocks.Polished_stone_stair.get(), 1);
+            stoneCutting(consumer, Items.STONE, ModBlocks.Polished_stone_wall.get(), 1);
+
+            //Polished stone
+            stoneCutting(consumer, ModBlocks.Polished_stone.get(), ModBlocks.Polished_stone_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Polished_stone.get(), ModBlocks.Polished_stone_stair.get(), 1);
+            stoneCutting(consumer, ModBlocks.Polished_stone.get(), ModBlocks.Polished_stone_wall.get(), 1);
+
+            //Cobbled limestone
+            stoneCutting(consumer, ModBlocks.Cobbeled_limestone.get(), ModBlocks.Cobbeled_limestone_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Cobbeled_limestone.get(), ModBlocks.Cobbeled_limestone_stair.get(), 1);
+            stoneCutting(consumer, ModBlocks.Cobbeled_limestone.get(), ModBlocks.Cobbeled_limestone_wall.get(), 1);
+
+            //Limestone
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Limestone_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Limestone_stair.get(), 1);
+
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Polished_limestone.get(), 1);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Polished_limestone_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Polished_limestone_stair.get(), 1);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Polished_limestone_wall.get(), 1);
+
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Limestone_bricks.get(), 1);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Limestone_brick_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Limestone_brick_stair.get(), 1);
+            stoneCutting(consumer, ModBlocks.Limestone.get(), ModBlocks.Limestone_brick_wall.get(), 1);
+
+            //Polished limestone
+            stoneCutting(consumer, ModBlocks.Polished_limestone.get(), ModBlocks.Polished_limestone_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Polished_limestone.get(), ModBlocks.Polished_limestone_stair.get(), 1);
+            stoneCutting(consumer, ModBlocks.Polished_limestone.get(), ModBlocks.Polished_limestone_wall.get(), 1);
+
+            //Limestone bricks
+            stoneCutting(consumer, ModBlocks.Limestone_bricks.get(), ModBlocks.Limestone_brick_slab.get(), 2);
+            stoneCutting(consumer, ModBlocks.Limestone_bricks.get(), ModBlocks.Limestone_brick_stair.get(), 1);
+            stoneCutting(consumer, ModBlocks.Limestone_bricks.get(), ModBlocks.Limestone_brick_wall.get(), 1);
+
+
         //Shaped and shapeless recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.Empty_mate.get())
                 .pattern("#")
@@ -189,56 +237,170 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT))
                 .unlockedBy(getHasName(ModItems.Wheat_flour.get()), has(ModItems.Wheat_flour.get()))
                 .save(consumer);
+
         //Block recipes
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_furnace.get())
-                .pattern("###")
-                .pattern("# #")
-                .pattern("III")
-                .define('#', Blocks.MUD_BRICKS)
-                .define('I', Blocks.COBBLESTONE)
-                .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
-                .unlockedBy(getHasName(Blocks.MUD_BRICKS), has(Blocks.MUD_BRICKS))
-                .save(consumer);
+            //Polished stone
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_stone.get(), 6)
+                    .pattern("AAA")
+                    .pattern("AAA")
+                    .define('A', Items.STONE)
+                    .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_stone_slab.get(), 6)
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Polished_stone.get())
+                    .unlockedBy(getHasName(ModBlocks.Polished_stone.get()), has(ModBlocks.Polished_stone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_stone_stair.get(), 4)
+                    .pattern("A  ")
+                    .pattern("AA ")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Polished_stone.get())
+                    .unlockedBy(getHasName(ModBlocks.Polished_stone.get()), has(ModBlocks.Polished_stone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_stone_wall.get(), 6)
+                    .pattern("AAA")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Polished_stone.get())
+                    .unlockedBy(getHasName(ModBlocks.Polished_stone.get()), has(ModBlocks.Polished_stone.get()))
+                    .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_alloying_furnace.get())
-                .pattern("###")
-                .pattern("#A#")
-                .pattern("III")
-                .define('#', Blocks.BRICKS)
-                .define('A', ModBlocks.Adobe_furnace.get())
-                .define('I', Blocks.COBBLESTONE)
-                .unlockedBy(getHasName(ModBlocks.Adobe_furnace.get()), has(ModBlocks.Adobe_furnace.get()))
-                .unlockedBy(getHasName(ModItems.Raw_tin.get()), has(ModItems.Raw_tin.get()))
-                .save(consumer);
+            //Cobbled limestone
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Cobbeled_limestone_slab.get(), 6)
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Cobbeled_limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Cobbeled_limestone.get()), has(ModBlocks.Cobbeled_limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Cobbeled_limestone_stair.get(), 4)
+                    .pattern("A  ")
+                    .pattern("AA ")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Cobbeled_limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Cobbeled_limestone.get()), has(ModBlocks.Cobbeled_limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Cobbeled_limestone_wall.get(), 6)
+                    .pattern("AAA")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Cobbeled_limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Cobbeled_limestone.get()), has(ModBlocks.Cobbeled_limestone.get()))
+                    .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Super_alloying_furnace.get())
-                .pattern("###")
-                .pattern("#A#")
-                .pattern("III")
-                .define('#', ModItems.Steel_ingot.get())
-                .define('A', ModBlocks.Adobe_alloying_furnace.get())
-                .define('I', Blocks.COBBLED_DEEPSLATE)
-                .unlockedBy(getHasName(Blocks.COBBLED_DEEPSLATE), has(Blocks.COBBLED_DEEPSLATE))
-                .save(consumer);
+            //Limestone
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone_slab.get(), 6)
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone.get()), has(ModBlocks.Limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone_stair.get(), 4)
+                    .pattern("A  ")
+                    .pattern("AA ")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone.get()), has(ModBlocks.Limestone.get()))
+                    .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Gem_polisher_block.get())
-                .pattern("###")
-                .pattern("AIA")
-                .pattern("AIA")
-                .define('#', ItemTags.PLANKS)
-                .define('A', ItemTags.LOGS_THAT_BURN)
-                .define('I', Blocks.STONE)
-                .unlockedBy(getHasName(Blocks.STONE), has(Blocks.STONE))
-                .save(consumer);
+            //Polished limestone
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_limestone.get(), 6)
+                    .pattern("AAA")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone.get()), has(ModBlocks.Limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_limestone_slab.get(), 6)
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Polished_limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Polished_limestone.get()), has(ModBlocks.Polished_limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_limestone_stair.get(), 4)
+                    .pattern("A  ")
+                    .pattern("AA ")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Polished_limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Polished_limestone.get()), has(ModBlocks.Polished_limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Polished_limestone_wall.get(), 6)
+                    .pattern("AAA")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Polished_limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Polished_limestone.get()), has(ModBlocks.Polished_limestone.get()))
+                    .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Item_grinder_block.get())
-                .pattern("#I#")
-                .pattern("#I#")
-                .pattern("###")
-                .define('#', ItemTags.STONE_CRAFTING_MATERIALS)
-                .define('I', Items.IRON_INGOT)
-                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
-                .save(consumer);
+            //Limestone bricks
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone_bricks.get(), 4)
+                    .pattern("AA")
+                    .pattern("AA")
+                    .define('A', ModBlocks.Limestone.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone.get()), has(ModBlocks.Limestone.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone_brick_slab.get(), 6)
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Limestone_bricks.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone_bricks.get()), has(ModBlocks.Limestone_bricks.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone_brick_stair.get(), 4)
+                    .pattern("A  ")
+                    .pattern("AA ")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Limestone_bricks.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone_bricks.get()), has(ModBlocks.Limestone_bricks.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.Limestone_brick_wall.get(), 6)
+                    .pattern("AAA")
+                    .pattern("AAA")
+                    .define('A', ModBlocks.Limestone_bricks.get())
+                    .unlockedBy(getHasName(ModBlocks.Limestone_bricks.get()), has(ModBlocks.Limestone_bricks.get()))
+                    .save(consumer);
+
+            //Entities
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_furnace.get())
+                    .pattern("###")
+                    .pattern("# #")
+                    .pattern("III")
+                    .define('#', Blocks.MUD_BRICKS)
+                    .define('I', Blocks.COBBLESTONE)
+                    .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE))
+                    .unlockedBy(getHasName(Blocks.MUD_BRICKS), has(Blocks.MUD_BRICKS))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Adobe_alloying_furnace.get())
+                    .pattern("###")
+                    .pattern("#A#")
+                    .pattern("III")
+                    .define('#', Blocks.BRICKS)
+                    .define('A', ModBlocks.Adobe_furnace.get())
+                    .define('I', Blocks.COBBLESTONE)
+                    .unlockedBy(getHasName(ModBlocks.Adobe_furnace.get()), has(ModBlocks.Adobe_furnace.get()))
+                    .unlockedBy(getHasName(ModItems.Raw_tin.get()), has(ModItems.Raw_tin.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Super_alloying_furnace.get())
+                    .pattern("###")
+                    .pattern("#A#")
+                    .pattern("III")
+                    .define('#', ModItems.Steel_ingot.get())
+                    .define('A', ModBlocks.Adobe_alloying_furnace.get())
+                    .define('I', Blocks.COBBLED_DEEPSLATE)
+                    .unlockedBy(getHasName(Blocks.COBBLED_DEEPSLATE), has(Blocks.COBBLED_DEEPSLATE))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Gem_polisher_block.get())
+                    .pattern("###")
+                    .pattern("AIA")
+                    .pattern("AIA")
+                    .define('#', ItemTags.PLANKS)
+                    .define('A', ItemTags.LOGS_THAT_BURN)
+                    .define('I', Blocks.STONE)
+                    .unlockedBy(getHasName(Blocks.STONE), has(Blocks.STONE))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.Item_grinder_block.get())
+                    .pattern("#I#")
+                    .pattern("#I#")
+                    .pattern("###")
+                    .define('#', ItemTags.STONE_CRAFTING_MATERIALS)
+                    .define('I', Items.IRON_INGOT)
+                    .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                    .save(consumer);
 
         //Copper recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Copper_nugget.get(), 9)
@@ -843,8 +1005,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void superOreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, int count){
         superOreAlloy(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, count, ModRecipes.Super_alloying_serializer.get(), "_from_super_alloying");
     }
+    protected static void stoneCutting(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int count){
+        stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "_from_stone_cutting");
+    }
 
     //Recipe builders
+    protected static void stoneCuttingBuilder(Consumer<FinishedRecipe> consumer, ItemLike input, RecipeCategory category, ItemLike result, int count, String recipeName){
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), category, result, count)
+                .unlockedBy(getHasName(input), has(input))
+                .save(consumer, Enhanced_Minecraft.MOD_ID + ":" + getItemName(result) + recipeName + "_" + getItemName(input));
+    }
     protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         Iterator var9 = pIngredients.iterator();
 

@@ -1,6 +1,11 @@
-// 1.20.1	2024-08-29T15:35:26.9617564	Tags for minecraft:block mod id enhanced_minecraft
+// 1.20.1	2024-09-12T22:35:09.660104	Tags for minecraft:block mod id enhanced_minecraft
 67f41822106900cacbc8b813035c140ed3c8e36b data/enhanced_minecraft/tags/blocks/needs_bronze_tool.json
 28172ef567de7a2624d3cdc32ad72f21a4cd50ff data/enhanced_minecraft/tags/blocks/needs_steel_tool.json
-4bf3c865e9c3b7d0a37f5b742ae7757bad546d20 data/minecraft/tags/blocks/mineable/pickaxe.json
+328d59342e0549e5adc3fd1069347294e9f4624b data/forge/tags/blocks/needs_wood_tool.json
+3f491d5e20e6c3ad1bfdbe1d55a6040f7288bbac data/forge/tags/blocks/stone.json
+0ef3c1c7c18ca31acc41b796a3f444b49ca656c8 data/minecraft/tags/blocks/mineable/pickaxe.json
 53b9d494027ec4de9433bd3c19683ad9df6bf545 data/minecraft/tags/blocks/needs_diamond_tool.json
-0381b129b6fd64b99522c18b743f784241e5cb57 data/minecraft/tags/blocks/needs_iron_tool.json
+277196eb788e5666234a4cc5db30950907802f71 data/minecraft/tags/blocks/needs_iron_tool.json
+0b9155d659e83150678070f5822e0f3bc25afd2b data/minecraft/tags/blocks/needs_stone_tool.json
+a3c05f70d9b9a3856e24bea923e70e2084672bff data/minecraft/tags/blocks/slabs.json
+a9596402fc914853de559f21b6ead506783de8cc data/minecraft/tags/blocks/stairs.json

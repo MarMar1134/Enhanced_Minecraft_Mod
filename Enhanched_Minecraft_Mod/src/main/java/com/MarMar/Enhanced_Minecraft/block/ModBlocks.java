@@ -9,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,8 +22,69 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Enhanced_Minecraft.MOD_ID);
 
     //Blocks
+        public static final RegistryObject<Block> Polished_stone = RegisterBlock("polished_stone",
+                () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE)
+                        .requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> Polished_stone_slab = RegisterBlock("polished_stone_slab",
+                () -> new SlabBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_SLAB)
+                        .requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> Polished_stone_stair = RegisterBlock("polished_stone_stair",
+                () -> new StairBlock(ModBlocks.Polished_stone.get().defaultBlockState(),BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_STAIRS)
+                        .requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> Polished_stone_wall = RegisterBlock("polished_stone_wall",
+                () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_WALL)
+                        .requiresCorrectToolForDrops()));
 
-        //New blocks
+        //Limestone
+            //cobbled
+            public static final RegistryObject<Block> Cobbeled_limestone = RegisterBlock("cobbeled_limestone",
+                    () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Cobbeled_limestone_slab = RegisterBlock("cobbeled_limestone_slab",
+                    () -> new SlabBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE_SLAB)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Cobbeled_limestone_stair = RegisterBlock("cobbeled_limestone_stair",
+                    () -> new StairBlock(Cobbeled_limestone.get().defaultBlockState(), BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE_STAIRS)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Cobbeled_limestone_wall = RegisterBlock("cobbeled_limestone_wall",
+                    () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE_WALL)
+                            .requiresCorrectToolForDrops()));
+            //natural
+            public static final RegistryObject<Block> Limestone = RegisterBlock("limestone",
+                    () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Limestone_slab = RegisterBlock("limestone_slab",
+                    () -> new SlabBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_SLAB)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Limestone_stair = RegisterBlock("limestone_stair",
+                    () -> new StairBlock(Limestone.get().defaultBlockState(),BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_STAIRS)
+                            .requiresCorrectToolForDrops()));
+            //polished
+            public static final RegistryObject<Block> Polished_limestone = RegisterBlock("polished_limestone",
+                    () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.Polished_stone.get())
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Polished_limestone_slab = RegisterBlock("polished_limestone_slab",
+                    () -> new SlabBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_SLAB)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Polished_limestone_stair = RegisterBlock("polished_limestone_stair",
+                    () -> new StairBlock(ModBlocks.Polished_limestone.get().defaultBlockState(),BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_STAIRS)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Polished_limestone_wall = RegisterBlock("polished_limestone_wall",
+                    () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_WALL)
+                            .requiresCorrectToolForDrops()));
+            //bricks
+            public static final RegistryObject<Block> Limestone_bricks = RegisterBlock("limestone_brick",
+                    () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICKS)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Limestone_brick_slab = RegisterBlock("limestone_brick_slab",
+                    () -> new SlabBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_SLAB)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Limestone_brick_stair = RegisterBlock("limestone_brick_stair",
+                    () -> new StairBlock(Limestone_bricks.get().defaultBlockState(),BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_STAIRS)
+                            .requiresCorrectToolForDrops()));
+            public static final RegistryObject<Block> Limestone_brick_wall = RegisterBlock("limestone_brick_wall",
+                    () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_WALL)
+                            .requiresCorrectToolForDrops()));
 
         //Ores
         public static final RegistryObject<Block> Tin_ore = RegisterBlock("tin_ore",

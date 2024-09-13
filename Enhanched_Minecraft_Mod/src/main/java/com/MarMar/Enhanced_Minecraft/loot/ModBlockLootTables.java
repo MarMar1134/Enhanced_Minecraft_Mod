@@ -30,6 +30,30 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     }
     @Override
     protected void generate() {
+        //stone
+        this.dropSelf(ModBlocks.Polished_stone.get());
+        this.dropSelf(ModBlocks.Polished_stone_slab.get());
+        this.dropSelf(ModBlocks.Polished_stone_stair.get());
+        this.dropSelf(ModBlocks.Polished_stone_wall.get());
+
+        //Limestone
+        this.add(ModBlocks.Limestone.get(),
+                block -> createLimestoneDrops(ModBlocks.Limestone.get()));
+        this.dropSelf(ModBlocks.Limestone_slab.get());
+        this.dropSelf(ModBlocks.Limestone_stair.get());
+        this.dropSelf(ModBlocks.Cobbeled_limestone.get());
+        this.dropSelf(ModBlocks.Cobbeled_limestone_slab.get());
+        this.dropSelf(ModBlocks.Cobbeled_limestone_stair.get());
+        this.dropSelf(ModBlocks.Cobbeled_limestone_wall.get());
+        this.dropSelf(ModBlocks.Polished_limestone.get());
+        this.dropSelf(ModBlocks.Polished_limestone_slab.get());
+        this.dropSelf(ModBlocks.Polished_limestone_stair.get());
+        this.dropSelf(ModBlocks.Polished_limestone_wall.get());
+        this.dropSelf(ModBlocks.Limestone_bricks.get());
+        this.dropSelf(ModBlocks.Limestone_brick_slab.get());
+        this.dropSelf(ModBlocks.Limestone_brick_stair.get());
+        this.dropSelf(ModBlocks.Limestone_brick_wall.get());
+
         //ores
         this.add(ModBlocks.Tin_ore.get(),
                 block -> createTinOreDrops(ModBlocks.Tin_ore.get()));
@@ -142,6 +166,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.Raw_saphire.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,4))))
                         .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
+    }
+    protected LootTable.Builder createLimestoneDrops(Block pBlock){
+        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModBlocks.Cobbeled_limestone.get())
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,1)))));
     }
     @Override
     protected Iterable<Block> getKnownBlocks() {

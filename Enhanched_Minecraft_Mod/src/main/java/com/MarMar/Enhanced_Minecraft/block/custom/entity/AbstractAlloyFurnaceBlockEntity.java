@@ -2,8 +2,6 @@ package com.MarMar.Enhanced_Minecraft.block.custom.entity;
 
 import com.MarMar.Enhanced_Minecraft.block.custom.AdobeAlloyingFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.recipe.AbstractAlloyRecipe;
-import com.MarMar.Enhanced_Minecraft.recipe.AlloyingFurnaceRecipe;
-import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -18,12 +16,10 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.client.event.CustomizeGuiOverlayEvent;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -82,6 +78,11 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
         }
         return super.getCapability(cap, side);
     }
+    @Override
+    public void invalidateCaps() {
+        super.invalidateCaps();
+        lazyItemHandler.invalidate();
+    }
 
     public int getBurnTime(ItemStack stack) {
         return ForgeHooks.getBurnTime(stack, this.recipeType);
@@ -91,9 +92,10 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     }
 
     public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for(int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
+        SimpleContainer inventory = new SimpleContainer(4);
+
+        for(int i = 0; i < this.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
@@ -101,13 +103,7 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     @Override
     public void onLoad() {
         super.onLoad();
-        lazyItemHandler=LazyOptional.of(() -> itemHandler);
-    }
-
-    @Override
-    public void invalidateCaps() {
-        super.invalidateCaps();
-        lazyItemHandler.invalidate();
+       this.lazyItemHandler=LazyOptional.of(() -> itemHandler);
     }
 
     @Override
@@ -191,12 +187,12 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     }
 
     protected Optional<? extends AbstractAlloyRecipe> getCurrentRecipe() {
-
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
 
-        for(int i = 0; i < itemHandler.getSlots(); i++){
+        for (int i = 0; i < this.itemHandler.getSlots(); i++){
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
+
         return this.level.getRecipeManager().getRecipeFor(this.recipeType, inventory, level);
     }
 

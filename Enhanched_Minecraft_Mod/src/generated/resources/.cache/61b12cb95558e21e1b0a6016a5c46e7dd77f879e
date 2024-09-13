@@ -1,8 +1,9 @@
-// 1.20.1	2024-08-11T18:25:24.9369168	Tags for minecraft:item mod id enhanced_minecraft
+// 1.20.1	2024-09-10T15:39:50.8922242	Tags for minecraft:item mod id enhanced_minecraft
 78aecc5de5e453561e7d91e780837115ce3e2462 data/enhanced_minecraft/tags/items/bronze.json
 22579ecb18517e050c42dc8c8c3d9f0a4ba4b2dc data/enhanced_minecraft/tags/items/polisher_tool.json
 7f18cba5746da8c13300fb13df9a6eacb96e58ad data/enhanced_minecraft/tags/items/raw_gem.json
 9d99fd2451800dfc32c9dc88522f9f64597f4893 data/enhanced_minecraft/tags/items/rose_gold.json
 aaa2d40d9cb6a5b2eb3241097c2c8b9ef72c9c16 data/enhanced_minecraft/tags/items/silver.json
 bd5e44c85310e484022d5daac41dd34e6116e330 data/enhanced_minecraft/tags/items/steel.json
+3f491d5e20e6c3ad1bfdbe1d55a6040f7288bbac data/minecraft/tags/items/stone_crafting_materials.json
 9c0ef1cd0dd239c596cb2b7f29149c51dac331e8 data/minecraft/tags/items/trimmable_armor.json

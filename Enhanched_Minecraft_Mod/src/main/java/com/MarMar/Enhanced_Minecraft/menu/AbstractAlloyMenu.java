@@ -1,7 +1,5 @@
 package com.MarMar.Enhanced_Minecraft.menu;
 
-import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.block.custom.AbstractAlloyFurnaceBlock;
 import com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractAlloyFurnaceBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -9,7 +7,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
@@ -29,13 +26,7 @@ public abstract class AbstractAlloyMenu extends AbstractContainerMenu {
         this.level = inv.player.level();
         this.data = data;
 
-        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 37, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 74, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 56, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
-        });
-
+        createSlots(blockEntity);
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
         addDataSlots(data);
@@ -116,6 +107,15 @@ public abstract class AbstractAlloyMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return true;
+    }
+
+    private void createSlots(AbstractAlloyFurnaceBlockEntity blockEntity){
+        blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 37, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 74, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 56, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
+        });
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

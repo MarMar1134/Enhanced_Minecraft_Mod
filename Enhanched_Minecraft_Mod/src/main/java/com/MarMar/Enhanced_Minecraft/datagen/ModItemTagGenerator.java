@@ -2,6 +2,7 @@ package com.MarMar.Enhanced_Minecraft.datagen;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
 import com.MarMar.Enhanced_Minecraft.Util.ModTags;
+import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -21,6 +22,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        this.tag(ItemTags.STONE_CRAFTING_MATERIALS).add(
+                ModBlocks.Cobbeled_limestone.get().asItem()
+        );
+
         this.tag(ModTags.Items.Bronze_tag).add(ModItems.Bronze_ingot.get())
                 .add(ModItems.Bronze_sword.get()).add(ModItems.Bronze_pickaxe.get())
                 .add(ModItems.Bronze_axe.get()).add(ModItems.Bronze_shovel.get())
