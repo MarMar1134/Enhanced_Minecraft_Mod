@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:blue_orchid"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:light_blue_dye"
+  }
+}

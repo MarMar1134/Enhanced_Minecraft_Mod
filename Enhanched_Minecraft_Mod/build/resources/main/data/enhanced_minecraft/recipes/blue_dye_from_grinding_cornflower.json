@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:cornflower"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:blue_dye"
+  }
+}

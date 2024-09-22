@@ -76,7 +76,7 @@ public class CornCropBlock extends CropBlock {
     }
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.Corn_seeds.get();
+        return ModItems.CORN_SEEDS.get();
     }
 
     @Override

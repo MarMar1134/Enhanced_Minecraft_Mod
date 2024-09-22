@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:peony"
+  },
+  "output": {
+    "count": 6,
+    "item": "minecraft:pink_dye"
+  }
+}

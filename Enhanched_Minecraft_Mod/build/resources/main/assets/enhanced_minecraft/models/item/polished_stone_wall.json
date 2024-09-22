@@ -1,3 +1,6 @@
 {
-  "parent": "enhanced_minecraft:block/polished_stone_wall_inventory"
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "enhanced_minecraft:block/polished_stone"
+  }
 }

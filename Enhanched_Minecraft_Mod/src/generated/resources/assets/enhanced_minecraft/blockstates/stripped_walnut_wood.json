@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "enhanced_minecraft:block/stripped_walnut_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "enhanced_minecraft:block/stripped_walnut_wood"
+    },
+    "axis=z": {
+      "model": "enhanced_minecraft:block/stripped_walnut_wood_horizontal",
+      "x": 90
+    }
+  }
+}

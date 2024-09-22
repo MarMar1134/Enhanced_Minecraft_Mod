@@ -1,17 +1,15 @@
 package com.MarMar.Enhanced_Minecraft.recipe;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.core.NonNullList;
-import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
-import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<SimpleContainer> {
@@ -19,27 +17,27 @@ public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<S
     private final int alloyTime;
 
     public SuperAlloyingRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
-        super(inputs, output, alloyingTime, id, ModRecipes.Super_alloying_type.get());
+        super(inputs, output, alloyingTime, id, ModRecipes.SUPER_ALLOYING_TYPE.get());
         this.inputs = inputs;
         this.alloyTime = alloyingTime;
     }
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return SuperAlloyingRecipe.Serializer.Instance;
+        return SuperAlloyingRecipe.Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return SuperAlloyingRecipe.Type.Instance;
+        return SuperAlloyingRecipe.Type.INSTANCE;
     }
     public static class Type implements RecipeType<SuperAlloyingRecipe>{
-        public static final SuperAlloyingRecipe.Type Instance = new SuperAlloyingRecipe.Type();
+        public static final SuperAlloyingRecipe.Type INSTANCE = new SuperAlloyingRecipe.Type();
         private static String ID = "super_ore_alloying";
     }
     public static class Serializer implements RecipeSerializer<SuperAlloyingRecipe>{
-        public static final SuperAlloyingRecipe.Serializer Instance = new SuperAlloyingRecipe.Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "super_ore_alloying");
+        public static final SuperAlloyingRecipe.Serializer INSTANCE = new SuperAlloyingRecipe.Serializer();
+        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "super_ore_alloying");
 
         public final int defaultAlloyTime = 0;
         @Override

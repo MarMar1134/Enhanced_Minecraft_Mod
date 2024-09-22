@@ -22,7 +22,7 @@ public class GemPolisherMenu extends AbstractContainerMenu {
                 new SimpleContainerData(5));
     }
     public GemPolisherMenu(int containerID, Inventory inv, BlockEntity entity, ContainerData data){
-        super(ModMenuTypes.gem_polisher_menu.get(), containerID);
+        super(ModMenuTypes.GEM_POLISHER_MENU.get(), containerID);
         blockEntity = ((GemPolisherBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
@@ -88,7 +88,7 @@ public class GemPolisherMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.Gem_polisher_block.get());
+                pPlayer, ModBlocks.GEM_POLISHER.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

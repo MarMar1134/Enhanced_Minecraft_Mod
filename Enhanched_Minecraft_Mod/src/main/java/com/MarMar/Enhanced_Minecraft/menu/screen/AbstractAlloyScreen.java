@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.menu.screen;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.menu.AbstractAlloyMenu;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.GuiGraphics;
@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public abstract class AbstractAlloyScreen<T extends AbstractAlloyMenu> extends AbstractContainerScreen<T> {
     private static final ResourceLocation Texture =
-            new ResourceLocation(Enhanced_Minecraft.MOD_ID, "textures/gui/adobe_alloying_furnace_gui.png");
+            new ResourceLocation(Enhanced_Playthrough.MOD_ID, "textures/gui/adobe_alloying_furnace_gui.png");
     public AbstractAlloyScreen(T pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }

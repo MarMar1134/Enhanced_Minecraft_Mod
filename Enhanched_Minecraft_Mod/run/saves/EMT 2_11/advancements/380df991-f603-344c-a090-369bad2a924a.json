@@ -1,0 +1,109 @@
+{
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/peeled_walnut_from_grinding_walnut": {
+    "criteria": {
+      "has_walnut": "2024-09-17 21:29:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
+    "criteria": {
+      "has_beef": "2024-09-17 21:31:31 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2024-09-17 21:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-17 21:28:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-09-17 21:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/peeled_walnut": {
+    "criteria": {
+      "has_walnut": "2024-09-17 21:29:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2024-09-17 21:31:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2024-09-17 21:30:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:taiga": "2024-09-17 21:29:29 -0300",
+      "minecraft:sunflower_plains": "2024-09-17 21:28:17 -0300",
+      "minecraft:river": "2024-09-17 21:28:45 -0300",
+      "minecraft:forest": "2024-09-17 21:31:25 -0300",
+      "minecraft:flower_forest": "2024-09-17 21:28:52 -0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/food/cooked_beef": {
+    "criteria": {
+      "has_beef": "2024-09-17 21:31:31 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+    "criteria": {
+      "has_beef": "2024-09-17 21:31:31 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

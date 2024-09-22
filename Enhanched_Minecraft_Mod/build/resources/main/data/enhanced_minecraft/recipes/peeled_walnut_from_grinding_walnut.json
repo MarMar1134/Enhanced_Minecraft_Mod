@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "enhanced_minecraft:walnut"
+  },
+  "output": {
+    "count": 2,
+    "item": "enhanced_minecraft:peeled_walnut"
+  }
+}

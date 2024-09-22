@@ -60,16 +60,18 @@ public abstract class AbstractAlloyFurnaceBlock extends BaseEntityBlock implemen
                 pLevel.playLocalSound(X_position, Y_position, Z_position, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
             }
 
-            Direction $$7 = pState.getValue(FACING);
-            Direction.Axis $$8 = $$7.getAxis();
-            double $$10 = pRandom.nextDouble() * 0.6 - 0.3;
-            double $$11 = $$8 == Direction.Axis.X ? (double)$$7.getStepX() * 0.52 : $$10;
-            double $$12 = pRandom.nextDouble() * 6.0 / 16.0;
-            double $$13 = $$8 == Direction.Axis.Z ? (double)$$7.getStepZ() * 0.52 : $$10;
-            pLevel.addParticle(ParticleTypes.SMOKE, X_position + $$11, Y_position + $$12, Z_position + $$13, 0.0, 0.0, 0.0);
-            pLevel.addParticle(ParticleTypes.FLAME, X_position + $$11, Y_position + $$12, Z_position + $$13, 0.0, 0.0, 0.0);
+            Direction Face_direction = pState.getValue(FACING);
+            Direction.Axis Face_axis = Face_direction.getAxis();
+            double random_chance = pRandom.nextDouble() * 0.6 - 0.3;
+            double random_X = Face_axis == Direction.Axis.X ? (double)Face_direction.getStepX() * 0.52 : random_chance;
+            double random_Y = pRandom.nextDouble() * 6.0 / 16.0;
+            double random_Z = Face_axis == Direction.Axis.Z ? (double)Face_direction.getStepZ() * 0.52 : random_chance;
+            pLevel.addParticle(ParticleTypes.SMOKE, X_position + random_X, Y_position + random_Y, Z_position + random_Z, 0.0, 0.0, 0.0);
+            pLevel.addParticle(ParticleTypes.FLAME, X_position + random_X, Y_position + random_Y, Z_position + random_Z, 0.0, 0.0, 0.0);
         }
+
     }
+
     @Override
     public RenderShape getRenderShape(BlockState pState) {
         return RenderShape.MODEL;

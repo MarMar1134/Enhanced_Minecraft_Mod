@@ -1,3 +1,6 @@
 {
-  "parent": "enhanced_minecraft:block/cobbeled_limestone_wall_inventory"
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "enhanced_minecraft:block/cobbeled_limestone"
+  }
 }

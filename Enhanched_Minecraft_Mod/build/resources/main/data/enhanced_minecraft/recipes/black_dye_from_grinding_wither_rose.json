@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:wither_rose"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:black_dye"
+  }
+}

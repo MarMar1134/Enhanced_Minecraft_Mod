@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.menu.screen;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.menu.GemPolisherMenu;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.GuiGraphics;
@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class GemPolisherScreen extends AbstractContainerScreen<GemPolisherMenu> {
     private static final ResourceLocation Texture =
-            new ResourceLocation(Enhanced_Minecraft.MOD_ID, "textures/gui/gem_polisher_gui.png");
+            new ResourceLocation(Enhanced_Playthrough.MOD_ID, "textures/gui/gem_polisher_gui.png");
     private final Component Uses = Component.translatable("gui.enhanced_minecraft.gem_polisher_screen.text");
     public GemPolisherScreen(GemPolisherMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);

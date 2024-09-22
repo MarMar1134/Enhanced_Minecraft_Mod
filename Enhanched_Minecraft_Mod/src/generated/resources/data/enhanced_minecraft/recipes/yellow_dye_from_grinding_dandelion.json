@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:dandelion"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:yellow_dye"
+  }
+}

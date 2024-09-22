@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:beetroot"
+  },
+  "output": {
+    "count": 2,
+    "item": "minecraft:red_dye"
+  }
+}

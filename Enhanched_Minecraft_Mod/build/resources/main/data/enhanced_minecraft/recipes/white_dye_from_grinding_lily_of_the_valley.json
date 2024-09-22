@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:lily_of_the_valley"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:white_dye"
+  }
+}

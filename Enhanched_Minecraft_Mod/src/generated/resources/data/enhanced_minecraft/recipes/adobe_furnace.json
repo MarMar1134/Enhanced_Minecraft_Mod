@@ -6,7 +6,7 @@
       "item": "minecraft:mud_bricks"
     },
     "I": {
-      "item": "minecraft:cobblestone"
+      "tag": "minecraft:stone_crafting_materials"
     }
   },
   "pattern": [

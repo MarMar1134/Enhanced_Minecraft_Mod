@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.worldgen.ModBiomeModifiers;
 import com.MarMar.Enhanced_Minecraft.worldgen.ModConfiguredFeatures;
 import com.MarMar.Enhanced_Minecraft.worldgen.ModPlacedFeatures;
@@ -21,6 +21,6 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BUILDER, Set.of(Enhanced_Minecraft.MOD_ID));
+        super(output, registries, BUILDER, Set.of(Enhanced_Playthrough.MOD_ID));
     }
 }

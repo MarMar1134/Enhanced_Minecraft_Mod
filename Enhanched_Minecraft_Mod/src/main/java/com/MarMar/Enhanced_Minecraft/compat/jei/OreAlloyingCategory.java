@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.compat.jei;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.recipe.AlloyingFurnaceRecipe;
 import mezz.jei.api.constants.VanillaTypes;
@@ -16,8 +16,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
 public class OreAlloyingCategory implements IRecipeCategory<AlloyingFurnaceRecipe> {
-    public static final ResourceLocation UID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "ore_alloying");
-    public static final ResourceLocation TEXTURE = new ResourceLocation(Enhanced_Minecraft.MOD_ID,
+    public static final ResourceLocation UID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "ore_alloying");
+    public static final ResourceLocation TEXTURE = new ResourceLocation(Enhanced_Playthrough.MOD_ID,
             "textures/gui/adobe_alloying_furnace_gui.png");
 
     public static final RecipeType<AlloyingFurnaceRecipe> ALLOYING_FURNACE_RECIPE_RECIPE_TYPE =
@@ -28,7 +28,7 @@ public class OreAlloyingCategory implements IRecipeCategory<AlloyingFurnaceRecip
 
     public OreAlloyingCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 82);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.Adobe_alloying_furnace.get()));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.ADOBE_ALLOYING_FURNACE.get()));
     }
 
     @Override

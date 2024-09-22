@@ -1,15 +1,13 @@
 package com.MarMar.Enhanced_Minecraft.recipe;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.core.NonNullList;
-import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
@@ -20,7 +18,7 @@ private final NonNullList<Ingredient> inputs;
 private final int alloyTime;
 
     public AlloyingFurnaceRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
-        super(inputs, output, alloyingTime, id, ModRecipes.Alloying_type.get());
+        super(inputs, output, alloyingTime, id, ModRecipes.ALLOYING_TYPE.get());
         this.inputs = inputs;
         this.alloyTime = alloyingTime;
     }
@@ -35,23 +33,23 @@ private final int alloyTime;
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return Serializer.Instance;
+        return Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return Type.Instance;
+        return Type.INSTANCE;
     }
 
 
 
     public static class Type implements RecipeType<AlloyingFurnaceRecipe>{
-        public static final Type Instance = new Type();
+        public static final Type INSTANCE = new Type();
         private static String ID = "ore_alloying";
     }
     public static class Serializer implements RecipeSerializer<AlloyingFurnaceRecipe>{
-        public static final Serializer Instance = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "ore_alloying");
+        public static final Serializer INSTANCE = new Serializer();
+        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "ore_alloying");
 
         public final int defaultAlloyTime = 0;
         @Override

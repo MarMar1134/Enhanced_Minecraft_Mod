@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:red_tulip"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:red_dye"
+  }
+}

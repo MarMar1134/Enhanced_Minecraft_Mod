@@ -15,6 +15,6 @@ public class MateItem extends BowlFoodItem {
     @Override
     public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pEntityLiving) {
         ItemStack $$3 = super.finishUsingItem(pStack, pLevel, pEntityLiving);
-        return pEntityLiving instanceof Player && ((Player)pEntityLiving).getAbilities().instabuild ? $$3 : new ItemStack(ModItems.Empty_mate.get());
+        return pEntityLiving instanceof Player && ((Player)pEntityLiving).getAbilities().instabuild ? $$3 : new ItemStack(ModItems.EMPTY_MATE.get());
     }
 }

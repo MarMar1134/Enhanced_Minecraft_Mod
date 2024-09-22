@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.recipe;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
@@ -58,20 +58,20 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return GemPolishingRecipe.Serializer.Instance;
+        return GemPolishingRecipe.Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return GemPolishingRecipe.Type.Instance;
+        return GemPolishingRecipe.Type.INSTANCE;
     }
     public static class Type implements RecipeType<GemPolishingRecipe>{
-        public static final Type Instance = new Type();
+        public static final Type INSTANCE = new Type();
         private static String ID = "gem_polishing";
     }
     public static class Serializer implements RecipeSerializer<GemPolishingRecipe>{
-        public static final Serializer Instance = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "gem_polishing");
+        public static final Serializer INSTANCE = new Serializer();
+        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "gem_polishing");
 
         @Override
         public GemPolishingRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {

@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class AdobeFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
     public AdobeFurnaceBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.Adobe_furnace.get(), pPos, pBlockState, RecipeType.SMELTING);
+        super(ModBlockEntities.ADOBE_FURNACE_BLOCK_ENTITY.get(), pPos, pBlockState, RecipeType.SMELTING);
     }
 
     @Override

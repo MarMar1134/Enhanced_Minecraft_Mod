@@ -18,7 +18,7 @@ public class TomatoCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.Tomato_seeds.get();
+        return ModItems.TOMATO_SEEDS.get();
     }
 
     @Override

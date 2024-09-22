@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:oxeye_daisy"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:light_gray_dye"
+  }
+}

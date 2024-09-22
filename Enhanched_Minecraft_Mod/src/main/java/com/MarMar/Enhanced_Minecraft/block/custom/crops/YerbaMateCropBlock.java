@@ -18,7 +18,7 @@ public static final IntegerProperty AGE = BlockStateProperties.AGE_4;
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.Yerba_mate_seeds.get();
+        return ModItems.YERBA_MATE_SEEDS.get();
     }
 
     @Override

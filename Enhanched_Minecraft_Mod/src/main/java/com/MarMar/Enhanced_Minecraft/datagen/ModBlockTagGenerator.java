@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.Util.ModTags;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
@@ -18,102 +18,167 @@ import java.util.concurrent.CompletableFuture;
 public class ModBlockTagGenerator extends BlockTagsProvider {
 
     public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, Enhanced_Minecraft.MOD_ID, existingFileHelper);
+        super(output, lookupProvider, Enhanced_Playthrough.MOD_ID, existingFileHelper);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(BlockTags.SLABS).add(
-                ModBlocks.Polished_stone_slab.get(),
-                ModBlocks.Cobbeled_limestone_slab.get(),
-                ModBlocks.Limestone_slab.get(),
-                ModBlocks.Polished_limestone_slab.get(),
-                ModBlocks.Limestone_brick_slab.get()
+                ModBlocks.POLISHED_STONE_SLAB.get(),
+                ModBlocks.COBBLED_LIMESTONE_SLAB.get(),
+                ModBlocks.LIMESTONE_SLAB.get(),
+                ModBlocks.POLISHED_LIMESTONE_SLAB.get(),
+                ModBlocks.LIMESTONE_BRICK_SLAB.get(),
+                ModBlocks.WALNUT_SLAB.get(),
+                ModBlocks.APPLE_SLAB.get()
         );
 
         this.tag(BlockTags.STAIRS).add(
-                ModBlocks.Polished_stone_stair.get(),
-                ModBlocks.Cobbeled_limestone_stair.get(),
-                ModBlocks.Limestone_stair.get(),
-                ModBlocks.Polished_limestone_stair.get(),
-                ModBlocks.Limestone_brick_stair.get()
+                ModBlocks.POLISHED_STONE_STAIRS.get(),
+                ModBlocks.COBBLED_LIMESTONE_STAIRS.get(),
+                ModBlocks.LIMESTONE_STAIRS.get(),
+                ModBlocks.POLISHED_LIMESTONE_STAIRS.get(),
+                ModBlocks.LIMESTONE_BRICK_STAIRS.get(),
+                ModBlocks.WALNUT_STAIRS.get(),
+                ModBlocks.APPLE_STAIRS.get()
+        );
+
+        this.tag(BlockTags.WALLS).add(
+                ModBlocks.POLISHED_STONE_WALL.get(),
+                ModBlocks.COBBLED_LIMESTONE_WALL.get(),
+                ModBlocks.POLISHED_LIMESTONE_WALL.get(),
+                ModBlocks.LIMESTONE_BRICK_WALL.get()
+        );
+
+        this.tag(BlockTags.FENCES).add(
+                ModBlocks.WALNUT_FENCE.get(),
+                ModBlocks.APPLE_FENCE.get()
+        );
+
+        this.tag(BlockTags.FENCE_GATES).add(
+                ModBlocks.WALNUT_FENCEGATE.get(),
+                ModBlocks.APPLE_FENCEGATE.get()
+        );
+
+        this.tag(BlockTags.BUTTONS).add(
+                ModBlocks.WALNUT_BUTTON.get(),
+                ModBlocks.APPLE_BUTTON.get()
+        );
+
+        this.tag(BlockTags.PRESSURE_PLATES).add(
+                ModBlocks.WALNUT_PRESSURE_PLATE.get(),
+                ModBlocks.APPLE_PRESSURE_PLATE.get()
+        );
+
+        this.tag(BlockTags.LOGS_THAT_BURN).add(
+                ModBlocks.WALNUT_LOG.get(),
+                ModBlocks.STRIPPED_WALNUT_LOG.get(),
+                ModBlocks.WALNUT_WOOD.get(),
+                ModBlocks.STRIPPED_WALNUT_WOOD.get(),
+                ModBlocks.APPLE_LOG.get(),
+                ModBlocks.STRIPPED_APPLE_LOG.get(),
+                ModBlocks.APPLE_WOOD.get(),
+                ModBlocks.STRIPPED_APPLE_WOOD.get()
+        );
+
+        this.tag(BlockTags.LEAVES).add(
+                ModBlocks.WALNUT_LEAVES.get(),
+                ModBlocks.APPLE_LEAVES.get(),
+                ModBlocks.GREEN_APPLE_LEAVES.get()
+        );
+
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+                Blocks.OAK_LEAVES,
+                Blocks.BIRCH_LEAVES,
+                Blocks.SPRUCE_LEAVES,
+                Blocks.DARK_OAK_LEAVES,
+                Blocks.ACACIA_LEAVES,
+                Blocks.JUNGLE_LEAVES,
+                ModBlocks.WALNUT_LEAVES.get(),
+                ModBlocks.APPLE_LEAVES.get(),
+                ModBlocks.GREEN_APPLE_LEAVES.get()
+        );
+
+        this.tag(BlockTags.PLANKS).add(
+                ModBlocks.WALNUT_PLANKS.get(),
+                ModBlocks.APPLE_PLANKS.get()
         );
 
         this.tag(Tags.Blocks.STONE).add(
-                ModBlocks.Cobbeled_limestone.get()
+                ModBlocks.COBBLED_LIMESTONE.get()
         );
 
-        this.tag((BlockTags.MINEABLE_WITH_PICKAXE)).add(
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 //Stone
-                ModBlocks.Polished_stone.get(),
-                ModBlocks.Polished_stone_slab.get(),
-                ModBlocks.Polished_stone_stair.get(),
-                ModBlocks.Polished_stone_wall.get(),
+                ModBlocks.POLISHED_STONE.get(),
+                ModBlocks.POLISHED_STONE_SLAB.get(),
+                ModBlocks.POLISHED_STONE_STAIRS.get(),
+                ModBlocks.POLISHED_STONE_WALL.get(),
 
                 //Limestone
-                ModBlocks.Limestone.get(),
-                ModBlocks.Limestone_slab.get(),
-                ModBlocks.Limestone_stair.get(),
+                ModBlocks.LIMESTONE.get(),
+                ModBlocks.LIMESTONE_SLAB.get(),
+                ModBlocks.LIMESTONE_STAIRS.get(),
 
-                ModBlocks.Cobbeled_limestone.get(),
-                ModBlocks.Cobbeled_limestone_slab.get(),
-                ModBlocks.Cobbeled_limestone_stair.get(),
-                ModBlocks.Cobbeled_limestone_wall.get(),
+                ModBlocks.COBBLED_LIMESTONE.get(),
+                ModBlocks.COBBLED_LIMESTONE_SLAB.get(),
+                ModBlocks.COBBLED_LIMESTONE_STAIRS.get(),
+                ModBlocks.COBBLED_LIMESTONE_WALL.get(),
 
-                ModBlocks.Polished_limestone.get(),
-                ModBlocks.Polished_limestone_slab.get(),
-                ModBlocks.Polished_limestone_stair.get(),
-                ModBlocks.Polished_limestone_wall.get(),
+                ModBlocks.POLISHED_LIMESTONE.get(),
+                ModBlocks.POLISHED_LIMESTONE_SLAB.get(),
+                ModBlocks.POLISHED_LIMESTONE_STAIRS.get(),
+                ModBlocks.POLISHED_LIMESTONE_WALL.get(),
 
-                ModBlocks.Limestone_bricks.get(),
-                ModBlocks.Limestone_brick_slab.get(),
-                ModBlocks.Limestone_brick_stair.get(),
-                ModBlocks.Limestone_brick_wall.get(),
+                ModBlocks.LIMESTONE_BRICKS.get(),
+                ModBlocks.LIMESTONE_BRICK_SLAB.get(),
+                ModBlocks.LIMESTONE_BRICK_STAIRS.get(),
+                ModBlocks.LIMESTONE_BRICK_WALL.get(),
 
                 //Entities
-                ModBlocks.Adobe_furnace.get(),
-                ModBlocks.Adobe_alloying_furnace.get(),
-                ModBlocks.Super_alloying_furnace.get(),
-                ModBlocks.Gem_polisher_block.get(),
+                ModBlocks.ADOBE_FURNACE.get(),
+                ModBlocks.ADOBE_ALLOYING_FURNACE.get(),
+                ModBlocks.SUPER_ALLOYING_FURNACE.get(),
+                ModBlocks.GEM_POLISHER.get(),
 
                 //Ores
-                ModBlocks.Sulfur_ore.get(),
-                ModBlocks.Tin_ore.get(),
-                ModBlocks.Silver_ore.get(),
-                ModBlocks.Rubi_ore.get(),
-                ModBlocks.Saphire_ore.get(),
-                ModBlocks.Deepslate_tin_ore.get(),
-                ModBlocks.Deepslate_silver_ore.get(),
-                ModBlocks.Deepslate_rubi_ore.get(),
-                ModBlocks.Deepslate_saphire_ore.get(),
-                ModBlocks.Deepslate_sulfur_ore.get(),
-                ModBlocks.Nether_sulfur_ore.get(),
-                ModBlocks.Deepslate_cobalt_ore.get()
+                ModBlocks.SULFUR_ORE.get(),
+                ModBlocks.TIN_ORE.get(),
+                ModBlocks.SILVER_ORE.get(),
+                ModBlocks.RUBI_ORE.get(),
+                ModBlocks.SAPHIRE_ORE.get(),
+                ModBlocks.DEEPSLATE_TIN_ORE.get(),
+                ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                ModBlocks.DEEPSLATE_RUBI_ORE.get(),
+                ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(),
+                ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
+                ModBlocks.NETHER_SULFUR_ORE.get(),
+                ModBlocks.DEEPSLATE_COBALT_ORE.get()
         );
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL).add(
-                ModBlocks.Polished_stone.get(),
-                ModBlocks.Polished_stone_slab.get(),
-                ModBlocks.Polished_stone_stair.get(),
-                ModBlocks.Polished_stone_wall.get()
+                ModBlocks.POLISHED_STONE.get(),
+                ModBlocks.POLISHED_STONE_SLAB.get(),
+                ModBlocks.POLISHED_STONE_STAIRS.get(),
+                ModBlocks.POLISHED_STONE_WALL.get()
         );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(
-                ModBlocks.Limestone.get(),
-                ModBlocks.Limestone_slab.get(),
-                ModBlocks.Limestone_stair.get(),
-                ModBlocks.Cobbeled_limestone.get(),
-                ModBlocks.Cobbeled_limestone_slab.get(),
-                ModBlocks.Cobbeled_limestone_stair.get(),
-                ModBlocks.Cobbeled_limestone_wall.get(),
-                ModBlocks.Polished_limestone.get(),
-                ModBlocks.Polished_limestone_slab.get(),
-                ModBlocks.Polished_limestone_stair.get(),
-                ModBlocks.Polished_limestone_wall.get(),
-                ModBlocks.Limestone_bricks.get(),
-                ModBlocks.Limestone_brick_slab.get(),
-                ModBlocks.Limestone_brick_stair.get(),
-                ModBlocks.Limestone_brick_wall.get()
+                ModBlocks.LIMESTONE.get(),
+                ModBlocks.LIMESTONE_SLAB.get(),
+                ModBlocks.LIMESTONE_STAIRS.get(),
+                ModBlocks.COBBLED_LIMESTONE.get(),
+                ModBlocks.COBBLED_LIMESTONE_SLAB.get(),
+                ModBlocks.COBBLED_LIMESTONE_STAIRS.get(),
+                ModBlocks.COBBLED_LIMESTONE_WALL.get(),
+                ModBlocks.POLISHED_LIMESTONE.get(),
+                ModBlocks.POLISHED_LIMESTONE_SLAB.get(),
+                ModBlocks.POLISHED_LIMESTONE_STAIRS.get(),
+                ModBlocks.POLISHED_LIMESTONE_WALL.get(),
+                ModBlocks.LIMESTONE_BRICKS.get(),
+                ModBlocks.LIMESTONE_BRICK_SLAB.get(),
+                ModBlocks.LIMESTONE_BRICK_STAIRS.get(),
+                ModBlocks.LIMESTONE_BRICK_WALL.get()
         );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZE_TOOL).add(
@@ -127,9 +192,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
-                ModBlocks.Silver_ore.get(),
-                ModBlocks.Saphire_ore.get(),
-                ModBlocks.Rubi_ore.get()
+                ModBlocks.SILVER_ORE.get(),
+                ModBlocks.SAPHIRE_ORE.get(),
+                ModBlocks.RUBI_ORE.get()
         );
 
         this.tag(ModTags.Blocks.NEEDS_STEEL_TOOL).add(
@@ -162,15 +227,30 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 Blocks.POLISHED_DEEPSLATE_SLAB,
                 Blocks.POLISHED_DEEPSLATE_STAIRS,
                 Blocks.POLISHED_DEEPSLATE_WALL,
-                ModBlocks.Deepslate_tin_ore.get(),
-                ModBlocks.Deepslate_sulfur_ore.get(),
-                ModBlocks.Deepslate_silver_ore.get(),
-                ModBlocks.Deepslate_rubi_ore.get(),
-                ModBlocks.Deepslate_saphire_ore.get()
+                ModBlocks.DEEPSLATE_TIN_ORE.get(),
+                ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
+                ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                ModBlocks.DEEPSLATE_RUBI_ORE.get(),
+                ModBlocks.DEEPSLATE_SAPHIRE_ORE.get()
         );
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
-                ModBlocks.Deepslate_cobalt_ore.get()
+                ModBlocks.DEEPSLATE_COBALT_ORE.get()
+        );
+
+        this.tag(Tags.Blocks.ORES).add(
+                ModBlocks.SULFUR_ORE.get(),
+                ModBlocks.TIN_ORE.get(),
+                ModBlocks.SILVER_ORE.get(),
+                ModBlocks.RUBI_ORE.get(),
+                ModBlocks.SAPHIRE_ORE.get(),
+                ModBlocks.DEEPSLATE_TIN_ORE.get(),
+                ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                ModBlocks.DEEPSLATE_RUBI_ORE.get(),
+                ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(),
+                ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
+                ModBlocks.NETHER_SULFUR_ORE.get(),
+                ModBlocks.DEEPSLATE_COBALT_ORE.get()
         );
     }
 }

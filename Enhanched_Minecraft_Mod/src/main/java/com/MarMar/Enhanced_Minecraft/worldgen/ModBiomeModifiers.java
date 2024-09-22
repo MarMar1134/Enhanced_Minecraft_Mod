@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.worldgen;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -13,7 +13,17 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers {
+    //Trees
+    public static final ResourceKey<BiomeModifier> ADD_WALNUT = registerKey("add_walnut");
+    public static final ResourceKey<BiomeModifier> ADD_APPLE = registerKey("add_apple");
+
+
+    //Nature
     public static final ResourceKey<BiomeModifier> ADD_LIMESTONE = registerKey("add_limestone");
+    public static final ResourceKey<BiomeModifier> ADD_GRAVEL_MUD = registerKey("add_gravel_mud");
+    public static final ResourceKey<BiomeModifier> ADD_SAND_MUD = registerKey("add_sand_mud");
+
+    //Ores
     public static final ResourceKey<BiomeModifier> ADD_TIN_ORE = registerKey("add_tin_ore");
     public static final ResourceKey<BiomeModifier> ADD_EXTRA_TIN_ORE = registerKey("add_extra_tin_ore");
     public static final ResourceKey<BiomeModifier> ADD_SILVER_ORE = registerKey("add_silver_ore");
@@ -26,6 +36,30 @@ public class ModBiomeModifiers {
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
+
+        //Trees
+            //Walnut
+            context.register(ADD_WALNUT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                    biomes.getOrThrow(BiomeTags.IS_TAIGA),
+                    HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.WALNUT_PLACED_KEY)),
+                    GenerationStep.Decoration.VEGETAL_DECORATION));
+
+            //Apple
+            context.register(ADD_APPLE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                    biomes.getOrThrow(BiomeTags.IS_FOREST),
+                    HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.APPLE_PLACED_KEY)),
+                    GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        //Mud
+        context.register(ADD_GRAVEL_MUD, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_RIVER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.GRAVEL_MUD_PLACED_KEY)),
+                GenerationStep.Decoration.LAKES));
+
+        context.register(ADD_SAND_MUD, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_RIVER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SAND_MUD_PLACED_KEY)),
+                GenerationStep.Decoration.LAKES));
 
         //Limestone
         context.register(ADD_LIMESTONE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
@@ -80,6 +114,6 @@ public class ModBiomeModifiers {
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
-        return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(Enhanced_Minecraft.MOD_ID, name));
+        return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(Enhanced_Playthrough.MOD_ID, name));
     }
 }

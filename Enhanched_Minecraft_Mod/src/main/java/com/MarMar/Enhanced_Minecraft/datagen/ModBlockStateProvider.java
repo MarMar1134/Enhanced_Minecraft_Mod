@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.datagen;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.block.custom.crops.*;
 import net.minecraft.data.PackOutput;
@@ -9,7 +9,9 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
@@ -17,57 +19,130 @@ import java.util.function.Function;
 public class ModBlockStateProvider extends BlockStateProvider{
 
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, Enhanced_Minecraft.MOD_ID, exFileHelper);
+        super(output, Enhanced_Playthrough.MOD_ID, exFileHelper);
     }
 
     @Override
     protected void registerStatesAndModels() {
         //Stone
-        blockWithItem(ModBlocks.Polished_stone);
-        slabBlockWithoutItem(ModBlocks.Polished_stone_slab, "polished_stone");
-        stairBlockWithoutItem(ModBlocks.Polished_stone_stair, "polished_stone");
-        wallBlockWithoutItem(ModBlocks.Polished_stone_wall, "polished_stone");
+        blockWithItem(ModBlocks.POLISHED_STONE);
+        slabBlock((SlabBlock) ModBlocks.POLISHED_STONE_SLAB.get(), blockTexture(ModBlocks.POLISHED_STONE.get()), blockTexture(ModBlocks.POLISHED_STONE.get()));
+        stairsBlock((StairBlock) ModBlocks.POLISHED_STONE_STAIRS.get(), blockTexture(ModBlocks.POLISHED_STONE.get()));
+        wallBlock((WallBlock) ModBlocks.POLISHED_STONE_WALL.get(), blockTexture(ModBlocks.POLISHED_STONE.get()));
 
         //Limestone
-        blockWithItem(ModBlocks.Cobbeled_limestone);
-        slabBlockWithoutItem(ModBlocks.Cobbeled_limestone_slab, "cobbeled_limestone");
-        stairBlockWithoutItem(ModBlocks.Cobbeled_limestone_stair, "cobbeled_limestone");
-        wallBlockWithoutItem(ModBlocks.Cobbeled_limestone_wall, "cobbeled_limestone");
+            //cobbled
+            blockWithItem(ModBlocks.COBBLED_LIMESTONE);
+            slabBlock((SlabBlock) ModBlocks.COBBLED_LIMESTONE_SLAB.get(), blockTexture(ModBlocks.COBBLED_LIMESTONE.get()), blockTexture(ModBlocks.COBBLED_LIMESTONE.get()));
+            stairsBlock((StairBlock) ModBlocks.COBBLED_LIMESTONE_STAIRS.get(), blockTexture(ModBlocks.COBBLED_LIMESTONE.get()));
+            wallBlock((WallBlock) ModBlocks.COBBLED_LIMESTONE_WALL.get(), blockTexture(ModBlocks.COBBLED_LIMESTONE.get()));
 
-        blockWithItem(ModBlocks.Limestone);
-        slabBlockWithoutItem(ModBlocks.Limestone_slab, "limestone");
-        stairBlockWithoutItem(ModBlocks.Limestone_stair, "limestone");
+            //natural
+            blockWithItem(ModBlocks.LIMESTONE);
+            slabBlock((SlabBlock) ModBlocks.LIMESTONE_SLAB.get(), blockTexture(ModBlocks.LIMESTONE.get()), blockTexture(ModBlocks.LIMESTONE.get()));
+            stairsBlock((StairBlock) ModBlocks.LIMESTONE_STAIRS.get(), blockTexture(ModBlocks.LIMESTONE.get()));
 
-        blockWithItem(ModBlocks.Polished_limestone);
-        slabBlockWithoutItem(ModBlocks.Polished_limestone_slab, "polished_limestone");
-        stairBlockWithoutItem(ModBlocks.Polished_limestone_stair, "polished_limestone");
-        wallBlockWithoutItem(ModBlocks.Polished_limestone_wall, "polished_limestone");
+            //polished
+            blockWithItem(ModBlocks.POLISHED_LIMESTONE);
+            slabBlock((SlabBlock) ModBlocks.POLISHED_LIMESTONE_SLAB.get(), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()));
+            stairsBlock((StairBlock) ModBlocks.POLISHED_LIMESTONE_STAIRS.get(), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()));
+            wallBlock((WallBlock) ModBlocks.POLISHED_LIMESTONE_WALL.get(), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()));
 
-        blockWithItem(ModBlocks.Limestone_bricks);
-        slabBlockWithoutItem(ModBlocks.Limestone_brick_slab, "limestone_brick");
-        stairBlockWithoutItem(ModBlocks.Limestone_brick_stair, "limestone_brick");
-        wallBlockWithoutItem(ModBlocks.Limestone_brick_wall, "limestone_brick");
+            //bricks
+            blockWithItem(ModBlocks.LIMESTONE_BRICKS);
+            slabBlock((SlabBlock) ModBlocks.LIMESTONE_BRICK_SLAB.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
+            stairsBlock((StairBlock) ModBlocks.LIMESTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
+            wallBlock((WallBlock) ModBlocks.LIMESTONE_BRICK_WALL.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
+
+        //wood
+            //walnut
+            saplingBlock(ModBlocks.WALNUT_SAPLING);
+
+            logBlock((RotatedPillarBlock) ModBlocks.WALNUT_LOG.get());
+            blockItem(ModBlocks.WALNUT_LOG);
+
+            axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_WALNUT_LOG.get(), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()),
+                    new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/stripped_walnut_log_top"));
+            blockItem(ModBlocks.STRIPPED_WALNUT_LOG);
+
+            axisBlock((RotatedPillarBlock) ModBlocks.WALNUT_WOOD.get(), blockTexture(ModBlocks.WALNUT_LOG.get()), blockTexture(ModBlocks.WALNUT_LOG.get()));
+            blockItem(ModBlocks.WALNUT_WOOD);
+
+            axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_WALNUT_WOOD.get(), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()));
+            blockItem(ModBlocks.STRIPPED_WALNUT_WOOD);
+
+            leavesBlock(ModBlocks.WALNUT_LEAVES);
+
+            blockWithItem(ModBlocks.WALNUT_PLANKS);
+
+            doorBlockWithRenderType((DoorBlock) ModBlocks.WALNUT_DOOR.get(), modLoc("block/walnut_door_bottom"), modLoc("block/walnut_door_top"), "cutout");
+
+            trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.WALNUT_TRAPDOOR.get(), modLoc("block/walnut_trapdoor"), true, "cutout");
+
+            buttonBlock((ButtonBlock) ModBlocks.WALNUT_BUTTON.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+
+            pressurePlateBlock((PressurePlateBlock) ModBlocks.WALNUT_PRESSURE_PLATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+
+            slabBlock((SlabBlock) ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+            stairsBlock((StairBlock) ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+            fenceBlock((FenceBlock) ModBlocks.WALNUT_FENCE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+            fenceGateBlock((FenceGateBlock) ModBlocks.WALNUT_FENCEGATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+
+            //Apple
+            saplingBlock(ModBlocks.APPLE_SAPLING);
+            saplingBlock(ModBlocks.GREEN_APPLE_SAPLING);
+
+            logBlock((RotatedPillarBlock) ModBlocks.APPLE_LOG.get());
+            blockItem(ModBlocks.APPLE_LOG);
+
+            axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_APPLE_LOG.get(), blockTexture(ModBlocks.STRIPPED_APPLE_LOG.get()),
+                    new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/stripped_apple_log_top"));
+            blockItem(ModBlocks.STRIPPED_APPLE_LOG);
+
+            axisBlock((RotatedPillarBlock) ModBlocks.APPLE_WOOD.get(), blockTexture(ModBlocks.APPLE_LOG.get()), blockTexture(ModBlocks.APPLE_LOG.get()));
+            blockItem(ModBlocks.APPLE_WOOD);
+
+            axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_APPLE_WOOD.get(), blockTexture(ModBlocks.STRIPPED_APPLE_LOG.get()), blockTexture(ModBlocks.STRIPPED_APPLE_LOG.get()));
+            blockItem(ModBlocks.STRIPPED_APPLE_WOOD);
+
+            leavesBlock(ModBlocks.APPLE_LEAVES);
+            leavesBlock(ModBlocks.GREEN_APPLE_LEAVES);
+
+            blockWithItem(ModBlocks.APPLE_PLANKS);
+
+            doorBlockWithRenderType((DoorBlock) ModBlocks.APPLE_DOOR.get(), modLoc("block/apple_door_bottom"), modLoc("block/apple_door_top"), "cutout");
+
+            trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.APPLE_TRAPDOOR.get(), modLoc("block/apple_trapdoor"), true, "cutout");
+
+            buttonBlock((ButtonBlock) ModBlocks.APPLE_BUTTON.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()));
+
+            pressurePlateBlock((PressurePlateBlock) ModBlocks.APPLE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()));
+
+            slabBlock((SlabBlock) ModBlocks.APPLE_SLAB.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()), blockTexture(ModBlocks.APPLE_PLANKS.get()));
+            stairsBlock((StairBlock) ModBlocks.APPLE_STAIRS.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()));
+            fenceBlock((FenceBlock) ModBlocks.APPLE_FENCE.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()));
+            fenceGateBlock((FenceGateBlock) ModBlocks.APPLE_FENCEGATE.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()));
 
         //ores
-        blockWithItem(ModBlocks.Deepslate_tin_ore);
-        blockWithItem(ModBlocks.Tin_ore);
-        blockWithItem(ModBlocks.Deepslate_sulfur_ore);
-        blockWithItem(ModBlocks.Sulfur_ore);
-        blockWithItem(ModBlocks.Nether_sulfur_ore);
-        blockWithItem(ModBlocks.Silver_ore);
-        blockWithItem(ModBlocks.Deepslate_silver_ore);
-        blockWithItem(ModBlocks.Deepslate_cobalt_ore);
-        blockWithItem(ModBlocks.Rubi_ore);
-        blockWithItem(ModBlocks.Saphire_ore);
-        blockWithItem(ModBlocks.Deepslate_rubi_ore);
-        blockWithItem(ModBlocks.Deepslate_saphire_ore);
+        blockWithItem(ModBlocks.DEEPSLATE_TIN_ORE);
+        blockWithItem(ModBlocks.TIN_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SULFUR_ORE);
+        blockWithItem(ModBlocks.SULFUR_ORE);
+        blockWithItem(ModBlocks.NETHER_SULFUR_ORE);
+        blockWithItem(ModBlocks.SILVER_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SILVER_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_COBALT_ORE);
+        blockWithItem(ModBlocks.RUBI_ORE);
+        blockWithItem(ModBlocks.SAPHIRE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBI_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SAPHIRE_ORE);
 
         //Crops
-        makeYerbaMateCrop((CropBlock) ModBlocks.Yerba_mate_crop.get(), "yerba_mate_stage","yerba_mate_stage");
-        makeZapalloCrop((CropBlock) ModBlocks.Zapallo_crop.get(), "zapallo_stage","zapallo_stage");
-        makeEggplantCrop((CropBlock) ModBlocks.Eggplant_crop.get(), "eggplant_stage","eggplant_stage");
-        makeTomatoCrop((CropBlock) ModBlocks.Tomato_crop.get(), "tomato_stage","tomato_stage");
-        makeCornCrop((CropBlock) ModBlocks.Corn_crop.get(), "corn_stage","corn_stage");
+        makeYerbaMateCrop((CropBlock) ModBlocks.YERBA_MATE_CROP.get(), "yerba_mate_stage","yerba_mate_stage");
+        makeZapalloCrop((CropBlock) ModBlocks.ZAPALLO_CROP.get(), "zapallo_stage","zapallo_stage");
+        makeEggplantCrop((CropBlock) ModBlocks.EGGPLANT_CROP.get(), "eggplant_stage","eggplant_stage");
+        makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage","tomato_stage");
+        makeCornCrop((CropBlock) ModBlocks.CORN_CROP.get(), "corn_stage","corn_stage");
     }
     //Crops
         //Yerba mate
@@ -79,7 +154,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
         private ConfiguredModel[] yerbaMateStates(BlockState state, CropBlock block, String modelName, String textureName) {
             ConfiguredModel[] models = new ConfiguredModel[1];
             models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((YerbaMateCropBlock) block).getAgeProperty()),
-                    new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + textureName + state.getValue(((YerbaMateCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                    new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/" + textureName + state.getValue(((YerbaMateCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
             return models;
         }
@@ -92,7 +167,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
         private ConfiguredModel[] zapalloStates(BlockState state, CropBlock block, String modelName, String textureName) {
             ConfiguredModel[] models = new ConfiguredModel[1];
             models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((ZapalloCropBlock) block).getAgeProperty()),
-                    new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + textureName + state.getValue(((ZapalloCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                    new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/" + textureName + state.getValue(((ZapalloCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
             return models;
         }
@@ -105,7 +180,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
     private ConfiguredModel[] eggplantStates(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((EggplantCropBlock) block).getAgeProperty()),
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + textureName + state.getValue(((EggplantCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/" + textureName + state.getValue(((EggplantCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }
@@ -118,7 +193,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
     private ConfiguredModel[] tomatoStates(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TomatoCropBlock) block).getAgeProperty()),
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + textureName + state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/" + textureName + state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }
@@ -132,7 +207,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
     private ConfiguredModel[] cornStates(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((CornCropBlock) block).getAgeProperty()),
-                new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + textureName + state.getValue(((CornCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                new ResourceLocation(Enhanced_Playthrough.MOD_ID, "block/" + textureName + state.getValue(((CornCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }
@@ -140,16 +215,36 @@ public class ModBlockStateProvider extends BlockStateProvider{
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
-
-    private void slabBlockWithoutItem(RegistryObject<Block> blockRegistryObject, String baseBlock){
-        slabBlock((SlabBlock) blockRegistryObject.get(), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock));
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void stairBlockWithoutItem(RegistryObject<Block> blockRegistryObject, String baseBlock){
-        stairsBlock((StairBlock) blockRegistryObject.get(), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock));
+    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(Enhanced_Playthrough.MOD_ID +
+                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+    }
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void wallBlockWithoutItem(RegistryObject<Block> blockRegistryObject, String baseBlock){
-        wallBlock((WallBlock) blockRegistryObject.get(), new ResourceLocation(Enhanced_Minecraft.MOD_ID, "block/" + baseBlock));
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
     }
 }

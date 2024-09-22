@@ -1,0 +1,422 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-17 22:31:00 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:taiga": "2024-09-22 20:07:09 -0300",
+      "minecraft:sunflower_plains": "2024-09-17 22:31:02 -0300",
+      "minecraft:beach": "2024-09-22 20:10:20 -0300",
+      "minecraft:river": "2024-09-17 22:31:25 -0300",
+      "minecraft:forest": "2024-09-22 20:07:22 -0300",
+      "minecraft:flower_forest": "2024-09-17 22:31:41 -0300"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2024-09-19 15:31:34 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2024-09-19 15:31:40 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/apple_pressure_plate": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_stair": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_door": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_fence": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_fencegate": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/apple_button": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_trapdoor": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_slab": {
+    "criteria": {
+      "has_apple_planks": "2024-09-19 15:31:53 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_trapdoor": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jungle_sign": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_door": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jungle_fence": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_pressure_plate": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_button": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_slab": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_stairs": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-09-19 15:32:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/walnut_button": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/peeled_walnut_from_grinding_walnut": {
+    "criteria": {
+      "has_walnut": "2024-09-22 20:08:01 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_wood": {
+    "criteria": {
+      "has_apple_log": "2024-09-22 20:06:44 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/apple_planks": {
+    "criteria": {
+      "has_apple_log": "2024-09-22 20:06:44 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/raw_steel_from_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2024-09-22 20:06:39 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2024-09-22 20:09:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2024-09-22 20:06:39 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/white_dye_from_grinding_bone_meal": {
+    "criteria": {
+      "has_bone_meal": "2024-09-22 20:09:35 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_iron_ingot": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_slab": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/walnut_pressure_plate": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_wood": {
+    "criteria": {
+      "has_walnut_log": "2024-09-22 20:08:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-09-22 20:05:39 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/peeled_walnut": {
+    "criteria": {
+      "has_walnut": "2024-09-22 20:08:01 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_planks": {
+    "criteria": {
+      "has_walnut_log": "2024-09-22 20:08:57 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_stair": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_wood": {
+    "criteria": {
+      "has_log": "2024-09-22 20:06:39 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_iron_ingot_and_coal": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_trapdoor": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_the_recipe": "2024-09-22 20:09:35 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_fencegate": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_fence": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2024-09-22 20:08:52 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/bone_meal": {
+    "criteria": {
+      "has_bone_meal": "2024-09-22 20:09:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/building_blocks/walnut_door": {
+    "criteria": {
+      "has_walnut_planks": "2024-09-22 20:09:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/raw_steel_from_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-09-22 20:08:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2024-09-22 20:08:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2024-09-22 20:09:35 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

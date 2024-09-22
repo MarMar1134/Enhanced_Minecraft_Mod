@@ -25,7 +25,6 @@ import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -34,7 +33,6 @@ import java.util.Optional;
 
 public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
-    private final EnergyStorage energyStorage = new EnergyStorage(20000, 20000, 200);
     private static final int INPUT_SLOT = 0;
     private static final int FUEL_SLOT = 1;
 
@@ -46,7 +44,7 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 250;
 
     public GrinderBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.Item_grinder_block.get(), pPos, pBlockState);
+        super(ModBlockEntities.ITEM_GRINDER_BLOCK_ENTITY.get(), pPos, pBlockState);
         this.Data = new ContainerData() {
             @Override
             public int get(int i) {
@@ -145,36 +143,43 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
             this.level.sendBlockUpdated(this.worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
     }
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
+        if (isBurning()){
+            if (hasRecipe()){
+                increaseCraftingProgress();
 
-
-        if(!isBurning()){
-            if (hasRecipe()) {
-                if(canBurn(this.itemHandler.getStackInSlot(FUEL_SLOT))){
-                    maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(FUEL_SLOT));
-                    this.burnTime = this.maxBurnTime;
-                    this.itemHandler.getStackInSlot(FUEL_SLOT).shrink(1);
-                    sendUpdate();
-                }
+                sendUpdate();
             } else {
                 resetProgress();
             }
-        } else if (hasRecipe()){
-
             decreaseBurnTime();
-            increaseCraftingProgress();
 
             sendUpdate();
-            setChanged(pLevel, pPos, pState);
-            if (hasProcessFinished()) {
-                craftItem();
-                resetProgress();
+        } else if (hasRecipe()){
+            if (canBurn(this.itemHandler.getStackInSlot(FUEL_SLOT))){
+                burn();
+
+                sendUpdate();
             }
         } else {
-            do{
-                decreaseBurnTime();
-            } while (burnTime < 0);
             resetProgress();
+
+            sendUpdate();
         }
+
+        if (hasProcessFinished()){
+            craftItem();
+
+            resetProgress();
+
+            sendUpdate();
+        }
+
+        setChanged(pLevel, pPos, pState);
+    }
+    private void burn(){
+        this.maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(FUEL_SLOT));
+        this.burnTime = this.maxBurnTime;
+        this.itemHandler.getStackInSlot(FUEL_SLOT).shrink(1);
     }
     private boolean isBurning(){
         return burnTime > 0;
@@ -182,9 +187,7 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     private void decreaseBurnTime(){
         burnTime -= 2;
     }
-    private void hasAnalogSignal() {
-        return;
-    }
+
     private boolean hasRecipe() {
         Optional<GrindingRecipe> recipe = getCurrentRecipe();
 
@@ -204,7 +207,7 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
 
-        return this.level.getRecipeManager().getRecipeFor(ModRecipes.Grinding_type.get(), inventory, level);
+        return this.level.getRecipeManager().getRecipeFor(ModRecipes.GRINDING_TYPE.get(), inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

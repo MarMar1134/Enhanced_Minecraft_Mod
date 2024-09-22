@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:allium"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:magenta_dye"
+  }
+}

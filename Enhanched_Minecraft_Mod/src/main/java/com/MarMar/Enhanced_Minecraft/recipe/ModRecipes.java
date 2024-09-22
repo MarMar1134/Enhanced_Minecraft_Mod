@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.recipe;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -10,37 +10,37 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModRecipes {
     //Registers
-    public static final DeferredRegister<RecipeSerializer<?>> Serializers =
-            DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, Enhanced_Minecraft.MOD_ID);
-    public static final DeferredRegister<RecipeType<?>> Types =
-            DeferredRegister.create(ForgeRegistries.RECIPE_TYPES, Enhanced_Minecraft.MOD_ID);
+    public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZER =
+            DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, Enhanced_Playthrough.MOD_ID);
+    public static final DeferredRegister<RecipeType<?>> RECIPE_TYPE =
+            DeferredRegister.create(ForgeRegistries.RECIPE_TYPES, Enhanced_Playthrough.MOD_ID);
 
     //Recipes
         //Ore alloying
-        public static final RegistryObject<RecipeSerializer<AlloyingFurnaceRecipe>> Alloying_serializer =
-                Serializers.register("ore_alloying", () -> AlloyingFurnaceRecipe.Serializer.Instance);
-        public static final RegistryObject<RecipeType<AlloyingFurnaceRecipe>> Alloying_type =
-                Types.register("ore_alloying", () -> AlloyingFurnaceRecipe.Type.Instance);
+        public static final RegistryObject<RecipeSerializer<AlloyingFurnaceRecipe>> ALLOYING_SERIALIZER =
+                RECIPE_SERIALIZER.register("ore_alloying", () -> AlloyingFurnaceRecipe.Serializer.INSTANCE);
+        public static final RegistryObject<RecipeType<AlloyingFurnaceRecipe>> ALLOYING_TYPE =
+                RECIPE_TYPE.register("ore_alloying", () -> AlloyingFurnaceRecipe.Type.INSTANCE);
 
         //Super ore alloying
-        public static final RegistryObject<RecipeSerializer<SuperAlloyingRecipe>> Super_alloying_serializer =
-                Serializers.register("super_ore_alloying", () -> SuperAlloyingRecipe.Serializer.Instance);
-        public static final RegistryObject<RecipeType<SuperAlloyingRecipe>> Super_alloying_type =
-                Types.register("super_ore_alloying", () -> SuperAlloyingRecipe.Type.Instance);
+        public static final RegistryObject<RecipeSerializer<SuperAlloyingRecipe>> SUPER_ALLOYING_SERIALIZER =
+                RECIPE_SERIALIZER.register("super_ore_alloying", () -> SuperAlloyingRecipe.Serializer.INSTANCE);
+        public static final RegistryObject<RecipeType<SuperAlloyingRecipe>> SUPER_ALLOYING_TYPE =
+                RECIPE_TYPE.register("super_ore_alloying", () -> SuperAlloyingRecipe.Type.INSTANCE);
 
         //Gem polishing
-        public static final RegistryObject<RecipeSerializer<GemPolishingRecipe>> Polishing_serializer =
-                Serializers.register("gem_polishing", () -> GemPolishingRecipe.Serializer.Instance);
-        public static final RegistryObject<RecipeType<GemPolishingRecipe>> Polishing_type =
-                Types.register("gem_polishing", () -> GemPolishingRecipe.Type.Instance);
+        public static final RegistryObject<RecipeSerializer<GemPolishingRecipe>> POLISHING_SERIALIZER =
+                RECIPE_SERIALIZER.register("gem_polishing", () -> GemPolishingRecipe.Serializer.INSTANCE);
+        public static final RegistryObject<RecipeType<GemPolishingRecipe>> POLISHING_TYPE =
+                RECIPE_TYPE.register("gem_polishing", () -> GemPolishingRecipe.Type.INSTANCE);
 
         //Grinding
-        public static final RegistryObject<RecipeSerializer<GrindingRecipe>> Grinding_serializer =
-                Serializers.register("grinding", () -> GrindingRecipe.Serializer.Instance);
-        public static final RegistryObject<RecipeType<GrindingRecipe>> Grinding_type =
-                Types.register("grinding", () -> GrindingRecipe.Type.Instance);
+        public static final RegistryObject<RecipeSerializer<GrindingRecipe>> GRINDING_SERIALIZER =
+                RECIPE_SERIALIZER.register("grinding", () -> GrindingRecipe.Serializer.INSTANCE);
+        public static final RegistryObject<RecipeType<GrindingRecipe>> GRINDING_TYPE =
+                RECIPE_TYPE.register("grinding", () -> GrindingRecipe.Type.INSTANCE);
     public static void Register(IEventBus eventBus){
-        Serializers.register(eventBus);
-        Types.register(eventBus);
+        RECIPE_SERIALIZER.register(eventBus);
+        RECIPE_TYPE.register(eventBus);
     }
 }

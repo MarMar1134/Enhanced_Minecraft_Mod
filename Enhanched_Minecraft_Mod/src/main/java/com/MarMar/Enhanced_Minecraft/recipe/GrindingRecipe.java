@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.recipe;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
@@ -58,20 +58,20 @@ public class GrindingRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return Serializer.Instance;
+        return Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return Type.Instance;
+        return Type.INSTANCE;
     }
     public static class Type implements RecipeType<GrindingRecipe>{
-        public static final GrindingRecipe.Type Instance = new GrindingRecipe.Type();
+        public static final GrindingRecipe.Type INSTANCE = new GrindingRecipe.Type();
         private static String ID = "grinding";
     }
     public static class Serializer implements RecipeSerializer<GrindingRecipe>{
-        public static final Serializer Instance = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Minecraft.MOD_ID, "grinding");
+        public static final Serializer INSTANCE = new Serializer();
+        public static final ResourceLocation ID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "grinding");
 
         @Override
         public GrindingRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {

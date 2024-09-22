@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:poppy"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:red_dye"
+  }
+}

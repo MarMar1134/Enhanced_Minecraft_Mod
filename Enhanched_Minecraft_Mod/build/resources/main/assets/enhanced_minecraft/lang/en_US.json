@@ -1,19 +1,20 @@
 {
   "creativetab.weapons": "Combat",
   "creativetab.tools": "Tools",
-  "creativetab.minerals": "Ores and Minerals",
+  "creativetab.minerals": "Ores and minerals",
   "creativetab.jewelery": "Jewelery",
   "creativetab.utility": "Utility",
-  "creativetab.fruits": "Fruits and Vegetables",
-  "creativetab.saplings": "Saplings and Seeds",
+  "creativetab.fruits": "Fruits and vegetables",
+  "creativetab.saplings": "Saplings and leaves",
+  "creativetab.woodtypes": "Wood",
   "creativetab.blocks": "Blocks",
 
-  "advancements.title.unity_makes_strengh": "Unity makes strengh",
+  "advancements.title.unity_makes_strengh": "Unity makes strength",
   "advancements.desc.unity_makes_strengh": "Craft your first alloy furnace",
   "advancements.title.mighty_bronze": "Mighty bronze",
-  "advancements.desc.mighty_bronze": "adquire your first Bronze Pickaxe",
+  "advancements.desc.mighty_bronze": "acquire your first Bronze Pickaxe",
   "advancements.title.steel_isnt_enough": "StEEl isn´t enough",
-  "advancements.desc.steel_isnt_enough": "Alloy a piece of iron with coal to make the powerfull steel",
+  "advancements.desc.steel_isnt_enough": "Alloy a piece of iron with coal to make the powerful steel",
 
   "block.enhanced_minecraft.polished_stone": "Polished stone",
   "block.enhanced_minecraft.polished_stone_stair": "Polished stone stairs",
@@ -27,7 +28,7 @@
   "block.enhanced_minecraft.polished_limestone_stair": "Polished limestone stairs",
   "block.enhanced_minecraft.polished_limestone_slab": "Polished limestone slab",
   "block.enhanced_minecraft.polished_limestone_wall": "Polished limestone wall",
-  "block.enhanced_minecraft.cobbeled_limestone": "Cobbeled limestone",
+  "block.enhanced_minecraft.cobbeled_limestone": "Cobbled limestone",
   "block.enhanced_minecraft.cobbeled_limestone_stair": "Cobbled limestone stairs",
   "block.enhanced_minecraft.cobbeled_limestone_slab": "Cobbled limestone slab",
   "block.enhanced_minecraft.cobbeled_limestone_wall": "Cobbled limestone wall",
@@ -35,6 +36,40 @@
   "block.enhanced_minecraft.limestone_brick_stair": "Limestone brick stairs",
   "block.enhanced_minecraft.limestone_brick_slab": "Limestone brick slab",
   "block.enhanced_minecraft.limestone_brick_wall": "Limestone brick wall",
+
+  "block.enhanced_minecraft.walnut_sapling" : "Walnut sapling",
+  "block.enhanced_minecraft.walnut_log" : "Walnut log",
+  "block.enhanced_minecraft.stripped_walnut_log" : "Stripped walnut log",
+  "block.enhanced_minecraft.walnut_wood" : "Walnut wood",
+  "block.enhanced_minecraft.stripped_walnut_wood" : "Stripped walnut wood",
+  "block.enhanced_minecraft.walnut_leaves" : "Walnut leaves",
+  "block.enhanced_minecraft.walnut_planks" : "Walnut planks",
+  "block.enhanced_minecraft.walnut_door" : "Walnut door",
+  "block.enhanced_minecraft.walnut_trapdoor" : "Walnut trapdoor",
+  "block.enhanced_minecraft.walnut_button" : "Walnut button",
+  "block.enhanced_minecraft.walnut_pressure_plate" : "Walnut pressure plate",
+  "block.enhanced_minecraft.walnut_slab" : "Walnut slab",
+  "block.enhanced_minecraft.walnut_stair" : "Walnut stairs",
+  "block.enhanced_minecraft.walnut_fence" : "Walnut fence",
+  "block.enhanced_minecraft.walnut_fencegate" : "Walnut fence gate",
+
+  "block.enhanced_minecraft.apple_sapling" : "Apple sapling",
+  "block.enhanced_minecraft.green_apple_sapling" : "Green apple sapling",
+  "block.enhanced_minecraft.apple_log" : "Apple log",
+  "block.enhanced_minecraft.stripped_apple_log" : "Stripped apple log",
+  "block.enhanced_minecraft.apple_wood" : "Apple wood",
+  "block.enhanced_minecraft.stripped_apple_wood" : "Stripped apple wood",
+  "block.enhanced_minecraft.apple_leaves" : "Apple leaves",
+  "block.enhanced_minecraft.green_apple_leaves" : "Green apple leaves",
+  "block.enhanced_minecraft.apple_planks" : "Apple planks",
+  "block.enhanced_minecraft.apple_door" : "Apple door",
+  "block.enhanced_minecraft.apple_trapdoor" : "Apple trapdoor",
+  "block.enhanced_minecraft.apple_button" : "Apple button",
+  "block.enhanced_minecraft.apple_pressure_plate" : "Apple pressure plate",
+  "block.enhanced_minecraft.apple_slab" : "Apple slab",
+  "block.enhanced_minecraft.apple_stair" : "Apple stairs",
+  "block.enhanced_minecraft.apple_fence" : "Apple fence",
+  "block.enhanced_minecraft.apple_fencegate" : "Apple fence gate",
 
   "block.enhanced_minecraft.sulfur_ore": "Sulfur ore",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Deepslate sulfur ore",
@@ -46,8 +81,8 @@
   "block.enhanced_minecraft.deepslate_cobalt_ore": "Cobalt ore",
   "block.enhanced_minecraft.rubi_ore": "Rubi ore",
   "block.enhanced_minecraft.deepslate_rubi_ore": "Deepslate rubi ore",
-  "block.enhanced_minecraft.saphire_ore": "Saphire ore",
-  "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate saphire ore",
+  "block.enhanced_minecraft.saphire_ore": "Sapphire ore",
+  "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate sapphire ore",
 
   "block.enhanced_minecraft.adobe_furnace": "Mud furnace",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Bricks alloy furnace",
@@ -81,7 +116,7 @@
   "item.enhanced_minecraft.raw_steel": "Raw Steel",
   "item.enhanced_minecraft.raw_silver": "Raw Silver",
   "item.enhanced_minecraft.raw_rubi": "Raw rubi",
-  "item.enhanced_minecraft.raw_saphire": "Raw saphire",
+  "item.enhanced_minecraft.raw_saphire": "Raw sapphire",
   "item.enhanced_minecraft.raw_emerald": "Raw emerald",
   "item.enhanced_minecraft.raw_diamond": "Raw diamond",
 
@@ -100,7 +135,7 @@
   "item.enhanced_minecraft.cobalt": "Cobalt",
   "item.enhanced_minecraft.cobalt_dust": "Cobalt dust",
   "item.enhanced_minecraft.rubi": "Rubi",
-  "item.enhanced_minecraft.saphire": "Saphire",
+  "item.enhanced_minecraft.saphire": "Sapphire",
 
   "item.enhanced_minecraft.silver_sword": "Silver sword",
   "item.enhanced_minecraft.silver_pickaxe": "Silver pickaxe",
@@ -156,20 +191,9 @@
 
   "item.enhanced_minecraft.reinforcing_upgrade_smithing_template": "Cobalt smithing template",
 
-  "item.enhanced_minecraft.orange_sapling": "Orange sapling",
   "item.enhanced_minecraft.orange": "Orange",
 
-  "item.enhanced_minecraft.lemon_sapling": "Lemon sapling",
   "item.enhanced_minecraft.lemon": "Lemon",
-
-  "item.enhanced_minecraft.apple_sapling": "Apple sapling",
-  "item.enhanced_minecraft.green_apple": "Green apple",
-
-  "item.enhanced_minecraft.hazelnut_sapling": "Hazelnut sapling",
-
-  "item.enhanced_minecraft.walnut_sapling": "Walnut sapling",
-
-  "item.enhanced_minecraft.almond_sapling": "Almond sapling",
 
   "item.enhanced_minecraft.banana_seed": "Banana seeds",
   "item.enhanced_minecraft.banana": "Banana",
@@ -198,5 +222,10 @@
   "item.enhanced_minecraft.wheat_flour": "Wheat flour",
   "item.enhanced_minecraft.pumpkin_flour": "Pumpkin flour",
 
-  "item.enhanced_minecraft.yeast": "Yeast"
+  "item.enhanced_minecraft.yeast": "Yeast",
+
+  "item.enhanced_minecraft.walnut": "Nuez",
+  "item.enhanced_minecraft.peeled_walnut": "Nuez pelada",
+
+  "item.enhanced_minecraft.green_apple": "Manzana verde"
 }

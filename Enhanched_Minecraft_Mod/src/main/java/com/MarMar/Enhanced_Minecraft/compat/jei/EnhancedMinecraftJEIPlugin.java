@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.compat.jei;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.recipe.*;
 import com.MarMar.Enhanced_Minecraft.menu.screen.AdobeAlloyingFurnaceScreen;
 import com.MarMar.Enhanced_Minecraft.menu.screen.GemPolisherScreen;
@@ -21,7 +21,7 @@ import java.util.List;
 public class EnhancedMinecraftJEIPlugin implements IModPlugin {
     @Override
     public ResourceLocation getPluginUid() {
-        return new ResourceLocation(Enhanced_Minecraft.MOD_ID, "jei_plugin");
+        return new ResourceLocation(Enhanced_Playthrough.MOD_ID, "jei_plugin");
     }
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
@@ -35,16 +35,16 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
     public void registerRecipes(IRecipeRegistration registration) {
         RecipeManager recipeManager = Minecraft.getInstance().level.getRecipeManager();
 
-        List<AlloyingFurnaceRecipe> alloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.Alloying_type.get());
+        List<AlloyingFurnaceRecipe> alloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.ALLOYING_TYPE.get());
         registration.addRecipes(OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE, alloyingRecipes);
 
-        List<GemPolishingRecipe> gemPolishingRecipes = recipeManager.getAllRecipesFor(ModRecipes.Polishing_type.get());
+        List<GemPolishingRecipe> gemPolishingRecipes = recipeManager.getAllRecipesFor(ModRecipes.POLISHING_TYPE.get());
         registration.addRecipes(GemPolishingCategory.GEM_POLISHER_RECIPE_TYPE, gemPolishingRecipes);
 
-        List<SuperAlloyingRecipe> superAlloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.Super_alloying_type.get());
+        List<SuperAlloyingRecipe> superAlloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.SUPER_ALLOYING_TYPE.get());
         registration.addRecipes(SuperAlloyingCategory.SUPER_ALLOYING_RECIPE_TYPE, superAlloyingRecipes);
 
-        List<GrindingRecipe> grindingRecipes = recipeManager.getAllRecipesFor(ModRecipes.Grinding_type.get());
+        List<GrindingRecipe> grindingRecipes = recipeManager.getAllRecipesFor(ModRecipes.GRINDING_TYPE.get());
         registration.addRecipes(GrindingCategory.GRINDING_RECIPE_RECIPE_TYPE, grindingRecipes);
     }
 

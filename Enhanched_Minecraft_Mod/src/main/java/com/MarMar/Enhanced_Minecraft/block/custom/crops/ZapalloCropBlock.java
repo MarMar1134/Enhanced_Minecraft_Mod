@@ -18,7 +18,7 @@ public class ZapalloCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.Zapallo_seeds.get();
+        return ModItems.ZAPALLO_SEEDS.get();
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.Util;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -19,18 +19,20 @@ public class ModTags {
 
 
         private static TagKey<Block> blockTag(String name){
-            return BlockTags.create(new ResourceLocation(Enhanced_Minecraft.MOD_ID, name));
+            return BlockTags.create(new ResourceLocation(Enhanced_Playthrough.MOD_ID, name));
         }
     }
     public static class Items{
-        public static final TagKey<Item> Bronze_tag = itemTag("bronze");
-        public static final TagKey<Item> Steel_tag = itemTag("steel");
-        public static final TagKey<Item> Silver_tag = itemTag("silver");
-        public static final TagKey<Item> Rose_gold_tag = itemTag("rose_gold");
-        public static final TagKey<Item> raw_gems = itemTag("raw_gem");
-        public static final TagKey<Item> Polisher_tag = itemTag("polisher_tool");
+        public static final TagKey<Item> BRONZE = itemTag("bronze");
+        public static final TagKey<Item> STEEL = itemTag("steel");
+        public static final TagKey<Item> SILVER = itemTag("silver");
+        public static final TagKey<Item> ROSE_GOLD = itemTag("rose_gold");
+        public static final TagKey<Item> RAW_GEM = itemTag("raw_gem");
+        public static final TagKey<Item> POLISHER_TOOL = itemTag("polisher_tool");
+        public static final TagKey<Item> WALNUT_LOGS = itemTag("walnut_logs");
+        public static final TagKey<Item> APPLE_LOGS = itemTag("apple_logs");
         private static TagKey<Item> itemTag(String name){
-            return ItemTags.create(new ResourceLocation(Enhanced_Minecraft.MOD_ID, name));
+            return ItemTags.create(new ResourceLocation(Enhanced_Playthrough.MOD_ID, name));
         }
     }
 }

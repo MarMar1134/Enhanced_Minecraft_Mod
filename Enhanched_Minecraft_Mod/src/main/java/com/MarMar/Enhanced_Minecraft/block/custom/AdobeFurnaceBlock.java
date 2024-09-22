@@ -42,7 +42,7 @@ public class AdobeFurnaceBlock extends AbstractFurnaceBlock {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-        return createFurnaceTicker(pLevel, pBlockEntityType, ModBlockEntities.Adobe_furnace.get());
+        return createFurnaceTicker(pLevel, pBlockEntityType, ModBlockEntities.ADOBE_FURNACE_BLOCK_ENTITY.get());
     }
     public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
         if ((Boolean)pState.getValue(LIT)) {

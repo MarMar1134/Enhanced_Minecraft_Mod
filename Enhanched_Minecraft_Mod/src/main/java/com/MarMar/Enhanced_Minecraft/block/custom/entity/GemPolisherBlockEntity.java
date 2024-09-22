@@ -42,7 +42,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     private int maxProgress = 50;
 
     public GemPolisherBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.Gem_polisher_block.get(), pPos, pBlockState);
+        super(ModBlockEntities.GEM_POLISHER_BLOCK_ENTITY.get(), pPos, pBlockState);
         this.Data = new ContainerData() {
             @Override
             public int get(int i) {
@@ -82,6 +82,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         }
         return super.getCapability(cap, side);
     }
+
     public void drops() {
         SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
         for(int i = 0; i < itemHandler.getSlots(); i++) {
@@ -100,6 +101,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         super.invalidateCaps();
         lazyItemHandler.invalidate();
     }
+
     @Override
     public Component getDisplayName() {
         return Component.translatable("block.enhanced_minecraft.gem_polisher");
@@ -110,6 +112,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
         return new GemPolisherMenu(i, inventory, this, this.Data);
     }
+
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
         if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
             maxUses = getUses(this.itemHandler.getStackInSlot(TOOL_SLOT));
@@ -130,12 +133,14 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
             }
         }
     }
+
     private void sendUpdate() {
         setChanged();
 
         if(this.level != null)
             this.level.sendBlockUpdated(this.worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
     }
+
     private boolean canInsertItemIntoOutputSlot(Item item) {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
     }
@@ -143,19 +148,24 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     private boolean canInsertAmountIntoOutputSlot(int count) {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
     }
+
     private void increaseCraftingProgress() {
         progress++;
     }
+
     private boolean hasProcessFinished (){
 
         return progress >= maxProgress;
     }
+
     private void resetProgress() {
         progress = 0;
     }
+
    private boolean isAccurateTool(ItemStack stack){
         return stack.getItem() instanceof PolisherItem;
    }
+
    private int getUses(ItemStack stack){
        return stack.getMaxDamage() / 2;
    }
@@ -193,7 +203,7 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
 
             inventory.setItem(0, this.itemHandler.getStackInSlot(1));
 
-        return this.level.getRecipeManager().getRecipeFor(GemPolishingRecipe.Type.Instance, inventory, level);
+        return this.level.getRecipeManager().getRecipeFor(GemPolishingRecipe.Type.INSTANCE, inventory, level);
     }
     private void craftItem() {
         Optional<GemPolishingRecipe> recipe = getCurrentRecipe();

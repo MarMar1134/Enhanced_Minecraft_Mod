@@ -22,7 +22,7 @@ public class GrinderMenu extends AbstractContainerMenu {
                 new SimpleContainerData(5));
     }
     public GrinderMenu(int containerID, Inventory inv, BlockEntity entity, ContainerData data){
-        super(ModMenuTypes.grinder_menu.get(), containerID);
+        super(ModMenuTypes.GRINDER_MENU.get(), containerID);
         blockEntity = ((GrinderBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
@@ -114,7 +114,7 @@ public class GrinderMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.Item_grinder_block.get());
+                pPlayer, ModBlocks.GRINDER.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

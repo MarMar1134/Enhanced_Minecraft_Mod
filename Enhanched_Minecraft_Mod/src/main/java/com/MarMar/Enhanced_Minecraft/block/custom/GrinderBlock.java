@@ -83,7 +83,7 @@ public class GrinderBlock extends BaseEntityBlock implements EntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.Item_grinder_block.get(),
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.ITEM_GRINDER_BLOCK_ENTITY.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
     @Override

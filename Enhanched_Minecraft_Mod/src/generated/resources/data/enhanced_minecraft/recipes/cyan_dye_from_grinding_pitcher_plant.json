@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:grinding",
+  "ingredient": {
+    "item": "minecraft:pitcher_plant"
+  },
+  "output": {
+    "count": 6,
+    "item": "minecraft:cyan_dye"
+  }
+}

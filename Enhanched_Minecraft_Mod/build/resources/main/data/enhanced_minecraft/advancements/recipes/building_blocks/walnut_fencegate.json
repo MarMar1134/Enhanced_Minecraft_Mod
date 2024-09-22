@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_minecraft:walnut_fencegate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_walnut_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:walnut_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_walnut_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_minecraft:walnut_fencegate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

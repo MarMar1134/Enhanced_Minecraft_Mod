@@ -15,11 +15,11 @@ import java.util.Map;
 public class ModArmorEffects extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.Silver, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
+                    .put(ModArmorMaterials.SILVER, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
                             true,false, false))
-                    .put(ModArmorMaterials.Rose_gold, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
+                    .put(ModArmorMaterials.ROSE_GOLD, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
                             true,false, false))
-                    .put(ModArmorMaterials.Green_gold, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
+                    .put(ModArmorMaterials.GREEN_GOLD, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
                             true,false, false))
 
                     .put(ArmorMaterials.NETHERITE, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0,

@@ -18,7 +18,7 @@ public class EggplantCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.Eggplant_seeds.get();
+        return ModItems.EGGPLANT_SEEDS.get();
     }
 
     @Override

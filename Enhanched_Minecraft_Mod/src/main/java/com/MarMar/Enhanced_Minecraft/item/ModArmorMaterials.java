@@ -1,6 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.item;
 
-import com.MarMar.Enhanced_Minecraft.Enhanced_Minecraft;
+import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -10,17 +10,16 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    Bronze("bronze", 13, new int[]{1,4,3,2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(
-            ModItems.Bronze_ingot.get())),
-
-    Rose_gold("rose_gold", 8, new int[]{1,4,3,2}, 16, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
-            ModItems.Rose_gold_ingot.get())),
-    Steel("steel", 18, new int[]{2,7,5,3}, 16, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.05f, () -> Ingredient.of(
-            ModItems.Steel_ingot.get())),
-    Silver("silver", 9, new int[]{2,6,3,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
-            ModItems.Silver_ingot.get())),
-    Green_gold("green_gold", 13, new int[]{2,5,4,3}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0.5f, 0, () -> Ingredient.of(
-            ModItems.Green_gold_ingot.get()));
+    SILVER("silver", 9, new int[]{2,6,3,2}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
+            ModItems.SILVER_INGOT.get())),
+    BRONZE("bronze", 13, new int[]{1,4,3,2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(
+            ModItems.BRONZE_INGOT.get())),
+    ROSE_GOLD("rose_gold", 8, new int[]{1,4,3,2}, 16, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
+            ModItems.ROSE_GOLD_INGOT.get())),
+    STEEL("steel", 18, new int[]{2,7,5,3}, 16, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.05f, () -> Ingredient.of(
+            ModItems.STEEL_INGOT.get())),
+    GREEN_GOLD("green_gold", 13, new int[]{2,5,4,3}, 21, SoundEvents.ARMOR_EQUIP_GOLD, 0.5f, 0, () -> Ingredient.of(
+            ModItems.GREEN_GOLD_INGOT.get()));
 
 
     private final String name;
@@ -71,7 +70,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return Enhanced_Minecraft.MOD_ID + ":" + this.name;
+        return Enhanced_Playthrough.MOD_ID + ":" + this.name;
     }
 
     @Override

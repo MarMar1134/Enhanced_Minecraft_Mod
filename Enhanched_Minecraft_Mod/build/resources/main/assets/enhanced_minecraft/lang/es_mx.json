@@ -6,6 +6,7 @@
   "creativetab.utility": "Utilidad",
   "creativetab.fruits": "Frutas y Vegetales",
   "creativetab.saplings": "Semillas",
+  "creativetab.woodtypes": "Madera",
   "creativetab.blocks": "Bloques",
 
   "advancements.title.unity_makes_strengh": "La unión hace la fuerza",
@@ -35,6 +36,40 @@
   "block.enhanced_minecraft.limestone_brick_stair": "Escaleras de ladrillos de piedra caliza",
   "block.enhanced_minecraft.limestone_brick_slab": "losa de ladrillos de piedra caliza",
   "block.enhanced_minecraft.limestone_brick_wall": "muro de ladrillos de piedra caliza",
+
+  "block.enhanced_minecraft.walnut_sapling" : "Brote de nuez",
+  "block.enhanced_minecraft.walnut_log" : "Tronco de nuez",
+  "block.enhanced_minecraft.stripped_walnut_log" : "Tronco de nuez pelado",
+  "block.enhanced_minecraft.walnut_wood" : "Leño de nuez",
+  "block.enhanced_minecraft.stripped_walnut_wood" : "Leño de nuez pelada",
+  "block.enhanced_minecraft.walnut_leaves" : "Hojas de nuez",
+  "block.enhanced_minecraft.walnut_planks" : "Tablones de nuez",
+  "block.enhanced_minecraft.walnut_door" : "Puerta de nuez",
+  "block.enhanced_minecraft.walnut_trapdoor" : "Trampilla de nuez",
+  "block.enhanced_minecraft.walnut_button" : "Botón de nuez",
+  "block.enhanced_minecraft.walnut_pressure_plate" : "Placa de presión de nuez",
+  "block.enhanced_minecraft.walnut_slab" : "Baldosa de nuez",
+  "block.enhanced_minecraft.walnut_stair" : "Escaleras de nuez",
+  "block.enhanced_minecraft.walnut_fence" : "Valla de nuez",
+  "block.enhanced_minecraft.walnut_fencegate" : "Puerta de valla de nuez",
+
+  "block.enhanced_minecraft.apple_sapling" : "Brote de manzana",
+  "block.enhanced_minecraft.green_apple_sapling" : "Brote de manzana verde",
+  "block.enhanced_minecraft.apple_log" : "Tronco de manzana",
+  "block.enhanced_minecraft.stripped_apple_log" : "Tronco de manzana pelado",
+  "block.enhanced_minecraft.apple_wood" : "Leño de manzana",
+  "block.enhanced_minecraft.stripped_apple_wood" : "Leño de manzana pelado",
+  "block.enhanced_minecraft.apple_leaves" : "Hojas de manzana",
+  "block.enhanced_minecraft.green_apple_leaves" : "Hojas de manzana verde",
+  "block.enhanced_minecraft.apple_planks" : "Tablones de manzana",
+  "block.enhanced_minecraft.apple_door" : "Puerta de manzana",
+  "block.enhanced_minecraft.apple_trapdoor" : "Trampilla de manzana",
+  "block.enhanced_minecraft.apple_button" : "Botón de manzana",
+  "block.enhanced_minecraft.apple_pressure_plate" : "Placa de presión de manzana",
+  "block.enhanced_minecraft.apple_slab" : "Baldosa de manzana",
+  "block.enhanced_minecraft.apple_stair" : "Escaleras de manzana",
+  "block.enhanced_minecraft.apple_fence" : "Valla de manzana",
+  "block.enhanced_minecraft.apple_fencegate" : "Puerta de valla de manzana",
 
   "block.enhanced_minecraft.sulfur_ore": "Mineral de azufre",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Mineral de azufre profundo",
@@ -154,20 +189,9 @@
 
   "item.enhanced_minecraft.reinforcing_upgrade_smithing_template": "Plantilla de cobalto",
 
-  "item.enhanced_minecraft.orange_sapling": "Orange Sapling",
   "item.enhanced_minecraft.orange": "Naranja",
 
-  "item.enhanced_minecraft.lemon_sapling": "Lemon Sapling",
   "item.enhanced_minecraft.lemon": "Limón",
-
-  "item.enhanced_minecraft.apple_sapling": "Apple Sapling",
-  "item.enhanced_minecraft.green_apple": "Manzana verde",
-
-  "item.enhanced_minecraft.hazelnut_sapling": "Hazelnut Sapling",
-
-  "item.enhanced_minecraft.walnut_sapling": "Walnut Sapling",
-
-  "item.enhanced_minecraft.almond_sapling": "Almond Sapling",
 
   "item.enhanced_minecraft.banana_seed": "Semillas de banana",
   "item.enhanced_minecraft.banana": "Banana",
@@ -196,5 +220,10 @@
   "item.enhanced_minecraft.wheat_flour": "Harina de trigo",
   "item.enhanced_minecraft.pumpkin_flour": "Harina de calabaza",
 
-  "item.enhanced_minecraft.yeast": "Levadura"
+  "item.enhanced_minecraft.yeast": "Levadura",
+
+  "item.enhanced_minecraft.walnut": "Nuez",
+  "item.enhanced_minecraft.peeled_walnut": "Nuez pelada",
+
+  "item.enhanced_minecraft.green_apple": "Manzana verde"
 }
