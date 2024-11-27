@@ -1,5 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.block.custom.entity;
 
+import com.MarMar.Enhanced_Minecraft.block.custom.GrinderBlock;
 import com.MarMar.Enhanced_Minecraft.recipe.GrindingRecipe;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.menu.GrinderMenu;
@@ -151,6 +152,8 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
             } else {
                 resetProgress();
             }
+            pState = pState.setValue(GrinderBlock.ON, true);
+
             decreaseBurnTime();
 
             sendUpdate();
@@ -161,6 +164,8 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
                 sendUpdate();
             }
         } else {
+            pState = pState.setValue(GrinderBlock.ON, false);
+
             resetProgress();
 
             sendUpdate();
@@ -174,6 +179,7 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
             sendUpdate();
         }
 
+        pLevel.setBlock(pPos, pState, 1);
         setChanged(pLevel, pPos, pState);
     }
     private void burn(){

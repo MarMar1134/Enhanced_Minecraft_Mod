@@ -34,6 +34,12 @@
     "enhanced_minecraft:deepslate_saphire_ore",
     "enhanced_minecraft:deepslate_sulfur_ore",
     "enhanced_minecraft:nether_sulfur_ore",
-    "enhanced_minecraft:deepslate_cobalt_ore"
+    "enhanced_minecraft:deepslate_cobalt_ore",
+    "enhanced_minecraft:silver_block",
+    "enhanced_minecraft:tin_block",
+    "enhanced_minecraft:bronze_block",
+    "enhanced_minecraft:rose_gold_block",
+    "enhanced_minecraft:steel_block",
+    "enhanced_minecraft:green_gold_block"
   ]
 }

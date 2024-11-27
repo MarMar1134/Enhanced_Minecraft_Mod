@@ -13,6 +13,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS =
             DeferredRegister.create(ForgeRegistries.MENU_TYPES, Enhanced_Playthrough.MOD_ID);
+
+    public static final RegistryObject<MenuType<AdobeFurnaceMenu>> ADOBE_FURNACE_MENU =
+            registerMenuType("adobe_furnace_menu", AdobeFurnaceMenu::new);
     public static final RegistryObject<MenuType<AdobeAlloyingFurnaceMenu>> ADOBE_ALLOYING_FURNACE_MENU =
             registerMenuType("adobe_alloying_furnace_menu", AdobeAlloyingFurnaceMenu::new);
     public static final RegistryObject<MenuType<SuperAlloyingFurnaceMenu>> SUPER_ALLOYING_FURNACE_MENU =

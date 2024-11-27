@@ -1,240 +1,201 @@
-[22sep.2024 20:02:58.787] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[22sep.2024 20:02:58.814] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[22sep.2024 20:02:59.023] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[22sep.2024 20:02:59.215] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[22sep.2024 20:02:59.674] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[22sep.2024 20:02:59.907] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[22sep.2024 20:03:00.036] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Vega 3 Graphics GL version 4.6.0 Core Profile Context 23.11.1.231017, ATI Technologies Inc.
-[22sep.2024 20:03:00.801] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[22sep.2024 20:03:00.813] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[22sep.2024 20:03:00.823] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[22sep.2024 20:03:00.851] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[22sep.2024 20:03:01.149] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[22sep.2024 20:03:08.744] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[22sep.2024 20:03:31.496] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[22sep.2024 20:03:31.497] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[22sep.2024 20:03:31.539] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22sep.2024 20:03:31.550] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[22sep.2024 20:03:32.272] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[22sep.2024 20:03:36.220] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 11804 milliseconds
-[22sep.2024 20:03:36.265] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[22sep.2024 20:03:36.287] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[22sep.2024 20:03:37.020] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[22sep.2024 20:03:37.032] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 10.17 ms
-[22sep.2024 20:03:39.410] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [enhanced_minecraft]
-[22sep.2024 20:03:39.721] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[22sep.2024 20:03:40.162] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[22sep.2024 20:03:40.253] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[22sep.2024 20:03:42.824] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.3.0
-[22sep.2024 20:03:44.622] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=false,facing=down'
-[22sep.2024 20:03:44.623] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=false,facing=up'
-[22sep.2024 20:03:44.623] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=true,facing=down'
-[22sep.2024 20:03:44.623] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=true,facing=up'
-[22sep.2024 20:03:44.624] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=false,facing=up'
-[22sep.2024 20:03:44.625] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=true,facing=up'
-[22sep.2024 20:03:44.625] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=true,facing=down'
-[22sep.2024 20:03:44.625] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=false,facing=down'
-[22sep.2024 20:03:44.625] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/gem_polisher.json' missing model for variant: 'enhanced_minecraft:gem_polisher#facing=down'
-[22sep.2024 20:03:44.625] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/gem_polisher.json' missing model for variant: 'enhanced_minecraft:gem_polisher#facing=up'
-[22sep.2024 20:03:44.626] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=down'
-[22sep.2024 20:03:44.626] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=up'
-[22sep.2024 20:03:51.538] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[22sep.2024 20:03:51.539] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[22sep.2024 20:03:52.321] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Altavoces (USB Audio Device)
-[22sep.2024 20:03:52.324] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[22sep.2024 20:03:53.664] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[22sep.2024 20:03:53.861] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[22sep.2024 20:03:53.865] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[22sep.2024 20:03:53.866] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[22sep.2024 20:03:53.866] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[22sep.2024 20:03:53.949] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[22sep.2024 20:03:53.952] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[22sep.2024 20:03:53.954] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[22sep.2024 20:03:53.956] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[22sep.2024 20:03:55.216] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[22sep.2024 20:03:55.993] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[22sep.2024 20:03:55.995] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[22sep.2024 20:03:55.996] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[22sep.2024 20:03:56.002] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[22sep.2024 20:03:56.620] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[22sep.2024 20:04:04.599] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[22sep.2024 20:04:09.581] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 11 recipes
-[22sep.2024 20:04:09.777] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1534 advancements
-[22sep.2024 20:04:10.952] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[22sep.2024 20:04:10.952] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[22sep.2024 20:04:15.343] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[22sep.2024 20:04:34.800] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.863] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.863] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.863] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.863] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.864] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.865] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.866] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.867] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.868] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:35.896] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:36.382] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:37.011] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
-[22sep.2024 20:04:37.348] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 3%
-[22sep.2024 20:04:38.640] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[22sep.2024 20:04:38.644] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 23297 ms
-[22sep.2024 20:04:39.117] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 8, from 10
-[22sep.2024 20:04:39.121] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 8, from 0
-[22sep.2024 20:04:39.390] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[22sep.2024 20:04:40.863] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[22sep.2024 20:04:40.985] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:cf02fe8e] logged in with entity id 193 at (-48.490825052214, 63.0, 49.27157923232818)
-[22sep.2024 20:04:41.143] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev se conectó
-[22sep.2024 20:04:41.409] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
-[22sep.2024 20:04:41.409] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
-[22sep.2024 20:04:41.426] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_steel_from_alloying_coal_and_raw_iron
-[22sep.2024 20:04:41.427] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold
-[22sep.2024 20:04:41.429] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_raw_copper_and_raw_tin
-[22sep.2024 20:04:41.433] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_raw_silver_and_raw_gold
-[22sep.2024 20:04:41.434] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_coal_and_raw_iron
-[22sep.2024 20:04:41.434] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_steel_from_alloying_raw_iron_and_coal
-[22sep.2024 20:04:41.435] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_bronze_from_alloying_raw_copper_and_raw_tin
-[22sep.2024 20:04:41.435] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_iron_ingot_and_coal
-[22sep.2024 20:04:41.438] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_raw_iron_and_coal
-[22sep.2024 20:04:41.439] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_silver_ingot_and_gold_ingot
-[22sep.2024 20:04:41.440] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_coal_and_iron_ingot
-[22sep.2024 20:04:41.441] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper
-[22sep.2024 20:04:41.441] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_raw_gold_and_raw_silver
-[22sep.2024 20:04:41.442] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot
-[22sep.2024 20:04:41.475] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_gold_ingot_and_copper_ingot
-[22sep.2024 20:04:41.477] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:raw_bronze_from_alloying_raw_tin_and_raw_copper
-[22sep.2024 20:04:41.477] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot
-[22sep.2024 20:04:41.479] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_raw_tin_and_raw_copper
-[22sep.2024 20:04:41.482] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_copper_ingot_and_gold_ingot
-[22sep.2024 20:04:41.482] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_gold_ingot_and_silver_ingot
-[22sep.2024 20:04:41.758] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
-[22sep.2024 20:04:41.783] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
-[22sep.2024 20:04:41.783] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
-[22sep.2024 20:04:41.785] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[22sep.2024 20:04:41.801] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[22sep.2024 20:04:41.826] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 23.74 milliseconds
-[22sep.2024 20:04:41.827] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 25.26 ms
-[22sep.2024 20:04:41.827] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[22sep.2024 20:04:41.831] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 3.404 ms
-[22sep.2024 20:04:41.833] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[22sep.2024 20:04:41.975] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 141.1 milliseconds
-[22sep.2024 20:04:41.976] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 142.4 ms
-[22sep.2024 20:04:42.230] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[22sep.2024 20:04:42.262] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 30.29 milliseconds
-[22sep.2024 20:04:42.386] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: enhanced_minecraft:jei_plugin took 124.3 milliseconds
-[22sep.2024 20:04:42.389] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 157.9 ms
-[22sep.2024 20:04:42.390] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[22sep.2024 20:04:42.394] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 3.869 ms
-[22sep.2024 20:04:42.397] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[22sep.2024 20:04:42.399] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.379 ms
-[22sep.2024 20:04:42.401] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[22sep.2024 20:04:42.403] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 999.3 μs
-[22sep.2024 20:04:42.403] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[22sep.2024 20:04:42.435] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 31.11 ms
-[22sep.2024 20:04:42.438] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[22sep.2024 20:04:42.822] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 382.8 milliseconds
-[22sep.2024 20:04:42.824] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 385.9 ms
-[22sep.2024 20:04:42.832] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[22sep.2024 20:04:42.837] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 4.900 ms
-[22sep.2024 20:04:42.851] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[22sep.2024 20:04:42.858] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[22sep.2024 20:04:42.875] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering gui handlers: jei:gui took 11.79 milliseconds
-[22sep.2024 20:04:42.876] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 17.44 ms
-[22sep.2024 20:04:42.883] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[22sep.2024 20:04:42.887] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[22sep.2024 20:04:42.888] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[22sep.2024 20:04:42.895] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 6.160 ms
-[22sep.2024 20:04:42.895] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[22sep.2024 20:04:42.937] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1691 ingredients
-[22sep.2024 20:04:43.375] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1691 ingredients
-[22sep.2024 20:04:43.377] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 481.3 ms
-[22sep.2024 20:04:43.547] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 662.6 milliseconds
-[22sep.2024 20:04:43.547] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 663.8 ms
-[22sep.2024 20:04:43.548] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 696.9 ms
-[22sep.2024 20:04:43.549] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[22sep.2024 20:04:43.550] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 910.0 μs
-[22sep.2024 20:04:43.550] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.764 s
-[22sep.2024 20:04:44.498] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 31 advancements
-[22sep.2024 20:04:50.144] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2153ms or 43 ticks behind
-[22sep.2024 20:04:54.687] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[22sep.2024 20:05:26.134] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Tu modo de juego cambió a Supervivencia]
-[22sep.2024 20:05:26.184] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Tu modo de juego cambió a Supervivencia
-[22sep.2024 20:05:39.473] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 32 advancements
-[22sep.2024 20:06:32.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Dev recibió 1 de [Hacha de diamante]]
-[22sep.2024 20:06:32.835] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev recibió 1 de [Hacha de diamante]
-[22sep.2024 20:06:39.619] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 35 advancements
-[22sep.2024 20:06:44.720] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 37 advancements
-[22sep.2024 20:06:54.518] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=-65, y=66, z=43} BlockPos{x=-64, y=66, z=45}
-[22sep.2024 20:06:57.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Tu modo de juego cambió a Creativo]
-[22sep.2024 20:06:57.220] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Tu modo de juego cambió a Creativo
-[22sep.2024 20:07:04.892] [Server thread/INFO] [net.minecraft.server.commands.LocateCommand/]: Locating element minecraft:taiga took 1168 ms
-[22sep.2024 20:07:04.893] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] La estructura de tipo minecraft:taiga más cercana está en [-61, 64, -1429]. (A 1472 bloques de distancia)
-[22sep.2024 20:07:09.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Dev teletransportado a -60.500000, 64.000000, -1428.500000]
-[22sep.2024 20:07:09.216] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2673ms or 53 ticks behind
-[22sep.2024 20:07:09.363] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev teletransportado a -60.500000, 64.000000, -1428.500000
-[22sep.2024 20:07:17.506] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Tu modo de juego cambió a Espectador]
-[22sep.2024 20:07:17.668] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Tu modo de juego cambió a Espectador
-[22sep.2024 20:07:21.406] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Tu modo de juego cambió a Creativo]
-[22sep.2024 20:07:21.420] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Tu modo de juego cambió a Creativo
-[22sep.2024 20:08:01.829] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 39 advancements
-[22sep.2024 20:08:02.754] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 48 advancements
-[22sep.2024 20:08:27.330] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 55 advancements
-[22sep.2024 20:08:52.469] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 72 advancements
-[22sep.2024 20:08:57.220] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 74 advancements
-[22sep.2024 20:09:02.571] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 82 advancements
-[22sep.2024 20:09:35.430] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 87 advancements
-[22sep.2024 20:11:43.892] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[22sep.2024 20:11:43.921] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.12]'/minecraft:overworld
-[22sep.2024 20:11:43.943] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.12]'/minecraft:the_nether
-[22sep.2024 20:11:43.946] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.12]'/minecraft:the_end
-[22sep.2024 20:11:44.406] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
-[22sep.2024 20:11:44.406] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
-[22sep.2024 20:11:44.406] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[22sep.2024 20:11:44.407] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[22sep.2024 20:11:44.409] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
-[22sep.2024 20:11:44.417] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 9.031 ms
-[22sep.2024 20:11:44.476] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Desconectado/a
-[22sep.2024 20:11:44.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev se desconectó
-[22sep.2024 20:11:44.499] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[22sep.2024 20:11:44.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[22sep.2024 20:11:44.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[22sep.2024 20:11:44.524] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[22sep.2024 20:11:47.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.12]'/minecraft:overworld
-[22sep.2024 20:11:48.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.12]'/minecraft:the_nether
-[22sep.2024 20:11:48.115] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.12]'/minecraft:the_end
-[22sep.2024 20:11:48.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (EMT 2_12): All chunks are saved
-[22sep.2024 20:11:48.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22sep.2024 20:11:48.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22sep.2024 20:11:48.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22sep.2024 20:11:50.507] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[27nov.2024 12:10:49.908] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[27nov.2024 12:10:49.921] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[27nov.2024 12:10:50.125] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[27nov.2024 12:10:50.293] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[27nov.2024 12:10:50.603] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[27nov.2024 12:10:50.807] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[27nov.2024 12:10:50.909] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon(TM) Vega 3 Graphics GL version 4.6.0 Core Profile Context 23.11.1.231017, ATI Technologies Inc.
+[27nov.2024 12:10:51.716] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[27nov.2024 12:10:51.732] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[27nov.2024 12:10:51.732] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[27nov.2024 12:10:51.773] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[27nov.2024 12:10:52.052] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[27nov.2024 12:10:59.251] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[27nov.2024 12:11:15.958] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 4302 milliseconds
+[27nov.2024 12:11:18.073] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[27nov.2024 12:11:18.074] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[27nov.2024 12:11:18.097] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[27nov.2024 12:11:18.106] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[27nov.2024 12:11:18.279] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[27nov.2024 12:11:19.061] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[27nov.2024 12:11:19.061] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[27nov.2024 12:11:19.830] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[27nov.2024 12:11:19.835] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.876 ms
+[27nov.2024 12:11:22.933] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [enhanced_minecraft]
+[27nov.2024 12:11:23.684] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[27nov.2024 12:11:24.070] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[27nov.2024 12:11:27.377] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[27nov.2024 12:11:28.099] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_furnace#burning=false,facing=up'
+[27nov.2024 12:11:28.099] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_furnace#burning=true,facing=up'
+[27nov.2024 12:11:28.099] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_furnace#burning=true,facing=down'
+[27nov.2024 12:11:28.099] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_furnace#burning=false,facing=down'
+[27nov.2024 12:11:28.100] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=false,facing=down'
+[27nov.2024 12:11:28.100] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=false,facing=up'
+[27nov.2024 12:11:28.100] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=true,facing=down'
+[27nov.2024 12:11:28.100] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/adobe_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:adobe_alloying_furnace#burning=true,facing=up'
+[27nov.2024 12:11:28.101] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=false,facing=up'
+[27nov.2024 12:11:28.101] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=true,facing=up'
+[27nov.2024 12:11:28.101] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=true,facing=down'
+[27nov.2024 12:11:28.101] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/super_alloying_furnace.json' missing model for variant: 'enhanced_minecraft:super_alloying_furnace#burning=false,facing=down'
+[27nov.2024 12:11:28.101] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/gem_polisher.json' missing model for variant: 'enhanced_minecraft:gem_polisher#facing=down'
+[27nov.2024 12:11:28.101] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/gem_polisher.json' missing model for variant: 'enhanced_minecraft:gem_polisher#facing=up'
+[27nov.2024 12:11:28.102] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=down,on=false'
+[27nov.2024 12:11:28.102] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=up,on=false'
+[27nov.2024 12:11:28.102] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=up,on=true'
+[27nov.2024 12:11:28.102] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'enhanced_minecraft:blockstates/grinder.json' missing model for variant: 'enhanced_minecraft:grinder#facing=down,on=true'
+[27nov.2024 12:11:28.220] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.3.0
+[27nov.2024 12:11:32.540] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[27nov.2024 12:11:32.540] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[27nov.2024 12:11:32.819] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Altavoces (USB Audio Device)
+[27nov.2024 12:11:32.821] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[27nov.2024 12:11:33.092] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[27nov.2024 12:11:33.154] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[27nov.2024 12:11:33.155] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[27nov.2024 12:11:33.178] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[27nov.2024 12:11:33.180] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[27nov.2024 12:11:33.211] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[27nov.2024 12:11:33.211] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[27nov.2024 12:11:33.212] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[27nov.2024 12:11:33.212] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[27nov.2024 12:11:34.044] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[27nov.2024 12:11:34.250] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[27nov.2024 12:11:34.253] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[27nov.2024 12:11:34.254] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[27nov.2024 12:11:34.257] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[27nov.2024 12:11:34.674] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[27nov.2024 12:11:40.446] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[27nov.2024 12:11:44.846] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 12 recipes
+[27nov.2024 12:11:44.925] [Render thread/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement enhanced_minecraft:survival/steel_isnt_enough: Expected item to be an item, was unknown string 'enhanced_minecraft:raw_steel'
+[27nov.2024 12:11:45.039] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1555 advancements
+[27nov.2024 12:11:46.047] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[27nov.2024 12:11:46.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[27nov.2024 12:11:50.726] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[27nov.2024 12:11:57.344] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.344] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.349] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.418] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.419] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.420] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.420] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.420] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.421] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.421] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.421] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.421] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.421] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.422] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:57.748] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:58.248] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:58.898] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:59.284] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:11:59.775] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 0%
+[27nov.2024 12:12:00.418] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 26%
+[27nov.2024 12:12:00.749] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparando zona de aparición: 81%
+[27nov.2024 12:12:01.450] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[27nov.2024 12:12:01.454] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 10708 ms
+[27nov.2024 12:12:01.799] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 8, from 10
+[27nov.2024 12:12:01.804] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 8, from 0
+[27nov.2024 12:12:02.016] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[27nov.2024 12:12:02.952] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[27nov.2024 12:12:03.062] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:71d749c1] logged in with entity id 194 at (5.794953094458743, 73.87922729364959, 6.7082382990037965)
+[27nov.2024 12:12:03.191] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev se conectó
+[27nov.2024 12:12:03.623] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
+[27nov.2024 12:12:03.624] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
+[27nov.2024 12:12:03.650] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_raw_gold_and_raw_silver
+[27nov.2024 12:12:03.657] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot
+[27nov.2024 12:12:03.659] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_gold_ingot_and_copper_ingot
+[27nov.2024 12:12:03.662] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:steel_ingot_from_alloying_raw_iron_and_coal
+[27nov.2024 12:12:03.664] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_gold_ingot_and_silver_ingot
+[27nov.2024 12:12:03.668] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_raw_iron_and_coal
+[27nov.2024 12:12:03.673] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_coal_and_raw_iron
+[27nov.2024 12:12:03.685] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:steel_ingot_from_alloying_coal_and_raw_iron
+[27nov.2024 12:12:03.685] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_iron_ingot_and_coal
+[27nov.2024 12:12:03.685] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_raw_copper_and_raw_tin
+[27nov.2024 12:12:03.685] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_copper_ingot_and_gold_ingot
+[27nov.2024 12:12:03.688] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:steel_ingot_from_super_alloying_coal_and_iron_ingot
+[27nov.2024 12:12:03.689] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_silver_ingot_and_gold_ingot
+[27nov.2024 12:12:03.689] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold
+[27nov.2024 12:12:03.690] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:bronze_ingot_from_alloying_raw_copper_and_raw_tin
+[27nov.2024 12:12:03.691] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_raw_tin_and_raw_copper
+[27nov.2024 12:12:03.692] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:ore_alloying/enhanced_minecraft:bronze_ingot_from_alloying_raw_tin_and_raw_copper
+[27nov.2024 12:12:03.692] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:green_gold_ingot_from_super_alloying_raw_silver_and_raw_gold
+[27nov.2024 12:12:03.693] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper
+[27nov.2024 12:12:03.696] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: enhanced_minecraft:super_ore_alloying/enhanced_minecraft:bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot
+[27nov.2024 12:12:04.055] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
+[27nov.2024 12:12:04.078] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
+[27nov.2024 12:12:04.079] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
+[27nov.2024 12:12:04.081] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[27nov.2024 12:12:04.101] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[27nov.2024 12:12:04.106] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 5.370 ms
+[27nov.2024 12:12:04.107] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[27nov.2024 12:12:04.111] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 3.552 ms
+[27nov.2024 12:12:04.114] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[27nov.2024 12:12:04.228] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 113.1 milliseconds
+[27nov.2024 12:12:04.228] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 114.4 ms
+[27nov.2024 12:12:04.247] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[27nov.2024 12:12:04.275] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 27.45 milliseconds
+[27nov.2024 12:12:04.310] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: enhanced_minecraft:jei_plugin took 34.89 milliseconds
+[27nov.2024 12:12:04.313] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 65.78 ms
+[27nov.2024 12:12:04.314] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[27nov.2024 12:12:04.319] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 4.781 ms
+[27nov.2024 12:12:04.323] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[27nov.2024 12:12:04.325] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.616 ms
+[27nov.2024 12:12:04.328] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[27nov.2024 12:12:04.329] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 1.095 ms
+[27nov.2024 12:12:04.329] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[27nov.2024 12:12:04.402] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 72.11 ms
+[27nov.2024 12:12:04.406] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[27nov.2024 12:12:04.823] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 414.2 milliseconds
+[27nov.2024 12:12:04.827] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 420.1 ms
+[27nov.2024 12:12:04.832] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[27nov.2024 12:12:04.837] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 4.801 ms
+[27nov.2024 12:12:04.846] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[27nov.2024 12:12:04.853] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[27nov.2024 12:12:04.868] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 15.34 ms
+[27nov.2024 12:12:04.875] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[27nov.2024 12:12:04.878] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[27nov.2024 12:12:04.880] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[27nov.2024 12:12:04.894] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 14.07 ms
+[27nov.2024 12:12:04.894] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[27nov.2024 12:12:04.945] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1695 ingredients
+[27nov.2024 12:12:05.369] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1695 ingredients
+[27nov.2024 12:12:05.371] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 476.1 ms
+[27nov.2024 12:12:05.533] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 657.2 milliseconds
+[27nov.2024 12:12:05.534] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 658.6 ms
+[27nov.2024 12:12:05.535] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 689.3 ms
+[27nov.2024 12:12:05.535] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[27nov.2024 12:12:05.537] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 999.5 μs
+[27nov.2024 12:12:05.537] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.456 s
+[27nov.2024 12:12:05.882] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 37 advancements
+[27nov.2024 12:13:08.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Se eliminaron 433 objeto(s) del jugador Dev]
+[27nov.2024 12:13:08.833] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Se eliminaron 433 objeto(s) del jugador Dev
+[27nov.2024 12:14:15.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Se aplicó el efecto Visión nocturna a Dev]
+[27nov.2024 12:14:15.116] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Se aplicó el efecto Visión nocturna a Dev
+[27nov.2024 12:14:19.481] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 40 advancements
+[27nov.2024 12:15:14.224] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 43 advancements
+[27nov.2024 12:15:18.176] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 45 advancements
+[27nov.2024 12:16:22.075] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 54 advancements
+[27nov.2024 12:20:03.051] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[27nov.2024 12:20:03.081] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.D]'/minecraft:overworld
+[27nov.2024 12:20:03.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.D]'/minecraft:the_nether
+[27nov.2024 12:20:03.111] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.D]'/minecraft:the_end
+[27nov.2024 12:20:03.571] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[27nov.2024 12:20:03.571] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
+[27nov.2024 12:20:03.573] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[27nov.2024 12:20:03.573] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[27nov.2024 12:20:03.575] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
+[27nov.2024 12:20:03.586] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 12.22 ms
+[27nov.2024 12:20:03.617] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Desconectado/a
+[27nov.2024 12:20:03.618] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev se desconectó
+[27nov.2024 12:20:03.642] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[27nov.2024 12:20:03.671] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[27nov.2024 12:20:03.672] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[27nov.2024 12:20:03.672] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[27nov.2024 12:20:05.170] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.D]'/minecraft:overworld
+[27nov.2024 12:20:05.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.D]'/minecraft:the_nether
+[27nov.2024 12:20:05.798] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[EMT 2.D]'/minecraft:the_end
+[27nov.2024 12:20:05.823] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (EMT 2_D): All chunks are saved
+[27nov.2024 12:20:05.823] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[27nov.2024 12:20:05.823] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[27nov.2024 12:20:05.824] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[27nov.2024 12:20:11.541] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

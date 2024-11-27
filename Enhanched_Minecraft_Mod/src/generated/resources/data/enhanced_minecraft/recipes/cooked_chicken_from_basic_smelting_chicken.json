@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:basic_smelting",
+  "cooktime": 300,
+  "ingredient": {
+    "item": "minecraft:chicken"
+  },
+  "output": {
+    "item": "minecraft:cooked_chicken"
+  }
+}

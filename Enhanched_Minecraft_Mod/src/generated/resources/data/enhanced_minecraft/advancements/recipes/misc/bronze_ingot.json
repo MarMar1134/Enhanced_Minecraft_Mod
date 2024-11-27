@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bronze_nugget": {
+    "has_bronze_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "enhanced_minecraft:bronze_nugget"
+              "enhanced_minecraft:bronze_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bronze_nugget",
+      "has_bronze_ingot",
       "has_the_recipe"
     ]
   ],

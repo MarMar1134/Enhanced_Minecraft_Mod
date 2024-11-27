@@ -9,6 +9,8 @@
   "creativetab.woodtypes": "Wood",
   "creativetab.blocks": "Blocks",
 
+  "advancements.title.survival.root": "Enhanced Playthrough",
+  "advancements.desc.survival.root": "You started a new adventure on this fantastic world. Welcome!",
   "advancements.title.unity_makes_strengh": "Unity makes strength",
   "advancements.desc.unity_makes_strengh": "Craft your first alloy furnace",
   "advancements.title.mighty_bronze": "Mighty bronze",
@@ -84,9 +86,16 @@
   "block.enhanced_minecraft.saphire_ore": "Sapphire ore",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate sapphire ore",
 
+  "block.enhanced_minecraft.silver_block": "Silver block",
+  "block.enhanced_minecraft.tin_block": "Tin block",
+  "block.enhanced_minecraft.bronze_block": "Bronze block",
+  "block.enhanced_minecraft.rose_gold_block": "Rose gold block",
+  "block.enhanced_minecraft.steel_block": "Steel block",
+  "block.enhanced_minecraft.green_gold_block": "Green gold block",
+
   "block.enhanced_minecraft.adobe_furnace": "Mud furnace",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Bricks alloy furnace",
-  "block.enhanced_minecraft.super_alloying_furnace": "Advanced alloy furnace",
+  "block.enhanced_minecraft.super_alloying_furnace": "Blast alloy furnace",
   "block.enhanced_minecraft.gem_polisher": "Gem polisher",
   "block.enhanced_minecraft.grinder": "Grinder",
 
@@ -106,7 +115,7 @@
   "item.enhanced_minecraft.diamond_polisher": "Diamond polisher",
   "item.enhanced_minecraft.netherite_polisher": "Netherite polisher",
 
-  "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses left:",
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses",
   "descriptions.enhanced_minecraft.polisher_item": "Polishes raw gems when utilized in the gem polisher",
 
   "item.enhanced_minecraft.sulfur": "Sulfur",

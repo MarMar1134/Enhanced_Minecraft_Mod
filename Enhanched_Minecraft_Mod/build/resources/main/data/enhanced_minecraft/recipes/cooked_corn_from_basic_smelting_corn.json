@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:basic_smelting",
+  "cooktime": 300,
+  "ingredient": {
+    "item": "enhanced_minecraft:corn"
+  },
+  "output": {
+    "item": "enhanced_minecraft:cooked_corn"
+  }
+}

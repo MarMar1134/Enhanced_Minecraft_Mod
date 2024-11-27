@@ -114,6 +114,20 @@ public class ModBlocks {
         public static final RegistryObject<Block> DEEPSLATE_SAPHIRE_ORE = RegisterBlock("deepslate_saphire_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE).requiresCorrectToolForDrops()));
 
+        //Ores blocks
+        public static final RegistryObject<Block> SILVER_BLOCK = RegisterBlock("silver_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+        public static final RegistryObject<Block> TIN_BLOCK = RegisterBlock("tin_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> BRONZE_BLOCK = RegisterBlock("bronze_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> ROSE_GOLD_BLOCK = RegisterBlock("rose_gold_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> STEEL_BLOCK = RegisterBlock("steel_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> GREEN_GOLD_BLOCK = RegisterBlock("green_gold_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
         //Wood
             //Walnut
             public static final RegistryObject<Block> WALNUT_SAPLING = RegisterBlock("walnut_sapling",

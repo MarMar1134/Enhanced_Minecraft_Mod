@@ -1,11 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.compat.jei;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
+import com.MarMar.Enhanced_Minecraft.menu.screen.*;
 import com.MarMar.Enhanced_Minecraft.recipe.*;
-import com.MarMar.Enhanced_Minecraft.menu.screen.AdobeAlloyingFurnaceScreen;
-import com.MarMar.Enhanced_Minecraft.menu.screen.GemPolisherScreen;
-import com.MarMar.Enhanced_Minecraft.menu.screen.GrinderScreen;
-import com.MarMar.Enhanced_Minecraft.menu.screen.SuperAlloyingFurnaceScreen;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
@@ -25,6 +22,7 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
     }
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
+        registration.addRecipeCategories(new BasicSmeltingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new OreAlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new GemPolishingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new SuperAlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
@@ -34,6 +32,9 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         RecipeManager recipeManager = Minecraft.getInstance().level.getRecipeManager();
+
+        List<BasicSmeltingRecipe> basicSmeltingRecipes = recipeManager.getAllRecipesFor(ModRecipes.BASIC_SMELTING_TYPE.get());
+        registration.addRecipes(BasicSmeltingCategory.BASIC_SMELTING_TYPE, basicSmeltingRecipes);
 
         List<AlloyingFurnaceRecipe> alloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.ALLOYING_TYPE.get());
         registration.addRecipes(OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE, alloyingRecipes);
@@ -50,6 +51,9 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
+        registration.addRecipeClickArea(AdobeFurnaceScreen.class, 80, 38, 14, 9,
+                BasicSmeltingCategory.BASIC_SMELTING_TYPE);
+
         registration.addRecipeClickArea(AdobeAlloyingFurnaceScreen.class, 59, 19, 13, 11,
                 OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE);
 

@@ -1,9 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.recipe.builder;
 
-import com.MarMar.Enhanced_Minecraft.recipe.AlloyingFurnaceRecipe;
-import com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe;
-import com.MarMar.Enhanced_Minecraft.recipe.GrindingRecipe;
-import com.MarMar.Enhanced_Minecraft.recipe.SuperAlloyingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.*;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.advancements.Advancement;
@@ -44,6 +41,9 @@ public class ModAlloyingRecipeBuilder implements RecipeBuilder {
     }
     public static ModAlloyingRecipeBuilder superOreAlloying(Ingredient firstIngredient, Ingredient secondIngredient, ItemLike pResult, int count, RecipeSerializer<? extends SuperAlloyingRecipe> pCookingSerializer) {
         return new ModAlloyingRecipeBuilder(100, pResult, count, firstIngredient, secondIngredient, pCookingSerializer);
+    }
+    public static ModAlloyingRecipeBuilder basicSmelting(Ingredient input, ItemLike result, RecipeSerializer<BasicSmeltingRecipe> serializer){
+        return new ModAlloyingRecipeBuilder(300, result, 1, input, null, serializer);
     }
     @Override
     public ModAlloyingRecipeBuilder unlockedBy(String pCriterionName, CriterionTriggerInstance pCriterionTrigger) {
@@ -95,16 +95,22 @@ public class ModAlloyingRecipeBuilder implements RecipeBuilder {
             this.serializer = pSerializer;
         }
         public void serializeRecipeData(JsonObject pJson) {
-            //Alloy time
-            pJson.addProperty("alloytime", this.alloyTime);
 
-            //Input
-            JsonArray inputArray = new JsonArray();
+            if (this.secondIngredient != null){
+                pJson.addProperty("alloytime", this.alloyTime);
 
-            inputArray.add(this.firstIngredient.toJson());
-            inputArray.add(this.secondIngredient.toJson());
+                JsonArray inputArray = new JsonArray();
 
-            pJson.add("ingredients", inputArray);
+                inputArray.add(this.firstIngredient.toJson());
+                inputArray.add(this.secondIngredient.toJson());
+
+                pJson.add("ingredients", inputArray);
+            } else {
+                pJson.addProperty("cooktime", this.alloyTime);
+
+                pJson.add("ingredient", this.firstIngredient.toJson());
+            }
+
 
             //Output
             JsonObject outputObject = new JsonObject();

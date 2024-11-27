@@ -16,7 +16,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
@@ -69,7 +68,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(3, 2, 1),
 
                 BlockStateProvider.simple(ModBlocks.APPLE_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1),2),
+                new BlobFoliagePlacer(ConstantInt.of(3),ConstantInt.of(2),2),
 
                 new TwoLayersFeatureSize(2, 1, 3)).build());
 
@@ -78,7 +77,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(3, 2, 1),
 
                 BlockStateProvider.simple(ModBlocks.GREEN_APPLE_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1),2),
+                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1),3),
 
                 new TwoLayersFeatureSize(2, 1, 3)).build());
 

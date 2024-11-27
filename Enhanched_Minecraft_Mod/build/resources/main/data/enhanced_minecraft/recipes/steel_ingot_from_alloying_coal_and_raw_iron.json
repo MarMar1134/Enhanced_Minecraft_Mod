@@ -1,0 +1,15 @@
+{
+  "type": "enhanced_minecraft:ore_alloying",
+  "alloytime": 200,
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:steel_ingot"
+  }
+}

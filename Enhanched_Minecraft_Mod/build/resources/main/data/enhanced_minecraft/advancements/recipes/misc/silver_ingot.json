@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_silver_nugget": {
+    "has_silver_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "enhanced_minecraft:silver_nugget"
+              "enhanced_minecraft:silver_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_silver_nugget",
+      "has_silver_ingot",
       "has_the_recipe"
     ]
   ],

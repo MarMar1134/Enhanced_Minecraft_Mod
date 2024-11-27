@@ -21,10 +21,6 @@ public class ModItems {
                 "sulfur",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_TIN = ITEMS.register(
                 "raw_tin",() -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> RAW_BRONZE = ITEMS.register(
-                "raw_bronze", () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> RAW_STEEL = ITEMS.register(
-                "raw_steel", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_SILVER = ITEMS.register(
                 "raw_silver", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COBALT = ITEMS.register(

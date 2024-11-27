@@ -13,7 +13,7 @@ import net.minecraft.world.entity.player.Inventory;
 public class GemPolisherScreen extends AbstractContainerScreen<GemPolisherMenu> {
     private static final ResourceLocation Texture =
             new ResourceLocation(Enhanced_Playthrough.MOD_ID, "textures/gui/gem_polisher_gui.png");
-    private final Component Uses = Component.translatable("gui.enhanced_minecraft.gem_polisher_screen.text");
+    private final Component Uses_Text = Component.translatable("gui.enhanced_minecraft.gem_polisher_screen.text");
     public GemPolisherScreen(GemPolisherMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }
@@ -41,9 +41,16 @@ public class GemPolisherScreen extends AbstractContainerScreen<GemPolisherMenu> 
         int y = (height - imageHeight) / 2;
 
         guiGraphics.blit(Texture, x, y, 0, 0, imageWidth, imageHeight);
-        guiGraphics.drawString(this.font, Uses,160, 117, 0x404040, false);
-        guiGraphics.drawString(this.font,String.valueOf(menu.getUses()),235, 117, 0x404040, false);
+        guiGraphics.drawString(this.font, Uses_Text,150, 120, 0x404040, false);
+        renderUses(guiGraphics, x, y);
     }
+
+    private void renderUses(GuiGraphics graphics, int x, int y){
+        if (menu.hasUses()){
+            graphics.blit(Texture, x + 32 , y + 61, 176, 0, menu.usesCalculator(), 11);
+        }
+    }
+
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
         renderBackground(guiGraphics);

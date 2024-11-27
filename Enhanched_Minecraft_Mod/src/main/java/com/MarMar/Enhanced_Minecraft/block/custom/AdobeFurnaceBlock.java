@@ -5,63 +5,145 @@ import com.MarMar.Enhanced_Minecraft.block.custom.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.stats.Stats;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.AbstractFurnaceBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class AdobeFurnaceBlock extends AbstractFurnaceBlock {
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
+
+public class AdobeFurnaceBlock extends BaseEntityBlock implements EntityBlock {
+
+    public static final VoxelShape SHAPE = Block.box(0,0,0, 16,16, 16);
+    public static final BooleanProperty BURNING;
+
     public AdobeFurnaceBlock(Properties pProperties) {
         super(pProperties);
+        registerDefaultState(defaultBlockState().setValue(FACING, Direction.SOUTH).setValue(BURNING, false));
+    }
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        super.createBlockStateDefinition(pBuilder);
+        pBuilder.add(FACING, BURNING);
+    }
+    @Override
+    public @NotNull VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return SHAPE;
     }
 
+
+
     @Override
-    protected void openContainer(Level level, BlockPos blockPos, Player player) {
-        BlockEntity blockEntity = level.getBlockEntity(blockPos);
-        if (blockEntity instanceof AdobeFurnaceBlockEntity) {
-            player.openMenu((MenuProvider)blockEntity);
-            player.awardStat(Stats.INTERACT_WITH_FURNACE);
+    public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+        if (state.getValue(BURNING)){
+            return 14;
+        } else {
+            return 0;
         }
     }
 
-    @Nullable
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        if (pState.getValue(BURNING)) {
+            double X_position = (double)pPos.getX() + 0.5;
+            double Y_position = (double)pPos.getY();
+            double Z_position = (double)pPos.getZ() + 0.5;
+            if (pRandom.nextDouble() < 0.1) {
+                pLevel.playLocalSound(X_position, Y_position, Z_position, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
+            }
+
+            Direction Face_direction = pState.getValue(FACING);
+            Direction.Axis Face_axis = Face_direction.getAxis();
+            double random_chance = pRandom.nextDouble() * 0.6 - 0.3;
+            double random_X = Face_axis == Direction.Axis.X ? (double)Face_direction.getStepX() * 0.52 : random_chance;
+            double random_Y = pRandom.nextDouble() * 6.0 / 16.0;
+            double random_Z = Face_axis == Direction.Axis.Z ? (double)Face_direction.getStepZ() * 0.52 : random_chance;
+            pLevel.addParticle(ParticleTypes.SMOKE, X_position + random_X, Y_position + random_Y, Z_position + random_Z, 0.0, 0.0, 0.0);
+            pLevel.addParticle(ParticleTypes.FLAME, X_position + random_X, Y_position + random_Y, Z_position + random_Z, 0.0, 0.0, 0.0);
+        }
+
+    }
+
     @Override
-    public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+    public RenderShape getRenderShape(BlockState pState) {
+        return RenderShape.MODEL;
+    }
+
+    @Override
+    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
+        if (pState.getBlock() != pNewState.getBlock()) {
+            BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+            if (blockEntity instanceof AdobeFurnaceBlockEntity) {
+                ((AdobeFurnaceBlockEntity) blockEntity).drops();
+            }
+            super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+        }
+    }
+
+    @Override
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (!pLevel.isClientSide()) {
+            BlockEntity entity = pLevel.getBlockEntity(pPos);
+            if(entity instanceof AdobeFurnaceBlockEntity) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (MenuProvider) entity, pPos);
+            } else {
+                throw new IllegalStateException("Our Container provider is missing!");
+            }
+        }
+
+        return InteractionResult.sidedSuccess(pLevel.isClientSide());
+    }
+
+    @Override
+    public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
         return new AdobeFurnaceBlockEntity(blockPos, blockState);
     }
 
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        if(pLevel.isClientSide()) {
+            return null;
+        }
+
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.ADOBE_FURNACE_BLOCK_ENTITY.get(),
+                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
+    }
+
+    @Override
+    public boolean hasAnalogOutputSignal(BlockState pState) {
+        return true;
+    }
+
+    @Override
+    public int getAnalogOutputSignal(BlockState pState, Level pLevel, BlockPos pPos) {
+        return AbstractContainerMenu.getRedstoneSignalFromBlockEntity(pLevel.getBlockEntity(pPos));
+    }
+
     @Nullable
     @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-        return createFurnaceTicker(pLevel, pBlockEntityType, ModBlockEntities.ADOBE_FURNACE_BLOCK_ENTITY.get());
+    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+        return defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
     }
-    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
-        if ((Boolean)pState.getValue(LIT)) {
-            double $$4 = (double)pPos.getX() + 0.5;
-            double $$5 = (double)pPos.getY();
-            double $$6 = (double)pPos.getZ() + 0.5;
-            if (pRandom.nextDouble() < 0.1) {
-                pLevel.playLocalSound($$4, $$5, $$6, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
-            }
-
-            Direction $$7 = (Direction)pState.getValue(FACING);
-            Direction.Axis $$8 = $$7.getAxis();
-            double $$9 = 0.52;
-            double $$10 = pRandom.nextDouble() * 0.6 - 0.3;
-            double $$11 = $$8 == Direction.Axis.X ? (double)$$7.getStepX() * 0.52 : $$10;
-            double $$12 = pRandom.nextDouble() * 6.0 / 16.0;
-            double $$13 = $$8 == Direction.Axis.Z ? (double)$$7.getStepZ() * 0.52 : $$10;
-            pLevel.addParticle(ParticleTypes.SMOKE, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
-            pLevel.addParticle(ParticleTypes.FLAME, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
-        }
+    static {
+        BURNING = BooleanProperty.create("burning");
     }
 }

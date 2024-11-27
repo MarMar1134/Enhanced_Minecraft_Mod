@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rose_gold_nugget": {
+    "has_rose_gold_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "enhanced_minecraft:rose_gold_nugget"
+              "enhanced_minecraft:rose_gold_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rose_gold_nugget",
+      "has_rose_gold_ingot",
       "has_the_recipe"
     ]
   ],

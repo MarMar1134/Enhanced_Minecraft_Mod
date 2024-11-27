@@ -154,6 +154,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SAPHIRE_ORE.get(), block -> createSaphireOreDrops(ModBlocks.SAPHIRE_ORE.get()));
         this.add(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(), block -> createSaphireOreDrops(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get()));
 
+        //ore blocks
+        this.dropSelf(ModBlocks.SILVER_BLOCK.get());
+        this.dropSelf(ModBlocks.TIN_BLOCK.get());
+        this.dropSelf(ModBlocks.BRONZE_BLOCK.get());
+        this.dropSelf(ModBlocks.ROSE_GOLD_BLOCK.get());
+        this.dropSelf(ModBlocks.STEEL_BLOCK.get());
+        this.dropSelf(ModBlocks.GREEN_GOLD_BLOCK.get());
+
         //Crops
             //Yerba mate
         LootItemCondition.Builder yerbaMateBuilder = LootItemBlockStatePropertyCondition

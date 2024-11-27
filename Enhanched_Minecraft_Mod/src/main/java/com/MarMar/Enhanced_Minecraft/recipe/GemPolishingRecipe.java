@@ -65,10 +65,12 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
     public RecipeType<?> getType() {
         return GemPolishingRecipe.Type.INSTANCE;
     }
+
     public static class Type implements RecipeType<GemPolishingRecipe>{
         public static final Type INSTANCE = new Type();
         private static String ID = "gem_polishing";
     }
+
     public static class Serializer implements RecipeSerializer<GemPolishingRecipe>{
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "gem_polishing");

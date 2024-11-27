@@ -1,0 +1,321 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-11-27 11:44:08 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2024-11-27 11:44:13 -0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/food/cookie": {
+    "criteria": {
+      "has_wheat": "2024-11-27 11:44:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2024-11-27 11:44:40 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2024-11-27 11:44:40 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/food/wheat_flour": {
+    "criteria": {
+      "has_wheat": "2024-11-27 11:44:40 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/wheat_flour_from_grinding_wheat": {
+    "criteria": {
+      "has_wheat": "2024-11-27 11:44:40 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_iron_ingot": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_iron_ingot_and_coal": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-11-27 11:44:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/unity_makes_strengh": {
+    "criteria": {
+      "requirement": "2024-11-27 11:45:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2024-11-27 11:46:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_the_recipe": "2024-11-27 11:46:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/white_dye_from_grinding_bone_meal": {
+    "criteria": {
+      "has_bone_meal": "2024-11-27 11:46:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/bone_meal": {
+    "criteria": {
+      "has_bone_meal": "2024-11-27 11:46:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2024-11-27 11:46:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/yellow_dye_from_grinding_sunflower": {
+    "criteria": {
+      "has_sunflower": "2024-11-27 11:46:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_sunflower": {
+    "criteria": {
+      "has_sunflower": "2024-11-27 11:46:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-11-27 11:46:58 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/saphire_from_gem_polishing_raw_saphire": {
+    "criteria": {
+      "has_raw_saphire": "2024-11-27 11:47:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/emerald_from_gem_polishing_raw_emerald": {
+    "criteria": {
+      "has_raw_emerald": "2024-11-27 11:47:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2024-11-27 11:49:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/diamond_from_gem_polishing_raw_diamond": {
+    "criteria": {
+      "has_raw_diamond": "2024-11-27 11:49:29 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/root": {
+    "criteria": {
+      "get_materials": "2024-11-27 11:50:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
+    "criteria": {
+      "has_adobe_furnace": "2024-11-27 11:50:06 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brick_wall": {
+    "criteria": {
+      "has_bricks": "2024-11-27 11:51:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_stairs": {
+    "criteria": {
+      "has_bricks": "2024-11-27 11:51:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_slab_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2024-11-27 11:51:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_stairs_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2024-11-27 11:51:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_slab": {
+    "criteria": {
+      "has_bricks": "2024-11-27 11:51:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brick_wall_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2024-11-27 11:51:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tin_ingot_from_basic_smelting_deepslate_tin_ore": {
+    "criteria": {
+      "has_deepslate_tin_ore": "2024-11-27 12:15:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot__from_smelting_tin_ore": {
+    "criteria": {
+      "has_tin_ore": "2024-11-27 12:14:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot__from_blasting_tin_ore": {
+    "criteria": {
+      "has_tin_ore": "2024-11-27 12:14:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tin_ingot_from_basic_smelting_tin_ore": {
+    "criteria": {
+      "has_tin_ore": "2024-11-27 12:14:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot__from_smelting_deepslate_tin_ore": {
+    "criteria": {
+      "has_deepslate_tin_ore": "2024-11-27 12:15:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_deepslate_iron_ore": {
+    "criteria": {
+      "has_deepslate_iron_ore": "2024-11-27 12:15:18 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_deepslate_iron_ore": {
+    "criteria": {
+      "has_deepslate_iron_ore": "2024-11-27 12:15:18 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot__from_blasting_deepslate_tin_ore": {
+    "criteria": {
+      "has_deepslate_tin_ore": "2024-11-27 12:15:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2024-11-27 12:16:22 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

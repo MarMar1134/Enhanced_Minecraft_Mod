@@ -87,7 +87,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.GREEN_APPLE_LEAVES.get()
         );
 
-        this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(
                 Blocks.OAK_LEAVES,
                 Blocks.BIRCH_LEAVES,
                 Blocks.SPRUCE_LEAVES,
@@ -153,7 +153,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(),
                 ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
                 ModBlocks.NETHER_SULFUR_ORE.get(),
-                ModBlocks.DEEPSLATE_COBALT_ORE.get()
+                ModBlocks.DEEPSLATE_COBALT_ORE.get(),
+
+                //ore blocks
+                ModBlocks.SILVER_BLOCK.get(),
+                ModBlocks.TIN_BLOCK.get(),
+                ModBlocks.BRONZE_BLOCK.get(),
+                ModBlocks.ROSE_GOLD_BLOCK.get(),
+                ModBlocks.STEEL_BLOCK.get(),
+                ModBlocks.GREEN_GOLD_BLOCK.get()
         );
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL).add(
@@ -161,6 +169,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.POLISHED_STONE_SLAB.get(),
                 ModBlocks.POLISHED_STONE_STAIRS.get(),
                 ModBlocks.POLISHED_STONE_WALL.get()
+        );
+
+        this.tag(ModTags.Blocks.NEEDS_SILVER_TOOL).add(
+                ModBlocks.SILVER_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(
@@ -178,7 +190,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.LIMESTONE_BRICKS.get(),
                 ModBlocks.LIMESTONE_BRICK_SLAB.get(),
                 ModBlocks.LIMESTONE_BRICK_STAIRS.get(),
-                ModBlocks.LIMESTONE_BRICK_WALL.get()
+                ModBlocks.LIMESTONE_BRICK_WALL.get(),
+                ModBlocks.TIN_BLOCK.get()
         );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZE_TOOL).add(
@@ -188,7 +201,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 Blocks.IRON_DOOR,
                 Blocks.IRON_TRAPDOOR,
                 Blocks.RAW_IRON_BLOCK,
-                Blocks.HOPPER
+                Blocks.HOPPER,
+                ModBlocks.BRONZE_BLOCK.get()
+        );
+
+        this.tag(ModTags.Blocks.NEEDS_ROSE_GOLD_TOOL).add(
+                ModBlocks.ROSE_GOLD_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
@@ -231,7 +249,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
                 ModBlocks.DEEPSLATE_SILVER_ORE.get(),
                 ModBlocks.DEEPSLATE_RUBI_ORE.get(),
-                ModBlocks.DEEPSLATE_SAPHIRE_ORE.get()
+                ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(),
+                ModBlocks.STEEL_BLOCK.get()
+        );
+
+        this.tag(ModTags.Blocks.NEEDS_GREEN_GOLD_TOOL).add(
+                ModBlocks.GREEN_GOLD_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(

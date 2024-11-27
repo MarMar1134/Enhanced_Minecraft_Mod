@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_green_gold_nugget": {
+    "has_green_gold_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "enhanced_minecraft:green_gold_nugget"
+              "enhanced_minecraft:green_gold_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_green_gold_nugget",
+      "has_green_gold_ingot",
       "has_the_recipe"
     ]
   ],

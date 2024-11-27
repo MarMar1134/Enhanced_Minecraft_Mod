@@ -1,18 +1,22 @@
-// 1.20.1	2024-09-19T15:28:07.2280217	Tags for minecraft:block mod id enhanced_minecraft
-67f41822106900cacbc8b813035c140ed3c8e36b data/enhanced_minecraft/tags/blocks/needs_bronze_tool.json
-28172ef567de7a2624d3cdc32ad72f21a4cd50ff data/enhanced_minecraft/tags/blocks/needs_steel_tool.json
+// 1.20.1	2024-11-23T14:17:26.9415261	Tags for minecraft:block mod id enhanced_minecraft
+7ef2c0d1f81be47d43977a37c8da95d1a954b32d data/enhanced_minecraft/tags/blocks/needs_bronze_tool.json
+588228c80abdacebfec9b8350cbb194b12bc9c72 data/enhanced_minecraft/tags/blocks/needs_green_gold_tool.json
+5f68d026eccdf7d1e92b72662b6ebfedd54e77d4 data/enhanced_minecraft/tags/blocks/needs_rose_gold_tool.json
+778f160552a25ff65e91c3a0181221ee67d22fea data/enhanced_minecraft/tags/blocks/needs_silver_tool.json
+178865d7b98a46b00ae67e81f0860104feec57da data/enhanced_minecraft/tags/blocks/needs_steel_tool.json
 328d59342e0549e5adc3fd1069347294e9f4624b data/forge/tags/blocks/needs_wood_tool.json
 85f5804ad750292db2404a271a075837bbf80ec3 data/forge/tags/blocks/ores.json
 3f491d5e20e6c3ad1bfdbe1d55a6040f7288bbac data/forge/tags/blocks/stone.json
 2a5265c3801e2123ac8240e660275f0f030c3443 data/minecraft/tags/blocks/buttons.json
 f2a2a518a7678a7f4d78631f4780679ff0c79566 data/minecraft/tags/blocks/fences.json
 53051c76567a3802557011d01e497d9d03f06376 data/minecraft/tags/blocks/fence_gates.json
+89d19130810ec7a82a9bdc54c2983d876fed610b data/minecraft/tags/blocks/leaves.json
 d9f02959f5bcc5c3d6e552d4d27cb0cc3e7c093f data/minecraft/tags/blocks/logs_that_burn.json
-c14cfedd4eec1885b4e0c95e72e07763077ab726 data/minecraft/tags/blocks/mineable/axe.json
-0ef3c1c7c18ca31acc41b796a3f444b49ca656c8 data/minecraft/tags/blocks/mineable/pickaxe.json
+c14cfedd4eec1885b4e0c95e72e07763077ab726 data/minecraft/tags/blocks/mineable/hoe.json
+0edeb6ddc19323b2eeffa2d912cfd404887ccd36 data/minecraft/tags/blocks/mineable/pickaxe.json
 53b9d494027ec4de9433bd3c19683ad9df6bf545 data/minecraft/tags/blocks/needs_diamond_tool.json
 452e8aa962c01391aac1029e8d1cf145d2eb200e data/minecraft/tags/blocks/needs_iron_tool.json
-0b9155d659e83150678070f5822e0f3bc25afd2b data/minecraft/tags/blocks/needs_stone_tool.json
+59c6ebf921d065a64abed23b881509923b61b00b data/minecraft/tags/blocks/needs_stone_tool.json
 1bf812facaca956b142982993ee08686bd56fd7c data/minecraft/tags/blocks/planks.json
 82e36f9bdd89d6a16fd77dfa19fa23b755c63ebc data/minecraft/tags/blocks/pressure_plates.json
 66c204da68df264ab3ae081620c0bfb00cffa4ad data/minecraft/tags/blocks/slabs.json

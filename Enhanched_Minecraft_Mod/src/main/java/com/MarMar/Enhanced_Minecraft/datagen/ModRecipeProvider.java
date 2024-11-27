@@ -31,13 +31,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> CORN_COOKABLES = List.of(ModItems.CORN.get());
     public static final List<ItemLike> TIN_SMELTABLES = List.of(ModItems.RAW_TIN.get(),
             ModBlocks.TIN_ORE.get(), ModBlocks.DEEPSLATE_TIN_ORE.get());
+    public static final List<ItemLike> COPPER_SMELTABLES = List.of(Items.RAW_COPPER, Blocks.COPPER_ORE, Blocks.DEEPSLATE_COPPER_ORE);
     public static final List<ItemLike> TIN_NUGGET_SMELTABLES = List.of(ModItems.RAW_TIN.get());
     public static final List<ItemLike> COPPER_NUGGET_SMELTABLES = List.of(Items.RAW_COPPER);
-    public static final List<ItemLike> BRONZE_SMELTABLES = List.of(ModItems.RAW_BRONZE.get());
     public static final List<ItemLike> BRONZE_NUGGETS_SMELTABLES = List.of(ModItems.BRONZE_AXE.get(),
             ModItems.BRONZE_HOE.get(), ModItems.BRONZE_PICKAXE.get(), ModItems.BRONZE_SHOVEL.get(),
             ModItems.BRONZE_SWORD.get());
-    public static final List<ItemLike> STEEL_SMELTABLES = List.of(ModItems.RAW_STEEL.get());
     public static final List<ItemLike> SILVER_SMELTABLES = List.of(ModItems.RAW_SILVER.get(), ModBlocks.SILVER_ORE.get(),
             ModBlocks.DEEPSLATE_SILVER_ORE.get());
     public static final List<ItemLike> SILVER_NUGGETS_SMELTABLES = List.of(ModItems.SILVER_AXE.get(),
@@ -54,8 +53,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+        //Basic smelting recipes
+        basicSmelting(consumer, Items.BEEF, Items.COOKED_BEEF);
+        basicSmelting(consumer, Items.CHICKEN, Items.COOKED_CHICKEN);
+        basicSmelting(consumer, Items.PORKCHOP, Items.COOKED_PORKCHOP);
+        basicSmelting(consumer, Items.MUTTON, Items.COOKED_MUTTON);
+        basicSmelting(consumer, Items.SALMON, Items.COOKED_SALMON);
+        basicSmelting(consumer, Items.COD, Items.COOKED_COD);
+        basicSmelting(consumer, Items.RABBIT, Items.COOKED_RABBIT);
+        basicSmelting(consumer, Items.POTATO, Items.BAKED_POTATO);
+        basicSmelting(consumer, Items.CACTUS, Items.GREEN_DYE);
+
         //Smelting Recipes
             //food
+            basicSmelting(consumer, ZAPALLO_COOKABLES, ModItems.COOKED_ZAPALLO.get());
+            basicSmelting(consumer, EGGPLANT_COOKABLES, ModItems.COOKED_EGGPLANT.get());
+            basicSmelting(consumer, CORN_COOKABLES, ModItems.COOKED_CORN.get());
+
             oreSmelting(consumer, ZAPALLO_COOKABLES, RecipeCategory.FOOD, ModItems.COOKED_ZAPALLO.get(),
                     2f, 100, "zapallo");
             oreSmelting(consumer, EGGPLANT_COOKABLES, RecipeCategory.FOOD, ModItems.COOKED_EGGPLANT.get(),
@@ -78,10 +92,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     2f, 100, "corn");
 
             //copper
+            basicSmelting(consumer, COPPER_SMELTABLES, Items.COPPER_INGOT);
             byCampfire(consumer, COPPER_NUGGET_SMELTABLES, RecipeCategory.MISC, ModItems.COPPER_NUGGET.get(),
                 1.0f, 300, "copper_nugget");
 
             //tin
+            basicSmelting(consumer, TIN_SMELTABLES, ModItems.TIN_INGOT.get());
             oreSmelting(consumer, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(),
                 2f, 100, "tin_ingot");
             oreBlasting(consumer, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(),
@@ -90,20 +106,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     1.0f, 300, "tin_nugget");
 
             //bronze
-            oreSmelting(consumer, BRONZE_SMELTABLES, RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(),
-                    2f, 100, "bronze_ingot");
-            oreBlasting(consumer, BRONZE_SMELTABLES, RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(),
-                    2f, 200, "bronze_ingot");
             oreSmelting(consumer, BRONZE_NUGGETS_SMELTABLES, RecipeCategory.MISC, ModItems.BRONZE_NUGGET.get(),
                     0.5f, 100, "bronze_nugget");
             oreBlasting(consumer, BRONZE_NUGGETS_SMELTABLES, RecipeCategory.MISC, ModItems.BRONZE_NUGGET.get(),
                     0.5f, 200, "bronze_nugget");
-
-            //steel
-            oreSmelting(consumer, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(),
-                    2f, 100, "silver_ingot");
-            oreBlasting(consumer, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(),
-                    2f, 200, "silver_ingot");
 
             //silver
             oreSmelting(consumer, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(),
@@ -129,8 +135,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Ore alloy recipes
             //Bronze
-            oreAlloying(consumer, ModItems.RAW_TIN.get(), Items.RAW_COPPER, ModItems.RAW_BRONZE.get());
-            oreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_TIN.get(), ModItems.RAW_BRONZE.get());
+            oreAlloying(consumer, ModItems.RAW_TIN.get(), Items.RAW_COPPER, ModItems.BRONZE_INGOT.get());
+            oreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_TIN.get(), ModItems.BRONZE_INGOT.get());
 
             superOreAlloying(consumer, ModItems.RAW_TIN.get(), Items.RAW_COPPER, ModItems.BRONZE_INGOT.get(), 1);
             superOreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_TIN.get(), ModItems.BRONZE_INGOT.get(), 1);
@@ -144,8 +150,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             superOreAlloying(consumer, Items.COPPER_INGOT, Items.GOLD_INGOT, ModItems.ROSE_GOLD_INGOT.get(), 2);
 
             //Steel
-            oreAlloying(consumer, Items.COAL, Items.RAW_IRON, ModItems.RAW_STEEL.get());
-            oreAlloying(consumer, Items.RAW_IRON, Items.COAL, ModItems.RAW_STEEL.get());
+            oreAlloying(consumer, Items.COAL, Items.RAW_IRON, ModItems.STEEL_INGOT.get());
+            oreAlloying(consumer, Items.RAW_IRON, Items.COAL, ModItems.STEEL_INGOT.get());
 
             superOreAlloying(consumer, Items.COAL, Items.RAW_IRON, ModItems.STEEL_INGOT.get(), 1);
             superOreAlloying(consumer, Items.RAW_IRON, Items.COAL, ModItems.STEEL_INGOT.get(), 1);
@@ -254,46 +260,122 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //Shaped and shapeless recipes
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.EMPTY_MATE.get())
-                .pattern("#")
-                .pattern("I")
-                .define('#', Items.IRON_INGOT)
-                .define('I', ModItems.COOKED_ZAPALLO.get())
-                .unlockedBy(getHasName(ModItems.COOKED_ZAPALLO.get()), has(ModItems.COOKED_ZAPALLO.get()))
-                .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.GROUNDED_YERBA_MATE.get())
-                .pattern(" I ")
-                .pattern("I I")
-                .pattern(" I ")
-                .define('I', ModItems.YERBA_MATE.get())
-                .unlockedBy(getHasName(ModItems.YERBA_MATE.get()), has(ModItems.YERBA_MATE.get()))
-                .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.MATE.get())
-                .pattern("I")
-                .pattern("A")
-                .define('I', ModItems.GROUNDED_YERBA_MATE.get())
-                .define('A', ModItems.EMPTY_MATE.get())
-                .unlockedBy(getHasName(ModItems.YERBA_MATE.get()), has(ModItems.YERBA_MATE.get()))
-                .save(consumer);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.YEAST.get(), 4)
-                .requires(Items.BROWN_MUSHROOM, 2)
-                .requires(Items.SUGAR)
-                .unlockedBy(getHasName(Items.SUGAR), has(Items.SUGAR))
-                .unlockedBy(getHasName(Items.BROWN_MUSHROOM), has(Items.BROWN_MUSHROOM))
-                .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.WHEAT_FLOUR.get(), 3)
-                .pattern("AAA")
-                .define('A', Items.WHEAT)
-                .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT))
-                .unlockedBy(getHasName(ModItems.WHEAT_FLOUR.get()), has(ModItems.WHEAT_FLOUR.get()))
-                .save(consumer);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PEELED_WALNUT.get())
-                .requires(ModItems.WALNUT.get())
-                .unlockedBy(getHasName(ModItems.WALNUT.get()), has(ModItems.WALNUT.get()))
-                .save(consumer);
+            //Foods
+            ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.EMPTY_MATE.get())
+                    .pattern("#")
+                    .pattern("I")
+                    .define('#', Items.IRON_INGOT)
+                    .define('I', ModItems.COOKED_ZAPALLO.get())
+                    .unlockedBy(getHasName(ModItems.COOKED_ZAPALLO.get()), has(ModItems.COOKED_ZAPALLO.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.GROUNDED_YERBA_MATE.get())
+                    .pattern(" I ")
+                    .pattern("I I")
+                    .pattern(" I ")
+                    .define('I', ModItems.YERBA_MATE.get())
+                    .unlockedBy(getHasName(ModItems.YERBA_MATE.get()), has(ModItems.YERBA_MATE.get()))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.MATE.get())
+                    .pattern("I")
+                    .pattern("A")
+                    .define('I', ModItems.GROUNDED_YERBA_MATE.get())
+                    .define('A', ModItems.EMPTY_MATE.get())
+                    .unlockedBy(getHasName(ModItems.YERBA_MATE.get()), has(ModItems.YERBA_MATE.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.YEAST.get(), 4)
+                    .requires(Items.BROWN_MUSHROOM, 2)
+                    .requires(Items.SUGAR)
+                    .unlockedBy(getHasName(Items.SUGAR), has(Items.SUGAR))
+                    .unlockedBy(getHasName(Items.BROWN_MUSHROOM), has(Items.BROWN_MUSHROOM))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.WHEAT_FLOUR.get(), 3)
+                    .pattern("AAA")
+                    .define('A', Items.WHEAT)
+                    .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT))
+                    .unlockedBy(getHasName(ModItems.WHEAT_FLOUR.get()), has(ModItems.WHEAT_FLOUR.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PEELED_WALNUT.get())
+                    .requires(ModItems.WALNUT.get())
+                    .unlockedBy(getHasName(ModItems.WALNUT.get()), has(ModItems.WALNUT.get()))
+                    .save(consumer);
+
+            //Ores
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
+                    .requires(ModBlocks.SILVER_BLOCK.get())
+                    .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 9)
+                    .requires(ModBlocks.TIN_BLOCK.get())
+                    .unlockedBy(getHasName(ModItems.TIN_INGOT.get()), has(ModItems.TIN_INGOT.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(), 9)
+                    .requires(ModBlocks.BRONZE_BLOCK.get())
+                    .unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get(), 9)
+                    .requires(ModBlocks.ROSE_GOLD_BLOCK.get())
+                    .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 9)
+                    .requires(ModBlocks.STEEL_BLOCK.get())
+                    .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                    .save(consumer);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GREEN_GOLD_INGOT.get(), 9)
+                    .requires(ModBlocks.GREEN_GOLD_BLOCK.get())
+                    .unlockedBy(getHasName(ModItems.GREEN_GOLD_INGOT.get()), has(ModItems.GREEN_GOLD_INGOT.get()))
+                    .save(consumer);
 
         //Block recipes
-            //Polished stone
+            //Ore blocks
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.SILVER_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TIN_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.TIN_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.TIN_INGOT.get()), has(ModItems.TIN_INGOT.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BRONZE_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.BRONZE_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_GOLD_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.ROSE_GOLD_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.STEEL_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GREEN_GOLD_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.GREEN_GOLD_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.GREEN_GOLD_INGOT.get()), has(ModItems.GREEN_GOLD_INGOT.get()))
+                    .save(consumer);
+
+        //Polished stone
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_STONE.get(), 6)
                     .pattern("AAA")
                     .pattern("AAA")
@@ -626,24 +708,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.TIN_INGOT.get())
                 .unlockedBy(getHasName(ModItems.TIN_INGOT.get()), has(ModItems.TIN_INGOT.get()))
                 .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TIN_INGOT.get())
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .define('#', ModItems.TIN_NUGGET.get())
-                .unlockedBy(getHasName(ModItems.TIN_NUGGET.get()), has(ModItems.TIN_NUGGET.get()))
-                .save(consumer);
 
         //Bronze recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE_NUGGET.get(), 9)
                 .requires(ModItems.BRONZE_INGOT.get()).unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
-                .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BRONZE_INGOT.get())
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .define('#', ModItems.BRONZE_NUGGET.get())
-                .unlockedBy(getHasName(ModItems.BRONZE_NUGGET.get()), has(ModItems.BRONZE_NUGGET.get()))
                 .save(consumer);
 
             //Bronze tools
@@ -791,13 +859,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GREEN_GOLD_NUGGET.get(), 9)
                 .requires(ModItems.SILVER_INGOT.get()).unlockedBy(getHasName(ModItems.GREEN_GOLD_INGOT.get()), has(ModItems.GREEN_GOLD_INGOT.get()))
                 .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GREEN_GOLD_INGOT.get())
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .define('#', ModItems.GREEN_GOLD_NUGGET.get())
-                .unlockedBy(getHasName(ModItems.GREEN_GOLD_NUGGET.get()), has(ModItems.GREEN_GOLD_NUGGET.get()))
-                .save(consumer);
 
             //Green gold tools
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.GREEN_GOLDEN_SWORD.get())
@@ -873,13 +934,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_NUGGET.get(), 9)
                 .requires(ModItems.SILVER_INGOT.get()).unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
                 .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_INGOT.get())
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .define('#', ModItems.SILVER_NUGGET.get())
-                .unlockedBy(getHasName(ModItems.SILVER_NUGGET.get()), has(ModItems.SILVER_NUGGET.get()))
-                .save(consumer);
 
             //Silver tools
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SILVER_SWORD.get())
@@ -954,13 +1008,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //Rose gold recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_NUGGET.get(), 9)
                 .requires(ModItems.ROSE_GOLD_INGOT.get()).unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
-                .save(consumer);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get())
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .define('#', ModItems.ROSE_GOLD_NUGGET.get())
-                .unlockedBy(getHasName(ModItems.ROSE_GOLD_NUGGET.get()), has(ModItems.ROSE_GOLD_NUGGET.get()))
                 .save(consumer);
 
             //Rose gold tools
@@ -1207,29 +1254,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
     }
     protected static void gemPolishing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, ItemLike result){
-        gemPolishingSerialize(pFinishedRecipeConsumer, ingredient, result, ModRecipes.POLISHING_SERIALIZER.get(), "_from_gem_polishing");
+        gemPolishingSerialize(pFinishedRecipeConsumer, ingredient, result, ModRecipes.POLISHING_SERIALIZER.get(), "from_gem_polishing");
     }
     protected static void itemGrinding(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, ItemLike result, int count){
-        oreGrindingSerialize(pFinishedRecipeConsumer, ingredient, result, count, ModRecipes.GRINDING_SERIALIZER.get(), "_from_grinding");
+        oreGrindingSerialize(pFinishedRecipeConsumer, ingredient, result, count, ModRecipes.GRINDING_SERIALIZER.get(), "from_grinding");
     }
     protected static void itemGrinding(Consumer<FinishedRecipe> pFinishedRecipeConsumer, TagKey<Item> ingredient, ItemLike result, int count){
-        oreGrindingTagSerialize(pFinishedRecipeConsumer, ingredient, result, count, ModRecipes.GRINDING_SERIALIZER.get(), "_from_grinding");
+        oreGrindingTagSerialize(pFinishedRecipeConsumer, ingredient, result, count, ModRecipes.GRINDING_SERIALIZER.get(), "from_grinding");
+    }
+    protected static void basicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, ItemLike result){
+        basicSmeltSerialize(pFinishedRecipeConsumer, ingredient, result, ModRecipes.BASIC_SMELTING_SERIALIZER.get(), "from_basic_smelting");
+    }
+    protected static void basicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> ingredients, ItemLike result){
+        basicSmeltingSerializeWithList(pFinishedRecipeConsumer, ingredients, result, ModRecipes.BASIC_SMELTING_SERIALIZER.get(), "from_basic_smelting");
     }
     protected static void oreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result){
-        oreAlloy(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, ModRecipes.ALLOYING_SERIALIZER.get(), "_from_alloying");
+        oreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, ModRecipes.ALLOYING_SERIALIZER.get(), "from_alloying");
     }
     protected static void superOreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, int count){
-        superOreAlloy(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, count, ModRecipes.SUPER_ALLOYING_SERIALIZER.get(), "_from_super_alloying");
+        superOreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, count, ModRecipes.SUPER_ALLOYING_SERIALIZER.get(), "from_super_alloying");
     }
     protected static void stoneCutting(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int count){
-        stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "_from_stone_cutting");
+        stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "from_stone_cutting");
     }
 
     //Recipe builders
     protected static void stoneCuttingBuilder(Consumer<FinishedRecipe> consumer, ItemLike input, RecipeCategory category, ItemLike result, int count, String recipeName){
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), category, result, count)
                 .unlockedBy(getHasName(input), has(input))
-                .save(consumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(result) + recipeName + "_" + getItemName(input));
+                .save(consumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(result) + "_" + recipeName + "_" + getItemName(input));
     }
     protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         Iterator var9 = pIngredients.iterator();
@@ -1238,36 +1291,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ItemLike itemlike = (ItemLike)var9.next();
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike),
                     pCategory, pResult, pExperience, pCookingTime, pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike),
-                    has(itemlike)).save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+                    has(itemlike)).save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(pResult) + "_" + pRecipeName + "_" + getItemName(itemlike));
         }
     }
     protected static void gemPolishingSerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike input, ItemLike output, RecipeSerializer<GemPolishingRecipe> recipeSerializer, String recipeName){
         ModBasicRecipeBuilder.gemPolishing(Ingredient.of(input), output, recipeSerializer)
                 .unlockedBy(getHasName(input), has(input))
-                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + recipeName + "_" + getItemName(input));
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + "_" + recipeName + "_" + getItemName(input));
     }
     protected static void oreGrindingSerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike input, ItemLike output, int quantity, RecipeSerializer<GrindingRecipe> recipeSerializer, String recipeName){
         ModBasicRecipeBuilder.itemGrinding(Ingredient.of(input), output, quantity, recipeSerializer)
                 .unlockedBy(getHasName(input), has(input))
-                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + recipeName + "_" + getItemName(input));
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) +  "_" + recipeName + "_" + getItemName(input));
     }
     protected static void oreGrindingTagSerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, TagKey<Item> input, ItemLike output, int quantity, RecipeSerializer<GrindingRecipe> recipeSerializer, String recipeName){
-
         ModBasicRecipeBuilder.itemGrinding(Ingredient.of(input), output, quantity, recipeSerializer)
                 .unlockedBy(input.toString(), has(input))
-                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + recipeName);
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) +  "_" + recipeName);
     }
 
-    protected static void oreAlloy(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike output, RecipeSerializer<AlloyingFurnaceRecipe> recipeSerializer, String recipeName){
+    protected static void basicSmeltSerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike input, ItemLike output, RecipeSerializer<BasicSmeltingRecipe> recipeSerializer, String recipeName){
+        ModAlloyingRecipeBuilder.basicSmelting(Ingredient.of(input), output, recipeSerializer)
+                .unlockedBy(getHasName(input), has(input))
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) +  "_" + recipeName + "_" + getItemName(input));
+    }
+
+    protected static void basicSmeltingSerializeWithList(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> inputs, ItemLike output, RecipeSerializer<BasicSmeltingRecipe> recipeSerializer, String recipeName){
+        Iterator var9 = inputs.iterator();
+
+        while(var9.hasNext()) {
+            ItemLike itemlike = (ItemLike)var9.next();
+            ModAlloyingRecipeBuilder.basicSmelting(Ingredient.of(itemlike),
+                     output, recipeSerializer).unlockedBy(getHasName(itemlike),
+                    has(itemlike)).save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + "_" + recipeName + "_" + getItemName(itemlike));
+        }
+    }
+
+    protected static void oreAlloySerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike output, RecipeSerializer<AlloyingFurnaceRecipe> recipeSerializer, String recipeName){
         ModAlloyingRecipeBuilder.oreAlloying(Ingredient.of(firstIngredient), Ingredient.of(secondIngredient), output, recipeSerializer)
                 .unlockedBy(getHasName(firstIngredient), has(firstIngredient))
                 .unlockedBy(getHasName(secondIngredient), has(secondIngredient))
-                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + recipeName + "_" + getItemName(firstIngredient) + "_and_" + getItemName(secondIngredient));
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) +  "_" + recipeName + "_" + getItemName(firstIngredient) + "_and_" + getItemName(secondIngredient));
     }
-    protected static void superOreAlloy(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike output, int count, RecipeSerializer<SuperAlloyingRecipe> recipeSerializer, String recipeName){
+    protected static void superOreAlloySerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike output, int count, RecipeSerializer<SuperAlloyingRecipe> recipeSerializer, String recipeName){
         ModAlloyingRecipeBuilder.superOreAlloying(Ingredient.of(firstIngredient), Ingredient.of(secondIngredient), output, count, recipeSerializer)
                 .unlockedBy(getHasName(firstIngredient), has(firstIngredient))
                 .unlockedBy(getHasName(secondIngredient), has(secondIngredient))
-                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + recipeName + "_" + getItemName(firstIngredient) + "_and_" + getItemName(secondIngredient));
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) +  "_" + recipeName + "_" + getItemName(firstIngredient) + "_and_" + getItemName(secondIngredient));
     }
 }

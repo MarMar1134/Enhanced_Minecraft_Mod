@@ -9,6 +9,8 @@
   "creativetab.woodtypes": "Madera",
   "creativetab.blocks": "Bloques",
 
+  "advancements.title.survival.root": "Enhanced Playthrough",
+  "advancements.desc.survival.root": "Iniciaste una nueva aventura en este mundo fantástico. ¡Bienvenido!",
   "advancements.title.unity_makes_strengh": "La unión hace la fuerza",
   "advancements.desc.unity_makes_strengh": "Crafteá tu primer horno de aleación",
   "advancements.title.mighty_bronze": "Bronceado divino",
@@ -84,9 +86,16 @@
   "block.enhanced_minecraft.saphire_ore": "Mineral de zafiro",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Mineral de zafiro profundo",
 
+  "block.enhanced_minecraft.silver_block": "Bloque de plata",
+  "block.enhanced_minecraft.tin_block": "Bloque de estaño",
+  "block.enhanced_minecraft.bronze_block": "Bloque de bronce",
+  "block.enhanced_minecraft.rose_gold_block": "Bloque de oro rosado",
+  "block.enhanced_minecraft.steel_block": "Bloque de acero",
+  "block.enhanced_minecraft.green_gold_block": "Bloque de oro verde",
+
   "block.enhanced_minecraft.adobe_furnace": "Horno de adobe",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de de ladrillos",
-  "block.enhanced_minecraft.super_alloying_furnace": "Horno de aleación avanzado",
+  "block.enhanced_minecraft.super_alloying_furnace": "Alto horno de aleación",
   "block.enhanced_minecraft.gem_polisher": "Mesa de pulido",
   "block.enhanced_minecraft.grinder": "Moledora",
 
@@ -107,7 +116,7 @@
   "item.enhanced_minecraft.diamond_polisher": "Pulidora de diamante",
   "item.enhanced_minecraft.netherite_polisher": "Pulidora de netherita",
 
-  "gui.enhanced_minecraft.gem_polisher_screen.text": "Usos restates:",
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Usos",
   "descriptions.enhanced_minecraft.polisher_item": "Utilizado en la mesa de pulido, sirve para purificar gemas",
 
   "item.enhanced_minecraft.sulfur": "Azufre",

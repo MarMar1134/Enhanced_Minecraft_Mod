@@ -137,6 +137,14 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.DEEPSLATE_RUBI_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPHIRE_ORE);
 
+        //Ores blocks
+        blockWithItem(ModBlocks.SILVER_BLOCK);
+        blockWithItem(ModBlocks.TIN_BLOCK);
+        blockWithItem(ModBlocks.BRONZE_BLOCK);
+        blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
+        blockWithItem(ModBlocks.STEEL_BLOCK);
+        blockWithItem(ModBlocks.GREEN_GOLD_BLOCK);
+
         //Crops
         makeYerbaMateCrop((CropBlock) ModBlocks.YERBA_MATE_CROP.get(), "yerba_mate_stage","yerba_mate_stage");
         makeZapalloCrop((CropBlock) ModBlocks.ZAPALLO_CROP.get(), "zapallo_stage","zapallo_stage");

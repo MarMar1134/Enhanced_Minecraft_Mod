@@ -14,6 +14,7 @@
     "show_toast": true,
     "announce_to_chat": true
   },
+  "parent": "enhanced_minecraft:survival/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

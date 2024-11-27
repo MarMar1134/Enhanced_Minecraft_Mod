@@ -16,6 +16,12 @@ public class ModRecipes {
             DeferredRegister.create(ForgeRegistries.RECIPE_TYPES, Enhanced_Playthrough.MOD_ID);
 
     //Recipes
+        //Basic Smelting
+        public static final RegistryObject<RecipeSerializer<BasicSmeltingRecipe>> BASIC_SMELTING_SERIALIZER =
+                RECIPE_SERIALIZER.register("basic_smelting", () -> BasicSmeltingRecipe.Serializer.INSTANCE);
+        public static final RegistryObject<RecipeType<BasicSmeltingRecipe>> BASIC_SMELTING_TYPE =
+                RECIPE_TYPE.register("basic_smelting", () -> BasicSmeltingRecipe.Type.INSTANCE);
+
         //Ore alloying
         public static final RegistryObject<RecipeSerializer<AlloyingFurnaceRecipe>> ALLOYING_SERIALIZER =
                 RECIPE_SERIALIZER.register("ore_alloying", () -> AlloyingFurnaceRecipe.Serializer.INSTANCE);

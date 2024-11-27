@@ -38,8 +38,17 @@ public class GemPolisherMenu extends AbstractContainerMenu {
 
         addDataSlots(data);
     }
-    public int getUses(){
-        return this.data.get(3);
+
+    public boolean hasUses(){
+        return this.data.get(3) > 0;
+    }
+
+    public int usesCalculator(){
+        int uses = this.data.get(3);
+        int maxUses = this.data.get(4);
+        int barSize = 59;
+
+        return maxUses != 0 && uses != 0 ? uses * barSize / maxUses : 0;
     }
 
     private static final int HOTBAR_SLOT_COUNT = 9;

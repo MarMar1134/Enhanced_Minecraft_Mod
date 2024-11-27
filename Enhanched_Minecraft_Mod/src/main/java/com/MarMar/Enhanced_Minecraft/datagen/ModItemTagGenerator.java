@@ -24,8 +24,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(Tags.Items.RAW_MATERIALS).add(
                 ModItems.RAW_TIN.get(),
-                ModItems.RAW_BRONZE.get(),
-                ModItems.RAW_STEEL.get(),
                 ModItems.RAW_SILVER.get(),
                 ModItems.RAW_EMERALD.get(),
                 ModItems.RAW_SAPPHIRE.get(),

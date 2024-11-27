@@ -1,0 +1,10 @@
+{
+  "type": "enhanced_minecraft:basic_smelting",
+  "cooktime": 300,
+  "ingredient": {
+    "item": "minecraft:raw_copper"
+  },
+  "output": {
+    "item": "minecraft:copper_ingot"
+  }
+}
