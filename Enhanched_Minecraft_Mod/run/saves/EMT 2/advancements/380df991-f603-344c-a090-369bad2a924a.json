@@ -3543,9 +3543,15 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/silver_ingot__from_smelting_raw_silver": {
+  "enhanced_minecraft:recipes/misc/tin_ingot": {
     "criteria": {
-      "has_raw_silver": "2024-11-24 15:19:39 -0300"
+      "has_tin_ingot": "2024-11-24 15:19:29 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_block": {
+    "criteria": {
+      "has_tin_ingot": "2024-11-24 15:19:29 -0300"
     },
     "done": true
   },
@@ -3561,21 +3567,15 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/tin_ingot": {
+  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_silver_ingot_and_gold_ingot": {
     "criteria": {
-      "has_tin_ingot": "2024-11-24 15:19:29 -0300"
+      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/silver_ingot__from_blasting_raw_silver": {
+  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_gold_ingot_and_silver_ingot": {
     "criteria": {
-      "has_raw_silver": "2024-11-24 15:19:39 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_block": {
-    "criteria": {
-      "has_tin_ingot": "2024-11-24 15:19:29 -0300"
+      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
     },
     "done": true
   },
@@ -3591,21 +3591,21 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_silver_ingot_and_gold_ingot": {
-    "criteria": {
-      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_gold_ingot_and_silver_ingot": {
-    "criteria": {
-      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/tin_ingot_from_basic_smelting_tin_ore": {
     "criteria": {
       "has_tin_ore": "2024-11-24 15:19:36 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot__from_smelting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2024-11-24 15:19:39 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/silver_ingot__from_blasting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2024-11-24 15:19:39 -0300"
     },
     "done": true
   },
@@ -3615,15 +3615,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
-    "criteria": {
-      "has_iron_block": "2024-11-24 15:22:13 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/misc/silver_ingot__from_blasting_silver_ore": {
     "criteria": {
       "has_silver_ore": "2024-11-24 15:19:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2024-11-24 15:22:13 -0300"
     },
     "done": true
   },

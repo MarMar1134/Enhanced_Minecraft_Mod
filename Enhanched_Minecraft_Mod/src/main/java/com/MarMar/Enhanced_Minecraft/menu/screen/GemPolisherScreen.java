@@ -41,7 +41,7 @@ public class GemPolisherScreen extends AbstractContainerScreen<GemPolisherMenu> 
         int y = (height - imageHeight) / 2;
 
         guiGraphics.blit(Texture, x, y, 0, 0, imageWidth, imageHeight);
-        guiGraphics.drawString(this.font, Uses_Text,150, 120, 0x404040, false);
+        guiGraphics.drawString(this.font, Uses_Text,204, 105, 0x404040, false);
         renderUses(guiGraphics, x, y);
     }
 
