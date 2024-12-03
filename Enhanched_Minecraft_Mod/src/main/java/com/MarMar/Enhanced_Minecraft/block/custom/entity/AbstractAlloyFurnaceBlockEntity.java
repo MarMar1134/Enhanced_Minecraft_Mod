@@ -11,6 +11,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -28,16 +29,40 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4);
+    private final ItemStackHandler firstInputHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler secondInputHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler fuelHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler outputHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
 
+    private final LazyOptional<ItemStackHandler> firstInputLazyHandler = LazyOptional.of(() -> firstInputHandler);
+    private final LazyOptional<ItemStackHandler> secondInputLazyHandler = LazyOptional.of(() -> secondInputHandler);
+    private final LazyOptional<ItemStackHandler> fuelLazyHandler = LazyOptional.of(() ->fuelHandler);
+    private final LazyOptional<ItemStackHandler> outputLazyHandler = LazyOptional.of(() -> outputHandler);
 
-
-
-    private static final int INPUT_SLOT1 = 0;
-    private static final int INPUT_SLOT2 = 1;
-    private static final int FUEL_SLOT = 2;
-    private static final int OUTPUT_SLOT = 3;
-    private LazyOptional<ItemStackHandler> lazyItemHandler= LazyOptional.empty();
     protected final ContainerData Data;
     private final RecipeType<? extends AbstractAlloyRecipe> recipeType;
     private int progress = 0;
@@ -78,17 +103,41 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
         this.maxProgress = setMaxProgress();
     }
 
+    public LazyOptional<ItemStackHandler> getFirstInputLazyHandler(){
+        return this.firstInputLazyHandler;
+    }
+    public LazyOptional<ItemStackHandler> getSecondInputLazyHandler(){
+        return this.secondInputLazyHandler;
+    }
+    public LazyOptional<ItemStackHandler> getFuelLazyHandler(){
+        return this.fuelLazyHandler;
+    }
+    public LazyOptional<ItemStackHandler> getOutputLazyHandler(){
+        return this.outputLazyHandler;
+    }
+
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER){
-            return lazyItemHandler.cast();
+            if (side == Direction.DOWN){
+                return outputLazyHandler.cast();
+            } else if (side == Direction.UP){
+                return fuelLazyHandler.cast();
+            } else if (side == Direction.EAST || side == Direction.SOUTH){
+                return firstInputLazyHandler.cast();
+            } else {
+                return secondInputLazyHandler.cast();
+            }
         }
         return super.getCapability(cap, side);
     }
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
-        lazyItemHandler.invalidate();
+        firstInputLazyHandler.invalidate();
+        secondInputLazyHandler.invalidate();
+        fuelLazyHandler.invalidate();
+        outputLazyHandler.invalidate();
     }
 
     private int setMaxProgress() {
@@ -103,22 +152,22 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     public void drops() {
         SimpleContainer inventory = new SimpleContainer(4);
 
-        for(int i = 0; i < this.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
-        }
-        Containers.dropContents(this.level, this.worldPosition, inventory);
-    }
+        inventory.setItem(0, firstInputHandler.getStackInSlot(0));
+        inventory.setItem(1, secondInputHandler.getStackInSlot(0));
+        inventory.setItem(2, fuelHandler.getStackInSlot(0));
+        inventory.setItem(3, outputHandler.getStackInSlot(0));
 
-    @Override
-    public void onLoad() {
-        super.onLoad();
-       this.lazyItemHandler=LazyOptional.of(() -> itemHandler);
+        Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
     //saves the metadata of the remaining burn time, the alloy progress and the inventory
     @Override
     protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("inventory", itemHandler.serializeNBT());
+        pTag.put("first_input", firstInputHandler.serializeNBT());
+        pTag.put("second_input", secondInputHandler.serializeNBT());
+        pTag.put("fuel", fuelHandler.serializeNBT());
+        pTag.put("output", outputHandler.serializeNBT());
+
         pTag.putInt("alloy_furnace.progress", progress);
         pTag.putInt("alloy_furnace.burnTime", burnTime);
         super.saveAdditional(pTag);
@@ -128,7 +177,11 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
+        firstInputHandler.deserializeNBT(pTag.getCompound("first_input"));
+        secondInputHandler.deserializeNBT(pTag.getCompound("second_input"));
+        fuelHandler.deserializeNBT(pTag.getCompound("fuel"));
+        outputHandler.deserializeNBT(pTag.getCompound("output"));
+
         progress = pTag.getInt("alloy_furnace.progress");
         burnTime = pTag.getInt("alloy_furnace.burnTime");
     }
@@ -161,8 +214,9 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
 
         //if not is burning, still checks if it has a recipe. If true, checks if there´s an item in the Fuel Slot that can be burned.
         } else if (entity.hasRecipe()){
-            if (entity.canBurn(entity.itemHandler.getStackInSlot(FUEL_SLOT))){
+            if (entity.canBurn(entity.fuelHandler.getStackInSlot(0))){
                 entity.burn();
+
 
                 entity.sendUpdate();
             }
@@ -207,9 +261,9 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
 
     //takes an item from the Fuel Slot, then copies his "burntime" metadata and gives it to burntime
     private void burn(){
-        this.maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(FUEL_SLOT));
+        this.maxBurnTime = getBurnTime(this.fuelHandler.getStackInSlot(0));
         this.burnTime = this.maxBurnTime;
-        this.itemHandler.getStackInSlot(FUEL_SLOT).shrink(1);
+        this.fuelHandler.getStackInSlot(0).shrink(1);
     }
 
     //simply decreases the burn time
@@ -219,13 +273,10 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
 
     //takes the items from the Input Slots, puts them on a Container and then calls the selected recipe to check if the ingredients match
     protected Optional<? extends AbstractAlloyRecipe> getCurrentRecipe() {
-        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        SimpleContainer inventory = new SimpleContainer(2);
 
-
-
-        for (int i = 0; i < this.itemHandler.getSlots(); i++){
-            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
-        }
+        inventory.setItem(0, firstInputHandler.getStackInSlot(0));
+        inventory.setItem(1, secondInputHandler.getStackInSlot(0));
 
         return this.level.getRecipeManager().getRecipeFor(this.recipeType, inventory, level);
     }
@@ -265,20 +316,20 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
 
         ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
-        this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
-        this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
+        this.firstInputHandler.extractItem(0, 1, false);
+        this.secondInputHandler.extractItem(0, 1, false);
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        this.outputHandler.setStackInSlot(0, new ItemStack(result.getItem(),
+                this.outputHandler.getStackInSlot(0).getCount() + result.getCount()));
     }
 
     //checks if the result of the selected recipe matches the item in the Result Slot
     private boolean canInsertItemIntoOutputSlot(Item item) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+        return this.outputHandler.getStackInSlot(0).isEmpty() || this.outputHandler.getStackInSlot(0).is(item);
     }
 
     //checks if the item in the Result Slot is not in his maximum capacity
     private boolean canInsertAmountIntoOutputSlot(int count) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+        return this.outputHandler.getStackInSlot(0).getCount() + count <= this.outputHandler.getStackInSlot(0).getMaxStackSize();
     }
 }

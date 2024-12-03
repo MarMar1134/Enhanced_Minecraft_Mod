@@ -38,7 +38,7 @@ public class BasicSmeltingCategory implements IRecipeCategory<BasicSmeltingRecip
 
     @Override
     public Component getTitle() {
-        return Component.translatable("block.enhanced_minecraft.adobe_furnace");
+        return Component.translatable("jei.enhanced_minecraft.adobe_furnace");
     }
 
     @Override

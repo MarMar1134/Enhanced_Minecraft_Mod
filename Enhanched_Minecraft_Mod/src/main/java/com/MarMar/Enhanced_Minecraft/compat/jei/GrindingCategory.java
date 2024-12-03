@@ -37,7 +37,7 @@ public class GrindingCategory implements IRecipeCategory<GrindingRecipe> {
 
     @Override
     public Component getTitle() {
-        return Component.translatable("block.enhanced_minecraft.grinder");
+        return Component.translatable("jei.enhanced_minecraft.grinder");
     }
 
     @Override

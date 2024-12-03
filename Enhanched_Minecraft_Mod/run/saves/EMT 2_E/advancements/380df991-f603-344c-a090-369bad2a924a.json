@@ -884,12 +884,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/packed_mud": {
-    "criteria": {
-      "has_mud": "2024-12-03 15:08:26 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_sword": {
     "criteria": {
       "has_brass_sword": "2024-12-03 15:06:44 -0300"
@@ -908,12 +902,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/mud_bricks": {
-    "criteria": {
-      "has_packed_mud": "2024-12-03 15:08:29 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_pickaxe": {
     "criteria": {
       "has_brass_pickaxe": "2024-12-03 15:07:25 -0300"
@@ -923,6 +911,114 @@
   "minecraft:recipes/misc/nether_brick": {
     "criteria": {
       "has_netherrack": "2024-12-03 15:07:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_mud": {
+    "criteria": {
+      "has_mud": "2024-12-03 15:08:26 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud_bricks": {
+    "criteria": {
+      "has_packed_mud": "2024-12-03 15:08:29 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_polisher": {
+    "criteria": {
+      "has_brass_polisher": "2024-12-03 18:33:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_polisher": {
+    "criteria": {
+      "has_brass_polisher": "2024-12-03 18:33:31 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2024-12-03 18:34:12 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2024-12-03 19:27:22 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/wheat_flour_from_grinding_wheat": {
+    "criteria": {
+      "has_wheat": "2024-12-03 19:27:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trim_with_all_exclusive_armor_patterns": {
+    "criteria": {
+      "armor_trimmed_minecraft:tide_armor_trim_smithing_template_smithing_trim": "2024-12-03 20:07:16 -0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/sentry_armor_trim_smithing_template": {
+    "criteria": {
+      "has_sentry_armor_trim_smithing_template": "2024-12-03 20:00:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite": {
+    "criteria": {
+      "has_quartz": "2024-12-03 20:00:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite": {
+    "criteria": {
+      "has_quartz": "2024-12-03 20:00:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/tide_armor_trim_smithing_template": {
+    "criteria": {
+      "has_tide_armor_trim_smithing_template": "2024-12-03 20:07:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trim_with_any_armor_pattern": {
+    "criteria": {
+      "armor_trimmed_minecraft:tide_armor_trim_smithing_template_smithing_trim": "2024-12-03 20:07:16 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_block": {
+    "criteria": {
+      "has_quartz": "2024-12-03 20:00:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2024-12-03 20:00:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2024-12-03 20:00:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sentry_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-12-03 20:00:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/tide_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-12-03 20:07:02 -0300"
     },
     "done": true
   },

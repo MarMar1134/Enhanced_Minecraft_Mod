@@ -34,6 +34,33 @@ import java.util.Optional;
 
 public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
+
+    private final ItemStackHandler inputHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler fuelHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler outputHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+
+    private final LazyOptional<ItemStackHandler> inputLazyHandler = LazyOptional.of(() -> this.inputHandler);
+    private final LazyOptional<ItemStackHandler> fuelLazyHandler = LazyOptional.of(() -> this.fuelHandler);
+    private final LazyOptional<ItemStackHandler> outputLazyHandler = LazyOptional.of(() -> this.outputHandler);
+
     private static final int INPUT_SLOT = 0;
     private static final int FUEL_SLOT = 1;
 
@@ -75,10 +102,28 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
         };
     }
 
+    public LazyOptional<ItemStackHandler> getInputLazyHandler(){
+        return this.inputLazyHandler;
+    }
+
+    public LazyOptional<ItemStackHandler> getFuelLazyHandler(){
+        return this.fuelLazyHandler;
+    }
+
+    public LazyOptional<ItemStackHandler> getOutputLazyHandler(){
+        return this.outputLazyHandler;
+    }
+
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER){
-            return lazyItemHandler.cast();
+            if (side == Direction.UP){
+                return fuelLazyHandler.cast();
+            } else if (side == Direction.DOWN){
+                return outputLazyHandler.cast();
+            } else {
+                return inputLazyHandler.cast();
+            }
         }
         return super.getCapability(cap, side);
     }
@@ -92,23 +137,21 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for(int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
-        }
-        Containers.dropContents(this.level, this.worldPosition, inventory);
-    }
+        SimpleContainer inventory = new SimpleContainer(3);
 
-    @Override
-    public void onLoad() {
-        super.onLoad();
-        lazyItemHandler=LazyOptional.of(() -> itemHandler);
+        inventory.setItem(0, inputHandler.getStackInSlot(0));
+        inventory.setItem(1, fuelHandler.getStackInSlot(0));
+        inventory.setItem(2, outputHandler.getStackInSlot(0));
+
+        Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
-        lazyItemHandler.invalidate();
+        inputLazyHandler.invalidate();
+        fuelLazyHandler.invalidate();
+        outputLazyHandler.invalidate();
     }
 
     @Override
@@ -124,18 +167,24 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("item_grinder.progress", progress);
-        pTag.putInt("item_grinder.burnTime", burnTime);
+        pTag.put("grinder.input", inputHandler.serializeNBT());
+        pTag.put("grinder.fuel", fuelHandler.serializeNBT());
+        pTag.put("grinder.output", outputHandler.serializeNBT());
+
+        pTag.putInt("grinder.progress", progress);
+        pTag.putInt("grinder.burnTime", burnTime);
         super.saveAdditional(pTag);
     }
 
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("item_grinder.progress");
-        burnTime = pTag.getInt("item_grinder.burnTime");
+        inputHandler.deserializeNBT(pTag.getCompound("grinder.input"));
+        fuelHandler.deserializeNBT(pTag.getCompound("grinder.fuel"));
+        outputHandler.deserializeNBT(pTag.getCompound("grinder.output"));
+
+        progress = pTag.getInt("grinder.progress");
+        burnTime = pTag.getInt("grinder.burnTime");
     }
     private void sendUpdate() {
         setChanged();
@@ -146,11 +195,11 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
         if (isBurning()){
             if (hasRecipe()){
-                increaseCraftingProgress();
+                increaseGrindProgress();
 
                 sendUpdate();
             } else {
-                resetProgress();
+                resetGrindProgress();
             }
             pState = pState.setValue(GrinderBlock.ON, true);
 
@@ -158,7 +207,7 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
 
             sendUpdate();
         } else if (hasRecipe()){
-            if (canBurn(this.itemHandler.getStackInSlot(FUEL_SLOT))){
+            if (canBurn(this.fuelHandler.getStackInSlot(0))){
                 burn();
 
                 sendUpdate();
@@ -166,15 +215,15 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
         } else {
             pState = pState.setValue(GrinderBlock.ON, false);
 
-            resetProgress();
+            resetGrindProgress();
 
             sendUpdate();
         }
 
         if (hasProcessFinished()){
-            craftItem();
+            grindItem();
 
-            resetProgress();
+            resetGrindProgress();
 
             sendUpdate();
         }
@@ -183,9 +232,9 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
         setChanged(pLevel, pPos, pState);
     }
     private void burn(){
-        this.maxBurnTime = getBurnTime(this.itemHandler.getStackInSlot(FUEL_SLOT));
+        this.maxBurnTime = getBurnTime(this.fuelHandler.getStackInSlot(0));
         this.burnTime = this.maxBurnTime;
-        this.itemHandler.getStackInSlot(FUEL_SLOT).shrink(1);
+        this.fuelHandler.getStackInSlot(0).shrink(1);
     }
     private boolean isBurning(){
         return burnTime > 0;
@@ -207,39 +256,37 @@ public class GrinderBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private Optional<GrindingRecipe> getCurrentRecipe() {
-        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        SimpleContainer inventory = new SimpleContainer(1);
 
-        for(int i = 0; i < itemHandler.getSlots(); i++){
-            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
-        }
+        inventory.setItem(0, inputHandler.getStackInSlot(0));
 
         return this.level.getRecipeManager().getRecipeFor(ModRecipes.GRINDING_TYPE.get(), inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+        return this.outputHandler.getStackInSlot(0).isEmpty() || this.outputHandler.getStackInSlot(0).is(item);
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+        return this.outputHandler.getStackInSlot(0).getCount() + count <= this.outputHandler.getStackInSlot(0).getMaxStackSize();
     }
 
-    private void resetProgress() {
+    private void resetGrindProgress() {
         progress = 0;
     }
 
-    private void craftItem() {
+    private void grindItem() {
         Optional<GrindingRecipe> recipe = getCurrentRecipe();
 
         ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
-        this.itemHandler.extractItem(INPUT_SLOT, 1, false);
+        this.inputHandler.extractItem(0, 1, false);
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        this.outputHandler.setStackInSlot(0, new ItemStack(result.getItem(),
+                this.outputHandler.getStackInSlot(0).getCount() + result.getCount()));
     }
 
-    private void increaseCraftingProgress() {
+    private void increaseGrindProgress() {
         progress++;
     }
     private boolean hasProcessFinished(){

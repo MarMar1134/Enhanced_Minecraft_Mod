@@ -38,7 +38,7 @@ public class OreAlloyingCategory implements IRecipeCategory<AlloyingFurnaceRecip
 
     @Override
     public Component getTitle() {
-        return Component.translatable("block.enhanced_minecraft.adobe_alloying_furnace");
+        return Component.translatable("jei.enhanced_minecraft.adobe_alloying_furnace");
     }
 
     @Override

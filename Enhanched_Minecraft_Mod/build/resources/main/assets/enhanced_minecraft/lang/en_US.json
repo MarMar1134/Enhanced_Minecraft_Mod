@@ -9,6 +9,12 @@
   "creativetab.woodtypes": "Wood",
   "creativetab.blocks": "Blocks",
 
+  "jei.enhanced_minecraft.adobe_furnace": "Basic smelting",
+  "jei.enhanced_minecraft.adobe_alloying_furnace": "Alloying",
+  "jei.enhanced_minecraft.super_alloying_furnace": "Blast alloying",
+  "jei.enhanced_minecraft.gem_polisher": "Gem polishing",
+  "jei.enhanced_minecraft.grinder": "Grinding",
+
   "advancements.title.survival.root": "Enhanced Playthrough",
   "advancements.desc.survival.root": "You started a new adventure on this fantastic world. Welcome!",
   "advancements.title.unity_makes_strengh": "Unity makes strength",

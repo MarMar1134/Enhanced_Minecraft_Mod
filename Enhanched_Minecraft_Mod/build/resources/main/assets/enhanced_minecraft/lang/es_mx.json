@@ -9,6 +9,12 @@
   "creativetab.woodtypes": "Madera",
   "creativetab.blocks": "Bloques",
 
+  "jei.enhanced_minecraft.adobe_furnace": "Fundición básica",
+  "jei.enhanced_minecraft.adobe_alloying_furnace": "Aleación",
+  "jei.enhanced_minecraft.super_alloying_furnace": "Alta aleación",
+  "jei.enhanced_minecraft.gem_polisher": "Pulido",
+  "jei.enhanced_minecraft.grinder": "Molienda",
+
   "advancements.title.survival.root": "Enhanced Playthrough",
   "advancements.desc.survival.root": "Iniciaste una nueva aventura en este mundo fantástico. ¡Bienvenido!",
   "advancements.title.unity_makes_strengh": "La unión hace la fuerza",

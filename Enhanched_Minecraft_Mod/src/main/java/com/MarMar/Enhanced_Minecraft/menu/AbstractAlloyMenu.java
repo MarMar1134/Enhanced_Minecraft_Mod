@@ -1,6 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.menu;
 
 import com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractAlloyFurnaceBlockEntity;
+import com.MarMar.Enhanced_Minecraft.item.ModItems;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -8,8 +10,11 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.common.ForgeHooks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
+import org.jetbrains.annotations.NotNull;
 
 public abstract class AbstractAlloyMenu extends AbstractContainerMenu {
     public final AbstractAlloyFurnaceBlockEntity blockEntity;
@@ -110,12 +115,41 @@ public abstract class AbstractAlloyMenu extends AbstractContainerMenu {
     }
 
     private void createSlots(AbstractAlloyFurnaceBlockEntity blockEntity){
-        blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 37, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 74, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 56, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
-        });
+        //First input
+        blockEntity.getFirstInputLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 37, 17){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return stack.is(Tags.Items.RAW_MATERIALS);
+                    }
+                }));
+
+        //Second input
+        blockEntity.getSecondInputLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 74, 17){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return stack.is(Tags.Items.RAW_MATERIALS);
+                    }
+                }));
+
+        //Fuel
+        blockEntity.getFuelLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 56, 53){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return isFuel(stack);
+                    }
+                }));
+
+        //Output
+        blockEntity.getOutputLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 116, 35){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return false;
+                    }
+                }));
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
@@ -130,5 +164,9 @@ public abstract class AbstractAlloyMenu extends AbstractContainerMenu {
         for (int i = 0; i < 9; ++i) {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
+    }
+
+    private boolean isFuel(ItemStack stack){
+        return blockEntity.canBurn(stack);
     }
 }

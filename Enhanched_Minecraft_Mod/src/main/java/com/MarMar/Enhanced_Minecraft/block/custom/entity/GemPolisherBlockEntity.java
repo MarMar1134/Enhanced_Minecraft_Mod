@@ -53,7 +53,6 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
         }
     };
 
-    private LazyOptional<ItemStackHandler> lazyItemHandler= LazyOptional.empty();
     private final LazyOptional<ItemStackHandler> inputLazyHandler = LazyOptional.of(() -> this.inputHandler);
     private final LazyOptional<ItemStackHandler> outputLazyHandler = LazyOptional.of(() -> this.outputHandler);
     private final LazyOptional<ItemStackHandler> toolLazyHandler = LazyOptional.of(() -> this.toolHandler);

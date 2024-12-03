@@ -1,5 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.menu;
 
+import com.MarMar.Enhanced_Minecraft.Util.ModTags;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.block.custom.entity.GemPolisherBlockEntity;
 import com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem;
@@ -38,6 +39,7 @@ public class GemPolisherMenu extends AbstractContainerMenu {
     }
 
     private void createSlots(GemPolisherBlockEntity entity){
+        //Tool
         entity.getToolLazyHandler().ifPresent(itemStackHandler ->
                 addSlot(new SlotItemHandler(itemStackHandler, 0, 8, 9){
                     @Override
@@ -51,9 +53,16 @@ public class GemPolisherMenu extends AbstractContainerMenu {
                     }
                 }));
 
+        //Input
         entity.getInputLazyHandler().ifPresent(itemStackHandler ->
-                addSlot(new SlotItemHandler(itemStackHandler, 0, 55, 34)));
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 55, 34){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return stack.is(ModTags.Items.RAW_GEM);
+                    }
+                }));
 
+        //Output
         entity.getOutputLazyHandler().ifPresent(itemStackHandler ->
                 addSlot(new SlotItemHandler(itemStackHandler, 0, 130, 33){
                     @Override

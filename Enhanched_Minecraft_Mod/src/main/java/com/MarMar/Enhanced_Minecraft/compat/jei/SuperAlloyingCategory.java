@@ -38,7 +38,7 @@ public class SuperAlloyingCategory implements IRecipeCategory<SuperAlloyingRecip
 
     @Override
     public Component getTitle() {
-        return Component.translatable("block.enhanced_minecraft.super_alloying_furnace");
+        return Component.translatable("jei.enhanced_minecraft.super_alloying_furnace");
     }
 
     @Override

@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
+import org.jetbrains.annotations.NotNull;
 
 public class GrinderMenu extends AbstractContainerMenu {
     public final GrinderBlockEntity blockEntity;
@@ -30,11 +31,7 @@ public class GrinderMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 53, 19));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 54, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 124, 24));
-        });
+        addSlots((GrinderBlockEntity) entity);
 
         addDataSlots(data);
     }
@@ -43,6 +40,30 @@ public class GrinderMenu extends AbstractContainerMenu {
     }
     public boolean isBurning(){
         return data.get(2) > 0;
+    }
+
+    private void addSlots(GrinderBlockEntity entity){
+        //Input
+        entity.getInputLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 53, 19)));
+
+        //Fuel
+        entity.getFuelLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 53, 59){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return entity.canBurn(stack);
+                    }
+                }));
+
+        //Output
+        entity.getOutputLazyHandler().ifPresent(itemStackHandler ->
+                addSlot(new SlotItemHandler(itemStackHandler, 0, 124, 24){
+                    @Override
+                    public boolean mayPlace(@NotNull ItemStack stack) {
+                        return false;
+                    }
+                }));
     }
 
     public int getScaledProgress() {
