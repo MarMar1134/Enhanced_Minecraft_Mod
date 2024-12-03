@@ -1,6 +1,8 @@
 {
   "type": "enhanced_minecraft:basic_smelting",
+  "category": "basic_smelt",
   "cooktime": 300,
+  "group": "zapallo",
   "ingredient": {
     "item": "enhanced_minecraft:zapallo"
   },

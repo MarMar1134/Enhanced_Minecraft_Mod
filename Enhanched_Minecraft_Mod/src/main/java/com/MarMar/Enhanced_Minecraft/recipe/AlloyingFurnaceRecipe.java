@@ -14,13 +14,17 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 public class AlloyingFurnaceRecipe extends AbstractAlloyRecipe implements Recipe<SimpleContainer> {
-private final NonNullList<Ingredient> inputs;
-private final int alloyTime;
+    private final NonNullList<Ingredient> inputs;
+    private final int alloyTime;
+    private final ModRecipeCategory category;
+    private final String group;
 
-    public AlloyingFurnaceRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
-        super(inputs, output, alloyingTime, id, ModRecipes.ALLOYING_TYPE.get());
+    public AlloyingFurnaceRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id, ModRecipeCategory category, String group) {
+        super(inputs, output, alloyingTime, id, ModRecipes.ALLOYING_TYPE.get(), category, group);
         this.inputs = inputs;
         this.alloyTime = alloyingTime;
+        this.category = category;
+        this.group = group;
     }
 
     @Override
@@ -54,6 +58,10 @@ private final int alloyTime;
         public final int defaultAlloyTime = 0;
         @Override
         public AlloyingFurnaceRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
+            ModRecipeCategory recipeCategory = ModRecipeCategory.CODEC.byName(GsonHelper.getAsString(jsonObject, "category"));
+
+            String group = GsonHelper.getAsString(jsonObject, "group");
+
             int alloyTime = GsonHelper.getAsInt(jsonObject, "alloytime", defaultAlloyTime);
 
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
@@ -65,11 +73,15 @@ private final int alloyTime;
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new AlloyingFurnaceRecipe(inputs, output, alloyTime, resourceLocation);
+            return new AlloyingFurnaceRecipe(inputs, output, alloyTime, resourceLocation, recipeCategory, group);
         }
 
         @Override
         public @Nullable AlloyingFurnaceRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
+            ModRecipeCategory recipeCategory = friendlyByteBuf.readEnum(ModRecipeCategory.class);
+
+            String group = friendlyByteBuf.readUtf();
+
             int alloyTime = friendlyByteBuf.readVarInt();
 
             NonNullList<Ingredient> inputs = NonNullList.withSize(friendlyByteBuf.readInt(), Ingredient.EMPTY);
@@ -79,11 +91,15 @@ private final int alloyTime;
             }
 
             ItemStack output = friendlyByteBuf.readItem();
-            return new AlloyingFurnaceRecipe(inputs, output, alloyTime, resourceLocation);
+            return new AlloyingFurnaceRecipe(inputs, output, alloyTime, resourceLocation, recipeCategory, group);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, AlloyingFurnaceRecipe alloyingFurnaceRecipes) {
+            friendlyByteBuf.writeEnum(alloyingFurnaceRecipes.category);
+
+            friendlyByteBuf.writeUtf(alloyingFurnaceRecipes.group);
+
             friendlyByteBuf.writeVarInt(alloyingFurnaceRecipes.alloyTime);
 
             friendlyByteBuf.writeInt(alloyingFurnaceRecipes.inputs.size());

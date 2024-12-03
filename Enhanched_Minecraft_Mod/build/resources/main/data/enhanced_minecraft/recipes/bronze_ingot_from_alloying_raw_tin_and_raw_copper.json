@@ -1,6 +1,8 @@
 {
   "type": "enhanced_minecraft:ore_alloying",
   "alloytime": 200,
+  "category": "ore_alloy",
+  "group": "bronze_ingot",
   "ingredients": [
     {
       "item": "enhanced_minecraft:raw_tin"

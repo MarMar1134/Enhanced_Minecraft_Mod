@@ -29,6 +29,10 @@ import java.util.Optional;
 
 public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
+
+
+
+
     private static final int INPUT_SLOT1 = 0;
     private static final int INPUT_SLOT2 = 1;
     private static final int FUEL_SLOT = 2;

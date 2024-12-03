@@ -1,5 +1,7 @@
 {
   "type": "enhanced_minecraft:grinding",
+  "category": "grind",
+  "group": "misc",
   "ingredient": {
     "tag": "minecraft:wool"
   },

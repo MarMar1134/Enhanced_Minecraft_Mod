@@ -1,6 +1,8 @@
 {
   "type": "enhanced_minecraft:ore_alloying",
   "alloytime": 200,
+  "category": "ore_alloy",
+  "group": "steel_ingot",
   "ingredients": [
     {
       "item": "minecraft:raw_iron"

@@ -15,11 +15,15 @@ import org.jetbrains.annotations.Nullable;
 public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputs;
     private final int alloyTime;
+    private final ModRecipeCategory category;
+    private final String group;
 
-    public SuperAlloyingRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id) {
-        super(inputs, output, alloyingTime, id, ModRecipes.SUPER_ALLOYING_TYPE.get());
+    public SuperAlloyingRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id, ModRecipeCategory category, String group) {
+        super(inputs, output, alloyingTime, id, ModRecipes.SUPER_ALLOYING_TYPE.get(), category, group);
         this.inputs = inputs;
         this.alloyTime = alloyingTime;
+        this.category = category;
+        this.group = group;
     }
 
     @Override
@@ -42,6 +46,10 @@ public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<S
         public final int defaultAlloyTime = 0;
         @Override
         public SuperAlloyingRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
+            ModRecipeCategory recipeCategory = ModRecipeCategory.CODEC.byName(GsonHelper.getAsString(jsonObject, "category"));
+
+            String group = GsonHelper.getAsString(jsonObject, "group");
+
             int alloyTime = GsonHelper.getAsInt(jsonObject, "alloytime", defaultAlloyTime);
 
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
@@ -53,11 +61,15 @@ public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<S
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new SuperAlloyingRecipe(inputs, output, alloyTime, resourceLocation);
+            return new SuperAlloyingRecipe(inputs, output, alloyTime, resourceLocation, recipeCategory, group);
         }
 
         @Override
         public @Nullable SuperAlloyingRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
+            ModRecipeCategory recipeCategory = friendlyByteBuf.readEnum(ModRecipeCategory.class);
+
+            String group = friendlyByteBuf.readUtf();
+
             int alloyTime = friendlyByteBuf.readVarInt();
 
             NonNullList<Ingredient> inputs = NonNullList.withSize(friendlyByteBuf.readInt(), Ingredient.EMPTY);
@@ -66,11 +78,15 @@ public class SuperAlloyingRecipe extends AbstractAlloyRecipe implements Recipe<S
                 inputs.set(i, Ingredient.fromNetwork(friendlyByteBuf));
             }
             ItemStack output = friendlyByteBuf.readItem();
-            return new SuperAlloyingRecipe(inputs, output, alloyTime, resourceLocation);
+            return new SuperAlloyingRecipe(inputs, output, alloyTime, resourceLocation, recipeCategory, group);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, SuperAlloyingRecipe recipes) {
+            friendlyByteBuf.writeEnum(recipes.category);
+
+            friendlyByteBuf.writeUtf(recipes.group);
+
             friendlyByteBuf.writeVarInt(recipes.alloyTime);
 
             friendlyByteBuf.writeInt(recipes.inputs.size());

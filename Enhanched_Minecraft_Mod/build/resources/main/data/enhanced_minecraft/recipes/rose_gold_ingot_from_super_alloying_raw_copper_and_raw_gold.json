@@ -1,6 +1,8 @@
 {
   "type": "enhanced_minecraft:super_ore_alloying",
   "alloytime": 100,
+  "category": "super_ore_alloy",
+  "group": "rose_gold_ingot",
   "ingredients": [
     {
       "item": "minecraft:raw_copper"

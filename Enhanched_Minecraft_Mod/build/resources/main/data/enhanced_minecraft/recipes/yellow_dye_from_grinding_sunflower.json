@@ -1,5 +1,7 @@
 {
   "type": "enhanced_minecraft:grinding",
+  "category": "grind",
+  "group": "dyes",
   "ingredient": {
     "item": "minecraft:sunflower"
   },

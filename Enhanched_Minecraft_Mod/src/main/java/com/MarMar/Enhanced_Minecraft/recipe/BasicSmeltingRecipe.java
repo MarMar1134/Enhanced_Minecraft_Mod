@@ -20,12 +20,16 @@ public class BasicSmeltingRecipe implements Recipe<SimpleContainer> {
     private final ItemStack output;
     private final ResourceLocation id;
     private final int CoockingTime;
+    private final ModRecipeCategory category;
+    private final String group;
 
-    public BasicSmeltingRecipe(Ingredient input, ItemStack output, ResourceLocation id, int cookingTime) {
+    public BasicSmeltingRecipe(Ingredient input, ItemStack output, ResourceLocation id, int cookingTime, ModRecipeCategory category, String group) {
         this.input = input;
         this.output = output;
         this.id = id;
         CoockingTime = cookingTime;
+        this.category = category;
+        this.group = group;
     } public Ingredient getIngredient() {
         return this.input;
     }
@@ -82,6 +86,10 @@ public class BasicSmeltingRecipe implements Recipe<SimpleContainer> {
         public final int defaultCookTime = 0;
         @Override
         public BasicSmeltingRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
+            ModRecipeCategory recipeCategory = ModRecipeCategory.CODEC.byName(GsonHelper.getAsString(jsonObject, "category"));
+
+            String group = GsonHelper.getAsString(jsonObject, "group");
+
             int cookTime = GsonHelper.getAsInt(jsonObject, "cooktime", defaultCookTime);
 
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
@@ -91,22 +99,31 @@ public class BasicSmeltingRecipe implements Recipe<SimpleContainer> {
 
 
 
-            return new BasicSmeltingRecipe(input, output, resourceLocation, cookTime);
+            return new BasicSmeltingRecipe(input, output, resourceLocation, cookTime, recipeCategory, group);
         }
 
         @Override
         public @Nullable BasicSmeltingRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
+            ModRecipeCategory recipeCategory = friendlyByteBuf.readEnum(ModRecipeCategory.class);
+
+            String group = friendlyByteBuf.readUtf();
+
+
             int alloyTime = friendlyByteBuf.readVarInt();
 
             Ingredient input = Ingredient.fromNetwork(friendlyByteBuf);
 
             ItemStack output = friendlyByteBuf.readItem();
 
-            return new BasicSmeltingRecipe(input, output, resourceLocation, alloyTime);
+            return new BasicSmeltingRecipe(input, output, resourceLocation, alloyTime, recipeCategory, group);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, BasicSmeltingRecipe recipe) {
+            friendlyByteBuf.writeEnum(recipe.category);
+
+            friendlyByteBuf.writeUtf(recipe.group);
+
             friendlyByteBuf.writeVarInt(recipe.CoockingTime);
 
             recipe.input.toNetwork(friendlyByteBuf);

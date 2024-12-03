@@ -17,11 +17,15 @@ public class GrindingRecipe implements Recipe<SimpleContainer> {
     private final Ingredient input;
     private final ItemStack output;
     private final ResourceLocation id;
+    private final ModRecipeCategory category;
+    private final String group;
 
-    public GrindingRecipe(Ingredient input, ItemStack output, ResourceLocation id) {
+    public GrindingRecipe(Ingredient input, ItemStack output, ResourceLocation id, ModRecipeCategory category, String group) {
         this.input = input;
         this.output = output;
         this.id = id;
+        this.category = category;
+        this.group = group;
     }
 
 
@@ -75,25 +79,38 @@ public class GrindingRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public GrindingRecipe fromJson(ResourceLocation resourceLocation, JsonObject jsonObject) {
+            ModRecipeCategory recipeCategory = ModRecipeCategory.CODEC.byName(GsonHelper.getAsString(jsonObject, "category"));
+
+            String group = GsonHelper.getAsString(jsonObject, "group");
+
+
             JsonElement ingredientElement = GsonHelper.isArrayNode(jsonObject, "ingredient") ? GsonHelper.getAsJsonArray(jsonObject, "ingredient") : GsonHelper.getAsJsonObject(jsonObject, "ingredient");
             Ingredient ingredient = Ingredient.fromJson(ingredientElement, false);
 
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
 
-            return new GrindingRecipe(ingredient, output, resourceLocation);
+            return new GrindingRecipe(ingredient, output, resourceLocation, recipeCategory, group);
         }
 
         @Override
         public @Nullable GrindingRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
+            ModRecipeCategory recipeCategory = friendlyByteBuf.readEnum(ModRecipeCategory.class);
+
+            String group = friendlyByteBuf.readUtf();
+
             Ingredient ingredient = Ingredient.fromNetwork(friendlyByteBuf);
 
             ItemStack output = friendlyByteBuf.readItem();
 
-            return new GrindingRecipe(ingredient, output, resourceLocation);
+            return new GrindingRecipe(ingredient, output, resourceLocation, recipeCategory, group);
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf friendlyByteBuf, GrindingRecipe grindingRecipe) {
+            friendlyByteBuf.writeEnum(grindingRecipe.category);
+
+            friendlyByteBuf.writeUtf(grindingRecipe.group);
+
             grindingRecipe.input.toNetwork(friendlyByteBuf);
 
             friendlyByteBuf.writeItemStack(grindingRecipe.getResultItem(null), false);

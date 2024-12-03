@@ -1,5 +1,7 @@
 {
   "type": "enhanced_minecraft:gem_polishing",
+  "category": "gem_polish",
+  "group": "gems",
   "ingredient": {
     "item": "enhanced_minecraft:raw_diamond"
   },

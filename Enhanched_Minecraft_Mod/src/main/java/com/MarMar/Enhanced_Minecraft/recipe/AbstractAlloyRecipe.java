@@ -16,13 +16,17 @@ public abstract class AbstractAlloyRecipe implements Recipe<SimpleContainer> {
     protected final ItemStack output;
     protected final int alloyTime;
     protected final ResourceLocation id;
+    private final ModRecipeCategory category;
+    private final String group;
 
-    public AbstractAlloyRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id, RecipeType<?> recipeType) {
+    public AbstractAlloyRecipe(NonNullList<Ingredient> inputs, ItemStack output, int alloyingTime, ResourceLocation id, RecipeType<?> recipeType, ModRecipeCategory category, String group) {
         this.inputs = inputs;
         this.output = output;
         this.alloyTime = alloyingTime;
         this.id = id;
         this.recipeType = recipeType;
+        this.category = category;
+        this.group = group;
     }
     public int getAlloyTime(){
         return this.alloyTime;

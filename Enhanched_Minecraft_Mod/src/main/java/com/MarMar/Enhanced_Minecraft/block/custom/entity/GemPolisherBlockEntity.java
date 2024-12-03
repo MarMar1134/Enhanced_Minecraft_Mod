@@ -3,6 +3,7 @@ package com.MarMar.Enhanced_Minecraft.block.custom.entity;
 import com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem;
 import com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe;
 import com.MarMar.Enhanced_Minecraft.menu.GemPolisherMenu;
+import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -30,11 +31,33 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3);
-    private static final int TOOL_SLOT = 0;
-    private static final int INPUT_SLOT = 1;
-    private static final int OUTPUT_SLOT = 2;
+    private final ItemStackHandler inputHandler = new ItemStackHandler(1) {
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler outputHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+    private final ItemStackHandler toolHandler = new ItemStackHandler(1){
+        @Override
+        protected void onContentsChanged(int slot) {
+            super.onContentsChanged(slot);
+            setChanged();
+        }
+    };
+
     private LazyOptional<ItemStackHandler> lazyItemHandler= LazyOptional.empty();
+    private final LazyOptional<ItemStackHandler> inputLazyHandler = LazyOptional.of(() -> this.inputHandler);
+    private final LazyOptional<ItemStackHandler> outputLazyHandler = LazyOptional.of(() -> this.outputHandler);
+    private final LazyOptional<ItemStackHandler> toolLazyHandler = LazyOptional.of(() -> this.toolHandler);
+
     protected final ContainerData Data;
     private int tool = 0;
     private int uses = 0, maxUses = 0;
@@ -75,31 +98,48 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
 
     }
 
+    public LazyOptional<ItemStackHandler> getInputLazyHandler(){
+        return this.inputLazyHandler;
+    }
+    public LazyOptional<ItemStackHandler> getOutputLazyHandler(){
+        return this.outputLazyHandler;
+    }
+    public LazyOptional<ItemStackHandler> getToolLazyHandler(){
+        return this.toolLazyHandler;
+    }
+
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER){
-            return lazyItemHandler.cast();
+            if (side == Direction.UP){
+                return inputLazyHandler.cast();
+            }
+            if (side == Direction.DOWN){
+                return outputLazyHandler.cast();
+            }
+
+
+            return toolLazyHandler.cast();
         }
         return super.getCapability(cap, side);
     }
 
     public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for(int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
-        }
+        SimpleContainer inventory = new SimpleContainer(3);
+
+        inventory.setItem(0, toolHandler.getStackInSlot(0));
+        inventory.setItem(1, inputHandler.getStackInSlot(0));
+        inventory.setItem(2, outputHandler.getStackInSlot(0));
+
         Containers.dropContents(this.level, this.worldPosition, inventory);
-    }
-    @Override
-    public void onLoad() {
-        super.onLoad();
-        lazyItemHandler=LazyOptional.of(() -> itemHandler);
     }
 
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
-        lazyItemHandler.invalidate();
+        inputLazyHandler.invalidate();
+        outputLazyHandler.invalidate();
+        toolLazyHandler.invalidate();
     }
 
     @Override
@@ -128,10 +168,10 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
 
                     sendUpdate();
                 }
-            } else if (isAccurateTool(this.itemHandler.getStackInSlot(TOOL_SLOT))){
-                maxUses = getPolisherUses(this.itemHandler.getStackInSlot(TOOL_SLOT));
+            } else if (isAccurateTool(this.toolHandler.getStackInSlot(0))){
+                maxUses = getPolisherUses(this.toolHandler.getStackInSlot(0));
                 setUses(maxUses);
-                this.itemHandler.extractItem(TOOL_SLOT, 1, false);
+                this.toolHandler.extractItem(0, 1, false);
 
                 sendUpdate();
             }
@@ -148,11 +188,11 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+        return this.outputHandler.getStackInSlot(0).isEmpty() || this.outputHandler.getStackInSlot(0).is(item);
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+        return this.outputHandler.getStackInSlot(0).getCount() + count <= this.outputHandler.getStackInSlot(0).getMaxStackSize();
     }
 
     private void increasePolishProgress() {
@@ -196,7 +236,10 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     }
     @Override
     protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("inventory", itemHandler.serializeNBT());
+        pTag.put("input", inputHandler.serializeNBT());
+        pTag.put("tool", toolHandler.serializeNBT());
+        pTag.put("output", outputHandler.serializeNBT());
+
         pTag.putInt("gem_polisher.progress", progress);
         pTag.putInt("gem_polisher.uses", uses);
         pTag.putInt("gem_polisher.maxUses", maxUses);
@@ -206,16 +249,19 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
+        inputHandler.deserializeNBT(pTag.getCompound("input"));
+        toolHandler.deserializeNBT(pTag.getCompound("tool"));
+        outputHandler.deserializeNBT(pTag.getCompound("output"));
+
         progress = pTag.getInt("gem_polisher.progress");
         uses = pTag.getInt("gem_polisher.uses");
         maxUses = pTag.getInt("gem_polisher.maxUses");
     }
     private Optional<GemPolishingRecipe> getCurrentRecipe() {
-        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        SimpleContainer inventory = new SimpleContainer(this.inputHandler.getSlots());
 
 
-            inventory.setItem(0, this.itemHandler.getStackInSlot(1));
+            inventory.setItem(0, this.inputHandler.getStackInSlot(0));
 
         return this.level.getRecipeManager().getRecipeFor(GemPolishingRecipe.Type.INSTANCE, inventory, level);
     }
@@ -224,10 +270,10 @@ public class GemPolisherBlockEntity extends BlockEntity implements MenuProvider 
 
         ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
-        this.itemHandler.extractItem(INPUT_SLOT, 1, false);
+        this.inputHandler.extractItem(0, 1, false);
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        this.outputHandler.setStackInSlot(0, new ItemStack(result.getItem(),
+                this.outputHandler.getStackInSlot(0).getCount() + result.getCount()));
     }
 
 }
