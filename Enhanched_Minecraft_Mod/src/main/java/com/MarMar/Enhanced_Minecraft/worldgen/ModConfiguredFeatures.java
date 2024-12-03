@@ -38,10 +38,16 @@ public class ModConfiguredFeatures {
     //Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> TIN_ORE_KEY = registerKey("tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> EXTRA_TIN_ORE_KEY = registerKey("extra_tin_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ZINC_ORE_KEY = registerKey("zinc_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_ZINC_ORE_KEY = registerKey("nether_zinc_ore");
+
     public static final ResourceKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = registerKey("silver_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> EXTRA_SILVER_ORE_KEY = registerKey("extra_silver_ore");
+
     public static final ResourceKey<ConfiguredFeature<?, ?>> SULFUR_ORE_KEY = registerKey("sulfur_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SULFUR_ORE_KEY = registerKey("nether_sulfur_ore");
+
     public static final ResourceKey<ConfiguredFeature<?, ?>> RUBI_ORE_KEY = registerKey("rubi_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SAPHIRE_ORE_KEY = registerKey("saphire_ore");
 
@@ -101,6 +107,16 @@ public class ModConfiguredFeatures {
 
         register(context, TIN_ORE_KEY, Feature.ORE, new OreConfiguration(tinOres, 7));
         register(context, EXTRA_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(tinOres, 7));
+
+        //Zinc ore
+        List<OreConfiguration.TargetBlockState> zincOres = List.of(OreConfiguration.target(stoneReplaceable,
+                ModBlocks.ZINC_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_ZINC_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> netherZincOres = List.of(OreConfiguration.target(netherrackReplaceable,
+                        ModBlocks.NETHER_ZINC_ORE.get().defaultBlockState()));
+
+        register(context, ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(zincOres, 6));
+        register(context, NETHER_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(netherZincOres, 10));
 
         //Silver ore
         List<OreConfiguration.TargetBlockState> silverOres = List.of(OreConfiguration.target(stoneReplaceable,

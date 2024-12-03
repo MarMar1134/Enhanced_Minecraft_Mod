@@ -3,6 +3,9 @@ package com.MarMar.Enhanced_Minecraft.item;
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.Util.ModTiers;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
+import com.MarMar.Enhanced_Minecraft.item.armor.ModArmorEffects;
+import com.MarMar.Enhanced_Minecraft.item.armor.ModArmorMaterials;
+import com.MarMar.Enhanced_Minecraft.item.templates.BronziumSmithingUpgradeTemplate;
 import com.MarMar.Enhanced_Minecraft.item.custom.MateItem;
 import com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +24,8 @@ public class ModItems {
                 "sulfur",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_TIN = ITEMS.register(
                 "raw_tin",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> RAW_ZINC = ITEMS.register(
+                "raw_zinc",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_SILVER = ITEMS.register(
                 "raw_silver", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COBALT = ITEMS.register(
@@ -37,28 +42,45 @@ public class ModItems {
         //melted
         public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register(
                 "copper_nugget", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> TIN_INGOT = ITEMS.register(
                 "tin_ingot",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register(
                 "tin_nugget", () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register(
+                "zinc_ingot",() -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ZINC_NUGGET = ITEMS.register(
+                "zinc_nugget", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register(
                 "bronze_ingot",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register(
                 "bronze_nugget", () -> new Item(new Item.Properties()));
+
+        public static final RegistryObject<Item> BRASS_INGOT = ITEMS.register(
+                "brass_ingot", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_NUGGET = ITEMS.register(
+                "brass_nugget", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register(
                 "steel_ingot", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register(
                 "silver_ingot", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register(
                 "silver_nugget", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> ROSE_GOLD_INGOT = ITEMS.register(
                 "rose_gold_ingot", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ROSE_GOLD_NUGGET = ITEMS.register(
                 "rose_gold_nugget", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> GREEN_GOLD_INGOT = ITEMS.register(
                 "green_gold_ingot", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GREEN_GOLD_NUGGET = ITEMS.register(
                 "green_gold_nugget", () -> new Item(new Item.Properties()));
+
         public static final RegistryObject<Item> RUBI = ITEMS.register(
                 "rubi", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
@@ -67,6 +89,10 @@ public class ModItems {
     //Dust
     public static final RegistryObject<Item> COBALT_DUST = ITEMS.register(
             "cobalt_dust", () -> new Item(new Item.Properties()));
+
+    //Templates
+    public static final RegistryObject<Item> BRONZIUM_SMITHING_UPGRADE_TEMPLATE = ITEMS.register(
+            "bronzium_upgrade_smithing_template", BronziumSmithingUpgradeTemplate::new);
 
     //Weapons, tools and armors
         //Stone
@@ -120,6 +146,28 @@ public class ModItems {
                 "bronze_leggings", () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register(
                 "bronze_boots", () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        //Brass
+        public static final RegistryObject<Item> BRASS_SWORD = ITEMS.register(
+                "brass_sword",() -> new SwordItem(ModTiers.BRASS, 1, -2.4F, new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_PICKAXE = ITEMS.register(
+                "brass_pickaxe",() -> new PickaxeItem(ModTiers.BRASS, 1, -2.8F,  new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_AXE = ITEMS.register(
+                "brass_axe",() -> new AxeItem(ModTiers.BRASS, 4, -2F,  new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_SHOVEL = ITEMS.register(
+                "brass_shovel",() -> new ShovelItem(ModTiers.BRASS, 1, -2F,  new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_HOE = ITEMS.register(
+                "brass_hoe",() -> new HoeItem(ModTiers.BRASS, 1, -2F,  new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_POLISHER = ITEMS.register(
+                "brass_polisher",() -> new PolisherItem(ModTiers.BRASS,0, new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_HELMET = ITEMS.register(
+                "brass_helmet", () -> new ArmorItem(ModArmorMaterials.BRASS, ArmorItem.Type.HELMET, new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_CHESTPLATE = ITEMS.register(
+                "brass_chestplate", () -> new ArmorItem(ModArmorMaterials.BRASS, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_LEGGINGS = ITEMS.register(
+                "brass_leggings", () -> new ArmorItem(ModArmorMaterials.BRASS, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        public static final RegistryObject<Item> BRASS_BOOTS = ITEMS.register(
+                "brass_boots", () -> new ArmorItem(ModArmorMaterials.BRASS, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         //Rose Gold
         public static final RegistryObject<Item> ROSE_GOLDEN_SWORD = ITEMS.register(

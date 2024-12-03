@@ -112,6 +112,11 @@ public class ModItemModelProvider extends ItemModelProvider {
             blockWithItem(ModBlocks.LIMESTONE_BRICK_STAIRS);
             wallItem(ModBlocks.LIMESTONE_BRICK_WALL, ModBlocks.LIMESTONE_BRICKS);
 
+            //Soul
+            blockWithItem(ModBlocks.SOUL_MUD_BRICK_SLAB);
+            blockWithItem(ModBlocks.SOUL_MUD_BRICK_STAIRS);
+            wallItem(ModBlocks.SOUL_MUD_BRICK_WALL, ModBlocks.SOUL_MUD_BRICKS);
+
         //wood
             //walnut
             saplingItem(ModBlocks.WALNUT_SAPLING);
@@ -199,6 +204,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TIN_INGOT);
         simpleItem(ModItems.TIN_NUGGET);
 
+        simpleItem(ModItems.RAW_ZINC);
+        simpleItem(ModItems.ZINC_INGOT);
+        simpleItem(ModItems.ZINC_NUGGET);
+
+        simpleItem(ModItems.BRASS_INGOT);
+        simpleItem(ModItems.BRASS_NUGGET);
+
         simpleItem(ModItems.BRONZE_INGOT);
         simpleItem(ModItems.BRONZE_NUGGET);
 
@@ -227,6 +239,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Dust
         simpleItem(ModItems.COBALT_DUST);
 
+        //templates
+        simpleItem(ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE);
 
         //Armors and tools
             //Gold
@@ -261,6 +275,18 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.BRONZE_LEGGINGS);
             simpleItem(ModItems.BRONZE_BOOTS);
 
+            //Brass
+            HandheldItem(ModItems.BRASS_SWORD);
+            HandheldItem(ModItems.BRASS_PICKAXE);
+            HandheldItem(ModItems.BRASS_AXE);
+            HandheldItem(ModItems.BRASS_SHOVEL);
+            HandheldItem(ModItems.BRASS_HOE);
+            HandheldItem(ModItems.BRASS_POLISHER);
+
+            simpleItem(ModItems.BRASS_HELMET);
+            simpleItem(ModItems.BRASS_CHESTPLATE);
+            simpleItem(ModItems.BRASS_LEGGINGS);
+            simpleItem(ModItems.BRASS_BOOTS);
             //Rose Gold
             HandheldItem(ModItems.ROSE_GOLDEN_SWORD);
             HandheldItem(ModItems.ROSE_GOLDEN_PICKAXE);

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "enhanced_minecraft:soul_mud_brick"
+  },
+  "result": "enhanced_minecraft:soul_mud_brick_stair"
+}

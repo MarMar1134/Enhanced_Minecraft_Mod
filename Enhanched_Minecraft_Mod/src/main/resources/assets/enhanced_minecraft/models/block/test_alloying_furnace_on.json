@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-		"front": "enhanced_minecraft:block/super_alloying_front_on",
-		"side": "enhanced_minecraft:block/super_alloying_side",
-		"top": "enhanced_minecraft:block/super_alloying_top"
-	}
-}

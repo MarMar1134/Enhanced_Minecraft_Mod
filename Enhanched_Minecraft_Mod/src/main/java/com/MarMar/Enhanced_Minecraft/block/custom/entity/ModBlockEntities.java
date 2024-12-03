@@ -20,6 +20,9 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<SuperAlloyingFurnaceBlockEntity>> SUPER_ALLOYING_FURNACE_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("super_alloying_furnace", () -> BlockEntityType
                     .Builder.of(SuperAlloyingFurnaceBlockEntity::new,ModBlocks.SUPER_ALLOYING_FURNACE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<SoulAlloyFurnaceBlockEntity>> SOUL_ALLOY_FURNACE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("soul_alloy_furnace", () -> BlockEntityType
+                    .Builder.of(SoulAlloyFurnaceBlockEntity::new,ModBlocks.SOUL_ALLOY_FURNACE.get()).build(null));
     public static final RegistryObject<BlockEntityType<GemPolisherBlockEntity>> GEM_POLISHER_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("gem_polisher_block", () -> BlockEntityType
                     .Builder.of(GemPolisherBlockEntity::new,ModBlocks.GEM_POLISHER.get()).build(null));

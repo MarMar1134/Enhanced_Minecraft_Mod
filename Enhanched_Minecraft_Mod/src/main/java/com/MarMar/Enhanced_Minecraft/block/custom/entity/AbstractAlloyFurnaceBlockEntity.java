@@ -217,6 +217,8 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
     protected Optional<? extends AbstractAlloyRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
 
+
+
         for (int i = 0; i < this.itemHandler.getSlots(); i++){
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }

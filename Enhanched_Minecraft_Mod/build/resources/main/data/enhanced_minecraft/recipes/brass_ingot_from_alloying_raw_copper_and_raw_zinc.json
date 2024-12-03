@@ -1,0 +1,15 @@
+{
+  "type": "enhanced_minecraft:ore_alloying",
+  "alloytime": 200,
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "enhanced_minecraft:raw_zinc"
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:brass_ingot"
+  }
+}

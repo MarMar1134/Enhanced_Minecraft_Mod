@@ -31,10 +31,16 @@ public class ModPlacedFeatures {
     //Ores
     public static final ResourceKey<PlacedFeature> TIN_ORE_PLACED_KEY = registerKey("tin_ore_placed");
     public static final ResourceKey<PlacedFeature> EXTRA_TIN_ORE_PLACED_KEY = registerKey("extra_tin_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> ZINC_ORE_PLACED_KEY = registerKey("zinc_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_ZINC_ORE_PLACED_KEY = registerKey("nether_zinc_ore_placed");
+
     public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
     public static final ResourceKey<PlacedFeature> EXTRA_SILVER_ORE_PLACED_KEY = registerKey("extra_silver_ore_placed");
+
     public static final ResourceKey<PlacedFeature> SULPHUR_ORE_PLACED_KEY = registerKey("sulphur_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_SULPHUR_ORE_PLACED_KEY = registerKey("nether_sulphur_ore_placed");
+
     public static final ResourceKey<PlacedFeature> SAPHIRE_ORE_PLACED_KEY = registerKey("saphire_ore_placed");
     public static final ResourceKey<PlacedFeature> RUBI_ORE_PLACED_KEY = registerKey("rubi_ore_placed");
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -73,6 +79,15 @@ public class ModPlacedFeatures {
         register(context, EXTRA_TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.EXTRA_TIN_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(15,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(90), VerticalAnchor.absolute(200))));
+
+        //Zinc
+        register(context, ZINC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ZINC_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(13,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-50), VerticalAnchor.absolute(15))));
+
+        register(context, NETHER_ZINC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ZINC_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(16,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(128))));
 
         //Silver
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SILVER_ORE_KEY),

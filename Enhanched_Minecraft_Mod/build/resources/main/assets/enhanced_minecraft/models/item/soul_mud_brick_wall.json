@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "enhanced_minecraft:block/soul_mud_brick"
+  }
+}

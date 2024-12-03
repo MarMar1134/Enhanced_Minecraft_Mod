@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "enhanced_minecraft:soul_mud_brick"
+    },
+    "I": {
+      "item": "minecraft:blackstone"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "III"
+  ],
+  "result": {
+    "item": "enhanced_minecraft:soul_alloy_furnace"
+  },
+  "show_notification": true
+}

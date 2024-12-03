@@ -1,5 +1,6 @@
-// 1.20.1	2024-11-22T16:10:18.9840828	Tags for minecraft:item mod id enhanced_minecraft
+// 1.20.1	2024-12-02T14:27:34.6014882	Tags for minecraft:item mod id enhanced_minecraft
 3fc647babc0e967915d33d57ed18fa4ad1ef04cc data/enhanced_minecraft/tags/items/apple_logs.json
+1a008df1c05956de81c8cc12517ae8cbb3cc0b62 data/enhanced_minecraft/tags/items/brass.json
 78aecc5de5e453561e7d91e780837115ce3e2462 data/enhanced_minecraft/tags/items/bronze.json
 22579ecb18517e050c42dc8c8c3d9f0a4ba4b2dc data/enhanced_minecraft/tags/items/polisher_tool.json
 7f18cba5746da8c13300fb13df9a6eacb96e58ad data/enhanced_minecraft/tags/items/raw_gem.json
@@ -7,9 +8,10 @@
 aaa2d40d9cb6a5b2eb3241097c2c8b9ef72c9c16 data/enhanced_minecraft/tags/items/silver.json
 bd5e44c85310e484022d5daac41dd34e6116e330 data/enhanced_minecraft/tags/items/steel.json
 9795bf574ec78f3cd5003f09f672e11c98109538 data/enhanced_minecraft/tags/items/walnut_logs.json
-0944187b938f4191f87fda315dd7dfa5bc05a4c8 data/forge/tags/items/ingots.json
-f1e894eba5678c6085a1dea66fd76fdf22c83782 data/forge/tags/items/nuggets.json
-e0ea09eac1991cd3062c403d221ba7d46cfc3e6b data/forge/tags/items/raw_materials.json
+fef11952551065529481d09fe77cd52d97dfe7e6 data/forge/tags/items/ingots.json
+b4db51926515c0a0907b86703e7f55e085bc9198 data/forge/tags/items/nuggets.json
+564989eac1fceb24d0fa431c2d9f84692a86a922 data/forge/tags/items/raw_materials.json
+4009d82eb38e09439a9496145bcd26a113085018 data/minecraft/tags/items/beacon_payment_items.json
 d9f02959f5bcc5c3d6e552d4d27cb0cc3e7c093f data/minecraft/tags/items/logs_that_burn.json
 1bf812facaca956b142982993ee08686bd56fd7c data/minecraft/tags/items/planks.json
 3f491d5e20e6c3ad1bfdbe1d55a6040f7288bbac data/minecraft/tags/items/stone_crafting_materials.json

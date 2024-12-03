@@ -18,6 +18,12 @@ public class ModTiers {
             new ResourceLocation(Enhanced_Playthrough.MOD_ID, "silver_ingot"), List.of(Tiers.GOLD),
             List.of(Tiers.IRON)
     );
+    public static final Tier BRASS = TierSortingRegistry.registerTier(
+            new ForgeTier(1, 120, 3F, 1F, 7,
+                    ModTags.Blocks.NEEDS_BRASS_TOOL, () -> Ingredient.of(ModItems.BRASS_INGOT.get())),
+            new ResourceLocation(Enhanced_Playthrough.MOD_ID, "brass_ingot"), List.of(Tiers.STONE),
+            List.of(Tiers.IRON)
+    );
     public static final Tier BRONZE = TierSortingRegistry.registerTier(
             new ForgeTier(1, 200, 5F, 2F, 12,
                     ModTags.Blocks.NEEDS_BRONZE_TOOL, () -> Ingredient.of(ModItems.BRONZE_INGOT.get())),

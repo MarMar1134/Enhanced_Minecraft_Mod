@@ -82,6 +82,19 @@ public class ModBlocks {
             public static final RegistryObject<Block> LIMESTONE_BRICK_WALL = RegisterBlock("limestone_brick_wall",
                     () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_WALL).requiresCorrectToolForDrops()));
 
+
+        //Soul
+        public static final RegistryObject<Block> SOUL_MUD = RegisterBlock("soul_mud",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_MUD).requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> SOUL_MUD_BRICKS = RegisterBlock("soul_mud_brick",
+                () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICKS).requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> SOUL_MUD_BRICK_SLAB = RegisterBlock("soul_mud_brick_slab",
+                () -> new SlabBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> SOUL_MUD_BRICK_STAIRS = RegisterBlock("soul_mud_brick_stair",
+                () -> new StairBlock(() -> SOUL_MUD_BRICKS.get().defaultBlockState(),BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> SOUL_MUD_BRICK_WALL = RegisterBlock("soul_mud_brick_wall",
+                () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_WALL).requiresCorrectToolForDrops()));
+
         //Ores
         public static final RegistryObject<Block> TIN_ORE = RegisterBlock("tin_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE)
@@ -89,19 +102,29 @@ public class ModBlocks {
          public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = RegisterBlock("deepslate_tin_ore",
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_IRON_ORE)
                     .requiresCorrectToolForDrops()));
+
+        public static final RegistryObject<Block> ZINC_ORE = RegisterBlock("zinc_ore",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = RegisterBlock("deepslate_zinc_ore",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+        public static final RegistryObject<Block> NETHER_ZINC_ORE = RegisterBlock("nether_zinc_ore",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
         public static final RegistryObject<Block> SULFUR_ORE = RegisterBlock("sulfur_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DIAMOND_ORE)
-                        .requiresCorrectToolForDrops(), UniformInt.of(4,6)));
+                        .requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> DEEPSLATE_SULFUR_ORE = RegisterBlock("deepslate_sulfur_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE)
-                    .requiresCorrectToolForDrops(), UniformInt.of(6,9)));
+                    .requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> NETHER_SULFUR_ORE = RegisterBlock("nether_sulfur_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE)
-                    .sound(SoundType.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(7,12)));
+                    .sound(SoundType.NETHERRACK).requiresCorrectToolForDrops()));
+
         public static final RegistryObject<Block> SILVER_ORE = RegisterBlock("silver_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GOLD_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = RegisterBlock("deepslate_silver_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_GOLD_ORE).requiresCorrectToolForDrops()));
+
         public static final RegistryObject<Block> DEEPSLATE_COBALT_ORE = RegisterBlock("deepslate_cobalt_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GOLD_ORE).requiresCorrectToolForDrops()));
 
@@ -109,6 +132,7 @@ public class ModBlocks {
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.EMERALD_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> SAPHIRE_ORE = RegisterBlock("saphire_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.EMERALD_ORE).requiresCorrectToolForDrops()));
+
         public static final RegistryObject<Block> DEEPSLATE_RUBI_ORE = RegisterBlock("deepslate_rubi_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> DEEPSLATE_SAPHIRE_ORE = RegisterBlock("deepslate_saphire_ore",
@@ -119,6 +143,10 @@ public class ModBlocks {
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
         public static final RegistryObject<Block> TIN_BLOCK = RegisterBlock("tin_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> ZINC_BLOCK = RegisterBlock("zinc_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> BRASS_BLOCK = RegisterBlock("brass_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
         public static final RegistryObject<Block> BRONZE_BLOCK = RegisterBlock("bronze_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
         public static final RegistryObject<Block> ROSE_GOLD_BLOCK = RegisterBlock("rose_gold_block",
@@ -204,6 +232,8 @@ public class ModBlocks {
             () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
     public static final RegistryObject<Block> SUPER_ALLOYING_FURNACE = RegisterBlock("super_alloying_furnace",
             () -> new SuperAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLED_DEEPSLATE).noOcclusion()));
+    public static final RegistryObject<Block> SOUL_ALLOY_FURNACE = RegisterBlock("soul_alloy_furnace",
+            () -> new SoulAlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
     public static final RegistryObject<Block> GEM_POLISHER = RegisterBlock("gem_polisher",
             () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
     public static final RegistryObject<Block> GRINDER = RegisterBlock("grinder",

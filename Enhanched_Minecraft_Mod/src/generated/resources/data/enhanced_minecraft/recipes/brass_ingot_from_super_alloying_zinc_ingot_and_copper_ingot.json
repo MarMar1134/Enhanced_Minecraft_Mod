@@ -1,0 +1,16 @@
+{
+  "type": "enhanced_minecraft:super_ore_alloying",
+  "alloytime": 100,
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:zinc_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "enhanced_minecraft:brass_ingot"
+  }
+}

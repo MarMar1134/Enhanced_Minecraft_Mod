@@ -20,6 +20,8 @@ public class ModMenuTypes {
             registerMenuType("adobe_alloying_furnace_menu", AdobeAlloyingFurnaceMenu::new);
     public static final RegistryObject<MenuType<SuperAlloyingFurnaceMenu>> SUPER_ALLOYING_FURNACE_MENU =
             registerMenuType("super_alloying_furnace_menu", SuperAlloyingFurnaceMenu::new);
+    public static final RegistryObject<MenuType<SoulAlloyFurnaceMenu>> SOUL_ALLOY_FURNACE_MENU =
+            registerMenuType("soul_alloy_furnace_menu", SoulAlloyFurnaceMenu::new);
     public static final RegistryObject<MenuType<GemPolisherMenu>> GEM_POLISHER_MENU =
             registerMenuType("gem_polisher_menu", GemPolisherMenu::new);
     public static final RegistryObject<MenuType<GrinderMenu>> GRINDER_MENU =

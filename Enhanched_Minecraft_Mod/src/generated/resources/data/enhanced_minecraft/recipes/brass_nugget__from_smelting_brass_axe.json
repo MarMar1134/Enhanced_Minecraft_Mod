@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "brass_nugget",
+  "ingredient": {
+    "item": "enhanced_minecraft:brass_axe"
+  },
+  "result": "enhanced_minecraft:brass_nugget"
+}

@@ -15,6 +15,9 @@
     "enhanced_minecraft:limestone_brick_slab",
     "enhanced_minecraft:limestone_brick_stair",
     "enhanced_minecraft:limestone_brick_wall",
-    "enhanced_minecraft:tin_block"
+    "enhanced_minecraft:tin_block",
+    "enhanced_minecraft:zinc_block",
+    "enhanced_minecraft:zinc_ore",
+    "enhanced_minecraft:nether_zinc_ore"
   ]
 }

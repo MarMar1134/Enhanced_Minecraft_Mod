@@ -24,6 +24,7 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
     public void registerCategories(IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new BasicSmeltingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new OreAlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new SoulAlloyCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new GemPolishingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new SuperAlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new GrindingCategory(registration.getJeiHelpers().getGuiHelper()));
@@ -38,6 +39,7 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
 
         List<AlloyingFurnaceRecipe> alloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.ALLOYING_TYPE.get());
         registration.addRecipes(OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE, alloyingRecipes);
+        registration.addRecipes(SoulAlloyCategory.SOUL_ALLOY_FURNACE_RECIPE_RECIPE_TYPE, alloyingRecipes);
 
         List<GemPolishingRecipe> gemPolishingRecipes = recipeManager.getAllRecipesFor(ModRecipes.POLISHING_TYPE.get());
         registration.addRecipes(GemPolishingCategory.GEM_POLISHER_RECIPE_TYPE, gemPolishingRecipes);
@@ -56,6 +58,9 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
 
         registration.addRecipeClickArea(AdobeAlloyingFurnaceScreen.class, 59, 19, 13, 11,
                 OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE);
+
+        registration.addRecipeClickArea(SoulAlloyScreen.class, 59, 19, 13, 11,
+                SoulAlloyCategory.SOUL_ALLOY_FURNACE_RECIPE_RECIPE_TYPE);
 
         registration.addRecipeClickArea(GemPolisherScreen.class, 80, 33, 20, 30,
                 GemPolishingCategory.GEM_POLISHER_RECIPE_TYPE);

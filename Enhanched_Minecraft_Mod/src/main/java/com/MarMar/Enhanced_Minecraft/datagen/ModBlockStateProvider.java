@@ -54,6 +54,13 @@ public class ModBlockStateProvider extends BlockStateProvider{
             stairsBlock((StairBlock) ModBlocks.LIMESTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
             wallBlock((WallBlock) ModBlocks.LIMESTONE_BRICK_WALL.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
 
+        //Soul
+        blockWithItem(ModBlocks.SOUL_MUD);
+        blockWithItem(ModBlocks.SOUL_MUD_BRICKS);
+        slabBlock((SlabBlock) ModBlocks.SOUL_MUD_BRICK_SLAB.get(), blockTexture(ModBlocks.SOUL_MUD_BRICKS.get()), blockTexture(ModBlocks.SOUL_MUD_BRICKS.get()));
+        stairsBlock((StairBlock) ModBlocks.SOUL_MUD_BRICK_STAIRS.get(), blockTexture(ModBlocks.SOUL_MUD_BRICKS.get()));
+        wallBlock((WallBlock) ModBlocks.SOUL_MUD_BRICK_WALL.get(), blockTexture(ModBlocks.SOUL_MUD_BRICKS.get()));
+
         //wood
             //walnut
             saplingBlock(ModBlocks.WALNUT_SAPLING);
@@ -126,20 +133,31 @@ public class ModBlockStateProvider extends BlockStateProvider{
         //ores
         blockWithItem(ModBlocks.DEEPSLATE_TIN_ORE);
         blockWithItem(ModBlocks.TIN_ORE);
+
+        blockWithItem(ModBlocks.ZINC_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ZINC_ORE);
+        blockWithItem(ModBlocks.NETHER_ZINC_ORE);
+
         blockWithItem(ModBlocks.DEEPSLATE_SULFUR_ORE);
         blockWithItem(ModBlocks.SULFUR_ORE);
         blockWithItem(ModBlocks.NETHER_SULFUR_ORE);
+
         blockWithItem(ModBlocks.SILVER_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SILVER_ORE);
+
         blockWithItem(ModBlocks.DEEPSLATE_COBALT_ORE);
+
         blockWithItem(ModBlocks.RUBI_ORE);
         blockWithItem(ModBlocks.SAPHIRE_ORE);
+
         blockWithItem(ModBlocks.DEEPSLATE_RUBI_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPHIRE_ORE);
 
         //Ores blocks
         blockWithItem(ModBlocks.SILVER_BLOCK);
         blockWithItem(ModBlocks.TIN_BLOCK);
+        blockWithItem(ModBlocks.ZINC_BLOCK);
+        blockWithItem(ModBlocks.BRASS_BLOCK);
         blockWithItem(ModBlocks.BRONZE_BLOCK);
         blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
         blockWithItem(ModBlocks.STEEL_BLOCK);
