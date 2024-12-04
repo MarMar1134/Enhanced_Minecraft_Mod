@@ -7,7 +7,7 @@ Description: Ticking block entity
 java.lang.IllegalArgumentException: Cannot set property BooleanProperty{name=burning, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{enhanced_minecraft:super_alloying_furnace}
 	at net.minecraft.world.level.block.state.StateHolder.setValue(StateHolder.java:122) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.block.entity.SuperAlloyingFurnaceBlockEntity.tick(SuperAlloyingFurnaceBlockEntity.java:176) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyingFurnaceBlock.lambda$getTicker$0(SuperAlloyingFurnaceBlock.java:115) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyFurnaceBlock.lambda$getTicker$0(SuperAlloyingFurnaceBlock.java:115) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
@@ -28,7 +28,7 @@ Thread: Server thread
 Stacktrace:
 	at net.minecraft.world.level.block.state.StateHolder.setValue(StateHolder.java:122) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at com.MarMar.Enhanced_Minecraft.block.entity.SuperAlloyingFurnaceBlockEntity.tick(SuperAlloyingFurnaceBlockEntity.java:176) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyingFurnaceBlock.lambda$getTicker$0(SuperAlloyingFurnaceBlock.java:115) ~[%23196!/:?] {re:classloading}
+	at com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyFurnaceBlock.lambda$getTicker$0(SuperAlloyingFurnaceBlock.java:115) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}

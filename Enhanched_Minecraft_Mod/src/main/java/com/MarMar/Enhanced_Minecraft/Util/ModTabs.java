@@ -157,9 +157,12 @@ public class ModTabs {
                     .title(Component.translatable("creativetab.utility"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ADOBE_FURNACE.get());
+                        output.accept(ModBlocks.SOUL_FURNACE.get());
+
                         output.accept(ModBlocks.ADOBE_ALLOYING_FURNACE.get());
                         output.accept(ModBlocks.SUPER_ALLOYING_FURNACE.get());
                         output.accept(ModBlocks.SOUL_ALLOY_FURNACE.get());
+
                         output.accept(ModBlocks.GEM_POLISHER.get());
                         output.accept(ModBlocks.GRINDER.get());
 

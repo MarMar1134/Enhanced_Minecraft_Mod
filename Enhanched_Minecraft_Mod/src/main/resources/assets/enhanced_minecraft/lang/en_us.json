@@ -10,6 +10,7 @@
   "creativetab.blocks": "Blocks",
 
   "jei.enhanced_minecraft.adobe_furnace": "Basic smelting",
+  "jei.enhanced_minecraft.soul_furnace": "Soul basic smelting",
   "jei.enhanced_minecraft.adobe_alloying_furnace": "Alloying",
   "jei.enhanced_minecraft.super_alloying_furnace": "Blast alloying",
   "jei.enhanced_minecraft.gem_polisher": "Gem polishing",
@@ -111,6 +112,7 @@
   "block.enhanced_minecraft.green_gold_block": "Block of green gold",
 
   "block.enhanced_minecraft.adobe_furnace": "Mud furnace",
+  "block.enhanced_minecraft.soul_furnace": "Soul mud furnace",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Bricks alloy furnace",
   "block.enhanced_minecraft.super_alloying_furnace": "Blast alloy furnace",
   "block.enhanced_minecraft.soul_alloy_furnace": "Soul bricks alloy furnace",

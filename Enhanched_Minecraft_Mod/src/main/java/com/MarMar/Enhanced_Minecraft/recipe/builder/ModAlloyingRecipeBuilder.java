@@ -1,6 +1,10 @@
 package com.MarMar.Enhanced_Minecraft.recipe.builder;
 
 import com.MarMar.Enhanced_Minecraft.recipe.*;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.AlloyingFurnaceRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.BasicSmeltingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.SoulBasicSmeltingRecipe;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.minecraft.advancements.Advancement;
@@ -40,15 +44,23 @@ public class ModAlloyingRecipeBuilder implements RecipeBuilder {
         this.group = pGroup;
         this.serializer = pSerializer;
     }
+
     public static ModAlloyingRecipeBuilder oreAlloying(Ingredient firstIngredient, Ingredient secondIngredient, ItemLike pResult, String group, RecipeSerializer<? extends AlloyingFurnaceRecipe> pCookingSerializer) {
         return new ModAlloyingRecipeBuilder(ModRecipeCategory.ALLOY, group, 200, pResult, 1, firstIngredient, secondIngredient, pCookingSerializer);
     }
+
     public static ModAlloyingRecipeBuilder superOreAlloying(Ingredient firstIngredient, Ingredient secondIngredient, ItemLike pResult, String group, int count, RecipeSerializer<? extends SuperAlloyingRecipe> pCookingSerializer) {
         return new ModAlloyingRecipeBuilder(ModRecipeCategory.SUPER_ALLOY, group, 100, pResult, count, firstIngredient, secondIngredient, pCookingSerializer);
     }
+
     public static ModAlloyingRecipeBuilder basicSmelting(Ingredient input, ItemLike result, String group, RecipeSerializer<BasicSmeltingRecipe> serializer){
         return new ModAlloyingRecipeBuilder(ModRecipeCategory.BASIC_SMELT, group, 300, result, 1, input, null, serializer);
     }
+
+    public static ModAlloyingRecipeBuilder soulBasicSmelting(Ingredient input, ItemLike result, String group, RecipeSerializer<SoulBasicSmeltingRecipe> serializer){
+        return new ModAlloyingRecipeBuilder(ModRecipeCategory.SOUL_BASIC_SMELT, group, 200, result, 1, input, null, serializer);
+    }
+
     @Override
     public ModAlloyingRecipeBuilder unlockedBy(String pCriterionName, CriterionTriggerInstance pCriterionTrigger) {
         this.advancement.addCriterion(pCriterionName, pCriterionTrigger);

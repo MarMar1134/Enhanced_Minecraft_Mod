@@ -222,9 +222,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
          //Entity blocks
         this.dropSelf(ModBlocks.ADOBE_FURNACE.get());
+        this.dropSelf(ModBlocks.SOUL_FURNACE.get());
+
         this.dropSelf(ModBlocks.ADOBE_ALLOYING_FURNACE.get());
         this.dropSelf(ModBlocks.SUPER_ALLOYING_FURNACE.get());
         this.dropSelf(ModBlocks.SOUL_ALLOY_FURNACE.get());
+
         this.dropSelf(ModBlocks.GEM_POLISHER.get());
         this.dropSelf(ModBlocks.GRINDER.get());
     }

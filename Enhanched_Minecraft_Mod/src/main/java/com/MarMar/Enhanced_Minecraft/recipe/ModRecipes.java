@@ -1,6 +1,10 @@
 package com.MarMar.Enhanced_Minecraft.recipe;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.AlloyingFurnaceRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.BasicSmeltingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.SoulBasicSmeltingRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +25,12 @@ public class ModRecipes {
                 RECIPE_SERIALIZER.register("basic_smelting", () -> BasicSmeltingRecipe.Serializer.INSTANCE);
         public static final RegistryObject<RecipeType<BasicSmeltingRecipe>> BASIC_SMELTING_TYPE =
                 RECIPE_TYPE.register("basic_smelting", () -> BasicSmeltingRecipe.Type.INSTANCE);
+
+        //Soul basic smelting
+        public static final RegistryObject<RecipeSerializer<SoulBasicSmeltingRecipe>> SOUL_BASIC_SMELTING_SERIALIZER =
+                    RECIPE_SERIALIZER.register("soul_basic_smelting", () -> SoulBasicSmeltingRecipe.Serializer.INSTANCE);
+        public static final RegistryObject<RecipeType<SoulBasicSmeltingRecipe>> SOUL_BASIC_SMELTING_TYPE =
+                RECIPE_TYPE.register("soul_basic_smelting", () -> SoulBasicSmeltingRecipe.Type.INSTANCE);
 
         //Ore alloying
         public static final RegistryObject<RecipeSerializer<AlloyingFurnaceRecipe>> ALLOYING_SERIALIZER =
@@ -45,6 +55,7 @@ public class ModRecipes {
                 RECIPE_SERIALIZER.register("grinding", () -> GrindingRecipe.Serializer.INSTANCE);
         public static final RegistryObject<RecipeType<GrindingRecipe>> GRINDING_TYPE =
                 RECIPE_TYPE.register("grinding", () -> GrindingRecipe.Type.INSTANCE);
+
     public static void Register(IEventBus eventBus){
         RECIPE_SERIALIZER.register(eventBus);
         RECIPE_TYPE.register(eventBus);

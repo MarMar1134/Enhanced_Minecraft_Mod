@@ -1,8 +1,8 @@
 package com.MarMar.Enhanced_Minecraft.block.custom.entity;
 
 import com.MarMar.Enhanced_Minecraft.block.custom.AbstractAlloyFurnaceBlock;
-import com.MarMar.Enhanced_Minecraft.recipe.AbstractAlloyRecipe;
-import com.MarMar.Enhanced_Minecraft.recipe.SuperAlloyingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.AbstractAlloyRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -11,7 +11,6 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -193,6 +192,7 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
         if(this.level != null)
             this.level.sendBlockUpdated(this.worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
     }
+
     public static void tick(Level pLevel, BlockPos pPos, BlockState pState, AbstractAlloyFurnaceBlockEntity entity) {
         // checks if the entity is burning. If true, changes the blockstate parameter "BURNING" value to true and checks if it has a recipe on the input slots.
         // Then starts to decrease the burning time.
@@ -216,7 +216,6 @@ public abstract class AbstractAlloyFurnaceBlockEntity extends BlockEntity {
         } else if (entity.hasRecipe()){
             if (entity.canBurn(entity.fuelHandler.getStackInSlot(0))){
                 entity.burn();
-
 
                 entity.sendUpdate();
             }

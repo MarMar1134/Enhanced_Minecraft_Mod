@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-02T14:27:35.0102796	Loot Tables
+// 1.20.1	2024-12-03T23:47:40.8353906	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
 fdff6e05cade759aa389ed4cfd0ec41c33448869 data/enhanced_minecraft/loot_tables/blocks/adobe_furnace.json
 a13117db3082d66ab415121b6b25f10e9fcf0c4c data/enhanced_minecraft/loot_tables/blocks/apple_button.json
@@ -57,6 +57,7 @@ d503fe0b1e1e0db4696328abeef84b4e0e1de696 data/enhanced_minecraft/loot_tables/blo
 3bb508ff9777a63674e574fde7a872503e170e7d data/enhanced_minecraft/loot_tables/blocks/silver_block.json
 d17633eb2609a4e96080d91a990d28249127db53 data/enhanced_minecraft/loot_tables/blocks/silver_ore.json
 b2fa5d8ae63bf351863ee77b4d88f96e1d807e0c data/enhanced_minecraft/loot_tables/blocks/soul_alloy_furnace.json
+1fc7872afd9e895df4eb708d45da815a08c3150f data/enhanced_minecraft/loot_tables/blocks/soul_furnace.json
 48c6fb8ff903f829273cae8334496d3077aed115 data/enhanced_minecraft/loot_tables/blocks/soul_mud.json
 b814020f7811cf1ef24e1af6a56bd7949c06fe43 data/enhanced_minecraft/loot_tables/blocks/soul_mud_brick.json
 993371c01e60e5d0a1db7926b696a8c75479c10a data/enhanced_minecraft/loot_tables/blocks/soul_mud_brick_slab.json

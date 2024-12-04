@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_minecraft:soul_basic_smelting",
+  "category": "soul_basic_smelt",
+  "cooktime": 200,
+  "group": "zinc_ingot",
+  "ingredient": {
+    "item": "enhanced_minecraft:nether_zinc_ore"
+  },
+  "output": {
+    "item": "enhanced_minecraft:zinc_ingot"
+  }
+}

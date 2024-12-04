@@ -10,6 +10,7 @@
   "creativetab.blocks": "Bloques",
 
   "jei.enhanced_minecraft.adobe_furnace": "Fundición básica",
+  "jei.enhanced_minecraft.soul_furnace": "Fundición básica de almas",
   "jei.enhanced_minecraft.adobe_alloying_furnace": "Aleación",
   "jei.enhanced_minecraft.super_alloying_furnace": "Alta aleación",
   "jei.enhanced_minecraft.gem_polisher": "Pulido",
@@ -111,6 +112,7 @@
   "block.enhanced_minecraft.green_gold_block": "Bloque de oro verde",
 
   "block.enhanced_minecraft.adobe_furnace": "Horno de adobe",
+  "block.enhanced_minecraft.soul_furnace": "Horno de barro de almas",
   "block.enhanced_minecraft.adobe_alloying_furnace": "Horno de aleación de de ladrillos",
   "block.enhanced_minecraft.super_alloying_furnace": "Alto horno de aleación",
   "block.enhanced_minecraft.soul_alloy_furnace": "Horno de aleación de ladrillo de almas",

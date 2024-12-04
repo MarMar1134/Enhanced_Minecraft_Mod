@@ -2,7 +2,7 @@ package com.MarMar.Enhanced_Minecraft.compat.jei;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.recipe.BasicSmeltingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.BasicSmeltingRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 public class BasicSmeltingCategory implements IRecipeCategory<BasicSmeltingRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "basic_smelting");
     public static final ResourceLocation TEXTURE = new ResourceLocation(Enhanced_Playthrough.MOD_ID,
-            "textures/gui/adobe_furnace_gui.png");
+            "textures/gui/basic_furnace_gui.png");
 
     public static final RecipeType<BasicSmeltingRecipe> BASIC_SMELTING_TYPE =
             new RecipeType<>(UID, BasicSmeltingRecipe.class);

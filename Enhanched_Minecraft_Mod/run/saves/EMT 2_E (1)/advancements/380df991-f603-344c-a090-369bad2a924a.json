@@ -1,0 +1,197 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-12-04 12:46:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2024-12-04 12:46:05 -0300",
+      "minecraft:river": "2024-12-04 13:21:55 -0300",
+      "minecraft:flower_forest": "2024-12-04 13:22:07 -0300"
+    },
+    "done": false
+  },
+  "enhanced_minecraft:survival/root": {
+    "criteria": {
+      "get_materials": "2024-12-04 12:46:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
+    "criteria": {
+      "has_adobe_furnace": "2024-12-04 12:46:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_nugget__from_campfire_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot__from_blasting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tin_ingot_from_basic_smelting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tin_ingot_from_soul_basic_smelting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot__from_smelting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-04 12:46:31 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_iron_ingot": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_iron_ingot_and_coal": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-12-04 12:46:37 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud": {
+    "criteria": {
+      "has_dirt": "2024-12-04 12:46:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_nugget": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/tin_block": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/comparator": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-04 13:02:51 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-12-04 13:23:13 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/snout_armor_trim_smithing_template": {
+    "criteria": {
+      "has_snout_armor_trim_smithing_template": "2024-12-04 13:23:39 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/snout_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-12-04 13:23:39 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

@@ -16,14 +16,19 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<AdobeFurnaceMenu>> ADOBE_FURNACE_MENU =
             registerMenuType("adobe_furnace_menu", AdobeFurnaceMenu::new);
-    public static final RegistryObject<MenuType<AdobeAlloyingFurnaceMenu>> ADOBE_ALLOYING_FURNACE_MENU =
-            registerMenuType("adobe_alloying_furnace_menu", AdobeAlloyingFurnaceMenu::new);
-    public static final RegistryObject<MenuType<SuperAlloyingFurnaceMenu>> SUPER_ALLOYING_FURNACE_MENU =
-            registerMenuType("super_alloying_furnace_menu", SuperAlloyingFurnaceMenu::new);
+    public static final RegistryObject<MenuType<SoulFurnaceMenu>> SOUL_FURNACE_MENU =
+            registerMenuType("soul_furnace_menu", SoulFurnaceMenu::new);
+
+    public static final RegistryObject<MenuType<AdobeAlloyFurnaceMenu>> ADOBE_ALLOYING_FURNACE_MENU =
+            registerMenuType("adobe_alloying_furnace_menu", AdobeAlloyFurnaceMenu::new);
+    public static final RegistryObject<MenuType<SuperAlloyFurnaceMenu>> SUPER_ALLOYING_FURNACE_MENU =
+            registerMenuType("super_alloying_furnace_menu", SuperAlloyFurnaceMenu::new);
     public static final RegistryObject<MenuType<SoulAlloyFurnaceMenu>> SOUL_ALLOY_FURNACE_MENU =
             registerMenuType("soul_alloy_furnace_menu", SoulAlloyFurnaceMenu::new);
+
     public static final RegistryObject<MenuType<GemPolisherMenu>> GEM_POLISHER_MENU =
             registerMenuType("gem_polisher_menu", GemPolisherMenu::new);
+
     public static final RegistryObject<MenuType<GrinderMenu>> GRINDER_MENU =
             registerMenuType("grinder_menu", GrinderMenu::new);
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {

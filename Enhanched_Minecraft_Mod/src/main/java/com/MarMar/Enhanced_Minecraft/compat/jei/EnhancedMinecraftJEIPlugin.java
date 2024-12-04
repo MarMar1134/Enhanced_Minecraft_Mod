@@ -3,6 +3,10 @@ package com.MarMar.Enhanced_Minecraft.compat.jei;
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.menu.screen.*;
 import com.MarMar.Enhanced_Minecraft.recipe.*;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.AlloyingFurnaceRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.BasicSmeltingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.SoulBasicSmeltingRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
@@ -22,10 +26,16 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
     }
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
+        //Basic furnaces
         registration.addRecipeCategories(new BasicSmeltingCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new SoulBasicSmeltingCategory(registration.getJeiHelpers().getGuiHelper()));
+
+        //Alloy furnaces
         registration.addRecipeCategories(new OreAlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
-        registration.addRecipeCategories(new GemPolishingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new SuperAlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
+
+        //Others
+        registration.addRecipeCategories(new GemPolishingCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new GrindingCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
@@ -35,6 +45,9 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
 
         List<BasicSmeltingRecipe> basicSmeltingRecipes = recipeManager.getAllRecipesFor(ModRecipes.BASIC_SMELTING_TYPE.get());
         registration.addRecipes(BasicSmeltingCategory.BASIC_SMELTING_TYPE, basicSmeltingRecipes);
+
+        List<SoulBasicSmeltingRecipe> soulBasicSmeltingRecipes = recipeManager.getAllRecipesFor(ModRecipes.SOUL_BASIC_SMELTING_TYPE.get());
+        registration.addRecipes(SoulBasicSmeltingCategory.SOUL_BASIC_SMELTING_TYPE, soulBasicSmeltingRecipes);
 
         List<AlloyingFurnaceRecipe> alloyingRecipes = recipeManager.getAllRecipesFor(ModRecipes.ALLOYING_TYPE.get());
         registration.addRecipes(OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE, alloyingRecipes);
@@ -54,14 +67,17 @@ public class EnhancedMinecraftJEIPlugin implements IModPlugin {
         registration.addRecipeClickArea(AdobeFurnaceScreen.class, 80, 38, 14, 9,
                 BasicSmeltingCategory.BASIC_SMELTING_TYPE);
 
-        registration.addRecipeClickArea(AdobeAlloyingFurnaceScreen.class, 59, 19, 13, 11,
+        registration.addRecipeClickArea(SoulFurnaceScreen.class, 80, 38, 14, 9,
+                SoulBasicSmeltingCategory.SOUL_BASIC_SMELTING_TYPE);
+
+        registration.addRecipeClickArea(AdobeAlloyFurnaceScreen.class, 59, 19, 13, 11,
                 OreAlloyingCategory.ALLOYING_FURNACE_RECIPE_RECIPE_TYPE);
 
 
         registration.addRecipeClickArea(GemPolisherScreen.class, 80, 33, 20, 30,
                 GemPolishingCategory.GEM_POLISHER_RECIPE_TYPE);
 
-        registration.addRecipeClickArea(SuperAlloyingFurnaceScreen.class, 59, 19, 13, 11,
+        registration.addRecipeClickArea(SuperAlloyFurnaceScreen.class, 59, 19, 13, 11,
                 SuperAlloyingCategory.SUPER_ALLOYING_RECIPE_TYPE);
 
         registration.addRecipeClickArea(GrinderScreen.class, 82, 24, 20, 30,

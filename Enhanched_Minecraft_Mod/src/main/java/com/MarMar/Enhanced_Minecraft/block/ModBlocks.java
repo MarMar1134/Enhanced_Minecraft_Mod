@@ -11,7 +11,6 @@ import com.MarMar.Enhanced_Minecraft.worldgen.tree.grower.AppleTreeGrower;
 import com.MarMar.Enhanced_Minecraft.worldgen.tree.grower.GreenAppleTreeGrower;
 import com.MarMar.Enhanced_Minecraft.worldgen.tree.grower.WalnutTreeGrower;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -226,18 +225,25 @@ public class ModBlocks {
                     () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).requiresCorrectToolForDrops(), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
     //Entity blocks
-    public static final RegistryObject<Block> ADOBE_FURNACE = RegisterBlock("adobe_furnace",
-            () -> new AdobeFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
-    public static final RegistryObject<Block> ADOBE_ALLOYING_FURNACE = RegisterBlock("adobe_alloying_furnace",
-            () -> new AdobeAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
-    public static final RegistryObject<Block> SUPER_ALLOYING_FURNACE = RegisterBlock("super_alloying_furnace",
-            () -> new SuperAlloyingFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLED_DEEPSLATE).noOcclusion()));
-    public static final RegistryObject<Block> SOUL_ALLOY_FURNACE = RegisterBlock("soul_alloy_furnace",
-            () -> new SoulAlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
-    public static final RegistryObject<Block> GEM_POLISHER = RegisterBlock("gem_polisher",
-            () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
-    public static final RegistryObject<Block> GRINDER = RegisterBlock("grinder",
-            () -> new GrinderBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+        //Basic furnaces
+        public static final RegistryObject<Block> ADOBE_FURNACE = RegisterBlock("adobe_furnace",
+                () -> new AdobeFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+        public static final RegistryObject<Block> SOUL_FURNACE = RegisterBlock("soul_furnace",
+                () -> new SoulFurnaceBlock(BlockBehaviour.Properties.copy(ModBlocks.SOUL_MUD.get()).noOcclusion()));
+
+        //Alloy furnaces
+        public static final RegistryObject<Block> ADOBE_ALLOYING_FURNACE = RegisterBlock("adobe_alloying_furnace",
+                () -> new AdobeAlloyFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+        public static final RegistryObject<Block> SUPER_ALLOYING_FURNACE = RegisterBlock("super_alloying_furnace",
+                () -> new SuperAlloyFurnaceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLED_DEEPSLATE).noOcclusion()));
+        public static final RegistryObject<Block> SOUL_ALLOY_FURNACE = RegisterBlock("soul_alloy_furnace",
+                () -> new SoulAlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
+
+        //Others
+        public static final RegistryObject<Block> GEM_POLISHER = RegisterBlock("gem_polisher",
+                () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
+        public static final RegistryObject<Block> GRINDER = RegisterBlock("grinder",
+                () -> new GrinderBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.COBBLESTONE).noOcclusion()));
 
     //Crops
     public static final RegistryObject<Block> YERBA_MATE_CROP = BLOCKS.register("yerba_mate_crop",

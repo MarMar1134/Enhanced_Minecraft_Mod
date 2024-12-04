@@ -2,7 +2,7 @@ package com.MarMar.Enhanced_Minecraft.compat.jei;
 
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.recipe.AlloyingFurnaceRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.AlloyingFurnaceRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 public class OreAlloyingCategory implements IRecipeCategory<AlloyingFurnaceRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(Enhanced_Playthrough.MOD_ID, "ore_alloying");
     public static final ResourceLocation TEXTURE = new ResourceLocation(Enhanced_Playthrough.MOD_ID,
-            "textures/gui/adobe_alloying_furnace_gui.png");
+            "textures/gui/alloy_furnace_gui.png");
 
     public static final RecipeType<AlloyingFurnaceRecipe> ALLOYING_FURNACE_RECIPE_RECIPE_TYPE =
             new RecipeType<>(UID, AlloyingFurnaceRecipe.class);

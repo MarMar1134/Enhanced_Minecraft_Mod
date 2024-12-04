@@ -5,6 +5,10 @@ import com.MarMar.Enhanced_Minecraft.Util.ModTags;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
 import com.MarMar.Enhanced_Minecraft.recipe.*;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.AlloyingFurnaceRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.BasicSmeltingRecipe;
+import com.MarMar.Enhanced_Minecraft.recipe.basic.SoulBasicSmeltingRecipe;
 import com.MarMar.Enhanced_Minecraft.recipe.builder.ModAlloyingRecipeBuilder;
 import com.MarMar.Enhanced_Minecraft.recipe.builder.ModBasicRecipeBuilder;
 import com.MarMar.Enhanced_Minecraft.recipe.builder.ModSmithingTransformRecipeBuilder;
@@ -84,20 +88,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         //Basic smelting recipes
         basicSmelting(consumer, Items.BEEF, Items.COOKED_BEEF, "beef");
+        soulBasicSmelting(consumer, Items.BEEF, Items.COOKED_BEEF, "beef");
+
         basicSmelting(consumer, Items.CHICKEN, Items.COOKED_CHICKEN, "chicken");
+        soulBasicSmelting(consumer, Items.CHICKEN, Items.COOKED_CHICKEN, "chicken");
+
         basicSmelting(consumer, Items.PORKCHOP, Items.COOKED_PORKCHOP, "porkchop");
+        soulBasicSmelting(consumer, Items.PORKCHOP, Items.COOKED_PORKCHOP, "porkchop");
+
         basicSmelting(consumer, Items.MUTTON, Items.COOKED_MUTTON, "mutton");
+        soulBasicSmelting(consumer, Items.MUTTON, Items.COOKED_MUTTON, "mutton");
+
         basicSmelting(consumer, Items.SALMON, Items.COOKED_SALMON, "salmon");
+        soulBasicSmelting(consumer, Items.SALMON, Items.COOKED_SALMON, "salmon");
+
         basicSmelting(consumer, Items.COD, Items.COOKED_COD, "cod");
+        soulBasicSmelting(consumer, Items.COD, Items.COOKED_COD, "cod");
+
         basicSmelting(consumer, Items.RABBIT, Items.COOKED_RABBIT, "rabbit");
+        soulBasicSmelting(consumer, Items.RABBIT, Items.COOKED_RABBIT, "rabbit");
+
         basicSmelting(consumer, Items.POTATO, Items.BAKED_POTATO, "potato");
+        soulBasicSmelting(consumer, Items.POTATO, Items.BAKED_POTATO, "potato");
+
         basicSmelting(consumer, Items.CACTUS, Items.GREEN_DYE, "cactus");
+        soulBasicSmelting(consumer, Items.CACTUS, Items.GREEN_DYE, "cactus");
 
         //Smelting Recipes
             //food
             basicSmelting(consumer, ZAPALLO_COOKABLES, ModItems.COOKED_ZAPALLO.get(), "zapallo");
             basicSmelting(consumer, EGGPLANT_COOKABLES, ModItems.COOKED_EGGPLANT.get(), "eggplant");
             basicSmelting(consumer, CORN_COOKABLES, ModItems.COOKED_CORN.get(), "corn");
+
+            soulBasicSmelting(consumer, ZAPALLO_COOKABLES, ModItems.COOKED_ZAPALLO.get(), "zapallo");
+            soulBasicSmelting(consumer, EGGPLANT_COOKABLES, ModItems.COOKED_EGGPLANT.get(), "eggplant");
+            soulBasicSmelting(consumer, CORN_COOKABLES, ModItems.COOKED_CORN.get(), "corn");
 
             oreSmelting(consumer, ZAPALLO_COOKABLES, RecipeCategory.FOOD, ModItems.COOKED_ZAPALLO.get(),
                     2f, 100, "zapallo");
@@ -122,11 +147,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
             //copper
             basicSmelting(consumer, COPPER_SMELTABLES, Items.COPPER_INGOT, "copper_ingot");
+            soulBasicSmelting(consumer, COPPER_SMELTABLES, Items.COPPER_INGOT, "copper_ingot");
+
             byCampfire(consumer, COPPER_NUGGET_SMELTABLES, RecipeCategory.MISC, ModItems.COPPER_NUGGET.get(),
                 1.0f, 300, "copper_nugget");
 
             //tin
             basicSmelting(consumer, BASIC_TIN_SMELTABLES, ModItems.TIN_INGOT.get(), "tin_ingot");
+            soulBasicSmelting(consumer, BASIC_TIN_SMELTABLES, ModItems.TIN_INGOT.get(), "tin_ingot");
             oreSmelting(consumer, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(),
                 2f, 100, "tin_ingot");
             oreBlasting(consumer, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(),
@@ -136,6 +164,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
             //Zinc
             basicSmelting(consumer, BASIC_ZINC_SMELTABLES, ModItems.ZINC_INGOT.get(), "zinc_ingot");
+            soulBasicSmelting(consumer, BASIC_ZINC_SMELTABLES, ModItems.ZINC_INGOT.get(), "zinc_ingot");
             oreSmelting(consumer, ZINC_SMELTABLES, RecipeCategory.MISC, ModItems.ZINC_INGOT.get(),
                     1.5F, 100, "zinc_ingot");
             oreBlasting(consumer, ZINC_SMELTABLES, RecipeCategory.MISC, ModItems.ZINC_INGOT.get(),
@@ -823,6 +852,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .unlockedBy(getHasName(Blocks.MUD_BRICKS), has(Blocks.MUD_BRICKS))
                     .save(consumer);
 
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOUL_FURNACE.get())
+                    .pattern("###")
+                    .pattern("# #")
+                    .pattern("###")
+                    .define('#', ModBlocks.SOUL_MUD.get())
+                    .unlockedBy(getHasName(ModBlocks.SOUL_MUD.get()), has(ModBlocks.SOUL_MUD.get()))
+                    .save(consumer);
+
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ADOBE_ALLOYING_FURNACE.get())
                     .pattern("###")
                     .pattern("#A#")
@@ -846,12 +883,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOUL_ALLOY_FURNACE.get())
                     .pattern("###")
-                    .pattern("# #")
+                    .pattern("#A#")
                     .pattern("III")
                     .define('#', ModBlocks.SOUL_MUD_BRICKS.get())
+                    .define('A', ModBlocks.SOUL_FURNACE.get())
                     .define('I', Blocks.BLACKSTONE)
-                    .unlockedBy(getHasName(Blocks.BLACKSTONE), has(Blocks.BLACKSTONE))
-                    .unlockedBy(getHasName(Blocks.SOUL_SOIL), has(Blocks.SOUL_SOIL))
+                    .unlockedBy(getHasName(ModBlocks.SOUL_FURNACE.get()), has(ModBlocks.SOUL_FURNACE.get()))
                     .save(consumer);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GEM_POLISHER.get())
@@ -1460,45 +1497,60 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     //Specific recipe builders
-    protected static void byCampfire(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup){
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.CAMPFIRE_COOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_campfire");
-    }
-    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
-    }
-    protected static void smoking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smoking");
-    }
-    protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
-    }
-    protected static void gemPolishing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, String group, ItemLike result){
-        gemPolishingSerialize(pFinishedRecipeConsumer, ingredient, result, group, ModRecipes.POLISHING_SERIALIZER.get(), "from_gem_polishing");
-    }
-    protected static void itemGrinding(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, String group, ItemLike result, int count){
-        oreGrindingSerialize(pFinishedRecipeConsumer, ingredient, result, group, count, ModRecipes.GRINDING_SERIALIZER.get(), "from_grinding");
-    }
-    protected static void itemGrinding(Consumer<FinishedRecipe> pFinishedRecipeConsumer, TagKey<Item> ingredient, String group, ItemLike result, int count){
-        oreGrindingTagSerialize(pFinishedRecipeConsumer, ingredient, result, group, count, ModRecipes.GRINDING_SERIALIZER.get(), "from_grinding");
-    }
-    protected static void basicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, ItemLike result, String group){
-        basicSmeltSerialize(pFinishedRecipeConsumer, ingredient, result, group, ModRecipes.BASIC_SMELTING_SERIALIZER.get(), "from_basic_smelting");
-    }
-    protected static void basicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> ingredients, ItemLike result, String group){
-        basicSmeltingSerializeWithList(pFinishedRecipeConsumer, ingredients, result, group, ModRecipes.BASIC_SMELTING_SERIALIZER.get(), "from_basic_smelting");
-    }
-    protected static void oreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, String group){
-        oreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, group, ModRecipes.ALLOYING_SERIALIZER.get(), "from_alloying");
-    }
-    protected static void superOreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, int count, String group){
-        superOreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, group, count, ModRecipes.SUPER_ALLOYING_SERIALIZER.get(), "from_super_alloying");
-    }
-    protected static void stoneCutting(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int count){
-        stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "from_stone_cutting");
-    }
-    protected static void smithingUpgrade(Consumer<FinishedRecipe> consumer, ItemLike template, ItemLike base, ItemLike addition, ItemLike result){
-        smithingTransformSerialize(consumer, template, base, addition, result, RecipeSerializer.SMITHING_TRANSFORM, "smithing");
-    }
+        //Vanilla
+        protected static void byCampfire(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup){
+            oreCooking(pFinishedRecipeConsumer, RecipeSerializer.CAMPFIRE_COOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_campfire");
+        }
+        protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+            oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
+        }
+        protected static void smoking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+            oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smoking");
+        }
+        protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+            oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
+        }
+
+        //Polish
+        protected static void gemPolishing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, String group, ItemLike result){
+            gemPolishingSerialize(pFinishedRecipeConsumer, ingredient, result, group, ModRecipes.POLISHING_SERIALIZER.get(), "from_gem_polishing");
+        }
+
+        //Grind
+        protected static void itemGrinding(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, String group, ItemLike result, int count){
+            oreGrindingSerialize(pFinishedRecipeConsumer, ingredient, result, group, count, ModRecipes.GRINDING_SERIALIZER.get(), "from_grinding");
+        }
+        protected static void itemGrinding(Consumer<FinishedRecipe> pFinishedRecipeConsumer, TagKey<Item> ingredient, String group, ItemLike result, int count){
+            oreGrindingTagSerialize(pFinishedRecipeConsumer, ingredient, result, group, count, ModRecipes.GRINDING_SERIALIZER.get(), "from_grinding");
+        }
+
+        //Basic smelt
+        protected static void basicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, ItemLike result, String group){
+            basicSmeltSerialize(pFinishedRecipeConsumer, ingredient, result, group, ModRecipes.BASIC_SMELTING_SERIALIZER.get(), "from_basic_smelting");
+        }
+        protected static void basicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> ingredients, ItemLike result, String group){
+            basicSmeltingSerializeWithList(pFinishedRecipeConsumer, ingredients, result, group, ModRecipes.BASIC_SMELTING_SERIALIZER.get(), "from_basic_smelting");
+        }
+        protected static void soulBasicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike ingredient, ItemLike result, String group){
+            soulBasicSmeltSerialize(pFinishedRecipeConsumer, ingredient, result, group, ModRecipes.SOUL_BASIC_SMELTING_SERIALIZER.get(), "from_soul_basic_smelting");
+        }
+        protected static void soulBasicSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> ingredients, ItemLike result, String group){
+            soulBasicSmeltingSerializeWithList(pFinishedRecipeConsumer, ingredients, result, group, ModRecipes.SOUL_BASIC_SMELTING_SERIALIZER.get(), "from_soul_basic_smelting");
+        }
+
+        //Alloy
+        protected static void oreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, String group){
+            oreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, group, ModRecipes.ALLOYING_SERIALIZER.get(), "from_alloying");
+        }
+        protected static void superOreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, int count, String group){
+            superOreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, group, count, ModRecipes.SUPER_ALLOYING_SERIALIZER.get(), "from_super_alloying");
+        }
+        protected static void stoneCutting(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int count){
+            stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "from_stone_cutting");
+        }
+        protected static void smithingUpgrade(Consumer<FinishedRecipe> consumer, ItemLike template, ItemLike base, ItemLike addition, ItemLike result){
+            smithingTransformSerialize(consumer, template, base, addition, result, RecipeSerializer.SMITHING_TRANSFORM, "smithing");
+        }
 
     //Recipe builders
     protected static void stoneCuttingBuilder(Consumer<FinishedRecipe> consumer, ItemLike input, RecipeCategory category, ItemLike result, int count, String recipeName){
@@ -1545,6 +1597,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ItemLike itemlike = (ItemLike)var9.next();
             ModAlloyingRecipeBuilder.basicSmelting(Ingredient.of(itemlike),
                      output, group, recipeSerializer).unlockedBy(getHasName(itemlike),
+                    has(itemlike)).save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + "_" + recipeName + "_" + getItemName(itemlike));
+        }
+    }
+
+    protected static void soulBasicSmeltSerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike input, ItemLike output, String group, RecipeSerializer<SoulBasicSmeltingRecipe> recipeSerializer, String recipeName){
+        ModAlloyingRecipeBuilder.soulBasicSmelting(Ingredient.of(input), output, group, recipeSerializer)
+                .unlockedBy(getHasName(input), has(input))
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) +  "_" + recipeName + "_" + getItemName(input));
+    }
+
+    protected static void soulBasicSmeltingSerializeWithList(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> inputs, ItemLike output, String group, RecipeSerializer<SoulBasicSmeltingRecipe> recipeSerializer, String recipeName){
+        Iterator var9 = inputs.iterator();
+
+        while(var9.hasNext()) {
+            ItemLike itemlike = (ItemLike)var9.next();
+            ModAlloyingRecipeBuilder.soulBasicSmelting(Ingredient.of(itemlike),
+                    output, group, recipeSerializer).unlockedBy(getHasName(itemlike),
                     has(itemlike)).save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(output) + "_" + recipeName + "_" + getItemName(itemlike));
         }
     }

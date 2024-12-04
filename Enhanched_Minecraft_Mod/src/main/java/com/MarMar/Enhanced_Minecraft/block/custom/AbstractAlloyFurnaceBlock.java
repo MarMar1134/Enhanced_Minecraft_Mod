@@ -105,15 +105,18 @@ public abstract class AbstractAlloyFurnaceBlock extends BaseEntityBlock implemen
     public <T extends BlockEntity> BlockEntityTicker<T> createAlloyFurnaceTicker(Level pLevel, BlockEntityType<T> pServerType, BlockEntityType<? extends AbstractAlloyFurnaceBlockEntity> pClientType) {
         return pLevel.isClientSide ? null : createTickerHelper(pServerType, pClientType, AbstractAlloyFurnaceBlockEntity::tick);
     }
+
     @Override
     public boolean hasAnalogOutputSignal(BlockState pState) {
         return true;
     }
+
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         return defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
     }
+
     static {
         BURNING = BooleanProperty.create("burning");
     }
