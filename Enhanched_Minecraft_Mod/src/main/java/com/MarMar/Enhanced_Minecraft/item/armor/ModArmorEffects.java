@@ -19,10 +19,9 @@ public class ModArmorEffects extends ArmorItem {
                             true,false, false))
                     .put(ModArmorMaterials.ROSE_GOLD, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 0,
                             true,false, false))
+                    .put(ModArmorMaterials.BRONZIUM, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0,
+                            true, false, false))
                     .put(ModArmorMaterials.GREEN_GOLD, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1,
-                            true,false, false))
-
-                    .put(ArmorMaterials.NETHERITE, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0,
                             true,false, false))
                     .build();
 

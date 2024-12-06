@@ -70,31 +70,38 @@ public class ModTabs {
                         output.accept(ModBlocks.POLISHED_STONE_SLAB.get());
                         output.accept(ModBlocks.POLISHED_STONE_STAIRS.get());
                         output.accept(ModBlocks.POLISHED_STONE_WALL.get());
+
                         output.accept(ModBlocks.COBBLED_LIMESTONE.get());
                         output.accept(ModBlocks.COBBLED_LIMESTONE_SLAB.get());
                         output.accept(ModBlocks.COBBLED_LIMESTONE_STAIRS.get());
                         output.accept(ModBlocks.COBBLED_LIMESTONE_WALL.get());
+
                         output.accept(ModBlocks.LIMESTONE.get());
                         output.accept(ModBlocks.LIMESTONE_SLAB.get());
                         output.accept(ModBlocks.LIMESTONE_STAIRS.get());
+
                         output.accept(ModBlocks.POLISHED_LIMESTONE.get());
                         output.accept(ModBlocks.POLISHED_LIMESTONE_SLAB.get());
                         output.accept(ModBlocks.POLISHED_LIMESTONE_STAIRS.get());
                         output.accept(ModBlocks.POLISHED_LIMESTONE_WALL.get());
+
                         output.accept(ModBlocks.LIMESTONE_BRICKS.get());
                         output.accept(ModBlocks.LIMESTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.LIMESTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.LIMESTONE_BRICK_WALL.get());
+
                         output.accept(ModBlocks.SOUL_MUD.get());
                         output.accept(ModBlocks.SOUL_MUD_BRICKS.get());
                         output.accept(ModBlocks.SOUL_MUD_BRICK_SLAB.get());
                         output.accept(ModBlocks.SOUL_MUD_BRICK_STAIRS.get());
                         output.accept(ModBlocks.SOUL_MUD_BRICK_WALL.get());
+
                         output.accept(ModBlocks.SILVER_BLOCK.get());
                         output.accept(ModBlocks.TIN_BLOCK.get());
                         output.accept(ModBlocks.ZINC_BLOCK.get());
                         output.accept(ModBlocks.BRASS_BLOCK.get());
                         output.accept(ModBlocks.BRONZE_BLOCK.get());
+                        output.accept(ModBlocks.BRONZIUM_BLOCK.get());
                         output.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
                         output.accept(ModBlocks.STEEL_BLOCK.get());
                         output.accept(ModBlocks.GREEN_GOLD_BLOCK.get());
@@ -186,6 +193,9 @@ public class ModTabs {
                         output.accept(ModItems.ROSE_GOLD_INGOT.get());
                         output.accept(ModItems.ROSE_GOLD_NUGGET.get());
 
+                        output.accept(ModItems.BRONZIUM_INGOT.get());
+                        output.accept(ModItems.BRONZIUM_NUGGET.get());
+
                         output.accept(ModItems.STEEL_INGOT.get());
 
                         output.accept(ModItems.GREEN_GOLD_INGOT.get());
@@ -225,6 +235,13 @@ public class ModTabs {
                         output.accept(ModItems.ROSE_GOLDEN_SHOVEL.get());
                         output.accept(ModItems.ROSE_GOLDEN_HOE.get());
                         output.accept(ModItems.ROSE_GOLDEN_POLISHER.get());
+
+                        //Bronzium
+                        output.accept(ModItems.BRONZIUM_PICKAXE.get());
+                        output.accept(ModItems.BRONZIUM_AXE.get());
+                        output.accept(ModItems.BRONZIUM_SHOVEL.get());
+                        output.accept(ModItems.BRONZIUM_HOE.get());
+                        output.accept(ModItems.BRONZIUM_POLISHER.get());
 
                         //Steel
                         output.accept(ModItems.STEEL_PICKAXE.get());
@@ -273,6 +290,13 @@ public class ModTabs {
                         output.accept(ModItems.ROSE_GOLDEN_LEGGINGS.get());
                         output.accept(ModItems.ROSE_GOLDEN_BOOTS.get());
 
+                        //Bronzium
+                        output.accept(ModItems.BRONZIUM_SWORD.get());
+                        output.accept(ModItems.BRONZIUM_HELMET.get());
+                        output.accept(ModItems.BRONZIUM_CHESTPLATE.get());
+                        output.accept(ModItems.BRONZIUM_LEGGINGS.get());
+                        output.accept(ModItems.BRONZIUM_BOOTS.get());
+
                         //Steel
                         output.accept(ModItems.STEEL_SWORD.get());
                         output.accept(ModItems.STEEL_HELMET.get());
@@ -299,6 +323,7 @@ public class ModTabs {
                         output.accept((ModItems.BRONZE_POLISHER.get()));
                         output.accept(ModItems.BRASS_POLISHER.get());
                         output.accept(ModItems.ROSE_GOLDEN_POLISHER.get());
+                        output.accept(ModItems.BRONZIUM_POLISHER.get());
                         output.accept(ModItems.IRON_POLISHER.get());
                         output.accept(ModItems.STEEL_POLISHER.get());
                         output.accept(ModItems.GREEN_GOLDEN_POLISHER.get());

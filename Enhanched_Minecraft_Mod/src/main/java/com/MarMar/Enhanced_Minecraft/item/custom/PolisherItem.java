@@ -1,5 +1,6 @@
 package com.MarMar.Enhanced_Minecraft.item.custom;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -22,7 +23,7 @@ public class PolisherItem extends TieredItem implements IForgeItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("descriptions.enhanced_minecraft.polisher_item"));
+        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.polisher_item").withStyle(ChatFormatting.BLUE));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 

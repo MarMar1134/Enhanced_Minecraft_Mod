@@ -223,6 +223,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ROSE_GOLD_INGOT);
         simpleItem(ModItems.ROSE_GOLD_NUGGET);
 
+        simpleItem(ModItems.BRONZIUM_INGOT);
+        simpleItem(ModItems.BRONZIUM_NUGGET);
+
         simpleItem(ModItems.GREEN_GOLD_INGOT);
         simpleItem(ModItems.GREEN_GOLD_NUGGET);
 
@@ -287,6 +290,7 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.BRASS_CHESTPLATE);
             simpleItem(ModItems.BRASS_LEGGINGS);
             simpleItem(ModItems.BRASS_BOOTS);
+
             //Rose Gold
             HandheldItem(ModItems.ROSE_GOLDEN_SWORD);
             HandheldItem(ModItems.ROSE_GOLDEN_PICKAXE);
@@ -299,6 +303,19 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.ROSE_GOLDEN_CHESTPLATE);
             simpleItem(ModItems.ROSE_GOLDEN_LEGGINGS);
             simpleItem(ModItems.ROSE_GOLDEN_BOOTS);
+
+            //Bronzium
+            HandheldItem(ModItems.BRONZIUM_SWORD);
+            HandheldItem(ModItems.BRONZIUM_PICKAXE);
+            HandheldItem(ModItems.BRONZIUM_AXE);
+            HandheldItem(ModItems.BRONZIUM_SHOVEL);
+            HandheldItem(ModItems.BRONZIUM_HOE);
+            HandheldItem(ModItems.BRONZIUM_POLISHER);
+
+            simpleItem(ModItems.BRONZIUM_HELMET);
+            simpleItem(ModItems.BRONZIUM_CHESTPLATE);
+            simpleItem(ModItems.BRONZIUM_LEGGINGS);
+            simpleItem(ModItems.BRONZIUM_BOOTS);
 
             //Iron
             HandheldItem(ModItems.IRON_POLISHER);

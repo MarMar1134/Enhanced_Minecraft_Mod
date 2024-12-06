@@ -176,6 +176,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BRASS_BLOCK.get());
         this.dropSelf(ModBlocks.BRONZE_BLOCK.get());
         this.dropSelf(ModBlocks.ROSE_GOLD_BLOCK.get());
+        this.dropSelf(ModBlocks.BRONZIUM_BLOCK.get());
         this.dropSelf(ModBlocks.STEEL_BLOCK.get());
         this.dropSelf(ModBlocks.GREEN_GOLD_BLOCK.get());
 

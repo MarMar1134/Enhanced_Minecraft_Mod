@@ -33,24 +33,26 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         );
 
         this.tag(Tags.Items.INGOTS).add(
+                ModItems.SILVER_INGOT.get(),
                 ModItems.TIN_INGOT.get(),
                 ModItems.ZINC_INGOT.get(),
                 ModItems.BRONZE_INGOT.get(),
                 ModItems.BRASS_INGOT.get(),
-                ModItems.SILVER_INGOT.get(),
-                ModItems.STEEL_INGOT.get(),
                 ModItems.ROSE_GOLD_INGOT.get(),
+                ModItems.BRONZIUM_INGOT.get(),
+                ModItems.STEEL_INGOT.get(),
                 ModItems.GREEN_GOLD_INGOT.get()
         );
 
         this.tag(Tags.Items.NUGGETS).add(
+                ModItems.SILVER_NUGGET.get(),
+                ModItems.COPPER_NUGGET.get(),
                 ModItems.TIN_NUGGET.get(),
                 ModItems.ZINC_NUGGET.get(),
-                ModItems.COPPER_NUGGET.get(),
-                ModItems.BRASS_NUGGET.get(),
                 ModItems.BRONZE_NUGGET.get(),
-                ModItems.SILVER_NUGGET.get(),
+                ModItems.BRASS_NUGGET.get(),
                 ModItems.ROSE_GOLD_NUGGET.get(),
+                ModItems.BRONZIUM_NUGGET.get(),
                 ModItems.GREEN_GOLD_NUGGET.get()
         );
 
@@ -86,6 +88,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.BRONZE).add(
                 ModItems.BRONZE_INGOT.get(),
+                ModItems.BRONZE_NUGGET.get(),
                 ModItems.BRONZE_SWORD.get(),
                 ModItems.BRONZE_PICKAXE.get(),
                 ModItems.BRONZE_AXE.get(),
@@ -108,6 +111,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.BRASS_CHESTPLATE.get(),
                 ModItems.BRASS_LEGGINGS.get(),
                 ModItems.BRASS_BOOTS.get()
+        );
+
+        this.tag(ModTags.Items.BRONZIUM).add(
+                ModItems.BRONZIUM_INGOT.get(),
+                ModItems.BRONZIUM_NUGGET.get(),
+                ModItems.BRONZIUM_SWORD.get(),
+                ModItems.BRONZIUM_PICKAXE.get(),
+                ModItems.BRONZIUM_AXE.get(),
+                ModItems.BRONZIUM_SHOVEL.get(),
+                ModItems.BRONZIUM_HOE.get(),
+                ModItems.BRONZIUM_HELMET.get(),
+                ModItems.BRONZIUM_CHESTPLATE.get(),
+                ModItems.BRONZIUM_LEGGINGS.get(),
+                ModItems.BRONZIUM_BOOTS.get()
         );
 
         this.tag(ModTags.Items.STEEL).add(ModItems.STEEL_INGOT.get())
@@ -140,6 +157,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BRONZE_CHESTPLATE.get())
                 .add(ModItems.BRONZE_LEGGINGS.get())
                 .add(ModItems.BRONZE_BOOTS.get())
+                .add(ModItems.BRASS_HELMET.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRASS_BOOTS.get())
+                .add(ModItems.BRONZIUM_HELMET.get(), ModItems.BRONZIUM_CHESTPLATE.get(), ModItems.BRONZIUM_LEGGINGS.get(), ModItems.BRONZIUM_BOOTS.get())
                 .add(ModItems.STEEL_HELMET.get())
                 .add(ModItems.STEEL_CHESTPLATE.get())
                 .add(ModItems.STEEL_LEGGINGS.get())
@@ -161,6 +180,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.RAW_DIAMOND.get());
 
         this.tag(ModTags.Items.POLISHER_TOOL).add(ModItems.BRONZE_POLISHER.get())
+                .add(ModItems.BRASS_POLISHER.get())
+                .add(ModItems.BRONZIUM_POLISHER.get())
                 .add(ModItems.GOLD_POLISHER.get())
                 .add(ModItems.STEEL_POLISHER.get())
                 .add(ModItems.IRON_POLISHER.get())
@@ -175,6 +196,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.BRASS_INGOT.get(),
                 ModItems.BRONZE_INGOT.get(),
                 ModItems.ROSE_GOLD_INGOT.get(),
+                ModItems.BRONZIUM_INGOT.get(),
                 ModItems.STEEL_INGOT.get(),
                 ModItems.GREEN_GOLD_INGOT.get()
         );

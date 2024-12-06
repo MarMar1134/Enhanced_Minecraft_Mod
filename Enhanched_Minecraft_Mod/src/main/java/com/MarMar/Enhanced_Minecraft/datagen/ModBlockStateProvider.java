@@ -159,6 +159,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.ZINC_BLOCK);
         blockWithItem(ModBlocks.BRASS_BLOCK);
         blockWithItem(ModBlocks.BRONZE_BLOCK);
+        blockWithItem(ModBlocks.BRONZIUM_BLOCK);
         blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
         blockWithItem(ModBlocks.STEEL_BLOCK);
         blockWithItem(ModBlocks.GREEN_GOLD_BLOCK);

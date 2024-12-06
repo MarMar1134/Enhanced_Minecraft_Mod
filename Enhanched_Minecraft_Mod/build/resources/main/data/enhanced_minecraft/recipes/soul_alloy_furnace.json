@@ -5,13 +5,16 @@
     "#": {
       "item": "enhanced_minecraft:soul_mud_brick"
     },
+    "A": {
+      "item": "enhanced_minecraft:soul_furnace"
+    },
     "I": {
       "item": "minecraft:blackstone"
     }
   },
   "pattern": [
     "###",
-    "# #",
+    "#A#",
     "III"
   ],
   "result": {

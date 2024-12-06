@@ -345,7 +345,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             stoneCutting(consumer, ModBlocks.SOUL_MUD_BRICKS.get(), ModBlocks.SOUL_MUD_BRICK_STAIRS.get(), 1);
             stoneCutting(consumer, ModBlocks.SOUL_MUD_BRICKS.get(), ModBlocks.SOUL_MUD_BRICK_WALL.get(), 1);
 
-            smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), Items.STONE_AXE, ModItems.BRONZE_INGOT.get(), ModItems.BRONZE_AXE.get());
+        //Smithing
+            //Bronzium
+                //Brass to bronzium
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_AXE.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_AXE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_PICKAXE.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_PICKAXE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_SHOVEL.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_SHOVEL.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_HOE.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_HOE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_POLISHER.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_POLISHER.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_SWORD.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_SWORD.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_HELMET.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_HELMET.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_CHESTPLATE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_LEGGINGS.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRASS_BOOTS.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_BOOTS.get());
+
+                //Bronze to bronzium
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_AXE.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_AXE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_PICKAXE.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_PICKAXE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_SHOVEL.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_SHOVEL.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_HOE.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_HOE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_POLISHER.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_POLISHER.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_SWORD.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_SWORD.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_HELMET.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_HELMET.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_CHESTPLATE.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_CHESTPLATE.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_LEGGINGS.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_LEGGINGS.get());
+                smithingUpgrade(consumer, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), ModItems.BRONZE_BOOTS.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_BOOTS.get());
+
 
         //Shaped and shapeless recipes
             //Foods
@@ -424,16 +449,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .unlockedBy(getHasName(ModItems.ZINC_INGOT.get()), has(ModItems.ZINC_INGOT.get()))
                         .save(consumer);
 
-                //Bronze
-                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(), 9)
-                        .requires(ModBlocks.BRONZE_BLOCK.get())
-                        .unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
-                        .save(consumer);
-                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE_NUGGET.get(), 9)
-                        .requires(ModItems.BRONZE_INGOT.get())
-                        .unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
-                        .save(consumer);
-
                 //Brass
                 ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRASS_INGOT.get(), 9)
                         .requires(ModBlocks.BRASS_BLOCK.get())
@@ -444,6 +459,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .unlockedBy(getHasName(ModItems.BRASS_INGOT.get()), has(ModItems.BRASS_INGOT.get()))
                         .save(consumer);
 
+                //Bronze
+                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(), 9)
+                        .requires(ModBlocks.BRONZE_BLOCK.get())
+                        .unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
+                        .save(consumer);
+                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZE_NUGGET.get(), 9)
+                        .requires(ModItems.BRONZE_INGOT.get())
+                        .unlockedBy(getHasName(ModItems.BRONZE_INGOT.get()), has(ModItems.BRONZE_INGOT.get()))
+                        .save(consumer);
+
                 //Rose gold
                 ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get(), 9)
                         .requires(ModBlocks.ROSE_GOLD_BLOCK.get())
@@ -452,6 +477,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_NUGGET.get(), 9)
                         .requires(ModItems.ROSE_GOLD_INGOT.get())
                         .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
+                        .save(consumer);
+
+                //Bronzium
+                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZIUM_INGOT.get(), 9)
+                        .requires(ModBlocks.BRONZIUM_BLOCK.get())
+                        .unlockedBy(getHasName(ModItems.BRONZIUM_INGOT.get()), has(ModItems.BRONZIUM_INGOT.get()))
+                        .save(consumer);
+                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BRONZIUM_NUGGET.get(), 9)
+                        .requires(ModItems.BRONZIUM_INGOT.get())
+                        .unlockedBy(getHasName(ModItems.BRONZIUM_INGOT.get()), has(ModItems.BRONZIUM_INGOT.get()))
                         .save(consumer);
 
                 //Steel
@@ -518,6 +553,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .pattern("TTT")
                     .define('T', ModItems.ROSE_GOLD_INGOT.get())
                     .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
+                    .save(consumer);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BRONZIUM_BLOCK.get(), 1)
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .pattern("TTT")
+                    .define('T', ModItems.BRONZIUM_INGOT.get())
+                    .unlockedBy(getHasName(ModItems.BRONZIUM_INGOT.get()), has(ModItems.BRONZIUM_INGOT.get()))
                     .save(consumer);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get(), 1)
@@ -1549,7 +1592,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "from_stone_cutting");
         }
         protected static void smithingUpgrade(Consumer<FinishedRecipe> consumer, ItemLike template, ItemLike base, ItemLike addition, ItemLike result){
-            smithingTransformSerialize(consumer, template, base, addition, result, RecipeSerializer.SMITHING_TRANSFORM, "smithing");
+            smithingTransformSerialize(consumer, template, base, addition, result, RecipeSerializer.SMITHING_TRANSFORM, "from_smithing");
         }
 
     //Recipe builders
@@ -1635,6 +1678,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void smithingTransformSerialize(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike template, ItemLike base, ItemLike addition, ItemLike result, RecipeSerializer<SmithingTransformRecipe> serializer, String recipeName){
         ModSmithingTransformRecipeBuilder.SmithingReipeBuilder(template, base, addition, result, serializer)
                 .unlockedBy(getHasName(base), has(base))
-                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(result) + "_" + recipeName);
+                .save(pFinishedRecipeConsumer, Enhanced_Playthrough.MOD_ID + ":" + getItemName(result) + "_" + recipeName + "_" + getItemName(base) + "_with_" + getItemName(addition));
     }
 }

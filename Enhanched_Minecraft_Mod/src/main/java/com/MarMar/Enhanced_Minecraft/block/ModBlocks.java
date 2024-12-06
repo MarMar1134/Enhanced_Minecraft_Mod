@@ -142,13 +142,15 @@ public class ModBlocks {
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
         public static final RegistryObject<Block> TIN_BLOCK = RegisterBlock("tin_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> ZINC_BLOCK = RegisterBlock("zinc_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> BRASS_BLOCK = RegisterBlock("brass_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> ZINC_BLOCK = RegisterBlock("zinc_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> BRASS_BLOCK = RegisterBlock("brass_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
         public static final RegistryObject<Block> BRONZE_BLOCK = RegisterBlock("bronze_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
         public static final RegistryObject<Block> ROSE_GOLD_BLOCK = RegisterBlock("rose_gold_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        public static final RegistryObject<Block> BRONZIUM_BLOCK = RegisterBlock("bronzium_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
         public static final RegistryObject<Block> STEEL_BLOCK = RegisterBlock("steel_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));

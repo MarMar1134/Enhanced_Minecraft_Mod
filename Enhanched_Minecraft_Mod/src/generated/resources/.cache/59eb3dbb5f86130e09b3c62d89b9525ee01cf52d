@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-03T23:47:40.8353906	Loot Tables
+// 1.20.1	2024-12-04T15:43:21.6540398	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
 fdff6e05cade759aa389ed4cfd0ec41c33448869 data/enhanced_minecraft/loot_tables/blocks/adobe_furnace.json
 a13117db3082d66ab415121b6b25f10e9fcf0c4c data/enhanced_minecraft/loot_tables/blocks/apple_button.json
@@ -16,6 +16,7 @@ bd674862c242440f6a33210c7026b5a5640ecf3c data/enhanced_minecraft/loot_tables/blo
 4a49d377962ae11c1ec675f1007c8bed6baa19d1 data/enhanced_minecraft/loot_tables/blocks/apple_wood.json
 a7268e5b4bf066bb2f66193ed07a72047b871a86 data/enhanced_minecraft/loot_tables/blocks/brass_block.json
 c99a440cfc7754f9d59b34b5fe690a92725b0799 data/enhanced_minecraft/loot_tables/blocks/bronze_block.json
+d08256164d37a9eeaf781277593921e3782b83f4 data/enhanced_minecraft/loot_tables/blocks/bronzium_block.json
 5bfd8bf963e7f77da81d95a57fdf5592a35b34f6 data/enhanced_minecraft/loot_tables/blocks/cobbeled_limestone.json
 f54b30cd9f11004e79d3640cda027d7b3100ab21 data/enhanced_minecraft/loot_tables/blocks/cobbeled_limestone_slab.json
 0f0b642a815e7205a85e7fbd19c5a5bfc26a3c83 data/enhanced_minecraft/loot_tables/blocks/cobbeled_limestone_stair.json

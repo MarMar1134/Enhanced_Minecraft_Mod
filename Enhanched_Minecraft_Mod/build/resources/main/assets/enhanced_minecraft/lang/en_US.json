@@ -16,6 +16,14 @@
   "jei.enhanced_minecraft.gem_polisher": "Gem polishing",
   "jei.enhanced_minecraft.grinder": "Grinding",
 
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses",
+  "desc.enhanced_minecraft.polisher_item": "Polishes raw gems when utilized in the gem polisher",
+
+  "desc.enhanced_minecraft.silver_armor": "When full equipped: gives Haste to the player",
+  "desc.enhanced_minecraft.rose_gold_armor": "When full equipped: gives Haste to the player",
+  "desc.enhanced_minecraft.bronzium_armor": "When full equipped: gives Fire Resistance to the player",
+  "desc.enhanced_minecraft.green_gold_armor": "When full equipped: gives Haste II to the player",
+
   "advancements.title.survival.root": "Enhanced Playthrough",
   "advancements.desc.survival.root": "You started a new adventure on this fantastic world. Welcome!",
   "advancements.title.unity_makes_strengh": "Unity makes strength",
@@ -108,6 +116,7 @@
   "block.enhanced_minecraft.brass_block": "Block of brass",
   "block.enhanced_minecraft.bronze_block": "Block of bronze",
   "block.enhanced_minecraft.rose_gold_block": "Block of rose gold",
+  "block.enhanced_minecraft.bronzium_block": "Block of bronzium",
   "block.enhanced_minecraft.steel_block": "Block of steel",
   "block.enhanced_minecraft.green_gold_block": "Block of green gold",
 
@@ -131,9 +140,6 @@
   "smithing.bronzium.ingredients": "Brass ingot, Bronze ingot",
   "smithing.bronzium.base_slot_description": "Add a bronze or brass armor, weapon or tool",
   "smithing.bronzium.additions_slot_description": "Add a bronze ingot for brass items or a brass ingot for bronze items",
-
-  "gui.enhanced_minecraft.gem_polisher_screen.text": "Uses",
-  "descriptions.enhanced_minecraft.polisher_item": "Polishes raw gems when utilized in the gem polisher",
 
   "item.enhanced_minecraft.sulfur": "Sulfur",
 
@@ -159,6 +165,8 @@
   "item.enhanced_minecraft.silver_nugget": "Silver nugget",
   "item.enhanced_minecraft.rose_gold_ingot": "Rose gold ingot",
   "item.enhanced_minecraft.rose_gold_nugget": "Rose gold nugget",
+  "item.enhanced_minecraft.bronzium_ingot": "Bronzium ingot",
+  "item.enhanced_minecraft.bronzium_nugget": "Bronzium nugget",
   "item.enhanced_minecraft.green_gold_ingot": "Green gold ingot",
   "item.enhanced_minecraft.green_gold_nugget": "Green gold nugget",
   "item.enhanced_minecraft.cobalt": "Cobalt",
@@ -213,6 +221,17 @@
   "item.enhanced_minecraft.rose_golden_chestplate": "Rose golden chestplate",
   "item.enhanced_minecraft.rose_golden_leggings": "Rose golden leggings",
   "item.enhanced_minecraft.rose_golden_boots": "Rose golden boots",
+
+  "item.enhanced_minecraft.bronzium_sword": "Bronzium Sword",
+  "item.enhanced_minecraft.bronzium_pickaxe": "Bronzium Pickaxe",
+  "item.enhanced_minecraft.bronzium_axe": "Bronzium Axe",
+  "item.enhanced_minecraft.bronzium_shovel": "Bronzium Shovel",
+  "item.enhanced_minecraft.bronzium_hoe": "Bronzium Hoe",
+  "item.enhanced_minecraft.bronzium_polisher": "Bronzium polisher",
+  "item.enhanced_minecraft.bronzium_helmet": "Bronzium Helmet",
+  "item.enhanced_minecraft.bronzium_chestplate": "Bronzium Chestplate",
+  "item.enhanced_minecraft.bronzium_leggings": "Bronzium Leggings",
+  "item.enhanced_minecraft.bronzium_boots": "Bronzium Boots",
 
   "item.enhanced_minecraft.iron_polisher": "Iron polisher",
 

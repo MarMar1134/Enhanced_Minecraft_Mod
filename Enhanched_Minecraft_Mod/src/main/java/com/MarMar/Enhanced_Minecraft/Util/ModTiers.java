@@ -36,6 +36,12 @@ public class ModTiers {
             new ResourceLocation(Enhanced_Playthrough.MOD_ID, "rose_gold_ingot"), List.of(Tiers.STONE),
             List.of(Tiers.IRON)
     );
+    public static final Tier BRONZIUM = TierSortingRegistry.registerTier(
+            new ForgeTier(1, 300, 6F, 2F, 14,
+                    ModTags.Blocks.NEEDS_BRONZIUM_TOOL, () -> Ingredient.of(ModItems.BRONZIUM_INGOT.get())),
+            new ResourceLocation(Enhanced_Playthrough.MOD_ID, "bronzium_ingot"), List.of(Tiers.IRON),
+            List.of(Tiers.DIAMOND)
+    );
     public static final Tier STEEL = TierSortingRegistry.registerTier(
             new ForgeTier(2, 908, 7F, 3.5F, 16,
                     ModTags.Blocks.NEEDS_STEEL_TOOL,() -> Ingredient.of(ModItems.STEEL_INGOT.get())),

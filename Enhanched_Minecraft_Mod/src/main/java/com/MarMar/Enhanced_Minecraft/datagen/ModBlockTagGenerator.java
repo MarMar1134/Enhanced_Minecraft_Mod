@@ -174,6 +174,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.ZINC_BLOCK.get(),
                 ModBlocks.BRASS_BLOCK.get(),
                 ModBlocks.BRONZE_BLOCK.get(),
+                ModBlocks.BRONZIUM_BLOCK.get(),
                 ModBlocks.ROSE_GOLD_BLOCK.get(),
                 ModBlocks.STEEL_BLOCK.get(),
                 ModBlocks.GREEN_GOLD_BLOCK.get()
@@ -229,6 +230,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(ModTags.Blocks.NEEDS_ROSE_GOLD_TOOL).add(
                 ModBlocks.ROSE_GOLD_BLOCK.get()
+        );
+
+        this.tag(ModTags.Blocks.NEEDS_BRONZIUM_TOOL).add(
+                ModBlocks.BRONZIUM_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
@@ -309,6 +314,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.BRASS_BLOCK.get(),
                 ModBlocks.BRONZE_BLOCK.get(),
                 ModBlocks.ROSE_GOLD_BLOCK.get(),
+                ModBlocks.BRONZIUM_BLOCK.get(),
                 ModBlocks.STEEL_BLOCK.get(),
                 ModBlocks.GREEN_GOLD_BLOCK.get()
         );

@@ -16,6 +16,14 @@
   "jei.enhanced_minecraft.gem_polisher": "Pulido",
   "jei.enhanced_minecraft.grinder": "Molienda",
 
+  "gui.enhanced_minecraft.gem_polisher_screen.text": "Usos",
+  "desc.enhanced_minecraft.polisher_item": "Utilizado en la mesa de pulido, sirve para purificar gemas",
+
+  "desc.enhanced_minecraft.silver_armor": "Con toda la equipación: otorga Apuro al jugador",
+  "desc.enhanced_minecraft.rose_gold_armor": "Con toda la equipación: otorga Apuro al jugador",
+  "desc.enhanced_minecraft.bronzium_armor": "Con toda la equipación: otorga Resistencia al Fuego al jugador",
+  "desc.enhanced_minecraft.green_gold_armor": "Con toda la equipación: otorga Apuro II al jugador",
+
   "advancements.title.survival.root": "Enhanced Playthrough",
   "advancements.desc.survival.root": "Iniciaste una nueva aventura en este mundo fantástico. ¡Bienvenido!",
   "advancements.title.unity_makes_strengh": "La unión hace la fuerza",
@@ -108,6 +116,7 @@
   "block.enhanced_minecraft.brass_block": "Bloque de latón",
   "block.enhanced_minecraft.bronze_block": "Bloque de bronce",
   "block.enhanced_minecraft.rose_gold_block": "Bloque de oro rosado",
+  "block.enhanced_minecraft.bronzium_block": "Bloque de broncio",
   "block.enhanced_minecraft.steel_block": "Bloque de acero",
   "block.enhanced_minecraft.green_gold_block": "Bloque de oro verde",
 
@@ -132,9 +141,6 @@
   "smithing.bronzium.base_slot_description": "Coloque un arma, herramienta o armadora de bronce o de latón",
   "smithing.bronzium.additions_slot_description": "Coloque un Lingote de bronze para equipo de latón o un Lingote de latón para equipo de bronce",
 
-  "gui.enhanced_minecraft.gem_polisher_screen.text": "Usos",
-  "descriptions.enhanced_minecraft.polisher_item": "Utilizado en la mesa de pulido, sirve para purificar gemas",
-
   "item.enhanced_minecraft.sulfur": "Azufre",
   "item.enhanced_minecraft.copper_nugget": "Pepita de cobre",
   "item.enhanced_minecraft.raw_tin": "Estaño en bruto",
@@ -153,6 +159,8 @@
   "item.enhanced_minecraft.silver_nugget": "Pepita de plata",
   "item.enhanced_minecraft.rose_gold_ingot": "Lingote de oro rosado",
   "item.enhanced_minecraft.rose_gold_nugget": "Pepita de oro rosado",
+  "item.enhanced_minecraft.bronzium_ingot": "Lingote de broncio",
+  "item.enhanced_minecraft.bronzium_nugget": "Pepita de broncio",
   "item.enhanced_minecraft.green_gold_ingot": "Lingote de oro verde",
   "item.enhanced_minecraft.green_gold_nugget": "Pepita de oro verde",
   "item.enhanced_minecraft.cobalt": "Cobalto",
@@ -211,6 +219,17 @@
   "item.enhanced_minecraft.rose_golden_chestplate": "Pechera de oro rosado",
   "item.enhanced_minecraft.rose_golden_leggings": "Grebas de oro rosado",
   "item.enhanced_minecraft.rose_golden_boots": "Botas de oro rosado",
+
+  "item.enhanced_minecraft.bronzium_sword": "Espada de broncio",
+  "item.enhanced_minecraft.bronzium_pickaxe": "Pico de broncio",
+  "item.enhanced_minecraft.bronzium_axe": "Hacha de broncio",
+  "item.enhanced_minecraft.bronzium_shovel": "Pala de broncio",
+  "item.enhanced_minecraft.bronzium_hoe": "Azada de broncio",
+  "item.enhanced_minecraft.bronzium_polisher": "Pulidora de broncio",
+  "item.enhanced_minecraft.bronzium_helmet": "Yelmo de broncio",
+  "item.enhanced_minecraft.bronzium_chestplate": "Pechera de broncio",
+  "item.enhanced_minecraft.bronzium_leggings": "Grebas de broncio",
+  "item.enhanced_minecraft.bronzium_boots": "Botas de broncio",
 
   "item.enhanced_minecraft.iron_polisher": "Pulidora de hierro",
 

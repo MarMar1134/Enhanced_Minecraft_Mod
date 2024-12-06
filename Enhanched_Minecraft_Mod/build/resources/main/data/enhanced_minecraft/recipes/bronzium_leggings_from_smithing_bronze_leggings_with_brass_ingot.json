@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhanced_minecraft:brass_ingot"
+  },
+  "base": {
+    "item": "enhanced_minecraft:bronze_leggings"
+  },
+  "result": {
+    "item": "enhanced_minecraft:bronzium_leggings"
+  },
+  "template": {
+    "item": "enhanced_minecraft:bronzium_upgrade_smithing_template"
+  }
+}

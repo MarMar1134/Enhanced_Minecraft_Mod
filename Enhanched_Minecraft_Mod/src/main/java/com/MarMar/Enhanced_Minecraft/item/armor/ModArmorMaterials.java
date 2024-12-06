@@ -17,6 +17,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
             ModItems.BRONZE_INGOT.get())),
     BRASS("brass", 8, new int[]{1,3,2,1}, 7, SoundEvents.ARMOR_EQUIP_IRON, 0F, 0F, () -> Ingredient.of(
             ModItems.BRASS_INGOT.get())),
+    BRONZIUM("bronzium", 16, new int[]{1,4,3,2}, 14, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(
+            ModItems.BRONZIUM_INGOT.get())),
     ROSE_GOLD("rose_gold", 8, new int[]{1,4,3,2}, 16, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(
             ModItems.ROSE_GOLD_INGOT.get())),
     STEEL("steel", 18, new int[]{2,7,5,3}, 16, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.05f, () -> Ingredient.of(
