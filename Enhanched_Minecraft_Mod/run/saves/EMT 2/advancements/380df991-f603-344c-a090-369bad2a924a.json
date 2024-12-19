@@ -2482,6 +2482,7 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
+      "minecraft:crimson_forest": "2024-12-19 14:11:42 -0300",
       "minecraft:nether_wastes": "2024-08-11 21:56:41 -0300",
       "minecraft:basalt_deltas": "2024-08-11 21:56:20 -0300"
     },
@@ -4203,27 +4204,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/nether_wart_block": {
-    "criteria": {
-      "has_nether_wart": "2024-12-06 16:32:15 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/red_nether_bricks": {
-    "criteria": {
-      "has_nether_wart": "2024-12-06 16:32:15 -0300"
-    },
-    "done": true
-  },
   "enhanced_minecraft:recipes/combat/bronzium_upgrade_smithing_template": {
     "criteria": {
       "has_bronzium_upgrade_smithing_template": "2024-12-06 16:20:52 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/quartz": {
-    "criteria": {
-      "has_nether_quartz_ore": "2024-12-06 16:38:59 -0300"
     },
     "done": true
   },
@@ -4239,9 +4222,51 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2024-12-06 16:32:15 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_bricks": {
+    "criteria": {
+      "has_nether_wart": "2024-12-06 16:32:15 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/quartz": {
+    "criteria": {
+      "has_nether_quartz_ore": "2024-12-06 16:38:59 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/quartz_from_blasting": {
     "criteria": {
       "has_nether_quartz_ore": "2024-12-06 16:38:59 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/copper_ingot__from_smelting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/copper_ingot_from_basic_smelting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/copper_ingot__from_blasting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/copper_ingot_from_soul_basic_smelting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
     },
     "done": true
   },
