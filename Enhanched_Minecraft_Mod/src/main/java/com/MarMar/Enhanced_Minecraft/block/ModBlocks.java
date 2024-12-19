@@ -95,19 +95,20 @@ public class ModBlocks {
                 () -> new WallBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.STONE_BRICK_WALL).requiresCorrectToolForDrops()));
 
         //Ores
+        public static final RegistryObject<Block> NETHER_COPPER_ORE = RegisterBlock("nether_copper_ore",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).sound(SoundType.NETHERRACK).requiresCorrectToolForDrops()));
+
         public static final RegistryObject<Block> TIN_ORE = RegisterBlock("tin_ore",
-                () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE)
-                        .requiresCorrectToolForDrops()));
+                () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).requiresCorrectToolForDrops()));
          public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = RegisterBlock("deepslate_tin_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_IRON_ORE)
-                    .requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
 
         public static final RegistryObject<Block> ZINC_ORE = RegisterBlock("zinc_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = RegisterBlock("deepslate_zinc_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> NETHER_ZINC_ORE = RegisterBlock("nether_zinc_ore",
-                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.NETHERRACK).requiresCorrectToolForDrops()));
 
         public static final RegistryObject<Block> SULFUR_ORE = RegisterBlock("sulfur_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DIAMOND_ORE)

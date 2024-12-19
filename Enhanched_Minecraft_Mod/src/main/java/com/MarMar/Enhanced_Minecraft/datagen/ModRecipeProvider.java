@@ -53,12 +53,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         public static final List<ItemLike> ZINC_NUGGET_SMELTABLES = List.of(ModBlocks.ZINC_ORE.get(), ModBlocks.NETHER_ZINC_ORE.get());
 
         //copper
-        public static final List<ItemLike> COPPER_SMELTABLES = List.of(Items.RAW_COPPER, Blocks.COPPER_ORE, Blocks.DEEPSLATE_COPPER_ORE);
+        public static final List<ItemLike> COPPER_SMELTABLES = List.of(Items.RAW_COPPER, Blocks.COPPER_ORE, Blocks.DEEPSLATE_COPPER_ORE, ModBlocks.NETHER_COPPER_ORE.get());
+        public static final List<ItemLike> NETHER_COPPER_SMELTABLES = List.of(ModBlocks.NETHER_COPPER_ORE.get());
         public static final List<ItemLike> COPPER_NUGGET_SMELTABLES = List.of(Items.RAW_COPPER);
 
         //brass
-    public static final List<ItemLike> BRASS_NUGGETS_SMELTABLES = List.of(ModItems.BRASS_AXE.get(), ModItems.BRASS_HOE.get(), ModItems.BRASS_PICKAXE.get(), ModItems.BRASS_POLISHER.get(),
-                ModItems.BRASS_SHOVEL.get(), ModItems.BRASS_SWORD.get(), ModItems.BRASS_HELMET.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRASS_BOOTS.get());
+        public static final List<ItemLike> BRASS_NUGGETS_SMELTABLES = List.of(ModItems.BRASS_AXE.get(), ModItems.BRASS_HOE.get(), ModItems.BRASS_PICKAXE.get(), ModItems.BRASS_POLISHER.get(),
+                    ModItems.BRASS_SHOVEL.get(), ModItems.BRASS_SWORD.get(), ModItems.BRASS_HELMET.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRASS_BOOTS.get());
 
         //bronze
         public static final List<ItemLike> BRONZE_NUGGETS_SMELTABLES = List.of(ModItems.BRONZE_AXE.get(),
@@ -80,6 +81,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> COBALT_SMELTABLES = List.of(ModBlocks.DEEPSLATE_COBALT_ORE.get());
 
     public static final List<ItemLike> LIMESTONE_SMELTABLES = List.of(ModBlocks.COBBLED_LIMESTONE.get());
+
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -149,6 +151,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             basicSmelting(consumer, COPPER_SMELTABLES, Items.COPPER_INGOT, "copper_ingot");
             soulBasicSmelting(consumer, COPPER_SMELTABLES, Items.COPPER_INGOT, "copper_ingot");
 
+            oreSmelting(consumer, NETHER_COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT,
+                    2f, 100, "copper_ingot");
+            oreBlasting(consumer, NETHER_COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT,
+                    2f, 200, "copper_ingot");
+
             byCampfire(consumer, COPPER_NUGGET_SMELTABLES, RecipeCategory.MISC, ModItems.COPPER_NUGGET.get(),
                 1.0f, 300, "copper_nugget");
 
@@ -211,8 +218,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             oreAlloying(consumer, ModItems.RAW_ZINC.get(), Items.RAW_COPPER, ModItems.BRASS_INGOT.get(), "brass_ingot");
             oreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_ZINC.get(), ModItems.BRASS_INGOT.get(), "brass_ingot");
 
-            superOreAlloying(consumer, ModItems.RAW_ZINC.get(), Items.RAW_COPPER, ModItems.BRASS_INGOT.get(), 1, "brass_ingot");
-            superOreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_ZINC.get(), ModItems.BRASS_INGOT.get(), 1, "brass_ingot");
+            superOreAlloying(consumer, ModItems.RAW_ZINC.get(), Items.RAW_COPPER, ModItems.BRASS_INGOT.get(), "brass_ingot");
+            superOreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_ZINC.get(), ModItems.BRASS_INGOT.get(),"brass_ingot");
             superOreAlloying(consumer, ModItems.ZINC_INGOT.get(), Items.COPPER_INGOT, ModItems.BRASS_INGOT.get(), 2, "brass_ingot");
             superOreAlloying(consumer, Items.COPPER_INGOT, ModItems.ZINC_INGOT.get(), ModItems.BRASS_INGOT.get(), 2, "brass_ingot");
 
@@ -220,29 +227,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             oreAlloying(consumer, ModItems.RAW_TIN.get(), Items.RAW_COPPER, ModItems.BRONZE_INGOT.get(), "bronze_ingot");
             oreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_TIN.get(), ModItems.BRONZE_INGOT.get(), "bronze_ingot");
 
-            superOreAlloying(consumer, ModItems.RAW_TIN.get(), Items.RAW_COPPER, ModItems.BRONZE_INGOT.get(), 1, "bronze_ingot");
-            superOreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_TIN.get(), ModItems.BRONZE_INGOT.get(), 1, "bronze_ingot");
+            superOreAlloying(consumer, ModItems.RAW_TIN.get(), Items.RAW_COPPER, ModItems.BRONZE_INGOT.get(), "bronze_ingot");
+            superOreAlloying(consumer, Items.RAW_COPPER, ModItems.RAW_TIN.get(), ModItems.BRONZE_INGOT.get(), "bronze_ingot");
             superOreAlloying(consumer, ModItems.TIN_INGOT.get(), Items.COPPER_INGOT, ModItems.BRONZE_INGOT.get(), 2, "bronze_ingot");
             superOreAlloying(consumer, Items.COPPER_INGOT, ModItems.TIN_INGOT.get(), ModItems.BRONZE_INGOT.get(), 2, "bronze_ingot");
 
             //Rose gold
-            superOreAlloying(consumer, Items.RAW_GOLD, Items.RAW_COPPER, ModItems.ROSE_GOLD_INGOT.get(), 1, "rose_gold_ingot");
-            superOreAlloying(consumer, Items.RAW_COPPER, Items.RAW_GOLD, ModItems.ROSE_GOLD_INGOT.get(), 1, "rose_gold_ingot");
+            superOreAlloying(consumer, Items.RAW_GOLD, Items.RAW_COPPER, ModItems.ROSE_GOLD_INGOT.get(), "rose_gold_ingot");
+            superOreAlloying(consumer, Items.RAW_COPPER, Items.RAW_GOLD, ModItems.ROSE_GOLD_INGOT.get(), "rose_gold_ingot");
             superOreAlloying(consumer, Items.GOLD_INGOT, Items.COPPER_INGOT, ModItems.ROSE_GOLD_INGOT.get(), 2, "rose_gold_ingot");
             superOreAlloying(consumer, Items.COPPER_INGOT, Items.GOLD_INGOT, ModItems.ROSE_GOLD_INGOT.get(), 2, "rose_gold_ingot");
+
+            //Bronzium
+            superOreAlloying(consumer, ModItems.BRASS_INGOT.get(), ModItems.BRONZE_INGOT.get(), ModItems.BRONZIUM_INGOT.get(), "bronzium_ingot");
+            superOreAlloying(consumer, ModItems.BRONZE_INGOT.get(), ModItems.BRASS_INGOT.get(), ModItems.BRONZIUM_INGOT.get(), "bronzium_ingot");
 
             //Steel
             oreAlloying(consumer, Items.COAL, Items.RAW_IRON, ModItems.STEEL_INGOT.get(), "steel_ingot");
             oreAlloying(consumer, Items.RAW_IRON, Items.COAL, ModItems.STEEL_INGOT.get(), "steel_ingot");
 
-            superOreAlloying(consumer, Items.COAL, Items.RAW_IRON, ModItems.STEEL_INGOT.get(), 1, "steel_ingot");
-            superOreAlloying(consumer, Items.RAW_IRON, Items.COAL, ModItems.STEEL_INGOT.get(), 1, "steel_ingot");
+            superOreAlloying(consumer, Items.COAL, Items.RAW_IRON, ModItems.STEEL_INGOT.get(), "steel_ingot");
+            superOreAlloying(consumer, Items.RAW_IRON, Items.COAL, ModItems.STEEL_INGOT.get(), "steel_ingot");
             superOreAlloying(consumer, Items.COAL, Items.IRON_INGOT, ModItems.STEEL_INGOT.get(), 2, "steel_ingot");
             superOreAlloying(consumer, Items.IRON_INGOT, Items.COAL, ModItems.STEEL_INGOT.get(), 2, "steel_ingot");
 
             //Green gold
-            superOreAlloying(consumer, Items.RAW_GOLD, ModItems.RAW_SILVER.get(), ModItems.GREEN_GOLD_INGOT.get(), 1, "green_gold_ingot");
-            superOreAlloying(consumer, ModItems.RAW_SILVER.get(), Items.RAW_GOLD, ModItems.GREEN_GOLD_INGOT.get(), 1, "green_gold_ingot");
+            superOreAlloying(consumer, Items.RAW_GOLD, ModItems.RAW_SILVER.get(), ModItems.GREEN_GOLD_INGOT.get(), "green_gold_ingot");
+            superOreAlloying(consumer, ModItems.RAW_SILVER.get(), Items.RAW_GOLD, ModItems.GREEN_GOLD_INGOT.get(), "green_gold_ingot");
             superOreAlloying(consumer, Items.GOLD_INGOT, ModItems.SILVER_INGOT.get(), ModItems.GREEN_GOLD_INGOT.get(), 2, "green_gold_ingot");
             superOreAlloying(consumer, ModItems.SILVER_INGOT.get(), Items.GOLD_INGOT, ModItems.GREEN_GOLD_INGOT.get(), 2, "green_gold_ingot");
 
@@ -503,6 +514,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GREEN_GOLD_NUGGET.get(), 9)
                         .requires(ModItems.GREEN_GOLD_INGOT.get())
                         .unlockedBy(getHasName(ModItems.GREEN_GOLD_INGOT.get()), has(ModItems.GREEN_GOLD_INGOT.get()))
+                        .save(consumer);
+
+                //Smithing templates
+                ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get(), 2)
+                        .pattern("DAD")
+                        .pattern("DVD")
+                        .pattern("CCC")
+                        .define('A', ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get())
+                        .define('V', ModItems.BRONZIUM_INGOT.get())
+                        .define('D', ModItems.ZINC_INGOT.get())
+                        .define('C', ModItems.TIN_INGOT.get())
+                        .unlockedBy(getHasName(ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get()), has(ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE.get()))
                         .save(consumer);
 
         //Block recipes
@@ -1587,6 +1610,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         }
         protected static void superOreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, int count, String group){
             superOreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, group, count, ModRecipes.SUPER_ALLOYING_SERIALIZER.get(), "from_super_alloying");
+        }
+        protected static void superOreAlloying(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike firstIngredient, ItemLike secondIngredient, ItemLike result, String group){
+            superOreAlloySerialize(pFinishedRecipeConsumer, firstIngredient, secondIngredient, result, group, 1, ModRecipes.SUPER_ALLOYING_SERIALIZER.get(), "from_super_alloying");
         }
         protected static void stoneCutting(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int count){
             stoneCuttingBuilder(consumer, input, RecipeCategory.BUILDING_BLOCKS, output, count, "from_stone_cutting");

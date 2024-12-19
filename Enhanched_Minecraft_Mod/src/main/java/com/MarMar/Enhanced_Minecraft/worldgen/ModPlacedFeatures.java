@@ -29,6 +29,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SAND_MUD_PLACED_KEY = registerKey("sand_mud_placed");
 
     //Ores
+    public static final ResourceKey<PlacedFeature> NETHER_COPPER_ORE_PLACED_KEY = registerKey("nether_copper_ore_placed");
+
     public static final ResourceKey<PlacedFeature> TIN_ORE_PLACED_KEY = registerKey("tin_ore_placed");
     public static final ResourceKey<PlacedFeature> EXTRA_TIN_ORE_PLACED_KEY = registerKey("extra_tin_ore_placed");
 
@@ -70,6 +72,11 @@ public class ModPlacedFeatures {
         register(context, LIMESTONE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LIMESTONE_KEY),
                 ModOrePlacement.commonOrePlacement(8,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(200))));
+
+        //Copper
+        register(context, NETHER_COPPER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_COPPER_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(10,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256))));
 
         //Tin
         register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TIN_ORE_KEY),

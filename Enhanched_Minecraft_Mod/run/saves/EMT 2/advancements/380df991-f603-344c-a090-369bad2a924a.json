@@ -4197,5 +4197,53 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/bronzium_ingot_from_super_alloying_bronze_ingot_and_brass_ingot": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-06 16:20:52 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2024-12-06 16:32:15 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_bricks": {
+    "criteria": {
+      "has_nether_wart": "2024-12-06 16:32:15 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/bronzium_upgrade_smithing_template": {
+    "criteria": {
+      "has_bronzium_upgrade_smithing_template": "2024-12-06 16:20:52 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/quartz": {
+    "criteria": {
+      "has_nether_quartz_ore": "2024-12-06 16:38:59 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronzium_ingot_from_super_alloying_brass_ingot_and_bronze_ingot": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-06 16:20:52 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2024-12-06 16:30:31 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/quartz_from_blasting": {
+    "criteria": {
+      "has_nether_quartz_ore": "2024-12-06 16:38:59 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

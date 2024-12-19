@@ -200,6 +200,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.STEEL_INGOT.get(),
                 ModItems.GREEN_GOLD_INGOT.get()
         );
+
+        this.tag(ItemTags.PIGLIN_LOVED).add(
+                ModItems.ROSE_GOLD_INGOT.get(),
+                ModItems.GREEN_GOLD_INGOT.get()
+        );
     }
 
 }

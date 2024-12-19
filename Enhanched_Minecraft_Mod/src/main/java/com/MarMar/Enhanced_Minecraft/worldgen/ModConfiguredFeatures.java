@@ -36,6 +36,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SAND_MUD_KEY = registerKey("sand_mud");
 
     //Ores
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_COPPER_ORE_KEY = registerKey("nether_copper_ore");
+
     public static final ResourceKey<ConfiguredFeature<?, ?>> TIN_ORE_KEY = registerKey("tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> EXTRA_TIN_ORE_KEY = registerKey("extra_tin_ore");
 
@@ -99,6 +101,12 @@ public class ModConfiguredFeatures {
                 ModBlocks.LIMESTONE.get().defaultBlockState()));
 
         register(context, LIMESTONE_KEY, Feature.ORE, new OreConfiguration(limestone, 32));
+
+        //Nether copper ore
+        List<OreConfiguration.TargetBlockState> netherCopperOres = List.of(OreConfiguration.target(netherrackReplaceable,
+                ModBlocks.NETHER_COPPER_ORE.get().defaultBlockState()));
+
+        register(context, NETHER_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(netherCopperOres, 6));
 
         //Tin ore
         List<OreConfiguration.TargetBlockState> tinOres = List.of(OreConfiguration.target(stoneReplaceable,

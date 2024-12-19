@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-04T15:43:21.6479925	Tags for minecraft:item mod id enhanced_minecraft
+// 1.20.1	2024-12-09T19:08:38.6968794	Tags for minecraft:item mod id enhanced_minecraft
 3fc647babc0e967915d33d57ed18fa4ad1ef04cc data/enhanced_minecraft/tags/items/apple_logs.json
 1a008df1c05956de81c8cc12517ae8cbb3cc0b62 data/enhanced_minecraft/tags/items/brass.json
 4ba3030478c1a1da72dc536da32407d54a603f18 data/enhanced_minecraft/tags/items/bronze.json
@@ -14,6 +14,7 @@ c6f3379eaacf01a355c2d10ecf62128fa465e79f data/forge/tags/items/nuggets.json
 564989eac1fceb24d0fa431c2d9f84692a86a922 data/forge/tags/items/raw_materials.json
 28fab04711619301eecc4b07c3612d7216389a38 data/minecraft/tags/items/beacon_payment_items.json
 d9f02959f5bcc5c3d6e552d4d27cb0cc3e7c093f data/minecraft/tags/items/logs_that_burn.json
+4f459cbc0d4a592c4a6c0a680f3e5074ab419ab8 data/minecraft/tags/items/piglin_loved.json
 1bf812facaca956b142982993ee08686bd56fd7c data/minecraft/tags/items/planks.json
 3f491d5e20e6c3ad1bfdbe1d55a6040f7288bbac data/minecraft/tags/items/stone_crafting_materials.json
 74308d2276ca3803fefec940a70636c45a37a1e9 data/minecraft/tags/items/trimmable_armor.json

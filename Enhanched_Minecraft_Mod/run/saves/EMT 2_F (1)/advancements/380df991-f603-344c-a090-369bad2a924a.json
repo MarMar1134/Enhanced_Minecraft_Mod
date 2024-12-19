@@ -1,0 +1,201 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-12-12 15:32:30 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2024-12-12 15:32:32 -0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2024-12-12 15:32:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2024-12-12 15:32:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2024-12-12 15:32:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:basalt_deltas": "2024-12-12 15:33:23 -0300"
+    },
+    "done": false
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2024-12-12 15:33:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2024-12-12 15:33:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/copper_ingot__from_smelting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-12 15:33:50 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/copper_ingot_from_basic_smelting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-12 15:33:50 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/copper_ingot__from_blasting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-12 15:33:50 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/copper_ingot_from_soul_basic_smelting_nether_copper_ore": {
+    "criteria": {
+      "has_nether_copper_ore": "2024-12-12 15:33:50 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/torch": {
+    "criteria": {
+      "has_stone_pickaxe": "2024-12-12 15:34:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2024-12-12 15:34:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-12-12 15:34:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2024-12-12 15:34:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2024-12-12 15:34:35 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/brass_ingot_from_alloying_raw_copper_and_raw_zinc": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/copper_ingot_from_basic_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/brass_ingot_from_super_alloying_raw_copper_and_raw_zinc": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/copper_ingot_from_soul_basic_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/copper_nugget__from_campfire_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/brass_ingot_from_super_alloying_raw_zinc_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/brass_ingot_from_alloying_raw_zinc_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-12 15:51:19 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

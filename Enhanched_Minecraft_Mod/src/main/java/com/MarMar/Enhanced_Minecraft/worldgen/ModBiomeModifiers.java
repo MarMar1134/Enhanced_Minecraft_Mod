@@ -24,6 +24,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SAND_MUD = registerKey("add_sand_mud");
 
     //Ores
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_COPPER_ORE = registerKey("add_nether_copper_ore");
+
     public static final ResourceKey<BiomeModifier> ADD_TIN_ORE = registerKey("add_tin_ore");
     public static final ResourceKey<BiomeModifier> ADD_EXTRA_TIN_ORE = registerKey("add_extra_tin_ore");
 
@@ -72,6 +74,12 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.LIMESTONE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_DECORATION));
+
+        //Copper
+        context.register(ADD_NETHER_COPPER_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_COPPER_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Tin
         context.register(ADD_TIN_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

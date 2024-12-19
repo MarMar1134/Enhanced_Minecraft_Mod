@@ -18,6 +18,9 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_BRONZIUM_TOOL = blockTag("needs_bronzium_tool");
         public static final TagKey<Block> NEEDS_GREEN_GOLD_TOOL = blockTag("needs_green_gold_tool");
         public static final TagKey<Block> NEEDS_STEEL_TOOL= blockTag("needs_steel_tool");
+        public static final TagKey<Block> BASIC_FURNACE = blockTag("basic_furnace");
+        public static final TagKey<Block> ALLOY_FURNACE = blockTag("alloy_furnace");
+        public static final TagKey<Block> FURNACE = blockTag("furnace");
 
 
         private static TagKey<Block> blockTag(String name){

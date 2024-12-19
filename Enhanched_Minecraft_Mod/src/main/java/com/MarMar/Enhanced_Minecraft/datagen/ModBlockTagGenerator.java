@@ -23,6 +23,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        this.tag(ModTags.Blocks.BASIC_FURNACE).add(
+                ModBlocks.ADOBE_FURNACE.get(),
+                ModBlocks.SOUL_FURNACE.get()
+        );
+
+        this.tag(ModTags.Blocks.ALLOY_FURNACE).add(
+                ModBlocks.ADOBE_ALLOYING_FURNACE.get()
+        );
+
         this.tag(BlockTags.SLABS).add(
                 ModBlocks.POLISHED_STONE_SLAB.get(),
                 ModBlocks.COBBLED_LIMESTONE_SLAB.get(),
@@ -152,6 +161,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.GEM_POLISHER.get(),
 
                 //Ores
+                ModBlocks.NETHER_COPPER_ORE.get(),
                 ModBlocks.SULFUR_ORE.get(),
                 ModBlocks.TIN_ORE.get(),
                 ModBlocks.ZINC_ORE.get(),
@@ -207,6 +217,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.LIMESTONE_BRICK_SLAB.get(),
                 ModBlocks.LIMESTONE_BRICK_STAIRS.get(),
                 ModBlocks.LIMESTONE_BRICK_WALL.get(),
+                ModBlocks.NETHER_COPPER_ORE.get(),
                 ModBlocks.TIN_BLOCK.get(),
                 ModBlocks.ZINC_BLOCK.get(),
                 ModBlocks.ZINC_ORE.get(),
@@ -290,6 +301,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         );
 
         this.tag(Tags.Blocks.ORES).add(
+                ModBlocks.NETHER_COPPER_ORE.get(),
                 ModBlocks.SULFUR_ORE.get(),
                 ModBlocks.TIN_ORE.get(),
                 ModBlocks.ZINC_ORE.get(),

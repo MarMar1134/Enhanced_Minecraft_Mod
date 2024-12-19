@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-04T15:43:21.6540398	Loot Tables
+// 1.20.1	2024-12-09T19:08:38.7003992	Loot Tables
 737f75694b46641740549fb299f3a37d0566c87d data/enhanced_minecraft/loot_tables/blocks/adobe_alloying_furnace.json
 fdff6e05cade759aa389ed4cfd0ec41c33448869 data/enhanced_minecraft/loot_tables/blocks/adobe_furnace.json
 a13117db3082d66ab415121b6b25f10e9fcf0c4c data/enhanced_minecraft/loot_tables/blocks/apple_button.json
@@ -42,6 +42,7 @@ df7075123ce7f553fa3ac9938aab0b3ed9645927 data/enhanced_minecraft/loot_tables/blo
 97d36533da2c4a15187bb0dfbb48a4e3aa4f137d data/enhanced_minecraft/loot_tables/blocks/limestone_brick_wall.json
 69e94cc4b2bec06f755e175066bff3735a127bd6 data/enhanced_minecraft/loot_tables/blocks/limestone_slab.json
 19a8119a2c8efaf2fd5db46d9ab96145bee6c7bc data/enhanced_minecraft/loot_tables/blocks/limestone_stair.json
+364851510a2b56e29c7761e2864e1b52255fbc92 data/enhanced_minecraft/loot_tables/blocks/nether_copper_ore.json
 6c4a284548596a5d4a8e3bc2015e29e574ece67b data/enhanced_minecraft/loot_tables/blocks/nether_sulfur_ore.json
 52ef154ed2cc1d41b28682d1d5fe8047c6b87496 data/enhanced_minecraft/loot_tables/blocks/nether_zinc_ore.json
 516b67f0c4d6d85a026f0cd3a324f9956f7946c2 data/enhanced_minecraft/loot_tables/blocks/polished_limestone.json

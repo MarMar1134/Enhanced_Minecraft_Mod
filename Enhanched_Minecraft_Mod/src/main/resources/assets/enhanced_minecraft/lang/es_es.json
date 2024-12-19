@@ -94,6 +94,7 @@
   "block.enhanced_minecraft.apple_fence" : "Valla de manzana",
   "block.enhanced_minecraft.apple_fencegate" : "Puerta de valla de manzana",
 
+  "block.enhanced_minecraft.nether_copper_ore": "Mena de cobre del nether",
   "block.enhanced_minecraft.sulfur_ore": "Mena de azufre",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Mena de azufre profundo",
   "block.enhanced_minecraft.nether_sulfur_ore": "Mena de azufre del nether",

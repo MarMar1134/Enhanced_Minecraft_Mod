@@ -94,6 +94,8 @@
   "block.enhanced_minecraft.apple_fence" : "Apple fence",
   "block.enhanced_minecraft.apple_fencegate" : "Apple fence gate",
 
+
+  "block.enhanced_minecraft.nether_copper_ore": "Nether copper ore",
   "block.enhanced_minecraft.sulfur_ore": "Sulfur ore",
   "block.enhanced_minecraft.deepslate_sulfur_ore": "Deepslate sulfur ore",
   "block.enhanced_minecraft.nether_sulfur_ore": "Nether sulfur ore",

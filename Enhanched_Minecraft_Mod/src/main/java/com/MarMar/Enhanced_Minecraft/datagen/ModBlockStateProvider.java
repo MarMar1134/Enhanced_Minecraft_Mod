@@ -131,6 +131,8 @@ public class ModBlockStateProvider extends BlockStateProvider{
             fenceGateBlock((FenceGateBlock) ModBlocks.APPLE_FENCEGATE.get(), blockTexture(ModBlocks.APPLE_PLANKS.get()));
 
         //ores
+        blockWithItem(ModBlocks.NETHER_COPPER_ORE);
+
         blockWithItem(ModBlocks.DEEPSLATE_TIN_ORE);
         blockWithItem(ModBlocks.TIN_ORE);
 

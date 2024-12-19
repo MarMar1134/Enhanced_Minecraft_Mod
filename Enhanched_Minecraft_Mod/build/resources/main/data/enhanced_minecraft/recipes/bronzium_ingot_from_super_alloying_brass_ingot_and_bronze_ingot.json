@@ -1,0 +1,17 @@
+{
+  "type": "enhanced_minecraft:super_ore_alloying",
+  "alloytime": 100,
+  "category": "super_ore_alloy",
+  "group": "bronzium_ingot",
+  "ingredients": [
+    {
+      "item": "enhanced_minecraft:brass_ingot"
+    },
+    {
+      "item": "enhanced_minecraft:bronze_ingot"
+    }
+  ],
+  "output": {
+    "item": "enhanced_minecraft:bronzium_ingot"
+  }
+}

@@ -136,6 +136,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
             this.dropSelf(ModBlocks.APPLE_FENCEGATE.get());
 
         //ores
+        this.add(ModBlocks.NETHER_COPPER_ORE.get(),
+                block -> createCopperOreDrops(ModBlocks.NETHER_COPPER_ORE.get()));
+
         this.add(ModBlocks.TIN_ORE.get(),
                 block -> createTinOreDrops(ModBlocks.TIN_ORE.get()));
         this.add(ModBlocks.DEEPSLATE_TIN_ORE.get(),
@@ -266,6 +269,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(0F, dropsPerLeave)))
                 .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.05F, 0.055555557F, 0.0625F, 0.08333334F, 0.087F)
                 )));
+    }
+
+    protected LootTable.Builder createCopperOreDrops(Block pBlock) {
+        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(Items.RAW_COPPER)
+                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 5.0F)))
+                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
     protected LootTable.Builder createTinOreDrops(Block pBlock) {

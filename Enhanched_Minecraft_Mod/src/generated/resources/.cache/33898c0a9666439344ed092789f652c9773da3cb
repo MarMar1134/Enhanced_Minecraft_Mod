@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-04T15:57:03.9251659	Item Models: enhanced_minecraft
+// 1.20.1	2024-12-06T16:17:16.6713298	Item Models: enhanced_minecraft
 e62377cd480ff79dbf47105cc6c22747d5b3107f assets/enhanced_minecraft/models/item/apple_button.json
 434fd57f317c760306cb9a11e2fd02e012ad5447 assets/enhanced_minecraft/models/item/apple_door.json
 310c6c2fec08b81b8916af83a324b652ab74c444 assets/enhanced_minecraft/models/item/apple_fence.json
@@ -37,6 +37,7 @@ daaa00b35abab9027159f91b3838d002a53141bd assets/enhanced_minecraft/models/item/b
 c884681ff226d0705b624e64612fb6c81d4a90b4 assets/enhanced_minecraft/models/item/bronzium_chestplate.json
 d9d70722f23d3fb54bad32dee02d5de6c522f622 assets/enhanced_minecraft/models/item/bronzium_helmet.json
 d78e3ce5bcd781233f75a84ade0b62525047faee assets/enhanced_minecraft/models/item/bronzium_hoe.json
+c96c6cbbe3ea720cd7a44f01e41902fb162a5cd5 assets/enhanced_minecraft/models/item/bronzium_ingot.json
 c53a722ff89d462fa606c643ded1c90479ff9779 assets/enhanced_minecraft/models/item/bronzium_leggings.json
 5b02052baf8d8287e1e3f16e5e91022f30ab45e6 assets/enhanced_minecraft/models/item/bronzium_nugget.json
 eaeabf45c91c7c6434e0c4883c15fb98157c5979 assets/enhanced_minecraft/models/item/bronzium_pickaxe.json
