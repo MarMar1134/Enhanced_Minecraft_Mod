@@ -45,6 +45,6 @@ public class LivingTouchEnchantment extends Enchantment {
     }
     @Override
     protected boolean checkCompatibility(Enchantment pOther) {
-        return super.checkCompatibility(pOther) && pOther != Enchantments.FIRE_ASPECT && pOther != ModEnchantments.Poison_touch.get();
+        return super.checkCompatibility(pOther) && pOther != Enchantments.FIRE_ASPECT && pOther != ModEnchantments.POISON_TOUCH.get();
     }
 }

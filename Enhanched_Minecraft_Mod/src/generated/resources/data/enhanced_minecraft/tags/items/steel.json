@@ -1,11 +1,13 @@
 {
   "values": [
     "enhanced_minecraft:steel_ingot",
+    "enhanced_minecraft:steel_block",
     "enhanced_minecraft:steel_sword",
     "enhanced_minecraft:steel_pickaxe",
     "enhanced_minecraft:steel_axe",
     "enhanced_minecraft:steel_shovel",
     "enhanced_minecraft:steel_hoe",
+    "enhanced_minecraft:steel_polisher",
     "enhanced_minecraft:steel_helmet",
     "enhanced_minecraft:steel_chestplate",
     "enhanced_minecraft:steel_leggings",

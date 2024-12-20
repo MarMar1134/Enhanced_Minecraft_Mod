@@ -96,7 +96,7 @@ public class ModBlocks {
 
         //Ores
         public static final RegistryObject<Block> NETHER_COPPER_ORE = RegisterBlock("nether_copper_ore",
-                () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).sound(SoundType.NETHERRACK).requiresCorrectToolForDrops()));
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops()));
 
         public static final RegistryObject<Block> TIN_ORE = RegisterBlock("tin_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).requiresCorrectToolForDrops()));
@@ -108,7 +108,7 @@ public class ModBlocks {
         public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = RegisterBlock("deepslate_zinc_ore",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> NETHER_ZINC_ORE = RegisterBlock("nether_zinc_ore",
-                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.NETHERRACK).requiresCorrectToolForDrops()));
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops()));
 
         public static final RegistryObject<Block> SULFUR_ORE = RegisterBlock("sulfur_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DIAMOND_ORE)
@@ -118,7 +118,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> NETHER_SULFUR_ORE = RegisterBlock("nether_sulfur_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE)
-                    .sound(SoundType.NETHERRACK).requiresCorrectToolForDrops()));
+                    .sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops()));
 
         public static final RegistryObject<Block> SILVER_ORE = RegisterBlock("silver_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GOLD_ORE).requiresCorrectToolForDrops()));
@@ -137,6 +137,9 @@ public class ModBlocks {
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE).requiresCorrectToolForDrops()));
         public static final RegistryObject<Block> DEEPSLATE_SAPHIRE_ORE = RegisterBlock("deepslate_saphire_ore",
                 () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE).requiresCorrectToolForDrops()));
+
+        public static final RegistryObject<Block> NETHER_GARNET_ORE = RegisterBlock("nether_garnet_ore",
+                () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE).sound(SoundType.NETHER_ORE).requiresCorrectToolForDrops()));
 
         //Ores blocks
         public static final RegistryObject<Block> SILVER_BLOCK = RegisterBlock("silver_block",

@@ -1,11 +1,14 @@
 {
   "values": [
     "enhanced_minecraft:silver_ingot",
+    "enhanced_minecraft:silver_nugget",
+    "enhanced_minecraft:silver_block",
     "enhanced_minecraft:silver_sword",
     "enhanced_minecraft:silver_pickaxe",
     "enhanced_minecraft:silver_axe",
     "enhanced_minecraft:silver_shovel",
     "enhanced_minecraft:silver_hoe",
+    "enhanced_minecraft:silver_polisher",
     "enhanced_minecraft:silver_helmet",
     "enhanced_minecraft:silver_chestplate",
     "enhanced_minecraft:silver_leggings",

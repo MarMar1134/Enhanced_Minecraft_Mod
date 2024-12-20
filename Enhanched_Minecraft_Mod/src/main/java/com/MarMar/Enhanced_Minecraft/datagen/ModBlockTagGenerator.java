@@ -174,6 +174,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.DEEPSLATE_SILVER_ORE.get(),
                 ModBlocks.DEEPSLATE_RUBI_ORE.get(),
                 ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(),
+                ModBlocks.NETHER_GARNET_ORE.get(),
                 ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
                 ModBlocks.NETHER_SULFUR_ORE.get(),
                 ModBlocks.DEEPSLATE_COBALT_ORE.get(),
@@ -244,7 +245,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZIUM_TOOL).add(
-                ModBlocks.BRONZIUM_BLOCK.get()
+                ModBlocks.BRONZIUM_BLOCK.get(),
+                ModBlocks.NETHER_GARNET_ORE.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(

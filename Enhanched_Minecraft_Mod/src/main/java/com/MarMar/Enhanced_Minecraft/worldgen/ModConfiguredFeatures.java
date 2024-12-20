@@ -53,6 +53,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> RUBI_ORE_KEY = registerKey("rubi_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SAPHIRE_ORE_KEY = registerKey("saphire_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_GARNET_ORE_KEY = registerKey("nether_garnet_ore");
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest gravelReplaceable = new BlockMatchTest(Blocks.GRAVEL);
         RuleTest sandReplaceable = new BlockMatchTest(Blocks.SAND);
@@ -106,7 +108,7 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> netherCopperOres = List.of(OreConfiguration.target(netherrackReplaceable,
                 ModBlocks.NETHER_COPPER_ORE.get().defaultBlockState()));
 
-        register(context, NETHER_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(netherCopperOres, 6));
+        register(context, NETHER_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(netherCopperOres, 8));
 
         //Tin ore
         List<OreConfiguration.TargetBlockState> tinOres = List.of(OreConfiguration.target(stoneReplaceable,
@@ -158,6 +160,12 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_RUBI_ORE.get().defaultBlockState()));
 
         register(context, RUBI_ORE_KEY, Feature.ORE, new OreConfiguration(rubiOres, 6));
+
+        //Nether garnet ore
+        List<OreConfiguration.TargetBlockState> garnetOres = List.of(OreConfiguration.target(netherrackReplaceable,
+                ModBlocks.NETHER_GARNET_ORE.get().defaultBlockState()));
+
+        register(context, NETHER_GARNET_ORE_KEY, Feature.ORE, new OreConfiguration(garnetOres, 5));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

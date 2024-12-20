@@ -87,109 +87,90 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         );
 
         this.tag(ModTags.Items.BRONZE).add(
-                ModItems.BRONZE_INGOT.get(),
-                ModItems.BRONZE_NUGGET.get(),
+                ModItems.BRONZE_INGOT.get(), ModItems.BRONZE_NUGGET.get(), ModBlocks.BRONZE_BLOCK.get().asItem(),
                 ModItems.BRONZE_SWORD.get(),
-                ModItems.BRONZE_PICKAXE.get(),
-                ModItems.BRONZE_AXE.get(),
-                ModItems.BRONZE_SHOVEL.get(),
-                ModItems.BRONZE_HOE.get(),
-                ModItems.BRONZE_HELMET.get(),
-                ModItems.BRONZE_CHESTPLATE.get(),
-                ModItems.BRONZE_LEGGINGS.get(),
-                ModItems.BRONZE_BOOTS.get()
+                ModItems.BRONZE_PICKAXE.get(), ModItems.BRONZE_AXE.get(), ModItems.BRONZE_SHOVEL.get(), ModItems.BRONZE_HOE.get(),
+                ModItems.BRONZE_POLISHER.get(),
+                ModItems.BRONZE_HELMET.get(), ModItems.BRONZE_CHESTPLATE.get(), ModItems.BRONZE_LEGGINGS.get(), ModItems.BRONZE_BOOTS.get()
         );
 
         this.tag(ModTags.Items.BRASS).add(
-                ModItems.BRASS_INGOT.get(),
+                ModItems.BRASS_INGOT.get(), ModItems.BRASS_NUGGET.get(), ModBlocks.BRASS_BLOCK.get().asItem(),
                 ModItems.BRASS_SWORD.get(),
-                ModItems.BRASS_PICKAXE.get(),
-                ModItems.BRASS_AXE.get(),
-                ModItems.BRASS_SHOVEL.get(),
-                ModItems.BRASS_HOE.get(),
-                ModItems.BRASS_HELMET.get(),
-                ModItems.BRASS_CHESTPLATE.get(),
-                ModItems.BRASS_LEGGINGS.get(),
-                ModItems.BRASS_BOOTS.get()
+                ModItems.BRASS_PICKAXE.get(), ModItems.BRASS_AXE.get(), ModItems.BRASS_SHOVEL.get(), ModItems.BRASS_HOE.get(),
+                ModItems.BRASS_POLISHER.get(),
+                ModItems.BRASS_HELMET.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRASS_BOOTS.get()
+        );
+
+        this.tag(ModTags.Items.ROSE_GOLD).add(
+                ModItems.ROSE_GOLD_INGOT.get(), ModItems.ROSE_GOLD_NUGGET.get(), ModBlocks.ROSE_GOLD_BLOCK.get().asItem(),
+                ModItems.ROSE_GOLDEN_SWORD.get(),
+                ModItems.ROSE_GOLDEN_PICKAXE.get(), ModItems.ROSE_GOLDEN_AXE.get(), ModItems.ROSE_GOLDEN_SHOVEL.get(), ModItems.ROSE_GOLDEN_HOE.get(),
+                ModItems.ROSE_GOLDEN_POLISHER.get(),
+                ModItems.ROSE_GOLDEN_HELMET.get(), ModItems.ROSE_GOLDEN_CHESTPLATE.get(), ModItems.ROSE_GOLDEN_LEGGINGS.get(), ModItems.ROSE_GOLDEN_BOOTS.get()
         );
 
         this.tag(ModTags.Items.BRONZIUM).add(
-                ModItems.BRONZIUM_INGOT.get(),
-                ModItems.BRONZIUM_NUGGET.get(),
+                ModItems.BRONZIUM_INGOT.get(), ModItems.BRONZIUM_NUGGET.get(), ModBlocks.BRONZIUM_BLOCK.get().asItem(),
                 ModItems.BRONZIUM_SWORD.get(),
-                ModItems.BRONZIUM_PICKAXE.get(),
-                ModItems.BRONZIUM_AXE.get(),
-                ModItems.BRONZIUM_SHOVEL.get(),
-                ModItems.BRONZIUM_HOE.get(),
-                ModItems.BRONZIUM_HELMET.get(),
-                ModItems.BRONZIUM_CHESTPLATE.get(),
-                ModItems.BRONZIUM_LEGGINGS.get(),
-                ModItems.BRONZIUM_BOOTS.get()
+                ModItems.BRONZIUM_PICKAXE.get(), ModItems.BRONZIUM_AXE.get(), ModItems.BRONZIUM_SHOVEL.get(), ModItems.BRONZIUM_HOE.get(),
+                ModItems.BRONZIUM_POLISHER.get(),
+                ModItems.BRONZIUM_HELMET.get(), ModItems.BRONZIUM_CHESTPLATE.get(), ModItems.BRONZIUM_LEGGINGS.get(), ModItems.BRONZIUM_BOOTS.get()
         );
 
-        this.tag(ModTags.Items.STEEL).add(ModItems.STEEL_INGOT.get())
-                .add(ModItems.STEEL_SWORD.get()).add(ModItems.STEEL_PICKAXE.get())
-                .add(ModItems.STEEL_AXE.get()).add(ModItems.STEEL_SHOVEL.get())
-                .add(ModItems.STEEL_HOE.get()).add(ModItems.STEEL_HELMET.get()).add(ModItems.STEEL_CHESTPLATE.get())
-                .add(ModItems.STEEL_LEGGINGS.get()).add(ModItems.STEEL_BOOTS.get());
+        this.tag(ModTags.Items.STEEL).add(
+                ModItems.STEEL_INGOT.get(), ModBlocks.STEEL_BLOCK.get().asItem(),
+                ModItems.STEEL_SWORD.get(),
+                ModItems.STEEL_PICKAXE.get(), ModItems.STEEL_AXE.get(), ModItems.STEEL_SHOVEL.get(), ModItems.STEEL_HOE.get(),
+                ModItems.STEEL_POLISHER.get(),
+                ModItems.STEEL_HELMET.get(), ModItems.STEEL_CHESTPLATE.get(), ModItems.STEEL_LEGGINGS.get(), ModItems.STEEL_BOOTS.get()
+                );
 
-        this.tag(ModTags.Items.SILVER).add(ModItems.SILVER_INGOT.get())
-                .add(ModItems.SILVER_SWORD.get()).add(ModItems.SILVER_PICKAXE.get())
-                .add(ModItems.SILVER_AXE.get()).add(ModItems.SILVER_SHOVEL.get())
-                .add(ModItems.SILVER_HOE.get()).add(ModItems.SILVER_HELMET.get()).add(ModItems.SILVER_CHESTPLATE.get())
-                .add(ModItems.SILVER_LEGGINGS.get()).add(ModItems.SILVER_BOOTS.get());
+        this.tag(ModTags.Items.SILVER).add(
+                ModItems.SILVER_INGOT.get(), ModItems.SILVER_NUGGET.get(), ModBlocks.SILVER_BLOCK.get().asItem(),
+                ModItems.SILVER_SWORD.get(),
+                ModItems.SILVER_PICKAXE.get(), ModItems.SILVER_AXE.get(), ModItems.SILVER_SHOVEL.get(), ModItems.SILVER_HOE.get(),
+                ModItems.SILVER_POLISHER.get(),
+                ModItems.SILVER_HELMET.get(), ModItems.SILVER_CHESTPLATE.get(), ModItems.SILVER_LEGGINGS.get(), ModItems.SILVER_BOOTS.get()
+                );
 
-        this.tag(ModTags.Items.ROSE_GOLD)
-                .add(ModItems.ROSE_GOLD_INGOT.get())
-                .add(ModItems.ROSE_GOLDEN_SWORD.get())
-                .add(ModItems.ROSE_GOLDEN_PICKAXE.get())
-                .add(ModItems.ROSE_GOLDEN_AXE.get())
-                .add(ModItems.ROSE_GOLDEN_SHOVEL.get())
-                .add(ModItems.ROSE_GOLDEN_HOE.get())
-                .add(ModItems.ROSE_GOLDEN_HELMET.get())
-                .add(ModItems.ROSE_GOLDEN_CHESTPLATE.get())
-                .add(ModItems.ROSE_GOLDEN_LEGGINGS.get())
-                .add(ModItems.ROSE_GOLDEN_BOOTS.get());
+        this.tag(ItemTags.TRIMMABLE_ARMOR).add(
+                ModItems.SILVER_HELMET.get(), ModItems.SILVER_CHESTPLATE.get(), ModItems.SILVER_LEGGINGS.get(), ModItems.SILVER_BOOTS.get(),
+                ModItems.BRONZE_HELMET.get(), ModItems.BRONZE_CHESTPLATE.get(), ModItems.BRONZE_LEGGINGS.get(), ModItems.BRONZE_BOOTS.get(),
+                ModItems.BRASS_HELMET.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRASS_BOOTS.get(),
+                ModItems.ROSE_GOLDEN_HELMET.get(), ModItems.ROSE_GOLDEN_CHESTPLATE.get(), ModItems.ROSE_GOLDEN_LEGGINGS.get(), ModItems.ROSE_GOLDEN_BOOTS.get(),
+                ModItems.BRONZIUM_HELMET.get(), ModItems.BRONZIUM_CHESTPLATE.get(), ModItems.BRONZIUM_LEGGINGS.get(), ModItems.BRONZIUM_BOOTS.get(),
+                ModItems.GREEN_GOLDEN_HELMET.get(), ModItems.GREEN_GOLDEN_CHESTPLATE.get(), ModItems.GREEN_GOLDEN_LEGGINGS.get(), ModItems.GREEN_GOLDEN_BOOTS.get(),
+                ModItems.STEEL_HELMET.get(), ModItems.STEEL_CHESTPLATE.get(), ModItems.STEEL_LEGGINGS.get(), ModItems.STEEL_BOOTS.get()
+                );
 
+        this.tag(ModTags.Items.RAW_GEM).add(
+                ModItems.RAW_RUBI.get(),
+                ModItems.RAW_SAPPHIRE.get(),
+                ModItems.RAW_GARNET.get(),
+                ModItems.RAW_EMERALD.get(),
+                ModItems.RAW_DIAMOND.get()
+                );
 
-        this.tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.BRONZE_HELMET.get())
-                .add(ModItems.BRONZE_CHESTPLATE.get())
-                .add(ModItems.BRONZE_LEGGINGS.get())
-                .add(ModItems.BRONZE_BOOTS.get())
-                .add(ModItems.BRASS_HELMET.get(), ModItems.BRASS_CHESTPLATE.get(), ModItems.BRASS_LEGGINGS.get(), ModItems.BRASS_BOOTS.get())
-                .add(ModItems.BRONZIUM_HELMET.get(), ModItems.BRONZIUM_CHESTPLATE.get(), ModItems.BRONZIUM_LEGGINGS.get(), ModItems.BRONZIUM_BOOTS.get())
-                .add(ModItems.STEEL_HELMET.get())
-                .add(ModItems.STEEL_CHESTPLATE.get())
-                .add(ModItems.STEEL_LEGGINGS.get())
-                .add(ModItems.STEEL_BOOTS.get())
-                .add(ModItems.SILVER_HELMET.get())
-                .add(ModItems.SILVER_CHESTPLATE.get())
-                .add(ModItems.SILVER_LEGGINGS.get())
-                .add(ModItems.SILVER_BOOTS.get())
-                .add(ModItems.ROSE_GOLDEN_HELMET.get())
-                .add(ModItems.ROSE_GOLDEN_CHESTPLATE.get())
-                .add(ModItems.ROSE_GOLDEN_LEGGINGS.get())
-                .add(ModItems.ROSE_GOLDEN_BOOTS.get())
-                .add(ModItems.BRONZE_LEGGINGS.get());
-
-        this.tag(ModTags.Items.RAW_GEM)
-                .add(ModItems.RAW_RUBI.get())
-                .add(ModItems.RAW_SAPPHIRE.get())
-                .add(ModItems.RAW_EMERALD.get())
-                .add(ModItems.RAW_DIAMOND.get());
-
-        this.tag(ModTags.Items.POLISHER_TOOL).add(ModItems.BRONZE_POLISHER.get())
-                .add(ModItems.BRASS_POLISHER.get())
-                .add(ModItems.BRONZIUM_POLISHER.get())
-                .add(ModItems.GOLD_POLISHER.get())
-                .add(ModItems.STEEL_POLISHER.get())
-                .add(ModItems.IRON_POLISHER.get())
-                .add(ModItems.DIAMOND_POLISHER.get())
-                .add(ModItems.SILVER_POLISHER.get())
-                .add(ModItems.NETHERITE_POLISHER.get());
+        this.tag(ModTags.Items.POLISHER_TOOL).add(
+                ModItems.SILVER_POLISHER.get(),
+                ModItems.GOLD_POLISHER.get(),
+                ModItems.STONE_POLISHER.get(),
+                ModItems.BRASS_POLISHER.get(),
+                ModItems.BRONZE_POLISHER.get(),
+                ModItems.ROSE_GOLDEN_POLISHER.get(),
+                ModItems.BRONZIUM_POLISHER.get(),
+                ModItems.GREEN_GOLDEN_POLISHER.get(),
+                ModItems.IRON_POLISHER.get(),
+                ModItems.STEEL_POLISHER.get(),
+                ModItems.DIAMOND_POLISHER.get(),
+                ModItems.NETHERITE_POLISHER.get()
+        );
 
         this.tag(ItemTags.BEACON_PAYMENT_ITEMS).add(
+                ModItems.RUBI.get(),
+                ModItems.SAPPHIRE.get(),
+                ModItems.GARNET.get(),
                 ModItems.SILVER_INGOT.get(),
                 ModItems.TIN_INGOT.get(),
                 ModItems.ZINC_INGOT.get(),

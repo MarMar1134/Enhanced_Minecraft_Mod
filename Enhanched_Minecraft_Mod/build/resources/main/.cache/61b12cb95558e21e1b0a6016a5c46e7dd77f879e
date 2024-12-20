@@ -1,20 +1,20 @@
-// 1.20.1	2024-12-09T19:08:38.6968794	Tags for minecraft:item mod id enhanced_minecraft
+// 1.20.1	2024-12-20T13:22:37.966346	Tags for minecraft:item mod id enhanced_minecraft
 3fc647babc0e967915d33d57ed18fa4ad1ef04cc data/enhanced_minecraft/tags/items/apple_logs.json
-1a008df1c05956de81c8cc12517ae8cbb3cc0b62 data/enhanced_minecraft/tags/items/brass.json
-4ba3030478c1a1da72dc536da32407d54a603f18 data/enhanced_minecraft/tags/items/bronze.json
-772a109284d59cc04857f1df468f858147fb41fd data/enhanced_minecraft/tags/items/bronzium.json
-52e2a1659d63ae44ec47b85a4d1aeb562a68f2af data/enhanced_minecraft/tags/items/polisher_tool.json
-7f18cba5746da8c13300fb13df9a6eacb96e58ad data/enhanced_minecraft/tags/items/raw_gem.json
-9d99fd2451800dfc32c9dc88522f9f64597f4893 data/enhanced_minecraft/tags/items/rose_gold.json
-aaa2d40d9cb6a5b2eb3241097c2c8b9ef72c9c16 data/enhanced_minecraft/tags/items/silver.json
-bd5e44c85310e484022d5daac41dd34e6116e330 data/enhanced_minecraft/tags/items/steel.json
+3e7173a3990f79e5b579dfa1cf948c9b3a1b145f data/enhanced_minecraft/tags/items/brass.json
+b65244072fb96a6c1b06fd7e4c53b148a36cdff2 data/enhanced_minecraft/tags/items/bronze.json
+67aaa3b768322c38344bccef754b88c967391547 data/enhanced_minecraft/tags/items/bronzium.json
+b4f8f6c55da084b7c7ac114ead17fec1bcb30cef data/enhanced_minecraft/tags/items/polisher_tool.json
+f0008c128dee1f50ebe86454be9183288a5cbbde data/enhanced_minecraft/tags/items/raw_gem.json
+45d9c0efe1ff7b3e1779a9c5f15922051c9ac029 data/enhanced_minecraft/tags/items/rose_gold.json
+049327e3a70543f134ad4a4bf4a33e5ae887b43b data/enhanced_minecraft/tags/items/silver.json
+32f22d97c6ae34904a9e9b654ab8ebf7bef10271 data/enhanced_minecraft/tags/items/steel.json
 9795bf574ec78f3cd5003f09f672e11c98109538 data/enhanced_minecraft/tags/items/walnut_logs.json
 2884c215e98a84fbfb5fc216dca94be3e17ed067 data/forge/tags/items/ingots.json
 c6f3379eaacf01a355c2d10ecf62128fa465e79f data/forge/tags/items/nuggets.json
 564989eac1fceb24d0fa431c2d9f84692a86a922 data/forge/tags/items/raw_materials.json
-28fab04711619301eecc4b07c3612d7216389a38 data/minecraft/tags/items/beacon_payment_items.json
+42ed4aa010ab698be96530ba7ea8f74311e7e587 data/minecraft/tags/items/beacon_payment_items.json
 d9f02959f5bcc5c3d6e552d4d27cb0cc3e7c093f data/minecraft/tags/items/logs_that_burn.json
 4f459cbc0d4a592c4a6c0a680f3e5074ab419ab8 data/minecraft/tags/items/piglin_loved.json
 1bf812facaca956b142982993ee08686bd56fd7c data/minecraft/tags/items/planks.json
 3f491d5e20e6c3ad1bfdbe1d55a6040f7288bbac data/minecraft/tags/items/stone_crafting_materials.json
-74308d2276ca3803fefec940a70636c45a37a1e9 data/minecraft/tags/items/trimmable_armor.json
+bcf6acac9e403bac3185fae4760b840f528f1b1e data/minecraft/tags/items/trimmable_armor.json

@@ -46,6 +46,6 @@ public class PoisonTouchEnchantment extends Enchantment {
     }
     @Override
     protected boolean checkCompatibility(Enchantment pOther) {
-        return super.checkCompatibility(pOther) && pOther != Enchantments.FIRE_ASPECT && pOther != ModEnchantments.Living_touch.get();
+        return super.checkCompatibility(pOther) && pOther != Enchantments.FIRE_ASPECT && pOther != ModEnchantments.LIVING_TOUCH.get();
     }
 }

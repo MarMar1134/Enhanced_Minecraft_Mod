@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-06T16:17:16.6713298	Item Models: enhanced_minecraft
+// 1.20.1	2024-12-19T18:53:30.1203875	Item Models: enhanced_minecraft
 e62377cd480ff79dbf47105cc6c22747d5b3107f assets/enhanced_minecraft/models/item/apple_button.json
 434fd57f317c760306cb9a11e2fd02e012ad5447 assets/enhanced_minecraft/models/item/apple_door.json
 310c6c2fec08b81b8916af83a324b652ab74c444 assets/enhanced_minecraft/models/item/apple_fence.json
@@ -60,6 +60,7 @@ c23ce5ab6a8716209e85dec71e8b49da9f21cafe assets/enhanced_minecraft/models/item/c
 5341cf62ce9eb43d3e4134c9b039491053c51ded assets/enhanced_minecraft/models/item/eggplant.json
 58ec2cb2b86d57e92e360c62a3916be6b897430a assets/enhanced_minecraft/models/item/eggplant_seeds.json
 be29c986b94a76e8058ebf905f8190d788e2822f assets/enhanced_minecraft/models/item/empty_mate.json
+ca9ae5e8eff8f3a4b2da0927b242866230baf404 assets/enhanced_minecraft/models/item/garnet.json
 c07e49905fe24d9e8c3d4d90d395c173078add6b assets/enhanced_minecraft/models/item/gold_polisher.json
 920d6bf8f4fe7a9fc188ecfa4d410a98d477cd57 assets/enhanced_minecraft/models/item/green_apple.json
 6d4eb4cb3ed81c14386259f9e566f2588360e7dc assets/enhanced_minecraft/models/item/green_apple_sapling.json
@@ -96,6 +97,7 @@ bdb76eef23546610ca2bd2635305c1b1e3dc53a9 assets/enhanced_minecraft/models/item/p
 5bd31c1129f02f0d2e7846479f3d2cd0304bfa63 assets/enhanced_minecraft/models/item/pumpkin_flour.json
 ad0ed58c6872deb4c4a065f27f67a69a4f125df4 assets/enhanced_minecraft/models/item/raw_diamond.json
 babdb77e27771c6872571914fd1939caa8ae40d5 assets/enhanced_minecraft/models/item/raw_emerald.json
+4cefd1b64535f3762e9e29337862efd2e2c2bf73 assets/enhanced_minecraft/models/item/raw_garnet.json
 8d25a8756b9ec170b7c0ab56323162b3f2e42228 assets/enhanced_minecraft/models/item/raw_rubi.json
 3802f2287b493a047665bf430ca3ce1bfd24edab assets/enhanced_minecraft/models/item/raw_saphire.json
 90ff39a81e0474e99b7cc7f0b7bc1d0983af2115 assets/enhanced_minecraft/models/item/raw_silver.json

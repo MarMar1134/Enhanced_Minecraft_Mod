@@ -26,12 +26,27 @@
 
   "advancements.title.survival.root": "Enhanced Playthrough",
   "advancements.desc.survival.root": "You started a new adventure on this fantastic world. Welcome!",
-  "advancements.title.unity_makes_strengh": "Unity makes strength",
-  "advancements.desc.unity_makes_strengh": "Craft your first alloy furnace",
-  "advancements.title.mighty_bronze": "Mighty bronze",
-  "advancements.desc.mighty_bronze": "acquire your first Bronze Pickaxe",
-  "advancements.title.steel_isnt_enough": "StEEl isn´t enough",
-  "advancements.desc.steel_isnt_enough": "Alloy a piece of iron with coal to make the powerful steel",
+  "advancements.title.survival.unity_makes_strengh": "Unity makes strength",
+  "advancements.desc.survival.unity_makes_strengh": "Craft your first alloy furnace",
+  "advancements.title.survival.mighty_bronze": "Mighty bronze",
+  "advancements.desc.survival.mighty_bronze": "acquire your first Bronze Pickaxe",
+  "advancements.title.survival.steel_isnt_enough": "StEEl isn´t enough",
+  "advancements.desc.survival.steel_isnt_enough": "Alloy a piece of iron with coal to make the powerful steel",
+
+  "advancements.title.gems.root": "The colors of the world",
+  "advancements.desc.gems.root": "The world is full of color, and the gems are a faithful representation of that",
+  "advancements.title.gems.polish_emerald": "Greedy green",
+  "advancements.desc.gems.polish_emerald": "Get your first emerald, and take care of her",
+  "advancements.title.gems.polish_sapphire": "Blue storm",
+  "advancements.desc.gems.polish_sapphire": "Get your first sapphire, search for your umbrella",
+  "advancements.title.gems.polish_rubi": "Angry, but not a bird",
+  "advancements.desc.gems.polish_rubi": "Get your first rubi, you should learn to fly",
+  "advancements.title.gems.polish_garnet": "The color of my blood and my heart",
+  "advancements.desc.gems.polish_garnet": "Get your first garnet, your passion has no limits",
+  "advancements.title.gems.polish_diamond": "Are you here, Lucy?",
+  "advancements.desc.gems.polish_diamond": "Get your first diamond, watch out the sky",
+  "advancements.title.gems.get_all_gems": "Chaos everywhere",
+  "advancements.desc.gems.get_all_gems": "Get your all the gems and have the control of chaos",
 
   "block.enhanced_minecraft.polished_stone": "Polished stone",
   "block.enhanced_minecraft.polished_stone_stair": "Polished stone stairs",
@@ -111,6 +126,7 @@
   "block.enhanced_minecraft.deepslate_rubi_ore": "Deepslate rubi ore",
   "block.enhanced_minecraft.saphire_ore": "Sapphire ore",
   "block.enhanced_minecraft.deepslate_saphire_ore": "Deepslate sapphire ore",
+  "block.enhanced_minecraft.nether_garnet_ore": "Nether garnet ore",
 
   "block.enhanced_minecraft.silver_block": "Block of silver",
   "block.enhanced_minecraft.tin_block": "Block of tin",
@@ -150,6 +166,7 @@
   "item.enhanced_minecraft.raw_silver": "Raw silver",
   "item.enhanced_minecraft.raw_rubi": "Raw rubi",
   "item.enhanced_minecraft.raw_saphire": "Raw sapphire",
+  "item.enhanced_minecraft.raw_garnet": "Raw garnet",
   "item.enhanced_minecraft.raw_emerald": "Raw emerald",
   "item.enhanced_minecraft.raw_diamond": "Raw diamond",
 
@@ -175,6 +192,7 @@
   "item.enhanced_minecraft.cobalt_dust": "Cobalt dust",
   "item.enhanced_minecraft.rubi": "Rubi",
   "item.enhanced_minecraft.saphire": "Sapphire",
+  "item.enhanced_minecraft.garnet": "Garnet",
 
   "item.enhanced_minecraft.gold_polisher": "Gold polisher",
 

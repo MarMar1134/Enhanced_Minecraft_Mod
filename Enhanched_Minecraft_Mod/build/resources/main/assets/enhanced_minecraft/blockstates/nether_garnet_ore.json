@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enhanced_minecraft:block/nether_garnet_ore"
+    }
+  }
+}

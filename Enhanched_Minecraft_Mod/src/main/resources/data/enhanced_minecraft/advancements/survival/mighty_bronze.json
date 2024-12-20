@@ -4,10 +4,10 @@
       "item": "enhanced_minecraft:bronze_pickaxe"
     },
     "title": {
-      "translate": "advancements.title.mighty_bronze"
+      "translate": "advancements.title.survival.mighty_bronze"
     },
     "description": {
-      "translate": "advancements.desc.mighty_bronze",
+      "translate": "advancements.desc.survival.mighty_bronze",
       "italic": true
     },
     "show_toast": true,

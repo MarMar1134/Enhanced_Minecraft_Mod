@@ -1,11 +1,14 @@
 {
   "values": [
     "enhanced_minecraft:rose_gold_ingot",
+    "enhanced_minecraft:rose_gold_nugget",
+    "enhanced_minecraft:rose_gold_block",
     "enhanced_minecraft:rose_golden_sword",
     "enhanced_minecraft:rose_golden_pickaxe",
     "enhanced_minecraft:rose_golden_axe",
     "enhanced_minecraft:rose_golden_shovel",
     "enhanced_minecraft:rose_golden_hoe",
+    "enhanced_minecraft:rose_golden_polisher",
     "enhanced_minecraft:rose_golden_helmet",
     "enhanced_minecraft:rose_golden_chestplate",
     "enhanced_minecraft:rose_golden_leggings",

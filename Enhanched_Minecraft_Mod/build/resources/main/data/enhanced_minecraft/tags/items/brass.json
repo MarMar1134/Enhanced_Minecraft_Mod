@@ -1,11 +1,14 @@
 {
   "values": [
     "enhanced_minecraft:brass_ingot",
+    "enhanced_minecraft:brass_nugget",
+    "enhanced_minecraft:brass_block",
     "enhanced_minecraft:brass_sword",
     "enhanced_minecraft:brass_pickaxe",
     "enhanced_minecraft:brass_axe",
     "enhanced_minecraft:brass_shovel",
     "enhanced_minecraft:brass_hoe",
+    "enhanced_minecraft:brass_polisher",
     "enhanced_minecraft:brass_helmet",
     "enhanced_minecraft:brass_chestplate",
     "enhanced_minecraft:brass_leggings",

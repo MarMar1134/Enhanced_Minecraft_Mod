@@ -4270,5 +4270,77 @@
     },
     "done": true
   },
+  "enhanced_minecraft:recipes/bronzium_sword_from_smithing_brass_sword_with_bronze_ingot": {
+    "criteria": {
+      "has_brass_sword": "2024-12-19 14:28:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_axe": {
+    "criteria": {
+      "has_brass_axe": "2024-12-19 14:28:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronzium_axe_from_smithing_brass_axe_with_bronze_ingot": {
+    "criteria": {
+      "has_brass_axe": "2024-12-19 14:28:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_axe": {
+    "criteria": {
+      "has_brass_axe": "2024-12-19 14:28:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_shovel": {
+    "criteria": {
+      "has_brass_shovel": "2024-12-19 14:28:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_shovel": {
+    "criteria": {
+      "has_brass_shovel": "2024-12-19 14:28:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronzium_shovel_from_smithing_brass_shovel_with_bronze_ingot": {
+    "criteria": {
+      "has_brass_shovel": "2024-12-19 14:28:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_hoe": {
+    "criteria": {
+      "has_brass_hoe": "2024-12-19 14:28:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_hoe": {
+    "criteria": {
+      "has_brass_hoe": "2024-12-19 14:28:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronzium_hoe_from_smithing_brass_hoe_with_bronze_ingot": {
+    "criteria": {
+      "has_brass_hoe": "2024-12-19 14:28:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:gems/get_all_gems": {
+    "criteria": {
+      "emerald": "2024-12-20 16:12:54 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:gems/polish_emerald": {
+    "criteria": {
+      "requirement": "2024-12-20 16:12:54 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

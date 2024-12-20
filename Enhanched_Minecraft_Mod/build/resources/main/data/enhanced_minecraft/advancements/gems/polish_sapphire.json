@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "enhanced_minecraft:saphire"
+    },
+    "title":{
+      "translate": "advancements.title.gems.polish_sapphire"
+    },
+    "description": {
+      "translate": "advancements.desc.gems.polish_sapphire",
+      "italic": true
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "enhanced_minecraft:gems/polish_emerald",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:saphire"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

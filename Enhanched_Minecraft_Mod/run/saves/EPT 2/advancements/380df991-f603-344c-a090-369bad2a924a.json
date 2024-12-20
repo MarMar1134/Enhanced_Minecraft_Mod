@@ -1,0 +1,125 @@
+{
+  "minecraft:recipes/misc/emerald_from_smelting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2024-12-20 12:01:53 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:nether_wastes": "2024-12-20 11:49:49 -0300",
+      "minecraft:soul_sand_valley": "2024-12-20 11:50:23 -0300",
+      "minecraft:basalt_deltas": "2024-12-20 11:48:46 -0300"
+    },
+    "done": false
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2024-12-20 11:48:45 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/emerald_from_gem_polishing_raw_emerald": {
+    "criteria": {
+      "has_raw_emerald": "2024-12-20 12:02:52 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-12-20 11:47:53 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-12-20 11:55:11 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/rubi_from_gem_polishing_raw_rubi": {
+    "criteria": {
+      "has_raw_rubi": "2024-12-20 12:00:34 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2024-12-20 12:03:08 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/saphire_from_gem_polishing_raw_saphire": {
+    "criteria": {
+      "has_raw_saphire": "2024-12-20 11:57:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_blasting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2024-12-20 12:01:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_pickaxe": {
+    "criteria": {
+      "has_brass_pickaxe": "2024-12-20 11:52:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2024-12-20 11:48:45 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2024-12-20 11:48:14 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronzium_pickaxe_from_smithing_brass_pickaxe_with_bronze_ingot": {
+    "criteria": {
+      "has_brass_pickaxe": "2024-12-20 11:52:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2024-12-20 11:48:13 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2024-12-20 11:47:57 -0300"
+    },
+    "done": false
+  },
+  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_pickaxe": {
+    "criteria": {
+      "has_brass_pickaxe": "2024-12-20 11:52:57 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2024-12-20 11:48:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2024-12-20 11:49:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2024-12-20 11:53:09 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

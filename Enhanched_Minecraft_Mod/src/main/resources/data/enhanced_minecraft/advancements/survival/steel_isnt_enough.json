@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "enhanced_minecraft:raw_steel"
+      "item": "enhanced_minecraft:steel_ingot"
     },
     "title": {
-      "translate": "advancements.title.steel_isnt_enough"
+      "translate": "advancements.title.survival.steel_isnt_enough"
     },
     "description": {
-      "translate": "advancements.desc.steel_isnt_enough",
+      "translate": "advancements.desc.survival.steel_isnt_enough",
       "italic": true
     },
     "show_toast": true,
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "enhanced_minecraft:raw_steel"
+              "enhanced_minecraft:steel_ingot"
             ]
           }
         ]

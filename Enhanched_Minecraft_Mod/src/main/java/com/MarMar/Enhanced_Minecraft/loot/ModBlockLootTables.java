@@ -5,22 +5,29 @@ import com.MarMar.Enhanced_Minecraft.block.custom.crops.CornCropBlock;
 import com.MarMar.Enhanced_Minecraft.block.custom.crops.TomatoCropBlock;
 import com.MarMar.Enhanced_Minecraft.block.custom.crops.YerbaMateCropBlock;
 import com.MarMar.Enhanced_Minecraft.block.custom.crops.ZapalloCropBlock;
+import com.MarMar.Enhanced_Minecraft.enchantment.ModEnchantments;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
+import net.minecraft.advancements.critereon.EnchantmentPredicate;
+import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
@@ -32,6 +39,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     public ModBlockLootTables(){
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
+    protected static LootItemCondition.Builder HAS_FINE_MINING;
     @Override
     protected void generate() {
         //Polished stone
@@ -166,11 +174,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_COBALT_ORE.get(),
                 block -> createCobaltOreDrops(ModBlocks.DEEPSLATE_COBALT_ORE.get()));
 
-        this.add(ModBlocks.RUBI_ORE.get(), block -> createRubiOreDrops(ModBlocks.RUBI_ORE.get()));
-        this.add(ModBlocks.DEEPSLATE_RUBI_ORE.get(), block -> createRubiOreDrops(ModBlocks.DEEPSLATE_RUBI_ORE.get()));
+        this.add(ModBlocks.RUBI_ORE.get(),
+                block -> createGemsDrops(ModBlocks.RUBI_ORE.get(), ModItems.RAW_RUBI.get(), 2, ModItems.RUBI.get(), 1));
+        this.add(ModBlocks.DEEPSLATE_RUBI_ORE.get(),
+                block -> createGemsDrops(ModBlocks.DEEPSLATE_RUBI_ORE.get(), ModItems.RAW_RUBI.get(), 3, ModItems.RUBI.get(), 2));
 
-        this.add(ModBlocks.SAPHIRE_ORE.get(), block -> createSaphireOreDrops(ModBlocks.SAPHIRE_ORE.get()));
-        this.add(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(), block -> createSaphireOreDrops(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get()));
+        this.add(ModBlocks.SAPHIRE_ORE.get(),
+                block -> createGemsDrops(ModBlocks.SAPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get(), 4, ModItems.SAPPHIRE.get(), 2));
+        this.add(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(),
+                block -> createGemsDrops(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get(), 5, ModItems.SAPPHIRE.get(), 3));
+
+        this.add(ModBlocks.NETHER_GARNET_ORE.get(),
+                block -> createGemsDrops(ModBlocks.NETHER_GARNET_ORE.get(), ModItems.RAW_GARNET.get(), 3, ModItems.GARNET.get(), 2));
 
         //ore blocks
         this.dropSelf(ModBlocks.SILVER_BLOCK.get());
@@ -271,69 +286,131 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 )));
     }
 
+
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createCopperOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(Items.RAW_COPPER)
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 5.0F)))
                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createTinOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.RAW_TIN.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createZincOreDrops(Block pBlock){
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.RAW_ZINC.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createNetherZincOreDrops(Block pBlock){
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.RAW_ZINC.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 7.0F)))
                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createSulfurOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.SULFUR.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 6.0F)))
                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createNetherSulfurOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.SULFUR.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5.0F, 9.0F)))
                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createSilverOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.RAW_SILVER.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,1))))
                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
     }
 
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createCobaltOreDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.COBALT.get())
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,3))))
                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
     }
-    protected LootTable.Builder createRubiOreDrops(Block pBlock) {
-        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.RAW_RUBI.get())
-                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,2))))
-                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
+
+    /**
+     *
+     * @param pBlock references the block that will have the loot table
+     * @param rawGem references the raw gem that will be dropped if the pickaxe doesn´t have Fine Mining
+     * @param maxRawGems references the max quantity of raw gems that have the chance to be dropped
+     * @param gem references the gem that will be dropped if the pickaxe has Fine Mining
+     * @param maxGems references the max quantity of gems that have the chance to be dropped
+     * @return the loot table JSON file with the given conditions
+     */
+    protected LootTable.Builder createGemsDrops(Block pBlock, ItemLike rawGem, int maxRawGems, ItemLike gem, int maxGems){
+        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(rawGem)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, maxRawGems))))
+                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))
+
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(gem))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, maxGems)))
+                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
+                        .when(HAS_FINE_MINING));
     }
-    protected LootTable.Builder createSaphireOreDrops(Block pBlock) {
-        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.RAW_SAPPHIRE.get())
-                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,4))))
-                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)));
-    }
+
+    /**
+     *
+     * @param pBlock references the block that will have the loot table.
+     * @return the JSON file of the loot table for the specified block
+     */
     protected LootTable.Builder createLimestoneDrops(Block pBlock){
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModBlocks.COBBLED_LIMESTONE.get())
                  .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))));
     }
+
     @Override
     protected Iterable<Block> getKnownBlocks() {
         return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+
+    static {
+        HAS_FINE_MINING = MatchTool.toolMatches(net.minecraft.advancements.critereon.ItemPredicate.Builder.item().hasEnchantment(new EnchantmentPredicate(ModEnchantments.FINE_MINING.get(), MinMaxBounds.Ints.atLeast(1))));
     }
 }

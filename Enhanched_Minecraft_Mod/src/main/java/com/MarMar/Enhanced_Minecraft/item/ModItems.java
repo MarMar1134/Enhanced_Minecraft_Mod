@@ -40,6 +40,8 @@ public class ModItems {
                 "raw_rubi", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register(
                 "raw_saphire", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> RAW_GARNET = ITEMS.register(
+                "raw_garnet", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_EMERALD = ITEMS.register(
                 "raw_emerald", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_DIAMOND = ITEMS.register(
@@ -96,6 +98,8 @@ public class ModItems {
                 "rubi", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SAPPHIRE = ITEMS.register(
                 "saphire", () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GARNET = ITEMS.register(
+                "garnet", () -> new Item(new Item.Properties()));
 
     //Dust
     public static final RegistryObject<Item> COBALT_DUST = ITEMS.register(

@@ -54,9 +54,4 @@ public class ModTiers {
             new ResourceLocation(Enhanced_Playthrough.MOD_ID, "green_gold_ingot"), List.of(Tiers.IRON),
             List.of(Tiers.DIAMOND)
     );
-
-//    public static final Tier Rusty = TierSortingRegistry.registerTier(
-//            new ForgeTier(0,100, 0.0F, 1.0F, 1,
-//                    () -> Ingredient.of(ModItems.) )
-//    )
 }

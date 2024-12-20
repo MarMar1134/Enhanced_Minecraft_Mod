@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "get_materials": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "enhanced_minecraft:polisher_tool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "enhanced_minecraft:gem_polisher"
+    },
+    "title": {
+      "translate": "advancements.title.gems.root"
+    },
+    "description": {
+      "translate": "advancements.desc.gems.root",
+      "italic": true
+    },
+    "frame": "task",
+    "background": "minecraft:textures/block/emerald_block.png",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  }
+}

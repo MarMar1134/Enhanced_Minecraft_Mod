@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -62,7 +63,7 @@ public class ModTabs {
                         output.accept(ModBlocks.APPLE_FENCE.get());
                         output.accept(ModBlocks.APPLE_FENCEGATE.get());
                     }).build());
-    public static final RegistryObject<CreativeModeTab> Blocks = Tabs.register(
+    public static final RegistryObject<CreativeModeTab> BLOCKS = Tabs.register(
             "blocks", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.POLISHED_LIMESTONE.get()))
                     .title(Component.translatable("creativetab.blocks"))
                     .displayItems((itemDisplayParameters, output) ->{
@@ -114,6 +115,8 @@ public class ModTabs {
                         output.accept(ModBlocks.DEEPSLATE_SULFUR_ORE.get());
                         output.accept(ModBlocks.NETHER_SULFUR_ORE.get());
 
+                        output.accept(ModBlocks.NETHER_COPPER_ORE.get());
+
                         output.accept(ModBlocks.TIN_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE.get());
 
@@ -124,13 +127,13 @@ public class ModTabs {
                         output.accept(ModBlocks.SILVER_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_SILVER_ORE.get());
 
-                        output.accept(ModBlocks.DEEPSLATE_COBALT_ORE.get());
+                        output.accept(ModBlocks.SAPHIRE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get());
 
                         output.accept(ModBlocks.RUBI_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_RUBI_ORE.get());
 
-                        output.accept(ModBlocks.SAPHIRE_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get());
+                        output.accept(ModBlocks.NETHER_GARNET_ORE.get());
 
                         output.accept(ModItems.SULFUR.get());
 
@@ -143,19 +146,23 @@ public class ModTabs {
                         output.accept(ModItems.COBALT.get());
                         output.accept(ModItems.COBALT_DUST.get());
 
-                        output.accept(ModItems.RAW_RUBI.get());
+                        output.accept(ModItems.RAW_EMERALD.get());
 
                         output.accept(ModItems.RAW_SAPPHIRE.get());
 
-                        output.accept(ModItems.RAW_EMERALD.get());
+                        output.accept(ModItems.RAW_RUBI.get());
+
+                        output.accept(ModItems.RAW_GARNET.get());
 
                         output.accept(ModItems.RAW_DIAMOND.get());
 
-                        output.accept(ModItems.RUBI.get());
+                        output.accept(Items.EMERALD);
 
                         output.accept(ModItems.SAPPHIRE.get());
 
-                        output.accept(Items.EMERALD);
+                        output.accept(ModItems.RUBI.get());
+
+                        output.accept(ModItems.GARNET.get());
 
                         output.accept(Items.DIAMOND);
                     }).build());
@@ -329,22 +336,31 @@ public class ModTabs {
                         output.accept(ModItems.GREEN_GOLDEN_POLISHER.get());
                         output.accept(ModItems.DIAMOND_POLISHER.get());
                         output.accept(ModItems.NETHERITE_POLISHER.get());
-                        output.accept(ModItems.RAW_RUBI.get());
-                        output.accept(ModItems.RAW_SAPPHIRE.get());
+
                         output.accept(ModItems.RAW_EMERALD.get());
-                        output.accept(ModItems.RAW_DIAMOND.get());
-                        output.accept(ModItems.RUBI.get());
-                        output.accept(ModItems.SAPPHIRE.get());
                         output.accept(Items.EMERALD);
+
+                        output.accept(ModItems.RAW_SAPPHIRE.get());
+                        output.accept(ModItems.SAPPHIRE.get());
+
+                        output.accept(ModItems.RAW_RUBI.get());
+                        output.accept(ModItems.RUBI.get());
+
+                        output.accept(ModItems.RAW_GARNET.get());
+                        output.accept(ModItems.GARNET.get());
+
+                        output.accept(ModItems.RAW_DIAMOND.get());
                         output.accept(Items.DIAMOND);
-                        output.accept(ModBlocks.RUBI_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_RUBI_ORE.get());
+
                         output.accept(ModBlocks.SAPHIRE_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_SAPHIRE_ORE.get());
-                        output.accept(net.minecraft.world.level.block.Blocks.EMERALD_ORE);
-                        output.accept(net.minecraft.world.level.block.Blocks.DEEPSLATE_EMERALD_ORE);
-                        output.accept(net.minecraft.world.level.block.Blocks.DIAMOND_ORE);
-                        output.accept(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE);
+                        output.accept(Blocks.EMERALD_ORE);
+                        output.accept(Blocks.DEEPSLATE_EMERALD_ORE);
+                        output.accept(ModBlocks.RUBI_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_RUBI_ORE.get());
+                        output.accept(ModBlocks.NETHER_GARNET_ORE.get());
+                        output.accept(Blocks.DIAMOND_ORE);
+                        output.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
                     }).build());
     public static final RegistryObject<CreativeModeTab> Food= Tabs.register(
             "fruits", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GREEN_APPLE.get()))

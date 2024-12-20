@@ -155,6 +155,8 @@ public class ModBlockStateProvider extends BlockStateProvider{
         blockWithItem(ModBlocks.DEEPSLATE_RUBI_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPHIRE_ORE);
 
+        blockWithItem(ModBlocks.NETHER_GARNET_ORE);
+
         //Ores blocks
         blockWithItem(ModBlocks.SILVER_BLOCK);
         blockWithItem(ModBlocks.TIN_BLOCK);

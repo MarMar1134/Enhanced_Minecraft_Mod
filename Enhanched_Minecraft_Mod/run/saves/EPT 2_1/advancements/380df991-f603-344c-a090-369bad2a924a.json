@@ -1,0 +1,324 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-12-20 13:25:29 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2024-12-20 13:25:34 -0300",
+      "minecraft:river": "2024-12-20 14:13:16 -0300"
+    },
+    "done": false
+  },
+  "enhanced_minecraft:recipes/rubi_from_gem_polishing_raw_rubi": {
+    "criteria": {
+      "has_raw_rubi": "2024-12-20 13:26:16 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2024-12-20 13:26:22 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/diamond_polisher": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2024-12-20 13:26:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/root": {
+    "criteria": {
+      "get_materials": "2024-12-20 13:32:05 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
+    "criteria": {
+      "has_adobe_furnace": "2024-12-20 13:32:05 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_sword": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_leggings": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_hoe": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_pickaxe": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_shovel": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_boots": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_chestplate": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_axe": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/combat/steel_helmet": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_block": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/steel_ingot": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/tools/steel_polisher": {
+    "criteria": {
+      "has_steel_ingot": "2024-12-20 13:59:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget__from_smelting_bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-12-20 13:59:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:survival/mighty_bronze": {
+    "criteria": {
+      "requirement": "2024-12-20 13:59:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/bronzium_pickaxe_from_smithing_bronze_pickaxe_with_brass_ingot": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-12-20 13:59:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:recipes/misc/bronze_nugget__from_blasting_bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_pickaxe": "2024-12-20 13:59:12 -0300"
+    },
+    "done": true
+  },
+  "enhanced_minecraft:gems/root": {
+    "criteria": {
+      "get_materials": "2024-12-20 14:01:42 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:nether_wastes": "2024-12-20 14:15:57 -0300",
+      "minecraft:soul_sand_valley": "2024-12-20 14:16:15 -0300",
+      "minecraft:basalt_deltas": "2024-12-20 14:15:20 -0300"
+    },
+    "done": false
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2024-12-20 14:15:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2024-12-20 14:13:29 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2024-12-20 14:15:19 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2024-12-20 14:10:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2024-12-20 14:10:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_wood_slab": "2024-12-20 14:13:29 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2024-12-20 14:10:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2024-12-20 14:13:17 -0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

@@ -4,13 +4,12 @@
       "item": "enhanced_minecraft:adobe_alloying_furnace"
     },
     "title": {
-      "translate": "advancements.title.unity_makes_strengh"
+      "translate": "advancements.title.survival.unity_makes_strengh"
     },
     "description": {
-      "translate": "advancements.desc.unity_makes_strengh",
+      "translate": "advancements.desc.survival.unity_makes_strengh",
       "italic": true
     },
-    "background": "enhanced_minecraft:textures/block/tin_ore.png",
     "show_toast": true,
     "announce_to_chat": true
   },

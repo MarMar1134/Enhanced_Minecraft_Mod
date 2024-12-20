@@ -233,11 +233,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.RAW_RUBI);
         simpleItem(ModItems.RAW_SAPPHIRE);
+        simpleItem(ModItems.RAW_GARNET);
         simpleItem(ModItems.RAW_EMERALD);
         simpleItem(ModItems.RAW_DIAMOND);
 
         simpleItem(ModItems.RUBI);
         simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.GARNET);
 
         //Dust
         simpleItem(ModItems.COBALT_DUST);
