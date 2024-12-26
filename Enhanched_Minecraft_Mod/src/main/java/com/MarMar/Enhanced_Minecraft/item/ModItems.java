@@ -3,13 +3,14 @@ package com.MarMar.Enhanced_Minecraft.item;
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.Util.ModTiers;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
-import com.MarMar.Enhanced_Minecraft.item.armor.ModArmorEffects;
+import com.MarMar.Enhanced_Minecraft.item.armor.ModArmorItem;
 import com.MarMar.Enhanced_Minecraft.item.armor.ModArmorMaterials;
 import com.MarMar.Enhanced_Minecraft.item.templates.BronziumSmithingUpgradeTemplate;
 import com.MarMar.Enhanced_Minecraft.item.custom.MateItem;
 import com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -120,7 +121,9 @@ public class ModItems {
 
         //Silver
         public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register(
-                "silver_sword",() -> new SwordItem(ModTiers.SILVER, 1, -2.4F, new Item.Properties()));
+                "silver_sword",() -> new SwordItem(ModTiers.SILVER, 1, -2.4F, new Item.Properties()){
+
+                });
         public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register(
                 "silver_pickaxe",() -> new PickaxeItem(ModTiers.SILVER, -2, -2.8F, new Item.Properties()));
         public static final RegistryObject<Item> SILVER_AXE = ITEMS.register(
@@ -133,7 +136,7 @@ public class ModItems {
                 "silver_polisher",() -> new PolisherItem(ModTiers.SILVER,0, new Item.Properties()));
 
         public static final RegistryObject<Item> SILVER_HELMET = ITEMS.register(
-                "silver_helmet", () -> new ModArmorEffects(ModArmorMaterials.SILVER, ArmorItem.Type.HELMET, new Item.Properties()){
+                "silver_helmet", () -> new ModArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
@@ -226,11 +229,16 @@ public class ModItems {
                 "rose_golden_polisher", () -> new PolisherItem(ModTiers.ROSE_GOLD, 0, new Item.Properties()));
 
         public static final RegistryObject<Item> ROSE_GOLDEN_HELMET = ITEMS.register(
-                "rose_golden_helmet", () -> new ModArmorEffects(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new Item.Properties()){
+                "rose_golden_helmet", () -> new ModArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+                    }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
                     }
                 });
         public static final RegistryObject<Item> ROSE_GOLDEN_CHESTPLATE = ITEMS.register(
@@ -240,6 +248,11 @@ public class ModItems {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
+                    }
                 });
         public static final RegistryObject<Item> ROSE_GOLDEN_LEGGINGS = ITEMS.register(
                 "rose_golden_leggings", () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()){
@@ -248,6 +261,11 @@ public class ModItems {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
+                    }
                 });
         public static final RegistryObject<Item> ROSE_GOLDEN_BOOTS = ITEMS.register(
                 "rose_golden_boots", () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()){
@@ -255,6 +273,11 @@ public class ModItems {
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+                    }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
                     }
                 });
 
@@ -273,7 +296,7 @@ public class ModItems {
                 "bronzium_polisher",() -> new PolisherItem(ModTiers.BRONZIUM,0, new Item.Properties()));
 
         public static final RegistryObject<Item> BRONZIUM_HELMET = ITEMS.register(
-                "bronzium_helmet", () -> new ModArmorEffects(ModArmorMaterials.BRONZIUM, ArmorItem.Type.HELMET, new Item.Properties()){
+                "bronzium_helmet", () -> new ModArmorItem(ModArmorMaterials.BRONZIUM, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
@@ -347,11 +370,16 @@ public class ModItems {
                 "green_golden_polisher", () -> new PolisherItem(ModTiers.GREEN_GOLD, 0, new Item.Properties()));
 
         public static final RegistryObject<Item> GREEN_GOLDEN_HELMET = ITEMS.register(
-                "green_golden_helmet", () -> new ModArmorEffects(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.HELMET, new Item.Properties()){
+                "green_golden_helmet", () -> new ModArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+                    }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
                     }
                 });
         public static final RegistryObject<Item> GREEN_GOLDEN_CHESTPLATE = ITEMS.register(
@@ -361,6 +389,11 @@ public class ModItems {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
+                    }
                 });
         public static final RegistryObject<Item> GREEN_GOLDEN_LEGGINGS = ITEMS.register(
                 "green_golden_leggings", () -> new ArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()){
@@ -369,6 +402,11 @@ public class ModItems {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
+                    }
                 });
         public static final RegistryObject<Item> GREEN_GOLDEN_BOOTS = ITEMS.register(
                 "green_golden_boots", () -> new ArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()){
@@ -376,6 +414,11 @@ public class ModItems {
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                         pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+                    }
+
+                    @Override
+                    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+                        return true;
                     }
                 });
 

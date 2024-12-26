@@ -120,6 +120,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.COBBLED_LIMESTONE.get()
         );
 
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+                ModBlocks.APPLE_LOG.get()
+        );
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 //Stone
                 ModBlocks.POLISHED_STONE.get(),
@@ -237,7 +241,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 Blocks.IRON_TRAPDOOR,
                 Blocks.RAW_IRON_BLOCK,
                 Blocks.HOPPER,
-                ModBlocks.BRONZE_BLOCK.get()
+                ModBlocks.BRONZE_BLOCK.get(),
+                ModBlocks.NETHER_GARNET_ORE.get()
         );
 
         this.tag(ModTags.Blocks.NEEDS_ROSE_GOLD_TOOL).add(
@@ -245,8 +250,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         );
 
         this.tag(ModTags.Blocks.NEEDS_BRONZIUM_TOOL).add(
-                ModBlocks.BRONZIUM_BLOCK.get(),
-                ModBlocks.NETHER_GARNET_ORE.get()
+                ModBlocks.BRONZIUM_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(

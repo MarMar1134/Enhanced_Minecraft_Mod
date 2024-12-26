@@ -9,6 +9,7 @@ import com.MarMar.Enhanced_Minecraft.loot.ModLootModifiers;
 import com.MarMar.Enhanced_Minecraft.menu.screen.*;
 import com.MarMar.Enhanced_Minecraft.recipe.ModRecipes;
 import com.MarMar.Enhanced_Minecraft.menu.ModMenuTypes;
+import com.MarMar.Enhanced_Minecraft.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,6 +40,8 @@ public class Enhanced_Playthrough
 
         ModMenuTypes.Register(ModEventBus);
         ModRecipes.Register(ModEventBus);
+
+        ModVillagers.Register(ModEventBus);
 
     //Register for creative tabs
         MinecraftForge.EVENT_BUS.register(this);

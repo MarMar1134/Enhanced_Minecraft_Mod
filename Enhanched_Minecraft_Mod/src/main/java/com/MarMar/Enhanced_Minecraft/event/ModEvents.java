@@ -3,10 +3,10 @@ package com.MarMar.Enhanced_Minecraft.event;
 import com.MarMar.Enhanced_Minecraft.Enhanced_Playthrough;
 import com.MarMar.Enhanced_Minecraft.block.ModBlocks;
 import com.MarMar.Enhanced_Minecraft.item.ModItems;
+import com.MarMar.Enhanced_Minecraft.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
-import net.minecraft.world.entity.npc.WanderingTrader;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
@@ -21,6 +21,7 @@ import java.util.List;
 public class ModEvents {
     @SubscribeEvent
     public static void trades(VillagerTradesEvent event){
+        //Farmer
         if (event.getType() == VillagerProfession.FARMER){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
 
@@ -65,6 +66,7 @@ public class ModEvents {
 
         }
 
+        //Armorer
         if (event.getType() == VillagerProfession.ARMORER){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
 
@@ -166,6 +168,8 @@ public class ModEvents {
                     new ItemStack(Items.DIAMOND_CHESTPLATE, 1),
                     2, 34, 0.2f));
         }
+
+        //Toolsmith
         if(event.getType() == VillagerProfession.TOOLSMITH){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
 
@@ -276,6 +280,8 @@ public class ModEvents {
                     new ItemStack(Items.DIAMOND_HOE, 1),
                     2, 15, 0.2f));
         }
+
+        //Weaponsmith
         if (event.getType() == VillagerProfession.WEAPONSMITH){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
 
@@ -321,14 +327,6 @@ public class ModEvents {
 
             //Level 4
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(ModItems.SAPPHIRE.get(), 8),
-                    new ItemStack(ModItems.RUBI.get(), 1),
-                    12, 8, 0.02f));
-            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 22),
-                    new ItemStack(ModItems.RUBI.get(), 1),
-                    12, 8, 0.02f));
-            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.SAPPHIRE.get(), 5),
                     new ItemStack(ModItems.STEEL_AXE.get(), 1),
                     4, 9, 0.2f));
@@ -336,6 +334,12 @@ public class ModEvents {
                     new ItemStack(ModItems.SAPPHIRE.get(), 8),
                     new ItemStack( ModItems.STEEL_SWORD.get(), 1),
                     4, 9, 0.2f));
+
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.GARNET.get(), 3),
+                    new ItemStack(ModItems.BRONZIUM_SWORD.get(), 1),
+                    10, 10, 0.2f
+            ));
 
             //Level 5
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
@@ -346,6 +350,131 @@ public class ModEvents {
                     new ItemStack(ModItems.RUBI.get(), 8),
                     new ItemStack(Items.DIAMOND_SWORD, 1),
                     2, 9, 0.2f));
+        }
+
+        //Cleric
+        if (event.getType() == VillagerProfession.CLERIC){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
+
+            //Level 4
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.GARNET.get(), 6),
+                    new ItemStack(Items.BLAZE_ROD, 2),
+                    6, 15, 0.1f));
+        }
+
+        //Jeweler
+        if (event.getType() == ModVillagers.JEWELER.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades =event.getTrades();
+
+            //Level 1
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                 new ItemStack(Items.EMERALD, 7),
+                 new ItemStack(ModItems.STONE_POLISHER.get(), 1),
+                 12, 2, 0.05f
+            ));
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+               new ItemStack(ModItems.RAW_EMERALD.get(), 3),
+               new ItemStack(Items.COBBLESTONE, 2),
+               new ItemStack(Items.EMERALD, 6),
+               12, 3, 0.03f
+            ));
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.STONE_POLISHER.get(), 1),
+                    new ItemStack(Items.EMERALD, 5),
+                    6, 3, 0.08f
+            ));
+
+
+            //Level 2
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 10),
+                    new ItemStack(ModItems.BRONZE_POLISHER.get(), 1),
+                    6, 4, 0.05f
+            ));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.BRONZE_POLISHER.get(), 1),
+                    new ItemStack(Items.EMERALD, 8),
+                    10, 5, 0.04f
+            ));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RAW_SAPPHIRE.get(), 3),
+                    new ItemStack(Items.EMERALD, 2),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 6),
+                    12, 5, 0.05f
+            ));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 3),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 1),
+                    12, 4, 0.04f
+            ));
+
+            //Level 3
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 15),
+                    new ItemStack(ModItems.RUBI.get(), 1),
+                    12, 8, 0.05f));
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.SAPPHIRE.get(), 4),
+                    new ItemStack(ModItems.RUBI.get(), 1),
+                    12, 8, 0.06f));
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RAW_RUBI.get(), 3),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 2),
+                    new ItemStack(ModItems.RUBI.get(), 6),
+                    12, 10, 0.05f
+            ));
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.SAPPHIRE.get(), 5),
+                    new ItemStack(ModItems.IRON_POLISHER.get(), 1),
+                    6, 10, 0.06f
+            ));
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.IRON_POLISHER.get(), 1),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 3),
+                    12, 10, 0.04f
+            ));
+
+            //Level 4
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RAW_GARNET.get(), 4),
+                    new ItemStack(ModItems.RUBI.get(), 2),
+                    new ItemStack(ModItems.GARNET.get(), 8),
+                    12, 12, 0.04f
+            ));
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RUBI.get(), 4),
+                    new ItemStack(ModItems.STEEL_POLISHER.get(), 1),
+                    6, 12, 0.06f
+            ));
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.STEEL_POLISHER.get(), 1),
+                    new ItemStack(ModItems.RUBI.get(), 3),
+                    12, 15, 0.06f
+            ));
+
+            //Level 5
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RAW_DIAMOND.get(), 2),
+                    new ItemStack(ModItems.RUBI.get(), 2),
+                    new ItemStack(Items.DIAMOND, 4),
+            6, 12, 0.06f
+            ));
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RUBI.get(), 4),
+                    new ItemStack(Items.DIAMOND, 1),
+                    6, 15, 0.05f
+            ));
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.RUBI.get(), 4),
+                    new ItemStack(ModItems.DIAMOND_POLISHER.get(), 1),
+                    6, 12, 0.04f
+            ));
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ModItems.DIAMOND_POLISHER.get(), 1),
+                    new ItemStack(ModItems.RUBI.get(), 2),
+                    6, 12, 0.05f
+            ));
         }
     }
 

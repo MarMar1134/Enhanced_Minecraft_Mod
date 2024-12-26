@@ -315,8 +315,10 @@
 
   "item.enhanced_minecraft.yeast": "Yeast",
 
-  "item.enhanced_minecraft.walnut": "Nuez",
-  "item.enhanced_minecraft.peeled_walnut": "Nuez pelada",
+  "item.enhanced_minecraft.walnut": "Walnut",
+  "item.enhanced_minecraft.peeled_walnut": "Peeled walnut",
 
-  "item.enhanced_minecraft.green_apple": "Manzana verde"
+  "item.enhanced_minecraft.green_apple": "Green apple",
+
+  "entity.minecraft.villager.enhanced_minecraft.jeweler": "Jeweler"
 }

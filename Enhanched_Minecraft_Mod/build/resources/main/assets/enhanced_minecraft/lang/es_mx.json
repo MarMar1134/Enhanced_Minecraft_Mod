@@ -314,5 +314,7 @@
   "item.enhanced_minecraft.walnut": "Nuez",
   "item.enhanced_minecraft.peeled_walnut": "Nuez pelada",
 
-  "item.enhanced_minecraft.green_apple": "Manzana verde"
+  "item.enhanced_minecraft.green_apple": "Manzana verde",
+
+  "entity.minecraft.villager.enhanced_minecraft.jeweler": "Joyero"
 }

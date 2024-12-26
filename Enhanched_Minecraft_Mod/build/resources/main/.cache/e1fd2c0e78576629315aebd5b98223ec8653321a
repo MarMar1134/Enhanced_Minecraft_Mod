@@ -1,9 +1,9 @@
-// 1.20.1	2024-12-19T18:53:30.1193865	Tags for minecraft:block mod id enhanced_minecraft
+// 1.20.1	2024-12-22T20:37:53.9883291	Tags for minecraft:block mod id enhanced_minecraft
 3ad3f7b9f9c1fa231668cec92f1e8c0d24f8dc0c data/enhanced_minecraft/tags/blocks/alloy_furnace.json
 6eea373e7b3ac5ea380ed237c9f73af578515162 data/enhanced_minecraft/tags/blocks/basic_furnace.json
 28309cd47a31262dc0530b1d0887dac1a96e32f5 data/enhanced_minecraft/tags/blocks/needs_brass_tool.json
-7ef2c0d1f81be47d43977a37c8da95d1a954b32d data/enhanced_minecraft/tags/blocks/needs_bronze_tool.json
-485176d4bf36142fae6578fe7cf095617b898e26 data/enhanced_minecraft/tags/blocks/needs_bronzium_tool.json
+78f08de0d4df584cadd23cc242301ec1e605743f data/enhanced_minecraft/tags/blocks/needs_bronze_tool.json
+22afb45efbb5aaf33b7c5d9bd10ad67df013cf20 data/enhanced_minecraft/tags/blocks/needs_bronzium_tool.json
 588228c80abdacebfec9b8350cbb194b12bc9c72 data/enhanced_minecraft/tags/blocks/needs_green_gold_tool.json
 5f68d026eccdf7d1e92b72662b6ebfedd54e77d4 data/enhanced_minecraft/tags/blocks/needs_rose_gold_tool.json
 778f160552a25ff65e91c3a0181221ee67d22fea data/enhanced_minecraft/tags/blocks/needs_silver_tool.json
