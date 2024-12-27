@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "enhanced_playthrough:block/walnut_door_bottom",
+    "top": "enhanced_playthrough:block/walnut_door_top"
+  }
+}

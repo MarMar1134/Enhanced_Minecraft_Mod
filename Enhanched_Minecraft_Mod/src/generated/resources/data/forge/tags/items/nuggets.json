@@ -1,13 +1,13 @@
 {
   "values": [
-    "enhanced_minecraft:silver_nugget",
-    "enhanced_minecraft:copper_nugget",
-    "enhanced_minecraft:tin_nugget",
-    "enhanced_minecraft:zinc_nugget",
-    "enhanced_minecraft:bronze_nugget",
-    "enhanced_minecraft:brass_nugget",
-    "enhanced_minecraft:rose_gold_nugget",
-    "enhanced_minecraft:bronzium_nugget",
-    "enhanced_minecraft:green_gold_nugget"
+    "enhanced_playthrough:silver_nugget",
+    "enhanced_playthrough:copper_nugget",
+    "enhanced_playthrough:tin_nugget",
+    "enhanced_playthrough:zinc_nugget",
+    "enhanced_playthrough:bronze_nugget",
+    "enhanced_playthrough:brass_nugget",
+    "enhanced_playthrough:rose_gold_nugget",
+    "enhanced_playthrough:bronzium_nugget",
+    "enhanced_playthrough:green_gold_nugget"
   ]
 }

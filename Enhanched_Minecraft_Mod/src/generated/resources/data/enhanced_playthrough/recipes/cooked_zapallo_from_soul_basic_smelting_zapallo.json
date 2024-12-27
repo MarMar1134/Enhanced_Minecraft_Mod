@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:soul_basic_smelting",
+  "category": "soul_basic_smelt",
+  "cooktime": 200,
+  "group": "zapallo",
+  "ingredient": {
+    "item": "enhanced_playthrough:zapallo"
+  },
+  "output": {
+    "item": "enhanced_playthrough:cooked_zapallo"
+  }
+}

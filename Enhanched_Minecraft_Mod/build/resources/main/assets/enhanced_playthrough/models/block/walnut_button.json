@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "enhanced_playthrough:block/walnut_planks"
+  }
+}

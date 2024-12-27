@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "food",
+  "ingredient": {
+    "item": "minecraft:pumpkin"
+  },
+  "output": {
+    "count": 2,
+    "item": "enhanced_playthrough:pumpkin_flour"
+  }
+}

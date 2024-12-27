@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:basic_smelting",
+  "category": "basic_smelt",
+  "cooktime": 300,
+  "group": "salmon",
+  "ingredient": {
+    "item": "minecraft:salmon"
+  },
+  "output": {
+    "item": "minecraft:cooked_salmon"
+  }
+}

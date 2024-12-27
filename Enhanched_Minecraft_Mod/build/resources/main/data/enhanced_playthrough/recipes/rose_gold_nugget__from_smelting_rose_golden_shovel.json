@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "rose_gold_nugget",
+  "ingredient": {
+    "item": "enhanced_playthrough:rose_golden_shovel"
+  },
+  "result": "enhanced_playthrough:rose_gold_nugget"
+}

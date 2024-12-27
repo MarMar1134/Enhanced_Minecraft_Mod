@@ -1,0 +1,17 @@
+{
+  "type": "enhanced_playthrough:super_ore_alloying",
+  "alloytime": 100,
+  "category": "super_ore_alloy",
+  "group": "rose_gold_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_gold"
+    }
+  ],
+  "output": {
+    "item": "enhanced_playthrough:rose_gold_ingot"
+  }
+}

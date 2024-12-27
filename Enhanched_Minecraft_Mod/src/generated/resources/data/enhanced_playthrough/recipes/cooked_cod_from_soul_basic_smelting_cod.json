@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:soul_basic_smelting",
+  "category": "soul_basic_smelt",
+  "cooktime": 200,
+  "group": "cod",
+  "ingredient": {
+    "item": "minecraft:cod"
+  },
+  "output": {
+    "item": "minecraft:cooked_cod"
+  }
+}

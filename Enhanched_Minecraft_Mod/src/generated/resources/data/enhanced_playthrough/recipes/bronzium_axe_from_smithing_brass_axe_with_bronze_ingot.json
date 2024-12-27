@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhanced_playthrough:bronze_ingot"
+  },
+  "base": {
+    "item": "enhanced_playthrough:brass_axe"
+  },
+  "result": {
+    "item": "enhanced_playthrough:bronzium_axe"
+  },
+  "template": {
+    "item": "enhanced_playthrough:bronzium_upgrade_smithing_template"
+  }
+}

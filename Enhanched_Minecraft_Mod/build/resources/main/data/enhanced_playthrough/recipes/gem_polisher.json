@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "A": {
+      "tag": "minecraft:logs_that_burn"
+    },
+    "I": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "###",
+    "AIA",
+    "AIA"
+  ],
+  "result": {
+    "item": "enhanced_playthrough:gem_polisher"
+  },
+  "show_notification": true
+}

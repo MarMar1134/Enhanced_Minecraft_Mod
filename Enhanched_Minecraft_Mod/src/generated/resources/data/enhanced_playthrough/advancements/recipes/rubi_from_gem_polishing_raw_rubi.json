@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_rubi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:raw_rubi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:rubi_from_gem_polishing_raw_rubi"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_rubi",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:rubi_from_gem_polishing_raw_rubi"
+    ]
+  },
+  "sends_telemetry_event": false
+}

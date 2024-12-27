@@ -15,7 +15,7 @@ license="MIT License"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="enhanced_minecraft" #mandatory
+modId="enhanced_playthrough" #mandatory
 # The version number of the mod
 version="0.15.0" #mandatory
 # A display name for the mod

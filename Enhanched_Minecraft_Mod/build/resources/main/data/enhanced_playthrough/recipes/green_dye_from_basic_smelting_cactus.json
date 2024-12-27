@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:basic_smelting",
+  "category": "basic_smelt",
+  "cooktime": 300,
+  "group": "cactus",
+  "ingredient": {
+    "item": "minecraft:cactus"
+  },
+  "output": {
+    "item": "minecraft:green_dye"
+  }
+}

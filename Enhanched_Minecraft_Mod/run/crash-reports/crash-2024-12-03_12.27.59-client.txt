@@ -120,7 +120,7 @@ Stacktrace:
 	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar%23163!/:build 7] {}
 -- Affected screen --
 Details:
-	Screen name: com.MarMar.Enhanced_Minecraft.menu.screen.GemPolisherScreen
+	Screen name: com.marmar.enhanced_playthrough.menu.screen.GemPolisherScreen
 Stacktrace:
 	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:97) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}

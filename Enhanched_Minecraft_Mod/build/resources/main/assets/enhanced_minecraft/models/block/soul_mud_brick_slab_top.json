@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "enhanced_minecraft:block/soul_mud_brick",
-    "side": "enhanced_minecraft:block/soul_mud_brick",
-    "top": "enhanced_minecraft:block/soul_mud_brick"
-  }
-}

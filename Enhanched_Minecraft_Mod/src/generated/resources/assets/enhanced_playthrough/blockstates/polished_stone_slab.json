@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "enhanced_playthrough:block/polished_stone_slab"
+    },
+    "type=double": {
+      "model": "enhanced_playthrough:block/polished_stone"
+    },
+    "type=top": {
+      "model": "enhanced_playthrough:block/polished_stone_slab_top"
+    }
+  }
+}

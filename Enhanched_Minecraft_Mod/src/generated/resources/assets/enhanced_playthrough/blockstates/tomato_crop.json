@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "enhanced_playthrough:block/tomato_stage0"
+    },
+    "age=1": {
+      "model": "enhanced_playthrough:block/tomato_stage1"
+    },
+    "age=2": {
+      "model": "enhanced_playthrough:block/tomato_stage2"
+    },
+    "age=3": {
+      "model": "enhanced_playthrough:block/tomato_stage3"
+    },
+    "age=4": {
+      "model": "enhanced_playthrough:block/tomato_stage4"
+    },
+    "age=5": {
+      "model": "enhanced_playthrough:block/tomato_stage5"
+    }
+  }
+}

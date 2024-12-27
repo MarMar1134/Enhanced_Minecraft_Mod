@@ -6,8 +6,8 @@ Description: Ticking block entity
 
 java.util.NoSuchElementException: No value present
 	at java.util.Optional.get(Optional.java:143) ~[?:?] {}
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractBasicFurnaceBlockEntity.smeltItem(AbstractBasicFurnaceBlockEntity.java:286) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractBasicFurnaceBlockEntity.Tick(AbstractBasicFurnaceBlockEntity.java:208) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.AbstractBasicFurnaceBlockEntity.smeltItem(AbstractBasicFurnaceBlockEntity.java:286) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.AbstractBasicFurnaceBlockEntity.Tick(AbstractBasicFurnaceBlockEntity.java:208) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
@@ -27,15 +27,15 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Server thread
 Stacktrace:
 	at java.util.Optional.get(Optional.java:143) ~[?:?] {}
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractBasicFurnaceBlockEntity.smeltItem(AbstractBasicFurnaceBlockEntity.java:286) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractBasicFurnaceBlockEntity.Tick(AbstractBasicFurnaceBlockEntity.java:208) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.AbstractBasicFurnaceBlockEntity.smeltItem(AbstractBasicFurnaceBlockEntity.java:286) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.AbstractBasicFurnaceBlockEntity.Tick(AbstractBasicFurnaceBlockEntity.java:208) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:351) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 -- Block entity being ticked --
 Details:
-	Name: enhanced_minecraft:adobe_furnace // com.MarMar.Enhanced_Minecraft.block.custom.entity.AdobeFurnaceBlockEntity
+	Name: enhanced_minecraft:adobe_furnace // com.marmar.enhanced_playthrough.block.custom.entity.AdobeFurnaceBlockEntity
 	Block: Block{enhanced_minecraft:adobe_furnace}[burning=false,facing=north]
 	Block location: World: (-210,50,-44), Section: (at 14,2,4 in -14,3,-3; chunk contains blocks -224,0,-48 to -209,255,-33), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
 	Block: Block{enhanced_minecraft:adobe_furnace}[burning=false,facing=north]

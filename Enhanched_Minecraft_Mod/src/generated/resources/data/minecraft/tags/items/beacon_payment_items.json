@@ -1,16 +1,16 @@
 {
   "values": [
-    "enhanced_minecraft:rubi",
-    "enhanced_minecraft:saphire",
-    "enhanced_minecraft:garnet",
-    "enhanced_minecraft:silver_ingot",
-    "enhanced_minecraft:tin_ingot",
-    "enhanced_minecraft:zinc_ingot",
-    "enhanced_minecraft:brass_ingot",
-    "enhanced_minecraft:bronze_ingot",
-    "enhanced_minecraft:rose_gold_ingot",
-    "enhanced_minecraft:bronzium_ingot",
-    "enhanced_minecraft:steel_ingot",
-    "enhanced_minecraft:green_gold_ingot"
+    "enhanced_playthrough:rubi",
+    "enhanced_playthrough:sapphire",
+    "enhanced_playthrough:garnet",
+    "enhanced_playthrough:silver_ingot",
+    "enhanced_playthrough:tin_ingot",
+    "enhanced_playthrough:zinc_ingot",
+    "enhanced_playthrough:brass_ingot",
+    "enhanced_playthrough:bronze_ingot",
+    "enhanced_playthrough:rose_gold_ingot",
+    "enhanced_playthrough:bronzium_ingot",
+    "enhanced_playthrough:steel_ingot",
+    "enhanced_playthrough:green_gold_ingot"
   ]
 }

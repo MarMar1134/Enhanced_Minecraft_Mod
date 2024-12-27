@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:sunflower"
+  },
+  "output": {
+    "count": 6,
+    "item": "minecraft:yellow_dye"
+  }
+}

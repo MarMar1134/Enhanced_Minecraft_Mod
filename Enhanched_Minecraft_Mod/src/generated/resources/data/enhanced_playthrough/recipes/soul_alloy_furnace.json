@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "enhanced_playthrough:soul_mud_brick"
+    },
+    "A": {
+      "item": "enhanced_playthrough:soul_furnace"
+    },
+    "I": {
+      "item": "minecraft:blackstone"
+    }
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "III"
+  ],
+  "result": {
+    "item": "enhanced_playthrough:soul_alloy_furnace"
+  },
+  "show_notification": true
+}

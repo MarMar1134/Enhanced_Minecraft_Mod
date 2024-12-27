@@ -51,7 +51,7 @@ Stacktrace:
 	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 -- Affected screen --
 Details:
-	Screen name: com.MarMar.Enhanced_Minecraft.screen.AdobeFurnaceScreen
+	Screen name: com.marmar.enhanced_playthrough.screen.AdobeFurnaceScreen
 Stacktrace:
 	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraft.client.Minecraft.tick(Minecraft.java:1784) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}

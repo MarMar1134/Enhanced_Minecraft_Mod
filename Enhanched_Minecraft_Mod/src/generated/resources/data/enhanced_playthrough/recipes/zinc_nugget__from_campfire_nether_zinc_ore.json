@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "group": "zinc_nugget",
+  "ingredient": {
+    "item": "enhanced_playthrough:nether_zinc_ore"
+  },
+  "result": "enhanced_playthrough:zinc_nugget"
+}

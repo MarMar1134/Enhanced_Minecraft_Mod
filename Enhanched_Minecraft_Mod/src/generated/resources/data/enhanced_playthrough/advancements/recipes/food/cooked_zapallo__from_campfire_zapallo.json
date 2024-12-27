@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:cooked_zapallo__from_campfire_zapallo"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zapallo": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:zapallo"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_zapallo",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:cooked_zapallo__from_campfire_zapallo"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "enhanced_playthrough:block/walnut_pressure_plate"
+    },
+    "powered=true": {
+      "model": "enhanced_playthrough:block/walnut_pressure_plate_down"
+    }
+  }
+}

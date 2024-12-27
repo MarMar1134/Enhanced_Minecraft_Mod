@@ -1,0 +1,101 @@
+{
+  "parent": "enhanced_playthrough:gems/root",
+  "criteria": {
+    "emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:emerald"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sapphire": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_minecraft:saphire"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "rubi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:rubi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "garnet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:garnet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "emerald"
+    ],
+    [
+      "sapphire"
+    ],
+    [
+      "rubi"
+    ],
+    [
+      "garnet"
+    ],
+    [
+      "diamond"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "enhanced_playthrough:netherite_polisher"
+    },
+    "title":{
+      "translate": "advancements.title.gems.get_all_gems"
+    },
+    "description": {
+      "translate": "advancements.desc.gems.get_all_gems",
+      "italic": true
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "rewards":{
+    "experience": 250,
+    "item": "enhanced_playthrough:netherite_polisher"
+  }
+}

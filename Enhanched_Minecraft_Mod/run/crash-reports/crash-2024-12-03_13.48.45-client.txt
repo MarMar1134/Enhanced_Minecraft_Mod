@@ -124,7 +124,7 @@ Stacktrace:
 	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:212) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
 -- Affected screen --
 Details:
-	Screen name: com.MarMar.Enhanced_Minecraft.menu.screen.GrinderScreen
+	Screen name: com.marmar.enhanced_playthrough.menu.screen.GrinderScreen
 Stacktrace:
 	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:97) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}

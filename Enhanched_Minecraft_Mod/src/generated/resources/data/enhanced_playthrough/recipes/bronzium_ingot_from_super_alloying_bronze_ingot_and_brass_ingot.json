@@ -1,0 +1,17 @@
+{
+  "type": "enhanced_playthrough:super_ore_alloying",
+  "alloytime": 100,
+  "category": "super_ore_alloy",
+  "group": "bronzium_ingot",
+  "ingredients": [
+    {
+      "item": "enhanced_playthrough:bronze_ingot"
+    },
+    {
+      "item": "enhanced_playthrough:brass_ingot"
+    }
+  ],
+  "output": {
+    "item": "enhanced_playthrough:bronzium_ingot"
+  }
+}

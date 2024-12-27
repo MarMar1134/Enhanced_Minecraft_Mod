@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "enhanced_minecraft:tin_ingot"
+      "item": "enhanced_playthrough:tin_ingot"
     },
     "I": {
       "item": "minecraft:stone"

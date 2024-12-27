@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "enhanced_playthrough:brass_ingot"
+    }
+  },
+  "pattern": [
+    "II",
+    "I#",
+    " #"
+  ],
+  "result": {
+    "item": "enhanced_playthrough:brass_axe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "enhanced_playthrough:polished_stone"
+  },
+  "result": "enhanced_playthrough:polished_stone_wall"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bricks"
+    },
+    "A": {
+      "item": "enhanced_playthrough:adobe_furnace"
+    },
+    "I": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "III"
+  ],
+  "result": {
+    "item": "enhanced_playthrough:adobe_alloying_furnace"
+  },
+  "show_notification": true
+}

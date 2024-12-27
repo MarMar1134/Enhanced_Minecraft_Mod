@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:cocoa_beans"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:brown_dye"
+  }
+}

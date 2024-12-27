@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brass_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:brass_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:bronzium_sword_from_smithing_brass_sword_with_bronze_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_brass_sword",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:bronzium_sword_from_smithing_brass_sword_with_bronze_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crop": "enhanced_playthrough:block/yerba_mate_stage4"
+  }
+}

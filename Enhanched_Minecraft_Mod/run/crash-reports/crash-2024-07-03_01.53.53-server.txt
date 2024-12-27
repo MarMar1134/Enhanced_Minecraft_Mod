@@ -9,10 +9,10 @@ java.lang.IllegalStateException: Registry is already frozen
 	at net.minecraftforge.registries.NamespacedWrapper.createIntrusiveHolder(NamespacedWrapper.java:365) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 	at net.minecraft.world.item.Item.<init>(Item.java:61) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.item.TieredItem.<init>(TieredItem.java:7) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem.<init>(PolisherItem.java:12) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.isAccurateTool(GemPolisherBlockEntity.java:144) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:110) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.item.custom.PolisherItem.<init>(PolisherItem.java:12) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.isAccurateTool(GemPolisherBlockEntity.java:144) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:110) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
@@ -35,17 +35,17 @@ Stacktrace:
 	at net.minecraftforge.registries.NamespacedWrapper.createIntrusiveHolder(NamespacedWrapper.java:365) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 	at net.minecraft.world.item.Item.<init>(Item.java:61) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.item.TieredItem.<init>(TieredItem.java:7) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.item.custom.PolisherItem.<init>(PolisherItem.java:12) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.isAccurateTool(GemPolisherBlockEntity.java:144) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:110) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.item.custom.PolisherItem.<init>(PolisherItem.java:12) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.isAccurateTool(GemPolisherBlockEntity.java:144) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:110) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:351) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 -- Block entity being ticked --
 Details:
-	Name: enhanced_minecraft:gem_polisher // com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity
+	Name: enhanced_minecraft:gem_polisher // com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity
 	Block: Block{enhanced_minecraft:gem_polisher}[facing=north]
 	Block location: World: (42,-40,65), Section: (at 10,8,1 in 2,-3,4; chunk contains blocks 32,-64,64 to 47,319,79), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
 	Block: Block{enhanced_minecraft:gem_polisher}[facing=north]

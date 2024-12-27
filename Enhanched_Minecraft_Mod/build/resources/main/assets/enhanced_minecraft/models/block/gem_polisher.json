@@ -1,9 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-		"front": "enhanced_minecraft:block/gem_polisher_front",
-		"side": "enhanced_minecraft:block/gem_polisher_side",
-		"top": "enhanced_minecraft:block/gem_polisher_top",
-		"bottom": "enhanced_minecraft:block/gem_polisher_bottom"
-	}
-}

@@ -1,0 +1,17 @@
+{
+  "type": "enhanced_playthrough:super_ore_alloying",
+  "alloytime": 100,
+  "category": "super_ore_alloy",
+  "group": "green_gold_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_gold"
+    },
+    {
+      "item": "enhanced_playthrough:raw_silver"
+    }
+  ],
+  "output": {
+    "item": "enhanced_playthrough:green_gold_ingot"
+  }
+}

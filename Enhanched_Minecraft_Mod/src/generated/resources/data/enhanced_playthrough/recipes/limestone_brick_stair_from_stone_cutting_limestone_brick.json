@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "enhanced_playthrough:limestone_brick"
+  },
+  "result": "enhanced_playthrough:limestone_brick_stair"
+}

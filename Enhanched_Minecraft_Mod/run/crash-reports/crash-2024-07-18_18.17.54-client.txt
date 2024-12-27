@@ -76,12 +76,12 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.IllegalArgumentException: Block{minecraft:air} has duplicate property: facing
 		at net.minecraft.world.level.block.state.StateDefinition$Builder.validateProperty(StateDefinition.java:152) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 		at net.minecraft.world.level.block.state.StateDefinition$Builder.add(StateDefinition.java:127) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.custom.AdobeFurnaceBlock.createBlockStateDefinition(AdobeFurnaceBlock.java:44) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.custom.AdobeFurnaceBlock.createBlockStateDefinition(AdobeFurnaceBlock.java:44) ~[%23196!/:?] {re:classloading}
 		at net.minecraft.world.level.block.Block.<init>(Block.java:171) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 		at net.minecraft.world.level.block.BaseEntityBlock.<init>(BaseEntityBlock.java:15) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 		at net.minecraft.world.level.block.AbstractFurnaceBlock.<init>(AbstractFurnaceBlock.java:34) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.custom.AdobeFurnaceBlock.<init>(AdobeFurnaceBlock.java:38) ~[%23196!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$static$12(ModBlocks.java:67) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.custom.AdobeFurnaceBlock.<init>(AdobeFurnaceBlock.java:38) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.ModBlocks.lambda$static$12(ModBlocks.java:67) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -133,7 +133,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:adobe_furnace
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$RegisterBlockItem$16(ModBlocks.java:82) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.ModBlocks.lambda$RegisterBlockItem$16(ModBlocks.java:82) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -185,7 +185,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:adobe_furnace
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities.lambda$static$0(ModBlockEntities.java:17) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.entity.ModBlockEntities.lambda$static$0(ModBlockEntities.java:17) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}

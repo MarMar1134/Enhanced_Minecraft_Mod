@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/orientable_with_bottom",
-  "textures": {
-    "front": "enhanced_minecraft:block/adobe_alloying_furnace_front_on",
-    "side": "enhanced_minecraft:block/adobe_alloying_furnace_side",
-    "top": "enhanced_minecraft:block/adobe_alloying_furnace_top",
-    "bottom": "enhanced_minecraft:block/adobe_alloying_furnace_bottom"
-  }
-}

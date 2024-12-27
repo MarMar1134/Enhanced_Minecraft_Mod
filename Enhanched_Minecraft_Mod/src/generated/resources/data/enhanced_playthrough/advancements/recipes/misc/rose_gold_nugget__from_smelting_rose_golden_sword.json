@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_golden_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:rose_golden_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:rose_gold_nugget__from_smelting_rose_golden_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_golden_sword",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:rose_gold_nugget__from_smelting_rose_golden_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

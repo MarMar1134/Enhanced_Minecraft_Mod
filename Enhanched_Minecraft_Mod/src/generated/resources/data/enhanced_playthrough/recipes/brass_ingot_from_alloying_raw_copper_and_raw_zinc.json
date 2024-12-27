@@ -1,0 +1,17 @@
+{
+  "type": "enhanced_playthrough:ore_alloying",
+  "alloytime": 200,
+  "category": "ore_alloy",
+  "group": "brass_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "enhanced_playthrough:raw_zinc"
+    }
+  ],
+  "output": {
+    "item": "enhanced_playthrough:brass_ingot"
+  }
+}

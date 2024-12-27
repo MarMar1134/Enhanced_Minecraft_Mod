@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=east,on=false": {
+      "model": "enhanced_playthrough:block/grinder",
+      "y": 90
+    },
+    "facing=north,on=false": {
+      "model": "enhanced_playthrough:block/grinder"
+    },
+    "facing=south,on=false": {
+      "model": "enhanced_playthrough:block/grinder",
+      "y": 180
+    },
+    "facing=west,on=false": {
+      "model": "enhanced_playthrough:block/grinder",
+      "y": 270
+    },
+
+    "facing=east,on=true": {
+      "model": "enhanced_playthrough:block/grinder_on",
+      "y": 90
+    },
+    "facing=north,on=true": {
+      "model": "enhanced_playthrough:block/grinder_on"
+    },
+    "facing=south,on=true": {
+      "model": "enhanced_playthrough:block/grinder_on",
+      "y": 180
+    },
+    "facing=west,on=true": {
+      "model": "enhanced_playthrough:block/grinder_on",
+      "y": 270
+    }
+  }
+}

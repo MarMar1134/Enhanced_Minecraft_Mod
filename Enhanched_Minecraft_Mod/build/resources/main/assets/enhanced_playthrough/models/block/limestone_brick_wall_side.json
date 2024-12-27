@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "enhanced_playthrough:block/limestone_brick"
+  }
+}

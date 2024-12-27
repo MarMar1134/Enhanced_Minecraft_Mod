@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_taiga",
+  "features": "enhanced_playthrough:walnut_placed",
+  "step": "vegetal_decoration"
+}

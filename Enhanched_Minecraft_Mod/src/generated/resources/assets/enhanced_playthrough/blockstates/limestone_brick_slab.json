@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "enhanced_playthrough:block/limestone_brick_slab"
+    },
+    "type=double": {
+      "model": "enhanced_playthrough:block/limestone_brick"
+    },
+    "type=top": {
+      "model": "enhanced_playthrough:block/limestone_brick_slab_top"
+    }
+  }
+}

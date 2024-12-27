@@ -5,8 +5,8 @@ Time: 2024-08-03 12:31:04
 Description: mouseClicked event handler
 
 java.lang.ClassCastException: class net.minecraft.core.Holder$Reference cannot be cast to class net.minecraft.world.level.ItemLike (net.minecraft.core.Holder$Reference and net.minecraft.world.level.ItemLike are in module minecraft@1.20.1 of loader 'TRANSFORMER' @717d7587)
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:89) ~[main/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:78) ~[main/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:89) ~[main/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:78) ~[main/:?] {re:classloading}
 	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:171) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:67) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
@@ -62,8 +62,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:89) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:78) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:89) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe$Serializer.fromJson(GemPolisherRecipe.java:78) ~[%23196!/:?] {re:classloading}
 	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:171) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:67) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}

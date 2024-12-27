@@ -4,7 +4,7 @@
 Time: 2024-07-18 15:47:06
 Description: mouseClicked event handler
 
-net.minecraftforge.fml.loading.toposort.CyclePresentException: Cycles present in graph: [[IRON, ForgeTier[level=2, uses=300, speed=13.0, attackDamageBonus=2.0, enchantmentValue=21, tag=TagKey[minecraft:block / minecraft:needs_iron_tool], repairIngredient=com.MarMar.Enhanced_Minecraft.Util.ModTiers$$Lambda$5015/0x0000023801bfaaf8@5dd5422f]]]
+net.minecraftforge.fml.loading.toposort.CyclePresentException: Cycles present in graph: [[IRON, ForgeTier[level=2, uses=300, speed=13.0, attackDamageBonus=2.0, enchantmentValue=21, tag=TagKey[minecraft:block / minecraft:needs_iron_tool], repairIngredient=com.marmar.enhanced_playthrough.Util.ModTiers$$Lambda$5015/0x0000023801bfaaf8@5dd5422f]]]
 	at net.minecraftforge.fml.loading.toposort.TopologicalSort.throwCyclePresentException(TopologicalSort.java:102) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
 	at net.minecraftforge.fml.loading.toposort.TopologicalSort.topologicalSort(TopologicalSort.java:94) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
 	at net.minecraftforge.common.TierSortingRegistry.recalculateItemTiers(TierSortingRegistry.java:315) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}

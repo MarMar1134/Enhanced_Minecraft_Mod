@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "enhanced_playthrough:block/corn_stage0"
+    },
+    "age=1": {
+      "model": "enhanced_playthrough:block/corn_stage1"
+    },
+    "age=2": {
+      "model": "enhanced_playthrough:block/corn_stage2"
+    },
+    "age=3": {
+      "model": "enhanced_playthrough:block/corn_stage3"
+    },
+    "age=4": {
+      "model": "enhanced_playthrough:block/corn_stage4"
+    },
+    "age=5": {
+      "model": "enhanced_playthrough:block/corn_stage5"
+    },
+    "age=6": {
+      "model": "enhanced_playthrough:block/corn_stage6"
+    },
+    "age=7": {
+      "model": "enhanced_playthrough:block/corn_stage7"
+    }
+  }
+}
