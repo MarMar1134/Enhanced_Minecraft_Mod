@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "misc",
+  "ingredient": {
+    "tag": "minecraft:wool"
+  },
+  "output": {
+    "count": 4,
+    "item": "minecraft:string"
+  }
+}

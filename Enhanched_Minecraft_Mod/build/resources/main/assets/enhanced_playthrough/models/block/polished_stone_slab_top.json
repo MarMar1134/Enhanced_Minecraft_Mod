@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "enhanced_playthrough:block/polished_stone",
+    "side": "enhanced_playthrough:block/polished_stone",
+    "top": "enhanced_playthrough:block/polished_stone"
+  }
+}

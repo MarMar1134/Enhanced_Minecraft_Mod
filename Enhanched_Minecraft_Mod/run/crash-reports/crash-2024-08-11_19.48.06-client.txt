@@ -75,8 +75,8 @@ java.lang.RuntimeException: null
 		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
 	Caused by: java.lang.IllegalArgumentException: Cannot set property BooleanProperty{name=lit, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{minecraft:air}
 		at net.minecraft.world.level.block.state.StateHolder.setValue(StateHolder.java:122) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.custom.AdobeAlloyFurnaceBlock.<init>(AdobeAlloyingFurnaceBlock.java:40) ~[%23196!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.ModBlocks.lambda$static$13(ModBlocks.java:69) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.custom.AdobeAlloyFurnaceBlock.<init>(AdobeAlloyingFurnaceBlock.java:40) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.ModBlocks.lambda$static$13(ModBlocks.java:69) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -128,7 +128,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:yerba_mate_crop
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.item.ModItems.lambda$static$84(ModItems.java:220) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.item.ModItems.lambda$static$84(ModItems.java:220) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -180,7 +180,7 @@ java.lang.RuntimeException: null
 	Caused by: java.lang.NullPointerException: Registry Object not present: enhanced_minecraft:adobe_alloying_furnace
 		at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
 		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
-		at com.MarMar.Enhanced_Minecraft.block.entity.ModBlockEntities.lambda$static$1(ModBlockEntities.java:19) ~[%23196!/:?] {re:classloading}
+		at com.marmar.enhanced_playthrough.block.entity.ModBlockEntities.lambda$static$1(ModBlockEntities.java:19) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}

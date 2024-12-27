@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/leaves",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "all": "enhanced_minecraft:block/walnut_leaves"
-  }
-}

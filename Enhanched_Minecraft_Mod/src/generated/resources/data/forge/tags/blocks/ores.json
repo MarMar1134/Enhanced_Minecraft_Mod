@@ -1,20 +1,20 @@
 {
   "values": [
-    "enhanced_minecraft:nether_copper_ore",
-    "enhanced_minecraft:sulfur_ore",
-    "enhanced_minecraft:tin_ore",
-    "enhanced_minecraft:zinc_ore",
-    "enhanced_minecraft:silver_ore",
-    "enhanced_minecraft:rubi_ore",
-    "enhanced_minecraft:saphire_ore",
-    "enhanced_minecraft:deepslate_tin_ore",
-    "enhanced_minecraft:deepslate_zinc_ore",
-    "enhanced_minecraft:nether_zinc_ore",
-    "enhanced_minecraft:deepslate_silver_ore",
-    "enhanced_minecraft:deepslate_rubi_ore",
-    "enhanced_minecraft:deepslate_saphire_ore",
-    "enhanced_minecraft:deepslate_sulfur_ore",
-    "enhanced_minecraft:nether_sulfur_ore",
-    "enhanced_minecraft:deepslate_cobalt_ore"
+    "enhanced_playthrough:nether_copper_ore",
+    "enhanced_playthrough:sulfur_ore",
+    "enhanced_playthrough:tin_ore",
+    "enhanced_playthrough:zinc_ore",
+    "enhanced_playthrough:silver_ore",
+    "enhanced_playthrough:rubi_ore",
+    "enhanced_playthrough:sapphire_ore",
+    "enhanced_playthrough:deepslate_tin_ore",
+    "enhanced_playthrough:deepslate_zinc_ore",
+    "enhanced_playthrough:nether_zinc_ore",
+    "enhanced_playthrough:deepslate_silver_ore",
+    "enhanced_playthrough:deepslate_rubi_ore",
+    "enhanced_playthrough:deepslate_sapphire_ore",
+    "enhanced_playthrough:deepslate_sulfur_ore",
+    "enhanced_playthrough:nether_sulfur_ore",
+    "enhanced_playthrough:deepslate_cobalt_ore"
   ]
 }

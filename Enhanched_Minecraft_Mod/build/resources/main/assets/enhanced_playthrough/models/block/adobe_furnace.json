@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"front": "enhanced_playthrough:block/adobe_furnace_front",
+		"side": "enhanced_playthrough:block/adobe_furnace_side",
+		"top": "enhanced_playthrough:block/adobe_furnace_top"
+	}
+}

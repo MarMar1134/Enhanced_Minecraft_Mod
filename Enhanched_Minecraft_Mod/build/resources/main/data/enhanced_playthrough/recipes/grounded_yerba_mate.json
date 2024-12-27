@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "enhanced_playthrough:yerba_mate"
+    }
+  },
+  "pattern": [
+    " I ",
+    "I I",
+    " I "
+  ],
+  "result": {
+    "item": "enhanced_playthrough:grounded_yerba_mate"
+  },
+  "show_notification": true
+}

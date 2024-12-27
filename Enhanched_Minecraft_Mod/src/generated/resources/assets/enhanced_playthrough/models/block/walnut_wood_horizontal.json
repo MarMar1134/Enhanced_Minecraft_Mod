@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "enhanced_playthrough:block/walnut_log",
+    "side": "enhanced_playthrough:block/walnut_log"
+  }
+}

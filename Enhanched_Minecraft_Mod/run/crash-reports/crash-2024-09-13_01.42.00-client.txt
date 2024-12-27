@@ -4,10 +4,10 @@
 Time: 2024-09-13 01:42:00
 Description: Unexpected error
 
-java.lang.ClassCastException: class com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe$Type cannot be cast to class com.MarMar.Enhanced_Minecraft.recipe.alloy.AbstractAlloyRecipe (com.MarMar.Enhanced_Minecraft.recipe.alloy.SuperAlloyingRecipe$Type and com.MarMar.Enhanced_Minecraft.recipe.alloy.AbstractAlloyRecipe are in module enhanced_minecraft@0.12.0 of loader 'TRANSFORMER' @3e906375)
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractAlloyFurnaceBlockEntity.<init>(AbstractAlloyFurnaceBlockEntity.java:73) ~[main/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.SuperAlloyFurnaceBlockEntity.<init>(SuperAlloyingFurnaceBlockEntity.java:40) ~[main/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyFurnaceBlock.newBlockEntity(SuperAlloyingFurnaceBlock.java:46) ~[main/:?] {re:classloading}
+java.lang.ClassCastException: class com.marmar.enhanced_playthrough.recipe.alloy.SuperAlloyingRecipe$Type cannot be cast to class com.marmar.enhanced_playthrough.recipe.alloy.AbstractAlloyRecipe (com.marmar.enhanced_playthrough.recipe.alloy.SuperAlloyingRecipe$Type and com.marmar.enhanced_playthrough.recipe.alloy.AbstractAlloyRecipe are in module enhanced_minecraft@0.12.0 of loader 'TRANSFORMER' @3e906375)
+	at com.marmar.enhanced_playthrough.block.custom.entity.AbstractAlloyFurnaceBlockEntity.<init>(AbstractAlloyFurnaceBlockEntity.java:73) ~[main/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.SuperAlloyFurnaceBlockEntity.<init>(SuperAlloyingFurnaceBlockEntity.java:40) ~[main/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.SuperAlloyFurnaceBlock.newBlockEntity(SuperAlloyingFurnaceBlock.java:46) ~[main/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk.setBlockState(LevelChunk.java:263) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.level.Level.setBlock(Level.java:219) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.client.multiplayer.ClientLevel.setBlock(ClientLevel.java:159) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}
@@ -52,9 +52,9 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.AbstractAlloyFurnaceBlockEntity.<init>(AbstractAlloyFurnaceBlockEntity.java:73) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.entity.SuperAlloyFurnaceBlockEntity.<init>(SuperAlloyingFurnaceBlockEntity.java:40) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.SuperAlloyFurnaceBlock.newBlockEntity(SuperAlloyingFurnaceBlock.java:46) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.AbstractAlloyFurnaceBlockEntity.<init>(AbstractAlloyFurnaceBlockEntity.java:73) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.entity.SuperAlloyFurnaceBlockEntity.<init>(SuperAlloyingFurnaceBlockEntity.java:40) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.SuperAlloyFurnaceBlock.newBlockEntity(SuperAlloyingFurnaceBlock.java:46) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk.setBlockState(LevelChunk.java:263) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.setBlock(Level.java:219) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.client.multiplayer.ClientLevel.setBlock(ClientLevel.java:159) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}

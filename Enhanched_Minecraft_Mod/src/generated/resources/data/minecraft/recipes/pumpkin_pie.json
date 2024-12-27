@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "enhanced_minecraft:pumpkin_flour"
+      "item": "enhanced_playthrough:pumpkin_flour"
     },
     {
-      "item": "enhanced_minecraft:pumpkin_flour"
+      "item": "enhanced_playthrough:pumpkin_flour"
     },
     {
-      "item": "enhanced_minecraft:yeast"
+      "item": "enhanced_playthrough:yeast"
     }
   ],
   "result": {

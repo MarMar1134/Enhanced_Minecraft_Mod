@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "enhanced_playthrough:item/rice_grains"
+  }
+}

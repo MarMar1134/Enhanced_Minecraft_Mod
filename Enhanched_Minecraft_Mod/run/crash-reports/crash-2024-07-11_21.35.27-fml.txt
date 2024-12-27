@@ -63,7 +63,7 @@ Details:
 		java.lang.reflect.InvocationTargetException: null
 	Mod Version: 15.3.0.8
 	Mod Issue URL: https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue
-	Exception message: java.lang.ClassCastException: class com.MarMar.Enhanced_Minecraft.compatibility.GemPolishingCategory
+	Exception message: java.lang.ClassCastException: class com.marmar.enhanced_playthrough.compatibility.GemPolishingCategory
 Stacktrace:
 	at java.lang.Class.asSubclass(Class.java:3924) ~[?:?] {}
 	at mezz.jei.forge.startup.ForgePluginFinder.getInstances(ForgePluginFinder.java:48) ~[jei-1.20.1-forge-15.3.0.8_mapped_parchment_2023.06.26-1.20.1.jar%23198!/:15.3.0.8] {re:classloading}

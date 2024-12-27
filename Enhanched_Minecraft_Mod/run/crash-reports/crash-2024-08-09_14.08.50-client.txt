@@ -10,7 +10,7 @@ java.lang.RuntimeException: Slot 2 not in valid range - [0,1)
 	at net.minecraftforge.items.SlotItemHandler.getItem(SlotItemHandler.java:40) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderSlot(AbstractContainerScreen.java:191) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}
 	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:103) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}
-	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen.render(AdobeAlloyingFurnaceScreen.java:57) ~[main/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.screen.AdobeAlloyingFurnaceScreen.render(AdobeAlloyingFurnaceScreen.java:57) ~[main/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:109) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:420) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
@@ -47,13 +47,13 @@ Stacktrace:
 	at net.minecraftforge.items.SlotItemHandler.getItem(SlotItemHandler.java:40) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.renderSlot(AbstractContainerScreen.java:191) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
 	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.render(AbstractContainerScreen.java:103) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
-	at com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen.render(AdobeAlloyingFurnaceScreen.java:57) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.screen.AdobeAlloyingFurnaceScreen.render(AdobeAlloyingFurnaceScreen.java:57) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.client.gui.screens.Screen.renderWithTooltip(Screen.java:109) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:420) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23190%23197!/:?] {re:classloading}
 -- Screen render details --
 Details:
-	Screen name: com.MarMar.Enhanced_Minecraft.screen.AdobeAlloyingFurnaceScreen
+	Screen name: com.marmar.enhanced_playthrough.screen.AdobeAlloyingFurnaceScreen
 	Mouse location: Scaled: (240, 135). Absolute: (960.000000, 540.000000)
 	Screen size: Scaled: (480, 270). Absolute: (1920, 1080). Scale factor of 4.000000
 Stacktrace:

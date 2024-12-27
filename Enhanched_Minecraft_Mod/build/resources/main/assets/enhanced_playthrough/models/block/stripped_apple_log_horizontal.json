@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "enhanced_playthrough:block/stripped_apple_log_top",
+    "side": "enhanced_playthrough:block/stripped_apple_log"
+  }
+}

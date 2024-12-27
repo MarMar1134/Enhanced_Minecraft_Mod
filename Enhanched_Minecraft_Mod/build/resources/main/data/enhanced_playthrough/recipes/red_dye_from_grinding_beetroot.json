@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:beetroot"
+  },
+  "output": {
+    "count": 2,
+    "item": "minecraft:red_dye"
+  }
+}

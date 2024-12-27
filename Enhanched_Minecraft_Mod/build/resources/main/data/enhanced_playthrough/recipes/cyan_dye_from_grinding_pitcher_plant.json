@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:pitcher_plant"
+  },
+  "output": {
+    "count": 6,
+    "item": "minecraft:cyan_dye"
+  }
+}

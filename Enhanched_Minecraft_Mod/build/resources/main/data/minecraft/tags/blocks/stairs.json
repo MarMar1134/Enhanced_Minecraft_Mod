@@ -1,12 +1,12 @@
 {
   "values": [
-    "enhanced_minecraft:polished_stone_stair",
-    "enhanced_minecraft:cobbeled_limestone_stair",
-    "enhanced_minecraft:limestone_stair",
-    "enhanced_minecraft:polished_limestone_stair",
-    "enhanced_minecraft:limestone_brick_stair",
-    "enhanced_minecraft:soul_mud_brick_stair",
-    "enhanced_minecraft:walnut_stair",
-    "enhanced_minecraft:apple_stair"
+    "enhanced_playthrough:polished_stone_stair",
+    "enhanced_playthrough:cobbeled_limestone_stair",
+    "enhanced_playthrough:limestone_stair",
+    "enhanced_playthrough:polished_limestone_stair",
+    "enhanced_playthrough:limestone_brick_stair",
+    "enhanced_playthrough:soul_mud_brick_stair",
+    "enhanced_playthrough:walnut_stair",
+    "enhanced_playthrough:apple_stair"
   ]
 }

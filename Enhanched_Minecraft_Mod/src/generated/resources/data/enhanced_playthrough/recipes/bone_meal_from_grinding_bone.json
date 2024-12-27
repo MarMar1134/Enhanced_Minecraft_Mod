@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "misc",
+  "ingredient": {
+    "item": "minecraft:bone"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:bone_meal"
+  }
+}

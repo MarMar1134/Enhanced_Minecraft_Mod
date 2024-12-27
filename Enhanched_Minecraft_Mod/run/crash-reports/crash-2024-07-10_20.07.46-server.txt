@@ -5,8 +5,8 @@ Time: 2024-07-10 20:07:46
 Description: Exception in server tick loop
 
 java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because the return value of "it.unimi.dsi.fastutil.ints.Int2ObjectMap.get(int)" is null
-	at com.MarMar.Enhanced_Minecraft.event.ModEvents.trades(ModEvents.java:27) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.event.__ModEvents_trades_VillagerTradesEvent.invoke(.dynamic) ~[%23196!/:?] {re:classloading,pl:eventbus:B}
+	at com.marmar.enhanced_playthrough.event.ModEvents.trades(ModEvents.java:27) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.event.__ModEvents_trades_VillagerTradesEvent.invoke(.dynamic) ~[%23196!/:?] {re:classloading,pl:eventbus:B}
 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%23115!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23115!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23115!/:?] {}

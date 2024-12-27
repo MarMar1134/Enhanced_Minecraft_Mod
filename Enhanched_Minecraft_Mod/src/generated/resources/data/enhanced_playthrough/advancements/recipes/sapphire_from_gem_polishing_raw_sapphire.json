@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_sapphire": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:raw_sapphire"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:sapphire_from_gem_polishing_raw_sapphire"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_sapphire",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:sapphire_from_gem_polishing_raw_sapphire"
+    ]
+  },
+  "sends_telemetry_event": false
+}

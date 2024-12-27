@@ -12,7 +12,7 @@ java.lang.IndexOutOfBoundsException: Index 39 out of bounds for length 39
 	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?] {re:computing_frames}
 	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.inventory.AbstractContainerMenu.moveItemStackTo(AbstractContainerMenu.java:612) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.screen.menu.GrinderMenu.quickMoveStack(GrinderMenu.java:91) ~[main/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.screen.menu.GrinderMenu.quickMoveStack(GrinderMenu.java:91) ~[main/:?] {re:classloading}
 	at net.minecraft.world.inventory.AbstractContainerMenu.doClick(AbstractContainerMenu.java:394) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.world.inventory.AbstractContainerMenu.clicked(AbstractContainerMenu.java:294) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading}
 	at net.minecraft.client.multiplayer.MultiPlayerGameMode.handleInventoryMouseClick(MultiPlayerGameMode.java:431) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}
@@ -64,7 +64,7 @@ Stacktrace:
 	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?] {re:computing_frames}
 	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.inventory.AbstractContainerMenu.moveItemStackTo(AbstractContainerMenu.java:612) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.screen.menu.GrinderMenu.quickMoveStack(GrinderMenu.java:91) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.screen.menu.GrinderMenu.quickMoveStack(GrinderMenu.java:91) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.inventory.AbstractContainerMenu.doClick(AbstractContainerMenu.java:394) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.inventory.AbstractContainerMenu.clicked(AbstractContainerMenu.java:294) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.client.multiplayer.MultiPlayerGameMode.handleInventoryMouseClick(MultiPlayerGameMode.java:431) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
@@ -84,7 +84,7 @@ Stacktrace:
 -- Click info --
 Details:
 	Menu Type: enhanced_minecraft:grinder_menu
-	Menu Class: com.MarMar.Enhanced_Minecraft.screen.menu.GrinderMenu
+	Menu Class: com.marmar.enhanced_playthrough.screen.menu.GrinderMenu
 	Slot Count: 39
 	Slot: 13
 	Button: 0
@@ -129,7 +129,7 @@ Stacktrace:
 
 -- Affected screen --
 Details:
-	Screen name: com.MarMar.Enhanced_Minecraft.screen.GrinderScreen
+	Screen name: com.marmar.enhanced_playthrough.screen.GrinderScreen
 Stacktrace:
 	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:89) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}

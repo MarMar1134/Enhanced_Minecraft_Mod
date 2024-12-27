@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "enhanced_playthrough:silver_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "enhanced_playthrough:silver_pickaxe"
+  },
+  "show_notification": true
+}

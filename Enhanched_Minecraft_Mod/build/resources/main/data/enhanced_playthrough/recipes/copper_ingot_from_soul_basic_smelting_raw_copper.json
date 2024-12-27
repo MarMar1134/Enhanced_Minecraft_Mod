@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:soul_basic_smelting",
+  "category": "soul_basic_smelt",
+  "cooktime": 200,
+  "group": "copper_ingot",
+  "ingredient": {
+    "item": "minecraft:raw_copper"
+  },
+  "output": {
+    "item": "minecraft:copper_ingot"
+  }
+}

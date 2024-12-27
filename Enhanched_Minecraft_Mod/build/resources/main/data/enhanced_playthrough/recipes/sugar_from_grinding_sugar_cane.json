@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "food",
+  "ingredient": {
+    "item": "minecraft:sugar_cane"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:sugar"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "misc",
+  "ingredient": {
+    "item": "enhanced_playthrough:cobalt"
+  },
+  "output": {
+    "item": "enhanced_playthrough:cobalt_dust"
+  }
+}

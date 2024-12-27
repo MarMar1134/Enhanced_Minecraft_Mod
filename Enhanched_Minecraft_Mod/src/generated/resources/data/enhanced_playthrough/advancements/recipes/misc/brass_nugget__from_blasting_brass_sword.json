@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brass_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_playthrough:brass_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:brass_nugget__from_blasting_brass_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_brass_sword",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:brass_nugget__from_blasting_brass_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}

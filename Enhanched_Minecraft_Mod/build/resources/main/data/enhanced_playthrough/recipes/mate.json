@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "enhanced_playthrough:empty_mate"
+    },
+    "I": {
+      "item": "enhanced_playthrough:grounded_yerba_mate"
+    }
+  },
+  "pattern": [
+    "I",
+    "A"
+  ],
+  "result": {
+    "item": "enhanced_playthrough:mate"
+  },
+  "show_notification": true
+}

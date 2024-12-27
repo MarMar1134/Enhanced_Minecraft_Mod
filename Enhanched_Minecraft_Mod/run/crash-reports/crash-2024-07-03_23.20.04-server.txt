@@ -7,8 +7,8 @@ Description: Ticking block entity
 java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at java.util.Arrays$ArrayList.get(Arrays.java:4165) ~[?:?] {}
 	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$getRecipeFor$2(RecipeManager.java:94) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178) ~[?:?] {}
 	at com.google.common.collect.CollectSpliterators$1WithCharacteristics.lambda$tryAdvance$0(CollectSpliterators.java:67) ~[guava-31.1-jre.jar%23106!/:?] {}
@@ -22,10 +22,10 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?] {}
 	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[?:?] {}
 	at net.minecraft.world.item.crafting.RecipeManager.getRecipeFor(RecipeManager.java:95) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.getCurrentRecipe(GemPolisherBlockEntity.java:182) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.hasRecipe(GemPolisherBlockEntity.java:165) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:111) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.getCurrentRecipe(GemPolisherBlockEntity.java:182) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.hasRecipe(GemPolisherBlockEntity.java:165) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:111) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
@@ -46,8 +46,8 @@ Thread: Server thread
 Stacktrace:
 	at java.util.Arrays$ArrayList.get(Arrays.java:4165) ~[?:?] {}
 	at net.minecraft.core.NonNullList.get(NonNullList.java:47) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:33) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.recipe.GemPolishingRecipe.matches(GemPolisherRecipe.java:17) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.item.crafting.RecipeManager.lambda$getRecipeFor$2(RecipeManager.java:94) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178) ~[?:?] {}
 	at com.google.common.collect.CollectSpliterators$1WithCharacteristics.lambda$tryAdvance$0(CollectSpliterators.java:67) ~[guava-31.1-jre.jar%23106!/:?] {}
@@ -61,17 +61,17 @@ Stacktrace:
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?] {}
 	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[?:?] {}
 	at net.minecraft.world.item.crafting.RecipeManager.getRecipeFor(RecipeManager.java:95) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.getCurrentRecipe(GemPolisherBlockEntity.java:182) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.hasRecipe(GemPolisherBlockEntity.java:165) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:111) ~[%23196!/:?] {re:classloading}
-	at com.MarMar.Enhanced_Minecraft.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.getCurrentRecipe(GemPolisherBlockEntity.java:182) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.hasRecipe(GemPolisherBlockEntity.java:165) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity.tick(GemPolisherBlockEntity.java:111) ~[%23196!/:?] {re:classloading}
+	at com.marmar.enhanced_playthrough.block.custom.GemPolisherBlock.lambda$getTicker$0(GemPolisherBlock.java:86) ~[%23196!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.tick(LevelChunk.java:689) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.tick(LevelChunk.java:782) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading}
 	at net.minecraft.world.level.Level.tickBlockEntities(Level.java:468) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:351) ~[forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
 -- Block entity being ticked --
 Details:
-	Name: enhanced_minecraft:gem_polisher // com.MarMar.Enhanced_Minecraft.block.entity.GemPolisherBlockEntity
+	Name: enhanced_minecraft:gem_polisher // com.marmar.enhanced_playthrough.block.entity.GemPolisherBlockEntity
 	Block: Block{enhanced_minecraft:gem_polisher}[facing=west]
 	Block location: World: (43,-40,61), Section: (at 11,8,13 in 2,-3,3; chunk contains blocks 32,-64,48 to 47,319,63), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
 	Block: Block{enhanced_minecraft:gem_polisher}[facing=west]

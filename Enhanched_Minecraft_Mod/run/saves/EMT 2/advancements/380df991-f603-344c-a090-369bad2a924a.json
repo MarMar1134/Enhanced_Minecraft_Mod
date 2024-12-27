@@ -72,12 +72,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/tools/gold_polisher": {
-    "criteria": {
-      "has_gold_ingot": "2024-07-18 18:02:06 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/golden_axe": {
     "criteria": {
       "has_gold_ingot": "2024-07-18 18:02:06 -0300"
@@ -153,72 +147,6 @@
   "minecraft:recipes/combat/golden_leggings": {
     "criteria": {
       "has_gold_ingot": "2024-07-18 18:02:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/silver_leggings": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/silver_chestplate": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/silver_axe": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/silver_shovel": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/silver_boots": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/silver_hoe": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/silver_helmet": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/silver_pickaxe": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_nugget": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/silver_sword": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/silver_polisher": {
-    "criteria": {
-      "has_silver_ingot": "2024-07-18 18:02:12 -0300"
     },
     "done": true
   },
@@ -312,12 +240,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/tools/iron_polisher": {
-    "criteria": {
-      "has_iron_ingot": "2024-07-18 18:05:59 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2024-07-18 18:05:59 -0300"
@@ -375,66 +297,6 @@
   "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
       "has_iron_ingot": "2024-07-18 18:05:59 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/rose_golden_pickaxe": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/rose_golden_axe": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/rose_golden_sword": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/rose_golden_hoe": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/rose_golden_leggings": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/rose_gold_nugget": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/rose_golden_chestplate": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/rose_golden_helmet": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/rose_golden_shovel": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/rose_golden_boots": {
-    "criteria": {
-      "has_rose_gold_ingot": "2024-07-18 18:35:17 -0300"
     },
     "done": true
   },
@@ -619,12 +481,6 @@
     "done": true
   },
   "minecraft:recipes/combat/diamond_helmet": {
-    "criteria": {
-      "has_diamond": "2024-07-19 11:40:23 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/diamond_polisher": {
     "criteria": {
       "has_diamond": "2024-07-19 11:40:23 -0300"
     },
@@ -888,12 +744,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/super_alloying_furnace": {
-    "criteria": {
-      "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/deepslate_tile_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2024-07-21 23:37:32 -0300"
@@ -1029,12 +879,6 @@
   "minecraft:recipes/misc/blast_furnace": {
     "criteria": {
       "has_furnace": "2024-07-22 16:40:41 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/food/empty_mate": {
-    "criteria": {
-      "has_cooked_zapallo": "2024-07-22 16:40:58 -0300"
     },
     "done": true
   },
@@ -1440,18 +1284,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/food/mate": {
-    "criteria": {
-      "has_yerba_mate": "2024-07-24 02:06:55 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/food/grounded_yerba_mate": {
-    "criteria": {
-      "has_yerba_mate": "2024-07-24 02:06:55 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/silence_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
       "has_smithing_trim_template": "2024-07-24 14:32:04 -0300"
@@ -1526,21 +1358,9 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/adobe_alloying_furnace": {
-    "criteria": {
-      "has_adobe_furnace": "2024-07-29 00:48:31 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/furnace": {
     "criteria": {
       "has_furnace": "2024-07-29 00:48:31 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/adobe_furnace": {
-    "criteria": {
-      "has_cobblestone": "2024-07-29 00:48:31 -0300"
     },
     "done": true
   },
@@ -1593,12 +1413,6 @@
     "done": true
   },
   "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
-    "criteria": {
-      "has_stone": "2024-07-29 01:07:55 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/stone_polisher": {
     "criteria": {
       "has_stone": "2024-07-29 01:07:55 -0300"
     },
@@ -1796,12 +1610,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/copper_nugget": {
-    "criteria": {
-      "has_copper_ingot": "2024-07-29 14:07:28 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/cut_copper_stairs_from_copper_block_stonecutting": {
     "criteria": {
       "has_copper_block": "2024-07-29 14:09:46 -0300"
@@ -1835,12 +1643,6 @@
   "minecraft:recipes/misc/copper_ingot": {
     "criteria": {
       "has_copper_block": "2024-07-29 14:17:35 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_nugget": {
-    "criteria": {
-      "has_tin_ingot": "2024-07-29 14:19:16 -0300"
     },
     "done": true
   },
@@ -1928,72 +1730,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/combat/bronze_chestplate": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/bronze_leggings": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nugget": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/bronze_boots": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/bronze_shovel": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/bronze_polisher": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/bronze_hoe": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/bronze_sword": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/bronze_pickaxe": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/bronze_helmet": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/bronze_axe": {
-    "criteria": {
-      "has_bronze_ingot": "2024-07-30 16:57:52 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/redstone_from_smelting_redstone_ore": {
     "criteria": {
       "has_redstone_ore": "2024-08-02 13:32:33 -0300"
@@ -2078,171 +1814,9 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/diamond_from_gem_polishing_raw_diamond": {
-    "criteria": {
-      "has_raw_diamond": "2024-08-03 11:22:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/emerald_from_gem_polishing_raw_emerald": {
-    "criteria": {
-      "has_raw_emerald": "2024-08-03 13:58:22 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2024-08-03 13:59:58 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper": {
-    "criteria": {
-      "has_raw_copper": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_raw_iron_and_coal": {
-    "criteria": {
-      "has_coal": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold": {
-    "criteria": {
-      "has_raw_copper": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_tin_and_raw_copper": {
-    "criteria": {
-      "has_raw_copper": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_iron_ingot": {
-    "criteria": {
-      "has_coal": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_iron_ingot_and_coal": {
-    "criteria": {
-      "has_coal": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/steel_ingot_from_super_alloying_coal_and_raw_iron": {
-    "criteria": {
-      "has_coal": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_raw_copper_and_raw_tin": {
-    "criteria": {
-      "has_raw_copper": "2024-08-05 12:41:08 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/grounded_yerba_mate_from_grinding_yerba_mate": {
-    "criteria": {
-      "has_yerba_mate": "2024-08-06 14:54:47 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/steel_pickaxe": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/steel_sword": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/steel_leggings": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/steel_shovel": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/steel_hoe": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/steel_boots": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/steel_chestplate": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/steel_axe": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/steel_helmet": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/steel_polisher": {
-    "criteria": {
-      "has_steel_ingot": "2024-08-06 15:12:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/saphire_from_gem_polishing_raw_saphire": {
-    "criteria": {
-      "has_raw_saphire": "2024-08-06 15:38:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/rubi_from_gem_polishing_raw_rubi": {
-    "criteria": {
-      "has_raw_rubi": "2024-08-06 15:38:31 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_raw_gold_and_raw_silver": {
-    "criteria": {
-      "has_raw_gold": "2024-08-09 12:15:23 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_raw_silver_and_raw_gold": {
-    "criteria": {
-      "has_raw_gold": "2024-08-09 12:15:23 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/sugar_from_grinding_sugar_cane": {
-    "criteria": {
-      "has_sugar_cane": "2024-08-11 18:29:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/pumpkin_flour_from_grinding_pumpkin": {
-    "criteria": {
-      "has_pumpkin": "2024-08-11 18:31:12 -0300"
     },
     "done": true
   },
@@ -2512,123 +2086,9 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/food/wheat_flour": {
-    "criteria": {
-      "has_wheat": "2024-08-23 16:11:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/wheat_flour_from_grinding_wheat": {
-    "criteria": {
-      "has_wheat": "2024-08-23 16:11:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/grinder": {
-    "criteria": {
-      "has_iron_ingot": "2024-08-23 16:12:11 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/gem_polisher": {
-    "criteria": {
-      "has_stone": "2024-08-23 16:13:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot": {
-    "criteria": {
-      "has_tin_ingot": "2024-08-26 10:06:30 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot": {
-    "criteria": {
-      "has_tin_ingot": "2024-08-26 10:06:30 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/lava_bucket": {
     "criteria": {
       "lava_bucket": "2024-08-26 10:10:11 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:survival/unity_makes_strengh": {
-    "criteria": {
-      "requirement": "2024-08-29 14:46:45 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_slab_from_stone_cutting_cobbeled_limestone": {
-    "criteria": {
-      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_wall_from_stone_cutting_cobbeled_limestone": {
-    "criteria": {
-      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_slab": {
-    "criteria": {
-      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_wall": {
-    "criteria": {
-      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_stair_from_stone_cutting_cobbeled_limestone": {
-    "criteria": {
-      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/cobbeled_limestone_stair": {
-    "criteria": {
-      "has_cobbeled_limestone": "2024-09-12 21:46:42 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_slab_from_stone_cutting_polished_stone": {
-    "criteria": {
-      "has_polished_stone": "2024-09-12 23:19:09 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_stair": {
-    "criteria": {
-      "has_polished_stone": "2024-09-12 23:19:09 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_stair_from_stone_cutting_polished_stone": {
-    "criteria": {
-      "has_polished_stone": "2024-09-12 23:19:09 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_wall_from_stone_cutting_polished_stone": {
-    "criteria": {
-      "has_polished_stone": "2024-09-12 23:19:09 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_slab": {
-    "criteria": {
-      "has_polished_stone": "2024-09-12 23:19:09 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_wall": {
-    "criteria": {
-      "has_polished_stone": "2024-09-12 23:19:09 -0300"
     },
     "done": true
   },
@@ -2788,162 +2248,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_slab_from_stone_cutting_polished_limestone": {
-    "criteria": {
-      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_stair": {
-    "criteria": {
-      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_slab": {
-    "criteria": {
-      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_wall": {
-    "criteria": {
-      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_stair_from_stone_cutting_polished_limestone": {
-    "criteria": {
-      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_wall_from_stone_cutting_polished_limestone": {
-    "criteria": {
-      "has_polished_limestone": "2024-09-12 23:20:06 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_stair_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_stair_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_stair_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_slab_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_slab_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_slab_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_stair": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_slab": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_wall_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_limestone_wall_from_stone_cutting_limestone": {
-    "criteria": {
-      "has_limestone": "2024-09-12 23:21:19 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_wall_from_stone_cutting_stone": {
-    "criteria": {
-      "has_stone": "2024-09-12 23:21:22 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone": {
-    "criteria": {
-      "has_stone": "2024-09-12 23:21:22 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_from_stone_cutting_stone": {
-    "criteria": {
-      "has_stone": "2024-09-12 23:21:22 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_slab_from_stone_cutting_stone": {
-    "criteria": {
-      "has_stone": "2024-09-12 23:21:22 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/polished_stone_stair_from_stone_cutting_stone": {
-    "criteria": {
-      "has_stone": "2024-09-12 23:21:22 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:survival/mighty_bronze": {
-    "criteria": {
-      "requirement": "2024-09-12 23:42:33 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
     "criteria": {
       "has_coal_ore": "2024-09-13 00:00:33 -0300"
@@ -2977,12 +2281,6 @@
   "minecraft:recipes/decorations/pink_banner": {
     "criteria": {
       "has_pink_wool": "2024-09-13 10:47:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/string_from_grinding": {
-    "criteria": {
-      "TagKey[minecraft:item / minecraft:wool]": "2024-09-13 10:47:56 -0300"
     },
     "done": true
   },
@@ -3022,12 +2320,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/magenta_dye_from_grinding_allium": {
-    "criteria": {
-      "has_allium": "2024-09-13 10:48:41 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/magenta_dye_from_allium": {
     "criteria": {
       "has_allium": "2024-09-13 10:48:41 -0300"
@@ -3040,19 +2332,7 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/pink_dye_from_grinding_pink_petals": {
-    "criteria": {
-      "has_pink_petals": "2024-09-13 10:48:42 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/black_dye_from_wither_rose": {
-    "criteria": {
-      "has_wither_rose": "2024-09-13 10:48:44 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/black_dye_from_grinding_wither_rose": {
     "criteria": {
       "has_wither_rose": "2024-09-13 10:48:44 -0300"
     },
@@ -3130,42 +2410,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_wall_from_stone_cutting_limestone_brick": {
-    "criteria": {
-      "has_limestone_brick": "2024-09-13 10:51:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_slab": {
-    "criteria": {
-      "has_limestone_brick": "2024-09-13 10:51:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_wall": {
-    "criteria": {
-      "has_limestone_brick": "2024-09-13 10:51:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_stair_from_stone_cutting_limestone_brick": {
-    "criteria": {
-      "has_limestone_brick": "2024-09-13 10:51:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_stair": {
-    "criteria": {
-      "has_limestone_brick": "2024-09-13 10:51:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/limestone_brick_slab_from_stone_cutting_limestone_brick": {
-    "criteria": {
-      "has_limestone_brick": "2024-09-13 10:51:21 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/fletching_table": {
     "criteria": {
       "has_flint": "2024-09-16 20:11:41 -0300"
@@ -3175,12 +2419,6 @@
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_flint": "2024-09-16 20:11:41 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/white_dye_from_grinding_bone_meal": {
-    "criteria": {
-      "has_bone_meal": "2024-09-16 20:12:39 -0300"
     },
     "done": true
   },
@@ -3298,72 +2536,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/walnut_button": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_slab": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/walnut_pressure_plate": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/stripped_walnut_wood": {
-    "criteria": {
-      "has_stripped_walnut_log": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_wood": {
-    "criteria": {
-      "has_walnut_log": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_planks": {
-    "criteria": {
-      "has_stripped_walnut_wood": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_stair": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_trapdoor": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_fencegate": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_fence": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/walnut_door": {
-    "criteria": {
-      "has_walnut_planks": "2024-09-16 21:28:07 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_smelts_to_glass": "2024-09-17 17:26:12 -0300"
@@ -3385,18 +2557,6 @@
   "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
     "criteria": {
       "has_oxeye_daisy": "2024-09-17 17:29:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/light_gray_dye_from_grinding_oxeye_daisy": {
-    "criteria": {
-      "has_oxeye_daisy": "2024-09-17 17:29:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/yellow_dye_from_grinding_sunflower": {
-    "criteria": {
-      "has_sunflower": "2024-09-17 17:31:23 -0300"
     },
     "done": true
   },
@@ -3442,186 +2602,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/copper_ingot_from_basic_smelting_raw_copper": {
-    "criteria": {
-      "has_raw_copper": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_nugget__from_campfire_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/steel_ingot_from_alloying_raw_iron_and_coal": {
-    "criteria": {
-      "has_coal": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_ingot__from_blasting_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/steel_ingot_from_alloying_coal_and_raw_iron": {
-    "criteria": {
-      "has_coal": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronze_ingot_from_alloying_raw_copper_and_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronze_ingot_from_alloying_raw_tin_and_raw_copper": {
-    "criteria": {
-      "has_raw_tin": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/apple_wood": {
-    "criteria": {
-      "has_apple_log": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/apple_planks": {
-    "criteria": {
-      "has_apple_log": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tin_ingot_from_basic_smelting_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/copper_nugget__from_campfire_raw_copper": {
-    "criteria": {
-      "has_raw_copper": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_ingot__from_smelting_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-11-23 16:03:56 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:survival/root": {
-    "criteria": {
-      "get_materials": "2024-11-23 16:04:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_gold_ingot_and_copper_ingot": {
-    "criteria": {
-      "has_copper_ingot": "2024-11-24 10:29:46 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/rose_gold_ingot_from_super_alloying_copper_ingot_and_gold_ingot": {
-    "criteria": {
-      "has_copper_ingot": "2024-11-24 10:29:46 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_ingot": {
-    "criteria": {
-      "has_bronze_ingot": "2024-11-24 12:35:51 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_block": {
-    "criteria": {
-      "has_bronze_ingot": "2024-11-24 12:35:51 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_ingot": {
-    "criteria": {
-      "has_tin_ingot": "2024-11-24 15:19:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_block": {
-    "criteria": {
-      "has_tin_ingot": "2024-11-24 15:19:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_block": {
-    "criteria": {
-      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_ingot": {
-    "criteria": {
-      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_silver_ingot_and_gold_ingot": {
-    "criteria": {
-      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/green_gold_ingot_from_super_alloying_gold_ingot_and_silver_ingot": {
-    "criteria": {
-      "has_silver_ingot": "2024-11-24 15:19:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_ingot__from_smelting_tin_ore": {
-    "criteria": {
-      "has_tin_ore": "2024-11-24 15:19:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/tin_ingot__from_blasting_tin_ore": {
-    "criteria": {
-      "has_tin_ore": "2024-11-24 15:19:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tin_ingot_from_basic_smelting_tin_ore": {
-    "criteria": {
-      "has_tin_ore": "2024-11-24 15:19:36 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_ingot__from_smelting_raw_silver": {
-    "criteria": {
-      "has_raw_silver": "2024-11-24 15:19:39 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_ingot__from_blasting_raw_silver": {
-    "criteria": {
-      "has_raw_silver": "2024-11-24 15:19:39 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_ingot__from_smelting_silver_ore": {
-    "criteria": {
-      "has_silver_ore": "2024-11-24 15:19:50 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/silver_ingot__from_blasting_silver_ore": {
-    "criteria": {
-      "has_silver_ore": "2024-11-24 15:19:50 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/iron_ingot_from_iron_block": {
     "criteria": {
       "has_iron_block": "2024-11-24 15:22:13 -0300"
@@ -3640,279 +2620,9 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/light_gray_dye_from_grinding_azure_bluet": {
-    "criteria": {
-      "has_azure_bluet": "2024-11-27 13:14:23 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/cooked_corn_from_basic_smelting_corn": {
-    "criteria": {
-      "has_corn": "2024-11-27 13:20:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/food/cooked_corn__from_smoking_corn": {
-    "criteria": {
-      "has_corn": "2024-11-27 13:20:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/food/cooked_corn__from_smelting_corn": {
-    "criteria": {
-      "has_corn": "2024-11-27 13:20:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/food/cooked_corn__from_campfire_corn": {
-    "criteria": {
-      "has_corn": "2024-11-27 13:20:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nugget__from_blasting_bronze_axe": {
-    "criteria": {
-      "has_bronze_axe": "2024-11-29 14:38:47 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nugget__from_smelting_bronze_axe": {
-    "criteria": {
-      "has_bronze_axe": "2024-11-29 14:38:47 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/soul_mud_brick_slab": {
-    "criteria": {
-      "has_soul_mud_brick": "2024-11-29 18:59:50 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/soul_mud_brick_slab_from_stone_cutting_soul_mud_brick": {
-    "criteria": {
-      "has_soul_mud_brick": "2024-11-29 18:59:50 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/soul_mud_brick_stair_from_stone_cutting_soul_mud_brick": {
-    "criteria": {
-      "has_soul_mud_brick": "2024-11-29 18:59:50 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/soul_mud_brick_stair": {
-    "criteria": {
-      "has_soul_mud_brick": "2024-11-29 18:59:50 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/soul_mud_brick_wall": {
-    "criteria": {
-      "has_soul_mud_brick": "2024-11-29 18:59:50 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/building_blocks/soul_mud_brick_wall_from_stone_cutting_soul_mud_brick": {
-    "criteria": {
-      "has_soul_mud_brick": "2024-11-29 18:59:50 -0300"
-    },
-    "done": true
-  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2024-12-02 14:57:30 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_block": {
-    "criteria": {
-      "has_steel_ingot": "2024-12-02 14:57:38 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/steel_ingot": {
-    "criteria": {
-      "has_steel_ingot": "2024-12-02 14:57:38 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/brass_ingot_from_super_alloying_zinc_ingot_and_copper_ingot": {
-    "criteria": {
-      "has_copper_ingot": "2024-12-02 14:58:43 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/brass_ingot_from_super_alloying_copper_ingot_and_zinc_ingot": {
-    "criteria": {
-      "has_copper_ingot": "2024-12-02 14:58:43 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_sword": {
-    "criteria": {
-      "has_brass_sword": "2024-12-02 15:00:27 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_sword": {
-    "criteria": {
-      "has_brass_sword": "2024-12-02 15:00:27 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_chestplate": {
-    "criteria": {
-      "has_brass_chestplate": "2024-12-02 15:00:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_chestplate": {
-    "criteria": {
-      "has_brass_chestplate": "2024-12-02 15:00:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_helmet": {
-    "criteria": {
-      "has_brass_helmet": "2024-12-02 15:00:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_helmet": {
-    "criteria": {
-      "has_brass_helmet": "2024-12-02 15:00:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_leggings": {
-    "criteria": {
-      "has_brass_leggings": "2024-12-02 15:00:30 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_leggings": {
-    "criteria": {
-      "has_brass_leggings": "2024-12-02 15:00:30 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_boots": {
-    "criteria": {
-      "has_brass_boots": "2024-12-02 15:00:37 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_boots": {
-    "criteria": {
-      "has_brass_boots": "2024-12-02 15:00:37 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_polisher": {
-    "criteria": {
-      "has_brass_polisher": "2024-12-02 15:00:59 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_polisher": {
-    "criteria": {
-      "has_brass_polisher": "2024-12-02 15:00:59 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_pickaxe": {
-    "criteria": {
-      "has_brass_pickaxe": "2024-12-02 15:02:01 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_pickaxe": {
-    "criteria": {
-      "has_brass_pickaxe": "2024-12-02 15:02:01 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_ingot__from_smelting_zinc_ore": {
-    "criteria": {
-      "has_zinc_ore": "2024-12-02 15:02:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/zinc_ingot_from_basic_smelting_zinc_ore": {
-    "criteria": {
-      "has_zinc_ore": "2024-12-02 15:02:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_ingot__from_blasting_zinc_ore": {
-    "criteria": {
-      "has_zinc_ore": "2024-12-02 15:02:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_nugget__from_campfire_zinc_ore": {
-    "criteria": {
-      "has_zinc_ore": "2024-12-02 15:02:07 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/brass_ingot_from_alloying_raw_copper_and_raw_zinc": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/brass_ingot_from_super_alloying_raw_copper_and_raw_zinc": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_ingot__from_smelting_raw_zinc": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_ingot__from_blasting_raw_zinc": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/zinc_ingot_from_basic_smelting_raw_zinc": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/brass_ingot_from_super_alloying_raw_zinc_and_raw_copper": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/brass_ingot_from_alloying_raw_zinc_and_raw_copper": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-02 15:03:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nugget__from_smelting_bronze_pickaxe": {
-    "criteria": {
-      "has_bronze_pickaxe": "2024-12-02 15:04:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronze_nugget__from_blasting_bronze_pickaxe": {
-    "criteria": {
-      "has_bronze_pickaxe": "2024-12-02 15:04:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/copper_ingot_from_basic_smelting_copper_ore": {
-    "criteria": {
-      "has_copper_ore": "2024-12-02 15:04:43 -0300"
     },
     "done": true
   },
@@ -3928,30 +2638,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/zinc_ingot__from_blasting_nether_zinc_ore": {
-    "criteria": {
-      "has_nether_zinc_ore": "2024-12-02 15:04:55 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_nugget__from_campfire_nether_zinc_ore": {
-    "criteria": {
-      "has_nether_zinc_ore": "2024-12-02 15:04:55 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/zinc_ingot_from_basic_smelting_nether_zinc_ore": {
-    "criteria": {
-      "has_nether_zinc_ore": "2024-12-02 15:04:55 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_ingot__from_smelting_nether_zinc_ore": {
-    "criteria": {
-      "has_nether_zinc_ore": "2024-12-02 15:04:55 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/gold_ingot_from_nuggets": {
     "criteria": {
       "has_gold_nugget": "2024-12-02 15:05:32 -0300"
@@ -3964,211 +2650,7 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/copper_ingot_from_soul_basic_smelting_raw_copper": {
-    "criteria": {
-      "has_raw_copper": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/zinc_ingot_from_soul_basic_smelting_zinc_ore": {
-    "criteria": {
-      "has_zinc_ore": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tin_ingot_from_soul_basic_smelting_tin_ore": {
-    "criteria": {
-      "has_tin_ore": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_pickaxe_from_smithing_brass_pickaxe_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_pickaxe": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/zinc_ingot_from_soul_basic_smelting_raw_zinc": {
-    "criteria": {
-      "has_raw_zinc": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tin_ingot_from_soul_basic_smelting_raw_tin": {
-    "criteria": {
-      "has_raw_tin": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_pickaxe_from_smithing_bronze_pickaxe_with_brass_ingot": {
-    "criteria": {
-      "has_bronze_pickaxe": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/copper_ingot_from_soul_basic_smelting_copper_ore": {
-    "criteria": {
-      "has_copper_ore": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/zinc_ingot_from_soul_basic_smelting_nether_zinc_ore": {
-    "criteria": {
-      "has_nether_zinc_ore": "2024-12-04 15:50:24 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronzium_block": {
-    "criteria": {
-      "has_bronzium_ingot": "2024-12-04 15:52:51 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronzium_ingot": {
-    "criteria": {
-      "has_the_recipe": "2024-12-04 15:52:51 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/bronzium_nugget": {
-    "criteria": {
-      "has_bronzium_ingot": "2024-12-04 15:52:51 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_ingot": {
-    "criteria": {
-      "has_the_recipe": "2024-12-04 16:03:09 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/brass_leggings": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_block": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/brass_helmet": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/brass_axe": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/brass_pickaxe": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/brass_chestplate": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/brass_boots": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/brass_sword": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/brass_shovel": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/brass_hoe": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/tools/brass_polisher": {
-    "criteria": {
-      "has_brass_ingot": "2024-12-04 16:03:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_helmet_from_smithing_brass_helmet_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_helmet": "2024-12-04 16:04:20 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_boots_from_smithing_brass_boots_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_boots": "2024-12-04 16:04:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_chestplate_from_smithing_brass_chestplate_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_chestplate": "2024-12-04 16:04:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_leggings_from_smithing_brass_leggings_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_leggings": "2024-12-04 16:04:21 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_helmet_from_smithing_bronze_helmet_with_brass_ingot": {
-    "criteria": {
-      "has_bronze_helmet": "2024-12-04 16:04:31 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_chestplate_from_smithing_bronze_chestplate_with_brass_ingot": {
-    "criteria": {
-      "has_bronze_chestplate": "2024-12-04 16:04:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_leggings_from_smithing_bronze_leggings_with_brass_ingot": {
-    "criteria": {
-      "has_bronze_leggings": "2024-12-04 16:04:33 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_boots_from_smithing_bronze_boots_with_brass_ingot": {
-    "criteria": {
-      "has_bronze_boots": "2024-12-04 16:04:34 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/yellow_dye_from_dandelion": {
-    "criteria": {
-      "has_dandelion": "2024-12-04 16:06:12 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/yellow_dye_from_grinding_dandelion": {
     "criteria": {
       "has_dandelion": "2024-12-04 16:06:12 -0300"
     },
@@ -4177,42 +2659,6 @@
   "minecraft:husbandry/make_a_sign_glow": {
     "criteria": {
       "make_a_sign_glow": "2024-12-04 16:12:35 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_nugget": {
-    "criteria": {
-      "has_zinc_ingot": "2024-12-04 17:02:16 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_ingot": {
-    "criteria": {
-      "has_zinc_ingot": "2024-12-04 17:02:16 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/zinc_block": {
-    "criteria": {
-      "has_zinc_ingot": "2024-12-04 17:02:16 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_ingot_from_super_alloying_bronze_ingot_and_brass_ingot": {
-    "criteria": {
-      "has_bronze_ingot": "2024-12-06 16:20:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/combat/bronzium_upgrade_smithing_template": {
-    "criteria": {
-      "has_bronzium_upgrade_smithing_template": "2024-12-06 16:20:52 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_ingot_from_super_alloying_brass_ingot_and_bronze_ingot": {
-    "criteria": {
-      "has_bronze_ingot": "2024-12-06 16:20:52 -0300"
     },
     "done": true
   },
@@ -4246,106 +2692,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/misc/copper_ingot__from_smelting_nether_copper_ore": {
-    "criteria": {
-      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/copper_ingot_from_basic_smelting_nether_copper_ore": {
-    "criteria": {
-      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/copper_ingot__from_blasting_nether_copper_ore": {
-    "criteria": {
-      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/copper_ingot_from_soul_basic_smelting_nether_copper_ore": {
-    "criteria": {
-      "has_nether_copper_ore": "2024-12-19 14:11:10 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_sword_from_smithing_brass_sword_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_sword": "2024-12-19 14:28:03 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_axe": {
-    "criteria": {
-      "has_brass_axe": "2024-12-19 14:28:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_axe_from_smithing_brass_axe_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_axe": "2024-12-19 14:28:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_axe": {
-    "criteria": {
-      "has_brass_axe": "2024-12-19 14:28:13 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_shovel": {
-    "criteria": {
-      "has_brass_shovel": "2024-12-19 14:28:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_shovel": {
-    "criteria": {
-      "has_brass_shovel": "2024-12-19 14:28:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_shovel_from_smithing_brass_shovel_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_shovel": "2024-12-19 14:28:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_blasting_brass_hoe": {
-    "criteria": {
-      "has_brass_hoe": "2024-12-19 14:28:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/misc/brass_nugget__from_smelting_brass_hoe": {
-    "criteria": {
-      "has_brass_hoe": "2024-12-19 14:28:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/bronzium_hoe_from_smithing_brass_hoe_with_bronze_ingot": {
-    "criteria": {
-      "has_brass_hoe": "2024-12-19 14:28:14 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:gems/get_all_gems": {
-    "criteria": {
-      "diamond": "2024-12-23 12:30:58 -0300",
-      "garnet": "2024-12-22 21:01:01 -0300",
-      "emerald": "2024-12-20 16:12:54 -0300",
-      "sapphire": "2024-12-23 12:29:55 -0300",
-      "rubi": "2024-12-23 12:30:26 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:gems/polish_emerald": {
-    "criteria": {
-      "requirement": "2024-12-20 16:12:54 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/blue_dye": {
     "criteria": {
       "has_lapis_lazuli": "2024-12-22 20:57:53 -0300"
@@ -4353,12 +2699,6 @@
     "done": true
   },
   "minecraft:recipes/building_blocks/lapis_block": {
-    "criteria": {
-      "has_lapis_lazuli": "2024-12-22 20:57:53 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:recipes/blue_dye_from_grinding_lapis_lazuli": {
     "criteria": {
       "has_lapis_lazuli": "2024-12-22 20:57:53 -0300"
     },
@@ -4478,33 +2818,411 @@
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_garnet": {
+  "enhanced_playthrough:recipes/tools/stone_polisher": {
     "criteria": {
-      "requirement": "2024-12-22 21:01:01 -0300"
+      "has_stone": "2024-12-27 12:21:55 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_rubi": {
+  "enhanced_playthrough:gems/polish_diamond": {
     "criteria": {
-      "requirement": "2024-12-23 12:30:26 -0300"
+      "requirement": "2024-12-27 12:21:55 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:gems/root": {
+  "enhanced_playthrough:recipes/building_blocks/polished_stone_stair_from_stone_cutting_stone": {
     "criteria": {
-      "get_materials": "2024-12-23 12:29:33 -0300"
+      "has_stone": "2024-12-27 12:21:55 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_sapphire": {
+  "enhanced_playthrough:recipes/tools/diamond_polisher": {
     "criteria": {
-      "requirement": "2024-12-23 12:29:55 -0300"
+      "has_diamond": "2024-12-27 12:21:55 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_diamond": {
+  "enhanced_playthrough:gems/polish_emerald": {
     "criteria": {
-      "requirement": "2024-12-23 12:30:58 -0300"
+      "requirement": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/polished_stone_wall_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/polished_stone": {
+    "criteria": {
+      "has_stone": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/gem_polisher": {
+    "criteria": {
+      "has_stone": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/polished_stone_slab_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/polished_stone_from_stone_cutting_stone": {
+    "criteria": {
+      "has_stone": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/blue_dye_from_grinding_lapis_lazuli": {
+    "criteria": {
+      "has_lapis_lazuli": "2024-12-27 12:21:55 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/soul_mud_brick_stair_from_stone_cutting_soul_mud_brick": {
+    "criteria": {
+      "has_soul_mud_brick": "2024-12-27 12:24:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/soul_mud_brick_slab_from_stone_cutting_soul_mud_brick": {
+    "criteria": {
+      "has_soul_mud_brick": "2024-12-27 12:24:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/soul_mud_brick_wall": {
+    "criteria": {
+      "has_soul_mud_brick": "2024-12-27 12:24:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/soul_mud_brick_slab": {
+    "criteria": {
+      "has_soul_mud_brick": "2024-12-27 12:24:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/soul_mud_brick_stair": {
+    "criteria": {
+      "has_soul_mud_brick": "2024-12-27 12:24:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/soul_mud_brick_wall_from_stone_cutting_soul_mud_brick": {
+    "criteria": {
+      "has_soul_mud_brick": "2024-12-27 12:24:32 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronze_ingot_from_super_alloying_tin_ingot_and_copper_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-27 12:27:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/tin_block": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-27 12:27:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/tin_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-27 12:27:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/tin_nugget": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-27 12:27:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronze_ingot_from_super_alloying_copper_ingot_and_tin_ingot": {
+    "criteria": {
+      "has_tin_ingot": "2024-12-27 12:27:06 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/rose_gold_ingot_from_super_alloying_gold_ingot_and_copper_ingot": {
+    "criteria": {
+      "has_copper_ingot": "2024-12-27 12:27:16 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/rose_gold_ingot_from_super_alloying_copper_ingot_and_gold_ingot": {
+    "criteria": {
+      "has_copper_ingot": "2024-12-27 12:27:16 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/brass_ingot_from_super_alloying_copper_ingot_and_zinc_ingot": {
+    "criteria": {
+      "has_copper_ingot": "2024-12-27 12:27:16 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/brass_ingot_from_super_alloying_zinc_ingot_and_copper_ingot": {
+    "criteria": {
+      "has_copper_ingot": "2024-12-27 12:27:16 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/copper_nugget": {
+    "criteria": {
+      "has_copper_ingot": "2024-12-27 12:27:16 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/steel_ingot_from_super_alloying_iron_ingot_and_coal": {
+    "criteria": {
+      "has_coal": "2024-12-27 12:27:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/steel_ingot_from_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-12-27 12:27:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/steel_ingot_from_super_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-12-27 12:27:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/steel_ingot_from_super_alloying_coal_and_raw_iron": {
+    "criteria": {
+      "has_coal": "2024-12-27 12:27:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/steel_ingot_from_alloying_raw_iron_and_coal": {
+    "criteria": {
+      "has_coal": "2024-12-27 12:27:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/steel_ingot_from_super_alloying_coal_and_iron_ingot": {
+    "criteria": {
+      "has_coal": "2024-12-27 12:27:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:survival/unity_makes_strength": {
+    "criteria": {
+      "requirement": "2024-12-27 12:38:23 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronze_ingot_from_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tin_ingot_from_soul_basic_smelting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronze_ingot_from_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/adobe_alloying_furnace": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronze_ingot_from_super_alloying_raw_tin_and_raw_copper": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronze_ingot_from_super_alloying_raw_copper_and_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/tin_ingot__from_blasting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tin_ingot_from_basic_smelting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/tin_nugget__from_campfire_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/tin_ingot__from_smelting_raw_tin": {
+    "criteria": {
+      "has_raw_tin": "2024-12-27 12:39:13 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/copper_nugget__from_campfire_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/rose_gold_ingot_from_super_alloying_raw_gold_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/copper_ingot_from_basic_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/brass_ingot_from_alloying_raw_copper_and_raw_zinc": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/rose_gold_ingot_from_super_alloying_raw_copper_and_raw_gold": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/brass_ingot_from_super_alloying_raw_zinc_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/brass_ingot_from_alloying_raw_zinc_and_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/brass_ingot_from_super_alloying_raw_copper_and_raw_zinc": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/copper_ingot_from_soul_basic_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2024-12-27 12:39:17 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/combat/bronze_helmet": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tools/bronze_shovel": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/combat/bronze_boots": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/bronze_nugget": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tools/bronze_hoe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tools/bronze_polisher": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tools/bronze_axe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/combat/bronze_sword": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/combat/bronze_leggings": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/bronze_block": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/bronze_ingot": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/combat/bronze_chestplate": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronzium_ingot_from_super_alloying_brass_ingot_and_bronze_ingot": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/tools/bronze_pickaxe": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/bronzium_ingot_from_super_alloying_bronze_ingot_and_brass_ingot": {
+    "criteria": {
+      "has_bronze_ingot": "2024-12-27 12:39:53 -0300"
     },
     "done": true
   },

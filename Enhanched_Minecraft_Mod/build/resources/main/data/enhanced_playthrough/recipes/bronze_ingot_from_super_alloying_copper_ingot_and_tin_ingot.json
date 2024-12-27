@@ -1,0 +1,18 @@
+{
+  "type": "enhanced_playthrough:super_ore_alloying",
+  "alloytime": 100,
+  "category": "super_ore_alloy",
+  "group": "bronze_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "enhanced_playthrough:tin_ingot"
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "enhanced_playthrough:bronze_ingot"
+  }
+}

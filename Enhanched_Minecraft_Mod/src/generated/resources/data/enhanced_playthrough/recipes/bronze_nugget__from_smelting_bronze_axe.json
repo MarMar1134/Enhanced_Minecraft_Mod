@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "bronze_nugget",
+  "ingredient": {
+    "item": "enhanced_playthrough:bronze_axe"
+  },
+  "result": "enhanced_playthrough:bronze_nugget"
+}

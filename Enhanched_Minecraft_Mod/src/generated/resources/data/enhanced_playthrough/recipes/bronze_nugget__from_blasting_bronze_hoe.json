@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "bronze_nugget",
+  "ingredient": {
+    "item": "enhanced_playthrough:bronze_hoe"
+  },
+  "result": "enhanced_playthrough:bronze_nugget"
+}

@@ -6,10 +6,10 @@
       "item": "minecraft:cobblestone"
     },
     "F": {
-      "item": "enhanced_minecraft:adobe_furnace"
+      "item": "enhanced_playthrough:adobe_furnace"
     },
     "I": {
-      "item": "enhanced_minecraft:bronze_ingot"
+      "item": "enhanced_playthrough:bronze_ingot"
     }
   },
   "pattern": [

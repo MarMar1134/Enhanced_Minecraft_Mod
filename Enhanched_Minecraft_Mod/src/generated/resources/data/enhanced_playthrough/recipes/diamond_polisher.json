@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " I",
+    "# "
+  ],
+  "result": {
+    "item": "enhanced_playthrough:diamond_polisher"
+  },
+  "show_notification": true
+}

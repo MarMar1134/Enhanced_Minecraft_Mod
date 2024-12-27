@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rabbit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:rabbit"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "enhanced_playthrough:cooked_rabbit_from_soul_basic_smelting_rabbit"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_rabbit",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "enhanced_playthrough:cooked_rabbit_from_soul_basic_smelting_rabbit"
+    ]
+  },
+  "sends_telemetry_event": false
+}

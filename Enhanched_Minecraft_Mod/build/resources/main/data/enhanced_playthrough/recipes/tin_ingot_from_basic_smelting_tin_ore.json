@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:basic_smelting",
+  "category": "basic_smelt",
+  "cooktime": 300,
+  "group": "tin_ingot",
+  "ingredient": {
+    "item": "enhanced_playthrough:tin_ore"
+  },
+  "output": {
+    "item": "enhanced_playthrough:tin_ingot"
+  }
+}

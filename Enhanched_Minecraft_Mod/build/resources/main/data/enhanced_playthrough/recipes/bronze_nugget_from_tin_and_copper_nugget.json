@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhanced_playthrough:copper_nugget"
+    },
+    {
+      "item": "enhanced_playthrough:tin_nugget"
+    }
+  ],
+  "result": {
+    "item": "enhanced_playthrough:bronze_nugget"
+  }
+}

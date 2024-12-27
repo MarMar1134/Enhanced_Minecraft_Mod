@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:cornflower"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:blue_dye"
+  }
+}

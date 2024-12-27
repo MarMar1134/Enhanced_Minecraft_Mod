@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "enhanced_playthrough:rose_gold_ingot"
+    }
+  },
+  "pattern": [
+    "I",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "enhanced_playthrough:rose_golden_shovel"
+  },
+  "show_notification": true
+}

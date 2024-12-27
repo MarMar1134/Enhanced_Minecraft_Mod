@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:poppy"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:red_dye"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "food",
+  "ingredient": {
+    "item": "enhanced_playthrough:yerba_mate"
+  },
+  "output": {
+    "count": 2,
+    "item": "enhanced_playthrough:grounded_yerba_mate"
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:block/orientable_with_bottom",
+	"textures": {
+		"front": "enhanced_playthrough:block/gem_polisher_front",
+		"side": "enhanced_playthrough:block/gem_polisher_side",
+		"top": "enhanced_playthrough:block/gem_polisher_top",
+		"bottom": "enhanced_playthrough:block/gem_polisher_bottom"
+	}
+}

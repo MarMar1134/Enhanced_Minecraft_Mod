@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "silver_nugget",
+  "ingredient": {
+    "item": "enhanced_playthrough:silver_shovel"
+  },
+  "result": "enhanced_playthrough:silver_nugget"
+}

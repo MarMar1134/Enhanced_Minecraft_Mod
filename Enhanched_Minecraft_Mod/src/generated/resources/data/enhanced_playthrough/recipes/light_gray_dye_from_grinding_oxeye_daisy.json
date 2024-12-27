@@ -1,0 +1,12 @@
+{
+  "type": "enhanced_playthrough:grinding",
+  "category": "grind",
+  "group": "dyes",
+  "ingredient": {
+    "item": "minecraft:oxeye_daisy"
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:light_gray_dye"
+  }
+}

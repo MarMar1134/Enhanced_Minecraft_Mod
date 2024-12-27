@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "silver_nugget",
+  "ingredient": {
+    "item": "enhanced_playthrough:silver_pickaxe"
+  },
+  "result": "enhanced_playthrough:silver_nugget"
+}

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_river",
-  "features": "enhanced_minecraft:gravel_mud_placed",
-  "step": "lakes"
-}

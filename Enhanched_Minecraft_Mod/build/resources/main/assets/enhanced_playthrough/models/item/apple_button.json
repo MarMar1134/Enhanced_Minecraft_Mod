@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "enhanced_playthrough:block/apple_planks"
+  }
+}
