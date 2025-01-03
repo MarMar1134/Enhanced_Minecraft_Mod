@@ -102,10 +102,10 @@ public class EcuatorianLanguageProvider extends AbstractModLanguageProvider{
 
         //Soul
         addBlock(ModBlocks.SOUL_MUD, "Barro de almas");
-        addBlock(ModBlocks.SOUL_MUD_BRICKS, "Ladrillos de barro de almas");
-        addBlock(ModBlocks.SOUL_MUD_BRICK_SLAB, "Baldosa de ladrillos de barro de almas");
-        addBlock(ModBlocks.SOUL_MUD_BRICK_STAIRS, "Escaleras de ladrillos de barro de almas");
-        addBlock(ModBlocks.SOUL_MUD_BRICK_WALL, "Pared de ladrillos de barro de almas");
+        addBlock(ModBlocks.SOUL_MUD_BRICKS, "Ladrillos de adobe de almas");
+        addBlock(ModBlocks.SOUL_MUD_BRICK_SLAB, "Baldosa de ladrillos de adobe de almas");
+        addBlock(ModBlocks.SOUL_MUD_BRICK_STAIRS, "Escaleras de ladrillos de adobe de almas");
+        addBlock(ModBlocks.SOUL_MUD_BRICK_WALL, "Pared de ladrillos de adobe de almas");
 
         //Ores
         addBlock(ModBlocks.TIN_ORE, "Mineral de estaño");
@@ -214,6 +214,7 @@ public class EcuatorianLanguageProvider extends AbstractModLanguageProvider{
         addItem(ModItems.GREEN_GOLD_INGOT, "Lingote de oro verde");
         addItem(ModItems.GREEN_GOLD_NUGGET, "Pepita de oro verde");
         addItem(ModItems.STEEL_INGOT, "Lingote de acero");
+        addItem(ModItems.MUD_BRICK, "Ladrillo de adobe");
 
         //Silver equipment
         addItem(ModItems.SILVER_SWORD, "Espada de plata");

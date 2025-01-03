@@ -214,6 +214,7 @@ public class EnglishLanguageProvider extends AbstractModLanguageProvider {
             addItem(ModItems.GREEN_GOLD_INGOT, "Green gold ingot");
             addItem(ModItems.GREEN_GOLD_NUGGET, "Green gold nugget");
             addItem(ModItems.STEEL_INGOT, "Steel ingot");
+            addItem(ModItems.MUD_BRICK, "Mud brick");
 
             //Silver equipment
             addItem(ModItems.SILVER_SWORD, "Silver sword");

@@ -176,8 +176,8 @@ public class ChileanLanguageProvider extends AbstractModLanguageProvider{
         addBlock(ModBlocks.WALNUT_PRESSURE_PLATE, "Placa de presión de nogal");
 
         //Block entities
-        addBlock(ModBlocks.ADOBE_FURNACE, "Horno de barro");
-        addBlock(ModBlocks.SOUL_FURNACE, "Horno de barro de almas");
+        addBlock(ModBlocks.ADOBE_FURNACE, "Horno de adobe");
+        addBlock(ModBlocks.SOUL_FURNACE, "Horno de adobe de almas");
         addBlock(ModBlocks.ADOBE_ALLOYING_FURNACE, "Horno de aleación de larillos");
         addBlock(ModBlocks.SOUL_ALLOY_FURNACE, "Horno de aleación de ladrillos de almas");
         addBlock(ModBlocks.SUPER_ALLOYING_FURNACE, "Alto horno de aleación");
@@ -214,6 +214,7 @@ public class ChileanLanguageProvider extends AbstractModLanguageProvider{
         addItem(ModItems.GREEN_GOLD_INGOT, "Lingote de oro verde");
         addItem(ModItems.GREEN_GOLD_NUGGET, "Pepita de oro verde");
         addItem(ModItems.STEEL_INGOT, "Lingote de acero");
+        addItem(ModItems.MUD_BRICK, "Ladrillo de adobe");
 
         //Silver equipment
         addItem(ModItems.SILVER_SWORD, "Espada de plata");

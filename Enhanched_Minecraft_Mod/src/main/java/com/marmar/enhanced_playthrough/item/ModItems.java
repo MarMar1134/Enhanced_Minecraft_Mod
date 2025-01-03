@@ -110,6 +110,10 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZIUM_SMITHING_UPGRADE_TEMPLATE = ITEMS.register(
             "bronzium_upgrade_smithing_template", BronziumSmithingUpgradeTemplate::new);
 
+    //Other materials
+    public static final RegistryObject<Item> MUD_BRICK = ITEMS.register(
+            "mud_brick", () -> new Item(new Item.Properties()));
+
     //Weapons, tools and armors
         //Stone
         public static final RegistryObject<Item> STONE_POLISHER = ITEMS.register(

@@ -17,13 +17,13 @@ license="MIT License"
 # The modid of the mod
 modId="enhanced_playthrough" #mandatory
 # The version number of the mod
-version="0.15.0" #mandatory
+version="0.15.1" #mandatory
 # A display name for the mod
 displayName="Enhanced Playthrough" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+displayURL="https://github.com/MarMar1134/Enhanced_Playtrough_Mod/wiki" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI

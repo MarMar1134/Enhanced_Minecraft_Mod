@@ -3226,5 +3226,95 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mud_bricks": {
+    "criteria": {
+      "has_packed_mud": "2025-01-03 14:20:02 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud_brick_slab_from_mud_bricks_stonecutting": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mud_brick_wall": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud_brick_stairs_from_mud_bricks_stonecutting": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/adobe_furnace": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud_brick_slab": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud_brick_stairs": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mud_brick_wall_from_mud_bricks_stonecutting": {
+    "criteria": {
+      "has_mud_bricks": "2025-01-03 14:20:03 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:survival/root": {
+    "criteria": {
+      "get_materials": "2025-01-03 14:20:37 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2025-01-03 15:25:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_mud": {
+    "criteria": {
+      "has_mud": "2025-01-03 15:27:15 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/misc/mud_brick": {
+    "criteria": {
+      "has_clay_ball": "2025-01-03 15:25:27 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/food/wheat_flour": {
+    "criteria": {
+      "has_wheat": "2025-01-03 15:25:32 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/brick": {
+    "criteria": {
+      "has_clay_ball": "2025-01-03 15:25:27 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/wheat_flour_from_grinding_wheat": {
+    "criteria": {
+      "has_wheat": "2025-01-03 15:25:32 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

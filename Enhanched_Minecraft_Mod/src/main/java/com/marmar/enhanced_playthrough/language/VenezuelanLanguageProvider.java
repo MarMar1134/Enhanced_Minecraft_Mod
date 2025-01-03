@@ -214,6 +214,7 @@ public class VenezuelanLanguageProvider extends AbstractModLanguageProvider{
         addItem(ModItems.GREEN_GOLD_INGOT, "Lingote de oro verde");
         addItem(ModItems.GREEN_GOLD_NUGGET, "Pepita de oro verde");
         addItem(ModItems.STEEL_INGOT, "Lingote de acero");
+        addItem(ModItems.MUD_BRICK, "Ladrillo de adobe");
 
         //Silver equipment
         addItem(ModItems.SILVER_SWORD, "Espada de plata");

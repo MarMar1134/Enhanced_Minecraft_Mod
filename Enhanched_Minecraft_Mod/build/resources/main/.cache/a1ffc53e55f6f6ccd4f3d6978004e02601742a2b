@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-26T16:34:09.5801031	Item Models: enhanced_playthrough
+// 1.20.1	2025-01-03T15:18:00.8402194	Item Models: enhanced_playthrough
 884498801ab8c16590109d685d1ad8b077853c65 assets/enhanced_playthrough/models/item/apple_button.json
 09d04ef87d8f7344ed19b0cefaa0e53c560b3d71 assets/enhanced_playthrough/models/item/apple_door.json
 ea4f536ce449f15e6b66760b6270b5d2bfe27e02 assets/enhanced_playthrough/models/item/apple_fence.json
@@ -85,6 +85,7 @@ bb94f4c8acf9f8bb81c005698f2895fb5e751e93 assets/enhanced_playthrough/models/item
 ec1ed5685004c16c65753a7b12692b79e7951434 assets/enhanced_playthrough/models/item/limestone_slab.json
 c26577ee7878d754804af9d0e27405cc4684a9fd assets/enhanced_playthrough/models/item/limestone_stair.json
 597a94881b9f74d4d1309a118b16a25746f3a828 assets/enhanced_playthrough/models/item/mate.json
+e244103b76ca36f8aafe68f67698cfeebca7111b assets/enhanced_playthrough/models/item/mud_brick.json
 3656ae18fa96c07ef5650a17903c2f44b4bab9b5 assets/enhanced_playthrough/models/item/netherite_polisher.json
 aca134485702800c1421a08e10c3035804920b49 assets/enhanced_playthrough/models/item/orange.json
 bf4c42dc156502bc972f798537a5813d3f4d98ef assets/enhanced_playthrough/models/item/peeled_walnut.json

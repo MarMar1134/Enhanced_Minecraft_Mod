@@ -4,5 +4,11 @@
       "text": "enhanced_playthrough resources"
     },
     "pack_format": 15
+  },
+  "filter": {
+    "block": [{
+      "namespace": "minecraft",
+      "path": "recipes/mud_bricks.json"
+    }]
   }
 }

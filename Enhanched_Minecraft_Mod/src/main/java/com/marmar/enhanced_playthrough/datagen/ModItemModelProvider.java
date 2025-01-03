@@ -247,6 +247,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         //templates
         simpleItem(ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE);
 
+        //Other materials
+        simpleItem(ModItems.MUD_BRICK);
+
         //Armors and tools
             //Gold
             HandheldItem(ModItems.GOLD_POLISHER);

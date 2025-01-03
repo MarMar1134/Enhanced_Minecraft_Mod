@@ -6,7 +6,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
-version = '1.20.1-beta-0.15.0'
+version = '1.20.1-beta-0.15.1'
 group = 'com.marmar.enhanced_playthrough'
 
 base {

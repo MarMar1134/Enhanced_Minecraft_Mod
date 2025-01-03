@@ -424,6 +424,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .unlockedBy(getHasName(ModItems.WALNUT.get()), has(ModItems.WALNUT.get()))
                     .save(consumer);
 
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MUD_BRICK.get(), 3)
+                    .requires(Items.DIRT)
+                    .requires(Items.WHEAT)
+                    .requires(Items.CLAY_BALL)
+                    .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT))
+                    .unlockedBy(getHasName(Items.CLAY_BALL), has(Items.CLAY_BALL))
+                    .save(consumer);
+
             //Ores
                 //Copper
                 ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COPPER_NUGGET.get(), 9)
@@ -1542,6 +1550,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .define('A', Items.CLAY_BALL)
                     .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT))
                     .unlockedBy(getHasName(Items.CLAY_BALL), has(Items.CLAY_BALL))
+                    .save(consumer);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MUD_BRICKS, 4)
+                    .pattern("BB")
+                    .pattern("BB")
+                    .define('B', ModItems.MUD_BRICK.get())
+                    .unlockedBy(getHasName(Items.PACKED_MUD), has(Items.PACKED_MUD))
+                    .unlockedBy(getHasName(ModItems.MUD_BRICK.get()), has(ModItems.MUD_BRICK.get()))
                     .save(consumer);
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.BLAST_FURNACE)
                     .pattern("III")
