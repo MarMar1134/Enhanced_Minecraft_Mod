@@ -116,6 +116,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         basicSmelting(consumer, Items.CACTUS, Items.GREEN_DYE, "cactus");
         soulBasicSmelting(consumer, Items.CACTUS, Items.GREEN_DYE, "cactus");
 
+        basicSmelting(consumer, Items.CLAY_BALL, Items.BRICK, "clay_ball");
+        soulBasicSmelting(consumer, Items.CLAY_BALL, Items.BRICK, "clay_ball");
+
         //Smelting Recipes
             //food
             basicSmelting(consumer, ZAPALLO_COOKABLES, ModItems.COOKED_ZAPALLO.get(), "zapallo");

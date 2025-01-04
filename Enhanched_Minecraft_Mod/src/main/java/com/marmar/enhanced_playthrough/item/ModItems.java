@@ -143,7 +143,7 @@ public class ModItems {
                 "silver_helmet", () -> new ModArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -151,7 +151,7 @@ public class ModItems {
                 "silver_chestplate", () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.CHESTPLATE, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -159,7 +159,7 @@ public class ModItems {
                 "silver_leggings", () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.LEGGINGS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -167,7 +167,7 @@ public class ModItems {
                 "silver_boots", () -> new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.silver_armor").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -236,7 +236,7 @@ public class ModItems {
                 "rose_golden_helmet", () -> new ModArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -249,7 +249,7 @@ public class ModItems {
                 "rose_golden_chestplate", () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.CHESTPLATE, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -262,7 +262,7 @@ public class ModItems {
                 "rose_golden_leggings", () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -275,7 +275,7 @@ public class ModItems {
                 "rose_golden_boots", () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.rose_gold_armor").withStyle(ChatFormatting.LIGHT_PURPLE).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -303,7 +303,7 @@ public class ModItems {
                 "bronzium_helmet", () -> new ModArmorItem(ModArmorMaterials.BRONZIUM, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -311,7 +311,7 @@ public class ModItems {
                 "bronzium_chestplate", () -> new ArmorItem(ModArmorMaterials.BRONZIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -319,7 +319,7 @@ public class ModItems {
                 "bronzium_leggings", () -> new ArmorItem(ModArmorMaterials.BRONZIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -327,7 +327,7 @@ public class ModItems {
                 "bronzium_boots", () -> new ArmorItem(ModArmorMaterials.BRONZIUM, ArmorItem.Type.BOOTS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.bronzium_armor").withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
                 });
@@ -377,7 +377,7 @@ public class ModItems {
                 "green_golden_helmet", () -> new ModArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.HELMET, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -390,7 +390,7 @@ public class ModItems {
                 "green_golden_chestplate", () -> new ArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.CHESTPLATE, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -403,7 +403,7 @@ public class ModItems {
                 "green_golden_leggings", () -> new ArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 
@@ -416,7 +416,7 @@ public class ModItems {
                 "green_golden_boots", () -> new ArmorItem(ModArmorMaterials.GREEN_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()){
                     @Override
                     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                        pTooltipComponents.add(Component.translatable("desc.enhanced_minecraft.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
+                        pTooltipComponents.add(Component.translatable("desc.enhanced_playthrough.green_gold_armor").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.ITALIC));
                         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
                     }
 

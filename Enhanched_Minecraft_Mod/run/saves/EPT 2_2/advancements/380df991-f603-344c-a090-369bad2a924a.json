@@ -12,22 +12,6 @@
     },
     "done": false
   },
-  "enhanced_minecraft:gems/get_all_gems": {
-    "criteria": {
-      "diamond": "2024-12-20 16:20:23 -0300",
-      "garnet": "2024-12-20 16:19:06 -0300",
-      "emerald": "2024-12-20 16:20:32 -0300",
-      "sapphire": "2024-12-20 16:29:21 -0300",
-      "rubi": "2024-12-20 16:20:29 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:gems/polish_garnet": {
-    "criteria": {
-      "requirement": "2024-12-20 16:19:06 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/diamond_leggings": {
     "criteria": {
       "has_diamond": "2024-12-20 16:20:23 -0300"
@@ -82,12 +66,6 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/tools/diamond_polisher": {
-    "criteria": {
-      "has_diamond": "2024-12-20 16:20:23 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2024-12-20 16:20:23 -0300"
@@ -106,27 +84,9 @@
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_diamond": {
-    "criteria": {
-      "requirement": "2024-12-20 16:20:23 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/emerald_block": {
     "criteria": {
       "has_emerald": "2024-12-20 16:20:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:gems/polish_emerald": {
-    "criteria": {
-      "requirement": "2024-12-20 16:20:32 -0300"
-    },
-    "done": true
-  },
-  "enhanced_minecraft:gems/root": {
-    "criteria": {
-      "get_materials": "2024-12-20 16:20:36 -0300"
     },
     "done": true
   },
@@ -244,21 +204,81 @@
     },
     "done": true
   },
-  "enhanced_minecraft:recipes/saphire_from_gem_polishing_raw_saphire": {
+  "enhanced_playthrough:gems/polish_diamond": {
     "criteria": {
-      "has_raw_saphire": "2024-12-20 16:28:48 -0300"
+      "requirement": "2025-01-03 23:06:01 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_sapphire": {
+  "enhanced_playthrough:recipes/tools/diamond_polisher": {
     "criteria": {
-      "requirement": "2024-12-20 16:29:21 -0300"
+      "has_diamond": "2025-01-03 23:06:01 -0300"
     },
     "done": true
   },
-  "enhanced_minecraft:gems/polish_rubi": {
+  "enhanced_playthrough:gems/polish_emerald": {
     "criteria": {
-      "requirement": "2024-12-20 16:39:03 -0300"
+      "requirement": "2025-01-03 23:06:01 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/grounded_yerba_mate_from_grinding_yerba_mate": {
+    "criteria": {
+      "has_yerba_mate": "2025-01-03 23:06:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/food/grounded_yerba_mate": {
+    "criteria": {
+      "has_yerba_mate": "2025-01-03 23:06:33 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/food/mate": {
+    "criteria": {
+      "has_yerba_mate": "2025-01-03 23:06:33 -0300"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-01-03 23:06:39 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/apple_planks": {
+    "criteria": {
+      "has_apple_log": "2025-01-03 23:07:59 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/apple_wood": {
+    "criteria": {
+      "has_apple_log": "2025-01-03 23:07:59 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2025-01-03 23:07:59 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/walnut_planks": {
+    "criteria": {
+      "has_walnut_log": "2025-01-03 23:08:20 -0300"
+    },
+    "done": true
+  },
+  "enhanced_playthrough:recipes/building_blocks/walnut_wood": {
+    "criteria": {
+      "has_walnut_log": "2025-01-03 23:08:20 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-01-03 23:49:36 -0300"
     },
     "done": true
   },
