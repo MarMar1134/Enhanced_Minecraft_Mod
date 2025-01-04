@@ -92,19 +92,24 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.STRIPPED_APPLE_WOOD.get()
         );
 
+        this.tag(BlockTags.OVERWORLD_NATURAL_LOGS).add(
+                ModBlocks.WALNUT_LOG.get(),
+                ModBlocks.APPLE_LOG.get()
+        );
+
         this.tag(BlockTags.LEAVES).add(
                 ModBlocks.WALNUT_LEAVES.get(),
                 ModBlocks.APPLE_LEAVES.get(),
                 ModBlocks.GREEN_APPLE_LEAVES.get()
         );
 
+        this.tag(BlockTags.SWORD_EFFICIENT).add(
+                ModBlocks.WALNUT_LEAVES.get(),
+                ModBlocks.APPLE_LEAVES.get(),
+                ModBlocks.GREEN_APPLE_LEAVES.get()
+        );
+
         this.tag(BlockTags.MINEABLE_WITH_HOE).add(
-                Blocks.OAK_LEAVES,
-                Blocks.BIRCH_LEAVES,
-                Blocks.SPRUCE_LEAVES,
-                Blocks.DARK_OAK_LEAVES,
-                Blocks.ACACIA_LEAVES,
-                Blocks.JUNGLE_LEAVES,
                 ModBlocks.WALNUT_LEAVES.get(),
                 ModBlocks.APPLE_LEAVES.get(),
                 ModBlocks.GREEN_APPLE_LEAVES.get()
@@ -120,7 +125,28 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(
-                ModBlocks.APPLE_LOG.get()
+                ModBlocks.WALNUT_PLANKS.get(),
+                ModBlocks.APPLE_PLANKS.get(),
+                ModBlocks.WALNUT_LOG.get(),
+                ModBlocks.STRIPPED_WALNUT_LOG.get(),
+                ModBlocks.WALNUT_WOOD.get(),
+                ModBlocks.STRIPPED_WALNUT_WOOD.get(),
+                ModBlocks.APPLE_LOG.get(),
+                ModBlocks.STRIPPED_APPLE_LOG.get(),
+                ModBlocks.APPLE_WOOD.get(),
+                ModBlocks.STRIPPED_APPLE_WOOD.get(),
+                ModBlocks.WALNUT_PRESSURE_PLATE.get(),
+                ModBlocks.APPLE_PRESSURE_PLATE.get(),
+                ModBlocks.WALNUT_FENCE.get(),
+                ModBlocks.APPLE_FENCE.get(),
+                ModBlocks.WALNUT_FENCEGATE.get(),
+                ModBlocks.APPLE_FENCEGATE.get(),
+                ModBlocks.WALNUT_BUTTON.get(),
+                ModBlocks.APPLE_BUTTON.get(),
+                ModBlocks.WALNUT_STAIRS.get(),
+                ModBlocks.APPLE_STAIRS.get(),
+                ModBlocks.WALNUT_SLAB.get(),
+                ModBlocks.APPLE_SLAB.get()
         );
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
@@ -180,7 +206,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.NETHER_GARNET_ORE.get(),
                 ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
                 ModBlocks.NETHER_SULFUR_ORE.get(),
-                ModBlocks.DEEPSLATE_COBALT_ORE.get(),
 
                 //ore blocks
                 ModBlocks.SILVER_BLOCK.get(),
@@ -301,10 +326,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.GREEN_GOLD_BLOCK.get()
         );
 
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
-                ModBlocks.DEEPSLATE_COBALT_ORE.get()
-        );
-
         this.tag(Tags.Blocks.ORES).add(
                 ModBlocks.NETHER_COPPER_ORE.get(),
                 ModBlocks.SULFUR_ORE.get(),
@@ -320,8 +341,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.DEEPSLATE_RUBI_ORE.get(),
                 ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                 ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
-                ModBlocks.NETHER_SULFUR_ORE.get(),
-                ModBlocks.DEEPSLATE_COBALT_ORE.get()
+                ModBlocks.NETHER_SULFUR_ORE.get()
         );
 
         this.tag(BlockTags.BEACON_BASE_BLOCKS).add(

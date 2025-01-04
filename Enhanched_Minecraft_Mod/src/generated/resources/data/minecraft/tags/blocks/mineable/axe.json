@@ -1,5 +1,26 @@
 {
   "values": [
-    "enhanced_playthrough:apple_log"
+    "enhanced_playthrough:walnut_planks",
+    "enhanced_playthrough:apple_planks",
+    "enhanced_playthrough:walnut_log",
+    "enhanced_playthrough:stripped_walnut_log",
+    "enhanced_playthrough:walnut_wood",
+    "enhanced_playthrough:stripped_walnut_wood",
+    "enhanced_playthrough:apple_log",
+    "enhanced_playthrough:stripped_apple_log",
+    "enhanced_playthrough:apple_wood",
+    "enhanced_playthrough:stripped_apple_wood",
+    "enhanced_playthrough:walnut_pressure_plate",
+    "enhanced_playthrough:apple_pressure_plate",
+    "enhanced_playthrough:walnut_fence",
+    "enhanced_playthrough:apple_fence",
+    "enhanced_playthrough:walnut_fencegate",
+    "enhanced_playthrough:apple_fencegate",
+    "enhanced_playthrough:walnut_button",
+    "enhanced_playthrough:apple_button",
+    "enhanced_playthrough:walnut_stair",
+    "enhanced_playthrough:apple_stair",
+    "enhanced_playthrough:walnut_slab",
+    "enhanced_playthrough:apple_slab"
   ]
 }

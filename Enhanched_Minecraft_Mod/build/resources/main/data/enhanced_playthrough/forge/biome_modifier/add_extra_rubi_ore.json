@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_lush",
+  "features": "enhanced_playthrough:extra_rubi_ore_placed",
+  "step": "underground_ores"
+}

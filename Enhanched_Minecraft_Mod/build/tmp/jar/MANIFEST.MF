@@ -3,7 +3,7 @@ Specification-Title: enhanced_playthrough
 Specification-Vendor: Mar Mar
 Specification-Version: 1
 Implementation-Title: Enhanched_Minecraft_Mod
-Implementation-Version: 1.20.1-beta-0.15.1
+Implementation-Version: 1.20.1-beta-0.15.2
 Implementation-Vendor: Mar Mar
-Implementation-Timestamp: 2025-01-04T00:42:08-0300
+Implementation-Timestamp: 2025-01-04T15:43:47-0300
 

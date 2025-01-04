@@ -229,8 +229,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GREEN_GOLD_INGOT);
         simpleItem(ModItems.GREEN_GOLD_NUGGET);
 
-        simpleItem(ModItems.COBALT);
-
         simpleItem(ModItems.RAW_RUBI);
         simpleItem(ModItems.RAW_SAPPHIRE);
         simpleItem(ModItems.RAW_GARNET);
@@ -240,9 +238,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RUBI);
         simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.GARNET);
-
-        //Dust
-        simpleItem(ModItems.COBALT_DUST);
 
         //templates
         simpleItem(ModItems.BRONZIUM_SMITHING_UPGRADE_TEMPLATE);

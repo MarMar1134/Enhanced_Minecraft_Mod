@@ -78,8 +78,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModItems.ROSE_GOLDEN_HOE.get(), ModItems.ROSE_GOLDEN_PICKAXE.get(), ModItems.ROSE_GOLDEN_SHOVEL.get(),
                 ModItems.ROSE_GOLDEN_SWORD.get());
 
-    public static final List<ItemLike> COBALT_SMELTABLES = List.of(ModBlocks.DEEPSLATE_COBALT_ORE.get());
-
     public static final List<ItemLike> LIMESTONE_SMELTABLES = List.of(ModBlocks.COBBLED_LIMESTONE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
@@ -273,7 +271,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         itemGrinding(consumer, Items.PUMPKIN, "food", ModItems.PUMPKIN_FLOUR.get(), 2);
         itemGrinding(consumer, Items.SUGAR_CANE, "food", Items.SUGAR, 3);
         itemGrinding(consumer, Items.BONE, "misc", Items.BONE_MEAL, 3);
-        itemGrinding(consumer, ModItems.COBALT.get(), "misc", ModItems.COBALT_DUST.get(), 1);
         itemGrinding(consumer, ItemTags.WOOL, "misc", Items.STRING, 4);
         itemGrinding(consumer, ModItems.WALNUT.get(), "food", ModItems.PEELED_WALNUT.get(), 2);
 

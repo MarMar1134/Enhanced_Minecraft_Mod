@@ -43,8 +43,11 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SULPHUR_ORE_PLACED_KEY = registerKey("sulphur_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_SULPHUR_ORE_PLACED_KEY = registerKey("nether_sulphur_ore_placed");
 
-    public static final ResourceKey<PlacedFeature> SAPHIRE_ORE_PLACED_KEY = registerKey("saphire_ore_placed");
+    public static final ResourceKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
     public static final ResourceKey<PlacedFeature> RUBI_ORE_PLACED_KEY = registerKey("rubi_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> EXTRA_SAPPHIRE_ORE_PLACED_KEY = registerKey("extra_sapphire_ore_placed");
+    public static final ResourceKey<PlacedFeature> EXTRA_RUBI_ORE_PLACED_KEY = registerKey("extra_rubi_ore_placed");
 
     public static final ResourceKey<PlacedFeature> NETHER_GARNET_ORE_PLACED_KEY = registerKey("nether_garnet_ore_placed");
 
@@ -93,7 +96,7 @@ public class ModPlacedFeatures {
         //Zinc
         register(context, ZINC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ZINC_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(13,
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-50), VerticalAnchor.absolute(15))));
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-50), VerticalAnchor.absolute(30))));
 
         register(context, NETHER_ZINC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ZINC_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(16,
@@ -116,14 +119,20 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(80))));
 
         //Sapphire
-        register(context, SAPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPHIRE_ORE_KEY),
+        register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(14,
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(480))));
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(120))));
+        register(context, EXTRA_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.EXTRA_SAPPHIRE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(8,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(120))));
 
         //Rubi
         register(context, RUBI_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBI_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(14,
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(480))));
+                ModOrePlacement.commonOrePlacement(8,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(120))));
+        register(context, EXTRA_RUBI_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.EXTRA_RUBI_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(5,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(120))));
 
         //Garnet
         register(context, NETHER_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_GARNET_ORE_KEY),

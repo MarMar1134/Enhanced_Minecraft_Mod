@@ -51,7 +51,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SULFUR_ORE_KEY = registerKey("nether_sulfur_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> RUBI_ORE_KEY = registerKey("rubi_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SAPHIRE_ORE_KEY = registerKey("saphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> EXTRA_RUBI_ORE_KEY = registerKey("extra_rubi_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> EXTRA_SAPPHIRE_ORE_KEY = registerKey("extra_sapphire_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_GARNET_ORE_KEY = registerKey("nether_garnet_ore");
 
@@ -147,12 +150,13 @@ public class ModConfiguredFeatures {
 
         register(context, NETHER_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(netherSulphurOres, 10));
 
-        //Saphire ore
+        //Sapphire ore
         List<OreConfiguration.TargetBlockState> saphireOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.SAPPHIRE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().defaultBlockState()));
 
-        register(context, SAPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(saphireOres, 8));
+        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(saphireOres, 8));
+        register(context, EXTRA_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(saphireOres, 6));
 
         //Rubi ore
         List<OreConfiguration.TargetBlockState> rubiOres = List.of(OreConfiguration.target(stoneReplaceable,
@@ -160,6 +164,7 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_RUBI_ORE.get().defaultBlockState()));
 
         register(context, RUBI_ORE_KEY, Feature.ORE, new OreConfiguration(rubiOres, 6));
+        register(context, EXTRA_RUBI_ORE_KEY, Feature.ORE, new OreConfiguration(rubiOres, 4));
 
         //Nether garnet ore
         List<OreConfiguration.TargetBlockState> garnetOres = List.of(OreConfiguration.target(netherrackReplaceable,

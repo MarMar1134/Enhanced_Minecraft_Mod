@@ -35,8 +35,6 @@ public class ModItems {
                 "raw_zinc",() -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_SILVER = ITEMS.register(
                 "raw_silver", () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> COBALT = ITEMS.register(
-                "cobalt", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_RUBI = ITEMS.register(
                 "raw_rubi", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register(
@@ -101,10 +99,6 @@ public class ModItems {
                 "sapphire", () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GARNET = ITEMS.register(
                 "garnet", () -> new Item(new Item.Properties()));
-
-    //Dust
-    public static final RegistryObject<Item> COBALT_DUST = ITEMS.register(
-            "cobalt_dust", () -> new Item(new Item.Properties()));
 
     //Templates
     public static final RegistryObject<Item> BRONZIUM_SMITHING_UPGRADE_TEMPLATE = ITEMS.register(

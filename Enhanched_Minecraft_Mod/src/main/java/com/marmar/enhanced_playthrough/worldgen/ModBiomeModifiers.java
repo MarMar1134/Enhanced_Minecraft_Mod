@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,8 +39,11 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SULPHUR_ORE = registerKey("add_sulphur_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_SULPHUR_ORE = registerKey("add_nether_sulphur_ore");
 
-    public static final ResourceKey<BiomeModifier> ADD_SAPHIRE_ORE = registerKey("add_saphire_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
     public static final ResourceKey<BiomeModifier> ADD_RUBI_ORE = registerKey("add_rubi_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_EXTRA_SAPPHIRE_ORE = registerKey("add_extra_sapphire_ore");
+    public static final ResourceKey<BiomeModifier> ADD_EXTRA_RUBI_ORE = registerKey("add_extra_rubi_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_NETHER_GARNET_ORE = registerKey("add_nether_garnet_ore");
 
@@ -128,15 +132,25 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Sapphire
-        context.register(ADD_SAPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_JUNGLE),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SAPHIRE_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SAPPHIRE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_EXTRA_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_LUSH),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.EXTRA_SAPPHIRE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Rubi
         context.register(ADD_RUBI_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_JUNGLE),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RUBI_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_EXTRA_RUBI_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_LUSH),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.EXTRA_RUBI_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Garnet

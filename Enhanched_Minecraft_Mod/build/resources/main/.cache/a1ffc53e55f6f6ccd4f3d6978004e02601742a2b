@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-03T15:18:00.8402194	Item Models: enhanced_playthrough
+// 1.20.1	2025-01-04T15:02:18.0509754	Item Models: enhanced_playthrough
 884498801ab8c16590109d685d1ad8b077853c65 assets/enhanced_playthrough/models/item/apple_button.json
 09d04ef87d8f7344ed19b0cefaa0e53c560b3d71 assets/enhanced_playthrough/models/item/apple_door.json
 ea4f536ce449f15e6b66760b6270b5d2bfe27e02 assets/enhanced_playthrough/models/item/apple_fence.json
@@ -45,8 +45,6 @@ c400c0604cf8e9064cdd677d125e8cc02280246b assets/enhanced_playthrough/models/item
 8564529682eee505ca8541855d200cdace2f7b3d assets/enhanced_playthrough/models/item/bronzium_shovel.json
 440a108b49ccbea281e589249b96d36fa3b4b603 assets/enhanced_playthrough/models/item/bronzium_sword.json
 4632569d507fc20134c7f90313b91acdb83346a7 assets/enhanced_playthrough/models/item/bronzium_upgrade_smithing_template.json
-4715f1375e95de37a9be7f81b9bcf31b85d80324 assets/enhanced_playthrough/models/item/cobalt.json
-3d1e213f73d1fbac8f0e904381cae68bdb3f4e84 assets/enhanced_playthrough/models/item/cobalt_dust.json
 e80c07624658d5b64ecf6e3d6d7ccedbd806f5e9 assets/enhanced_playthrough/models/item/cobbeled_limestone_slab.json
 ad60d530c37d712ecf865ccd8c35dc5ba0375ee0 assets/enhanced_playthrough/models/item/cobbeled_limestone_stair.json
 1b3ce89eb7e42cf0b275f0f9bd3e7b76cb10316a assets/enhanced_playthrough/models/item/cobbeled_limestone_wall.json

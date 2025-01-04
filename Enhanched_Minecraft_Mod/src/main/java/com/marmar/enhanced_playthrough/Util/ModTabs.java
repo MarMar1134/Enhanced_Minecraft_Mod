@@ -143,9 +143,6 @@ public class ModTabs {
 
                         output.accept(ModItems.RAW_SILVER.get());
 
-                        output.accept(ModItems.COBALT.get());
-                        output.accept(ModItems.COBALT_DUST.get());
-
                         output.accept(ModItems.RAW_EMERALD.get());
 
                         output.accept(ModItems.RAW_SAPPHIRE.get());

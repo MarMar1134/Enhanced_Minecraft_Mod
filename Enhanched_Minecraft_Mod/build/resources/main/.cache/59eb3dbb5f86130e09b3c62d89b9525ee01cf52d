@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-26T16:34:09.5590983	Loot Tables
+// 1.20.1	2025-01-04T15:02:18.0263559	Loot Tables
 c015e86a6bf87f35117589149d8f53e84d58337c data/enhanced_playthrough/loot_tables/blocks/adobe_alloying_furnace.json
 a4fde997b0489e4203b7297c396276c328d80d84 data/enhanced_playthrough/loot_tables/blocks/adobe_furnace.json
 5569804de914d1e32f2b8f1470071a6de005c217 data/enhanced_playthrough/loot_tables/blocks/apple_button.json
@@ -22,7 +22,6 @@ e422cdf2edf7a0b70bcae31d0f72132273b26077 data/enhanced_playthrough/loot_tables/b
 4ddd1f274a5760d726c41c8c0aada2ab21790e9d data/enhanced_playthrough/loot_tables/blocks/cobbeled_limestone_stair.json
 3b395f7c8cbedae8070d6194a978f86bba5eeafe data/enhanced_playthrough/loot_tables/blocks/cobbeled_limestone_wall.json
 029d7ad043978b0e46a1566523543022e9639384 data/enhanced_playthrough/loot_tables/blocks/corn_crop.json
-1f564fee73deda3958b0c2907bb0d3d16a114c03 data/enhanced_playthrough/loot_tables/blocks/deepslate_cobalt_ore.json
 7ef2cd3ad65d60128576adbfc2b32e329ed786f7 data/enhanced_playthrough/loot_tables/blocks/deepslate_rubi_ore.json
 dd784e553bed21a19fc92da82a70f96c3f21091b data/enhanced_playthrough/loot_tables/blocks/deepslate_sapphire_ore.json
 c0594c9d414f10a55ab78b5871a59853e3e3fb38 data/enhanced_playthrough/loot_tables/blocks/deepslate_silver_ore.json
